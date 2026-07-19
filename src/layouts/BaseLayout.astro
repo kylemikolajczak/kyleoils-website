@@ -1,0 +1,38 @@
+---
+import SiteHeader from '../components/navigation/SiteHeader.astro';
+import SiteFooter from '../components/global/SiteFooter.astro';
+import { getLanguagePaths, type Locale } from '../data/locales';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  lang?: Locale;
+  noindex?: boolean;
+}
+
+const { title, description, lang = 'de', noindex = false } = Astro.props;
+const currentPath = Astro.url.pathname;
+const languagePaths = getLanguagePaths(currentPath);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={currentPath} />
+    <link rel="alternate" hreflang="de" href={languagePaths.de} />
+    <link rel="alternate" hreflang="en" href={languagePaths.en} />
+    <link rel="alternate" hreflang="x-default" href={languagePaths.de} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">{lang === 'de' ? 'Zum Inhalt springen' : 'Skip to content'}</a>
+    <SiteHeader locale={lang} {currentPath} />
+    <main id="main-content"><slot /></main>
+    <SiteFooter locale={lang} />
+  </body>
+</html>

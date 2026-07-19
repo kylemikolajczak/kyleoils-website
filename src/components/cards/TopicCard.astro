@@ -1,0 +1,18 @@
+---
+interface Props { title: string; }
+const { title } = Astro.props;
+---
+
+<article class="topic-card">
+  <h3>{title}</h3>
+  <div><slot /></div>
+</article>
+
+<style>
+  .topic-card { height: 100%; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
+  h3 { margin: 0 0 var(--space-12); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
+  div { color: var(--color-text-secondary); }
+  div :global(p) { margin: 0; }
+  @media (min-width: 768px) { .topic-card { padding: var(--space-32); } }
+  @media (min-width: 1024px) { h3 { font-size: var(--font-size-h3-desktop); } }
+</style>

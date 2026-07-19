@@ -1,0 +1,114 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import FAQAccordion from '../../../components/faq/FAQAccordion.astro';
+import HeroSplit from '../../../components/sections/HeroSplit.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { contactLinks } from '../../../data/externalLinks';
+
+const faqItems = [
+  {
+    question: 'Does the first conversation cost anything?',
+    answer: 'No. The first conversation is free and gives you an initial sense of your options. If a workshop, detailed plan or special format is considered later, we will discuss it clearly in advance.',
+  },
+  {
+    question: 'Do I have to buy products straight away?',
+    answer: 'No. The first conversation is about understanding your needs and offering honest advice. If a product or routine may be right for you, I will explain the options. You can then decide in your own time whether you would like to get started.',
+  },
+  {
+    question: 'What happens during a consultation?',
+    answer: 'You briefly tell me what interests you or where you are looking for support. If needed, I will then ask a few simple questions so that I can better understand your situation. Only after that will I suggest products, routines or next steps that may suit you.',
+  },
+  {
+    question: 'Is doTERRA suitable for everyone?',
+    answer: 'Not necessarily. It is important to me that you understand the available options and what genuinely suits your needs. If doTERRA is not the right fit, that is completely fine too.',
+  },
+  {
+    question: 'Can I ask questions if I already have doTERRA products?',
+    answer: 'Yes. We can look together at what you already have and how you can use it more purposefully. Many people own products but are unsure how to include them in their daily routine.',
+  },
+  {
+    question: 'Can I decide later whether I want to order anything?',
+    answer: 'Yes. You can decide in your own time whether you would like to get started. You do not have to buy anything simply because you ask a question.',
+  },
+  {
+    question: 'How long does a conversation take?',
+    answer: 'That depends on your questions and your situation. The first conversation is intended to give you a clear starting point.',
+  },
+  {
+    question: 'Is an online consultation available?',
+    answer: 'Yes. A video call is one possible way to hold a consultation. Many questions can also be clarified briefly via WhatsApp or email.',
+  },
+  {
+    question: 'Can I still contact you after a purchase?',
+    answer: 'Yes. You can still contact me if questions come up after your purchase.',
+  },
+  {
+    question: 'Do you also offer workshops?',
+    answer: 'Yes. I offer workshops, essential oil evenings, information sessions and talks. These can take place privately, in small groups or in collaboration with clinics, studios, companies and organisations.',
+  },
+];
+---
+
+<PageLayout
+  lang="en"
+  title="Frequently Asked Questions"
+  description="You may already find the answer to your question here. If not, simply get in touch."
+>
+  <HeroSplit
+    title="Frequently Asked Questions"
+    primaryHref={contactLinks.whatsapp.href}
+    primaryLabel="Message Me on WhatsApp"
+    secondaryHref="/en/consultation/"
+    secondaryLabel="Request a Consultation"
+    imageSrc="/assets/images/nature/nature-heath-hero-02.png"
+    imageAlt="Lüneburg Heath in warm morning light"
+    imageWidth={1672}
+    imageHeight={941}
+    imagePosition="54% center"
+  >
+    <p>You may already find the answer to your question here. If not, simply get in touch. I will be happy to take the time to discuss your concerns.</p>
+  </HeroSplit>
+
+  <section class="section section--cream">
+    <div class="container faq-layout">
+      <SectionIntro title="Questions and Answers" />
+      <FAQAccordion items={faqItems} idPrefix="general-questions" />
+    </div>
+  </section>
+
+  <CTASection
+    title="Still Have Questions?"
+    primaryHref={contactLinks.whatsapp.href}
+    primaryLabel="Message Me on WhatsApp"
+    secondaryHref="/en/consultation/"
+    secondaryLabel="Request a Consultation"
+  >
+    <p>If your question has not been answered here, I would be happy to hear from you. Together, we can find out what may be right for you.</p>
+  </CTASection>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote label="Note">
+        <h2>A Brief Note</h2>
+        <p>My support is not a substitute for medical diagnosis or treatment.<br />I do not claim that products can diagnose, treat or cure medical conditions.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .faq-layout { max-width: 920px; }
+  .compliance-section { padding: 0 0 var(--space-80); }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  @media (min-width: 768px) {
+    .section { padding-block: var(--space-96); }
+  }
+  @media (min-width: 1024px) {
+    .section { padding-block: var(--space-120); }
+  }
+</style>
+

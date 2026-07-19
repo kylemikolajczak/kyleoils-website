@@ -1,0 +1,101 @@
+---
+import TopicCard from '../../../components/cards/TopicCard.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+---
+
+<PageLayout
+  lang="en"
+  title="Legal Notice | Kyle Daniel Mikolajczak"
+  description="Here you will find the legally required information about this website."
+>
+  <section class="legal-hero">
+    <div class="container legal-hero__inner">
+      <h1>Legal Notice</h1>
+      <p>Here you will find the legally required information about this website.<br /><small>This English version is provided for information only. In the event of any discrepancy, the German version shall prevail.</small></p>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container details-grid">
+      <TopicCard title="Provider">
+        <address>
+          Kyle Daniel Mikolajczak<br />
+          Glüsingen 3<br />
+          21386 Betzendorf<br />
+          Germany
+        </address>
+      </TopicCard>
+
+      <TopicCard title="Contact">
+        <div class="contact-details">
+          <p><strong>Email:</strong><br /><span class="todo">kyle.mikolajczak@gmail.com</span></p>
+          <p><strong>Telephone:</strong><br /><a href="tel:+491794169488">+49 179 4169488</a></p>
+        </div>
+      </TopicCard>
+
+      <TopicCard title="Professional Title">
+        <p>Independent doTERRA Wellness Advocate</p>
+      </TopicCard>
+
+      <TopicCard title="Responsible for Content">
+        <p>Kyle Daniel Mikolajczak</p>
+      </TopicCard>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container legal-copy">
+      <section aria-labelledby="haftung-inhalte">
+        <h2 id="haftung-inhalte">Liability for Content</h2>
+        <p>The content of this website has been prepared with the greatest care. However, no guarantee can be given regarding its accuracy, completeness or timeliness.</p>
+        <p>The provider is responsible for its own content on this website in accordance with applicable law. If specific legal infringements become known, the relevant content will be removed without delay.</p>
+      </section>
+
+      <section aria-labelledby="haftung-links">
+        <h2 id="haftung-links">Liability for Links</h2>
+        <p>This website contains links to external third-party websites whose content is beyond our control. The respective provider or operator is always responsible for such external content.</p>
+        <p>The linked pages were checked for possible legal infringements at the time the links were created. Unlawful content was not apparent at that time. Continuous monitoring of linked pages is not reasonable without specific evidence of an infringement. If legal infringements become known, such links will be removed without delay.</p>
+      </section>
+
+      <section aria-labelledby="urheberrecht">
+        <h2 id="urheberrecht">Copyright</h2>
+        <p>The content and works created by the website operator on this website are subject to German copyright law. Any use beyond the limits of copyright law requires the prior written consent of the respective rights holder unless permitted by law.</p>
+        <p>Downloads and copies of this website are permitted for private, non-commercial use only. Where content on this website was not created by the operator, third-party rights are respected. If copyright infringements become known, the relevant content will be removed without delay.</p>
+      </section>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .legal-hero { padding: var(--space-64) 0; background: var(--color-warm-white); }
+  .legal-hero__inner { max-width: var(--container-text); }
+  .legal-hero h1 { margin: 0 0 var(--space-24); font-size: var(--font-size-h1-mobile); line-height: var(--line-height-heading); letter-spacing: -0.025em; }
+  .legal-hero p { margin: 0; color: var(--color-text-secondary); }
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .details-grid { display: grid; gap: var(--space-20); }
+  address { color: var(--color-text-secondary); font-style: normal; }
+  .contact-details { display: grid; gap: var(--space-20); }
+  .contact-details p { margin: 0; }
+  .contact-details strong { color: var(--color-text-primary); }
+  .contact-details a { color: var(--color-deep-forest); overflow-wrap: anywhere; }
+  .todo { color: var(--color-text-muted); }
+  .legal-copy { display: grid; max-width: 920px; gap: var(--space-64); }
+  .legal-copy h2 { margin: 0 0 var(--space-20); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); letter-spacing: -0.02em; }
+  .legal-copy p { margin: 0 0 var(--space-16); color: var(--color-text-secondary); }
+  .legal-copy p:last-child { margin-bottom: 0; }
+
+  @media (min-width: 768px) {
+    .legal-hero { padding-block: var(--space-80); }
+    .section { padding-block: var(--space-96); }
+    .details-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+  }
+
+  @media (min-width: 1024px) {
+    .legal-hero { padding-block: var(--space-96); }
+    .legal-hero h1 { font-size: var(--font-size-h1-desktop); }
+    .section { padding-block: var(--space-120); }
+    .legal-copy h2 { font-size: var(--font-size-h2-desktop); }
+  }
+</style>
+

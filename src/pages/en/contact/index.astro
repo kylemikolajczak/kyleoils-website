@@ -1,0 +1,292 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import Button from '../../../components/global/Button.astro';
+import HeroSplit from '../../../components/sections/HeroSplit.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import StepList from '../../../components/sections/StepList.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { contactLinks, socialLinks } from '../../../data/externalLinks';
+
+const contactSteps = [
+  {
+    title: '1. You get in touch.',
+    paragraphs: [],
+  },
+  {
+    title: '2. We talk about your situation and your questions.',
+    paragraphs: [],
+  },
+  {
+    title: '3. Together, we look at which options may be right for you.',
+    paragraphs: [],
+  },
+  {
+    title: '4. You then decide in your own time how you would like to proceed.',
+    paragraphs: [],
+  },
+];
+
+const helpTopics = [
+  'would like to learn about doTERRA',
+  'are unsure where to begin',
+  'have questions about essential oils',
+  'are looking for a simple everyday routine',
+  'would like to know more about a particular product',
+  'already have doTERRA products but rarely use them',
+  'would like to discuss an official doTERRA customer account',
+  'are interested in workshops or essential oil evenings',
+  'would like to enquire about a collaboration',
+  'want to learn more about the business opportunity',
+];
+
+const contactOptions = [
+  {
+    title: 'WhatsApp',
+    copy: 'The simplest way is a brief message on WhatsApp.',
+    href: contactLinks.whatsapp.href,
+    label: 'Message Me on WhatsApp',
+  },
+  {
+    title: 'Call Directly',
+    copy: contactLinks.phone.label,
+    href: contactLinks.phone.href,
+    label: 'Call Me',
+  },
+  {
+    title: 'Send an Email',
+    copy: contactLinks.email.label,
+    href: contactLinks.email.href,
+    label: 'Send an Email',
+  },
+  {
+    title: 'In-Person Consultation in the Lüneburg District',
+    copy: 'Lüneburg District',
+    href: '/en/consultation/',
+    label: 'Request a Consultation',
+  },
+  {
+    title: 'Online Consultation',
+    copy: 'A video call is one possible format for a personal consultation.',
+    href: '/en/consultation/',
+    label: 'Request an Online Consultation',
+  },
+];
+---
+
+<PageLayout
+  lang="en"
+  title="Contact – Kyle Daniel Mikolajczak"
+  description="You do not need to know which oil, starter kit or routine is right for you yet."
+>
+  <HeroSplit
+    title="Let’s Talk"
+    primaryHref={contactLinks.whatsapp.href}
+    primaryLabel="Message Me on WhatsApp"
+    secondaryHref="/en/consultation/"
+    secondaryLabel="Request a Free Consultation"
+    imageSrc="/assets/images/about/contact-kyle-horse.jpg"
+    imageAlt="Kyle with a horse in nature"
+    imageWidth={1132}
+    imageHeight={1390}
+    imagePosition="50% 52%"
+  >
+    <p>You do not need to know which oil, starter kit or routine is right for you yet.</p>
+    <p>Getting in touch is a simple way to ask questions, find some direction and explore together what may be right for you.</p>
+    <p>No sales pressure.</p>
+  </HeroSplit>
+
+  <section class="section section--cream">
+    <div class="container">
+      <SectionIntro title="What Happens Next" />
+      <StepList steps={contactSteps} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-copy">
+      <div>
+        <SectionIntro title="How I Can Support You">
+          <p>You are welcome to contact me if you:</p>
+        </SectionIntro>
+        <ul class="check-list">
+          {helpTopics.map((topic) => <li>{topic}</li>)}
+        </ul>
+      </div>
+      <div class="calm-panel">
+        <h2>No Pressure. No Obligation.</h2>
+        <p>You do not have to buy anything after making an enquiry.</p>
+        <p>You do not have to open a customer account.</p>
+        <p>You do not have to decide immediately either.</p>
+        <p>The first conversation is there to give you clarity and help you decide whether doTERRA and my support are a good fit for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container">
+      <SectionIntro title="How to Reach Me">
+        <p>I usually respond within 24 hours.</p>
+      </SectionIntro>
+      <div class="contact-grid">
+        {contactOptions.map((option) => (
+          <article class="contact-card">
+            <h3>{option.title}</h3>
+            {option.copy && <p>{option.copy}</p>}
+            <a href={option.href}>{option.label}</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container details-layout">
+      <div>
+        <SectionIntro title="Contact Details" />
+        <dl class="contact-details">
+          <div>
+            <dt>Name</dt>
+            <dd>Kyle Daniel Mikolajczak</dd>
+          </div>
+          <div>
+            <dt>Telephone</dt>
+            <dd><a href={contactLinks.phone.href}>{contactLinks.phone.label}</a></dd>
+          </div>
+          <div>
+            <dt>WhatsApp</dt>
+            <dd><a href={contactLinks.whatsapp.href}>Message Me on WhatsApp</a></dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href={contactLinks.email.href}>{contactLinks.email.label}</a></dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Lüneburg District</dd>
+          </div>
+          <div>
+            <dt>Response Time</dt>
+            <dd>I usually respond within 24 hours.</dd>
+          </div>
+        </dl>
+      </div>
+      <aside class="qualification" aria-labelledby="qualification-title">
+        <h2 id="qualification-title">Qualifications</h2>
+        <ul>
+          <li>doTERRA Wellness Advocate</li>
+          <li>doTERRA Europe Essential Oils Specialist</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container social-layout">
+      <SectionIntro title="Social Media" />
+      <div class="social-links">
+        <a href={socialLinks.facebook.href} target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1Z"></path>
+          </svg>
+          <span>Facebook</span>
+        </a>
+        <a href={socialLinks.linkedin.href} target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.5 8.5H3V21h3.5V8.5ZM4.8 3A2.1 2.1 0 1 0 5 7.2 2.1 2.1 0 0 0 4.8 3ZM21 14.1c0-3.8-2-5.9-4.8-5.9-2.2 0-3.2 1.2-3.8 2.1V8.5H9V21h3.5v-6.2c0-1.6.3-3.2 2.3-3.2s2 1.9 2 3.3V21H21v-6.9Z"></path>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container final-cta__inner">
+      <div>
+        <h2>You Do Not Have to Decide Today.</h2>
+        <p>If you have questions or simply want some direction, I would be happy to hear from you.</p>
+      </div>
+      <div class="final-cta__actions">
+        <Button href={contactLinks.whatsapp.href}>Message Me on WhatsApp</Button>
+        <Button href="/en/consultation/" variant="secondary">Request a Consultation</Button>
+        <Button href={contactLinks.phone.href} variant="secondary">Call Me</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote label="Note">
+        <h2>A Brief Note</h2>
+        <p>My support is not a substitute for medical diagnosis or treatment.<br />I do not claim that products can diagnose, treat or cure medical conditions.</p>
+        <p>My focus is on clear advice, practical daily routines, high-quality product information and personal support.</p>
+        <p>If you have health concerns or medical questions, please consult a doctor or another appropriately qualified healthcare professional.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .section--sage { background: rgb(168 184 160 / 20%); }
+  .split-copy,
+  .details-layout { display: grid; gap: var(--space-48); }
+  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; color: var(--color-text-secondary); }
+  .check-list li { position: relative; padding-left: var(--space-32); }
+  .check-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
+  .calm-panel { align-self: start; padding: var(--space-32); border-radius: var(--radius-section); background: var(--color-deep-forest); color: var(--color-text-inverted); }
+  .calm-panel h2 { margin: 0 0 var(--space-20); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
+  .calm-panel p { margin: 0 0 var(--space-16); color: var(--color-linen); }
+  .calm-panel p:last-child { margin-bottom: 0; }
+  .contact-grid { display: grid; gap: var(--space-20); }
+  .contact-card { min-height: 230px; display: flex; flex-direction: column; align-items: flex-start; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
+  .contact-card h3 { margin: 0 0 var(--space-12); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
+  .contact-card p { margin: 0 0 var(--space-24); overflow-wrap: anywhere; color: var(--color-text-secondary); }
+  .contact-card a { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; margin-top: auto; padding: var(--space-12) var(--space-20); border: 1px solid var(--color-sand); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); line-height: 1.2; text-align: center; text-decoration: none; }
+  .contact-card a:hover { border-color: var(--color-sage-green); background: var(--color-soft-cream); }
+  .contact-details { display: grid; gap: 1px; overflow: hidden; margin: 0; border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-sand); }
+  .contact-details div { display: grid; gap: var(--space-4); padding: var(--space-20); background: var(--color-warm-white); }
+  .contact-details dt { color: var(--color-text-muted); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
+  .contact-details dd { margin: 0; overflow-wrap: anywhere; color: var(--color-text-secondary); }
+  .contact-details a { color: var(--color-deep-forest); }
+  .qualification { align-self: start; padding: var(--space-32); border-radius: var(--radius-section); background: var(--color-soft-cream); }
+  .qualification h2 { margin: 0 0 var(--space-24); font-size: var(--font-size-h3-mobile); line-height: 1.25; }
+  .qualification ul { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; color: var(--color-text-secondary); }
+  .qualification li { padding-top: var(--space-16); border-top: 1px solid var(--color-sand); }
+  .social-layout :global(.section-intro) { margin-bottom: var(--space-24); }
+  .social-links { display: flex; flex-wrap: wrap; gap: var(--space-16); }
+  .social-links a { min-height: 52px; display: inline-flex; align-items: center; gap: var(--space-12); padding: var(--space-12) var(--space-20); border: 1px solid var(--color-sand); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  .social-links a:hover { border-color: var(--color-sage-green); background: var(--color-warm-white); }
+  .social-links svg { width: 22px; height: 22px; fill: currentColor; }
+  .final-cta { padding: var(--space-64) 0; }
+  .final-cta__inner { display: grid; gap: var(--space-32); padding: var(--space-40) var(--space-24); border-radius: var(--radius-section); background: var(--color-deep-forest); color: var(--color-text-inverted); }
+  .final-cta h2 { max-width: var(--container-text); margin: 0 0 var(--space-20); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
+  .final-cta p { max-width: var(--container-text); margin: 0; color: var(--color-linen); }
+  .final-cta__actions { display: flex; flex-direction: column; gap: var(--space-16); }
+  .final-cta :global(.button--primary) { border-color: var(--color-warm-white); background: var(--color-warm-white); color: var(--color-deep-forest); }
+  .final-cta :global(.button--secondary) { color: var(--color-warm-white); }
+  .compliance-section { padding: 0 0 var(--space-80); }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  .compliance-section :global(p + p) { margin-top: var(--space-12); }
+  @media (min-width: 600px) {
+    .final-cta__actions { flex-direction: row; flex-wrap: wrap; }
+  }
+  @media (min-width: 768px) {
+    .section { padding-block: var(--space-96); }
+    .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .contact-card { padding: var(--space-32); }
+    .contact-details div { grid-template-columns: minmax(120px, .35fr) minmax(0, 1fr); gap: var(--space-24); }
+    .final-cta { padding-block: var(--space-80); }
+    .final-cta__inner { padding: var(--space-64); }
+  }
+  @media (min-width: 1024px) {
+    .section { padding-block: var(--space-120); }
+    .split-copy,
+    .details-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); align-items: start; }
+    .contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .calm-panel h2,
+    .final-cta h2 { font-size: var(--font-size-h2-desktop); }
+  }
+</style>
+

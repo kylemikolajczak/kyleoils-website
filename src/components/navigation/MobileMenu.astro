@@ -1,0 +1,43 @@
+---
+import { englishMainNavigation, mainNavigation } from '../../data/navigation';
+import { contactLinks } from '../../data/externalLinks';
+import type { Locale } from '../../data/locales';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+interface Props {
+  locale?: Locale;
+  currentPath: string;
+}
+
+const { locale = 'de', currentPath } = Astro.props;
+const navigation = locale === 'de' ? mainNavigation : englishMainNavigation;
+const menuLabel = locale === 'de' ? 'Menü' : 'Menu';
+const navigationLabel = locale === 'de' ? 'Mobile Navigation' : 'Mobile navigation';
+const consultationHref = locale === 'de' ? '/de/beratung/' : '/en/consultation/';
+const consultationLabel = locale === 'de' ? 'Beratung anfragen' : 'Request a Consultation';
+const whatsappLabel = locale === 'de' ? 'WhatsApp starten' : 'Message Me on WhatsApp';
+---
+
+<details class="mobile-menu">
+  <summary>{menuLabel}</summary>
+  <nav aria-label={navigationLabel}>
+    <ul>
+      {navigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+    </ul>
+    <div class="menu-language"><LanguageSwitcher {locale} {currentPath} /></div>
+    <a class="menu-cta" href={consultationHref}>{consultationLabel}</a>
+    <a class="menu-quick-action" href={contactLinks.whatsapp.href}>{whatsappLabel}</a>
+  </nav>
+</details>
+
+<style>
+  .mobile-menu { position: relative; }
+  summary { min-height: 48px; display: inline-flex; align-items: center; cursor: pointer; font-weight: var(--font-weight-semibold); }
+  nav { position: absolute; right: 0; top: calc(100% + var(--space-12)); z-index: 10; width: min(86vw, 360px); padding: var(--space-24); border: 1px solid var(--color-sand); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-soft); }
+  ul { display: grid; gap: var(--space-8); margin: 0 0 var(--space-20); padding: 0; list-style: none; }
+  li a { display: flex; min-height: 48px; align-items: center; text-decoration: none; }
+  .menu-language { display: flex; margin: 0 0 var(--space-20); padding: var(--space-12) 0; border-top: 1px solid var(--color-sand); border-bottom: 1px solid var(--color-sand); }
+  .menu-cta { display: flex; min-height: 48px; align-items: center; justify-content: center; padding: var(--space-12) var(--space-16); border-radius: var(--radius-button); background: var(--color-deep-forest); color: var(--color-warm-white); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  .menu-quick-action { display: flex; min-height: 48px; align-items: center; justify-content: center; margin-top: var(--space-12); padding: var(--space-12) var(--space-16); border: 1px solid var(--color-deep-forest); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  @media (min-width: 1180px) { .mobile-menu { display: none; } }
+</style>

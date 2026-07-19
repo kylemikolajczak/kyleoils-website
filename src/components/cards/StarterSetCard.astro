@@ -1,0 +1,72 @@
+---
+import Button from '../global/Button.astro';
+import LinkButton from '../global/LinkButton.astro';
+import ResponsiveImage from '../global/ResponsiveImage.astro';
+
+interface Props {
+  title: string;
+  imageSrc: string;
+  imageAlt: string;
+  imageWidth: number;
+  imageHeight: number;
+  orderHref: string;
+  orderLabel: string;
+  consultationHref: string;
+  consultationLabel: string;
+}
+
+const {
+  title,
+  imageSrc,
+  imageAlt,
+  imageWidth,
+  imageHeight,
+  orderHref,
+  orderLabel,
+  consultationHref,
+  consultationLabel,
+} = Astro.props;
+---
+
+<article class="starter-set-card">
+  <div class="starter-set-card__image">
+    <ResponsiveImage
+      src={imageSrc}
+      alt={imageAlt}
+      width={imageWidth}
+      height={imageHeight}
+      variant="badge"
+    />
+  </div>
+  <div class="starter-set-card__content">
+    <h3>{title}</h3>
+    <div class="starter-set-card__copy"><slot /></div>
+    <div class="starter-set-card__actions">
+      <LinkButton href={orderHref} variant="primary">{orderLabel}</LinkButton>
+      <Button href={consultationHref} variant="secondary">{consultationLabel}</Button>
+    </div>
+  </div>
+</article>
+
+<style>
+  .starter-set-card { display: grid; gap: var(--space-32); padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
+  .starter-set-card__image { display: flex; align-items: center; justify-content: center; }
+  h3 { margin: 0 0 var(--space-24); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); letter-spacing: -0.02em; }
+  .starter-set-card__copy { color: var(--color-text-secondary); }
+  .starter-set-card__copy :global(section + section) { margin-top: var(--space-32); }
+  .starter-set-card__copy :global(h4) { margin: 0 0 var(--space-12); color: var(--color-text-primary); font-size: 19px; line-height: 1.3; }
+  .starter-set-card__copy :global(p) { margin: 0 0 var(--space-12); }
+  .starter-set-card__copy :global(p:last-child) { margin-bottom: 0; }
+  .starter-set-card__actions { display: flex; flex-direction: column; gap: var(--space-16); margin-top: var(--space-32); }
+  @media (min-width: 600px) {
+    .starter-set-card__actions { flex-direction: row; flex-wrap: wrap; }
+  }
+  @media (min-width: 768px) {
+    .starter-set-card { padding: var(--space-40); }
+  }
+  @media (min-width: 1024px) {
+    .starter-set-card { grid-template-columns: minmax(300px, .7fr) minmax(0, 1.3fr); gap: var(--space-64); align-items: start; }
+    .starter-set-card__image { position: sticky; top: var(--space-32); }
+    h3 { font-size: var(--font-size-h2-desktop); }
+  }
+</style>

@@ -1,0 +1,112 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import FAQAccordion from '../../../components/faq/FAQAccordion.astro';
+import HeroSplit from '../../../components/sections/HeroSplit.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { contactLinks } from '../../../data/externalLinks';
+
+const faqItems = [
+  {
+    question: 'Kostet das erste Gespräch etwas?',
+    answer: 'Nein. Das erste Gespräch ist kostenlos und dient der Orientierung. Wenn später ein Workshop, ein ausführliches Konzept oder ein besonderes Format entsteht, besprechen wir das vorher klar und transparent.',
+  },
+  {
+    question: 'Muss ich direkt Produkte kaufen?',
+    answer: 'Nein. Das erste Gespräch dient dazu, dein Anliegen zu verstehen und dir eine ehrliche Orientierung zu geben. Wenn ein Produkt oder eine Routine sinnvoll sein könnte, erkläre ich dir die Möglichkeiten. Danach entscheidest du in Ruhe selbst, ob du starten möchtest.',
+  },
+  {
+    question: 'Was passiert im Beratungsgespräch?',
+    answer: 'Du schreibst mir kurz, was dich interessiert oder wobei du Unterstützung suchst. Danach stelle ich dir bei Bedarf ein paar einfache Fragen, damit ich deine Situation besser verstehe. Erst danach empfehle ich dir passende Produkte, Routinen oder nächste Schritte.',
+  },
+  {
+    question: 'Ist doTERRA für jeden geeignet?',
+    answer: 'Nicht automatisch. Mir ist wichtig, dass du verstehst, welche Möglichkeiten es gibt und was wirklich zu deinem Bedarf passt. Wenn doTERRA einmal nicht passt, ist das ebenfalls vollkommen in Ordnung.',
+  },
+  {
+    question: 'Kann ich auch Fragen stellen, wenn ich bereits doTERRA-Produkte habe?',
+    answer: 'Ja. Dann können wir gemeinsam schauen, was du bereits hast und wie du es sinnvoller nutzen kannst. Viele Menschen besitzen Produkte, wissen aber nicht genau, wie sie diese in ihren Alltag integrieren sollen.',
+  },
+  {
+    question: 'Kann ich später selbst entscheiden, ob ich etwas bestellen möchte?',
+    answer: 'Ja. Danach entscheidest du in Ruhe selbst, ob du starten möchtest. Du musst nichts kaufen, nur weil du eine Frage stellst.',
+  },
+  {
+    question: 'Wie lange dauert ein Gespräch?',
+    answer: 'Das richtet sich nach deinen Fragen und deiner Situation. Das erste Gespräch dient der Orientierung.',
+  },
+  {
+    question: 'Ist die Beratung auch online möglich?',
+    answer: 'Ja. Ein Videocall ist eine mögliche Form der Beratung. Viele Fragen lassen sich auch kurz per WhatsApp oder E-Mail klären.',
+  },
+  {
+    question: 'Kann ich dich auch nach dem Kauf noch kontaktieren?',
+    answer: 'Ja. Ich begleite dich auch nach dem Kauf, wenn Fragen entstehen.',
+  },
+  {
+    question: 'Bietest du auch Workshops an?',
+    answer: 'Ja. Ich biete Workshops, Öl-Abende, Informationsveranstaltungen und Vorträge an. Diese können privat, in kleinen Gruppen oder in Zusammenarbeit mit Praxen, Studios, Unternehmen und Organisationen stattfinden.',
+  },
+];
+---
+
+<PageLayout
+  title="Fragen, die häufig gestellt werden"
+  description="Vielleicht findest du hier bereits die Antwort auf deine Frage. Falls nicht, melde dich einfach bei mir."
+>
+  <HeroSplit
+    title="Fragen, die häufig gestellt werden"
+    primaryHref={contactLinks.whatsapp.href}
+    primaryLabel="WhatsApp starten"
+    secondaryHref="/de/beratung/"
+    secondaryLabel="Beratungsgespräch anfragen"
+    imageSrc="/assets/images/nature/nature-heath-hero-02.png"
+    imageAlt="Lüneburger Heide im warmen Morgenlicht"
+    imageWidth={1672}
+    imageHeight={941}
+    imagePosition="54% center"
+  >
+    <p>Vielleicht findest du hier bereits die Antwort auf deine Frage. Falls nicht, melde dich einfach bei mir. Ich nehme mir gerne Zeit für dein Anliegen.</p>
+  </HeroSplit>
+
+  <section class="section section--cream">
+    <div class="container faq-layout">
+      <SectionIntro title="Fragen und Antworten" />
+      <FAQAccordion items={faqItems} idPrefix="allgemeine-fragen" />
+    </div>
+  </section>
+
+  <CTASection
+    title="Noch Fragen?"
+    primaryHref={contactLinks.whatsapp.href}
+    primaryLabel="WhatsApp starten"
+    secondaryHref="/de/beratung/"
+    secondaryLabel="Beratungsgespräch anfragen"
+  >
+    <p>Wenn deine Frage hier nicht beantwortet wurde, freue ich mich auf deine Nachricht. Gemeinsam finden wir heraus, was für dich sinnvoll sein könnte.</p>
+  </CTASection>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote>
+        <h2>Kurzer Hinweis</h2>
+        <p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung.<br />Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .faq-layout { max-width: 920px; }
+  .compliance-section { padding: 0 0 var(--space-80); }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  @media (min-width: 768px) {
+    .section { padding-block: var(--space-96); }
+  }
+  @media (min-width: 1024px) {
+    .section { padding-block: var(--space-120); }
+  }
+</style>

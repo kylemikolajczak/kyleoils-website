@@ -1,0 +1,40 @@
+---
+interface Step {
+  title: string;
+  paragraphs: string[];
+}
+
+interface Props {
+  steps: Step[];
+}
+
+const { steps } = Astro.props;
+---
+
+<ol class="step-list">
+  {steps.map((step) => (
+    <li class="step-list__item">
+      <h3>{step.title}</h3>
+      <div>
+        {step.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    </li>
+  ))}
+</ol>
+
+<style>
+  .step-list { display: grid; gap: var(--space-20); margin: 0; padding: 0; list-style: none; }
+  .step-list__item { position: relative; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
+  .step-list__item::before { content: ''; position: absolute; inset: 0 auto 0 0; width: 4px; border-radius: var(--radius-card) 0 0 var(--radius-card); background: var(--color-sage-green); }
+  h3 { margin: 0 0 var(--space-12); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
+  div { color: var(--color-text-secondary); }
+  p { margin: 0 0 var(--space-12); }
+  p:last-child { margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .step-list { gap: var(--space-24); }
+    .step-list__item { padding: var(--space-32); }
+  }
+  @media (min-width: 1024px) {
+    h3 { font-size: var(--font-size-h3-desktop); }
+  }
+</style>

@@ -1,0 +1,47 @@
+---
+import { englishMainNavigation, mainNavigation } from '../../data/navigation';
+import type { Locale } from '../../data/locales';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import MobileMenu from './MobileMenu.astro';
+
+interface Props {
+  locale?: Locale;
+  currentPath: string;
+}
+
+const { locale = 'de', currentPath } = Astro.props;
+const navigation = locale === 'de' ? mainNavigation : englishMainNavigation;
+const homeHref = locale === 'de' ? '/de/' : '/en/';
+const claim = locale === 'de' ? 'Natürliche Routinen. Persönliche Beratung.' : 'Natural routines. Personal support.';
+const navigationLabel = locale === 'de' ? 'Hauptnavigation' : 'Main navigation';
+const consultationHref = locale === 'de' ? '/de/beratung/' : '/en/consultation/';
+const consultationLabel = locale === 'de' ? 'Beratung anfragen' : 'Request a Consultation';
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href={homeHref}>
+      <span>Kyle Daniel Mikolajczak</span>
+      <small>{claim}</small>
+    </a>
+    <nav class="desktop-navigation" aria-label={navigationLabel}>
+      <ul>{navigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul>
+    </nav>
+    <div class="desktop-language"><LanguageSwitcher {locale} {currentPath} /></div>
+    <a class="header-cta" href={consultationHref}>{consultationLabel}</a>
+    <MobileMenu {locale} {currentPath} />
+  </div>
+</header>
+
+<style>
+  .site-header { border-bottom: 1px solid rgb(216 199 173 / 55%); background: var(--color-warm-white); }
+  .header-inner { min-height: 72px; display: flex; align-items: center; gap: var(--space-24); }
+  .brand { margin-right: auto; display: grid; color: var(--color-text-primary); font-weight: var(--font-weight-semibold); line-height: 1.2; text-decoration: none; }
+  .brand small { display: none; color: var(--color-text-secondary); font-size: 12px; font-weight: var(--font-weight-regular); }
+  .desktop-navigation, .desktop-language, .header-cta { display: none; }
+  ul { display: flex; gap: var(--space-20); margin: 0; padding: 0; list-style: none; }
+  nav a { font-size: var(--font-size-small); text-decoration: none; }
+  .header-cta { min-height: 48px; align-items: center; padding: 0 var(--space-20); border-radius: var(--radius-button); background: var(--color-deep-forest); color: var(--color-warm-white); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  @media (min-width: 520px) { .brand small { display: block; } }
+  @media (min-width: 1180px) { .header-inner { min-height: 88px; } .desktop-navigation, .desktop-language, .header-cta { display: flex; } .desktop-language { align-items: center; } }
+</style>

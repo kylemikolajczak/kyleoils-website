@@ -1,0 +1,46 @@
+---
+import { englishFooterData, footerData } from '../../data/footer';
+import type { Locale } from '../../data/locales';
+
+interface Props { locale?: Locale; }
+const { locale = 'de' } = Astro.props;
+const data = locale === 'de' ? footerData : englishFooterData;
+const labels = locale === 'de'
+  ? { main: 'Navigation im Footer', mainTitle: 'Navigation', additional: 'Weitere Seiten', contact: 'Kontakt', official: 'Offizielle Links', legal: 'Rechtliches' }
+  : { main: 'Footer navigation', mainTitle: 'Navigation', additional: 'More pages', contact: 'Contact', official: 'Official links', legal: 'Legal' };
+const independenceNote = locale === 'de'
+  ? 'Kyle Daniel Mikolajczak ist doTERRA Wellness Advocate und arbeitet unabhängig. doTERRA ist der Produktpartner, nicht die Hauptmarke dieser Website.'
+  : 'Kyle Daniel Mikolajczak is an independent doTERRA Wellness Advocate. doTERRA is the product partner, not the primary brand of this website.';
+---
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>{data.brand}</strong>
+      <p>{data.claim}</p>
+      <p>{data.description}</p>
+    </div>
+    <nav aria-label={labels.main}><h2>{labels.mainTitle}</h2><ul>{data.mainNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
+    <nav aria-label={labels.additional}><h2>{labels.additional}</h2><ul>{data.additionalNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
+    <nav aria-label={labels.contact}><h2>{labels.contact}</h2><ul>{data.contactLinks.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
+    <nav aria-label={labels.official}><h2>{labels.official}</h2><ul>{data.officialLinks.map((item) => <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a></li>)}</ul></nav>
+    <nav aria-label={labels.legal}><h2>{labels.legal}</h2><ul>{data.legalNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
+  </div>
+  <div class="container footer-bottom">
+    <p>© {new Date().getFullYear()} Kyle Daniel Mikolajczak</p>
+    <p>{independenceNote}</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer { padding: var(--space-64) 0 var(--space-32); background: var(--color-warm-anthracite); color: var(--color-text-inverted); }
+  .footer-grid { display: grid; gap: var(--space-40); }
+  h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-body-mobile); }
+  p { color: var(--color-linen); }
+  ul { display: grid; gap: var(--space-8); margin: 0; padding: 0; list-style: none; }
+  a { color: var(--color-linen); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .footer-bottom { margin-top: var(--space-48); padding-top: var(--space-24); border-top: 1px solid rgb(239 230 216 / 25%); font-size: var(--font-size-small); }
+  @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .footer-grid { grid-template-columns: 1.5fr repeat(5, 1fr); } }
+</style>

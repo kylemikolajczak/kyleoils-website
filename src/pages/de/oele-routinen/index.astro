@@ -1,0 +1,258 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import CTAGroup from '../../../components/cta/CTAGroup.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
+import TopicCard from '../../../components/cards/TopicCard.astro';
+import HeroSplit from '../../../components/sections/HeroSplit.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { contactLinks } from '../../../data/externalLinks';
+
+const routineTopics = [
+  {
+    title: 'Ruhe & Stress',
+    paragraphs: [
+      'Viele Menschen funktionieren den ganzen Tag und merken erst spät, wie voll ihr Kopf eigentlich ist.',
+      'Eine kleine Routine kann helfen, bewusst einen Moment rauszunehmen und den Tag ruhiger zu gestalten.',
+      'Dabei kann es um Duft, Atmung, Umgebung, Pausen oder kleine Rituale gehen.',
+      'Ätherische Öle können hier ein Teil der Routine sein, wenn sie passend und verantwortungsvoll eingesetzt werden.',
+    ],
+    cta: 'Ruhe-Routine besprechen',
+  },
+  {
+    title: 'Schlaf & Abendroutine',
+    paragraphs: [
+      'Ein guter Abend beginnt oft nicht erst im Bett.',
+      'Viele Menschen wünschen sich einen bewussteren Übergang vom Tag in die Nacht.',
+      'Eine Abendroutine kann helfen, den Tag klarer abzuschließen und eine ruhigere Atmosphäre zu schaffen.',
+      'Das kann zum Beispiel über Raumduft, ein festes Ritual, eine kurze Pause oder eine einfache Anwendung geschehen.',
+      'Wichtig ist, dass die Routine zu deinem Leben passt und nicht wie eine weitere Aufgabe wirkt.',
+    ],
+    cta: 'Abendroutine einordnen lassen',
+  },
+  {
+    title: 'Energie & Fokus',
+    paragraphs: [
+      'Manchmal braucht der Tag mehr Klarheit.',
+      'Viele Menschen suchen morgens, im Arbeitsalltag oder zwischendurch eine einfache Möglichkeit, bewusster in den Tag zu gehen.',
+      'Hier können Routinen rund um Duft, Struktur, Bewegung, Frische oder hochwertige Wellness-Produkte interessant sein.',
+      'Es geht nicht darum, sich künstlich zu pushen.',
+      'Es geht darum, bewusste Momente zu schaffen, die dich in deinem Alltag unterstützen können.',
+    ],
+    cta: 'Tagesroutine besprechen',
+  },
+  {
+    title: 'Familie & Alltag',
+    paragraphs: [
+      'Gerade im Familienalltag soll eine Routine einfach, sicher und realistisch sein.',
+      'Eltern möchten oft natürliche Möglichkeiten kennenlernen, sind aber verständlicherweise vorsichtig.',
+      'Das ist gut so.',
+      'Bei Familie und Kindern ist eine verantwortungsvolle Einordnung besonders wichtig.',
+      'Nicht jedes Öl, jede Anwendung oder jede Empfehlung passt automatisch für jede Situation.',
+      'Ich helfe dir dabei, ruhig und verständlich zu schauen, was sinnvoll sein kann und worauf du achten solltest.',
+    ],
+    cta: 'Familienroutine besprechen',
+  },
+  {
+    title: 'Haushalt & natürliche Alternativen',
+    paragraphs: [
+      'Viele Menschen möchten ihr Zuhause bewusster gestalten und weniger klassische chemische Produkte verwenden.',
+      'Ätherische Öle und natürliche Produkte können hier eine schöne Rolle spielen.',
+      'Zum Beispiel für Raumduft, Frische, Reinigung oder kleine Haushaltsroutinen.',
+      'Auch hier gilt:',
+      'Nicht alles muss sofort umgestellt werden.',
+      'Oft reicht ein einfacher erster Schritt, der sich gut anfühlt und leicht umsetzen lässt.',
+    ],
+    cta: 'Natürliche Haushaltsroutine besprechen',
+  },
+  {
+    title: 'Nahrungsergänzung & langfristige Wellness',
+    paragraphs: [
+      'Neben ätherischen Ölen bietet doTERRA auch hochwertige Wellness-Produkte und Nahrungsergänzung.',
+      'Für manche Menschen ist das interessant, wenn sie langfristig bewusster leben und ihre täglichen Routinen ergänzen möchten.',
+      'Dazu können Themen wie allgemeines Wohlbefinden, bewusste Ernährung, Alltag, Energie, Balance oder Systeme wie MetaPWR gehören.',
+      'Wichtig ist auch hier eine ehrliche Einordnung.',
+      'Nicht jedes Produkt passt zu jedem Menschen. Deshalb schaue ich mit dir, was zu deinem Ziel, deinem Alltag und deinem aktuellen Einstieg passt.',
+    ],
+    cta: 'Wellness-Routine besprechen',
+  },
+];
+---
+
+<PageLayout
+  title="Ätherische Öle und natürliche Routinen"
+  description="Ätherische Öle müssen nicht kompliziert sein."
+>
+  <HeroSplit
+    title="Ätherische Öle einfach in den Alltag integrieren"
+    primaryHref="/de/beratung/"
+    primaryLabel="Passende Routine besprechen"
+    secondaryHref={contactLinks.whatsapp.href}
+    secondaryLabel="WhatsApp starten"
+    imageSrc="/assets/images/products/essential-oils-display.jpg"
+    imageAlt="Ätherische Öle übersichtlich in einer Holzhalterung"
+    imageWidth={2400}
+    imageHeight={3600}
+    imagePosition="54% center"
+  >
+    <p>Ätherische Öle müssen nicht kompliziert sein.</p>
+    <p>Für viele Menschen beginnt der Einstieg nicht mit einem bestimmten Produkt, sondern mit einer einfachen Frage:</p>
+    <p>Was wünsche ich mir im Alltag?</p>
+    <p>Mehr Ruhe.<br />Einen bewussteren Abend.<br />Mehr Energie am Morgen.<br />Ein angenehmeres Zuhause.<br />Natürliche Alternativen im Haushalt.<br />Mehr Struktur für kleine Wellness-Routinen.</p>
+    <p>Genau hier können ätherische Öle und natürliche Routinen interessant werden.</p>
+    <p>Nicht als schnelle Lösung für alles.<br />Nicht als Ersatz für medizinische Behandlung.<br />Sondern als bewusste Begleiter im Alltag.</p>
+    <p>Ich helfe dir dabei, diese Möglichkeiten verständlich einzuordnen und herauszufinden, was wirklich zu dir passt.</p>
+  </HeroSplit>
+
+  <section class="section section--cream">
+    <div class="container narrow-layout">
+      <SectionIntro title="Erst der Alltag, dann das Produkt">
+        <p>Viele Menschen starten mit der Frage:</p>
+        <p>„Welches Öl brauche ich?“</p>
+        <p>Aus meiner Sicht ist die bessere Frage:</p>
+        <p>„Was soll in meinem Alltag leichter, ruhiger oder bewusster werden?“</p>
+        <p>Erst wenn klar ist, worum es wirklich geht, macht eine Produktempfehlung Sinn.</p>
+        <p>Vielleicht brauchst du keine große Auswahl.<br />Vielleicht reicht ein einfacher Einstieg.<br />Vielleicht passt ein Starter-Set.<br />Vielleicht geht es erstmal nur darum, Anwendung und Möglichkeiten zu verstehen.</p>
+        <p>Meine Beratung hilft dir, nicht blind Produkte zu kaufen, sondern bewusst zu starten.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-layout">
+      <div>
+        <SectionIntro title="Was natürliche Routinen bedeuten">
+          <p>Eine natürliche Routine ist kein kompliziertes Programm.</p>
+          <p>Es kann ein kleiner Moment sein, den du regelmäßig in deinen Alltag einbaust.</p>
+          <p>Ein Duft am Morgen.<br />Ein ruhiger Abschluss am Abend.<br />Eine bewusste Pause zwischendurch.<br />Ein angenehmer Raumduft.<br />Eine natürliche Alternative im Haushalt.<br />Ein fester Moment für dich oder deine Familie.</p>
+          <p>Das Ziel ist nicht Perfektion.</p>
+          <p>Das Ziel ist, einfache Dinge zu finden, die du wirklich umsetzt und die sich gut in dein Leben integrieren lassen.</p>
+        </SectionIntro>
+      </div>
+      <ResponsiveImage
+        src="/assets/images/products/diffuser-lemon.jpg"
+        alt="Diffuser und ätherisches Zitronenöl in einer ruhigen Umgebung"
+        width={3600}
+        height={2400}
+        variant="portrait-wide"
+        position="58% center"
+      />
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container">
+      <SectionIntro title="Typische Themen, bei denen ich dich begleite" />
+      <div class="topic-grid">
+        {routineTopics.map((topic) => (
+          <TopicCard title={topic.title}>
+            {topic.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+            <CTAGroup primaryHref="/de/beratung/" primaryLabel={topic.cta} />
+          </TopicCard>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--nature">
+    <div class="container narrow-layout">
+      <SectionIntro title="Warum persönliche Einordnung hilfreich ist">
+        <p>Die doTERRA Produktwelt ist groß.</p>
+        <p>Das ist einerseits spannend, kann am Anfang aber auch überfordern.</p>
+        <p>Einzelöle.<br />Ölmischungen.<br />Starter-Sets.<br />Pflegeprodukte.<br />Haushaltsprodukte.<br />Nahrungsergänzung.<br />Wellness-Systeme.</p>
+        <p>Wenn du alleine durch den Shop gehst, ist es nicht immer leicht zu erkennen, was wirklich zu deinem Anliegen passt.</p>
+        <p>Deshalb ist der beste erste Schritt oft kein Kauf, sondern ein kurzes Gespräch.</p>
+        <p>Wir klären, was du suchst, was du bereits kennst und welcher Einstieg für dich sinnvoll sein könnte.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container split-layout split-layout--reverse">
+      <ResponsiveImage
+        src="/assets/images/products/product-detail-01.png"
+        alt="Ätherische Öle auf einem Holzteller in warmem Tageslicht"
+        width={1672}
+        height={941}
+        variant="portrait-wide"
+        position="62% center"
+      />
+      <div>
+        <SectionIntro title="So kann dein Einstieg aussehen">
+          <p>Du schreibst mir kurz, was dich interessiert.</p>
+          <p>Ich stelle dir ein paar einfache Fragen, damit ich dein Anliegen besser verstehe.</p>
+          <p>Dann ordnen wir die Möglichkeiten ein.</p>
+          <p>Das kann eine kleine Routine sein.<br />Ein einzelnes Produkt.<br />Ein Starter-Set.<br />Ein doTERRA Kundenkonto.<br />Oder erstmal nur eine klare Antwort auf deine Fragen.</p>
+          <p>Wenn du über mich startest, kannst du bei den meisten Produkten mit einem offiziellen doTERRA Kundenkonto bis zu 25 % sparen und hast gleichzeitig einen persönlichen Ansprechpartner an deiner Seite.</p>
+        </SectionIntro>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow-layout">
+      <SectionIntro title="Was mir wichtig ist">
+        <p>Ich möchte, dass du verstehst, was du nutzt.</p>
+        <p>Ich möchte, dass du dich sicher fühlst.</p>
+        <p>Ich möchte, dass du nicht mehr kaufst, als für deinen Einstieg sinnvoll ist.</p>
+        <p>Und ich möchte, dass du auch nach dem Kauf weißt, wie du deine Produkte im Alltag einsetzen kannst.</p>
+        <p>Gute Routinen entstehen nicht durch Druck.</p>
+        <p>Sie entstehen durch Klarheit, Einfachheit und passende Begleitung.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <CTASection
+    title="Der einfachste nächste Schritt"
+    primaryHref="/de/beratung/"
+    primaryLabel="Passende Routine besprechen"
+    secondaryHref={contactLinks.whatsapp.href}
+    secondaryLabel="WhatsApp starten"
+  >
+    <p>Du musst nicht wissen, welches Öl du brauchst.</p>
+    <p>Du musst nicht wissen, welches Set richtig ist.</p>
+    <p>Du musst auch noch nicht sicher sein, ob doTERRA überhaupt zu dir passt.</p>
+    <p>Schreib mir einfach, welches Thema dich interessiert.</p>
+    <p>Dann finden wir heraus, welcher nächste Schritt sinnvoll ist.</p>
+  </CTASection>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote>
+        <h2>Kurzer Hinweis</h2>
+        <p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung.<br />Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
+        <p>Ätherische Öle, Wellness-Produkte und natürliche Routinen können Teil eines bewussten Alltags sein, ersetzen aber keine ärztliche oder therapeutische Betreuung.</p>
+        <p>Wenn du gesundheitliche Beschwerden hast oder medizinische Fragen klären möchtest, wende dich bitte an einen Arzt, Heilpraktiker oder eine entsprechend qualifizierte Fachperson.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .section--sage { background: rgb(168 184 160 / 20%); }
+  .section--nature { position: relative; isolation: isolate; background: var(--color-soft-cream); }
+  .section--nature::before { content: ''; position: absolute; inset: 0; z-index: -2; background: url('/assets/images/nature/nature-heath-hero-02.png') center 52% / cover no-repeat; }
+  .section--nature::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(250 247 241 / 76%); }
+  .narrow-layout { max-width: var(--container-text); }
+  .split-layout { display: grid; gap: var(--space-40); align-items: center; }
+  .topic-grid { display: grid; gap: var(--space-20); }
+  .topic-grid :global(.topic-card > div) { display: flex; height: calc(100% - 52px); flex-direction: column; }
+  .topic-grid :global(.topic-card p) { margin: 0 0 var(--space-12); }
+  .topic-grid :global(.topic-card p:last-of-type) { margin-bottom: var(--space-24); }
+  .topic-grid :global(.topic-card .cta-group) { margin-top: auto; }
+  .compliance-section { padding: 0 0 var(--space-80); }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  .compliance-section :global(p + p) { margin-top: var(--space-12); }
+  @media (min-width: 768px) {
+    .section { padding-block: var(--space-96); }
+    .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+  }
+  @media (min-width: 1024px) {
+    .section { padding-block: var(--space-120); }
+    .split-layout { grid-template-columns: minmax(0, 1fr) minmax(360px, .8fr); gap: var(--space-80); }
+    .split-layout--reverse { grid-template-columns: minmax(360px, .8fr) minmax(0, 1fr); }
+  }
+</style>

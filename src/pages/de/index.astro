@@ -1,0 +1,265 @@
+---
+import ComplianceNote from '../../components/compliance/ComplianceNote.astro';
+import CTAGroup from '../../components/cta/CTAGroup.astro';
+import CTASection from '../../components/cta/CTASection.astro';
+import HeroSplit from '../../components/sections/HeroSplit.astro';
+import ResponsiveImage from '../../components/global/ResponsiveImage.astro';
+import SectionIntro from '../../components/sections/SectionIntro.astro';
+import TrustBar from '../../components/sections/TrustBar.astro';
+import PageLayout from '../../layouts/PageLayout.astro';
+import { contactLinks } from '../../data/externalLinks';
+---
+
+<PageLayout
+  title="Natürliche Routinen und doTERRA Beratung"
+  description="doTERRA verständlich kennenlernen, passende Produkte einordnen und mit einfachen Routinen starten, die wirklich zu deinem Leben passen."
+>
+  <HeroSplit
+    title="Natürliche Routinen für mehr Balance im Alltag"
+    primaryHref="/de/beratung/"
+    primaryLabel="Kostenloses Beratungsgespräch anfragen"
+    secondaryHref={contactLinks.whatsapp.href}
+    secondaryLabel="WhatsApp starten"
+    imageSrc="/assets/images/kyle/hero-kyle.png"
+    imageAlt="Kyle Daniel Mikolajczak in ruhiger, heller Umgebung"
+    imageWidth={1537}
+    imageHeight={1023}
+    imagePosition="75% center"
+  >
+    <p>doTERRA verständlich kennenlernen, passende Produkte einordnen und mit einfachen Routinen starten, die wirklich zu deinem Leben passen.</p>
+    <p>Ich begleite dich dabei ruhig, ehrlich und persönlich. Erst klären wir, was du brauchst. Danach schauen wir, ob ätherische Öle, Wellness-Produkte oder ein doTERRA Kundenkonto für dich sinnvoll sind.</p>
+    <p>Wenn du über mich startest, hast du nicht nur Zugang zu hochwertigen doTERRA Produkten, sondern auch einen Ansprechpartner an deiner Seite. Zusätzlich kannst du mit einem offiziellen doTERRA Kundenkonto bei den meisten Produkten bis zu 25 % sparen.</p>
+  </HeroSplit>
+
+  <section class="trust-section" aria-label="Vertrauen und Qualifikation">
+    <div class="container">
+      <TrustBar>
+        <p>doTERRA Wellness Advocate</p>
+        <p>doTERRA Europe Essential Oils Specialist</p>
+        <p>Persönliche Beratung</p>
+      </TrustBar>
+    </div>
+  </section>
+
+  <section class="section section--nature">
+    <div class="container narrow-layout">
+      <SectionIntro title="Erst verstehen. Dann entscheiden.">
+        <p>Vielleicht hast du schon von ätherischen Ölen gehört, weißt aber nicht, womit du anfangen sollst.</p>
+        <p>Vielleicht möchtest du bewusster leben, deinen Alltag natürlicher gestalten oder hochwertige Produkte kennenlernen, ohne dich direkt durch einen Shop zu klicken.</p>
+        <p>Genau dafür ist diese Website da.</p>
+        <p>Hier bekommst du Orientierung, klare Antworten und einen einfachen ersten Schritt. Du musst nichts sofort entscheiden. Du kannst erstmal fragen.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionIntro title="Kommt dir das bekannt vor?" />
+      <ul class="statement-grid">
+        <li>Du wünschst dir mehr Ruhe in einem vollen Alltag.</li>
+        <li>Du möchtest abends besser abschalten.</li>
+        <li>Du suchst mehr Energie und Klarheit für deinen Tag.</li>
+        <li>Du möchtest natürliche Alternativen für Haushalt, Wohlbefinden oder Familie kennenlernen.</li>
+        <li>Du interessierst dich für hochwertige Nahrungsergänzung und langfristige Gesundheit.</li>
+        <li>Du hast von ätherischen Ölen gehört, bist aber unsicher bei Anwendung, Auswahl oder Einstieg.</li>
+      </ul>
+      <div class="section-closing">
+        <p>Dann kann ein kurzes Gespräch helfen, Ordnung in die vielen Möglichkeiten zu bringen.</p>
+        <CTAGroup primaryHref="/de/beratung/" primaryLabel="Herausfinden, was zu dir passt" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container split-layout">
+      <div>
+        <SectionIntro title="Beratung, die bei dir beginnt">
+          <p>Meine Beratung startet nicht mit einer Produktliste.</p>
+          <p>Sie startet mit deiner Situation.</p>
+          <p>Was möchtest du verändern?<br />Was beschäftigt dich gerade?<br />Was soll einfacher, ruhiger oder bewusster werden?</p>
+          <p>Erst danach empfehle ich dir passende doTERRA Produkte oder einfache Routinen. Manchmal ist das ein einzelnes Öl. Manchmal ein Starter-Set. Manchmal ein Wellness-System. Und manchmal ist der erste Schritt einfach nur eine ehrliche Einschätzung.</p>
+          <p>Mir ist wichtig, dass du dich sicher fühlst und verstehst, was du nutzt.</p>
+        </SectionIntro>
+        <CTAGroup primaryHref="/de/beratung/" primaryLabel="Beratungsgespräch anfragen" secondaryHref={contactLinks.whatsapp.href} secondaryLabel="Frage per WhatsApp stellen" />
+      </div>
+      <ResponsiveImage
+        src="/assets/images/workshops/consultation-01.png"
+        alt="Persönliche Beratung zu ätherischen Ölen in ruhiger Atmosphäre"
+        width={1672}
+        height={941}
+        variant="portrait"
+        position="50% center"
+      />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionIntro title="Was du von mir bekommst" />
+      <ul class="benefit-list">
+        <li>Ein kostenloses Erstgespräch.</li>
+        <li>Eine ehrliche Einschätzung, was für dich sinnvoll sein könnte.</li>
+        <li>Verständliche Erklärung ohne Fachchinesisch.</li>
+        <li>Produktempfehlungen, wenn sie wirklich zu deinem Anliegen passen.</li>
+        <li>Einfache Routinen für Alltag, Ruhe, Energie, Familie oder Haushalt.</li>
+        <li>Hilfe beim Einstieg in doTERRA.</li>
+        <li>Begleitung nach dem Kauf, falls Fragen entstehen.</li>
+        <li>Zugang zu Workshops, Informationsabenden und passenden Materialien.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container split-layout split-layout--reverse">
+      <ResponsiveImage
+        src="/assets/images/certificates/eos-specialist-badge.png"
+        alt="doTERRA Europe Essential Oils Specialist Zertifikat"
+        width={4167}
+        height={4167}
+        variant="badge"
+        scale={1.365}
+      />
+      <div>
+        <SectionIntro title="Warum mit Kyle starten?">
+          <p>Du bekommst bei mir nicht einfach einen Shop-Link.</p>
+          <p>Ich nehme mir Zeit, höre zu und helfe dir, die Produktwelt sinnvoll einzuordnen. So musst du nicht raten, welches Öl, welches Set oder welche Routine zu dir passt.</p>
+          <p>Wenn du über mich ein offizielles doTERRA Kundenkonto eröffnest, kannst du bei den meisten Produkten bis zu 25 % sparen. Gleichzeitig hast du jemanden, der dir auch danach weiterhilft.</p>
+          <p>Ich sage dir ehrlich, wenn etwas nicht passt.</p>
+          <p>Für mich ist gute Beratung nicht, möglichst viel zu empfehlen. Gute Beratung bedeutet, dass du am Ende eine Entscheidung triffst, die sich für dich richtig anfühlt.</p>
+        </SectionIntro>
+        <CTAGroup primaryHref="/de/beratung/" primaryLabel="Mit Kyle sprechen" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-layout">
+      <div>
+        <SectionIntro title="doTERRA verständlich erklärt">
+          <p>doTERRA ist ein internationales Unternehmen für ätherische Öle und Wellness-Produkte.</p>
+          <p>Dazu gehören ätherische Einzelöle, Ölmischungen, Pflegeprodukte, Haushaltsprodukte, Nahrungsergänzung und Wellness-Systeme wie MetaPWR.</p>
+          <p>Am Anfang kann diese Vielfalt schnell unübersichtlich wirken.</p>
+          <p>Deshalb ordne ich doTERRA nicht zuerst nach Produkten ein, sondern nach Alltagsthemen:</p>
+        </SectionIntro>
+        <ul class="simple-list">
+          <li>Ruhe und Entspannung.</li>
+          <li>Schlaf- und Abendroutine.</li>
+          <li>Energie und Fokus.</li>
+          <li>Familie und Alltag.</li>
+          <li>Natürlicher Haushalt.</li>
+          <li>Langfristige Wellness-Routinen.</li>
+          <li>Hochwertige Nahrungsergänzung.</li>
+        </ul>
+        <p>So wird aus einer großen Produktwelt ein klarer, verständlicher Einstieg.</p>
+        <CTAGroup primaryHref="/de/beratung/" primaryLabel="Persönliche Empfehlung anfragen" secondaryHref="/de/doterra-verstehen/" secondaryLabel="Mehr über doTERRA erfahren" />
+      </div>
+      <ResponsiveImage
+        src="/assets/images/products/product-detail-01.png"
+        alt="Ätherische Öle auf einem Holzteller in warmem Tageslicht"
+        width={1672}
+        height={941}
+        variant="portrait"
+        position="62% center"
+      />
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container split-layout split-layout--reverse">
+      <ResponsiveImage
+        src="/assets/images/workshops/workshop-01.png"
+        alt="Teilnehmerinnen bei einem Workshop zu ätherischen Ölen"
+        width={1536}
+        height={1024}
+        position="center"
+      />
+      <div>
+        <SectionIntro title="Workshops, Öl-Abende und Kooperationen">
+          <p>Neben der 1:1 Begleitung biete ich auch Workshops, Öl-Abende und Informationsveranstaltungen an.</p>
+          <p>Diese Formate eignen sich für private Gruppen, Unternehmen, Praxen, Studios und Organisationen, die ätherische Öle und natürliche Routinen verständlich kennenlernen möchten.</p>
+          <p>Mögliche Formate sind Wellness-Workshops, Vorträge, Firmenveranstaltungen oder Kooperationen mit Yoga-Studios, Fitnessstudios, Praxen, Kosmetikstudios, Hotels und Spas.</p>
+          <p>Der Fokus bleibt auch hier ruhig und hochwertig: informieren, erleben, Fragen beantworten.</p>
+        </SectionIntro>
+        <CTAGroup primaryHref="/de/workshops/" primaryLabel="Workshop oder Kooperation anfragen" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-layout">
+      <div>
+        <SectionIntro title="Wer ich bin">
+          <p>Ich bin Kyle Daniel Mikolajczak und begleite Menschen dabei, doTERRA, ätherische Öle und natürliche Routinen verständlich kennenzulernen.</p>
+          <p>Meine zwölf Jahre bei der Bundeswehr haben mich geprägt. Disziplin, Zuverlässigkeit, Verantwortungsbewusstsein und klare Kommunikation gehören bis heute zu meiner Arbeitsweise.</p>
+          <p>Heute verbinde ich diese Haltung mit meiner Begeisterung für natürliche Lösungen, Prävention und bewusste Alltagsroutinen.</p>
+          <p>Als doTERRA Wellness Advocate und doTERRA Europe Essential Oils Specialist möchte ich dir helfen, gute Entscheidungen zu treffen.</p>
+          <p>Nicht kompliziert. Nicht aufdringlich. Sondern klar, ehrlich und menschlich.</p>
+        </SectionIntro>
+        <CTAGroup primaryHref="/de/ueber-kyle/" primaryLabel="Mehr über Kyle erfahren" />
+      </div>
+      <ResponsiveImage
+        src="/assets/images/kyle/kyle-deepblue.png"
+        alt="Kyle Daniel Mikolajczak mit einer Flasche Deep Blue"
+        width={1537}
+        height={1023}
+        variant="portrait-wide"
+        position="84% center"
+      />
+    </div>
+  </section>
+
+  <CTASection
+    title="Dein erster Schritt muss nicht groß sein"
+    primaryHref="/de/beratung/"
+    primaryLabel="Kostenloses Beratungsgespräch anfragen"
+    secondaryHref={contactLinks.whatsapp.href}
+    secondaryLabel="WhatsApp starten"
+  >
+    <p>Du musst noch nicht wissen, welches Öl du brauchst.</p>
+    <p>Du musst kein Set auswählen.</p>
+    <p>Du musst auch nicht sicher sein, ob doTERRA überhaupt zu dir passt.</p>
+    <p>Schreib mir einfach, was dich interessiert oder wobei du Orientierung suchst.</p>
+    <p>Dann finden wir den nächsten sinnvollen Schritt.</p>
+  </CTASection>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote>
+        <h2>Kurzer Hinweis</h2>
+        <p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung.<br />Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
+        <p>Mein Fokus liegt auf verständlicher Orientierung, natürlichen Alltagsroutinen, hochwertiger Produktinformation und persönlicher Begleitung.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .trust-section { padding: 0 0 var(--space-64); }
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .section--nature { position: relative; isolation: isolate; background: var(--color-soft-cream); }
+  .section--nature::before { content: ''; position: absolute; inset: 0; z-index: -2; background: url('/assets/images/nature/nature-heath-hero-01.png') center 54% / cover no-repeat; }
+  .section--nature::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(250 247 241 / 74%); }
+  .section--sage { background: rgb(168 184 160 / 20%); }
+  .narrow-layout { max-width: var(--container-text); }
+  .split-layout { display: grid; gap: var(--space-40); align-items: center; }
+  .statement-grid, .benefit-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
+  .statement-grid li, .benefit-list li { position: relative; padding: var(--space-24) var(--space-24) var(--space-24) var(--space-48); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
+  .statement-grid li::before, .benefit-list li::before { content: ''; position: absolute; left: var(--space-20); top: 29px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-sage-green); }
+  .section-closing { max-width: var(--container-text); margin-top: var(--space-40); }
+  .section-closing > p { margin: 0 0 var(--space-24); }
+  .simple-list { display: grid; gap: var(--space-8); margin: 0 0 var(--space-24); padding-left: var(--space-24); color: var(--color-text-secondary); }
+  .simple-list + p { margin: 0 0 var(--space-32); }
+  .compliance-section { padding: 0 0 var(--space-80); }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  .compliance-section :global(p + p) { margin-top: var(--space-12); }
+  @media (min-width: 768px) {
+    .section { padding-block: var(--space-96); }
+    .statement-grid, .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+  }
+  @media (min-width: 1024px) {
+    .section { padding-block: var(--space-120); }
+    .split-layout { grid-template-columns: minmax(0, 1fr) minmax(360px, .8fr); gap: var(--space-80); }
+    .split-layout--reverse { grid-template-columns: minmax(360px, .8fr) minmax(0, 1fr); }
+  }
+</style>

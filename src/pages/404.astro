@@ -1,0 +1,26 @@
+---
+import HeroSplit from '../components/sections/HeroSplit.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Seite nicht gefunden | Kyle Daniel Mikolajczak"
+  description="Die gewünschte Seite wurde nicht gefunden. Kehre zur Startseite zurück oder entdecke einen anderen Bereich der Website."
+  noindex
+>
+  <HeroSplit
+    title="Diese Seite wurde nicht gefunden."
+    primaryHref="/de/"
+    primaryLabel="Zur Startseite"
+    secondaryHref="/de/beratung/"
+    secondaryLabel="Beratung anfragen"
+    imageSrc="/assets/images/nature/nature-heath-hero-01.png"
+    imageAlt="Weg durch die Lüneburger Heide im warmen Morgenlicht"
+    imageWidth={1672}
+    imageHeight={941}
+    imagePosition="56% center"
+  >
+    <p>Manchmal führt ein Link ins Leere oder die gewünschte Seite existiert nicht mehr.</p>
+    <p>Kein Problem – du kannst jederzeit zur Startseite zurückkehren oder direkt einen anderen Bereich der Website besuchen.</p>
+  </HeroSplit>
+</BaseLayout>

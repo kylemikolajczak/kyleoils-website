@@ -1,0 +1,187 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import TopicCard from '../../../components/cards/TopicCard.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import HeroSplit from '../../../components/sections/HeroSplit.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { contactLinks } from '../../../data/externalLinks';
+
+const qualityPrinciples = [
+  'Sorgfältige Auswahl der Pflanzen',
+  'Weltweites Netzwerk',
+  'Hohe Qualitätsstandards',
+  'Umfangreiche Qualitätskontrollen',
+  'Fokus auf Reinheit',
+  'Transparenz',
+];
+
+const sourcingPrinciples = [
+  'Zusammenarbeit mit Bauern weltweit',
+  'Langfristige Partnerschaften',
+  'Faire Bezahlung',
+  'Nachhaltiger Anbau',
+  'Unterstützung lokaler Gemeinschaften',
+];
+
+const productAreas = [
+  'Ätherische Einzelöle',
+  'Synergy Mischungen',
+  'Nahrungsergänzung',
+  'Körperpflege',
+  'Spa & Hautpflege',
+  'Haushalt',
+  'Wellness Systeme',
+];
+
+const accountDetails = [
+  'Offizielles Kundenkonto direkt bei doTERRA',
+  'Persönlicher Ansprechpartner',
+  'Möglichkeit auf vergünstigte Einkaufspreise',
+  'Kein Kaufzwang',
+  'Kein Abo notwendig',
+  'Jeder entscheidet selbst',
+];
+---
+
+<PageLayout
+  title="doTERRA verstehen | Kyle Daniel Mikolajczak"
+  description="Erfahre verständlich, was doTERRA ist, wie das Unternehmen arbeitet und warum viele Menschen auf hochwertige ätherische Öle vertrauen."
+>
+  <HeroSplit
+    title="doTERRA verstehen"
+    primaryHref={contactLinks.whatsapp.href}
+    primaryLabel="WhatsApp starten"
+    secondaryHref="/de/beratung/"
+    secondaryLabel="Beratungsgespräch anfragen"
+    imageSrc="/assets/images/nature/nature-heath-hero-01.png"
+    imageAlt="Lüneburger Heide im warmen Licht"
+    imageWidth={1672}
+    imageHeight={941}
+    imagePosition="56% center"
+  >
+    <p>Vielleicht hast du schon von doTERRA gehört und möchtest besser verstehen, wofür das Unternehmen steht.</p>
+    <p>Auf dieser Seite findest du einen einfachen Überblick – ohne Verkaufsdruck und ohne komplizierte Fachbegriffe.</p>
+  </HeroSplit>
+
+  <section class="section section--cream">
+    <div class="container narrow-layout">
+      <SectionIntro title="Was ist doTERRA?">
+        <p>doTERRA wurde 2008 gegründet. Der Name bedeutet „Geschenk der Erde“.</p>
+        <p>Das Unternehmen ist eine internationale Wellnessfirma mit Fokus auf hochwertige ätherische Öle.</p>
+        <p>Ziel ist es, natürliche Routinen im Alltag zu unterstützen.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionIntro title="Was macht doTERRA besonders?">
+        <p>doTERRA legt Wert auf die Auswahl der Pflanzen, hohe Qualitätsstandards und nachvollziehbare Kontrollen.</p>
+      </SectionIntro>
+      <ul class="fact-grid" aria-label="Besondere Merkmale von doTERRA">
+        {qualityPrinciples.map((principle) => <li>{principle}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container split-layout">
+      <SectionIntro title="Co-Impact Sourcing®">
+        <p>Co-Impact Sourcing® beschreibt die Zusammenarbeit mit Bauern und Gemeinschaften in verschiedenen Regionen der Welt.</p>
+      </SectionIntro>
+      <ul class="check-list">
+        {sourcingPrinciples.map((principle) => <li>{principle}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container">
+      <SectionIntro title="Welche Produkte gibt es?">
+        <p>Das Sortiment umfasst verschiedene Bereiche für natürliche Routinen im Alltag.</p>
+      </SectionIntro>
+      <div class="topic-grid">
+        {productAreas.map((area) => <TopicCard title={area} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-layout">
+      <SectionIntro title="Wie funktioniert das Kundenkonto?">
+        <p>Ein offizielles Kundenkonto wird direkt bei doTERRA geführt.</p>
+        <p>Du entscheidest selbst, ob, wann und wie du bestellen möchtest.</p>
+      </SectionIntro>
+      <ul class="check-list account-list">
+        {accountDetails.map((detail) => <li>{detail}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--forest">
+    <div class="container narrow-layout">
+      <SectionIntro title="Ich begleite dich persönlich">
+        <p>Ich bin nicht der Hersteller der Produkte.</p>
+        <p>Meine Aufgabe ist es, dir zuzuhören, Fragen zu beantworten und gemeinsam herauszufinden, welche Möglichkeiten für dich sinnvoll sein könnten.</p>
+        <p>Auch nach dem Kauf begleite ich dich gern weiter.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote>
+        <h2>Kurzer Hinweis</h2>
+        <p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung.</p>
+        <p>Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+
+  <CTASection
+    title="Du möchtest mehr erfahren?"
+    primaryHref={contactLinks.whatsapp.href}
+    primaryLabel="WhatsApp starten"
+    secondaryHref="/de/beratung/"
+    secondaryLabel="Beratungsgespräch anfragen"
+  >
+    <p>Wenn du Fragen hast oder einfach verstehen möchtest, ob doTERRA zu dir passt, freue ich mich auf deine Nachricht.</p>
+  </CTASection>
+</PageLayout>
+
+<style>
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .section--sage { background: rgb(168 184 160 / 20%); }
+  .section--forest { background: var(--color-deep-forest); color: var(--color-text-inverted); }
+  .section--forest :global(.section-intro__copy) { color: var(--color-linen); }
+  .narrow-layout { max-width: var(--container-text); }
+  .split-layout { display: grid; gap: var(--space-40); align-items: start; }
+  .fact-grid,
+  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
+  .fact-grid li { min-height: 96px; display: flex; align-items: center; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
+  .check-list { align-content: start; }
+  .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
+  .check-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
+  .account-list { padding: var(--space-32); border-radius: var(--radius-section); background: var(--color-soft-cream); }
+  .topic-grid { display: grid; gap: var(--space-20); }
+  .topic-grid :global(.topic-card h3) { margin-bottom: 0; }
+  .compliance-section { padding: var(--space-64) 0 0; }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  .compliance-section :global(p + p) { margin-top: var(--space-8); }
+
+  @media (min-width: 768px) {
+    .section { padding-block: var(--space-96); }
+    .fact-grid,
+    .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .compliance-section { padding-top: var(--space-80); }
+  }
+
+  @media (min-width: 1024px) {
+    .section { padding-block: var(--space-120); }
+    .split-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); }
+    .fact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .topic-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+</style>

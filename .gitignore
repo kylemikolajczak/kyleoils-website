@@ -1,0 +1,29 @@
+# Dependencies and package-manager cache
+node_modules/
+.pnpm-store/
+
+# Astro build and generated files
+dist/
+.astro/
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local development and review artifacts
+.agents/
+review/

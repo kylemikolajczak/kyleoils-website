@@ -1,0 +1,26 @@
+---
+import { getLanguagePaths, type Locale } from '../../data/locales';
+
+interface Props {
+  locale: Locale;
+  currentPath: string;
+}
+
+const { locale, currentPath } = Astro.props;
+const paths = getLanguagePaths(currentPath);
+const label = locale === 'de' ? 'Sprache wechseln' : 'Switch language';
+---
+
+<nav class="language-switcher" aria-label={label}>
+  {locale === 'de' ? <strong aria-current="page">DE</strong> : <a href={paths.de} hreflang="de" lang="de">DE</a>}
+  <span aria-hidden="true">|</span>
+  {locale === 'en' ? <strong aria-current="page">EN</strong> : <a href={paths.en} hreflang="en" lang="en">EN</a>}
+</nav>
+
+<style>
+  .language-switcher { display: inline-flex; align-items: center; gap: var(--space-8); color: var(--color-text-secondary); font-size: var(--font-size-small); line-height: 1; white-space: nowrap; }
+  a, strong { min-width: 28px; padding: var(--space-8) var(--space-4); color: inherit; text-align: center; text-decoration: none; }
+  strong { color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
+  a:hover { color: var(--color-deep-forest); }
+  a:focus-visible { border-radius: var(--radius-button); outline: 2px solid var(--color-sage-green); outline-offset: 2px; }
+</style>

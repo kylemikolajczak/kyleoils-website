@@ -1,0 +1,316 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import CTAGroup from '../../../components/cta/CTAGroup.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import FAQAccordion from '../../../components/faq/FAQAccordion.astro';
+import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
+import TopicCard from '../../../components/cards/TopicCard.astro';
+import TrustCard from '../../../components/cards/TrustCard.astro';
+import HeroSplit from '../../../components/sections/HeroSplit.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import StepList from '../../../components/sections/StepList.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { contactLinks } from '../../../data/externalLinks';
+
+const consultationSteps = [
+  {
+    title: '1. You Get in Touch',
+    paragraphs: [
+      'You briefly tell me what you would like to discuss. You can do this via WhatsApp or email.',
+      'You do not need to prepare anything perfectly. A short sentence is enough.',
+    ],
+  },
+  {
+    title: '2. I Listen',
+    paragraphs: [
+      'We talk about what interests you, your goals and what is realistic in your daily routine.',
+      'It is important to me to understand first before recommending anything.',
+    ],
+  },
+  {
+    title: '3. We Look at Your Options',
+    paragraphs: [
+      'I explain which doTERRA products, routines or topics may be relevant to you.',
+      'The aim is not to recommend as much as possible, but to give you clarity.',
+    ],
+  },
+  {
+    title: '4. You Decide in Your Own Time',
+    paragraphs: [
+      'If something suits you, we discuss the next step.',
+      'This could be a product recommendation, a starter kit, a doTERRA customer account or simply more information for the time being.',
+    ],
+  },
+  {
+    title: '5. I Continue to Support You',
+    paragraphs: [
+      'If you get started, you will not be left on your own.',
+      'I help with questions about use, building your routine and using the products purposefully in daily life.',
+    ],
+  },
+];
+
+const expectations = [
+  'A calm, honest assessment.',
+  'Clear explanations without complicated terminology.',
+  'Recommendations that suit your needs.',
+  'No artificial urgency.',
+  'No exaggerated promises.',
+  'No claims that products can diagnose, treat or cure medical conditions.',
+  'Support when getting started with doTERRA.',
+  'Continued support after your purchase.',
+  'Clear communication and personal availability.',
+];
+
+const consultationTopics = [
+  {
+    title: 'Calm and Stress',
+    copy: 'For people who would like to bring conscious pauses, more calm and small rituals into daily life.',
+  },
+  {
+    title: 'Sleep and Evening Routine',
+    copy: 'For anyone who wants to bring the day to a clearer close and make their evening routine more pleasant.',
+  },
+  {
+    title: 'Energy and Focus',
+    copy: 'For people looking for greater clarity, structure and considered support in daily life.',
+  },
+  {
+    title: 'Family and Everyday Life',
+    copy: 'For parents and families who want to explore natural routines responsibly.',
+  },
+  {
+    title: 'Home and Natural Alternatives',
+    copy: 'For anyone who wants to use fewer conventional household products and take a more considered approach at home.',
+  },
+  {
+    title: 'Nutritional Supplements and Long-Term Wellness',
+    copy: 'For people interested in high-quality wellness support and systems such as MetaPWR.',
+  },
+  {
+    title: 'Getting Started with doTERRA and Customer Accounts',
+    copy: 'For anyone who wants to understand how to begin officially and which benefits may be available.',
+  },
+];
+
+const consultationFaqs = [
+  {
+    question: 'Do I Have to Buy Anything After the Conversation?',
+    answer: 'No. The conversation is first and foremost about giving you a clear starting point. You can then decide in your own time whether and how you would like to begin.',
+  },
+  {
+    question: 'Is the Consultation Free?',
+    answer: 'The first conversation is free. If special formats, workshops or detailed concepts are considered later, we discuss this clearly and transparently in advance.',
+  },
+  {
+    question: 'Can I Write Instead of Calling?',
+    answer: 'Yes. Many questions can also be clarified easily via WhatsApp or email.',
+  },
+  {
+    question: 'Will I Receive Specific Product Recommendations?',
+    answer: 'Yes, if they suit your needs. I only recommend what I believe can be explained and assessed meaningfully.',
+  },
+  {
+    question: 'Can I Ask Questions if I Already Have doTERRA Products?',
+    answer: 'Yes. If you already own products but rarely use them or feel unsure, I am happy to help you understand them.',
+  },
+  {
+    question: 'Is This Guidance a Substitute for a Doctor or Therapist?',
+    answer: 'No. My support is not a substitute for medical diagnosis or treatment. I do not claim that products can diagnose, treat or cure medical conditions.',
+  },
+];
+---
+
+<PageLayout
+  lang="en"
+  title="Personal doTERRA Consultation"
+  description="Are you interested in essential oils, natural routines or doTERRA, but still unsure where to begin?"
+>
+  <HeroSplit
+    title="A Personal doTERRA Consultation That Starts with You"
+    primaryHref="/en/consultation/"
+    primaryLabel="Request a Free Consultation"
+    secondaryHref={contactLinks.whatsapp.href}
+    secondaryLabel="Message Me on WhatsApp"
+    imageSrc="/assets/images/workshops/consultation-01.png"
+    imageAlt="Calm personal essential oil consultation at a wooden table"
+    imageWidth={1672}
+    imageHeight={941}
+    imagePosition="52% center"
+  >
+    <p>Are you interested in essential oils, natural routines or doTERRA, but still unsure where to begin?</p>
+    <p>A conversation with me is a simple first step.</p>
+    <p>My consultation does not begin with products, but with your situation. I want to understand what is on your mind, what you would like to change and which routines genuinely fit your daily life.</p>
+    <p>Only then do we consider whether doTERRA products could be right for you and which options may be a good fit.</p>
+  </HeroSplit>
+
+  <section class="section section--cream">
+    <div class="container split-layout">
+      <div>
+        <SectionIntro title="What We Discuss">
+          <p>Many people hear about essential oils and initially feel curious, but also somewhat overwhelmed.</p>
+          <p>Which oil may be useful?<br />How do you use it responsibly?<br />Which kit is right for getting started?<br />What suits family life, everyday routines, calm, energy or the home?<br />And how can you tell whether something genuinely supports your own goals?</p>
+          <p>This is exactly where I support you.</p>
+          <p>I explain the options clearly, calmly and without complicated jargon. You do not receive a one-size-fits-all recommendation, but an honest assessment shaped around your daily life.</p>
+        </SectionIntro>
+      </div>
+      <ResponsiveImage
+        src="/assets/images/products/product-detail-01.png"
+        alt="Essential oils on natural materials in warm light"
+        width={1672}
+        height={941}
+        variant="portrait-wide"
+        position="64% center"
+      />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow-layout">
+      <SectionIntro title="Who This Consultation Is For">
+        <p>This consultation may be right for you if you want to explore natural options without buying products blindly.</p>
+        <p>It can be particularly helpful if you:</p>
+      </SectionIntro>
+      <ul class="check-list">
+        <li>would like to bring more calm into daily life</li>
+        <li>want to make your evening routine more considered</li>
+        <li>are interested in energy, focus or long-term wellness</li>
+        <li>are looking for natural alternatives for your home or family</li>
+        <li>already know doTERRA but are not making meaningful use of it</li>
+        <li>have heard of essential oils but do not know how to begin</li>
+        <li>want a personal contact who explains the options honestly</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container">
+      <SectionIntro title="How the Consultation Works" />
+      <StepList steps={consultationSteps} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionIntro title="What You Can Expect from Me" />
+      <div class="trust-grid">
+        {expectations.map((expectation) => <TrustCard title={expectation} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container split-layout split-layout--reverse">
+      <ResponsiveImage
+        src="/assets/images/nature/nature-detail-01.png"
+        alt="Heather flowers in warm morning light"
+        width={1537}
+        height={1023}
+        variant="portrait-wide"
+        position="62% center"
+      />
+      <div>
+        <SectionIntro title="Why Starting Through Me Can Help">
+          <p>When you begin with doTERRA through me, you receive more than access to high-quality products.</p>
+          <p>You also have someone you can turn to for personal support.</p>
+          <p>With an official doTERRA customer account, you can save up to 25% on most products. At the same time, you receive support with selection, use and routines.</p>
+          <p>This can be especially helpful if you would rather not navigate the shop on your own.</p>
+        </SectionIntro>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow-layout">
+      <SectionIntro title="What You Will Not Experience">
+        <p>I will not pressure you into making a purchase.</p>
+        <p>I will not recommend a large kit simply because I can.</p>
+        <p>I will not make promises that are misleading or medically inappropriate.</p>
+        <p>I will also tell you if I believe a product or topic is not right for you.</p>
+        <p>For me, good support means that you leave with greater clarity and can make a decision that feels right for you.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container">
+      <SectionIntro title="Possible Consultation Topics" />
+      <div class="topic-grid">
+        {consultationTopics.map((topic) => (
+          <TopicCard title={topic.title}>
+            <p>{topic.copy}</p>
+          </TopicCard>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--nature">
+    <div class="container narrow-layout">
+      <SectionIntro title="Support After Your Purchase">
+        <p>Many people buy a product and are then unsure how to use it purposefully.</p>
+        <p>My support does not end when you place an order.</p>
+        <p>You can ask questions, share experiences and adapt your routine over time.</p>
+        <p>Especially at the beginning, it helps to have someone who calmly explains the options and what to keep in mind.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container faq-layout">
+      <SectionIntro title="Frequently Asked Questions About Consultation" />
+      <FAQAccordion items={consultationFaqs} idPrefix="consultation-faq" />
+    </div>
+  </section>
+
+  <CTASection
+    title="The Simplest Next Step"
+    primaryHref="/en/consultation/"
+    primaryLabel="Request a Free Consultation"
+    secondaryHref={contactLinks.whatsapp.href}
+    secondaryLabel="Message Me on WhatsApp"
+  >
+    <p>You do not need to know which oil you need.</p>
+    <p>You do not have to choose a kit.</p>
+    <p>You do not need to be sure whether doTERRA is right for you.</p>
+    <p>Simply tell me what interests you or where you would like some direction.</p>
+    <p>Then we can find the next sensible step together.</p>
+  </CTASection>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote label="Note">
+        <h2>Is This Guidance a Substitute for a Doctor or Therapist?</h2>
+        <p>No. My support is not a substitute for medical diagnosis or treatment. I do not claim that products can diagnose, treat or cure medical conditions.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .section--sage { background: rgb(168 184 160 / 20%); }
+  .section--nature { position: relative; isolation: isolate; background: var(--color-soft-cream); }
+  .section--nature::before { content: ''; position: absolute; inset: 0; z-index: -2; background: url('/assets/images/nature/nature-heath-hero-02.png') center 54% / cover no-repeat; }
+  .section--nature::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(250 247 241 / 76%); }
+  .narrow-layout, .faq-layout { max-width: var(--container-text); }
+  .split-layout { display: grid; gap: var(--space-40); align-items: center; }
+  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
+  .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
+  .check-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
+  .trust-grid, .topic-grid { display: grid; gap: var(--space-20); }
+  .compliance-section { padding: 0 0 var(--space-80); }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  @media (min-width: 768px) {
+    .section { padding-block: var(--space-96); }
+    .trust-grid, .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+  }
+  @media (min-width: 1024px) {
+    .section { padding-block: var(--space-120); }
+    .split-layout { grid-template-columns: minmax(0, 1fr) minmax(360px, .8fr); gap: var(--space-80); }
+    .split-layout--reverse { grid-template-columns: minmax(360px, .8fr) minmax(0, 1fr); }
+    .trust-grid, .topic-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+</style>
+

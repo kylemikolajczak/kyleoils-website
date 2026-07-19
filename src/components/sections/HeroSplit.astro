@@ -1,0 +1,60 @@
+---
+import CTAGroup from '../cta/CTAGroup.astro';
+import ResponsiveImage from '../global/ResponsiveImage.astro';
+
+interface Props {
+  title: string;
+  primaryHref: string;
+  primaryLabel: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+  imageSrc: string;
+  imageAlt: string;
+  imageWidth: number;
+  imageHeight: number;
+  imagePosition?: string;
+}
+
+const {
+  title,
+  primaryHref,
+  primaryLabel,
+  secondaryHref,
+  secondaryLabel,
+  imageSrc,
+  imageAlt,
+  imageWidth,
+  imageHeight,
+  imagePosition = 'center',
+} = Astro.props;
+---
+
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <h1>{title}</h1>
+      <div class="hero__intro"><slot /></div>
+      <CTAGroup {primaryHref} {primaryLabel} {secondaryHref} {secondaryLabel} />
+    </div>
+    <ResponsiveImage
+      src={imageSrc}
+      alt={imageAlt}
+      width={imageWidth}
+      height={imageHeight}
+      variant="portrait"
+      position={imagePosition}
+      priority
+    />
+  </div>
+</section>
+
+<style>
+  .hero { overflow: hidden; padding: var(--space-64) 0; background: var(--color-warm-white); }
+  .hero__grid { display: grid; gap: var(--space-40); align-items: center; }
+  h1 { max-width: 760px; margin: 0 0 var(--space-24); font-size: var(--font-size-h1-mobile); line-height: var(--line-height-heading); letter-spacing: -0.025em; }
+  .hero__intro { max-width: var(--container-text); margin-bottom: var(--space-32); color: var(--color-text-secondary); }
+  .hero__intro :global(p) { margin: 0 0 var(--space-16); }
+  .hero__intro :global(p:last-child) { margin-bottom: 0; }
+  @media (min-width: 768px) { .hero { padding-block: var(--space-80); } }
+  @media (min-width: 1024px) { .hero { padding-block: var(--space-96); } .hero__grid { grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr); gap: var(--space-64); } h1 { font-size: var(--font-size-h1-desktop); } }
+</style>

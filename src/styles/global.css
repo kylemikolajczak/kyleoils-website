@@ -1,0 +1,23 @@
+@import "./tokens.css";
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { background: var(--color-warm-white); color: var(--color-text-primary); font-family: var(--font-sans); }
+body { margin: 0; font-size: var(--font-size-body-mobile); line-height: var(--line-height-body); }
+a { color: inherit; }
+img { display: block; max-width: 100%; height: auto; }
+button, a { font: inherit; }
+:focus-visible { outline: 3px solid var(--color-sage-green); outline-offset: 4px; }
+.container { width: min(100% - (2 * var(--gutter-mobile)), var(--container-main)); margin-inline: auto; }
+.skip-link { position: absolute; left: var(--space-20); top: -100px; z-index: 100; padding: var(--space-12); background: var(--color-deep-forest); color: var(--color-warm-white); }
+.skip-link:focus { top: var(--space-20); }
+
+@media (min-width: 768px) {
+  body { font-size: var(--font-size-body-desktop); }
+  .container { width: min(100% - (2 * var(--gutter-tablet)), var(--container-main)); }
+}
+@media (min-width: 1024px) {
+  .container { width: min(100% - (2 * var(--gutter-desktop)), var(--container-main)); }
+}

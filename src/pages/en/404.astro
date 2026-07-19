@@ -1,0 +1,27 @@
+---
+import HeroSplit from '../../components/sections/HeroSplit.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  lang="en"
+  title="Page Not Found | Kyle Daniel Mikolajczak"
+  description="The requested page could not be found. Return to the home page or explore another section of the website."
+  noindex
+>
+  <HeroSplit
+    title="This Page Could Not Be Found."
+    primaryHref="/en/"
+    primaryLabel="Return to Home"
+    secondaryHref="/en/consultation/"
+    secondaryLabel="Request a Consultation"
+    imageSrc="/assets/images/nature/nature-heath-hero-01.png"
+    imageAlt="Path through the Lüneburg Heath in warm morning light"
+    imageWidth={1672}
+    imageHeight={941}
+    imagePosition="56% center"
+  >
+    <p>Sometimes a link leads nowhere or the page you are looking for no longer exists.</p>
+    <p>No problem – you can return to the home page at any time or visit another section of the website.</p>
+  </HeroSplit>
+</BaseLayout>

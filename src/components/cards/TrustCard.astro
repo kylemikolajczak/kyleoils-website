@@ -1,0 +1,19 @@
+---
+interface Props { title: string; }
+const { title } = Astro.props;
+---
+
+<article class="trust-card">
+  <span class="trust-card__mark" aria-hidden="true"></span>
+  <h3>{title}</h3>
+  <div><slot /></div>
+</article>
+
+<style>
+  .trust-card { padding: var(--space-24); border-radius: var(--radius-card); background: var(--color-soft-cream); }
+  .trust-card__mark { display: block; width: 32px; height: 3px; margin-bottom: var(--space-20); border-radius: var(--radius-pill); background: var(--color-sage-green); }
+  h3 { margin: 0 0 var(--space-12); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
+  div { color: var(--color-text-secondary); }
+  div :global(p) { margin: 0; }
+  @media (min-width: 768px) { .trust-card { padding: var(--space-32); } }
+</style>

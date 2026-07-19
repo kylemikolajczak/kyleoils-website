@@ -1,0 +1,357 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import TopicCard from '../../../components/cards/TopicCard.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
+import HeroSplit from '../../../components/sections/HeroSplit.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import StepList from '../../../components/sections/StepList.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { contactLinks } from '../../../data/externalLinks';
+
+const businessFeatures = [
+  {
+    title: 'Flexible Time Management',
+    copy: 'You decide when and how much time you would like to invest.',
+  },
+  {
+    title: 'Step-by-Step Development',
+    copy: 'You can begin small and develop at your own pace.',
+  },
+  {
+    title: 'Personal Recommendations',
+    copy: 'The focus is on honest conversations and products that you know and use yourself.',
+  },
+  {
+    title: 'Support Within a Team',
+    copy: 'You are not left on your own, but receive support, exchange and clear next steps.',
+  },
+  {
+    title: 'Learning and Development',
+    copy: 'You learn about communication, product knowledge, organisation and building long-term customer relationships.',
+  },
+  {
+    title: 'International Reach',
+    copy: 'doTERRA operates internationally, which gives you the option to work beyond your immediate area.',
+  },
+];
+
+const suitableFor = [
+  'enjoy working with people',
+  'believe in high-quality products',
+  'enjoy sharing knowledge and experiences',
+  'would like to build something of your own alongside your current job or existing commitments',
+  'want to work flexibly and independently',
+  'are prepared to learn and remain committed over the long term',
+  'value personal development and responsibility',
+  'are not looking for a quick solution, but want to build something sustainable',
+];
+
+const notExpected = [
+  'no quick wealth',
+  'no guaranteed income',
+  'no success without personal effort',
+  'no ready-made customers without building relationships',
+  'no shortcut without learning and staying committed',
+];
+
+const insteadExpected = [
+  'an independent business opportunity',
+  'personal support',
+  'regular exchange',
+  'step-by-step support',
+  'product and communication knowledge',
+  'the opportunity to build something of your own over the long term',
+];
+
+const supportTopics = [
+  'foundations of doTERRA and its products',
+  'building your own customer base',
+  'honest and natural communication',
+  'handling questions and concerns',
+  'organising the first steps',
+  'exchange within the team',
+  'regular calls and further learning',
+  'long-term development rather than short-term pressure',
+];
+
+const entrySteps = [
+  {
+    title: '1. No-Obligation Conversation',
+    paragraphs: ['We talk about what interests you and what you could imagine doing.'],
+  },
+  {
+    title: '2. Honest Overview',
+    paragraphs: ['I explain how the business opportunity works, which tasks are involved and which expectations are realistic.'],
+  },
+  {
+    title: '3. A Decision in Your Own Time',
+    paragraphs: ['You decide for yourself whether and how you would like to begin.'],
+  },
+  {
+    title: '4. Guidance as You Build',
+    paragraphs: ['If you begin, we approach the next steps together and in a structured way.'],
+  },
+];
+
+const experienceQuestions = [
+  'how much you enjoy the work',
+  'how well it fits your daily life',
+  'which tasks suit you particularly well',
+  'how much time you would like to invest',
+  'whether you want to develop it further over the long term',
+];
+
+const fitQuestions = [
+  'what interests you about the opportunity',
+  'what expectations you have',
+  'how much time you can realistically invest',
+  'whether you would prefer to begin alongside your current job or existing commitments',
+  'what support you need',
+  'whether the model is generally a good fit for you',
+];
+---
+
+<PageLayout
+  lang="en"
+  title="doTERRA Business Opportunity | Kyle Daniel Mikolajczak"
+  description="Discover honestly and without obligation how the doTERRA business opportunity works and whether it could fit your life."
+>
+  <HeroSplit
+    title="A Business Opportunity That Can Fit Your Life"
+    primaryHref={contactLinks.whatsapp.href}
+    primaryLabel="Discuss the Opportunity"
+    secondaryHref="/en/understanding-doterra/"
+    secondaryLabel="Learn More About doTERRA"
+    imageSrc="/assets/images/business/business-kyle-hero.jpg"
+    imageAlt="Kyle in a calm working environment"
+    imageWidth={1023}
+    imageHeight={1537}
+    imagePosition="63% center"
+  >
+    <p>Perhaps you already use doTERRA yourself or enjoy sharing natural products and routines with others.</p>
+    <p>If you wish, that can develop into something more.</p>
+    <p>The doTERRA business opportunity gives you the chance to build something of your own step by step alongside your current job or other commitments.</p>
+    <p>Without pressure.<br />Without empty promises.<br />And at your own pace.</p>
+    <p>It is important to me that you first understand how the model works and whether it is genuinely a good fit for you.</p>
+  </HeroSplit>
+
+  <section class="section section--cream">
+    <div class="container narrow-layout">
+      <SectionIntro title="Why I Share This Opportunity">
+        <p>People often recommend products, brands or services they believe in.</p>
+        <p>I believe everyone should have the opportunity to build something of their own step by step – without pressure, but with honest support and high-quality products they can genuinely stand behind.</p>
+        <p>With doTERRA, this can develop into your own business if you choose.</p>
+        <p>I value this idea because it allows people to combine something meaningful with a personal goal.</p>
+        <p>It is not about pushing anything on others.</p>
+        <p>It is about recommending high-quality products honestly, supporting people and building something of your own over the long term.</p>
+        <p>For some, it remains a small side business.</p>
+        <p>Others may want to develop it further over time.</p>
+        <p>Both are completely fine.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionIntro title="What Defines the Business Opportunity" />
+      <div class="topic-grid">
+        {businessFeatures.map((feature) => (
+          <TopicCard title={feature.title}>
+            <p>{feature.copy}</p>
+          </TopicCard>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container narrow-layout">
+      <SectionIntro title="Who This Opportunity May Interest">
+        <p>The business opportunity may be of interest if you:</p>
+      </SectionIntro>
+      <ul class="check-list">
+        {suitableFor.map((item) => <li>{item}</li>)}
+      </ul>
+      <div class="section-closing">
+        <p>You do not need perfect knowledge or a finished plan at the beginning.</p>
+        <p>Openness, a willingness to learn, reliability and a genuine interest in people matter more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container comparison-grid">
+      <article class="comparison-card comparison-card--quiet">
+        <h2>What You Should Not Expect</h2>
+        <ul class="check-list">
+          {notExpected.map((item) => <li>{item}</li>)}
+        </ul>
+      </article>
+      <article class="comparison-card comparison-card--forest">
+        <h2>What You Can Expect Instead</h2>
+        <ul class="check-list">
+          {insteadExpected.map((item) => <li>{item}</li>)}
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container image-copy-grid">
+      <ResponsiveImage
+        src="/assets/images/business/business-consultation.jpg"
+        alt="Personal consultation in a calm setting"
+        width={1537}
+        height={1023}
+        variant="portrait-wide"
+        position="52% center"
+      />
+      <div>
+        <SectionIntro title="Personal Support Along the Way">
+          <p>You do not have to work out how everything functions on your own.</p>
+          <p>I support you as you begin and help you understand the first steps.</p>
+          <p>This includes, for example:</p>
+        </SectionIntro>
+        <ul class="check-list">
+          {supportTopics.map((item) => <li>{item}</li>)}
+        </ul>
+        <div class="section-closing">
+          <p>It is not about forcing anyone into a ready-made system.</p>
+          <p>Together, we look at which approach suits your daily life, strengths and personal goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionIntro title="How to Begin" />
+      <div class="step-grid">
+        <StepList steps={entrySteps} />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container split-copy">
+      <SectionIntro title="Start Alongside Your Existing Commitments">
+        <p>Many people begin alongside their current job, family life or other commitments.</p>
+        <p>This can be a practical way to learn and gain initial experience without unnecessary pressure.</p>
+        <p>Over time, you discover:</p>
+      </SectionIntro>
+      <div>
+        <ul class="check-list">
+          {experienceQuestions.map((item) => <li>{item}</li>)}
+        </ul>
+        <div class="section-closing">
+          <p>You do not need to know today how far you want this path to go.</p>
+          <p>The first step is simply to explore how it works and decide whether it may suit you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="notice-section">
+    <div class="container">
+      <ComplianceNote label="Note">
+        <h2>Important Note</h2>
+        <p>The doTERRA business opportunity is an independent entrepreneurial activity.</p>
+        <p>Income and results are not guaranteed.</p>
+        <p>They depend, among other things, on personal effort, experience, time, skills, market conditions and long-term work.</p>
+        <p>No income or success promises are made.</p>
+        <p>Everyone decides for themselves whether and to what extent this opportunity fits their own circumstances.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container split-copy">
+      <SectionIntro title="Could This Suit You?">
+        <p>You do not have to decide immediately.</p>
+        <p>In a no-obligation conversation, we can clarify together:</p>
+      </SectionIntro>
+      <div>
+        <ul class="check-list">
+          {fitQuestions.map((item) => <li>{item}</li>)}
+        </ul>
+        <div class="section-closing">
+          <p>An honest assessment matters more to me than a quick start.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    title="Let’s Talk About the Opportunity"
+    primaryHref={contactLinks.whatsapp.href}
+    primaryLabel="Discuss the Opportunity"
+    secondaryHref="/en/contact/"
+    secondaryLabel="View Contact Options"
+  >
+    <p>You do not need a finished plan.</p>
+    <p>An initial idea or simple curiosity is more than enough.</p>
+    <p>Then we can look together at whether and how this business opportunity could fit your life.</p>
+  </CTASection>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote label="Note">
+        <p>I am an independent doTERRA Wellness Advocate.</p>
+        <p>doTERRA is the product partner, not the primary brand of this website.</p>
+        <p>No promises are made regarding income or success, and I do not claim that products can diagnose, treat or cure medical conditions.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  :global(.hero .responsive-image img) { transform: scale(1.06); }
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .section--sage { background: rgb(168 184 160 / 20%); }
+  .narrow-layout { max-width: var(--container-text); }
+  .topic-grid,
+  .comparison-grid,
+  .image-copy-grid,
+  .split-copy { display: grid; gap: var(--space-40); }
+  .topic-grid { gap: var(--space-20); }
+  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
+  .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
+  .check-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
+  .section-closing { margin-top: var(--space-32); color: var(--color-text-secondary); }
+  .section-closing p { margin: 0 0 var(--space-12); }
+  .section-closing p:last-child { margin-bottom: 0; }
+  .comparison-card { padding: var(--space-32); border-radius: var(--radius-section); }
+  .comparison-card--quiet { border: 1px solid rgb(216 199 173 / 65%); background: var(--color-soft-cream); }
+  .comparison-card--forest { background: var(--color-deep-forest); color: var(--color-text-inverted); }
+  .comparison-card h2 { margin: 0 0 var(--space-32); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
+  .comparison-card--forest .check-list li { color: var(--color-linen); }
+  .comparison-card--forest .check-list li::before { background: var(--color-warm-white); }
+  .image-copy-grid { align-items: center; }
+  .step-grid :global(.step-list) { grid-template-columns: minmax(0, 1fr); }
+  .notice-section { padding: var(--space-64) 0; }
+  .notice-section :global(.compliance-note) { max-width: 920px; }
+  .notice-section :global(h2) { margin: 0 0 var(--space-16); font-size: var(--font-size-h3-mobile); line-height: 1.25; }
+  .notice-section :global(p + p),
+  .compliance-section :global(p + p) { margin-top: var(--space-12); }
+  .compliance-section { padding: 0 0 var(--space-80); }
+
+  @media (min-width: 768px) {
+    .section { padding-block: var(--space-96); }
+    .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .comparison-card { padding: var(--space-40); }
+    .step-grid :global(.step-list) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .notice-section { padding-block: var(--space-80); }
+  }
+
+  @media (min-width: 1024px) {
+    .section { padding-block: var(--space-120); }
+    .topic-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .comparison-grid,
+    .split-copy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-64); }
+    .image-copy-grid { grid-template-columns: minmax(360px, .82fr) minmax(0, 1.18fr); gap: var(--space-80); }
+    .comparison-card h2 { font-size: var(--font-size-h2-desktop); }
+  }
+</style>
+

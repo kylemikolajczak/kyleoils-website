@@ -1,0 +1,65 @@
+:root {
+  --color-warm-white: #faf7f1;
+  --color-soft-cream: #f2ebdd;
+  --color-sage-green: #a8b8a0;
+  --color-deep-forest: #263d32;
+  --color-warm-anthracite: #2e2d29;
+  --color-sand: #d8c7ad;
+  --color-linen: #efe6d8;
+  --color-soft-lavender: #c9b7d8;
+  --color-olive-grey: #6f7b68;
+  --color-text-primary: #2e2d29;
+  --color-text-secondary: #5f5b52;
+  --color-text-muted: #7b756b;
+  --color-text-inverted: #faf7f1;
+
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-size-h1-desktop: 56px;
+  --font-size-h1-mobile: 38px;
+  --font-size-h2-desktop: 40px;
+  --font-size-h2-mobile: 32px;
+  --font-size-h3-desktop: 26px;
+  --font-size-h3-mobile: 23px;
+  --font-size-body-desktop: 18px;
+  --font-size-body-mobile: 17px;
+  --font-size-small: 14px;
+  --font-size-button: 16px;
+  --line-height-heading: 1.12;
+  --line-height-body: 1.65;
+  --line-height-small: 1.5;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+  --space-120: 120px;
+  --space-140: 140px;
+
+  --radius-button: 14px;
+  --radius-card: 24px;
+  --radius-section: 32px;
+  --radius-image: 28px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 18px 50px rgb(46 45 41 / 8%);
+  --shadow-card: 0 12px 34px rgb(46 45 41 / 6%);
+  --shadow-hover: 0 16px 42px rgb(38 61 50 / 12%);
+
+  --container-main: 1200px;
+  --container-wide: 1320px;
+  --container-text: 760px;
+  --gutter-desktop: 32px;
+  --gutter-tablet: 24px;
+  --gutter-mobile: 20px;
+}

@@ -1,0 +1,141 @@
+---
+import TopicCard from '../../../components/cards/TopicCard.astro';
+import { contactLinks } from '../../../data/externalLinks';
+import PageLayout from '../../../layouts/PageLayout.astro';
+---
+
+<PageLayout
+  lang="en"
+  title="Privacy Policy | Kyle Daniel Mikolajczak"
+  description="Information about which personal data is processed when you visit this website."
+>
+  <section class="legal-hero">
+    <div class="container legal-hero__inner">
+      <h1>Privacy Policy</h1>
+      <p>Information about which personal data is processed when you visit this website.<br /><small>This English version is provided for information only. In the event of any discrepancy, the German version shall prevail.</small></p>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container details-grid">
+      <TopicCard title="Controller">
+        <address>
+          Kyle Daniel Mikolajczak<br />
+          Glüsingen 3<br />
+          21386 Betzendorf<br />
+          Germany
+        </address>
+        <div class="contact-details">
+          <p><strong>Email:</strong><br /><a href={contactLinks.email.href}>{contactLinks.email.label}</a></p>
+          <p><strong>Telephone:</strong><br /><a href={contactLinks.phone.href}>{contactLinks.phone.label}</a></p>
+        </div>
+      </TopicCard>
+
+      <TopicCard title="General Information">
+        <p>This website is built as a static site. Simply visiting the website does not create user accounts, and the website does not store data in its own database.</p>
+        <p>No analytics or marketing services are used. The website itself does not set cookies or use browser storage. External content is not embedded; images are provided locally and system fonts are used.</p>
+        <p>Personal data is processed only where necessary for the technical provision of the website or when you choose to use a contact option or an external link.</p>
+      </TopicCard>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container legal-copy">
+      <section aria-labelledby="hosting">
+        <h2 id="hosting">Hosting</h2>
+        <p>The website is technically implemented as a static Astro website. To make it available online, the hosting provider processes technically necessary connection data so that the website can be accessed and operated securely.</p>
+        <p>The legal basis is Article 6(1)(f) GDPR. The legitimate interest lies in the reliable and secure provision of this website.</p>
+        <p class="todo"><strong>Information required before publication:</strong> The hosting provider for the live website has not yet been recorded in the project. The provider’s name, address, potential recipients, storage period and, where applicable, data processing agreement must be added once the provider has been selected.</p>
+      </section>
+
+      <section aria-labelledby="server-logfiles">
+        <h2 id="server-logfiles">Server Log Files</h2>
+        <p>If the future hosting provider keeps server log files, the data processed when the website is accessed may include the IP address, date and time of access, page requested, referrer URL, browser and operating system, HTTP status code and amount of data transferred.</p>
+        <p>Processing serves the technical delivery, stability and security of the website. The legal basis is Article 6(1)(f) GDPR. The exact scope and retention period depend on the hosting provider selected and must be added before publication.</p>
+      </section>
+
+      <section aria-labelledby="kontakt-email">
+        <h2 id="kontakt-email">Contact by Email</h2>
+        <p>The email link opens the email application configured on your device. Simply clicking the link does not transmit any message data through this website.</p>
+        <p>If you send an email, the information you provide is processed. This may include your name, email address, message content and any attachments you provide voluntarily. The data is processed to handle your enquiry.</p>
+        <p>The legal basis is Article 6(1)(b) GDPR where pre-contractual measures or a contract are involved; otherwise it is Article 6(1)(f) GDPR based on the legitimate interest in responding to your enquiry. The email providers involved may participate in transmission and storage.</p>
+      </section>
+
+      <section aria-labelledby="kontakt-telefon">
+        <h2 id="kontakt-telefon">Contact by Telephone</h2>
+        <p>The telephone link opens your device’s telephone function. Simply clicking the link does not transmit any call data through this website.</p>
+        <p>If you call, data processed may include your telephone number, the time and duration of the call, and the information you share. The data is processed to handle your enquiry.</p>
+        <p>The legal basis is Article 6(1)(b) GDPR where pre-contractual measures or a contract are involved; otherwise it is Article 6(1)(f) GDPR based on the legitimate interest in responding to your enquiry.</p>
+      </section>
+
+      <section aria-labelledby="whatsapp-link">
+        <h2 id="whatsapp-link">WhatsApp Link</h2>
+        <p>The website contains a link to WhatsApp. WhatsApp is not embedded in the website, and no connection to WhatsApp is established during a normal page visit.</p>
+        <p>Only when you actively click the link are you directed to WhatsApp. WhatsApp then processes data under its own responsibility. If you subsequently send a message, data processed may include your telephone number, profile name, message content, and communication and usage data. Information received via WhatsApp is processed to handle your enquiry.</p>
+        <p>The processing of messages received is based on Article 6(1)(b) GDPR where pre-contractual measures or a contract are involved; otherwise it is based on Article 6(1)(f) GDPR due to the legitimate interest in responding to your enquiry. For individuals in the European Economic Area, the service is provided by WhatsApp Ireland Limited. Further information is available in the <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer">WhatsApp Privacy Policy</a>.</p>
+      </section>
+
+      <section aria-labelledby="externe-links">
+        <h2 id="externe-links">External Links</h2>
+        <p>This website contains links to external services from doTERRA, Facebook and LinkedIn. These services are not embedded in the website. A normal page visit therefore does not establish a connection to these providers.</p>
+        <p>Only when you actively click an external link do you leave this website. From that point, the relevant provider may process personal data such as your IP address and technical connection data in accordance with its own privacy policy. The operator of this website has no influence over that processing.</p>
+      </section>
+
+      <section aria-labelledby="rechte">
+        <h2 id="rechte">Rights of Data Subjects</h2>
+        <p>Subject to the statutory requirements, you have the right to access your processed personal data, to correct inaccurate data, to erasure, to restriction of processing and to data portability.</p>
+        <p>Where processing is based on Article 6(1)(f) GDPR, you may object to the processing on grounds relating to your particular situation.</p>
+        <p>You also have the right to lodge a complaint with a data protection supervisory authority if you believe that the processing of your personal data infringes data protection law.</p>
+      </section>
+
+      <section aria-labelledby="speicherdauer">
+        <h2 id="speicherdauer">Retention Period</h2>
+        <p>Personal data from contact enquiries is stored only for as long as necessary to process the enquiry and any subsequent communication. It is then deleted unless statutory retention obligations or legitimate grounds require further storage.</p>
+        <p>The retention period for any server log files depends on the hosting provider selected and must be added before publication.</p>
+      </section>
+
+      <section aria-labelledby="datensicherheit">
+        <h2 id="datensicherheit">Data Security</h2>
+        <p>Appropriate technical and organisational measures are planned for the operation of the website to protect personal data against loss, manipulation and unauthorised access. The static architecture limits server-side processing to what is necessary for delivery.</p>
+        <p class="todo"><strong>Verification required before publication:</strong> The live website must use an encrypted HTTPS connection. The specific technical safeguards must be confirmed once the hosting provider has been selected.</p>
+      </section>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .legal-hero { padding: var(--space-64) 0; background: var(--color-warm-white); }
+  .legal-hero__inner { max-width: var(--container-text); }
+  .legal-hero h1 { margin: 0 0 var(--space-24); font-size: var(--font-size-h1-mobile); line-height: var(--line-height-heading); letter-spacing: -0.025em; }
+  .legal-hero p { margin: 0; color: var(--color-text-secondary); }
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .details-grid { display: grid; gap: var(--space-20); }
+  address { color: var(--color-text-secondary); font-style: normal; }
+  .contact-details { display: grid; gap: var(--space-20); margin-top: var(--space-24); }
+  .contact-details p { margin: 0; }
+  .contact-details strong { color: var(--color-text-primary); }
+  .contact-details a,
+  .legal-copy a { color: var(--color-deep-forest); overflow-wrap: anywhere; }
+  .details-grid :global(.topic-card p + p) { margin-top: var(--space-16); }
+  .legal-copy { display: grid; max-width: 920px; gap: var(--space-64); }
+  .legal-copy h2 { margin: 0 0 var(--space-20); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); letter-spacing: -0.02em; }
+  .legal-copy p { margin: 0 0 var(--space-16); color: var(--color-text-secondary); }
+  .legal-copy p:last-child { margin-bottom: 0; }
+  .legal-copy .todo { padding: var(--space-20); border: 1px solid var(--color-sand); border-radius: var(--radius-card); background: var(--color-soft-cream); }
+  .legal-copy .todo strong { color: var(--color-text-primary); }
+
+  @media (min-width: 768px) {
+    .legal-hero { padding-block: var(--space-80); }
+    .section { padding-block: var(--space-96); }
+    .details-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+  }
+
+  @media (min-width: 1024px) {
+    .legal-hero { padding-block: var(--space-96); }
+    .legal-hero h1 { font-size: var(--font-size-h1-desktop); }
+    .section { padding-block: var(--space-120); }
+    .legal-copy h2 { font-size: var(--font-size-h2-desktop); }
+  }
+</style>
+

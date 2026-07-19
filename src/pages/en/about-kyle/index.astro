@@ -1,0 +1,348 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
+import HeroSplit from '../../../components/sections/HeroSplit.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { contactLinks } from '../../../data/externalLinks';
+
+const values = [
+  'Discipline.',
+  'Reliability.',
+  'A sense of responsibility.',
+  'Clear communication.',
+  'Structure.',
+];
+
+const expectations = [
+  'An honest answer.',
+  'A clear explanation.',
+  'Calm support without pressure.',
+  'A clear overview of the doTERRA product range.',
+  'Support when getting started.',
+  'Continued support after your purchase.',
+  'Help with questions about use.',
+  'And someone who will also tell you when I do not believe something is right for you.',
+];
+
+const consultationQuestions = [
+  'What interests you?',
+  'What would you like to change?',
+  'What questions do you have?',
+  'What realistically fits into your daily routine?',
+];
+---
+
+<PageLayout
+  lang="en"
+  title="The Person Supporting You with doTERRA"
+  description="I am Kyle Daniel Mikolajczak, and I help people understand doTERRA, essential oils and practical natural routines."
+>
+  <HeroSplit
+    title="The Person Supporting You with doTERRA"
+    primaryHref="/en/consultation/"
+    primaryLabel="Request a Free Consultation"
+    secondaryHref={contactLinks.whatsapp.href}
+    secondaryLabel="Message Me on WhatsApp"
+    imageSrc="/assets/images/about/kyle-about-hero.jpg"
+    imageAlt="Kyle in the Lüneburg Heath"
+    imageWidth={1086}
+    imageHeight={1449}
+    imagePosition="50% 42%"
+  >
+    <p>I am Kyle Daniel Mikolajczak, and I help people understand doTERRA, essential oils and practical natural routines.</p>
+    <p>My aim is not simply to show you products.</p>
+    <p>My aim is to understand what you are looking for, what fits your daily life and which next step genuinely feels right for you.</p>
+    <p>When you speak with me, you will not receive a sales presentation. You will receive clear advice, an honest assessment and personal support.</p>
+  </HeroSplit>
+
+  <section class="section section--cream">
+    <div class="container editorial-layout">
+      <div class="editorial-heading">
+        <p class="eyebrow">Background</p>
+        <h2>The Experiences That Shaped Me</h2>
+      </div>
+      <div class="section-copy">
+        <p>I was born in Johannesburg, South Africa. I have European roots and have lived in Germany for more than 30 years. Today, I live near Lüneburg.</p>
+        <p>Before becoming more deeply involved with doTERRA, natural routines and wellness, I served in the German Armed Forces for twelve years.</p>
+        <p>That time shaped me.</p>
+        <ul class="value-pills">
+          {values.map((value) => <li>{value}</li>)}
+        </ul>
+        <p>These are values I continue to bring to my work today.</p>
+        <p>In my work, it is equally important to me to be clear, honest and reliable. If something makes sense, I say so. If it does not fit, I say that too.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-layout">
+      <div>
+        <SectionIntro title="My Path to Natural Routines">
+          <p>Over time, I became increasingly aware of the importance of health, balance and proactive wellbeing in daily life.</p>
+          <p>Rather than waiting until something no longer works, I prefer to start earlier: living more consciously, creating small routines and supporting wellbeing in daily life.</p>
+          <p>Essential oils and natural wellness products interested me because they can be used in daily routines without unnecessary complexity.</p>
+          <p>A scent in the evening.<br />An intentional moment in the morning.<br />A natural alternative at home.<br />A simple routine that you genuinely follow.</p>
+          <p>For me, this is not about complicated concepts. It is about small steps that fit your life.</p>
+        </SectionIntro>
+      </div>
+      <div class="quiet-statement">
+        <p>That approach has become part of my personal philosophy.</p>
+        <p>High-quality essential oils and simple daily habits fit naturally within it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container split-layout split-layout--reverse">
+      <ResponsiveImage
+        src="/assets/images/about/kyle-deep-blue.jpg"
+        alt="Kyle holding a Deep Blue Roll-On"
+        width={1448}
+        height={1086}
+        variant="landscape"
+        position="55% center"
+      />
+      <div>
+        <SectionIntro title="Why I Use doTERRA">
+          <p>I do not recommend doTERRA simply because I want to sell something.</p>
+          <p>I recommend the products because I use them myself every day.</p>
+          <p>I genuinely believe in their quality.</p>
+          <p>It is important to me to offer honest advice.</p>
+          <p>I only want to recommend products that genuinely suit each person’s daily routine.</p>
+          <p>If doTERRA is not the right fit, that is completely fine too.</p>
+          <p>Trust always matters more to me than a quick sale.</p>
+        </SectionIntro>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-copy">
+      <div>
+        <SectionIntro title="My Role with doTERRA">
+          <p>I am a doTERRA Wellness Advocate and doTERRA Europe Essential Oils Specialist.</p>
+          <p>This qualification provides a professional foundation for explaining products, their use and daily routines clearly.</p>
+          <p>At the same time, it is important to me that:</p>
+          <p>My support does not replace medical diagnosis or treatment.<br />I do not claim that products can diagnose, treat or cure medical conditions.<br />I do not make exaggerated promises.</p>
+          <p>I help you understand doTERRA better and make informed decisions for your daily routine.</p>
+        </SectionIntro>
+      </div>
+      <div>
+        <SectionIntro title="More Than a Shop Link">
+          <p>You can, of course, view and order doTERRA products online.</p>
+          <p>Especially at the beginning, however, it helps to have someone who explains the products and what suits your needs.</p>
+          <p>When you get started through me, you can open an official doTERRA customer account and save up to 25% on most products.</p>
+          <p>At the same time, you have someone you can turn to for support after your order.</p>
+        </SectionIntro>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container split-layout">
+      <div>
+        <SectionIntro title="Nature and Everyday Life">
+          <p>I enjoy spending time outdoors.</p>
+          <p>I love forests.</p>
+          <p>I love the Lüneburg Heath.</p>
+          <p>I have consciously chosen a quieter life in the countryside.</p>
+          <p>I enjoy sports.</p>
+          <p>I ride a motorcycle.</p>
+          <p>I hold a skydiving licence.</p>
+          <p>I enjoy activities that combine freedom, nature, calm and focus.</p>
+        </SectionIntro>
+      </div>
+      <ResponsiveImage
+        src="/assets/images/about/kyle-nature.jpg"
+        alt="Kyle on a path in the Lüneburg Heath"
+        width={941}
+        height={1672}
+        variant="portrait-wide"
+        position="50% 58%"
+      />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-layout split-layout--reverse">
+      <ResponsiveImage
+        src="/assets/images/about/kyle-dogs.jpg"
+        alt="Kyle’s two dogs by a window overlooking greenery"
+        width={1086}
+        height={1448}
+        variant="portrait-wide"
+        position="center 58%"
+      />
+      <div>
+        <SectionIntro title="Home and Personal Values">
+          <p>I have consciously chosen a quieter life in the countryside.</p>
+          <p>I have two dogs.</p>
+          <p>Time with my daughter means a great deal to me.</p>
+          <p>Trust matters more to me than a quick sale.</p>
+        </SectionIntro>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--forest">
+    <div class="container split-copy">
+      <div>
+        <SectionIntro title="Why Personal Support Matters to Me">
+          <p>Many people are curious about essential oils but do not know how to begin.</p>
+          <p>They see products, kits, recommendations and applications, and it can quickly become difficult to navigate.</p>
+          <p>This is exactly where I want to help.</p>
+          <p>I explain the doTERRA product range so that you genuinely understand it: calmly, simply and without complicated jargon.</p>
+          <p>You do not have to work everything out on your own.<br />You do not have to guess what suits you.<br />And you do not have to buy anything simply because you ask a question.</p>
+          <p>For me, good support always begins with listening.</p>
+        </SectionIntro>
+      </div>
+      <div>
+        <SectionIntro title="How I Work">
+          <p>I work calmly, honestly and personally.</p>
+          <p>First, I want to understand what matters to you.</p>
+        </SectionIntro>
+        <ul class="question-list">
+          {consultationQuestions.map((question) => <li>{question}</li>)}
+        </ul>
+        <div class="section-copy section-copy--light section-copy--spaced">
+          <p>Then we look at the available options.</p>
+          <p>Sometimes a single oil may be appropriate.<br />Sometimes a starter kit.<br />Sometimes a wellness system.<br />And sometimes nothing at first except greater clarity.</p>
+          <p>You do not receive a standard solution from me, but an assessment suited to your situation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container">
+      <SectionIntro title="What You Can Expect" />
+      <ul class="expectation-grid">
+        {expectations.map((expectation) => <li>{expectation}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-copy">
+      <div>
+        <SectionIntro title="Who I Am Here For">
+          <p>I support people who want to explore natural routines and are looking for honest advice.</p>
+          <p>For example, if you:</p>
+        </SectionIntro>
+        <ul class="check-list">
+          <li>want to live more mindfully</li>
+          <li>want to bring more calm into daily life</li>
+          <li>want to improve your evening routine</li>
+          <li>are looking for natural alternatives for your home or family</li>
+          <li>are interested in high-quality wellness products</li>
+          <li>want to explore doTERRA</li>
+          <li>already have products but are not yet using them purposefully</li>
+          <li>are looking for a personal contact who explains things clearly and without pressure</li>
+        </ul>
+      </div>
+      <div>
+        <SectionIntro title="Also for Workshops and Collaborations">
+          <p>Alongside one-to-one consultations, I also offer workshops, essential oil evenings and information sessions.</p>
+          <p>These can take place privately or in collaboration with clinics, studios, companies or organisations.</p>
+          <p>My approach remains the same here:</p>
+          <p>explain clearly, answer questions and make natural routines tangible.</p>
+        </SectionIntro>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container narrow-layout">
+      <SectionIntro title="My Goal">
+        <p>I want you to have greater clarity after a conversation with me.</p>
+        <p>Not more confusion.</p>
+        <p>Not more pressure.</p>
+        <p>Not the feeling that you must buy something immediately.</p>
+        <p>But the feeling:</p>
+        <p>“Now I understand better what could suit me.”</p>
+        <p>If this leads to getting started with doTERRA, I am happy to continue supporting you. If not, the conversation was still worthwhile.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <CTASection
+    title="Let’s Simply Talk"
+    primaryHref="/en/consultation/"
+    primaryLabel="Request a Free Consultation"
+    secondaryHref={contactLinks.whatsapp.href}
+    secondaryLabel="Message Me on WhatsApp"
+  >
+    <p>You do not need to know which product you need yet.</p>
+    <p>You do not need to prepare.</p>
+    <p>You do not need to be sure whether doTERRA is right for you.</p>
+    <p>Simply tell me what interests you or where you would like some direction.</p>
+    <p>Then we can consider which next step may be right for you.</p>
+  </CTASection>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote label="Note">
+        <h2>A Brief Note</h2>
+        <p>My support is not a substitute for medical diagnosis or treatment.<br />I do not claim that products can diagnose, treat or cure medical conditions.</p>
+        <p>My focus is on clear advice, practical daily routines, high-quality product information and personal support.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .section--sage { background: rgb(168 184 160 / 20%); }
+  .section--forest { background: var(--color-deep-forest); color: var(--color-text-inverted); }
+  .section--forest :global(.section-intro__copy),
+  .section--forest .section-copy--light { color: var(--color-linen); }
+  .narrow-layout { max-width: var(--container-text); }
+  .editorial-layout,
+  .split-layout,
+  .split-copy { display: grid; gap: var(--space-48); }
+  .editorial-heading h2 { max-width: 560px; margin: 0; font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); letter-spacing: -.02em; }
+  .eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .08em; text-transform: uppercase; }
+  .section-copy { color: var(--color-text-secondary); }
+  .section-copy p { margin: 0 0 var(--space-16); }
+  .section-copy p:last-child { margin-bottom: 0; }
+  .section-copy--spaced { margin-top: var(--space-32); }
+  .value-pills,
+  .question-list,
+  .expectation-grid,
+  .check-list { margin: 0; padding: 0; list-style: none; }
+  .value-pills { display: flex; flex-wrap: wrap; gap: var(--space-12); margin-bottom: var(--space-24); }
+  .value-pills li { padding: var(--space-8) var(--space-16); border-radius: var(--radius-pill); background: rgb(168 184 160 / 24%); color: var(--color-deep-forest); }
+  .quiet-statement { align-self: center; padding: var(--space-32); border-left: 3px solid var(--color-sage-green); color: var(--color-deep-forest); font-size: 19px; line-height: 1.6; }
+  .quiet-statement p { margin: 0 0 var(--space-16); }
+  .quiet-statement p:last-child { margin-bottom: 0; }
+  .question-list,
+  .check-list { display: grid; gap: var(--space-16); }
+  .question-list { color: var(--color-linen); }
+  .check-list { color: var(--color-text-secondary); }
+  .question-list li,
+  .check-list li { position: relative; padding-left: var(--space-32); }
+  .question-list li::before,
+  .check-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
+  .expectation-grid { display: grid; gap: var(--space-16); }
+  .expectation-grid li { padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); color: var(--color-text-secondary); box-shadow: var(--shadow-card); }
+  .compliance-section { padding: 0 0 var(--space-80); }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  .compliance-section :global(p + p) { margin-top: var(--space-12); }
+  @media (min-width: 768px) {
+    .section { padding-block: var(--space-96); }
+    .expectation-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-20); }
+  }
+  @media (min-width: 1024px) {
+    .section { padding-block: var(--space-120); }
+    .editorial-layout { grid-template-columns: minmax(280px, .7fr) minmax(0, 1fr); gap: var(--space-96); align-items: start; }
+    .split-layout { grid-template-columns: minmax(0, 1fr) minmax(380px, .82fr); gap: var(--space-80); align-items: center; }
+    .split-layout--reverse { grid-template-columns: minmax(380px, .82fr) minmax(0, 1fr); }
+    .split-copy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); align-items: start; }
+    .editorial-heading h2 { font-size: var(--font-size-h2-desktop); }
+    .expectation-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-24); }
+  }
+</style>
+

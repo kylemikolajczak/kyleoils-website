@@ -1,0 +1,343 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import TopicCard from '../../../components/cards/TopicCard.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import HeroSplit from '../../../components/sections/HeroSplit.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { contactLinks } from '../../../data/externalLinks';
+
+const workshopAudiences = [
+  'private Gruppen',
+  'Freundeskreise',
+  'Familien',
+  'Unternehmen',
+  'Hotels',
+  'Spas',
+  'Yoga-Studios',
+  'Fitnessstudios',
+  'Physiotherapiepraxen',
+  'Heilpraktiker-nahe Praxen',
+  'Kosmetikstudios',
+  'Wellness-Businesses',
+  'Teams im Bereich Gesundheitsförderung',
+  'Organisationen, die ihren Kunden, Mitarbeitern oder Mitgliedern ein hochwertiges Wellness-Thema anbieten möchten',
+];
+
+const workshopContents = [
+  'eine einfache Einführung in ätherische Öle',
+  'Grundlagen zur verantwortungsvollen Anwendung',
+  'Einordnung verschiedener Alltagsthemen',
+  'praktisches Erleben ausgewählter Produkte',
+  'Raum für Fragen',
+  'kleine Routinen für Zuhause',
+  'Informationen zu Starter-Möglichkeiten',
+  'Hinweise zu offiziellen doTERRA Vorteilen',
+  'Materialien zum Nachlesen',
+];
+
+const workshopTopics = [
+  {
+    title: 'Natürliche Routinen im Alltag',
+    copy: 'Für Menschen, die ätherische Öle und einfache Wellness-Routinen grundsätzlich kennenlernen möchten.',
+  },
+  {
+    title: 'Ruhe, Balance und bewusste Pausen',
+    copy: 'Für Gruppen, die mehr über kleine Rituale, Duft, Atmosphäre und Entspannung im Alltag erfahren möchten.',
+  },
+  {
+    title: 'Schlaf und Abendroutine',
+    copy: 'Für Teilnehmer, die ihren Abend bewusster gestalten und einfache Routinen kennenlernen möchten.',
+  },
+  {
+    title: 'Energie und Fokus',
+    copy: 'Für Menschen, die sich für Klarheit, Tagesstruktur und bewusste Morgen- oder Arbeitsroutinen interessieren.',
+  },
+  {
+    title: 'Familie und Zuhause',
+    copy: 'Für Eltern und Familien, die natürliche Routinen verantwortungsvoll kennenlernen möchten.',
+  },
+  {
+    title: 'Haushalt und natürliche Alternativen',
+    copy: 'Für Menschen, die ihr Zuhause bewusster gestalten und natürliche Produktbereiche kennenlernen möchten.',
+  },
+  {
+    title: 'Wellness und langfristige Routinen',
+    copy: 'Für Gruppen, die sich für hochwertige Wellness-Produkte, Nahrungsergänzung und Systeme wie MetaPWR interessieren.',
+  },
+];
+
+const workshopFormats = [
+  {
+    title: 'Workshops für private Gruppen',
+    paragraphs: [
+      'Ein privater Workshop eignet sich für Menschen, die doTERRA in entspannter Atmosphäre kennenlernen möchten.',
+      'Das kann ein kleiner Abend mit Freunden, Familie oder Bekannten sein.',
+      'Der Rahmen bleibt persönlich, ruhig und verständlich.',
+      'Es geht darum, Fragen zu stellen, Produkte kennenzulernen und erste Ideen für den Alltag mitzunehmen.',
+    ],
+  },
+  {
+    title: 'Workshops für Unternehmen',
+    paragraphs: [
+      'Für Unternehmen können Workshops ein hochwertiger Impuls im Bereich Wohlbefinden, Prävention und bewusster Alltag sein.',
+      'Mögliche Themen sind kleine Routinen für den Arbeitsalltag, bewusste Pausen, Raumduft, Fokus oder allgemeine Wellness-Themen.',
+      'Der Workshop wird professionell und passend zum Unternehmen gestaltet.',
+      'Der Fokus liegt auf Information und Mehrwert für Mitarbeiter oder Teams.',
+    ],
+  },
+  {
+    title: 'Workshops für Praxen, Studios und Wellness-Businesses',
+    paragraphs: [
+      'Für Praxen, Yoga-Studios, Fitnessstudios, Spas, Hotels, Kosmetikstudios und Wellnessanbieter können Workshops eine schöne Ergänzung zum bestehenden Angebot sein.',
+      'Sie können Kunden, Gästen oder Mitgliedern einen ruhigen Einstieg in ätherische Öle und natürliche Routinen ermöglichen.',
+      'Dabei wird das Format so angepasst, dass es zur Atmosphäre und Zielgruppe des jeweiligen Ortes passt.',
+    ],
+  },
+];
+
+const workshopRequestDetails = [
+  'Für wen ist der Workshop gedacht?',
+  'Wo soll er stattfinden?',
+  'Wie viele Personen könnten teilnehmen?',
+  'Gibt es ein bestimmtes Thema?',
+  'Geht es eher um einen privaten Abend, ein Studioformat, eine Praxis, ein Unternehmen oder ein Wellness-Angebot?',
+];
+
+const workshopValues = [
+  'Ich möchte, dass Teilnehmer sich willkommen fühlen.',
+  'Die Inhalte sollen verständlich sein.',
+  'Die Atmosphäre soll ruhig und hochwertig sein.',
+  'Fragen sollen Platz haben.',
+  'Produkte sollen erlebt und nicht aufgedrängt werden.',
+  'Und am Ende sollen Teilnehmer mit mehr Klarheit aus dem Workshop gehen als vorher.',
+];
+---
+
+<PageLayout
+  title="Ätherische Öle erleben und verständlich kennenlernen"
+  description="Manchmal ist es leichter, natürliche Routinen nicht nur zu lesen, sondern sie direkt zu erleben."
+>
+  <HeroSplit
+    title="Ätherische Öle erleben und verständlich kennenlernen"
+    primaryHref="/de/beratung/"
+    primaryLabel="Workshop unverbindlich anfragen"
+    secondaryHref={contactLinks.whatsapp.href}
+    secondaryLabel="WhatsApp starten"
+    imageSrc="/assets/images/workshops/workshop-01.png"
+    imageAlt="Teilnehmerinnen bei einem Workshop zu ätherischen Ölen"
+    imageWidth={1536}
+    imageHeight={1024}
+    imagePosition="55% center"
+  >
+    <p>Manchmal ist es leichter, natürliche Routinen nicht nur zu lesen, sondern sie direkt zu erleben.</p>
+    <p>In einem Workshop lernen Teilnehmer doTERRA, ätherische Öle und einfache Alltagsroutinen in einem ruhigen, persönlichen Rahmen kennen.</p>
+    <p>Es geht nicht darum, Menschen etwas zu verkaufen.</p>
+    <p>Es geht darum, zu verstehen, Fragen zu stellen, Düfte wahrzunehmen, Produkte einzuordnen und herauszufinden, was für den eigenen Alltag sinnvoll sein kann.</p>
+  </HeroSplit>
+
+  <section class="section section--cream">
+    <div class="container narrow-layout">
+      <SectionIntro title="Worum es in einem Workshop geht">
+        <p>Ein Workshop ist eine Einladung, ätherische Öle und natürliche Routinen praktisch kennenzulernen.</p>
+        <p>Teilnehmer erfahren, wie doTERRA aufgebaut ist, welche Produktbereiche es gibt und wie ätherische Öle verantwortungsvoll in den Alltag integriert werden können.</p>
+        <p>Der Fokus liegt auf Bildung, Erfahrung und Orientierung.</p>
+        <p>Nicht auf Druck.<br />Nicht auf schnellen Entscheidungen.<br />Nicht auf einer Verkaufsveranstaltung.</p>
+        <p>Teilnehmer sollen nach dem Workshop mehr Klarheit haben und besser verstehen, ob doTERRA zu ihrem Alltag passen könnte.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionIntro title="Für wen Workshops geeignet sind">
+        <p>Workshops können für unterschiedliche Gruppen und Umfelder sinnvoll sein.</p>
+        <p>Zum Beispiel für:</p>
+      </SectionIntro>
+      <ul class="audience-grid">
+        {workshopAudiences.map((audience) => <li>{audience}</li>)}
+      </ul>
+      <div class="section-copy section-copy--spaced">
+        <p>Jeder Workshop wird passend zum jeweiligen Rahmen gedacht.</p>
+        <p>Ein privater Öl-Abend braucht eine andere Atmosphäre als ein Workshop in einem Unternehmen, Studio oder Spa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container narrow-layout">
+      <SectionIntro title="Was Teilnehmer erwarten können">
+        <p>Teilnehmer bekommen einen verständlichen Einstieg in doTERRA und natürliche Routinen.</p>
+        <p>Je nach Thema und Zielgruppe kann ein Workshop beinhalten:</p>
+      </SectionIntro>
+      <ul class="check-list">
+        {workshopContents.map((item) => <li>{item}</li>)}
+      </ul>
+      <div class="section-copy section-copy--spaced">
+        <p>Der Workshop soll angenehm, klar und leicht verständlich sein.</p>
+        <p>Niemand muss Vorwissen mitbringen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionIntro title="Mögliche Workshop-Themen" />
+      <div class="topic-grid">
+        {workshopTopics.map((topic) => (
+          <TopicCard title={topic.title}>
+            <p>{topic.copy}</p>
+          </TopicCard>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container narrow-layout">
+      <SectionIntro title="Individuelle Workshops und angepasste Formate">
+        <p>Nicht jeder Workshop muss gleich aussehen.</p>
+        <p>Je nach Zielgruppe, Ort und Anlass kann das Format individuell angepasst werden.</p>
+        <p>Ein Workshop kann kurz und kompakt sein.</p>
+        <p>Er kann als entspannter Öl-Abend stattfinden.</p>
+        <p>Er kann Teil eines Wellness-Tages sein.</p>
+        <p>Er kann als Vortrag in einer Praxis, einem Studio oder einem Unternehmen umgesetzt werden.</p>
+        <p>Er kann auch auf ein bestimmtes Thema ausgerichtet werden, wenn eine Gruppe bereits konkrete Interessen hat.</p>
+        <p>Wichtig ist, dass der Workshop zum Umfeld passt und die Teilnehmer sich wohlfühlen.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container format-grid">
+      {workshopFormats.map((format) => (
+        <TopicCard title={format.title}>
+          {format.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </TopicCard>
+      ))}
+    </div>
+  </section>
+
+  <section class="section section--forest">
+    <div class="container narrow-layout">
+      <SectionIntro title="Keine Verkaufsveranstaltung">
+        <p>Mir ist wichtig, dass Workshops nicht wie klassische Verkaufsabende wirken.</p>
+        <p>Natürlich können Teilnehmer nach einem Workshop Produkte kennenlernen oder bei Interesse bestellen.</p>
+        <p>Aber der Schwerpunkt liegt zuerst auf:</p>
+      </SectionIntro>
+      <ul class="focus-list">
+        <li>verstehen</li>
+        <li>erleben</li>
+        <li>fragen</li>
+        <li>einordnen</li>
+        <li>bewusst entscheiden</li>
+      </ul>
+      <div class="section-copy section-copy--spaced">
+        <p>Niemand soll das Gefühl haben, kaufen zu müssen.</p>
+        <p>Ein guter Workshop gibt Orientierung und Vertrauen.</p>
+        <p>Alles Weitere darf daraus entstehen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container split-copy">
+      <div>
+        <SectionIntro title="Wie eine Workshop-Anfrage abläuft">
+          <p>Du schreibst mir kurz, für welchen Rahmen du einen Workshop planst.</p>
+          <p>Hilfreich sind ein paar einfache Informationen:</p>
+        </SectionIntro>
+        <ul class="question-list">
+          {workshopRequestDetails.map((item) => <li>{item}</li>)}
+        </ul>
+        <div class="section-copy section-copy--spaced">
+          <p>Danach melde ich mich persönlich bei dir und wir besprechen, welches Format sinnvoll wäre.</p>
+        </div>
+      </div>
+      <div>
+        <SectionIntro title="Was mir bei Workshops wichtig ist" />
+        <ul class="value-list">
+          {workshopValues.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    title="Workshop oder Kooperation anfragen"
+    primaryHref="/de/beratung/"
+    primaryLabel="Workshop unverbindlich anfragen"
+    secondaryHref={contactLinks.whatsapp.href}
+    secondaryLabel="WhatsApp starten"
+  >
+    <p>Wenn du einen Workshop, Öl-Abend, Vortrag oder eine Kooperation anfragen möchtest, schreib mir gern.</p>
+    <p>Du musst noch kein fertiges Konzept haben.</p>
+    <p>Eine erste Idee reicht.</p>
+    <p>Dann schauen wir, welches Format zu deiner Gruppe, deinem Unternehmen, deinem Studio oder deinem Angebot passt.</p>
+  </CTASection>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote>
+        <h2>Kurzer Hinweis</h2>
+        <p>Meine Workshops ersetzen keine medizinische Diagnose, Behandlung oder therapeutische Beratung.<br />Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
+        <p>Ätherische Öle, Wellness-Produkte und natürliche Routinen können Teil eines bewussten Alltags sein, ersetzen aber keine ärztliche oder therapeutische Betreuung.</p>
+        <p>Wenn Teilnehmer gesundheitliche Beschwerden haben oder medizinische Fragen klären möchten, sollten sie sich an einen Arzt, Heilpraktiker oder eine entsprechend qualifizierte Fachperson wenden.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .section--sage { background: rgb(168 184 160 / 20%); }
+  .section--forest { background: var(--color-deep-forest); color: var(--color-text-inverted); }
+  .section--forest :global(.section-intro__copy),
+  .section--forest .section-copy { color: var(--color-linen); }
+  .narrow-layout { max-width: var(--container-text); }
+  .section-copy { max-width: var(--container-text); color: var(--color-text-secondary); }
+  .section-copy p { margin: 0 0 var(--space-16); }
+  .section-copy p:last-child { margin-bottom: 0; }
+  .section-copy--spaced { margin-top: var(--space-40); }
+  .audience-grid,
+  .check-list,
+  .focus-list,
+  .question-list,
+  .value-list { margin: 0; padding: 0; list-style: none; }
+  .audience-grid { display: grid; gap: var(--space-12); }
+  .audience-grid li { padding: var(--space-16) var(--space-20); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-button); background: var(--color-warm-white); color: var(--color-text-secondary); }
+  .check-list,
+  .question-list,
+  .value-list { display: grid; gap: var(--space-16); color: var(--color-text-secondary); }
+  .check-list li,
+  .question-list li,
+  .value-list li { position: relative; padding-left: var(--space-32); }
+  .check-list li::before,
+  .question-list li::before,
+  .value-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
+  .topic-grid,
+  .format-grid { display: grid; gap: var(--space-20); }
+  .format-grid :global(.topic-card div p + p) { margin-top: var(--space-12); }
+  .focus-list { display: flex; flex-wrap: wrap; gap: var(--space-12); }
+  .focus-list li { padding: var(--space-8) var(--space-16); border: 1px solid rgb(250 247 241 / 32%); border-radius: var(--radius-pill); color: var(--color-warm-white); }
+  .split-copy { display: grid; gap: var(--space-64); }
+  .compliance-section { padding: 0 0 var(--space-80); }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  .compliance-section :global(p + p) { margin-top: var(--space-12); }
+  @media (min-width: 600px) {
+    .audience-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (min-width: 768px) {
+    .section { padding-block: var(--space-96); }
+    .topic-grid,
+    .format-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+  }
+  @media (min-width: 1024px) {
+    .section { padding-block: var(--space-120); }
+    .audience-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .topic-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .format-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .split-copy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); align-items: start; }
+  }
+</style>

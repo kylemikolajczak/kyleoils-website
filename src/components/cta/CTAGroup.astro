@@ -1,0 +1,25 @@
+---
+import Button from '../global/Button.astro';
+
+interface Props {
+  primaryHref: string;
+  primaryLabel: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+}
+
+const { primaryHref, primaryLabel, secondaryHref, secondaryLabel } = Astro.props;
+---
+
+<div class="cta-group">
+  <Button href={primaryHref}>{primaryLabel}</Button>
+  {secondaryLabel && (secondaryHref
+    ? <Button href={secondaryHref} variant="secondary">{secondaryLabel}</Button>
+    : <span class="cta-placeholder" aria-disabled="true">{secondaryLabel}</span>)}
+</div>
+
+<style>
+  .cta-group { display: flex; flex-direction: column; gap: var(--space-16); }
+  .cta-placeholder { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: 16px 22px; border: 1px dashed var(--color-sand); border-radius: var(--radius-button); color: inherit; font-size: var(--font-size-button); font-weight: var(--font-weight-semibold); line-height: 1.2; opacity: .72; }
+  @media (min-width: 600px) { .cta-group { flex-direction: row; flex-wrap: wrap; } }
+</style>

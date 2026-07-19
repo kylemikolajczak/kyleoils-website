@@ -1,0 +1,387 @@
+---
+import StarterSetCard from '../../../components/cards/StarterSetCard.astro';
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import CTAGroup from '../../../components/cta/CTAGroup.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import { starterSetLinks } from '../../../data/starterSets';
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { contactLinks } from '../../../data/externalLinks';
+
+const starterSets = [
+  {
+    title: 'Family Essentials Kit',
+    lead: 'Der einfachste Einstieg in die Welt der ätherischen Öle.',
+    imageSrc: '/assets/images/products/starter-family-essentials.png',
+    imageAlt: 'Family Essentials Kit mit einer Auswahl ätherischer Öle',
+    imageWidth: 962,
+    imageHeight: 1350,
+    orderLabel: 'Family Essentials Kit bestellen',
+    orderHref: starterSetLinks[0].href,
+    sections: [
+      {
+        title: 'Für wen ist es geeignet?',
+        items: [
+          'kompakter Einstieg für Anfänger',
+          'besonders passend für Familien und Menschen, die zunächst überschaubar starten möchten',
+        ],
+      },
+      {
+        title: 'Welche Art von Einstieg bietet es?',
+        items: [
+          '10 beliebte ätherische Öle und Ölmischungen',
+          'kein sehr großes Einstiegspaket',
+        ],
+      },
+      {
+        title: 'Hauptfokus im Alltag',
+        items: [
+          'geeignet zum Kennenlernen verschiedener Alltagsanwendungen',
+        ],
+      },
+      {
+        title: 'Kyles ehrliche Einschätzung',
+        paragraphs: [
+          'Wenn mich jemand fragt: „Ich möchte ätherische Öle einfach einmal kennenlernen – womit fange ich an?“, dann ist das häufig das Set, an das ich zuerst denke. Es bietet einen unkomplizierten und überschaubaren Einstieg, ohne direkt zu groß zu werden.',
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Home Essentials Kit',
+    lead: 'Der umfangreichere Einstieg für Zuhause und regelmäßige Nutzung.',
+    imageSrc: '/assets/images/products/starter-home-essentials.png',
+    imageAlt: 'Home Essentials Kit mit Diffuser und ätherischen Ölen',
+    imageWidth: 672,
+    imageHeight: 256,
+    orderLabel: 'Home Essentials Kit bestellen',
+    orderHref: starterSetLinks[1].href,
+    sections: [
+      {
+        title: 'Für wen ist es geeignet?',
+        items: [
+          'für Menschen, die ätherische Öle regelmäßig zuhause nutzen möchten',
+          'solide Grundausstattung für den Haushalt',
+        ],
+      },
+      {
+        title: 'Welche Art von Einstieg bietet es?',
+        items: [
+          'umfangreicher als das Family Essentials Kit',
+          'enthält einen Petal Diffuser',
+          'enthält größere 15-ml-Flaschen',
+        ],
+      },
+      {
+        title: 'Hauptfokus im Alltag',
+        items: [
+          'geeignet für verschiedene Alltagsthemen und Routinen',
+        ],
+      },
+      {
+        title: 'Kyles ehrliche Einschätzung',
+        paragraphs: [
+          'Wenn du schon weißt, dass du ätherische Öle regelmäßig verwenden möchtest, würde ich häufig eher dieses Set einordnen. Der enthaltene Diffuser und die größeren Flaschen machen den Einstieg besonders interessant, wenn du eine breitere Grundausstattung für Zuhause suchst.',
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Wellness Made Simple',
+    lead: 'Ein strukturierter Einstieg in tägliche Wellness- und Nahrungsergänzungsroutinen.',
+    imageSrc: '/assets/images/products/starter-wellness-made-simple.png',
+    imageAlt: 'Wellness Made Simple mit Produkten für tägliche Wellness-Routinen',
+    imageWidth: 654,
+    imageHeight: 358,
+    orderLabel: 'Wellness Made Simple bestellen',
+    orderHref: starterSetLinks[2].href,
+    sections: [
+      {
+        title: 'Für wen ist es geeignet?',
+        items: [
+          'für Menschen, die ihren Alltag ganzheitlicher und strukturierter gestalten möchten',
+        ],
+      },
+      {
+        title: 'Welche Art von Einstieg bietet es?',
+        items: [
+          'tägliche Nahrungsergänzung',
+          'Mikronährstoffe',
+          'Omega-Fettsäuren',
+          'Unterstützung einer bewussten Darm- und Verdauungsroutine',
+        ],
+      },
+      {
+        title: 'Hauptfokus im Alltag',
+        items: [
+          'langfristige Wellness-Routinen',
+          'ätherische Öle ergänzen das Konzept, stehen aber nicht allein im Mittelpunkt',
+        ],
+      },
+      {
+        title: 'Kyles ehrliche Einschätzung',
+        paragraphs: [
+          'Diese Option ist besonders interessant, wenn du nicht nur einzelne Produkte suchst, sondern eine strukturierte tägliche Wellness-Routine aufbauen möchtest. Hier stehen Nahrungsergänzung, Omega-Fettsäuren und eine bewusste Alltagsroutine stärker im Mittelpunkt als einzelne ätherische Öle.',
+        ],
+      },
+    ],
+  },
+  {
+    title: 'MetaPWR System',
+    lead: 'Ein systemorientierter Einstieg für aktive Menschen und langfristige Gewohnheiten.',
+    imageSrc: '/assets/images/products/starter-metapwr.png',
+    imageAlt: 'MetaPWR System mit Nahrungsergänzung und ätherischer Ölmischung',
+    imageWidth: 3120,
+    imageHeight: 1350,
+    orderLabel: 'MetaPWR System bestellen',
+    orderHref: starterSetLinks[3].href,
+    sections: [
+      {
+        title: 'Für wen ist es geeignet?',
+        items: [
+          'für aktive Menschen',
+          'nicht für jeden automatisch der beste erste Einstieg',
+        ],
+      },
+      {
+        title: 'Welche Art von Einstieg bietet es?',
+        items: [
+          'kein klassisches ätherisches Öl-Starterset',
+          'aufeinander abgestimmtes Wellness-System',
+          'Nahrungsergänzung und ätherische Öle als zusammengehöriges System',
+        ],
+      },
+      {
+        title: 'Hauptfokus im Alltag',
+        items: [
+          'bewusste Routinen rund um Bewegung, Energie und Stoffwechselbewusstsein',
+          'langfristige Gewohnheiten statt einzelner Produkte',
+        ],
+      },
+      {
+        title: 'Kyles ehrliche Einschätzung',
+        paragraphs: [
+          'MetaPWR würde ich nicht jedem automatisch als ersten Einstieg empfehlen. Es kann sehr interessant sein, wenn du gezielt ein aufeinander abgestimmtes System suchst und bereit bist, bewusste Routinen langfristig in deinen Alltag einzubauen.',
+        ],
+      },
+    ],
+  },
+];
+---
+
+<PageLayout
+  title="doTERRA Starter-Sets"
+  description="Wenn du bereits weißt, dass du mit doTERRA starten möchtest, können Starter-Sets ein sinnvoller Einstieg sein."
+>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <h1>Einfach mit doTERRA starten</h1>
+        <div class="hero__copy">
+          <p>Wenn du bereits weißt, dass du mit doTERRA starten möchtest, können Starter-Sets ein sinnvoller Einstieg sein.</p>
+          <p>Sie helfen dir, nicht jedes Produkt einzeln auswählen zu müssen, sondern mit einer offiziellen Startoption zu beginnen.</p>
+          <p>Trotzdem gilt:</p>
+          <p>Nicht jedes Set passt zu jedem Menschen.</p>
+          <p>Der beste Einstieg hängt davon ab, was du im Alltag wirklich nutzen möchtest. Familie, Haushalt, Ruhe, Energie, Wellness oder ein bestimmtes System.</p>
+          <p>Auf dieser Seite findest du vier offizielle Starter-Optionen, die dir den Einstieg erleichtern können.</p>
+          <p>Wenn du dir sicher bist, kannst du direkt bestellen.<br />Wenn du unsicher bist, sprich vorher kurz mit mir.</p>
+        </div>
+        <CTAGroup primaryHref="/de/beratung/" primaryLabel="Starter-Set persönlich einordnen lassen" secondaryHref={contactLinks.whatsapp.href} secondaryLabel="WhatsApp starten" />
+      </div>
+      <ResponsiveImage
+        src="/assets/images/products/starter-sets-hero-lifestyle.png"
+        alt="Diffuser, ätherische Öle und eine Tasse in ruhiger Atmosphäre"
+        width={1672}
+        height={941}
+        variant="portrait-wide"
+        position="67% center"
+        priority
+      />
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container narrow-layout">
+      <SectionIntro title="Warum ein Starter-Set sinnvoll sein kann">
+        <p>Ein Starter-Set kann dir helfen, strukturiert in die doTERRA Produktwelt einzusteigen.</p>
+        <p>Du bekommst eine klare Startoption und musst dich nicht direkt durch die gesamte Produktwelt klicken.</p>
+        <p>Das ist besonders hilfreich, wenn du:</p>
+      </SectionIntro>
+      <ul class="check-list">
+        <li>doTERRA ernsthaft kennenlernen möchtest</li>
+        <li>nicht nur ein einzelnes Produkt testen willst</li>
+        <li>eine einfache Grundauswahl suchst</li>
+        <li>für Familie, Alltag oder Wellness starten möchtest</li>
+        <li>eine geführte Bestellmöglichkeit möchtest</li>
+        <li>nicht allein entscheiden willst, welches Set passt</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-copy">
+      <SectionIntro title="Der Vorteil eines offiziellen Kundenkontos">
+        <p>Wenn du über ein offizielles doTERRA Kundenkonto startest, kannst du bei den meisten Produkten bis zu 25 % sparen.</p>
+        <p>Gleichzeitig hast du über mich einen persönlichen Ansprechpartner, der dich beim Einstieg, bei Fragen und bei der Anwendung begleitet.</p>
+        <p>Das bedeutet:</p>
+        <p>Du bestellst nicht einfach anonym.<br />Du hast jemanden, der dir hilft, deine Produkte sinnvoll in den Alltag zu integrieren.</p>
+      </SectionIntro>
+      <SectionIntro title="Wichtig vor der Bestellung">
+        <p>Ein Starter-Set ist dann gut, wenn es zu deinem Alltag passt.</p>
+        <p>Deshalb empfehle ich dir, vor der Bestellung kurz zu prüfen:</p>
+        <p>Was möchtest du hauptsächlich erreichen?</p>
+        <p>Möchtest du eher für Familie und Alltag starten?</p>
+        <p>Suchst du eine solide Grundausstattung?</p>
+        <p>Interessierst du dich mehr für Wellness und langfristige Routinen?</p>
+        <p>Geht es dir gezielt um MetaPWR?</p>
+        <p>Wenn du dir unsicher bist, schreib mir kurz. Eine kurze Einordnung kann verhindern, dass du etwas bestellst, das nicht wirklich zu deinem Bedarf passt.</p>
+      </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container">
+      <SectionIntro title="Die vier offiziellen Starter-Optionen" />
+      <div class="international-note">
+        <ComplianceNote label="Hinweis für internationale Besucher">
+          <h3>Hinweis für internationale Besucher</h3>
+          <p>Die Direktlinks auf dieser Starter-Set-Seite führen zum offiziellen deutschen doTERRA-Shop und sind für Kunden in Deutschland vorgesehen.</p>
+          <p>Wenn du in einem anderen Land lebst, melde dich einfach bei mir. Ich sende dir gerne die passenden offiziellen Starter-Sets und Bestelllinks für dein Land und unterstütze dich beim Einstieg.</p>
+        </ComplianceNote>
+      </div>
+      <div class="starter-set-list">
+        {starterSets.map((set) => (
+          <StarterSetCard
+            title={set.title}
+            imageSrc={set.imageSrc}
+            imageAlt={set.imageAlt}
+            imageWidth={set.imageWidth}
+            imageHeight={set.imageHeight}
+            orderHref={set.orderHref}
+            orderLabel={set.orderLabel}
+            consultationHref="/de/beratung/"
+            consultationLabel="Vorher mit Kyle sprechen"
+          >
+            <p class="starter-set-lead"><strong>{set.lead}</strong></p>
+            {set.sections.map((section) => (
+              <section>
+                <h4>{section.title}</h4>
+                {'items' in section && (
+                  <ul class="starter-set-points">
+                    {section.items.map((item) => <li>{item}</li>)}
+                  </ul>
+                )}
+                {'paragraphs' in section && section.paragraphs.map((paragraph) => (
+                  <p>{paragraph.split('\n').map((line, index) => <>{index > 0 && <br />}{line}</>)}</p>
+                ))}
+              </section>
+            ))}
+          </StarterSetCard>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container narrow-layout">
+      <SectionIntro title="Nicht das Richtige gefunden?">
+        <p>Diese vier Starter-Optionen sind ausgewählte Möglichkeiten für den Einstieg. Daneben gibt es weitere Sets, zum Beispiel für Kinder, Familien oder besondere Schwerpunkte.</p>
+        <p>Wenn du unsicher bist, welches Set wirklich zu dir passt, schreib mir einfach kurz. Gemeinsam können wir einordnen, welcher Einstieg zu deinem Alltag und deinen Zielen passt.</p>
+      </SectionIntro>
+      <CTAGroup primaryHref="/de/beratung/" primaryLabel="Starter-Set persönlich einordnen lassen" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-copy">
+      <SectionIntro title="Welches Starter-Set passt zu dir?">
+        <p>Wenn du es einfach halten möchtest, starten wir mit deinem Alltag.</p>
+        <p>Geht es dir eher um Familie und Zuhause?</p>
+        <p>Dann könnten Family Essentials oder Home Essentials interessant sein.</p>
+        <p>Geht es dir eher um bewusste Wellness-Routinen?</p>
+        <p>Dann kann Wellness Made Simple passend sein.</p>
+        <p>Interessierst du dich gezielt für MetaPWR?</p>
+        <p>Dann schauen wir, ob das System zu deinem Ziel und deinem Alltag passt.</p>
+        <p>Du musst diese Entscheidung nicht allein treffen.</p>
+        <p>Eine kurze Nachricht reicht und ich helfe dir, die Optionen sinnvoll einzuordnen.</p>
+      </SectionIntro>
+      <div>
+        <SectionIntro title="Direkt bestellen oder vorher sprechen?">
+          <p>Du kannst direkt über die offiziellen Links bestellen, wenn du dir sicher bist.</p>
+          <p>Wenn du noch Fragen hast, ist es besser, vorher kurz mit mir zu sprechen.</p>
+          <p>Gerade am Anfang kann eine kurze Einordnung helfen:</p>
+        </SectionIntro>
+        <ul class="check-list">
+          <li>damit du das richtige Set wählst</li>
+          <li>damit du den Einstieg verstehst</li>
+          <li>damit du weißt, wie du die Produkte sinnvoll nutzt</li>
+          <li>damit du dein offizielles Kundenkonto richtig einordnen kannst</li>
+          <li>damit du nicht mehr kaufst, als für deinen Start sinnvoll ist</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    title="Dein nächster Schritt"
+    primaryHref="/de/beratung/"
+    primaryLabel="Starter-Set persönlich einordnen lassen"
+    secondaryHref={contactLinks.whatsapp.href}
+    secondaryLabel="WhatsApp starten"
+  >
+    <p>Wenn du bereit bist, kannst du dein Starter-Set direkt über den passenden Button bestellen.</p>
+    <p>Wenn du noch unsicher bist, schreib mir einfach kurz.</p>
+    <p>Dann klären wir, welche Option zu dir passt.</p>
+  </CTASection>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote>
+        <h2>Kurzer Hinweis</h2>
+        <p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung.<br />Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
+        <p>Ätherische Öle, Wellness-Produkte, Nahrungsergänzung und natürliche Routinen können Teil eines bewussten Alltags sein, ersetzen aber keine ärztliche oder therapeutische Betreuung.</p>
+        <p>Wenn du gesundheitliche Beschwerden hast oder medizinische Fragen klären möchtest, wende dich bitte an einen Arzt, Heilpraktiker oder eine entsprechend qualifizierte Fachperson.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .hero { padding: var(--space-64) 0; overflow: hidden; background: var(--color-warm-white); }
+  .hero__grid { display: grid; gap: var(--space-40); align-items: center; }
+  h1 { max-width: 760px; margin: 0 0 var(--space-24); font-size: var(--font-size-h1-mobile); line-height: var(--line-height-heading); letter-spacing: -0.025em; }
+  .hero__copy { max-width: var(--container-text); margin-bottom: var(--space-32); color: var(--color-text-secondary); }
+  .hero__copy p { margin: 0 0 var(--space-16); }
+  .hero__copy p:last-child { margin-bottom: 0; }
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .section--sage { background: rgb(168 184 160 / 20%); }
+  .narrow-layout { max-width: var(--container-text); }
+  .split-copy { display: grid; gap: var(--space-48); }
+  .international-note { margin-bottom: var(--space-40); }
+  .international-note :global(h3) { margin: 0 0 var(--space-12); color: var(--color-deep-forest); font-size: var(--font-size-body-mobile); line-height: var(--line-height-heading); }
+  .international-note :global(p + p) { margin-top: var(--space-12); }
+  .starter-set-list { display: grid; gap: var(--space-32); }
+  .starter-set-lead { margin: 0 0 var(--space-32); color: var(--color-deep-forest); font-size: 19px; line-height: 1.5; }
+  .starter-set-points { display: grid; gap: var(--space-8); margin: 0; padding-left: var(--space-24); }
+  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; color: var(--color-text-secondary); }
+  .check-list li { position: relative; padding-left: var(--space-32); }
+  .check-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
+  .compliance-section { padding: 0 0 var(--space-80); }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  .compliance-section :global(p + p) { margin-top: var(--space-12); }
+  @media (min-width: 768px) {
+    .hero { padding-block: var(--space-80); }
+    .section { padding-block: var(--space-96); }
+    .starter-set-list { gap: var(--space-40); }
+  }
+  @media (min-width: 1024px) {
+    .hero { padding-block: var(--space-96); }
+    .hero__grid { grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr); gap: var(--space-64); }
+    h1 { font-size: var(--font-size-h1-desktop); }
+    .section { padding-block: var(--space-120); }
+    .split-copy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); align-items: start; }
+    .starter-set-list { gap: var(--space-48); }
+  }
+</style>

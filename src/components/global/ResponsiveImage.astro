@@ -1,0 +1,48 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  variant?: 'landscape' | 'portrait' | 'portrait-wide' | 'badge';
+  position?: string;
+  scale?: number;
+  priority?: boolean;
+  sizes?: string;
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  variant = 'landscape',
+  position = 'center',
+  scale = 1,
+  priority = false,
+  sizes = '(min-width: 1024px) 42vw, calc(100vw - 40px)',
+} = Astro.props;
+---
+
+<figure class:list={['responsive-image', `responsive-image--${variant}`]} style={`--image-position: ${position}; --image-scale: ${scale};`}>
+  <img
+    {src}
+    {alt}
+    {width}
+    {height}
+    {sizes}
+    loading={priority ? 'eager' : 'lazy'}
+    decoding={priority ? 'sync' : 'async'}
+    fetchpriority={priority ? 'high' : 'auto'}
+  />
+</figure>
+
+<style>
+  .responsive-image { width: 100%; margin: 0; overflow: hidden; border-radius: var(--radius-image); background: var(--color-linen); box-shadow: var(--shadow-card); }
+  .responsive-image--landscape { aspect-ratio: 16 / 10; }
+  .responsive-image--portrait { aspect-ratio: 4 / 5; }
+  .responsive-image--portrait-wide { aspect-ratio: 5 / 6; }
+  .responsive-image--badge { max-width: 460px; aspect-ratio: 1; margin-inline: auto; background: var(--color-warm-white); box-shadow: none; }
+  img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: var(--image-position); transform: scale(var(--image-scale)); }
+  .responsive-image--badge img { object-fit: contain; }
+</style>

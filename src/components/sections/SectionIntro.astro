@@ -1,0 +1,19 @@
+---
+interface Props { title: string; centered?: boolean; }
+const { title, centered = false } = Astro.props;
+---
+
+<header class:list={['section-intro', { 'section-intro--centered': centered }]}>
+  <h2>{title}</h2>
+  <div class="section-intro__copy"><slot /></div>
+</header>
+
+<style>
+  .section-intro { max-width: var(--container-text); margin-bottom: var(--space-40); }
+  .section-intro--centered { margin-inline: auto; text-align: center; }
+  h2 { margin: 0 0 var(--space-20); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); letter-spacing: -0.02em; }
+  .section-intro__copy { color: var(--color-text-secondary); }
+  .section-intro__copy :global(p) { margin: 0 0 var(--space-16); }
+  .section-intro__copy :global(p:last-child) { margin-bottom: 0; }
+  @media (min-width: 1024px) { h2 { font-size: var(--font-size-h2-desktop); } }
+</style>
