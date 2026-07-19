@@ -14,6 +14,8 @@ interface Props {
 const { title, description, lang = 'de', noindex = false } = Astro.props;
 const currentPath = Astro.url.pathname;
 const languagePaths = getLanguagePaths(currentPath);
+const canonicalUrl = new URL(currentPath, Astro.site ?? Astro.url.origin);
+const socialImageUrl = new URL('/og-image.jpg', Astro.site ?? Astro.url.origin);
 ---
 
 <!doctype html>
@@ -21,13 +23,29 @@ const languagePaths = getLanguagePaths(currentPath);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#a8b8a0" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     {noindex && <meta name="robots" content="noindex, nofollow" />}
-    <link rel="canonical" href={currentPath} />
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" hreflang="de" href={languagePaths.de} />
     <link rel="alternate" hreflang="en" href={languagePaths.en} />
     <link rel="alternate" hreflang="x-default" href={languagePaths.de} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kyle Daniel Mikolajczak" />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={socialImageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    {description && <meta name="twitter:description" content={description} />}
+    <meta name="twitter:image" content={socialImageUrl} />
   </head>
   <body>
     <a class="skip-link" href="#main-content">{lang === 'de' ? 'Zum Inhalt springen' : 'Skip to content'}</a>
