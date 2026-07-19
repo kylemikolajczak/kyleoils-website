@@ -6,13 +6,12 @@ interface Props {
   title: string;
   description?: string;
   lang?: Locale;
-  noindex?: boolean;
 }
 
-const { title, description, lang = 'de', noindex = false } = Astro.props;
+const { title, description, lang = 'de' } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} {lang} {noindex}>
+<BaseLayout title={title} description={description} {lang}>
   <div class="page-shell"><slot /></div>
 </BaseLayout>
 
