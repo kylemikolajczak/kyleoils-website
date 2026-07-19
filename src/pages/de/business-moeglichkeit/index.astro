@@ -7,7 +7,6 @@ import HeroSplit from '../../../components/sections/HeroSplit.astro';
 import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import StepList from '../../../components/sections/StepList.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
-import { contactLinks } from '../../../data/externalLinks';
 
 const businessFeatures = [
   {
@@ -118,7 +117,7 @@ const fitQuestions = [
 >
   <HeroSplit
     title="Eine Business-Möglichkeit, die zu deinem Leben passen darf"
-    primaryHref={contactLinks.whatsapp.href}
+    primaryHref="/de/kontakt/"
     primaryLabel="Business unverbindlich besprechen"
     secondaryHref="/de/doterra-verstehen/"
     secondaryLabel="Mehr über doTERRA erfahren"
@@ -283,7 +282,7 @@ const fitQuestions = [
 
   <CTASection
     title="Lass uns die Möglichkeit unverbindlich besprechen"
-    primaryHref={contactLinks.whatsapp.href}
+    primaryHref="/de/kontakt/"
     primaryLabel="Business unverbindlich besprechen"
     secondaryHref="/de/kontakt/"
     secondaryLabel="Kontaktmöglichkeiten ansehen"

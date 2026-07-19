@@ -7,7 +7,6 @@ import HeroSplit from '../../../components/sections/HeroSplit.astro';
 import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import StepList from '../../../components/sections/StepList.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
-import { contactLinks } from '../../../data/externalLinks';
 
 const businessFeatures = [
   {
@@ -119,7 +118,7 @@ const fitQuestions = [
 >
   <HeroSplit
     title="A Business Opportunity That Can Fit Your Life"
-    primaryHref={contactLinks.whatsapp.href}
+    primaryHref="/en/contact/"
     primaryLabel="Discuss the Opportunity"
     secondaryHref="/en/understanding-doterra/"
     secondaryLabel="Learn More About doTERRA"
@@ -284,7 +283,7 @@ const fitQuestions = [
 
   <CTASection
     title="Let’s Talk About the Opportunity"
-    primaryHref={contactLinks.whatsapp.href}
+    primaryHref="/en/contact/"
     primaryLabel="Discuss the Opportunity"
     secondaryHref="/en/contact/"
     secondaryLabel="View Contact Options"
@@ -354,4 +353,3 @@ const fitQuestions = [
     .comparison-card h2 { font-size: var(--font-size-h2-desktop); }
   }
 </style>
-
