@@ -16,6 +16,42 @@ const currentPath = Astro.url.pathname;
 const languagePaths = getLanguagePaths(currentPath);
 const canonicalUrl = new URL(currentPath, Astro.site ?? Astro.url.origin);
 const socialImageUrl = new URL('/og-image.jpg', Astro.site ?? Astro.url.origin);
+const siteUrl = 'https://kyleoils.com';
+const personId = `${siteUrl}/#person`;
+const organizationId = `${siteUrl}/#organization`;
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      name: 'Kyle Oils',
+      url: siteUrl,
+      inLanguage: ['de', 'en'],
+      publisher: {
+        '@id': organizationId,
+      },
+    },
+    {
+      '@type': 'Person',
+      '@id': personId,
+      name: 'Kyle Daniel Mikolajczak',
+      jobTitle: 'doTERRA Wellness Advocate',
+      url: siteUrl,
+      logo: `${siteUrl}/favicon-32x32.png`,
+      image: `${siteUrl}/assets/images/about/kyle-about-hero.jpg`,
+      description:
+        'Persönliche Beratung zu ätherischen Ölen, natürlichen Routinen und doTERRA-Produkten.',
+    },
+    {
+      '@type': 'Organization',
+      '@id': organizationId,
+      name: 'Kyle Oils',
+      url: siteUrl,
+      logo: `${siteUrl}/favicon-32x32.png`,
+    },
+  ],
+};
 ---
 
 <!doctype html>
@@ -46,6 +82,7 @@ const socialImageUrl = new URL('/og-image.jpg', Astro.site ?? Astro.url.origin);
     <meta name="twitter:title" content={title} />
     {description && <meta name="twitter:description" content={description} />}
     <meta name="twitter:image" content={socialImageUrl} />
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
   <body>
     <a class="skip-link" href="#main-content">{lang === 'de' ? 'Zum Inhalt springen' : 'Skip to content'}</a>
