@@ -87,7 +87,7 @@ const routineTopics = [
 >
   <HeroSplit
     title="Essential Oils as Part of Your Daily Routine"
-    primaryHref="/en/consultation/"
+    primaryHref="/en/contact/"
     primaryLabel="Discuss a Suitable Routine"
     secondaryHref={contactLinks.whatsapp.href}
     secondaryLabel="Message Me on WhatsApp"
@@ -149,7 +149,7 @@ const routineTopics = [
         {routineTopics.map((topic) => (
           <TopicCard title={topic.title}>
             {topic.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
-            <CTAGroup primaryHref="/en/consultation/" primaryLabel={topic.cta} />
+            <CTAGroup primaryHref="/en/contact/" primaryLabel={topic.cta} />
           </TopicCard>
         ))}
       </div>
@@ -206,7 +206,7 @@ const routineTopics = [
 
   <CTASection
     title="The Simplest Next Step"
-    primaryHref="/en/consultation/"
+    primaryHref="/en/contact/"
     primaryLabel="Discuss a Suitable Routine"
     secondaryHref={contactLinks.whatsapp.href}
     secondaryLabel="Message Me on WhatsApp"
@@ -257,4 +257,3 @@ const routineTopics = [
     .split-layout--reverse { grid-template-columns: minmax(360px, .8fr) minmax(0, 1fr); }
   }
 </style>
-
