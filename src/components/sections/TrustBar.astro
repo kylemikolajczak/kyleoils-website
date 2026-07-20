@@ -1,9 +1,66 @@
-<div class="trust-bar" aria-label="Vertrauen und Qualifikation">
-  <slot />
+---
+interface Props {
+  logoSrc: string;
+  logoAlt: string;
+  logoWidth: number;
+  logoHeight: number;
+}
+
+const { logoSrc, logoAlt, logoWidth, logoHeight } = Astro.props;
+---
+
+<div class="trust-bar">
+  <div class="trust-bar__logo">
+    <img
+      src={logoSrc}
+      alt={logoAlt}
+      width={logoWidth}
+      height={logoHeight}
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+  <div class="trust-bar__details">
+    <slot />
+  </div>
 </div>
 
 <style>
-  .trust-bar { display: grid; gap: 1px; overflow: hidden; border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-sand); }
-  .trust-bar :global(p) { margin: 0; padding: var(--space-20); background: var(--color-warm-white); color: var(--color-text-secondary); font-size: var(--font-size-small); font-weight: var(--font-weight-medium); text-align: center; }
-  @media (min-width: 768px) { .trust-bar { grid-template-columns: repeat(3, 1fr); } }
+  .trust-bar {
+    display: grid;
+    gap: var(--space-24);
+    align-items: center;
+    padding: var(--space-24);
+    border: 1px solid rgb(216 199 173 / 70%);
+    border-radius: var(--radius-card);
+    background: var(--color-soft-cream);
+  }
+  .trust-bar__logo { display: flex; align-items: center; justify-content: center; }
+  .trust-bar__logo img { width: min(100%, 360px); height: auto; object-fit: contain; }
+  .trust-bar__details {
+    display: grid;
+    gap: var(--space-12);
+    padding-top: var(--space-20);
+    border-top: 1px solid rgb(168 184 160 / 55%);
+  }
+  .trust-bar__details :global(p) {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    .trust-bar {
+      grid-template-columns: minmax(260px, .9fr) minmax(0, 1.1fr);
+      gap: var(--space-40);
+      padding: var(--space-32) var(--space-40);
+    }
+    .trust-bar__details {
+      gap: var(--space-16);
+      padding: var(--space-8) 0 var(--space-8) var(--space-40);
+      border-top: 0;
+      border-left: 1px solid rgb(168 184 160 / 55%);
+    }
+  }
 </style>
