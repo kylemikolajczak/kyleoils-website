@@ -60,15 +60,11 @@ const contactOptions = [
   },
   {
     title: 'Persönliche Beratung im Landkreis Lüneburg',
-    copy: 'Landkreis Lüneburg',
-    href: '/de/beratung/',
-    label: 'Beratungsgespräch anfragen',
+    copy: 'Wenn du aus dem Landkreis Lüneburg oder der näheren Umgebung kommst, können wir uns nach Absprache auch persönlich treffen.',
   },
   {
     title: 'Videocall',
-    copy: '',
-    href: '/de/beratung/',
-    label: 'Videocall anfragen',
+    copy: 'Wenn ein persönliches Treffen nicht möglich ist, können wir die Beratung auch bequem per Videocall durchführen.',
   },
 ];
 ---
@@ -127,11 +123,20 @@ const contactOptions = [
         <p>Ich antworte in der Regel innerhalb von 24 Stunden.</p>
       </SectionIntro>
       <div class="contact-grid">
-        {contactOptions.map((option) => (
+        {contactOptions.slice(0, 3).map((option) => (
           <article class="contact-card">
             <h3>{option.title}</h3>
             {option.copy && <p>{option.copy}</p>}
-            <a href={option.href}>{option.label}</a>
+            {option.href && option.label && <a href={option.href}>{option.label}</a>}
+          </article>
+        ))}
+      </div>
+      <h2 class="contact-subheading">Weitere Möglichkeiten der Beratung</h2>
+      <div class="contact-grid contact-grid--formats">
+        {contactOptions.slice(3).map((option) => (
+          <article class="contact-card">
+            <h3>{option.title}</h3>
+            <p>{option.copy}</p>
           </article>
         ))}
       </div>
@@ -207,7 +212,7 @@ const contactOptions = [
       </div>
       <div class="final-cta__actions">
         <Button href={contactLinks.whatsapp.href}>WhatsApp starten</Button>
-        <Button href="/de/beratung/" variant="secondary">Beratungsgespräch anfragen</Button>
+        <Button href="#contact-options" variant="secondary">Beratungsgespräch anfragen</Button>
         <Button href={contactLinks.phone.href} variant="secondary">Telefonisch kontaktieren</Button>
       </div>
     </div>
@@ -239,6 +244,7 @@ const contactOptions = [
   .calm-panel p { margin: 0 0 var(--space-16); color: var(--color-linen); }
   .calm-panel p:last-child { margin-bottom: 0; }
   .contact-grid { display: grid; gap: var(--space-20); }
+  .contact-subheading { margin: var(--space-48) 0 var(--space-24); font-size: var(--font-size-h3-mobile); line-height: 1.25; }
   .contact-card { min-height: 230px; display: flex; flex-direction: column; align-items: flex-start; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
   .contact-card h3 { margin: 0 0 var(--space-12); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
   .contact-card p { margin: 0 0 var(--space-24); overflow-wrap: anywhere; color: var(--color-text-secondary); }
@@ -288,6 +294,7 @@ const contactOptions = [
     .split-copy,
     .details-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); align-items: start; }
     .contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .contact-grid--formats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .calm-panel h2,
     .final-cta h2 { font-size: var(--font-size-h2-desktop); }
   }
