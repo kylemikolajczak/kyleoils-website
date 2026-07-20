@@ -16,7 +16,7 @@ import PageLayout from '../../../layouts/PageLayout.astro';
 
   <section class="section section--cream">
     <div class="container details-grid">
-      <TopicCard title="Anbieter">
+      <TopicCard title="Anbieter" headingLevel="h2">
         <address>
           Kyle Daniel Mikolajczak<br />
           Glüsingen 3<br />
@@ -25,18 +25,18 @@ import PageLayout from '../../../layouts/PageLayout.astro';
         </address>
       </TopicCard>
 
-      <TopicCard title="Kontakt">
+      <TopicCard title="Kontakt" headingLevel="h2">
         <div class="contact-details">
-          <p><strong>E-Mail:</strong><br /><span class="todo">kyle.mikolajczak@gmail.com</span></p>
+          <p><strong>E-Mail:</strong><br /><a href="mailto:kyle.mikolajczak@gmail.com">kyle.mikolajczak@gmail.com</a></p>
           <p><strong>Telefon:</strong><br /><a href="tel:+491794169488">+49 179 4169488</a></p>
         </div>
       </TopicCard>
 
-      <TopicCard title="Berufsbezeichnung">
+      <TopicCard title="Berufsbezeichnung" headingLevel="h2">
         <p>Selbstständiger doTERRA Wellness Advocate</p>
       </TopicCard>
 
-      <TopicCard title="Verantwortlich für den Inhalt">
+      <TopicCard title="Verantwortlich für den Inhalt" headingLevel="h2">
         <p>Kyle Daniel Mikolajczak</p>
       </TopicCard>
     </div>
@@ -78,7 +78,6 @@ import PageLayout from '../../../layouts/PageLayout.astro';
   .contact-details p { margin: 0; }
   .contact-details strong { color: var(--color-text-primary); }
   .contact-details a { color: var(--color-deep-forest); overflow-wrap: anywhere; }
-  .todo { color: var(--color-text-muted); }
   .legal-copy { display: grid; max-width: 920px; gap: var(--space-64); }
   .legal-copy h2 { margin: 0 0 var(--space-20); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); letter-spacing: -0.02em; }
   .legal-copy p { margin: 0 0 var(--space-16); color: var(--color-text-secondary); }

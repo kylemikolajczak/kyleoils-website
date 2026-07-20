@@ -18,7 +18,7 @@ import PageLayout from '../../../layouts/PageLayout.astro';
 
   <section class="section section--cream">
     <div class="container details-grid">
-      <TopicCard title="Controller">
+      <TopicCard title="Controller" headingLevel="h2">
         <address>
           Kyle Daniel Mikolajczak<br />
           Glüsingen 3<br />
@@ -31,7 +31,7 @@ import PageLayout from '../../../layouts/PageLayout.astro';
         </div>
       </TopicCard>
 
-      <TopicCard title="General Information">
+      <TopicCard title="General Information" headingLevel="h2">
         <p>This website is built as a static site. Simply visiting the website does not create user accounts, and the website does not store data in its own database.</p>
         <p>No analytics or marketing services are used. The website itself does not set cookies or use browser storage. External content is not embedded; images are provided locally and system fonts are used.</p>
         <p>Personal data is processed only where necessary for the technical provision of the website or when you choose to use a contact option or an external link.</p>
@@ -43,15 +43,16 @@ import PageLayout from '../../../layouts/PageLayout.astro';
     <div class="container legal-copy">
       <section aria-labelledby="hosting">
         <h2 id="hosting">Hosting</h2>
-        <p>The website is technically implemented as a static Astro website. To make it available online, the hosting provider processes technically necessary connection data so that the website can be accessed and operated securely.</p>
+        <p>The website is technically implemented as a static Astro website and is delivered through Cloudflare Workers using static assets. The provider is Cloudflare, Inc., 101 Townsend Street, San Francisco, California 94107, USA. The contact in Germany is Cloudflare Germany GmbH, c/o Design Offices München Atlas, Rosenheimer Straße 143C, 8th floor, 81671 Munich, Germany.</p>
+        <p>Cloudflare processes technically necessary connection and log data as a processor where required for the delivery, stability and security of the website. Data may also be processed in the United States or other countries. Cloudflare describes the safeguards it uses in its privacy information and Data Processing Addendum.</p>
         <p>The legal basis is Article 6(1)(f) GDPR. The legitimate interest lies in the reliable and secure provision of this website.</p>
-        <p class="todo"><strong>Information required before publication:</strong> The hosting provider for the live website has not yet been recorded in the project. The provider’s name, address, potential recipients, storage period and, where applicable, data processing agreement must be added once the provider has been selected.</p>
+        <p>Further information is available in the <a href="https://www.cloudflare.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Cloudflare Privacy Policy</a>.</p>
       </section>
 
       <section aria-labelledby="server-logfiles">
         <h2 id="server-logfiles">Server Log Files</h2>
-        <p>If the future hosting provider keeps server log files, the data processed when the website is accessed may include the IP address, date and time of access, page requested, referrer URL, browser and operating system, HTTP status code and amount of data transferred.</p>
-        <p>Processing serves the technical delivery, stability and security of the website. The legal basis is Article 6(1)(f) GDPR. The exact scope and retention period depend on the hosting provider selected and must be added before publication.</p>
+        <p>When the website is accessed, data processed may include the IP address, date and time of access, page requested, referrer URL, browser and operating system, HTTP status code and amount of data transferred.</p>
+        <p>Processing serves the technical delivery, stability and security of the website. The legal basis is Article 6(1)(f) GDPR. The scope and retention period depend on the Cloudflare service used and its configuration.</p>
       </section>
 
       <section aria-labelledby="kontakt-email">
@@ -91,13 +92,13 @@ import PageLayout from '../../../layouts/PageLayout.astro';
       <section aria-labelledby="speicherdauer">
         <h2 id="speicherdauer">Retention Period</h2>
         <p>Personal data from contact enquiries is stored only for as long as necessary to process the enquiry and any subsequent communication. It is then deleted unless statutory retention obligations or legitimate grounds require further storage.</p>
-        <p>The retention period for any server log files depends on the hosting provider selected and must be added before publication.</p>
+        <p>Technically necessary log data is deleted or anonymised in accordance with the retention periods that apply to the Cloudflare service used. The exact period depends on the service and its configuration.</p>
       </section>
 
       <section aria-labelledby="datensicherheit">
         <h2 id="datensicherheit">Data Security</h2>
-        <p>Appropriate technical and organisational measures are planned for the operation of the website to protect personal data against loss, manipulation and unauthorised access. The static architecture limits server-side processing to what is necessary for delivery.</p>
-        <p class="todo"><strong>Verification required before publication:</strong> The live website must use an encrypted HTTPS connection. The specific technical safeguards must be confirmed once the hosting provider has been selected.</p>
+        <p>Appropriate technical and organisational measures are used to protect personal data against loss, manipulation and unauthorised access. The static architecture limits server-side processing to what is necessary for delivery.</p>
+        <p>The website is delivered over an encrypted HTTPS connection.</p>
       </section>
     </div>
   </section>
@@ -122,9 +123,6 @@ import PageLayout from '../../../layouts/PageLayout.astro';
   .legal-copy h2 { margin: 0 0 var(--space-20); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); letter-spacing: -0.02em; }
   .legal-copy p { margin: 0 0 var(--space-16); color: var(--color-text-secondary); }
   .legal-copy p:last-child { margin-bottom: 0; }
-  .legal-copy .todo { padding: var(--space-20); border: 1px solid var(--color-sand); border-radius: var(--radius-card); background: var(--color-soft-cream); }
-  .legal-copy .todo strong { color: var(--color-text-primary); }
-
   @media (min-width: 768px) {
     .legal-hero { padding-block: var(--space-80); }
     .section { padding-block: var(--space-96); }
@@ -138,4 +136,3 @@ import PageLayout from '../../../layouts/PageLayout.astro';
     .legal-copy h2 { font-size: var(--font-size-h2-desktop); }
   }
 </style>
-
