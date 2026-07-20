@@ -81,7 +81,7 @@ const contactOptions = [
     title="Lass uns einfach sprechen"
     primaryHref={contactLinks.whatsapp.href}
     primaryLabel="WhatsApp starten"
-    secondaryHref="/de/beratung/"
+    secondaryHref="#contact-options"
     secondaryLabel="Kostenloses Beratungsgespräch anfragen"
     imageSrc="/assets/images/about/contact-kyle-horse.jpg"
     imageAlt="Kyle mit einem Pferd in der Natur"
@@ -91,7 +91,7 @@ const contactOptions = [
   >
     <p>Du musst noch nicht wissen, welches Öl, welches Starter-Set oder welche Routine die richtige ist.</p>
     <p>Die Kontaktaufnahme dient zuerst dazu, Fragen zu stellen, Orientierung zu bekommen und gemeinsam herauszufinden, was sinnvoll sein könnte.</p>
-    <p>Kein Verkaufsdruck.</p>
+    <p>Kein Verkaufsdruck. Du entscheidest selbst, ob du mich per WhatsApp, Telefon, E-Mail, Videocall oder persönlich kontaktieren möchtest.</p>
   </HeroSplit>
 
   <section class="section section--cream">
@@ -121,7 +121,7 @@ const contactOptions = [
     </div>
   </section>
 
-  <section class="section section--sage">
+  <section id="contact-options" class="section section--sage">
     <div class="container">
       <SectionIntro title="So kannst du mich erreichen">
         <p>Ich antworte in der Regel innerhalb von 24 Stunden.</p>
@@ -268,6 +268,10 @@ const contactOptions = [
   .compliance-section { padding: 0 0 var(--space-80); }
   .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
   .compliance-section :global(p + p) { margin-top: var(--space-12); }
+  #contact-options { scroll-margin-top: var(--space-32); }
+  @media (prefers-reduced-motion: no-preference) {
+    :global(html) { scroll-behavior: smooth; }
+  }
   @media (min-width: 600px) {
     .final-cta__actions { flex-direction: row; flex-wrap: wrap; }
   }
