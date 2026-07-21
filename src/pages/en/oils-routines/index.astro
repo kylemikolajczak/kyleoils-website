@@ -9,6 +9,21 @@ import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 import { contactLinks } from '../../../data/externalLinks';
 
+const applicationMethods = [
+  {
+    title: 'Aromatic',
+    copy: 'Through aroma, for example in a diffuser, directly from the open bottle or as part of an intentional scent routine.',
+  },
+  {
+    title: 'Topical',
+    copy: 'On the skin, for example diluted with a suitable carrier oil, in a roller blend or as part of a massage or personal care routine.',
+  },
+  {
+    title: 'Internal',
+    copy: 'Only for products that are specifically labelled for internal use and only in accordance with the directions provided for that product.',
+  },
+];
+
 const orientationTopics = [
   {
     title: 'Mood & Emotional Balance',
@@ -136,6 +151,23 @@ const routineTopics = [
         <p>Perhaps you do not need a large selection.<br />Perhaps a simple start is enough.<br />Perhaps a starter kit is the right choice.<br />Perhaps the first step is simply understanding how the oils can be used and what the options are.</p>
         <p>My support helps you make a considered start instead of buying products blindly.</p>
       </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionIntro title="Three Ways to Use Essential Oils">
+        <p>Depending on the product, essential oils can become part of everyday life in different ways. The three main methods are aromatic, topical and internal use.</p>
+      </SectionIntro>
+      <div class="application-grid">
+        {applicationMethods.map((method) => (
+          <TopicCard title={method.title}>
+            <p>{method.copy}</p>
+          </TopicCard>
+        ))}
+      </div>
+      <p class="application-safety">Not every essential oil is suitable for every method of use. Always follow the directions and warnings on the label and packaging. If you are unsure, have an existing health condition, are pregnant or breastfeeding, or are considering use with children, seek appropriate professional advice first.</p>
+      <p class="application-connection">The method of use explains how an oil is used. The following four everyday areas show where many people begin when creating a personal routine.</p>
     </div>
   </section>
 
@@ -275,6 +307,9 @@ const routineTopics = [
   .section--nature::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(250 247 241 / 76%); }
   .narrow-layout { max-width: var(--container-text); }
   .split-layout { display: grid; gap: var(--space-40); align-items: center; }
+  .application-grid { display: grid; gap: var(--space-20); }
+  .application-safety { margin: var(--space-32) 0 0; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-soft-cream); color: var(--color-text-secondary); }
+  .application-connection { max-width: var(--container-text); margin: var(--space-24) 0 0; color: var(--color-text-secondary); }
   .orientation-grid { display: grid; gap: var(--space-20); }
   .orientation-closing { max-width: var(--container-text); margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
   .topic-grid { display: grid; gap: var(--space-20); }
@@ -287,6 +322,7 @@ const routineTopics = [
   .compliance-section :global(p + p) { margin-top: var(--space-12); }
   @media (min-width: 768px) {
     .section { padding-block: var(--space-96); }
+    .application-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: var(--space-24); }
     .orientation-grid { grid-auto-rows: 1fr; }
     .orientation-grid,
     .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
