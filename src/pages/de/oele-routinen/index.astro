@@ -9,6 +9,25 @@ import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 import { contactLinks } from '../../../data/externalLinks';
 
+const orientationTopics = [
+  {
+    title: 'Stimmung & emotionale Balance',
+    copy: 'Düfte und bewusste Routinen können dabei helfen, Momente der Ruhe, Ausgeglichenheit oder neuer Energie in den Alltag zu bringen.',
+  },
+  {
+    title: 'Schlaf & Entspannung',
+    copy: 'Eine ruhige Abendroutine kann dabei unterstützen, den Tag bewusst ausklingen zu lassen und eine angenehme Atmosphäre für die Nacht zu schaffen.',
+  },
+  {
+    title: 'Verdauung & tägliches Wohlbefinden',
+    copy: 'Routinen rund um Ernährung, bewusste Gewohnheiten und ausgewählte Wellness-Produkte können Teil eines achtsamen Alltags sein.',
+  },
+  {
+    title: 'Muskeln, Bewegung & körperliches Wohlbefinden',
+    copy: 'Nach Bewegung, Sport oder einem langen Tag nutzen viele Menschen wohltuende Anwendungen und Massageroutinen als Teil ihrer persönlichen Erholung.',
+  },
+];
+
 const routineTopics = [
   {
     title: 'Ruhe & Stress',
@@ -116,6 +135,23 @@ const routineTopics = [
         <p>Vielleicht brauchst du keine große Auswahl.<br />Vielleicht reicht ein einfacher Einstieg.<br />Vielleicht passt ein Starter-Set.<br />Vielleicht geht es erstmal nur darum, Anwendung und Möglichkeiten zu verstehen.</p>
         <p>Meine Beratung hilft dir, nicht blind Produkte zu kaufen, sondern bewusst zu starten.</p>
       </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container">
+      <SectionIntro title="Vier Bereiche, bei denen viele Menschen beginnen">
+        <p>Viele Menschen beschäftigen sich mit ätherischen Ölen, weil sie sich in einem bestimmten Bereich ihres Alltags mehr Unterstützung wünschen. Statt direkt mit einzelnen Produkten zu beginnen, schauen wir deshalb zuerst darauf, was dir im Alltag wichtig ist.</p>
+        <p>Häufig stehen dabei diese vier Themen im Mittelpunkt:</p>
+      </SectionIntro>
+      <div class="orientation-grid">
+        {orientationTopics.map((topic) => (
+          <TopicCard title={topic.title}>
+            <p>{topic.copy}</p>
+          </TopicCard>
+        ))}
+      </div>
+      <p class="orientation-closing">Diese Bereiche sind keine festen Schubladen. Oft hängen Stimmung, Schlaf, körperliches Wohlbefinden und tägliche Routinen miteinander zusammen. In der Beratung schauen wir deshalb gemeinsam darauf, was zu deiner persönlichen Situation passt.</p>
     </div>
   </section>
 
@@ -238,6 +274,8 @@ const routineTopics = [
   .section--nature::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(250 247 241 / 76%); }
   .narrow-layout { max-width: var(--container-text); }
   .split-layout { display: grid; gap: var(--space-40); align-items: center; }
+  .orientation-grid { display: grid; gap: var(--space-20); }
+  .orientation-closing { max-width: var(--container-text); margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
   .topic-grid { display: grid; gap: var(--space-20); }
   .topic-grid :global(.topic-card > div) { display: flex; height: calc(100% - 52px); flex-direction: column; }
   .topic-grid :global(.topic-card p) { margin: 0 0 var(--space-12); }
@@ -248,6 +286,8 @@ const routineTopics = [
   .compliance-section :global(p + p) { margin-top: var(--space-12); }
   @media (min-width: 768px) {
     .section { padding-block: var(--space-96); }
+    .orientation-grid { grid-auto-rows: 1fr; }
+    .orientation-grid,
     .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }
   @media (min-width: 1024px) {

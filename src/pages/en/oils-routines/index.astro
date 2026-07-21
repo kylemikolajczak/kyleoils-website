@@ -9,6 +9,25 @@ import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 import { contactLinks } from '../../../data/externalLinks';
 
+const orientationTopics = [
+  {
+    title: 'Mood & Emotional Balance',
+    copy: 'Scents and intentional routines can help create moments of calm, balance or renewed energy in everyday life.',
+  },
+  {
+    title: 'Sleep & Relaxation',
+    copy: 'A calming evening routine can help you bring the day to a gentle close and create a pleasant atmosphere for the night.',
+  },
+  {
+    title: 'Digestion & Everyday Wellbeing',
+    copy: 'Routines around nutrition, mindful habits and selected wellness products can form part of a more intentional daily lifestyle.',
+  },
+  {
+    title: 'Muscles, Movement & Physical Wellbeing',
+    copy: 'After exercise, physical activity or a long day, many people include soothing applications and massage routines as part of their personal recovery.',
+  },
+];
+
 const routineTopics = [
   {
     title: 'Calm & Stress',
@@ -117,6 +136,23 @@ const routineTopics = [
         <p>Perhaps you do not need a large selection.<br />Perhaps a simple start is enough.<br />Perhaps a starter kit is the right choice.<br />Perhaps the first step is simply understanding how the oils can be used and what the options are.</p>
         <p>My support helps you make a considered start instead of buying products blindly.</p>
       </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container">
+      <SectionIntro title="Four Areas Where Many People Begin">
+        <p>Many people become interested in essential oils because they would like more support in a particular area of everyday life. Rather than beginning with individual products, we first look at what matters most to you.</p>
+        <p>These four areas are often a good place to begin:</p>
+      </SectionIntro>
+      <div class="orientation-grid">
+        {orientationTopics.map((topic) => (
+          <TopicCard title={topic.title}>
+            <p>{topic.copy}</p>
+          </TopicCard>
+        ))}
+      </div>
+      <p class="orientation-closing">These areas are not separate categories. Mood, sleep, physical wellbeing and everyday routines often influence one another. During a consultation, we therefore look at what best fits your individual situation.</p>
     </div>
   </section>
 
@@ -239,6 +275,8 @@ const routineTopics = [
   .section--nature::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(250 247 241 / 76%); }
   .narrow-layout { max-width: var(--container-text); }
   .split-layout { display: grid; gap: var(--space-40); align-items: center; }
+  .orientation-grid { display: grid; gap: var(--space-20); }
+  .orientation-closing { max-width: var(--container-text); margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
   .topic-grid { display: grid; gap: var(--space-20); }
   .topic-grid :global(.topic-card > div) { display: flex; height: calc(100% - 52px); flex-direction: column; }
   .topic-grid :global(.topic-card p) { margin: 0 0 var(--space-12); }
@@ -249,6 +287,8 @@ const routineTopics = [
   .compliance-section :global(p + p) { margin-top: var(--space-12); }
   @media (min-width: 768px) {
     .section { padding-block: var(--space-96); }
+    .orientation-grid { grid-auto-rows: 1fr; }
+    .orientation-grid,
     .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }
   @media (min-width: 1024px) {
