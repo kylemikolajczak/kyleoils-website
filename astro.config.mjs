@@ -5,6 +5,9 @@ export default defineConfig({
   site: 'https://kyleoils.com',
   output: 'static',
   trailingSlash: 'always',
+  build: {
+    inlineStylesheets: 'always',
+  },
   integrations: [
     sitemap({
       filter: (page) => !page.endsWith('/404/'),

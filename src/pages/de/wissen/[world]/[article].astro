@@ -1,0 +1,47 @@
+---
+import ArticleTemplate from '../../../../components/knowledge/ArticleTemplate.astro';
+import { getKnowledgeBreadcrumbs, knowledgeWorlds } from '../../../../data/knowledge';
+import { knowledgeArticles } from '../../../../data/knowledgeArticles';
+import PageLayout from '../../../../layouts/PageLayout.astro';
+
+export function getStaticPaths() {
+  return knowledgeArticles.map((article) => {
+    const [, , , world, articleSlug] = article.route.split('/');
+    return { params: { world, article: articleSlug } };
+  });
+}
+
+const route = `/de/wissen/${Astro.params.world}/${Astro.params.article}/`;
+const article = knowledgeArticles.find((item) => item.route === route);
+if (!article) return Astro.redirect('/de/wissen/');
+const world = knowledgeWorlds.find((item) => item.id === article.worldId);
+if (!world) return Astro.redirect('/de/wissen/');
+const relatedLinks = article.relatedArticleIds
+  .map((id) => knowledgeArticles.find((item) => item.id === id))
+  .filter((item): item is NonNullable<typeof item> => Boolean(item))
+  .map((item) => ({ label: item.title, href: item.route, description: item.description }));
+const safetyNote = article.medicalDisclaimerRequired
+  ? 'Die Informationen auf dieser Seite dienen der allgemeinen Orientierung rund um ätherische Öle, Duft, Alltag und Wellness-Routinen. Sie ersetzen keine medizinische Beratung, Diagnose oder Behandlung.'
+  : undefined;
+---
+
+<PageLayout title={article.seoTitle} description={article.description}>
+  <ArticleTemplate
+    locale="de"
+    breadcrumbs={getKnowledgeBreadcrumbs('de', article.worldId, article.title)}
+    worldLabel={world.label.de}
+    title={article.title}
+    intro={article.description}
+    reviewLine={`Geprüft von ${article.reviewedBy}`}
+    {safetyNote}
+    ctaLabel={article.cta}
+    {relatedLinks}
+  >
+    {article.blocks.map((block) => {
+      if (block.type === 'heading') return block.level === 2 ? <h2>{block.text}</h2> : <h3>{block.text}</h3>;
+      if (block.type === 'paragraph') return <p>{block.text}</p>;
+      if (block.type === 'unordered-list') return <ul>{block.items.map((item) => <li>{item}</li>)}</ul>;
+      return <ol>{block.items.map((item) => <li>{item}</li>)}</ol>;
+    })}
+  </ArticleTemplate>
+</PageLayout>

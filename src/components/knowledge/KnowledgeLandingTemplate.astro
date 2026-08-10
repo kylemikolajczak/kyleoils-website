@@ -1,0 +1,101 @@
+---
+import CTAGroup from '../cta/CTAGroup.astro';
+import KnowledgeCta from './KnowledgeCta.astro';
+import KnowledgeArticleSearch from './KnowledgeArticleSearch.astro';
+import KnowledgeWorldCard from './KnowledgeWorldCard.astro';
+import KnowledgeArticleCard from './KnowledgeArticleCard.astro';
+import type { KnowledgeWorld } from '../../data/knowledge';
+import type { KnowledgeArticleSummary } from '../../data/knowledgeArticles';
+import type { Locale } from '../../data/locales';
+
+interface Props { locale: Locale; title: string; description: string; worlds: KnowledgeWorld[]; featuredArticles?: KnowledgeArticleSummary[]; recommendedStartArticles?: KnowledgeArticleSummary[]; searchArticles?: KnowledgeArticleSummary[]; }
+const { locale, title, description, worlds, featuredArticles = [], recommendedStartArticles = [], searchArticles = [] } = Astro.props;
+const contactHref = locale === 'de' ? '/de/kontakt/' : '/en/contact/';
+const worldLabel = locale === 'de' ? 'Wissenswelten' : 'Knowledge Worlds';
+const linkLabel = locale === 'de' ? 'Mehr erfahren' : 'Learn more';
+const recommendedStartTitle = locale === 'de' ? 'Empfohlener Start für Anfänger' : 'Recommended Start for Beginners';
+const recommendedStartDescription = locale === 'en' ? 'Follow these first guides if you are new to essential oils.' : undefined;
+const featuredTitle = locale === 'de' ? 'Ausgewählte Einstiege' : 'Selected Starting Points';
+---
+
+<section class="knowledge-hero">
+  <div class="container knowledge-hero__grid">
+    <div>
+      <p class="eyebrow">{locale === 'de' ? 'Kyle Oils Wissen' : 'Kyle Oils Knowledge'}</p>
+      <h1>{title}</h1>
+      <p class="knowledge-hero__intro">{description}</p>
+      <CTAGroup primaryHref={contactHref} primaryLabel={locale === 'de' ? 'Persönliche Beratung anfragen' : 'Request a personal consultation'} />
+    </div>
+    <div class="knowledge-hero__image" role="img" aria-label={locale === 'de' ? 'Lüneburger Heide in warmem Licht' : 'Lüneburg Heath in warm light'}></div>
+  </div>
+</section>
+
+<section class="section section--cream">
+  <div class="container">
+    <header class="section-intro">
+      <h2>{worldLabel}</h2>
+      <p>{locale === 'de' ? 'Wähle das Thema, mit dem du starten möchtest.' : 'Choose the topic you would like to start with.'}</p>
+    </header>
+    <div class="world-grid">
+      {worlds.map((world) => <KnowledgeWorldCard label={world.label[locale]} description={world.description[locale]} href={world.href[locale]} {linkLabel} />)}
+    </div>
+  </div>
+</section>
+
+{recommendedStartArticles.length > 0 && (
+  <section class="section knowledge-start-path">
+    <div class="container">
+      <header class="section-intro">
+        <h2>{recommendedStartTitle}</h2>
+        {recommendedStartDescription && <p>{recommendedStartDescription}</p>}
+      </header>
+      <ol class="knowledge-start-path__list">
+        {recommendedStartArticles.map((article, index) => (
+          <li>
+            <span class="knowledge-start-path__number" aria-hidden="true">{index + 1}</span>
+            <a href={article.route}>{article.title}</a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+)}
+
+{searchArticles.length > 0 && <KnowledgeArticleSearch articles={searchArticles} {locale} />}
+
+{featuredArticles.length > 0 && (
+  <section class="section">
+    <div class="container">
+      <header class="section-intro">
+        <h2>{featuredTitle}</h2>
+      </header>
+      <div class="article-grid">
+        {featuredArticles.map((article) => <KnowledgeArticleCard title={article.title} description={article.description} href={article.route} />)}
+      </div>
+    </div>
+  </section>
+)}
+
+<KnowledgeCta {locale} />
+
+<style>
+  .knowledge-hero { padding: var(--space-64) 0; overflow: hidden; background: var(--color-warm-white); }
+  .knowledge-hero__grid { display: grid; gap: var(--space-40); align-items: center; }
+  .eyebrow { margin: 0 0 var(--space-16); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .04em; text-transform: uppercase; }
+  h1 { max-width: var(--container-text); margin: 0 0 var(--space-24); font-size: var(--font-size-h1-mobile); line-height: var(--line-height-heading); letter-spacing: -.025em; }
+  .knowledge-hero__intro { max-width: var(--container-text); margin: 0 0 var(--space-32); color: var(--color-text-secondary); }
+  .knowledge-hero__image { min-height: 300px; border-radius: var(--radius-image); background: url('/assets/images/nature/nature-heath-hero-01.png') center / cover no-repeat; box-shadow: var(--shadow-card); }
+  .section { padding: var(--space-64) 0; background: var(--color-soft-cream); }
+  .section-intro { max-width: var(--container-text); margin-bottom: var(--space-40); }
+  h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
+  .section-intro p { margin: 0; color: var(--color-text-secondary); }
+  .world-grid, .article-grid { display: grid; gap: var(--space-20); }
+  .knowledge-start-path { background: var(--color-warm-white); }
+  .knowledge-start-path__list { display: grid; gap: var(--space-12); max-width: var(--container-text); margin: 0; padding: 0; list-style: none; }
+  .knowledge-start-path__list li { display: flex; align-items: center; gap: var(--space-16); padding: var(--space-16) var(--space-20); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-soft-cream); }
+  .knowledge-start-path__number { display: grid; flex: 0 0 1.9rem; place-items: center; width: 1.9rem; height: 1.9rem; border-radius: 50%; background: var(--color-deep-forest); color: var(--color-warm-white); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
+  .knowledge-start-path__list a { color: var(--color-text-primary); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  .knowledge-start-path__list a:hover { color: var(--color-deep-forest); text-decoration: underline; }
+  @media (min-width: 768px) { .knowledge-hero, .section { padding-block: var(--space-96); } .world-grid, .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); } }
+  @media (min-width: 1024px) { .knowledge-hero { padding-block: var(--space-120); } .knowledge-hero__grid { grid-template-columns: minmax(0, 1fr) minmax(360px, .8fr); gap: var(--space-80); } .knowledge-hero__image { min-height: 460px; } .section { padding-block: var(--space-120); } h1 { font-size: var(--font-size-h1-desktop); } h2 { font-size: var(--font-size-h2-desktop); } .world-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } .article-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+</style>

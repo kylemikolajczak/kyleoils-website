@@ -1,0 +1,131 @@
+---
+import type { KnowledgeArticleSummary } from '../../data/knowledgeArticles';
+import type { Locale } from '../../data/locales';
+
+interface Props { articles: KnowledgeArticleSummary[]; locale: Locale; }
+const { articles, locale } = Astro.props;
+
+const copy = locale === 'de'
+  ? {
+    eyebrow: 'ARTIKEL SUCHEN', title: 'Wissen gezielt finden', helper: 'Suche nach Themen wie Verdünnung, Diffuser, Lavender, Abendroutine oder Photosensitivität.', input: 'Thema oder Begriff eingeben', minimum: 'Gib mindestens zwei Zeichen ein, um passende Artikel zu finden.', none: 'Zu diesem Begriff wurden keine Artikel gefunden. Du kannst einen anderen Begriff versuchen oder eine Wissenswelt wählen.', read: 'Artikel lesen', singular: 'Artikel gefunden.', plural: 'Artikel gefunden.',
+  }
+  : {
+    eyebrow: 'SEARCH ARTICLES', title: 'Find knowledge clearly', helper: 'Search for topics like dilution, diffuser, carrier oils, photosensitivity or beginner routines.', input: 'Enter a topic or term', minimum: 'Enter at least two characters to find matching articles.', none: 'No matching articles found yet. Try a different term or ask Kyle for guidance.', read: 'Read article', singular: 'article found.', plural: 'articles found.',
+  };
+
+const searchArticles = articles.map(({ title, description, route, worldLabel }) => ({
+  title,
+  description,
+  route,
+  worldLabel,
+}));
+---
+
+<section class="knowledge-search section" aria-labelledby="knowledge-search-title">
+  <div class="container knowledge-search__container">
+    <header class="section-intro">
+      <p class="eyebrow">{copy.eyebrow}</p>
+      <h2 id="knowledge-search-title">{copy.title}</h2>
+      <p>{copy.helper}</p>
+    </header>
+
+    <div class="knowledge-search__field">
+      <label for="knowledge-article-search">{copy.input}</label>
+      <input id="knowledge-article-search" type="search" autocomplete="off" enterkeyhint="search" placeholder={copy.input} aria-describedby="knowledge-search-status" />
+    </div>
+
+    <p id="knowledge-search-status" class="knowledge-search__status" role="status" aria-live="polite">{copy.minimum}</p>
+    <div id="knowledge-search-results" class="knowledge-search__results" aria-live="polite"></div>
+  </div>
+</section>
+
+<script define:vars={{ searchArticles, copy, locale }}>
+  const input = document.querySelector('#knowledge-article-search');
+  const status = document.querySelector('#knowledge-search-status');
+  const results = document.querySelector('#knowledge-search-results');
+
+  const normalize = (value) => value
+    .toLocaleLowerCase(locale)
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '');
+
+  const searchableArticles = searchArticles.map((article) => ({
+    ...article,
+    searchText: normalize([article.title, article.description, article.route, article.worldLabel].join(' ')),
+  }));
+
+  const renderResults = (matches) => {
+    results.replaceChildren();
+
+    for (const article of matches) {
+      const card = document.createElement('article');
+      card.className = 'knowledge-search__result';
+
+      const world = document.createElement('p');
+      world.className = 'knowledge-search__world';
+      world.textContent = article.worldLabel;
+
+      const title = document.createElement('h3');
+      const titleLink = document.createElement('a');
+      titleLink.href = article.route;
+      titleLink.textContent = article.title;
+      title.append(titleLink);
+
+      const description = document.createElement('p');
+      description.textContent = article.description;
+
+      const link = document.createElement('a');
+      link.className = 'knowledge-search__link';
+      link.href = article.route;
+      link.textContent = copy.read;
+
+      card.append(world, title, description, link);
+      results.append(card);
+    }
+  };
+
+  input?.addEventListener('input', () => {
+    const query = normalize(input.value.trim());
+
+    if (query.length < 2) {
+      results.replaceChildren();
+      status.textContent = copy.minimum;
+      return;
+    }
+
+    const matches = searchableArticles.filter((article) => article.searchText.includes(query));
+    if (!matches.length) {
+      results.replaceChildren();
+      status.textContent = copy.none;
+      return;
+    }
+
+    status.textContent = matches.length === 1 ? `1 ${copy.singular}` : `${matches.length} ${copy.plural}`;
+    renderResults(matches);
+  });
+</script>
+
+<style>
+  .knowledge-search { background: var(--color-warm-white); }
+  .knowledge-search__container { max-width: var(--container-main); }
+  .section-intro { max-width: var(--container-text); margin-bottom: var(--space-32); }
+  .eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .04em; text-transform: uppercase; }
+  h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
+  .section-intro > p:last-child { margin: 0; color: var(--color-text-secondary); }
+  .knowledge-search__field { display: grid; gap: var(--space-8); max-width: var(--container-text); }
+  label { color: var(--color-text-primary); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
+  input { width: 100%; min-height: 52px; border: 1px solid var(--color-sand); border-radius: var(--radius-button); background: var(--color-soft-cream); color: var(--color-text-primary); padding: var(--space-12) var(--space-16); }
+  input::placeholder { color: var(--color-text-muted); }
+  input:focus { border-color: var(--color-sage-green); outline: 2px solid var(--color-sage-green); outline-offset: 2px; }
+  .knowledge-search__status { max-width: var(--container-text); margin: var(--space-16) 0 0; color: var(--color-text-secondary); font-size: var(--font-size-small); }
+  .knowledge-search__results { display: grid; gap: var(--space-16); margin-top: var(--space-24); }
+  .knowledge-search__result { padding: var(--space-20); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-soft-cream); }
+  .knowledge-search__world { margin: 0 0 var(--space-8); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
+  h3 { margin: 0 0 var(--space-8); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
+  h3 a { color: var(--color-text-primary); text-decoration: none; }
+  h3 a:hover, .knowledge-search__link:hover { text-decoration: underline; }
+  .knowledge-search__result > p:not(.knowledge-search__world) { margin: 0 0 var(--space-16); color: var(--color-text-secondary); }
+  .knowledge-search__link { color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  @media (min-width: 768px) { .knowledge-search__results { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-20); } }
+  @media (min-width: 1024px) { h2 { font-size: var(--font-size-h2-desktop); } .knowledge-search__results { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-24); } }
+</style>

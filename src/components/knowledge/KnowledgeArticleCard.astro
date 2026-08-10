@@ -1,0 +1,21 @@
+---
+interface Props { title: string; description: string; href: string; }
+const { title, description, href } = Astro.props;
+---
+
+<article class="article-card">
+  <h2><a href={href}>{title}</a></h2>
+  <p>{description}</p>
+  <a class="article-card__link" href={href}>Artikel lesen <span aria-hidden="true">→</span></a>
+</article>
+
+<style>
+  .article-card { display: flex; min-height: 230px; flex-direction: column; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
+  h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
+  h2 a { color: var(--color-text-primary); text-decoration: none; }
+  h2 a:hover { color: var(--color-deep-forest); }
+  p { margin: 0 0 var(--space-24); color: var(--color-text-secondary); }
+  .article-card__link { margin-top: auto; color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  .article-card__link:hover { text-decoration: underline; }
+  @media (min-width: 768px) { .article-card { padding: var(--space-32); } }
+</style>

@@ -15,10 +15,13 @@ const independenceNote = locale === 'de'
 
 <footer class="site-footer">
   <div class="container footer-grid">
-    <div>
-      <strong>{data.brand}</strong>
-      <p>{data.claim}</p>
-      <p>{data.description}</p>
+    <div class="footer-brand">
+      <img class="footer-brand__mark" src="/favicon-source.png" alt="" width="64" height="64" />
+      <div>
+        <strong>{data.brand}</strong>
+        <p>{data.claim}</p>
+        <p>{data.description}</p>
+      </div>
     </div>
     <nav aria-label={labels.main}><h2>{labels.mainTitle}</h2><ul>{data.mainNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
     <nav aria-label={labels.additional}><h2>{labels.additional}</h2><ul>{data.additionalNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
@@ -35,6 +38,8 @@ const independenceNote = locale === 'de'
 <style>
   .site-footer { padding: var(--space-64) 0 var(--space-32); background: var(--color-warm-anthracite); color: var(--color-text-inverted); }
   .footer-grid { display: grid; gap: var(--space-40); }
+  .footer-brand { display: flex; align-items: flex-start; gap: var(--space-16); }
+  .footer-brand__mark { width: 56px; height: 56px; flex: 0 0 auto; }
   h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-body-mobile); }
   p { color: var(--color-linen); }
   ul { display: grid; gap: var(--space-8); margin: 0; padding: 0; list-style: none; }

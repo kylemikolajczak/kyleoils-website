@@ -1,0 +1,34 @@
+---
+interface RelatedLink { label: string; href: string; description?: string; }
+interface Props { title: string; links: RelatedLink[]; }
+const { title, links } = Astro.props;
+---
+
+{links.length > 0 && (
+  <section class="related-links" aria-labelledby="related-links-title">
+    <div class="knowledge-container">
+      <h2 id="related-links-title">{title}</h2>
+      <ul>
+        {links.map((link) => (
+          <li>
+            <a href={link.href}>{link.label}<span aria-hidden="true"> →</span></a>
+            {link.description && <p>{link.description}</p>}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}
+
+<style>
+  .related-links { padding: var(--space-48) 0; background: var(--color-soft-cream); }
+  .knowledge-container { width: min(100% - (2 * var(--gutter-mobile)), var(--container-text)); margin-inline: auto; }
+  h2 { margin: 0 0 var(--space-24); font-size: var(--font-size-h3-mobile); line-height: 1.25; }
+  ul { display: grid; gap: var(--space-12); margin: 0; padding: 0; list-style: none; }
+  li { padding: var(--space-20); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); }
+  a { color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  p { margin: var(--space-8) 0 0; color: var(--color-text-secondary); font-size: var(--font-size-small); }
+  @media (min-width: 768px) { .knowledge-container { width: min(100% - (2 * var(--gutter-tablet)), var(--container-text)); } }
+  @media (min-width: 1024px) { .knowledge-container { width: min(100% - (2 * var(--gutter-desktop)), var(--container-text)); } }
+</style>

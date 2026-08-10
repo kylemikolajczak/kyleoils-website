@@ -1,0 +1,32 @@
+---
+import CTAGroup from '../cta/CTAGroup.astro';
+import { contactLinks } from '../../data/externalLinks';
+import type { Locale } from '../../data/locales';
+
+interface Props { locale: Locale; title?: string; primaryLabel?: string; }
+const { locale, title = locale === 'de' ? 'Fragen? Ich unterstütze dich gern persönlich.' : 'Questions? I am happy to support you personally.', primaryLabel = locale === 'de' ? 'Persönliche Beratung anfragen' : 'Request a personal consultation' } = Astro.props;
+const primaryHref = locale === 'de' ? '/de/kontakt/' : '/en/contact/';
+const secondaryLabel = locale === 'de' ? 'WhatsApp starten' : 'Start WhatsApp';
+---
+
+<section class="knowledge-cta">
+  <div class="knowledge-container knowledge-cta__inner">
+    <div>
+      <h2>{title}</h2>
+      <p>{locale === 'de' ? 'Wenn du etwas einordnen möchtest, kannst du dich jederzeit bei mir melden.' : 'If you would like to make sense of something, you are welcome to get in touch.'}</p>
+    </div>
+    <CTAGroup primaryHref={primaryHref} primaryLabel={primaryLabel} secondaryHref={contactLinks.whatsapp.href} secondaryLabel={secondaryLabel} />
+  </div>
+</section>
+
+<style>
+  .knowledge-cta { padding: var(--space-64) 0; }
+  .knowledge-container { width: min(100% - (2 * var(--gutter-mobile)), var(--container-text)); margin-inline: auto; }
+  .knowledge-cta__inner { display: grid; gap: var(--space-32); padding: var(--space-40) var(--space-24); border-radius: var(--radius-section); background: var(--color-deep-forest); color: var(--color-text-inverted); }
+  h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h3-mobile); line-height: 1.25; }
+  p { margin: 0; color: var(--color-linen); }
+  .knowledge-cta :global(.button--primary) { border-color: var(--color-warm-white); background: var(--color-warm-white); color: var(--color-deep-forest); }
+  .knowledge-cta :global(.button--secondary) { color: var(--color-warm-white); }
+  @media (min-width: 768px) { .knowledge-container { width: min(100% - (2 * var(--gutter-tablet)), var(--container-text)); } .knowledge-cta { padding-block: var(--space-80); } .knowledge-cta__inner { padding: var(--space-48); } }
+  @media (min-width: 1024px) { .knowledge-container { width: min(100% - (2 * var(--gutter-desktop)), var(--container-text)); } }
+</style>

@@ -2,7 +2,8 @@
 import SiteHeader from '../components/navigation/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
 import { getLanguagePaths, type Locale } from '../data/locales';
-import '../styles/global.css';
+import tokensCss from '../styles/tokens.css?inline';
+import globalCss from '../styles/global.css?inline';
 
 interface Props {
   title: string;
@@ -15,8 +16,8 @@ const currentPath = Astro.url.pathname;
 const languagePaths = getLanguagePaths(currentPath);
 const baseUrl = Astro.site ?? Astro.url.origin;
 const canonicalUrl = new URL(currentPath, baseUrl);
-const germanUrl = new URL(languagePaths.de, baseUrl);
-const englishUrl = new URL(languagePaths.en, baseUrl);
+const germanUrl = languagePaths ? new URL(languagePaths.de, baseUrl) : undefined;
+const englishUrl = languagePaths ? new URL(languagePaths.en, baseUrl) : undefined;
 const socialImageUrl = new URL('/og-image.jpg', baseUrl);
 const siteUrl = 'https://kyleoils.com';
 const personId = `${siteUrl}/#person`;
@@ -61,6 +62,8 @@ const structuredData = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <style set:html={tokensCss} />
+    <style set:html={globalCss} />
     <meta name="theme-color" content="#a8b8a0" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -70,9 +73,9 @@ const structuredData = {
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="alternate" hreflang="de" href={germanUrl} />
-    <link rel="alternate" hreflang="en" href={englishUrl} />
-    <link rel="alternate" hreflang="x-default" href={germanUrl} />
+    {germanUrl && <link rel="alternate" hreflang="de" href={germanUrl} />}
+    {englishUrl && <link rel="alternate" hreflang="en" href={englishUrl} />}
+    {germanUrl && <link rel="alternate" hreflang="x-default" href={germanUrl} />}
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Kyle Daniel Mikolajczak" />
     <meta property="og:title" content={title} />

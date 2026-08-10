@@ -1,0 +1,21 @@
+---
+import KnowledgeWorldTemplate from '../../../components/knowledge/KnowledgeWorldTemplate.astro';
+import { getKnowledgeBreadcrumbs, getKnowledgeWorldBySlug, knowledgeWorlds } from '../../../data/knowledge';
+import { englishKnowledgeArticles } from '../../../data/knowledgeArticles';
+import PageLayout from '../../../layouts/PageLayout.astro';
+
+export function getStaticPaths() {
+  return knowledgeWorlds.map((world) => ({
+    params: { slug: world.href.en.split('/').filter(Boolean).at(-1) },
+  }));
+}
+
+const world = getKnowledgeWorldBySlug('en', Astro.params.slug ?? '');
+if (!world) return Astro.redirect('/en/knowledge/');
+const relatedWorlds = knowledgeWorlds.filter((item) => item.id !== world.id).slice(0, 3);
+const articles = englishKnowledgeArticles.filter((article) => article.worldId === world.id);
+---
+
+<PageLayout lang="en" title={`${world.label.en} | Knowledge | Kyle Daniel Mikolajczak`} description={world.description.en}>
+  <KnowledgeWorldTemplate locale="en" {world} breadcrumbs={getKnowledgeBreadcrumbs('en', world.id)} {relatedWorlds} {articles} />
+</PageLayout>

@@ -1,0 +1,65 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import KnowledgeCta from './KnowledgeCta.astro';
+import KnowledgeWorldCard from './KnowledgeWorldCard.astro';
+import KnowledgeArticleCard from './KnowledgeArticleCard.astro';
+import type { BreadcrumbItem, KnowledgeWorld } from '../../data/knowledge';
+import type { KnowledgeArticleSummary } from '../../data/knowledgeArticles';
+import type { Locale } from '../../data/locales';
+
+interface Props { locale: Locale; world: KnowledgeWorld; breadcrumbs: BreadcrumbItem[]; relatedWorlds: KnowledgeWorld[]; articles?: KnowledgeArticleSummary[]; }
+const { locale, world, breadcrumbs, relatedWorlds, articles = [] } = Astro.props;
+const linkLabel = locale === 'de' ? 'Mehr erfahren' : 'Learn more';
+---
+
+<section class="world-header">
+  <div class="knowledge-container">
+    <Breadcrumbs items={breadcrumbs} />
+    <p class="eyebrow">{locale === 'de' ? 'Wissenswelt' : 'Knowledge World'}</p>
+    <h1>{world.label[locale]}</h1>
+    <p>{world.intro[locale]}</p>
+  </div>
+</section>
+
+{articles.length > 0 ? (
+  <section class="section section--cream">
+    <div class="container">
+      <h2>Artikel in dieser Wissenswelt</h2>
+      <div class="article-grid">
+        {articles.map((article) => <KnowledgeArticleCard title={article.title} description={article.description} href={article.route} />)}
+      </div>
+    </div>
+  </section>
+) : (
+<section class="section section--cream">
+  <div class="knowledge-container">
+    <h2>{locale === 'de' ? 'Orientierung in dieser Wissenswelt' : 'Orientation in this knowledge world'}</h2>
+    <p class="section-copy">{locale === 'de' ? 'Die ersten ausführlichen Inhalte werden nach dem freigegebenen Content-Pack ergänzt. Bis dahin kannst du weitere Wissenswelten entdecken oder dich persönlich beraten lassen.' : 'The first in-depth guides will be added with the approved content pack. In the meantime, you can explore other knowledge worlds or ask for personal guidance.'}</p>
+  </div>
+</section>
+)}
+
+<section class="section">
+  <div class="container">
+    <h2>{locale === 'de' ? 'Weitere Wissenswelten' : 'More Knowledge Worlds'}</h2>
+    <div class="world-grid">
+      {relatedWorlds.map((item) => <KnowledgeWorldCard label={item.label[locale]} description={item.description[locale]} href={item.href[locale]} {linkLabel} />)}
+    </div>
+  </div>
+</section>
+
+<KnowledgeCta {locale} />
+
+<style>
+  .knowledge-container { width: min(100% - (2 * var(--gutter-mobile)), var(--container-text)); margin-inline: auto; }
+  .world-header { padding: var(--space-48) 0 var(--space-64); background: var(--color-warm-white); }
+  .eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .04em; text-transform: uppercase; }
+  h1 { margin: 0 0 var(--space-20); font-size: var(--font-size-h1-mobile); line-height: var(--line-height-heading); letter-spacing: -.025em; }
+  .world-header p:last-child, .section-copy { margin: 0; color: var(--color-text-secondary); }
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  h2 { margin: 0 0 var(--space-20); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
+  .world-grid, .article-grid { display: grid; gap: var(--space-20); }
+  @media (min-width: 768px) { .knowledge-container { width: min(100% - (2 * var(--gutter-tablet)), var(--container-text)); } .world-header, .section { padding-block: var(--space-80); } .world-grid, .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); } }
+  @media (min-width: 1024px) { .knowledge-container { width: min(100% - (2 * var(--gutter-desktop)), var(--container-text)); } .world-header, .section { padding-block: var(--space-96); } h1 { font-size: var(--font-size-h1-desktop); } h2 { font-size: var(--font-size-h2-desktop); } .world-grid, .article-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+</style>

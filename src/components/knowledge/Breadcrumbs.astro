@@ -1,0 +1,26 @@
+---
+import type { BreadcrumbItem } from '../../data/knowledge';
+
+interface Props { items: BreadcrumbItem[]; }
+const { items } = Astro.props;
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    {items.map((item, index) => (
+      <li>
+        {item.href && index < items.length - 1 ? <a href={item.href}>{item.label}</a> : <span aria-current="page">{item.label}</span>}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .breadcrumbs { margin-bottom: var(--space-24); color: var(--color-text-muted); font-size: var(--font-size-small); }
+  ol { display: flex; flex-wrap: wrap; gap: var(--space-8); margin: 0; padding: 0; list-style: none; }
+  li { display: inline-flex; align-items: center; gap: var(--space-8); }
+  li:not(:last-child)::after { content: '›'; color: var(--color-olive-grey); }
+  a { color: var(--color-text-secondary); text-decoration: none; }
+  a:hover { color: var(--color-deep-forest); text-decoration: underline; }
+  span[aria-current='page'] { color: var(--color-text-primary); }
+</style>

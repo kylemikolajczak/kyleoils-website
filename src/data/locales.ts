@@ -1,4 +1,6 @@
 export type Locale = 'de' | 'en';
+import { knowledgeRoutePairs } from './knowledge';
+import { knowledgeArticleRoutePairs } from './knowledgeArticles';
 
 export const routePairs = [
   { de: '/de/', en: '/en/' },
@@ -13,7 +15,8 @@ export const routePairs = [
   { de: '/de/business-moeglichkeit/', en: '/en/business-opportunity/' },
   { de: '/de/impressum/', en: '/en/legal-notice/' },
   { de: '/de/datenschutz/', en: '/en/privacy-policy/' },
-  { de: '/404.html', en: '/en/404/' },
+  ...knowledgeRoutePairs,
+  ...knowledgeArticleRoutePairs,
 ] as const;
 
 const normalizePath = (path: string) => {
@@ -25,5 +28,5 @@ const normalizePath = (path: string) => {
 export function getLanguagePaths(path: string) {
   const normalizedPath = normalizePath(path);
   const pair = routePairs.find((item) => item.de === normalizedPath || item.en === normalizedPath);
-  return pair ?? { de: '/de/', en: '/en/' };
+  return pair;
 }

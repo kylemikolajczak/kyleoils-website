@@ -1,5 +1,5 @@
 ---
-import { englishMainNavigation, mainNavigation } from '../../data/navigation';
+import { groupedEnglishMainNavigation, groupedMainNavigation } from '../../data/navigation';
 import type { Locale } from '../../data/locales';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import MobileMenu from './MobileMenu.astro';
@@ -10,22 +10,43 @@ interface Props {
 }
 
 const { locale = 'de', currentPath } = Astro.props;
-const navigation = locale === 'de' ? mainNavigation : englishMainNavigation;
+const navigation = locale === 'de' ? groupedMainNavigation : groupedEnglishMainNavigation;
 const homeHref = locale === 'de' ? '/de/' : '/en/';
 const claim = locale === 'de' ? 'Natürliche Routinen. Persönliche Beratung.' : 'Natural routines. Personal support.';
 const navigationLabel = locale === 'de' ? 'Hauptnavigation' : 'Main navigation';
 const consultationHref = locale === 'de' ? '/de/kontakt/' : '/en/contact/';
 const consultationLabel = locale === 'de' ? 'Beratung anfragen' : 'Request a Consultation';
+const brandLabel = locale === 'de' ? 'Zur Startseite von Kyle Oils' : 'Go to the Kyle Oils homepage';
+
+const normalizedPath = currentPath.endsWith('/') ? currentPath : `${currentPath}/`;
+const isCurrentPage = (href: string) => href === homeHref
+  ? normalizedPath === href
+  : normalizedPath === href || normalizedPath.startsWith(href);
+const isCurrentGroup = (items: readonly { href: string }[]) => items.some((item) => isCurrentPage(item.href));
 ---
 
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href={homeHref}>
-      <span>Kyle Daniel Mikolajczak</span>
-      <small>{claim}</small>
+    <a class="brand" href={homeHref} aria-label={brandLabel}>
+      <img class="brand__mark" src="/favicon-source.png" alt="" width="48" height="48" />
+      <span class="brand__copy">
+        <span>Kyle Daniel Mikolajczak</span>
+        <small>{claim}</small>
+      </span>
     </a>
     <nav class="desktop-navigation" aria-label={navigationLabel}>
-      <ul>{navigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul>
+      <ul>
+        {navigation.map((item) => 'items' in item ? (
+          <li class={`nav-group${isCurrentGroup(item.items) ? ' nav-group--active' : ''}`}>
+            <details>
+              <summary>{item.label}</summary>
+              <ul class="nav-group__menu">
+                {item.items.map((child) => <li><a href={child.href} aria-current={isCurrentPage(child.href) ? 'page' : undefined}>{child.label}</a></li>)}
+              </ul>
+            </details>
+          </li>
+        ) : <li><a href={item.href} aria-current={isCurrentPage(item.href) ? 'page' : undefined}>{item.label}</a></li>)}
+      </ul>
     </nav>
     <div class="desktop-language"><LanguageSwitcher {locale} {currentPath} /></div>
     <a class="header-cta" href={consultationHref}>{consultationLabel}</a>
@@ -36,12 +57,28 @@ const consultationLabel = locale === 'de' ? 'Beratung anfragen' : 'Request a Con
 <style>
   .site-header { border-bottom: 1px solid rgb(216 199 173 / 55%); background: var(--color-warm-white); }
   .header-inner { min-height: 72px; display: flex; align-items: center; gap: var(--space-24); }
-  .brand { margin-right: auto; display: grid; color: var(--color-text-primary); font-weight: var(--font-weight-semibold); line-height: 1.2; text-decoration: none; }
+  .brand { margin-right: auto; display: flex; align-items: center; gap: var(--space-12); color: var(--color-text-primary); font-weight: var(--font-weight-semibold); line-height: 1.2; text-decoration: none; }
+  .brand__mark { width: 40px; height: 40px; flex: 0 0 auto; }
+  .brand__copy { display: grid; }
   .brand small { display: none; color: var(--color-text-secondary); font-size: 12px; font-weight: var(--font-weight-regular); }
   .desktop-navigation, .desktop-language, .header-cta { display: none; }
-  ul { display: flex; gap: var(--space-20); margin: 0; padding: 0; list-style: none; }
-  nav a { font-size: var(--font-size-small); text-decoration: none; }
+  .desktop-navigation > ul { display: flex; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
+  .desktop-navigation a, summary { position: relative; display: flex; min-height: 48px; align-items: center; color: var(--color-text-primary); font-size: var(--font-size-small); text-decoration: none; }
+  .desktop-navigation > ul > li > a::after, summary::before { content: ''; position: absolute; right: 0; bottom: 4px; left: 0; height: 2px; border-radius: var(--radius-pill); background: var(--color-sage-green); opacity: 0; transform: scaleX(.5); transition: opacity 160ms ease, transform 160ms ease; }
+  .desktop-navigation > ul > li > a[aria-current='page'], .nav-group--active summary { color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
+  .desktop-navigation > ul > li > a[aria-current='page']::after, .nav-group--active summary::before { opacity: 1; transform: scaleX(1); }
+  .nav-group { position: relative; }
+  details { position: relative; }
+  summary { gap: var(--space-4); cursor: pointer; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '▾'; color: var(--color-olive-grey); font-size: .72em; transition: transform 160ms ease; }
+  details[open] summary::after { transform: rotate(180deg); }
+  .nav-group__menu { position: absolute; top: calc(100% - var(--space-4)); left: calc(var(--space-16) * -1); z-index: 20; display: none; width: max-content; min-width: 210px; margin: 0; padding: var(--space-8); border: 1px solid var(--color-sand); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-soft); list-style: none; }
+  details[open] .nav-group__menu, details:hover .nav-group__menu, details:focus-within .nav-group__menu { display: grid; }
+  .nav-group__menu a { min-height: 44px; padding: 0 var(--space-12); border-radius: var(--radius-button); }
+  .nav-group__menu a:hover, .nav-group__menu a:focus-visible { background: var(--color-soft-cream); }
+  .nav-group__menu a[aria-current='page'] { color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
   .header-cta { min-height: 48px; align-items: center; padding: 0 var(--space-20); border-radius: var(--radius-button); background: var(--color-deep-forest); color: var(--color-warm-white); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); text-decoration: none; }
   @media (min-width: 520px) { .brand small { display: block; } }
-  @media (min-width: 1180px) { .header-inner { min-height: 88px; } .desktop-navigation, .desktop-language, .header-cta { display: flex; } .desktop-language { align-items: center; } }
+  @media (min-width: 1180px) { .header-inner { min-height: 88px; } .brand__mark { width: 46px; height: 46px; } .desktop-navigation, .desktop-language, .header-cta { display: flex; } .desktop-language { align-items: center; } }
 </style>

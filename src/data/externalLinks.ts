@@ -2,6 +2,7 @@ export const officialLinks = {
   shop: { label: 'Offizieller doTERRA Shop', href: 'https://shop.doterra.com/DE/de_DE/shop/home' },
   office: { label: 'Persönliches doTERRA Office', href: 'https://office.doterra.com/kyledanielmikolajczak' },
   facebook: { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61584673212189' },
+  instagram: { label: 'Instagram', href: 'https://www.instagram.com/kyleoils/' },
 } as const;
 
 export const contactLinks = {
@@ -13,12 +14,14 @@ export const contactLinks = {
 export const socialLinks = {
   facebook: { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61584673212189' },
   linkedin: { label: 'LinkedIn', href: 'https://www.linkedin.com/in/kyle-mikolajczak-3a77402b7/' },
+  instagram: { label: 'Instagram', href: 'https://www.instagram.com/kyleoils/' },
 } as const;
 
 export const englishOfficialLinks = {
   shop: { label: 'Official doTERRA Shop', href: officialLinks.shop.href },
   office: { label: 'Personal doTERRA Office', href: officialLinks.office.href },
   facebook: officialLinks.facebook,
+  instagram: officialLinks.instagram,
 } as const;
 
 export const englishContactLinks = {

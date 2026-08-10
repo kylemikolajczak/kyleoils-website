@@ -1,0 +1,43 @@
+---
+import ArticleHeader from './ArticleHeader.astro';
+import KnowledgeCta from './KnowledgeCta.astro';
+import RelatedLinks from './RelatedLinks.astro';
+import type { BreadcrumbItem } from '../../data/knowledge';
+import type { Locale } from '../../data/locales';
+
+interface RelatedLink { label: string; href: string; description?: string; }
+interface Props {
+  locale: Locale;
+  breadcrumbs: BreadcrumbItem[];
+  worldLabel: string;
+  title: string;
+  intro: string;
+  reviewLine?: string;
+  safetyNote?: string;
+  ctaLabel?: string;
+  relatedLinks?: RelatedLink[];
+}
+const { locale, breadcrumbs, worldLabel, title, intro, reviewLine, safetyNote, ctaLabel, relatedLinks = [] } = Astro.props;
+---
+
+<ArticleHeader {breadcrumbs} {worldLabel} {title} {intro} {reviewLine} />
+<article class="article-content">
+  <div class="knowledge-container"><slot /></div>
+</article>
+{safetyNote && <aside class="article-safety"><div class="knowledge-container"><p>{safetyNote}</p></div></aside>}
+<RelatedLinks title={locale === 'de' ? 'Weiterführende Inhalte' : 'Continue Exploring'} links={relatedLinks} />
+<KnowledgeCta {locale} primaryLabel={ctaLabel} />
+
+<style>
+  .knowledge-container { width: min(100% - (2 * var(--gutter-mobile)), var(--container-text)); margin-inline: auto; }
+  .article-content { padding: var(--space-40) 0 var(--space-64); }
+  .article-content :global(h2) { margin: var(--space-48) 0 var(--space-16); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
+  .article-content :global(h2:first-child) { margin-top: 0; }
+  .article-content :global(h3) { margin: var(--space-32) 0 var(--space-12); font-size: var(--font-size-h3-mobile); line-height: 1.25; }
+  .article-content :global(p) { margin: 0 0 var(--space-20); color: var(--color-text-secondary); }
+  .article-content :global(ul), .article-content :global(ol) { display: grid; gap: var(--space-8); margin: 0 0 var(--space-24); padding-left: var(--space-24); color: var(--color-text-secondary); }
+  .article-safety { padding: var(--space-24) 0; background: var(--color-soft-cream); }
+  .article-safety p { margin: 0; padding: var(--space-24); border: 1px solid var(--color-sand); border-radius: var(--radius-card); color: var(--color-text-secondary); font-size: var(--font-size-small); }
+  @media (min-width: 768px) { .knowledge-container { width: min(100% - (2 * var(--gutter-tablet)), var(--container-text)); } .article-content { padding-block: var(--space-64) var(--space-80); } }
+  @media (min-width: 1024px) { .knowledge-container { width: min(100% - (2 * var(--gutter-desktop)), var(--container-text)); } .article-content :global(h2) { font-size: var(--font-size-h2-desktop); } }
+</style>

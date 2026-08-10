@@ -1,0 +1,21 @@
+---
+import KnowledgeLandingTemplate from '../../../components/knowledge/KnowledgeLandingTemplate.astro';
+import { knowledgeLanding, knowledgeWorlds } from '../../../data/knowledge';
+import { knowledgeArticles } from '../../../data/knowledgeArticles';
+import PageLayout from '../../../layouts/PageLayout.astro';
+
+const recommendedStartArticleIds = ['KO-W02-001', 'KO-W02-002', 'KO-W02-003', 'KO-W02-005'];
+const recommendedStartArticles = recommendedStartArticleIds.flatMap((id) => {
+  const article = knowledgeArticles.find((item) => item.id === id);
+  return article ? [article] : [];
+});
+const featuredArticleIds = ['KO-W02-001', 'KO-W02-002', 'KO-W02-003', 'KO-W02-005', 'KO-W03-001', 'KO-W04-001'];
+const featuredArticles = featuredArticleIds.flatMap((id) => {
+  const article = knowledgeArticles.find((item) => item.id === id);
+  return article ? [article] : [];
+});
+---
+
+<PageLayout title="Wissen | Kyle Daniel Mikolajczak" description={knowledgeLanding.description.de}>
+  <KnowledgeLandingTemplate locale="de" title={knowledgeLanding.title.de} description={knowledgeLanding.description.de} worlds={knowledgeWorlds} recommendedStartArticles={recommendedStartArticles} searchArticles={knowledgeArticles} {featuredArticles} />
+</PageLayout>
