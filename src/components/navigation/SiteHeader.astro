@@ -28,7 +28,7 @@ const isCurrentGroup = (items: readonly { href: string }[]) => items.some((item)
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href={homeHref} aria-label={brandLabel}>
-      <img class="brand__mark" src="/favicon-source.png" alt="" width="48" height="48" />
+      <img class="brand__mark" src="/favicon-source.png" alt="" width="64" height="64" />
       <span class="brand__copy">
         <span>Kyle Daniel Mikolajczak</span>
         <small>{claim}</small>
@@ -58,7 +58,7 @@ const isCurrentGroup = (items: readonly { href: string }[]) => items.some((item)
   .site-header { border-bottom: 1px solid rgb(216 199 173 / 55%); background: var(--color-warm-white); }
   .header-inner { min-height: 72px; display: flex; align-items: center; gap: var(--space-24); }
   .brand { margin-right: auto; display: flex; align-items: center; gap: var(--space-12); color: var(--color-text-primary); font-weight: var(--font-weight-semibold); line-height: 1.2; text-decoration: none; }
-  .brand__mark { width: 40px; height: 40px; flex: 0 0 auto; }
+  .brand__mark { width: 56px; height: 56px; flex: 0 0 auto; }
   .brand__copy { display: grid; }
   .brand small { display: none; color: var(--color-text-secondary); font-size: 12px; font-weight: var(--font-weight-regular); }
   .desktop-navigation, .desktop-language, .header-cta { display: none; }
@@ -80,5 +80,5 @@ const isCurrentGroup = (items: readonly { href: string }[]) => items.some((item)
   .nav-group__menu a[aria-current='page'] { color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
   .header-cta { min-height: 48px; align-items: center; padding: 0 var(--space-20); border-radius: var(--radius-button); background: var(--color-deep-forest); color: var(--color-warm-white); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); text-decoration: none; }
   @media (min-width: 520px) { .brand small { display: block; } }
-  @media (min-width: 1180px) { .header-inner { min-height: 88px; } .brand__mark { width: 46px; height: 46px; } .desktop-navigation, .desktop-language, .header-cta { display: flex; } .desktop-language { align-items: center; } }
+  @media (min-width: 1180px) { .header-inner { min-height: 88px; } .brand__mark { width: 64px; height: 64px; } .desktop-navigation, .desktop-language, .header-cta { display: flex; } .desktop-language { align-items: center; } }
 </style>

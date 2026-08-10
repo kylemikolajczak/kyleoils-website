@@ -40,11 +40,15 @@ interface ArticleIndexItem {
   description: string;
   risk?: 'low' | 'medium' | 'high';
   riskLevel?: 'low' | 'medium' | 'high';
-  relatedArticleIds: string[];
+  relatedArticleIds?: string[];
+  related?: string[];
+  pair?: string;
+  translationPairId?: string;
+  language?: 'de' | 'en';
 }
 
 interface EnglishArticleIndexItem extends Omit<ArticleIndexItem, 'risk' | 'riskLevel'> {
-  sourceDeId: string;
+  sourceDeId?: string;
 }
 
 const approvedGermanContentPacks = [
@@ -63,6 +67,14 @@ const approvedGermanContentPacks = [
   {
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-06-products-systems-content-pack-03/de'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-06-products-systems-content-pack-03/article-index.wave-06.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-14-bilingual-faq-starter/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-14-bilingual-faq-starter/article-index.wave-14.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/article-index.wave-15.json'),
   },
 ];
 
@@ -83,15 +95,23 @@ const approvedEnglishContentPacks = [
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-10-en-sync-04-products-systems/en'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-10-en-sync-04-products-systems/article-index.wave-10.json'),
   },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-14-bilingual-faq-starter/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-14-bilingual-faq-starter/article-index.wave-14.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/article-index.wave-15.json'),
+  },
 ];
 
 const germanIndex = approvedGermanContentPacks.flatMap(({ articleIndexPath }) =>
   JSON.parse(readFileSync(articleIndexPath, 'utf8')) as ArticleIndexItem[],
-);
+).filter((item) => item.language !== 'en');
 
 const englishIndex = approvedEnglishContentPacks.flatMap(({ articleIndexPath }) =>
   JSON.parse(readFileSync(articleIndexPath, 'utf8')) as EnglishArticleIndexItem[],
-);
+).filter((item) => item.language !== 'de');
 
 function readFrontmatter(source: string) {
   const [, frontmatter = '', body = ''] = source.match(/^---\s*\r?\n([\s\S]*?)\r?\n---\s*\r?\n([\s\S]*)$/) ?? [];
@@ -182,12 +202,12 @@ const rawEnglishArticles = getRawArticles(approvedEnglishContentPacks);
 export const knowledgeArticles: KnowledgeArticle[] = germanIndex.map((item) => {
   const source = rawGermanArticles.find((article) => article.values.id === item.id);
   if (!source) throw new Error(`Missing approved content for ${item.id}`);
-  const risk = item.risk ?? item.riskLevel;
-  if (!risk) throw new Error(`Missing risk level for ${item.id}`);
+  const risk = item.risk ?? item.riskLevel ?? 'medium';
 
   return {
     ...item,
     risk,
+    relatedArticleIds: item.relatedArticleIds ?? item.related ?? [],
     cta: String(source.values.cta),
     reviewedBy: String(source.values.reviewedBy),
     medicalDisclaimerRequired: source.values.medicalDisclaimerRequired === true,
@@ -198,9 +218,16 @@ export const knowledgeArticles: KnowledgeArticle[] = germanIndex.map((item) => {
 export const englishKnowledgeArticles: EnglishKnowledgeArticle[] = englishIndex.map((item) => {
   const source = rawEnglishArticles.find((article) => article.values.id === item.id);
   if (!source) throw new Error(`Missing approved content for ${item.id}`);
+  const translationPairId = item.pair ?? item.translationPairId;
+  const sourceDeId = item.sourceDeId ?? (translationPairId
+    ? germanIndex.find((article) => article.pair === translationPairId || article.translationPairId === translationPairId)?.id
+    : undefined);
+  if (!sourceDeId) throw new Error(`Missing German language pair for ${item.id}`);
 
   return {
     ...item,
+    sourceDeId,
+    relatedArticleIds: item.relatedArticleIds ?? item.related ?? [],
     cta: String(source.values.cta),
     reviewedBy: String(source.values.reviewedBy),
     medicalDisclaimerRequired: source.values.medicalDisclaimerRequired === true,

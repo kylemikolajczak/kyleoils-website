@@ -29,7 +29,7 @@ const isCurrentGroup = (items: readonly { href: string }[]) => items.some((item)
   <summary>{menuLabel}</summary>
   <nav aria-label={navigationLabel}>
     <a class="menu-brand" href={homeHref} aria-label={brandLabel}>
-      <img src="/favicon-source.png" alt="" width="40" height="40" />
+      <img src="/favicon-source.png" alt="" width="56" height="56" />
     </a>
     <ul>
       {navigation.map((item) => 'items' in item ? (
@@ -52,7 +52,7 @@ const isCurrentGroup = (items: readonly { href: string }[]) => items.some((item)
   summary { min-height: 48px; display: inline-flex; align-items: center; cursor: pointer; font-weight: var(--font-weight-semibold); }
   nav { position: absolute; right: 0; top: calc(100% + var(--space-12)); z-index: 10; width: min(86vw, 360px); padding: var(--space-24); border: 1px solid var(--color-sand); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-soft); }
   .menu-brand { display: inline-flex; margin-bottom: var(--space-16); border-radius: 50%; }
-  .menu-brand img { width: 40px; height: 40px; }
+  .menu-brand img { width: 56px; height: 56px; }
   ul { display: grid; gap: var(--space-8); margin: 0 0 var(--space-20); padding: 0; list-style: none; }
   li a { display: flex; min-height: 48px; align-items: center; text-decoration: none; }
   li a[aria-current='page'] { padding-left: var(--space-12); border-left: 2px solid var(--color-sage-green); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }

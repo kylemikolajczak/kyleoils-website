@@ -57,6 +57,16 @@ import { contactLinks } from '../../data/externalLinks';
     </div>
   </section>
 
+  <section class="section section--sage knowledge-teaser">
+    <div class="container knowledge-teaser__inner">
+      <p class="knowledge-teaser__eyebrow">KNOWLEDGE &amp; GUIDANCE</p>
+      <SectionIntro title="Essential oils, clearly explained">
+        <p>The Knowledge Hub gives you clear basics, safe-use guidance, simple routines, the Oil Library and product orientation — explained calmly, without pressure and without medical promises.</p>
+      </SectionIntro>
+      <CTAGroup primaryHref="/en/knowledge/" primaryLabel="Explore the Knowledge Hub" secondaryHref="/en/knowledge/oil-library/" secondaryLabel="View the Oil Library" />
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <SectionIntro title="Does This Sound Familiar?" />
@@ -246,6 +256,9 @@ import { contactLinks } from '../../data/externalLinks';
   .section--nature::before { content: ''; position: absolute; inset: 0; z-index: -2; background: url('/assets/images/nature/nature-heath-hero-01.png') center 54% / cover no-repeat; }
   .section--nature::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(250 247 241 / 74%); }
   .section--sage { background: rgb(168 184 160 / 20%); }
+  .knowledge-teaser { padding-block: var(--space-64); }
+  .knowledge-teaser__inner { max-width: var(--container-text); }
+  .knowledge-teaser__eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
   .narrow-layout { max-width: var(--container-text); }
   .split-layout { display: grid; gap: var(--space-40); align-items: center; }
   .statement-grid, .benefit-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
@@ -260,6 +273,7 @@ import { contactLinks } from '../../data/externalLinks';
   .compliance-section :global(p + p) { margin-top: var(--space-12); }
   @media (min-width: 768px) {
     .section { padding-block: var(--space-96); }
+    .knowledge-teaser { padding-block: var(--space-80); }
     .statement-grid, .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }
   @media (min-width: 1024px) {

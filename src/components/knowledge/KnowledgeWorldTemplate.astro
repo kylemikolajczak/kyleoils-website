@@ -24,7 +24,7 @@ const linkLabel = locale === 'de' ? 'Mehr erfahren' : 'Learn more';
 {articles.length > 0 ? (
   <section class="section section--cream">
     <div class="container">
-      <h2>Artikel in dieser Wissenswelt</h2>
+      <h2>{locale === 'de' ? 'Artikel in dieser Wissenswelt' : 'Articles in this Knowledge World'}</h2>
       <div class="article-grid">
         {articles.map((article) => <KnowledgeArticleCard title={article.title} description={article.description} href={article.route} />)}
       </div>

@@ -6,8 +6,8 @@ interface Props { locale?: Locale; }
 const { locale = 'de' } = Astro.props;
 const data = locale === 'de' ? footerData : englishFooterData;
 const labels = locale === 'de'
-  ? { main: 'Navigation im Footer', mainTitle: 'Navigation', additional: 'Weitere Seiten', contact: 'Kontakt', official: 'Offizielle Links', legal: 'Rechtliches' }
-  : { main: 'Footer navigation', mainTitle: 'Navigation', additional: 'More pages', contact: 'Contact', official: 'Official links', legal: 'Legal' };
+  ? { main: 'Navigation im Footer', mainTitle: 'Navigation', offersAndKnowledge: 'Angebote & Wissen', contactAndOfficial: 'Kontakt & Offizielle Links', legal: 'Rechtliches', home: 'Zur Startseite' }
+  : { main: 'Footer navigation', mainTitle: 'Navigation', offersAndKnowledge: 'Offers & Knowledge', contactAndOfficial: 'Contact & Official Links', legal: 'Legal', home: 'Go to homepage' };
 const independenceNote = locale === 'de'
   ? 'Kyle Daniel Mikolajczak ist doTERRA Wellness Advocate und arbeitet unabhängig. doTERRA ist der Produktpartner, nicht die Hauptmarke dieser Website.'
   : 'Kyle Daniel Mikolajczak is an independent doTERRA Wellness Advocate. doTERRA is the product partner, not the primary brand of this website.';
@@ -16,22 +16,29 @@ const independenceNote = locale === 'de'
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <img class="footer-brand__mark" src="/favicon-source.png" alt="" width="64" height="64" />
-      <div>
+      <a class="footer-brand__mark-link" href={locale === 'de' ? '/de/' : '/en/'} aria-label={labels.home}>
+        <img class="footer-brand__mark" src="/favicon-source.png" alt="" width="64" height="64" />
+      </a>
+      <div class="footer-brand__copy">
         <strong>{data.brand}</strong>
         <p>{data.claim}</p>
         <p>{data.description}</p>
       </div>
     </div>
-    <nav aria-label={labels.main}><h2>{labels.mainTitle}</h2><ul>{data.mainNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
-    <nav aria-label={labels.additional}><h2>{labels.additional}</h2><ul>{data.additionalNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
-    <nav aria-label={labels.contact}><h2>{labels.contact}</h2><ul>{data.contactLinks.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
-    <nav aria-label={labels.official}><h2>{labels.official}</h2><ul>{data.officialLinks.map((item) => <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a></li>)}</ul></nav>
-    <nav aria-label={labels.legal}><h2>{labels.legal}</h2><ul>{data.legalNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
+    <nav aria-label={labels.main}><h2>{labels.mainTitle}</h2><ul>{data.primaryNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
+    <nav aria-label={labels.offersAndKnowledge}><h2>{labels.offersAndKnowledge}</h2><ul>{data.offersAndKnowledge.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
+    <nav aria-label={labels.contactAndOfficial}>
+      <h2>{labels.contactAndOfficial}</h2>
+      <ul class="footer-contact-links">{data.contactLinks.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul>
+      <ul>{data.officialLinks.map((item) => <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a></li>)}</ul>
+    </nav>
   </div>
   <div class="container footer-bottom">
-    <p>© {new Date().getFullYear()} Kyle Daniel Mikolajczak</p>
-    <p>{independenceNote}</p>
+    <div class="footer-bottom__legal">
+      <p>© {new Date().getFullYear()} Kyle Daniel Mikolajczak</p>
+      <nav aria-label={labels.legal}><ul>{data.legalNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
+    </div>
+    <p class="footer-bottom__note">{independenceNote}</p>
   </div>
 </footer>
 
@@ -39,13 +46,27 @@ const independenceNote = locale === 'de'
   .site-footer { padding: var(--space-64) 0 var(--space-32); background: var(--color-warm-anthracite); color: var(--color-text-inverted); }
   .footer-grid { display: grid; gap: var(--space-40); }
   .footer-brand { display: flex; align-items: flex-start; gap: var(--space-16); }
+  .footer-brand__mark-link { display: block; flex: 0 0 auto; border-radius: 50%; }
   .footer-brand__mark { width: 56px; height: 56px; flex: 0 0 auto; }
+  .footer-brand__copy { min-width: 0; max-width: 34ch; }
+  .footer-brand strong { display: block; }
   h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-body-mobile); }
-  p { color: var(--color-linen); }
+  p { margin: 0; color: var(--color-linen); }
+  .footer-brand p + p { margin-top: var(--space-12); }
   ul { display: grid; gap: var(--space-8); margin: 0; padding: 0; list-style: none; }
   a { color: var(--color-linen); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .footer-bottom { margin-top: var(--space-48); padding-top: var(--space-24); border-top: 1px solid rgb(239 230 216 / 25%); font-size: var(--font-size-small); }
+  .footer-brand__mark-link:hover { text-decoration: none; }
+  .footer-brand__mark-link:focus-visible { outline-color: var(--color-linen); }
+  .footer-contact-links { margin-bottom: var(--space-20); padding-bottom: var(--space-20); border-bottom: 1px solid rgb(239 230 216 / 25%); }
+  .footer-bottom { display: grid; gap: var(--space-16); margin-top: var(--space-48); padding-top: var(--space-24); border-top: 1px solid rgb(239 230 216 / 25%); font-size: var(--font-size-small); }
+  .footer-bottom__legal { display: flex; flex-wrap: wrap; gap: var(--space-12) var(--space-24); align-items: center; }
+  .footer-bottom nav ul { display: flex; flex-wrap: wrap; gap: var(--space-12) var(--space-20); }
+  .footer-bottom__note { max-width: 92ch; }
   @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 1024px) { .footer-grid { grid-template-columns: 1.5fr repeat(5, 1fr); } }
+  @media (min-width: 1024px) {
+    .footer-grid { grid-template-columns: minmax(300px, 1.55fr) repeat(3, minmax(0, 1fr)); gap: var(--space-48); }
+    .footer-bottom { grid-template-columns: max-content minmax(0, 1fr); align-items: center; }
+    .footer-bottom__note { text-align: right; justify-self: end; }
+  }
 </style>
