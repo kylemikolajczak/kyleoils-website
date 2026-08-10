@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kyleoils.com/sitemap-index.xml
+Sitemap: https://kyleoils.com/sitemap.xml
