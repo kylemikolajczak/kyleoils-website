@@ -1,12 +1,15 @@
 ---
-interface Props { title: string; description: string; href: string; }
-const { title, description, href } = Astro.props;
+import type { Locale } from '../../data/locales';
+
+interface Props { title: string; description: string; href: string; locale: Locale; }
+const { title, description, href, locale } = Astro.props;
+const readLabel = locale === 'de' ? 'Artikel lesen' : 'Read article';
 ---
 
 <article class="article-card">
   <h2><a href={href}>{title}</a></h2>
   <p>{description}</p>
-  <a class="article-card__link" href={href}>Artikel lesen <span aria-hidden="true">→</span></a>
+  <a class="article-card__link" href={href}>{readLabel} <span aria-hidden="true">→</span></a>
 </article>
 
 <style>

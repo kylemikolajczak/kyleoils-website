@@ -70,7 +70,7 @@ const featuredTitle = locale === 'de' ? 'Ausgewählte Einstiege' : 'Selected Sta
         <h2>{featuredTitle}</h2>
       </header>
       <div class="article-grid">
-        {featuredArticles.map((article) => <KnowledgeArticleCard title={article.title} description={article.description} href={article.route} />)}
+        {featuredArticles.map((article) => <KnowledgeArticleCard title={article.title} description={article.description} href={article.route} {locale} />)}
       </div>
     </div>
   </section>

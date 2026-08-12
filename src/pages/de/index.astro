@@ -2,12 +2,24 @@
 import ComplianceNote from '../../components/compliance/ComplianceNote.astro';
 import CTAGroup from '../../components/cta/CTAGroup.astro';
 import CTASection from '../../components/cta/CTASection.astro';
+import TopicCard from '../../components/cards/TopicCard.astro';
 import HeroSplit from '../../components/sections/HeroSplit.astro';
 import ResponsiveImage from '../../components/global/ResponsiveImage.astro';
 import SectionIntro from '../../components/sections/SectionIntro.astro';
 import TrustBar from '../../components/sections/TrustBar.astro';
 import PageLayout from '../../layouts/PageLayout.astro';
 import { contactLinks } from '../../data/externalLinks';
+
+const wellnessAreas = [
+  { title: 'Abend & Schlafroutine', copy: 'Für eine ruhige Abendumgebung, bewusste Duftanker und einfache Routinen rund um die Schlafenszeit.' },
+  { title: 'Stressiger Alltag & innere Orientierung', copy: 'Für kleine Pausen, Duftanker und mehr Struktur an Tagen, die voll oder unruhig wirken.' },
+  { title: 'Bewegung, Massage & Körperkomfort', copy: 'Für Massage, Pflege und Duft-Routinen nach Sport, Gartenarbeit, viel Sitzen oder aktiven Tagen.' },
+  { title: 'Bauchgefühl & Essensalltag', copy: 'Für Menschen, die Produkte und Routinen rund um Essen, Gewohnheiten und bewusste Entscheidungen besser verstehen möchten.' },
+  { title: 'Emotionale Duftanker', copy: 'Für Duft als persönlichen Anker für Stimmung, Erinnerung, Atmosphäre, Reflexion und kleine Rituale.' },
+  { title: 'Frische Raumluft', copy: 'Für klare Diffuser-Routinen, bewusstes Lüften und ein frisches Raumgefühl im Zuhause.' },
+  { title: 'Hautpflege & Pflegegefühl', copy: 'Für bewusste Pflegeroutinen und einen ruhigen Blick auf Produkte für den Alltag.' },
+  { title: 'Familienalltag & sichere Anwendung', copy: 'Für Haushalte mit Kindern, Haustieren oder Besuch, in denen Sicherheit, Menge und Raumgröße wichtig sind.' },
+];
 ---
 
 <PageLayout
@@ -60,9 +72,27 @@ import { contactLinks } from '../../data/externalLinks';
     <div class="container knowledge-teaser__inner">
       <p class="knowledge-teaser__eyebrow">WISSEN &amp; ORIENTIERUNG</p>
       <SectionIntro title="Ätherische Öle verständlich erklärt">
-        <p>Im Wissensbereich findest du klare Grundlagen, sichere Anwendung, einfache Routinen, das Öl-Lexikon und Produktorientierung — ruhig erklärt, ohne Druck und ohne Heilversprechen.</p>
+        <p>Im Wissensbereich findest du klare Grundlagen, sichere Anwendung, einfache Routinen, das Öl-Lexikon und Produktorientierung. Ruhig erklärt, ohne Druck und ohne Heilversprechen.</p>
       </SectionIntro>
       <CTAGroup primaryHref="/de/wissen/" primaryLabel="Zum Wissensbereich" secondaryHref="/de/wissen/oel-lexikon/" secondaryLabel="Öl-Lexikon ansehen" />
+    </div>
+  </section>
+
+  <section class="section section--cream wellness-areas">
+    <div class="container">
+      <p class="wellness-areas__eyebrow">WOFÜR MENSCHEN ORIENTIERUNG SUCHEN</p>
+      <SectionIntro title="Ätherische Öle im echten Alltag einordnen">
+        <p>Viele Menschen kommen zu ätherischen Ölen, weil sie bei vier wiederkehrenden Alltagsthemen Orientierung suchen: Abend & Schlafroutine, stressiger Alltag & innere Orientierung, Bewegung, Massage & Körperkomfort sowie Bauchgefühl & Essensalltag.</p>
+        <p>Auch emotionale Duftanker, frische Raumluft, Hautpflege & Pflegegefühl und Familienalltag & sichere Anwendung spielen dabei oft eine Rolle.</p>
+        <p>Kyle Oils hilft dir, diese Bereiche ruhig und sicher einzuordnen. Ohne Heilversprechen, ohne Druck und ohne das Gefühl, sofort alles kaufen zu müssen.</p>
+      </SectionIntro>
+      <div class="wellness-areas__grid">
+        {wellnessAreas.map((area) => (
+          <TopicCard title={area.title}>
+            <p>{area.copy}</p>
+          </TopicCard>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -258,6 +288,8 @@ import { contactLinks } from '../../data/externalLinks';
   .knowledge-teaser { padding-block: var(--space-64); }
   .knowledge-teaser__inner { max-width: var(--container-text); }
   .knowledge-teaser__eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
+  .wellness-areas__eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
+  .wellness-areas__grid { display: grid; gap: var(--space-16); }
   .narrow-layout { max-width: var(--container-text); }
   .split-layout { display: grid; gap: var(--space-40); align-items: center; }
   .statement-grid, .benefit-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
@@ -274,10 +306,12 @@ import { contactLinks } from '../../data/externalLinks';
     .section { padding-block: var(--space-96); }
     .knowledge-teaser { padding-block: var(--space-80); }
     .statement-grid, .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .wellness-areas__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }
   @media (min-width: 1024px) {
     .section { padding-block: var(--space-120); }
     .split-layout { grid-template-columns: minmax(0, 1fr) minmax(360px, .8fr); gap: var(--space-80); }
     .split-layout--reverse { grid-template-columns: minmax(360px, .8fr) minmax(0, 1fr); }
+    .wellness-areas__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   }
 </style>

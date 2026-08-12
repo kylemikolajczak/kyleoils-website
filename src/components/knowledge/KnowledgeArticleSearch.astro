@@ -13,11 +13,12 @@ const copy = locale === 'de'
     eyebrow: 'SEARCH ARTICLES', title: 'Find knowledge clearly', helper: 'Search for topics like dilution, diffuser, carrier oils, photosensitivity or beginner routines.', input: 'Enter a topic or term', minimum: 'Enter at least two characters to find matching articles.', none: 'No matching articles found yet. Try a different term or ask Kyle for guidance.', read: 'Read article', singular: 'article found.', plural: 'articles found.',
   };
 
-const searchArticles = articles.map(({ title, description, route, worldLabel }) => ({
+const searchArticles = articles.map(({ title, description, route, worldLabel, searchKeywords }) => ({
   title,
   description,
   route,
   worldLabel,
+  searchKeywords,
 }));
 ---
 
@@ -48,11 +49,12 @@ const searchArticles = articles.map(({ title, description, route, worldLabel }) 
     .toLocaleLowerCase(locale)
     .normalize('NFD')
     .replace(/\p{Diacritic}/gu, '')
-    .replace(/\bdislike\b/g, 'not like');
+    .replace(/\bdislike\b/g, 'not like')
+    .replace(/\bsafe storage\b/g, 'storing');
 
   const searchableArticles = searchArticles.map((article) => ({
     ...article,
-    searchText: normalize([article.title, article.description, article.route, article.worldLabel].join(' ')),
+    searchText: normalize([article.title, article.description, article.route, article.worldLabel, ...article.searchKeywords].join(' ')),
   }));
 
   const renderResults = (matches) => {

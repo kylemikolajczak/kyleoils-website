@@ -23,8 +23,8 @@ export const knowledgeLanding = {
   label: { de: 'Wissen', en: 'Knowledge' },
   title: { de: 'Ätherische Öle verständlich erklärt', en: 'Essential Oils, Clearly Explained' },
   description: {
-    de: 'Ein ruhiger Einstieg in Grundlagen, sichere Anwendung und einfache Alltagsroutinen.',
-    en: 'A calm place to explore the basics, safe use and simple everyday routines.',
+    de: 'Grundlagen, sichere Anwendung und Orientierung für Abendroutine, Familie, Produktauswahl und weitere Alltagsthemen.',
+    en: 'Clear basics, safe-use guidance and orientation for evening routines, family life, product choice and other everyday themes.',
   },
 } as const;
 
@@ -46,12 +46,12 @@ export const knowledgeWorlds: KnowledgeWorld[] = [
     id: 'safe-use',
     label: { de: 'Sicher anwenden', en: 'Safe Use' },
     description: {
-      de: 'Orientierung für einen bewussten und verantwortungsvollen Umgang.',
-      en: 'Guidance for considered and responsible use.',
+      de: 'Sichere Orientierung für Familien, Raumgröße, Verdünnung und bewusste Alltagsroutinen.',
+      en: 'Safe guidance for families, room size, dilution and conscious everyday routines.',
     },
     intro: {
-      de: 'Ein bewusster Umgang ist eine wichtige Grundlage. Diese Wissenswelt ordnet Sicherheitsthemen klar und ruhig ein.',
-      en: 'Considered use is an important foundation. This knowledge world provides clear, calm orientation around safety topics.',
+      de: 'Für Haushalte mit Kindern, Haustieren oder Besuch, in denen Duft, Aufbewahrung, Verdünnung und Raumgröße bewusst geplant werden sollten.',
+      en: 'For homes with children, pets or visitors where scent, storage, dilution and room size should be planned consciously.',
     },
     href: { de: '/de/wissen/sicher-anwenden/', en: '/en/knowledge/safe-use/' },
   },
@@ -72,12 +72,12 @@ export const knowledgeWorlds: KnowledgeWorld[] = [
     id: 'routines',
     label: { de: 'Routinen', en: 'Routines' },
     description: {
-      de: 'Einfache Ideen für bewusste Momente im Alltag.',
-      en: 'Simple ideas for more intentional everyday moments.',
+      de: 'Abendroutine, bewusste Pausen und Duftanker für einen klaren Alltag.',
+      en: 'Evening routines, conscious pauses and scent anchors for a more intentional everyday life.',
     },
     intro: {
-      de: 'Hier entstehen klare Orientierungshilfen für einfache Routinen, die sich an deinen Alltag anpassen lassen.',
-      en: 'This world will provide clear orientation for simple routines that can adapt to everyday life.',
+      de: 'Für Menschen, die ihre Schlafenszeit bewusster gestalten, kleine Pausen setzen und Duft als persönlichen Anker nutzen möchten.',
+      en: 'For people who want to approach bedtime more consciously, make space for small pauses and use scent as a personal anchor.',
     },
     href: { de: '/de/wissen/routinen/', en: '/en/knowledge/routines/' },
   },
@@ -98,12 +98,12 @@ export const knowledgeWorlds: KnowledgeWorld[] = [
     id: 'products-systems',
     label: { de: 'Produkte & Systeme', en: 'Products & Systems' },
     description: {
-      de: 'Sachliche Einordnung von Produktbereichen und Systemen.',
-      en: 'Clear orientation around product categories and systems.',
+      de: 'Orientierung bei Produktauswahl, Sets und einfachen Routinen.',
+      en: 'Guidance for product choice, sets and simple routines.',
     },
     intro: {
-      de: 'Hier werden Produktbereiche und Systeme später sachlich und verständlich erklärt.',
-      en: 'This world will later explain product categories and systems in a clear, factual way.',
+      de: 'Für Menschen, die wissen möchten, welches Öl, welches Set oder welche Routine wirklich zu ihrem Alltag passt, ohne sich im Sortiment zu verlieren.',
+      en: 'For people who want to understand which oil, set or routine fits their daily life, without getting lost in the range.',
     },
     href: { de: '/de/wissen/produkte-systeme/', en: '/en/knowledge/products-systems/' },
   },

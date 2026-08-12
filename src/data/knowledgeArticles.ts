@@ -17,10 +17,11 @@ export interface KnowledgeArticle {
   seoTitle: string;
   description: string;
   risk: 'low' | 'medium' | 'high';
-  cta: string;
+  cta?: string;
   reviewedBy: string;
   medicalDisclaimerRequired: boolean;
   relatedArticleIds: string[];
+  searchKeywords: string[];
   blocks: ArticleBlock[];
 }
 
@@ -28,7 +29,7 @@ export interface EnglishKnowledgeArticle extends Omit<KnowledgeArticle, 'risk'> 
   sourceDeId: string;
 }
 
-export type KnowledgeArticleSummary = Pick<KnowledgeArticle, 'title' | 'route' | 'worldId' | 'worldLabel' | 'description'>;
+export type KnowledgeArticleSummary = Pick<KnowledgeArticle, 'title' | 'route' | 'worldId' | 'worldLabel' | 'description' | 'searchKeywords'>;
 
 interface ArticleIndexItem {
   id: string;
@@ -100,6 +101,26 @@ const approvedGermanContentPacks = [
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/de'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/article-index.wave-23.json'),
   },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-25-glossary-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-25-glossary-expansion-02/article-index.wave-25.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-26-routines-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-26-routines-expansion-02/article-index.wave-26.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-27-safety-polish-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-27-safety-polish-expansion-02/article-index.wave-27.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-29-core-product-blend-pillar-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-29-core-product-blend-pillar-expansion-01/article-index.wave-29.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/article-index.wave-30.json'),
+  },
 ];
 
 const approvedEnglishContentPacks = [
@@ -150,6 +171,26 @@ const approvedEnglishContentPacks = [
   {
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/en'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/article-index.wave-23.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-25-glossary-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-25-glossary-expansion-02/article-index.wave-25.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-26-routines-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-26-routines-expansion-02/article-index.wave-26.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-27-safety-polish-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-27-safety-polish-expansion-02/article-index.wave-27.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-29-core-product-blend-pillar-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-29-core-product-blend-pillar-expansion-01/article-index.wave-29.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/article-index.wave-30.json'),
   },
 ];
 
@@ -253,6 +294,63 @@ function normalizeWorldId(worldId: string): KnowledgeWorldId {
   return worldId as KnowledgeWorldId;
 }
 
+function optionalString(value: unknown): string | undefined {
+  return typeof value === 'string' && value.trim().length > 0 ? value : undefined;
+}
+
+const pillarSearchKeywords: Record<string, string[]> = {
+  'KO-W03-002': ['abendroutine', 'schlafroutine', 'schlafenszeit'],
+  'KO-W03-004': ['bewegung', 'körperpflege', 'körperkomfort', 'massage', 'hautpflege', 'pflegegefühl'],
+  'KO-W03-006': ['raumluft', 'atemgefühl'],
+  'KO-W03-007': ['stressiger alltag', 'innere orientierung'],
+  'KO-W06-005': ['bauchgefühl', 'essensalltag'],
+  'KO-W20-DE-001': ['produktauswahl', 'erste produktauswahl'],
+  'KO-W20-DE-008': ['produktauswahl', 'orientierung'],
+  'KO-W21-DE-008': ['emotionen', 'duftanker'],
+  'KO-W26-DE-007': ['familie', 'sichere alltagsroutinen'],
+  'KO-W08-002': ['evening routine', 'sleep routine', 'bedtime'],
+  'KO-W08-004': ['movement', 'body care', 'body comfort', 'massage', 'skin care', 'care feel'],
+  'KO-W08-006': ['room air', 'breathing feel'],
+  'KO-W08-007': ['stressful day', 'inner orientation'],
+  'KO-W10-005': ['digestive feel', 'food routines'],
+  'KO-W20-EN-001': ['product choice', 'first product choice'],
+  'KO-W20-EN-008': ['product choice', 'orientation'],
+  'KO-W21-EN-008': ['emotions', 'scent anchors'],
+  'KO-W26-EN-007': ['family', 'safe everyday routines'],
+  'KO-W29-DE-001': ['deep blue', 'bewegung', 'massage', 'k\u00f6rperkomfort', 'k\u00fchlend', 'pflegegef\u00fchl'],
+  'KO-W29-DE-002': ['zengest', 'bauchgef\u00fchl', 'essensalltag', 'mahlzeiten', 'reisen'],
+  'KO-W29-DE-003': ['on guard', 'schutz-routine', 'jahreszeiten', 'familie'],
+  'KO-W29-DE-004': ['serenity', 'abendroutine', 'schlafroutine', 'schlafenszeit'],
+  'KO-W29-DE-005': ['doterra air', 'atemgef\u00fchl', 'frische raumluft', 'diffuser'],
+  'KO-W29-DE-006': ['adaptiv', 'stressiger alltag', 'duftanker', 'innere orientierung'],
+  'KO-W29-DE-007': ['lavender', 'lavendel', 'abendroutine', 'hautpflege', 'pflegegef\u00fchl'],
+  'KO-W29-DE-008': ['kapsel rezepte', 'kapselrezept', 'flu bomb', 'flubomb', 'innere anwendung'],
+  'KO-W29-EN-001': ['deep blue', 'movement', 'massage', 'body comfort', 'cooling', 'care feel'],
+  'KO-W29-EN-002': ['zengest', 'digestive feel', 'food routines', 'meals', 'travel'],
+  'KO-W29-EN-003': ['on guard', 'protective routine', 'seasons', 'family'],
+  'KO-W29-EN-004': ['serenity', 'evening routine', 'sleep routine', 'bedtime'],
+  'KO-W29-EN-005': ['doterra air', 'breathing feel', 'fresh room air', 'diffuser'],
+  'KO-W29-EN-006': ['adaptiv', 'stressful days', 'scent anchors', 'inner orientation'],
+  'KO-W29-EN-007': ['lavender', 'evening routine', 'skin care', 'care feel'],
+  'KO-W29-EN-008': ['capsule recipes', 'capsule recipe', 'flu bomb', 'flubomb', 'internal use'],
+  'KO-W30-DE-001': ['basil', 'basilikum', 'kr\u00e4uter\u00f6l', 'essensalltag'],
+  'KO-W30-DE-002': ['cardamom', 'kardamom', 'gew\u00fcrz\u00f6l', 'essensalltag', 'bauchgef\u00fchl'],
+  'KO-W30-DE-003': ['ginger', 'ingwer', 'gew\u00fcrz\u00f6l', 'essensalltag', 'bauchgef\u00fchl'],
+  'KO-W30-DE-004': ['fennel', 'fenchel', 'kr\u00e4uter\u00f6l', 'essensalltag', 'bauchgef\u00fchl'],
+  'KO-W30-DE-005': ['coriander', 'koriandersamen', 'koriander', 'kr\u00e4uter\u00f6l', 'gew\u00fcrz\u00f6l', 'essensalltag', 'bauchgef\u00fchl'],
+  'KO-W30-DE-006': ['marjoram', 'majoran', 'kr\u00e4uter\u00f6l', 'abendroutine', 'massage'],
+  'KO-W30-DE-007': ['cinnamon bark', 'zimtrinde', 'hot oil', 'gew\u00fcrz\u00f6l'],
+  'KO-W30-DE-008': ['patchouli', 'patschuli', 'hautpflege', 'pflegegef\u00fchl', 'basisnote'],
+  'KO-W30-EN-001': ['basil', 'herbal oil', 'food routines'],
+  'KO-W30-EN-002': ['cardamom', 'spice oil', 'food routines', 'digestive feel'],
+  'KO-W30-EN-003': ['ginger', 'spice oil', 'food routines', 'digestive feel'],
+  'KO-W30-EN-004': ['fennel', 'herbal oil', 'spice oil', 'food routines', 'digestive feel'],
+  'KO-W30-EN-005': ['coriander', 'herbal oil', 'spice oil', 'food routines', 'digestive feel'],
+  'KO-W30-EN-006': ['marjoram', 'herbal oil', 'evening routine', 'massage'],
+  'KO-W30-EN-007': ['cinnamon bark', 'hot oil', 'spice oil'],
+  'KO-W30-EN-008': ['patchouli', 'skin care', 'care feel', 'base note'],
+};
+
 export const knowledgeArticles: KnowledgeArticle[] = germanIndex.map((item) => {
   const source = rawGermanArticles.find((article) => article.values.id === item.id);
   if (!source) throw new Error(`Missing approved content for ${item.id}`);
@@ -263,9 +361,10 @@ export const knowledgeArticles: KnowledgeArticle[] = germanIndex.map((item) => {
     worldId: normalizeWorldId(item.worldId),
     risk,
     relatedArticleIds: item.relatedArticleIds ?? item.related ?? [],
-    cta: String(source.values.cta),
+    cta: optionalString(source.values.cta),
     reviewedBy: String(source.values.reviewedBy),
     medicalDisclaimerRequired: source.values.medicalDisclaimerRequired === true,
+    searchKeywords: pillarSearchKeywords[item.id] ?? [],
     blocks: toBlocks(source.body),
   };
 });
@@ -284,9 +383,10 @@ export const englishKnowledgeArticles: EnglishKnowledgeArticle[] = englishIndex.
     worldId: normalizeWorldId(item.worldId),
     sourceDeId,
     relatedArticleIds: item.relatedArticleIds ?? item.related ?? [],
-    cta: String(source.values.cta),
+    cta: optionalString(source.values.cta),
     reviewedBy: String(source.values.reviewedBy),
     medicalDisclaimerRequired: source.values.medicalDisclaimerRequired === true,
+    searchKeywords: pillarSearchKeywords[item.id] ?? [],
     blocks: toBlocks(source.body),
   };
 });
