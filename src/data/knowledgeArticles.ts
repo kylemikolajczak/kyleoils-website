@@ -129,6 +129,18 @@ const approvedGermanContentPacks = [
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/de'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/article-index.wave-35.json'),
   },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-37-first-30-days-starter-routine-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-37-first-30-days-starter-routine-01/article-index.wave-37.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-38-oil-library-expansion-04/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-38-oil-library-expansion-04/article-index.wave-38.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-39-seasonal-household-routine-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-39-seasonal-household-routine-expansion-01/article-index.wave-39.json'),
+  },
 ];
 
 const approvedEnglishContentPacks = [
@@ -207,6 +219,18 @@ const approvedEnglishContentPacks = [
   {
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/en'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/article-index.wave-35.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-37-first-30-days-starter-routine-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-37-first-30-days-starter-routine-01/article-index.wave-37.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-38-oil-library-expansion-04/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-38-oil-library-expansion-04/article-index.wave-38.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-39-seasonal-household-routine-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-39-seasonal-household-routine-expansion-01/article-index.wave-39.json'),
   },
 ];
 
@@ -397,6 +421,54 @@ const pillarSearchKeywords: Record<string, string[]> = {
   'KO-W35-EN-006': ['is doterra mlm', 'network marketing', 'multi level marketing', 'direct sales', 'become advisor', 'income'],
   'KO-W35-EN-007': ['after purchase', 'support after purchase', 'onboarding', 'support', 'questions after order', 'team materials'],
   'KO-W35-EN-008': ['become advisor later', 'become an advisor', 'wellness advocate', 'become partner', 'business possibility', 'team onboarding'],
+  'KO-W37-DE-001': ['erste 30 tage', '30 tage start', 'doterra startplan', 'nach dem kauf', 'erste routine', 'starter routine'],
+  'KO-W37-DE-002': ['woche 1', 'öle auspacken', 'labels lesen', 'produktlabel', 'fragen sammeln', 'unboxing'],
+  'KO-W37-DE-003': ['diffuser routine', 'diffuser einstieg', 'raumduft', 'duft zu stark', 'kinder haustiere', 'lüften'],
+  'KO-W37-DE-004': ['woche 2', 'abendroutine', 'schlafroutine', 'lavender', 'serenity', 'duftanker'],
+  'KO-W37-DE-005': ['topische anwendung', 'verdünnung', 'trägeröl', 'patch test', 'hautreaktion', 'hot oils'],
+  'KO-W37-DE-006': ['woche 3', 'kernroutinen', 'drei routinen', 'alltagsroutine', 'öle routine', 'einfach starten'],
+  'KO-W37-DE-007': ['woche 4', 'nachsortieren', 'fragen klären', '30 tage check', 'nach dem kauf', 'nichts erzwingen'],
+  'KO-W37-DE-008': ['30 tage check', 'check mit kyle', 'beratung nach kauf', 'produkte sortieren', 'nächste schritte', 'lrp sinnvoll'],
+  'KO-W37-EN-001': ['first 30 days', '30 day start', 'doterra start plan', 'after purchase', 'first routine', 'starter routine'],
+  'KO-W37-EN-002': ['week 1', 'unbox oils', 'read labels', 'product label', 'collect questions', 'unboxing'],
+  'KO-W37-EN-003': ['diffuser routine', 'diffuser start', 'room scent', 'scent too strong', 'children pets', 'ventilation'],
+  'KO-W37-EN-004': ['week 2', 'evening routine', 'sleep routine', 'lavender', 'serenity', 'scent anchor'],
+  'KO-W37-EN-005': ['topical use', 'dilution', 'carrier oil', 'patch test', 'skin reaction', 'hot oils'],
+  'KO-W37-EN-006': ['week 3', 'core routines', 'three routines', 'everyday routine', 'oil routine', 'start simple'],
+  'KO-W37-EN-007': ['week 4', 'review', 'clarify questions', '30 day check', 'after purchase', 'force nothing'],
+  'KO-W37-EN-008': ['30 day check', 'check with kyle', 'guidance after purchase', 'sort products', 'next steps', 'lrp make sense'],
+  'KO-W38-DE-001': ['petitgrain', 'bitterorange', 'grüner duft', 'abendroutine', 'körperpflege', 'zitrus alternative'],
+  'KO-W38-DE-002': ['arborvitae', 'lebensbaum', 'holzduft', 'waldduft', 'raumduft', 'holzpflege'],
+  'KO-W38-DE-003': ['blue tansy', 'blauer rainfarn', 'deep blue', 'massage', 'körperpflege', 'hautgefühl'],
+  'KO-W38-DE-004': ['helichrysum', 'immortelle', 'hautpflege', 'premiumöl', 'hautgefühl', 'pflegeöl'],
+  'KO-W38-DE-005': ['myrrh', 'myrrhe', 'harzduft', 'hautpflege', 'ritual', 'meditation'],
+  'KO-W38-DE-006': ['turmeric', 'kurkuma', 'würziges öl', 'küche', 'label', 'innere anwendung'],
+  'KO-W38-DE-007': ['clove', 'gewürznelke', 'on guard', 'hot oil', 'verdünnung', 'gewürzduft'],
+  'KO-W38-DE-008': ['thyme', 'thymian', 'kräuteröl', 'küche', 'verdünnung', 'starkes öl'],
+  'KO-W38-EN-001': ['petitgrain', 'bitter orange', 'green scent', 'evening routine', 'body care', 'citrus alternative'],
+  'KO-W38-EN-002': ['arborvitae', 'woody scent', 'forest scent', 'room scent', 'wood care', 'diffuser blend'],
+  'KO-W38-EN-003': ['blue tansy', 'deep blue', 'massage', 'body care', 'skin feel', 'blue oil'],
+  'KO-W38-EN-004': ['helichrysum', 'skin care', 'premium oil', 'skin feel', 'care oil', 'immortelle'],
+  'KO-W38-EN-005': ['myrrh', 'resin scent', 'skin care', 'ritual', 'meditation', 'balsamic'],
+  'KO-W38-EN-006': ['turmeric', 'spicy oil', 'kitchen', 'label', 'internal use', 'turmeric oil'],
+  'KO-W38-EN-007': ['clove', 'on guard', 'hot oil', 'dilution', 'spice scent', 'seasonal blend'],
+  'KO-W38-EN-008': ['thyme', 'herbal oil', 'kitchen', 'dilution', 'strong oil', 'spicy herb'],
+  'KO-W39-DE-001': ['saisonale düfte', 'jahreszeiten öle', 'winter diffuser', 'herbst duft', 'raumduft saison', 'krankheitsversprechen'],
+  'KO-W39-DE-002': ['raum reset', '5 minuten reset', 'lüften', 'raumduft', 'wild orange', 'petitgrain'],
+  'KO-W39-DE-003': ['küche nach kochen', 'küchenduft', 'zitrus küche', 'kräuteröl küche', 'duft reset', 'reinigung keine claims'],
+  'KO-W39-DE-004': ['bad duft', 'gästebad', 'frischer duft', 'tea tree', 'eucalyptus', 'kleiner raum'],
+  'KO-W39-DE-005': ['wäsche duft', 'schrank duft', 'textilien ätherische öle', 'kleidung öl', 'lavender cedarwood', 'flecken'],
+  'KO-W39-DE-006': ['auto duft', 'duft unterwegs', 'ätherische öle auto', 'fahrt sicherheit', 'wenig duft', 'mitfahrer'],
+  'KO-W39-DE-007': ['duft gäste', 'gäste duft', 'duftetikette', 'besuch zuhause', 'dezenter duft', 'duft empfindlichkeit', 'gastfreundlich'],
+  'KO-W39-DE-008': ['haushaltsroutine', 'reinigung ohne claims', 'desinfektionsclaim', 'frischer haushalt', 'lemon tea tree', 'oberflächen'],
+  'KO-W39-EN-001': ['seasonal scents', 'seasonal oils', 'winter diffuser', 'autumn scent', 'room scent season', 'illness promises'],
+  'KO-W39-EN-002': ['room reset', '5 minute reset', 'ventilate', 'room scent', 'wild orange', 'petitgrain'],
+  'KO-W39-EN-003': ['kitchen after cooking', 'kitchen scent', 'citrus kitchen', 'herbal oil kitchen', 'scent reset', 'no cleaning claims'],
+  'KO-W39-EN-004': ['bathroom scent', 'guest bathroom', 'fresh scent', 'tea tree', 'eucalyptus', 'small room'],
+  'KO-W39-EN-005': ['laundry scent', 'closet scent', 'textiles essential oils', 'clothing oil', 'lavender cedarwood', 'stains'],
+  'KO-W39-EN-006': ['car scent', 'scent on the go', 'essential oils car', 'driving safety', 'little scent', 'passengers'],
+  'KO-W39-EN-007': ['scent guests', 'scent etiquette', 'visitors home', 'subtle scent', 'scent sensitivity', 'welcoming'],
+  'KO-W39-EN-008': ['household routine', 'cleaning without claims', 'disinfecting claim', 'fresh home', 'lemon tea tree', 'surfaces'],
 };
 
 export const knowledgeArticles: KnowledgeArticle[] = germanIndex.map((item) => {
