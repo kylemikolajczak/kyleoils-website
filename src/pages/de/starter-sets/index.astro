@@ -213,21 +213,46 @@ const decisionGuides = [
     </div>
   </section>
 
-  <section class="section section--cream">
-    <div class="container narrow-layout">
-      <SectionIntro title="Warum ein Starter-Set sinnvoll sein kann">
-        <p>Ein Starter-Set kann dir helfen, strukturiert in die doTERRA-Produktwelt einzusteigen.</p>
-        <p>Du bekommst eine klare Startoption und musst dich nicht direkt durch die gesamte Produktwelt klicken.</p>
-        <p>Das ist besonders hilfreich, wenn du:</p>
-      </SectionIntro>
-      <ul class="check-list">
-        <li>doTERRA ernsthaft kennenlernen möchtest</li>
-        <li>nicht nur ein einzelnes Produkt testen willst</li>
-        <li>eine einfache Grundauswahl suchst</li>
-        <li>für Familie, Alltag oder Wellness starten möchtest</li>
-        <li>eine geführte Bestellmöglichkeit möchtest</li>
-        <li>nicht allein entscheiden willst, welches Set passt</li>
-      </ul>
+  <section class="section section--sage">
+    <div class="container">
+      <SectionIntro title="Die vier offiziellen Starter-Optionen" />
+      <div class="international-note">
+        <ComplianceNote label="Hinweis für internationale Besucher">
+          <h3>Hinweis für internationale Besucher</h3>
+          <p>Die Direktlinks auf dieser Starter-Set-Seite führen zum offiziellen deutschen doTERRA-Shop und sind für Kunden in Deutschland vorgesehen.</p>
+          <p>Wenn du in einem anderen Land lebst, melde dich einfach bei mir. Ich sende dir gerne die passenden offiziellen Starter-Sets und Bestelllinks für dein Land und unterstütze dich beim Einstieg.</p>
+        </ComplianceNote>
+      </div>
+      <div class="starter-set-list">
+        {starterSets.map((set) => (
+          <StarterSetCard
+            title={set.title}
+            imageSrc={set.imageSrc}
+            imageAlt={set.imageAlt}
+            imageWidth={set.imageWidth}
+            imageHeight={set.imageHeight}
+            orderHref={set.orderHref}
+            orderLabel={set.orderLabel}
+            consultationHref="/de/kontakt/"
+            consultationLabel="Vorher mit Kyle sprechen"
+          >
+            <p class="starter-set-lead"><strong>{set.lead}</strong></p>
+            {set.sections.map((section) => (
+              <section>
+                <h4>{section.title}</h4>
+                {'items' in section && (
+                  <ul class="starter-set-points">
+                    {section.items.map((item) => <li>{item}</li>)}
+                  </ul>
+                )}
+                {'paragraphs' in section && section.paragraphs.map((paragraph) => (
+                  <p>{paragraph.split('\n').map((line, index) => <>{index > 0 && <br />}{line}</>)}</p>
+                ))}
+              </section>
+            ))}
+          </StarterSetCard>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -270,46 +295,38 @@ const decisionGuides = [
     </div>
   </section>
 
-  <section class="section section--sage">
-    <div class="container">
-      <SectionIntro title="Die vier offiziellen Starter-Optionen" />
-      <div class="international-note">
-        <ComplianceNote label="Hinweis für internationale Besucher">
-          <h3>Hinweis für internationale Besucher</h3>
-          <p>Die Direktlinks auf dieser Starter-Set-Seite führen zum offiziellen deutschen doTERRA-Shop und sind für Kunden in Deutschland vorgesehen.</p>
-          <p>Wenn du in einem anderen Land lebst, melde dich einfach bei mir. Ich sende dir gerne die passenden offiziellen Starter-Sets und Bestelllinks für dein Land und unterstütze dich beim Einstieg.</p>
-        </ComplianceNote>
-      </div>
-      <div class="starter-set-list">
-        {starterSets.map((set) => (
-          <StarterSetCard
-            title={set.title}
-            imageSrc={set.imageSrc}
-            imageAlt={set.imageAlt}
-            imageWidth={set.imageWidth}
-            imageHeight={set.imageHeight}
-            orderHref={set.orderHref}
-            orderLabel={set.orderLabel}
-            consultationHref="/de/kontakt/"
-            consultationLabel="Vorher mit Kyle sprechen"
-          >
-            <p class="starter-set-lead"><strong>{set.lead}</strong></p>
-            {set.sections.map((section) => (
-              <section>
-                <h4>{section.title}</h4>
-                {'items' in section && (
-                  <ul class="starter-set-points">
-                    {section.items.map((item) => <li>{item}</li>)}
-                  </ul>
-                )}
-                {'paragraphs' in section && section.paragraphs.map((paragraph) => (
-                  <p>{paragraph.split('\n').map((line, index) => <>{index > 0 && <br />}{line}</>)}</p>
-                ))}
-              </section>
-            ))}
-          </StarterSetCard>
-        ))}
-      </div>
+  <section class="section section--cream orientation-module">
+    <div class="container orientation-module__grid">
+      <article>
+        <SectionIntro title="Neu? Starte mit dem Startbereich.">
+          <p>Du musst nicht sofort alles verstehen, jedes Öl kennen oder direkt die perfekte Routine haben.</p>
+        </SectionIntro>
+        <CTAGroup primaryHref="/de/startbereich/" primaryLabel="Startpfad ansehen" />
+      </article>
+      <article>
+        <SectionIntro title="Kostenloser 30-Tage Öl-Startplan">
+          <p>Der kostenlose 30-Tage Öl-Startplan hilft dir, deine ersten Produkte ruhig einzuordnen, Labels bewusst zu lesen, einfache Routinen zu testen und deine Fragen für Kyle zu sammeln.</p>
+        </SectionIntro>
+        <CTAGroup primaryHref="/de/30-tage-startplan/" primaryLabel="30-Tage-Startplan ansehen" />
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container narrow-layout">
+      <SectionIntro title="Warum ein Starter-Set sinnvoll sein kann">
+        <p>Ein Starter-Set kann dir helfen, strukturiert in die doTERRA-Produktwelt einzusteigen.</p>
+        <p>Du bekommst eine klare Startoption und musst dich nicht direkt durch die gesamte Produktwelt klicken.</p>
+        <p>Das ist besonders hilfreich, wenn du:</p>
+      </SectionIntro>
+      <ul class="check-list">
+        <li>doTERRA ernsthaft kennenlernen möchtest</li>
+        <li>nicht nur ein einzelnes Produkt testen willst</li>
+        <li>eine einfache Grundauswahl suchst</li>
+        <li>für Familie, Alltag oder Wellness starten möchtest</li>
+        <li>eine geführte Bestellmöglichkeit möchtest</li>
+        <li>nicht allein entscheiden willst, welches Set passt</li>
+      </ul>
     </div>
   </section>
 
@@ -395,6 +412,8 @@ const decisionGuides = [
   .decision-guides__grid { display: grid; gap: var(--space-16); }
   .decision-guides__grid :global(.button) { width: 100%; }
   .decision-guides__cta { margin-top: var(--space-32); }
+  .orientation-module__grid { display: grid; gap: var(--space-32); }
+  .orientation-module__grid :global(.section-intro) { margin-bottom: var(--space-24); }
   .starter-set-list { display: grid; gap: var(--space-32); }
   .starter-set-lead { margin: 0 0 var(--space-32); color: var(--color-deep-forest); font-size: 19px; line-height: 1.5; }
   .starter-set-points { display: grid; gap: var(--space-8); margin: 0; padding-left: var(--space-24); }
@@ -409,6 +428,7 @@ const decisionGuides = [
     .section { padding-block: var(--space-96); }
     .starter-set-list { gap: var(--space-40); }
     .decision-guides__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .orientation-module__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-48); }
   }
   @media (min-width: 1024px) {
     .hero { padding-block: var(--space-96); }

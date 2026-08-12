@@ -1,0 +1,184 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import CTAGroup from '../../../components/cta/CTAGroup.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import Button from '../../../components/global/Button.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+
+const steps = [
+  {
+    title: 'Step 1: Understand what doTERRA is',
+    intro: 'Before choosing a kit or using oils, a calm overview helps.',
+    linkLabel: 'Read first:',
+    links: [
+      { label: 'Understanding doTERRA', href: '/en/understanding-doterra/' },
+      { label: 'Wholesale Customer or Wellness Advocate?', href: '/en/knowledge/products-systems/wholesale-customer-or-wellness-advocate/' },
+      { label: 'doTERRA customer account explained simply', href: '/en/knowledge/products-systems/doterra-customer-account-explained-simply/' },
+    ],
+    goal: "You should understand what this is about, what Kyle's role is and which options you have.",
+  },
+  {
+    title: 'Step 2: Place the right starter kit',
+    intro: 'Not everyone needs a large kit immediately. Not every kit fits every everyday life.',
+    linkLabel: 'Read next:',
+    links: [
+      { label: 'Which doTERRA starter kit fits me?', href: '/en/knowledge/products-systems/which-doterra-starter-kit-fits-me/' },
+      { label: 'Introductory Kit or enrolment kit?', href: '/en/knowledge/products-systems/introductory-kit-or-enrolment-kit/' },
+      { label: 'Family Essentials Kit safe context', href: '/en/knowledge/products-systems/family-essentials-kit-safe-context/' },
+      { label: 'Home Essentials Kit: strong start or too much?', href: '/en/knowledge/products-systems/home-essentials-kit-strong-start-or-too-much/' },
+    ],
+    goal: 'You should not buy from pressure. You should understand which start truly fits you.',
+  },
+  {
+    title: 'Step 3: Safety first',
+    intro: 'Essential oils are concentrated. That is why safe use is part of the routine.',
+    linkLabel: 'Especially read:',
+    links: [
+      { label: 'Use essential oils safely', href: '/en/knowledge/safe-use/' },
+      { label: 'Dilution explained simply', href: '/en/knowledge/safe-use/how-to-dilute-essential-oils/' },
+      { label: 'Patch test', href: '/en/knowledge/safe-use/patch-testing-explained-simply/' },
+      { label: 'Strong oils and hot oils', href: '/en/knowledge/safe-use/approaching-strong-oils-safely/' },
+      { label: 'Children, pets and sensitive people', href: '/en/knowledge/safe-use/' },
+    ],
+    goal: 'You should not have to guess. You should know when to start carefully and when to ask Kyle.',
+  },
+  {
+    title: 'Step 4: Start the first 30 days calmly',
+    intro: 'When your oils arrive, the real start begins.',
+    linkLabel: 'Read:',
+    links: [
+      { label: 'The first 30 days with doTERRA: start calmly', href: '/en/knowledge/routines/first-30-days-with-doterra-start-calmly/' },
+      { label: 'Week 1: unbox oils, read labels, collect questions', href: '/en/knowledge/routines/week-1-unbox-oils-read-labels-collect-questions/' },
+      { label: 'Week 1: diffuser routine without overwhelm', href: '/en/knowledge/routines/week-1-diffuser-routine-without-overwhelm/' },
+      { label: 'Week 2: build an evening routine with oils', href: '/en/knowledge/routines/week-2-build-an-evening-routine-with-oils/' },
+      { label: 'Week 2: learn topical use and dilution calmly', href: '/en/knowledge/routines/week-2-learn-topical-use-and-dilution-calmly/' },
+      { label: '30-day check with Kyle: what truly fits?', href: '/en/knowledge/routines/30-day-check-with-kyle-what-truly-fits/' },
+    ],
+    goal: 'You should not do everything at once. A few clear routines are enough at the beginning.',
+  },
+  {
+    title: 'Step 5: Everyday life and home',
+    intro: 'Once the basics feel clear, you can bring oils into small everyday moments.',
+    linkLabel: 'Good starting points:',
+    links: [
+      { label: '5-minute room reset', href: '/en/knowledge/routines/5-minute-room-reset-ventilate-tidy-scent-gently/' },
+      { label: 'Kitchen after cooking', href: '/en/knowledge/routines/kitchen-after-cooking-reset-the-scent/' },
+      { label: 'Bathroom and guest bathroom', href: '/en/knowledge/routines/bathroom-and-guest-bathroom-fresh-without-too-much-scent/' },
+      { label: 'Guests at home', href: '/en/knowledge/routines/guests-at-home-scent-etiquette-with-essential-oils/' },
+      { label: 'Laundry, closet and textiles', href: '/en/knowledge/routines/laundry-closet-textiles-use-scent-with-distance/' },
+      { label: 'Seasonal room-scent routines', href: '/en/knowledge/routines/seasonal-room-scent-routines-without-illness-promises/' },
+    ],
+    goal: 'Oils should not make your everyday life more complicated. They should make simple moments more conscious.',
+  },
+];
+
+const questions = [
+  'Which kit fits my everyday life?',
+  'Which oils should I use first?',
+  'Which products should I leave for later?',
+  'What matters around children, pets or sensitive skin?',
+  'Do I have to order monthly?',
+  'Can I become an advisor later?',
+];
+---
+
+<PageLayout lang="en" title="New to doTERRA? Start calmly and safely | Kyle Oils" description="A clear starting point for new doTERRA customers and curious visitors: understand starter kits, learn safety, plan the first 30 days and clarify questions with Kyle.">
+  <section class="academy-hero">
+    <div class="container academy-hero__inner">
+      <div class="academy-back-control"><Button href="/en/knowledge/" variant="secondary">← Back to Knowledge</Button></div>
+      <p class="eyebrow">START HERE</p>
+      <h1>New to doTERRA?</h1>
+      <p class="academy-hero__subtitle">Start calmly and safely.</p>
+      <div class="academy-hero__copy">
+        <p>You do not have to understand everything immediately, know every oil or have the perfect routine right away.</p>
+        <p>Kyle Oils exists to make your doTERRA start simple, calm and honest. No pressure. No healing promises. No complicated language.</p>
+        <p>This page guides you step by step through the most important areas if you are new, thinking about a starter kit or already have your first oils at home.</p>
+      </div>
+      <CTAGroup primaryHref="/en/30-day-start-plan/" primaryLabel="View 30-Day Start Plan" secondaryHref="/en/contact/" secondaryLabel="Request guidance" />
+    </div>
+  </section>
+
+  <section class="academy-path section">
+    <div class="container academy-path__container">
+      {steps.map((step) => (
+        <article class="academy-step">
+          <div class="academy-step__content">
+            <h2>{step.title}</h2>
+            <p>{step.intro}</p>
+            <h3>{step.linkLabel}</h3>
+            <div class="academy-step__links">
+              {step.links.map((link) => <a href={link.href}>{link.label}</a>)}
+            </div>
+            <p class="academy-step__goal"><strong>Goal:</strong> {step.goal}</p>
+          </div>
+        </article>
+      ))}
+
+      <article class="academy-step academy-step--questions">
+        <div class="academy-step__content">
+          <h2>Step 6: Clarify questions with Kyle</h2>
+          <p>The best start is rarely fully standardized.</p>
+          <h3>You may wonder:</h3>
+          <ul>{questions.map((question) => <li>{question}</li>)}</ul>
+          <p>That is exactly what personal guidance is for.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <CTASection title="Request guidance" primaryHref="/en/contact/" primaryLabel="Request guidance">
+    <p>If you want to start calmly, ask Kyle for a no-pressure orientation.</p>
+    <p>You do not get a sales event, but a clear placement:</p>
+    <ul>
+      <li>what you need</li>
+      <li>what you do not need</li>
+      <li>what you can start with</li>
+      <li>what may wait</li>
+    </ul>
+  </CTASection>
+
+  <section class="academy-worlds-link">
+    <div class="container">
+      <Button href="/en/knowledge/" variant="secondary">View all Knowledge Worlds</Button>
+    </div>
+  </section>
+
+  <section class="academy-note">
+    <div class="container">
+      <ComplianceNote label="Note">
+        <h2>Note</h2>
+        <p>Kyle Oils does not replace medical guidance and does not make healing promises. The content helps you understand doTERRA products, routines and safety questions more clearly.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .academy-hero { padding: var(--space-64) 0; background: var(--color-warm-white); }
+  .academy-hero__inner { max-width: var(--container-text); }
+  .academy-back-control { margin: 0 0 var(--space-32); }
+  .eyebrow { margin: 0 0 var(--space-16); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .04em; }
+  .eyebrow { text-transform: uppercase; }
+  h1 { margin: 0 0 var(--space-16); font-size: var(--font-size-h1-mobile); line-height: var(--line-height-heading); letter-spacing: -.025em; }
+  .academy-hero__subtitle { margin: 0 0 var(--space-24); color: var(--color-deep-forest); font-size: var(--font-size-h3-mobile); font-weight: var(--font-weight-semibold); }
+  .academy-hero__copy { margin-bottom: var(--space-32); color: var(--color-text-secondary); }
+  .academy-hero__copy p { margin: 0 0 var(--space-16); }
+  .academy-hero__copy p:last-child { margin-bottom: 0; }
+  .section { padding: var(--space-64) 0; background: var(--color-soft-cream); }
+  .academy-path__container { display: grid; gap: var(--space-24); }
+  .academy-step { display: grid; gap: var(--space-8); padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
+  h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
+  .academy-step__content > p { margin: 0 0 var(--space-20); color: var(--color-text-secondary); }
+  h3 { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  .academy-step__links { display: grid; gap: var(--space-12); margin-bottom: var(--space-24); }
+  .academy-step__links a { display: flex; align-items: center; min-height: 52px; padding: var(--space-12) var(--space-16); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-button); background: var(--color-soft-cream); color: var(--color-text-primary); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  .academy-step__links a:hover, .academy-step__links a:focus-visible { border-color: var(--color-sage-green); color: var(--color-deep-forest); text-decoration: underline; }
+  .academy-step__goal { margin-bottom: 0 !important; }
+  .academy-step ul, .cta-section :global(ul) { display: grid; gap: var(--space-8); margin: 0 0 var(--space-20); padding-left: var(--space-24); }
+  .academy-note { padding: 0 0 var(--space-80); background: var(--color-warm-white); }
+  .academy-worlds-link { padding: var(--space-40) 0; background: var(--color-warm-white); text-align: center; }
+  .academy-note :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  @media (min-width: 768px) { .academy-hero, .section { padding-block: var(--space-96); } .academy-step { grid-template-columns: minmax(0, 1fr); padding: var(--space-32); } .academy-step__links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-16); } }
+  @media (min-width: 1024px) { .academy-hero, .section { padding-block: var(--space-120); } h1 { font-size: var(--font-size-h1-desktop); } h2 { font-size: var(--font-size-h2-desktop); } .academy-step { padding: var(--space-40); } }
+</style>

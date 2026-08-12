@@ -328,6 +328,183 @@ function getRawArticles(contentPacks: typeof approvedGermanContentPacks | typeof
 const rawGermanArticles = getRawArticles(approvedGermanContentPacks);
 const rawEnglishArticles = getRawArticles(approvedEnglishContentPacks);
 
+interface Wave46RouteItem {
+  id: string;
+  de_title: string;
+  en_title: string;
+  de_route: string;
+  en_route: string;
+  search_de: string[];
+  search_en: string[];
+}
+
+const wave46ContentRoot = resolve(process.cwd(), 'review/knowledge-hub/content/wave-46-oil-library-expansion-05');
+const wave46RouteMap = JSON.parse(
+  readFileSync(resolve(wave46ContentRoot, 'shared/route-map.json'), 'utf8'),
+) as { articles: Wave46RouteItem[] };
+
+const wave46Descriptions: Record<string, { de: string; en: string }> = {
+  'black-pepper-schwarzer-pfeffer': {
+    de: 'Ein ruhiges Profil für ein würziges Gewürzöl: Duft, Label und sichere Einordnung.',
+    en: 'A calm profile for a spicy oil: scent, label awareness and safe orientation.',
+  },
+  cassia: {
+    de: 'Ein starkes Gewürzöl mit warmem Aroma: Label, Verdünnung und sichere Orientierung.',
+    en: 'A strong spice oil with a warm aroma: label awareness, dilution and safe orientation.',
+  },
+  'green-mandarin-gruene-mandarine': {
+    de: 'Ein frisches Zitrusprofil aus unreifen Mandarinen: Duft, Label und UV-Hinweis.',
+    en: 'A fresh citrus profile from unripe mandarins: scent, label awareness and UV caution.',
+  },
+  'tangerine-mandarine': {
+    de: 'Ein süßes, fruchtiges Zitrusöl: ruhige Einordnung für Einsteiger, Label und Sicherheit.',
+    en: 'A sweet, fruity citrus oil: calm orientation for beginners, labels and safety.',
+  },
+  'pink-pepper-rosa-pfeffer': {
+    de: 'Ein mild fruchtig-pfeffriges Profil: Unterschiede zwischen Gewürzölen ruhig verstehen.',
+    en: 'A mildly fruity and peppery profile: calmly understand the differences between spice oils.',
+  },
+  'sandalwood-sandelholz': {
+    de: 'Ein warmes, holziges Öl: Duftprofil, topischer Kontext und sichere Einordnung.',
+    en: 'A warm, woody oil: scent profile, topical context and safe orientation.',
+  },
+  'magnolia-touch': {
+    de: 'Ein fruchtig-floraler Roll-on: Touch-Produkte und topische Anwendung verständlich einordnen.',
+    en: 'A fruity-floral roll-on: clearly understand Touch products and topical use.',
+  },
+  'vetiver-touch': {
+    de: 'Ein warmer, erdiger Roll-on: Duftprofil, Touch-Format und Labelbewusstsein.',
+    en: 'A warm, earthy roll-on: scent profile, Touch format and label awareness.',
+  },
+};
+
+const wave46RelatedArticleOffsets = [
+  [1, 4],
+  [0, 4],
+  [3],
+  [2],
+  [0, 1],
+  [6, 7],
+  [5, 7],
+  [5, 6],
+];
+
+function wave46ArticleId(locale: 'de' | 'en', index: number) {
+  return `KO-W46-${locale.toUpperCase()}-${String(index + 1).padStart(3, '0')}`;
+}
+
+function wave46ArticlePath(locale: 'de' | 'en', item: Wave46RouteItem) {
+  if (locale === 'de') return resolve(wave46ContentRoot, 'articles-de', `${item.id}.md`);
+  const filename = item.en_route.split('/').filter(Boolean).at(-1);
+  return resolve(wave46ContentRoot, 'articles-en', `${filename}.md`);
+}
+
+const wave46GermanArticles: KnowledgeArticle[] = wave46RouteMap.articles.map((item, index) => ({
+  id: wave46ArticleId('de', index),
+  title: item.de_title,
+  route: item.de_route,
+  worldId: 'oil-library',
+  worldLabel: 'Öl-Lexikon',
+  seoTitle: `${item.de_title} | Kyle Oils`,
+  description: wave46Descriptions[item.id].de,
+  risk: item.id === 'cassia' ? 'high' : 'medium',
+  reviewedBy: 'Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist',
+  medicalDisclaimerRequired: true,
+  relatedArticleIds: wave46RelatedArticleOffsets[index].map((offset) => wave46ArticleId('de', offset)),
+  searchKeywords: item.search_de,
+  blocks: toBlocks(readFileSync(wave46ArticlePath('de', item), 'utf8')),
+}));
+
+const wave46EnglishArticles: EnglishKnowledgeArticle[] = wave46RouteMap.articles.map((item, index) => ({
+  id: wave46ArticleId('en', index),
+  title: item.en_title,
+  route: item.en_route,
+  worldId: 'oil-library',
+  worldLabel: 'Oil Library',
+  seoTitle: `${item.en_title} | Kyle Oils`,
+  description: wave46Descriptions[item.id].en,
+  sourceDeId: wave46ArticleId('de', index),
+  reviewedBy: 'Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist',
+  medicalDisclaimerRequired: true,
+  relatedArticleIds: wave46RelatedArticleOffsets[index].map((offset) => wave46ArticleId('en', offset)),
+  searchKeywords: item.search_en,
+  blocks: toBlocks(readFileSync(wave46ArticlePath('en', item), 'utf8')),
+}));
+
+interface Wave47RouteItem {
+  id: string;
+  de_title: string;
+  en_title: string;
+  de_route: string;
+  en_route: string;
+  de_excerpt: string;
+  en_excerpt: string;
+  search_de: string[];
+  search_en: string[];
+}
+
+const wave47ContentRoot = resolve(process.cwd(), 'review/knowledge-hub/content/wave-47-faq-expansion-03');
+const wave47RouteMap = JSON.parse(
+  readFileSync(resolve(wave47ContentRoot, 'shared/route-map.json'), 'utf8'),
+) as { articles: Wave47RouteItem[] };
+
+const wave47RelatedArticleIds = [
+  ['KO-W47-DE-002', 'KO-W47-DE-003'],
+  ['KO-W47-DE-001', 'KO-W47-DE-003'],
+  ['KO-W47-DE-001'],
+  ['KO-W47-DE-001'],
+  ['KO-W47-DE-001', 'KO-W47-DE-004'],
+  ['KO-W47-DE-001'],
+  ['KO-W18-DE-006'],
+  ['KO-W29-DE-008'],
+];
+
+function wave47ArticleId(locale: 'de' | 'en', index: number) {
+  return `KO-W47-${locale.toUpperCase()}-${String(index + 1).padStart(3, '0')}`;
+}
+
+function wave47ArticlePath(locale: 'de' | 'en', item: Wave47RouteItem) {
+  if (locale === 'de') return resolve(wave47ContentRoot, 'articles-de', `${item.id}.md`);
+  const filename = item.en_route.split('/').filter(Boolean).at(-1);
+  return resolve(wave47ContentRoot, 'articles-en', `${filename}.md`);
+}
+
+function wave47RelatedIds(locale: 'de' | 'en', index: number) {
+  return wave47RelatedArticleIds[index].map((id) => id.replace('-DE-', `-${locale.toUpperCase()}-`));
+}
+
+const wave47GermanArticles: KnowledgeArticle[] = wave47RouteMap.articles.map((item, index) => ({
+  id: wave47ArticleId('de', index),
+  title: item.de_title,
+  route: item.de_route,
+  worldId: 'faq',
+  worldLabel: 'FAQ',
+  seoTitle: `${item.de_title} | Kyle Oils`,
+  description: item.de_excerpt,
+  risk: index === 6 ? 'high' : 'medium',
+  reviewedBy: 'Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist',
+  medicalDisclaimerRequired: true,
+  relatedArticleIds: wave47RelatedIds('de', index),
+  searchKeywords: item.search_de,
+  blocks: toBlocks(readFileSync(wave47ArticlePath('de', item), 'utf8')),
+}));
+
+const wave47EnglishArticles: EnglishKnowledgeArticle[] = wave47RouteMap.articles.map((item, index) => ({
+  id: wave47ArticleId('en', index),
+  title: item.en_title,
+  route: item.en_route,
+  worldId: 'faq',
+  worldLabel: 'FAQ',
+  seoTitle: `${item.en_title} | Kyle Oils`,
+  description: item.en_excerpt,
+  sourceDeId: wave47ArticleId('de', index),
+  reviewedBy: 'Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist',
+  medicalDisclaimerRequired: true,
+  relatedArticleIds: wave47RelatedIds('en', index),
+  searchKeywords: item.search_en,
+  blocks: toBlocks(readFileSync(wave47ArticlePath('en', item), 'utf8')),
+}));
+
 function normalizeWorldId(worldId: string): KnowledgeWorldId {
   if (worldId === 'products') return 'products-systems';
   if (worldId === 'everyday') return 'everyday-use';
@@ -471,7 +648,7 @@ const pillarSearchKeywords: Record<string, string[]> = {
   'KO-W39-EN-008': ['household routine', 'cleaning without claims', 'disinfecting claim', 'fresh home', 'lemon tea tree', 'surfaces'],
 };
 
-export const knowledgeArticles: KnowledgeArticle[] = germanIndex.map((item) => {
+const indexedGermanArticles: KnowledgeArticle[] = germanIndex.map((item) => {
   const source = rawGermanArticles.find((article) => article.values.id === item.id);
   if (!source) throw new Error(`Missing approved content for ${item.id}`);
   const risk = item.risk ?? item.riskLevel ?? 'medium';
@@ -489,7 +666,7 @@ export const knowledgeArticles: KnowledgeArticle[] = germanIndex.map((item) => {
   };
 });
 
-export const englishKnowledgeArticles: EnglishKnowledgeArticle[] = englishIndex.map((item) => {
+const indexedEnglishArticles: EnglishKnowledgeArticle[] = englishIndex.map((item) => {
   const source = rawEnglishArticles.find((article) => article.values.id === item.id);
   if (!source) throw new Error(`Missing approved content for ${item.id}`);
   const translationPairId = item.pair ?? item.translationPairId;
@@ -510,6 +687,18 @@ export const englishKnowledgeArticles: EnglishKnowledgeArticle[] = englishIndex.
     blocks: toBlocks(source.body),
   };
 });
+
+export const knowledgeArticles: KnowledgeArticle[] = [
+  ...indexedGermanArticles,
+  ...wave46GermanArticles,
+  ...wave47GermanArticles,
+];
+
+export const englishKnowledgeArticles: EnglishKnowledgeArticle[] = [
+  ...indexedEnglishArticles,
+  ...wave46EnglishArticles,
+  ...wave47EnglishArticles,
+];
 
 export const knowledgeArticleRoutePairs = englishKnowledgeArticles.flatMap((article) => {
   const germanArticle = knowledgeArticles.find((item) => item.id === article.sourceDeId);

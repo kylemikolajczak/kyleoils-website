@@ -8,8 +8,9 @@ import type { KnowledgeWorld } from '../../data/knowledge';
 import type { KnowledgeArticleSummary } from '../../data/knowledgeArticles';
 import type { Locale } from '../../data/locales';
 
-interface Props { locale: Locale; title: string; description: string; worlds: KnowledgeWorld[]; featuredArticles?: KnowledgeArticleSummary[]; recommendedStartArticles?: KnowledgeArticleSummary[]; searchArticles?: KnowledgeArticleSummary[]; }
-const { locale, title, description, worlds, featuredArticles = [], recommendedStartArticles = [], searchArticles = [] } = Astro.props;
+interface StartHereCard { title: string; description: string; href: string; label: string; }
+interface Props { locale: Locale; title: string; description: string; worlds: KnowledgeWorld[]; featuredArticles?: KnowledgeArticleSummary[]; recommendedStartArticles?: KnowledgeArticleSummary[]; searchArticles?: KnowledgeArticleSummary[]; startHereCard?: StartHereCard; }
+const { locale, title, description, worlds, featuredArticles = [], recommendedStartArticles = [], searchArticles = [], startHereCard } = Astro.props;
 const contactHref = locale === 'de' ? '/de/kontakt/' : '/en/contact/';
 const worldLabel = locale === 'de' ? 'Wissenswelten' : 'Knowledge Worlds';
 const linkLabel = locale === 'de' ? 'Mehr erfahren' : 'Learn more';
@@ -45,6 +46,22 @@ const orientationPaths = locale === 'de'
     <div class="knowledge-hero__image" role="img" aria-label={locale === 'de' ? 'Lüneburger Heide in warmem Licht' : 'Lüneburg Heath in warm light'}></div>
   </div>
 </section>
+
+{startHereCard && (
+  <section class="knowledge-start-here">
+    <div class="container">
+      <article class="knowledge-start-here__card">
+        <div>
+          <p class="eyebrow">{locale === 'de' ? 'ORIENTIERUNG' : 'ORIENTATION'}</p>
+          <h2>{startHereCard.title}</h2>
+          <p>{startHereCard.description}</p>
+        </div>
+        <a class="knowledge-start-here__link" href={startHereCard.href}>{startHereCard.label}</a>
+      </article>
+    </div>
+    <div class="knowledge-start-here__gap" aria-hidden="true"></div>
+  </section>
+)}
 
 <section class="section section--cream">
   <div class="container">
@@ -115,6 +132,13 @@ const orientationPaths = locale === 'de'
   h1 { max-width: var(--container-text); margin: 0 0 var(--space-24); font-size: var(--font-size-h1-mobile); line-height: var(--line-height-heading); letter-spacing: -.025em; }
   .knowledge-hero__intro { max-width: var(--container-text); margin: 0 0 var(--space-32); color: var(--color-text-secondary); }
   .knowledge-hero__image { min-height: 300px; border-radius: var(--radius-image); background: url('/assets/images/nature/nature-heath-hero-01.png') center / cover no-repeat; box-shadow: var(--shadow-card); }
+  .knowledge-start-here { padding: var(--space-40) 0 0; background: var(--color-warm-white); }
+  .knowledge-start-here__gap { height: var(--space-48); background: var(--color-warm-white); }
+  .knowledge-start-here__card { display: grid; gap: var(--space-24); padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-soft-cream); box-shadow: var(--shadow-card); }
+  .knowledge-start-here__card h2 { margin-bottom: var(--space-12); font-size: var(--font-size-h3-mobile); }
+  .knowledge-start-here__card > div > p:last-child { margin: 0; color: var(--color-text-secondary); }
+  .knowledge-start-here__link { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; width: fit-content; padding: 14px 20px; border: 1px solid var(--color-deep-forest); border-radius: var(--radius-button); background: var(--color-deep-forest); color: var(--color-warm-white); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  .knowledge-start-here__link:hover { background: var(--color-deep-forest); color: var(--color-warm-white); text-decoration: underline; }
   .section { padding: var(--space-64) 0; background: var(--color-soft-cream); }
   .section-intro { max-width: var(--container-text); margin-bottom: var(--space-40); }
   h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
@@ -131,6 +155,6 @@ const orientationPaths = locale === 'de'
   .knowledge-start-path__number { display: grid; flex: 0 0 1.9rem; place-items: center; width: 1.9rem; height: 1.9rem; border-radius: 50%; background: var(--color-deep-forest); color: var(--color-warm-white); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
   .knowledge-start-path__list a { color: var(--color-text-primary); font-weight: var(--font-weight-semibold); text-decoration: none; }
   .knowledge-start-path__list a:hover { color: var(--color-deep-forest); text-decoration: underline; }
-  @media (min-width: 768px) { .knowledge-hero, .section { padding-block: var(--space-96); } .world-grid, .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); } .knowledge-orientation__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-16); } }
+  @media (min-width: 768px) { .knowledge-hero, .section { padding-block: var(--space-96); } .knowledge-start-here { padding-top: var(--space-56); } .knowledge-start-here__gap { height: var(--space-80); } .knowledge-start-here__card { grid-template-columns: minmax(0, 1fr) max-content; align-items: center; padding: var(--space-32); } .world-grid, .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); } .knowledge-orientation__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-16); } }
   @media (min-width: 1024px) { .knowledge-hero { padding-block: var(--space-120); } .knowledge-hero__grid { grid-template-columns: minmax(0, 1fr) minmax(360px, .8fr); gap: var(--space-80); } .knowledge-hero__image { min-height: 460px; } .section { padding-block: var(--space-120); } h1 { font-size: var(--font-size-h1-desktop); } h2 { font-size: var(--font-size-h2-desktop); } .world-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } .article-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 </style>

@@ -9,6 +9,9 @@ export const footerData = {
   description: 'Persönliche doTERRA Wellness Beratung für natürliche Routinen und verständliche Orientierung',
   primaryNavigation: [mainNavigation[0], additionalNavigation[0], mainNavigation[1], mainNavigation[5], mainNavigation[6]],
   offersAndKnowledge: [
+    { label: 'Startpfad', href: '/de/startbereich/' },
+    { label: '30-Tage-Startplan', href: '/de/30-tage-startplan/' },
+    { label: 'doTERRA Beratung Lüneburg', href: '/de/doterra-beratung-lueneburg/' },
     { label: 'Öl-Lexikon', href: '/de/wissen/oel-lexikon/' },
     { label: 'Sicher anwenden', href: '/de/wissen/sicher-anwenden/' },
     { label: 'Produkte & Systeme', href: '/de/wissen/produkte-systeme/' },
@@ -30,6 +33,9 @@ export const englishFooterData = {
   description: 'Personal doTERRA support for natural routines and clear, practical guidance.',
   primaryNavigation: [englishMainNavigation[0], englishAdditionalNavigation[0], englishMainNavigation[1], englishMainNavigation[5], englishMainNavigation[6]],
   offersAndKnowledge: [
+    { label: 'Start Here', href: '/en/start-here/' },
+    { label: '30-Day Start Plan', href: '/en/30-day-start-plan/' },
+    { label: 'Essential Oil Guidance Germany', href: '/en/essential-oil-guidance-germany/' },
     { label: 'Oil Library', href: '/en/knowledge/oil-library/' },
     { label: 'Safe Use', href: '/en/knowledge/safe-use/' },
     { label: 'Products & Systems', href: '/en/knowledge/products-systems/' },

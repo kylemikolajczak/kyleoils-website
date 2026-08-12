@@ -1,0 +1,116 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import CTAGroup from '../../../components/cta/CTAGroup.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+
+const audience = [
+  'are new to doTERRA',
+  'are thinking about a starter kit',
+  'have received your first oils',
+  'do not want to try everything at once',
+  'want to start more safely with diffuser, dilution and everyday topics',
+  'want to collect questions for personal guidance',
+];
+
+const planSteps = [
+  'Unbox, read labels and collect questions',
+  'One mild diffuser routine',
+  'Evening routine and first simple use',
+  'Understand topical use and dilution calmly',
+  'Find three core routines',
+  'Review with Kyle after 30 days',
+];
+---
+
+<PageLayout lang="en" title="Free 30-Day Oil Start Plan | Kyle Oils" description="A calm doTERRA start plan for new customers and curious visitors: read labels, test first routines, understand safety and collect questions for Kyle.">
+  <section class="start-plan-hero">
+    <div class="container start-plan-hero__inner">
+      <p class="eyebrow">FREE DOWNLOAD</p>
+      <h1>Free 30-Day Oil Start Plan</h1>
+      <p class="start-plan-hero__subtitle">Start calmly with doTERRA.</p>
+      <div class="start-plan-hero__copy">
+        <p>You do not have to understand every oil immediately or have the perfect routine right away.</p>
+        <p>The free 30-Day Oil Start Plan helps you calmly place your first products, read labels consciously, test simple routines and collect your questions for Kyle.</p>
+      </div>
+      <CTAGroup primaryHref="/downloads/kyle-oils-30-day-start-plan-en.pdf" primaryLabel="Download Start Plan" secondaryHref="/en/start-here/" secondaryLabel="← Back to Start Here" />
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container start-plan-content">
+      <header class="section-intro">
+        <h2>Who is this for?</h2>
+        <p>The start plan fits if you:</p>
+      </header>
+      <ul class="start-plan-list">
+        {audience.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--warm">
+    <div class="container start-plan-content">
+      <header class="section-intro">
+        <h2>What you get</h2>
+        <p>The PDF start plan guides you through:</p>
+      </header>
+      <ol class="start-plan-steps">
+        {planSteps.map((step, index) => <li><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><p>{step}</p></li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container start-plan-download">
+      <div>
+        <h2>Direct download</h2>
+        <p>You can download the start plan directly. No form, no pressure, no sales event.</p>
+      </div>
+      <CTAGroup primaryHref="/downloads/kyle-oils-30-day-start-plan-en.pdf" primaryLabel="Download Start Plan" />
+    </div>
+  </section>
+
+  <CTASection title="After that" primaryHref="/en/contact/" primaryLabel="Request Guidance">
+    <p>If you notice while reading that you would like support, you can send Kyle a no-pressure request.</p>
+    <p>Kyle helps you calmly place your products, questions and next steps.</p>
+  </CTASection>
+
+  <section class="start-plan-note">
+    <div class="container">
+      <ComplianceNote label="Note">
+        <h2>Note</h2>
+        <p>Kyle Oils does not replace medical guidance and does not make healing promises. The start plan helps you understand doTERRA products, routines and safety questions more clearly.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .start-plan-hero { padding: var(--space-64) 0; background: var(--color-warm-white); }
+  .start-plan-hero__inner, .start-plan-content { max-width: var(--container-text); }
+  .eyebrow { margin: 0 0 var(--space-16); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .04em; text-transform: uppercase; }
+  h1, h2 { margin: 0; line-height: var(--line-height-heading); letter-spacing: -.025em; }
+  h1 { margin-bottom: var(--space-16); font-size: var(--font-size-h1-mobile); }
+  h2 { margin-bottom: var(--space-16); font-size: var(--font-size-h2-mobile); }
+  .start-plan-hero__subtitle { margin: 0 0 var(--space-24); color: var(--color-deep-forest); font-size: var(--font-size-h3-mobile); font-weight: var(--font-weight-semibold); }
+  .start-plan-hero__copy, .section-intro p, .start-plan-download p { color: var(--color-text-secondary); }
+  .start-plan-hero__copy { margin-bottom: var(--space-32); }
+  .start-plan-hero__copy p, .section-intro p, .start-plan-download p { margin: 0 0 var(--space-16); }
+  .start-plan-hero__copy p:last-child, .section-intro p:last-child, .start-plan-download p:last-child { margin-bottom: 0; }
+  .section { padding: var(--space-64) 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .section--warm { background: var(--color-warm-white); }
+  .section-intro { margin-bottom: var(--space-32); }
+  .start-plan-list { display: grid; gap: var(--space-16); margin: 0; padding-left: var(--space-24); color: var(--color-text-secondary); list-style: disc outside; }
+  .start-plan-list li { padding-left: var(--space-8); }
+  .start-plan-steps { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
+  .start-plan-steps li { display: grid; grid-template-columns: 2.75rem minmax(0, 1fr); gap: var(--space-16); align-items: start; padding: var(--space-20); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-soft-cream); box-shadow: var(--shadow-card); }
+  .start-plan-steps span { color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .04em; }
+  .start-plan-steps p { margin: 0; color: var(--color-text-primary); font-weight: var(--font-weight-semibold); }
+  .start-plan-download { display: grid; gap: var(--space-32); }
+  .start-plan-note { padding: 0 0 var(--space-80); background: var(--color-warm-white); }
+  .start-plan-note :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  @media (min-width: 768px) { .start-plan-hero, .section { padding-block: var(--space-96); } .start-plan-download { grid-template-columns: minmax(0, 1fr) auto; align-items: center; } }
+  @media (min-width: 1024px) { .start-plan-hero, .section { padding-block: var(--space-120); } h1 { font-size: var(--font-size-h1-desktop); } h2 { font-size: var(--font-size-h2-desktop); } .start-plan-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>

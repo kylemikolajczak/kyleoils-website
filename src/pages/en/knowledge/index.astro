@@ -15,5 +15,5 @@ const featuredArticles = getArticlesById(featuredArticleIds);
 ---
 
 <PageLayout lang="en" title="Knowledge | Kyle Daniel Mikolajczak" description={knowledgeLanding.description.en}>
-  <KnowledgeLandingTemplate locale="en" title={knowledgeLanding.title.en} description={knowledgeLanding.description.en} worlds={knowledgeWorlds} recommendedStartArticles={recommendedStartArticles} searchArticles={englishKnowledgeArticles} {featuredArticles} />
+  <KnowledgeLandingTemplate locale="en" title={knowledgeLanding.title.en} description={knowledgeLanding.description.en} worlds={knowledgeWorlds} recommendedStartArticles={recommendedStartArticles} searchArticles={englishKnowledgeArticles} {featuredArticles} startHereCard={{ title: 'New to doTERRA?', description: 'You do not have to understand everything immediately, know every oil or have the perfect routine right away.', href: '/en/start-here/', label: 'Explore Start Here' }} />
 </PageLayout>

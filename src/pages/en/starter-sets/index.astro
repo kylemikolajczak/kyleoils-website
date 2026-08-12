@@ -214,21 +214,46 @@ const decisionGuides = [
     </div>
   </section>
 
-  <section class="section section--cream">
-    <div class="container narrow-layout">
-      <SectionIntro title="Why a Starter Kit Can Make Sense">
-        <p>A starter kit can provide a clear, structured introduction to doTERRA products.</p>
-        <p>You receive a clear starting option without having to navigate the entire product range straight away.</p>
-        <p>This is particularly helpful if you:</p>
-      </SectionIntro>
-      <ul class="check-list">
-        <li>want to explore doTERRA products seriously</li>
-        <li>do not want to test just one individual product</li>
-        <li>are looking for a simple basic selection</li>
-        <li>want to begin for family life, daily routines or wellness</li>
-        <li>would like support with your order</li>
-        <li>would prefer help deciding which kit is right</li>
-      </ul>
+  <section class="section section--sage">
+    <div class="container">
+      <SectionIntro title="Four Official Starter Options" />
+      <div class="international-note">
+        <ComplianceNote label="Information for International Visitors">
+          <h3>Information for International Visitors</h3>
+          <p>The direct links on this page lead to the official German doTERRA shop and are intended for customers in Germany.</p>
+          <p>If you live in another country, simply get in touch. I will be happy to send you the official starter kits and ordering links for your country and help you get started.</p>
+        </ComplianceNote>
+      </div>
+      <div class="starter-set-list">
+        {starterSets.map((set) => (
+          <StarterSetCard
+            title={set.title}
+            imageSrc={set.imageSrc}
+            imageAlt={set.imageAlt}
+            imageWidth={set.imageWidth}
+            imageHeight={set.imageHeight}
+            orderHref={set.orderHref}
+            orderLabel={set.orderLabel}
+            consultationHref="/en/contact/"
+            consultationLabel="Speak with Kyle First"
+          >
+            <p class="starter-set-lead"><strong>{set.lead}</strong></p>
+            {set.sections.map((section) => (
+              <section>
+                <h4>{section.title}</h4>
+                {'items' in section && (
+                  <ul class="starter-set-points">
+                    {section.items.map((item) => <li>{item}</li>)}
+                  </ul>
+                )}
+                {'paragraphs' in section && section.paragraphs.map((paragraph) => (
+                  <p>{paragraph.split('\n').map((line, index) => <>{index > 0 && <br />}{line}</>)}</p>
+                ))}
+              </section>
+            ))}
+          </StarterSetCard>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -271,46 +296,38 @@ const decisionGuides = [
     </div>
   </section>
 
-  <section class="section section--sage">
-    <div class="container">
-      <SectionIntro title="Four Official Starter Options" />
-      <div class="international-note">
-        <ComplianceNote label="Information for International Visitors">
-          <h3>Information for International Visitors</h3>
-          <p>The direct links on this page lead to the official German doTERRA shop and are intended for customers in Germany.</p>
-          <p>If you live in another country, simply get in touch. I will be happy to send you the official starter kits and ordering links for your country and help you get started.</p>
-        </ComplianceNote>
-      </div>
-      <div class="starter-set-list">
-        {starterSets.map((set) => (
-          <StarterSetCard
-            title={set.title}
-            imageSrc={set.imageSrc}
-            imageAlt={set.imageAlt}
-            imageWidth={set.imageWidth}
-            imageHeight={set.imageHeight}
-            orderHref={set.orderHref}
-            orderLabel={set.orderLabel}
-            consultationHref="/en/contact/"
-            consultationLabel="Speak with Kyle First"
-          >
-            <p class="starter-set-lead"><strong>{set.lead}</strong></p>
-            {set.sections.map((section) => (
-              <section>
-                <h4>{section.title}</h4>
-                {'items' in section && (
-                  <ul class="starter-set-points">
-                    {section.items.map((item) => <li>{item}</li>)}
-                  </ul>
-                )}
-                {'paragraphs' in section && section.paragraphs.map((paragraph) => (
-                  <p>{paragraph.split('\n').map((line, index) => <>{index > 0 && <br />}{line}</>)}</p>
-                ))}
-              </section>
-            ))}
-          </StarterSetCard>
-        ))}
-      </div>
+  <section class="section section--cream orientation-module">
+    <div class="container orientation-module__grid">
+      <article>
+        <SectionIntro title="New? Start with the Start Here path.">
+          <p>You do not have to understand everything immediately, know every oil or have the perfect routine right away.</p>
+        </SectionIntro>
+        <CTAGroup primaryHref="/en/start-here/" primaryLabel="Open Start Here" />
+      </article>
+      <article>
+        <SectionIntro title="Free 30-Day Oil Start Plan">
+          <p>The free 30-Day Oil Start Plan helps you calmly place your first products, read labels consciously, test simple routines and collect your questions for Kyle.</p>
+        </SectionIntro>
+        <CTAGroup primaryHref="/en/30-day-start-plan/" primaryLabel="View 30-Day Start Plan" />
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container narrow-layout">
+      <SectionIntro title="Why a Starter Kit Can Make Sense">
+        <p>A starter kit can provide a clear, structured introduction to doTERRA products.</p>
+        <p>You receive a clear starting option without having to navigate the entire product range straight away.</p>
+        <p>This is particularly helpful if you:</p>
+      </SectionIntro>
+      <ul class="check-list">
+        <li>want to explore doTERRA products seriously</li>
+        <li>do not want to test just one individual product</li>
+        <li>are looking for a simple basic selection</li>
+        <li>want to begin for family life, daily routines or wellness</li>
+        <li>would like support with your order</li>
+        <li>would prefer help deciding which kit is right</li>
+      </ul>
     </div>
   </section>
 
@@ -396,6 +413,8 @@ const decisionGuides = [
   .decision-guides__grid { display: grid; gap: var(--space-16); }
   .decision-guides__grid :global(.button) { width: 100%; }
   .decision-guides__cta { margin-top: var(--space-32); }
+  .orientation-module__grid { display: grid; gap: var(--space-32); }
+  .orientation-module__grid :global(.section-intro) { margin-bottom: var(--space-24); }
   .starter-set-list { display: grid; gap: var(--space-32); }
   .starter-set-lead { margin: 0 0 var(--space-32); color: var(--color-deep-forest); font-size: 19px; line-height: 1.5; }
   .starter-set-points { display: grid; gap: var(--space-8); margin: 0; padding-left: var(--space-24); }
@@ -410,6 +429,7 @@ const decisionGuides = [
     .section { padding-block: var(--space-96); }
     .starter-set-list { gap: var(--space-40); }
     .decision-guides__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .orientation-module__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-48); }
   }
   @media (min-width: 1024px) {
     .hero { padding-block: var(--space-96); }

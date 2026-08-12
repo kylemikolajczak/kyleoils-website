@@ -4,286 +4,179 @@ import TopicCard from '../../../components/cards/TopicCard.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
 import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import StepList from '../../../components/sections/StepList.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
-import { contactLinks } from '../../../data/externalLinks';
 
-const workshopAudiences = [
-  'Private groups',
-  'Groups of friends',
-  'Families',
-  'Companies',
-  'Hotels',
-  'Spas',
-  'Yoga studios',
-  'Fitness studios',
-  'Physiotherapy clinics',
-  'Health practices',
-  'Beauty studios',
-  'Wellness providers',
-  'Teams working in health and wellbeing',
-  'Organisations that would like to introduce a thoughtful wellness topic for customers, employees or members',
+const workshopFocus = [
+  'what essential oils are and how concentrated they are',
+  'how doTERRA basically works',
+  'which starter kits exist and who they may fit',
+  'how to start calmly with diffuser, scent and simple routines',
+  'what matters around dilution, skin contact and sensitive people',
+  'which questions are useful before ordering',
+  'what personal support after the purchase can look like',
 ];
 
-const workshopContents = [
-  'a straightforward introduction to essential oils',
-  'the foundations of responsible use',
-  'an overview of different daily topics',
-  'hands-on experience with selected products',
-  'space for questions',
-  'small routines for the home',
-  'information about starter options',
-  'information about the benefits of an official doTERRA customer account',
-  'materials for further reading',
-];
-
-const workshopTopics = [
+const formats = [
   {
-    title: 'Natural Everyday Routines',
-    copy: 'For people who want a general introduction to essential oils and simple wellness routines.',
+    title: 'Beginner Workshop',
+    intro: 'For people who are new to doTERRA or want a calm overview first.',
+    label: 'Suitable for:',
+    items: ['small groups', 'friends and family', 'people considering a first starter kit', 'people who want to understand before deciding'],
   },
   {
-    title: 'Calm, Balance and Mindful Pauses',
-    copy: 'For groups interested in small rituals, scent, atmosphere and relaxation in daily life.',
+    title: 'Living Room Workshop',
+    intro: 'A personal, small setting at home or in a familiar environment.',
+    label: 'Suitable if you:',
+    items: ['do not want a big event', 'want to start with a few people', 'want to ask questions openly', 'want to experience doTERRA without pressure'],
   },
   {
-    title: 'Sleep and Evening Routine',
-    copy: 'For participants who want to take a more considered approach to their evenings and explore simple routines.',
-  },
-  {
-    title: 'Energy and Focus',
-    copy: 'For people interested in clarity, daily structure and focused morning or work routines.',
-  },
-  {
-    title: 'Family and Home',
-    copy: 'For parents and families who want to explore natural routines responsibly.',
-  },
-  {
-    title: 'Home and Natural Alternatives',
-    copy: 'For people who want to take a more considered approach at home and discover natural product areas.',
-  },
-  {
-    title: 'Wellness and Long-Term Routines',
-    copy: 'For groups interested in high-quality wellness products, nutritional supplements and systems such as MetaPWR.',
-  },
-];
-
-const workshopFormats = [
-  {
-    title: 'Workshops for Private Groups',
+    title: 'Team, Studio or Practice',
+    intro: 'For small teams, studios, local businesses or practice environments that want to explore essential oils as a topic.',
     paragraphs: [
-      'A private workshop is intended for people who would like to discover doTERRA products in a relaxed setting.',
-      'This could be a small evening with friends, family or acquaintances.',
-      'The setting remains personal, relaxed and easy to follow.',
-      'It is about asking questions, exploring products and taking away initial ideas for daily life.',
-    ],
-  },
-  {
-    title: 'Workshops for Companies',
-    paragraphs: [
-      'For companies, workshops can offer a thoughtful introduction to wellbeing and practical daily routines.',
-      'Possible topics include small routines for the working day, conscious pauses, room fragrance, focus or general wellness themes.',
-      'Each workshop is planned professionally and tailored to the company.',
-      'The focus is on information and added value for employees or teams.',
-    ],
-  },
-  {
-    title: 'Workshops for Clinics, Studios and Wellness Providers',
-    paragraphs: [
-      'For clinics, yoga studios, fitness studios, spas, hotels, beauty studios and wellness providers, workshops can complement an existing programme.',
-      'They can offer customers, guests or members a calm introduction to essential oils and natural routines.',
-      'The format is adapted to suit the atmosphere and audience of each venue.',
+      'The focus stays on education, scent, everyday routines, safety and orientation.',
+      'No medical statements are made and no applications for patients, clients or employees are promised.',
     ],
   },
 ];
 
-const workshopRequestDetails = [
-  'Who is the workshop intended for?',
-  'Where should it take place?',
-  'How many people might attend?',
-  'Is there a particular topic?',
-  'Is it intended as a private evening, a studio session, a clinic, a company event or a wellness programme?',
+const steps = [
+  { title: '1. Short introduction to Kyle and doTERRA', paragraphs: [] },
+  { title: '2. Basic understanding of essential oils', paragraphs: [] },
+  { title: '3. Scent, diffuser and simple everyday routines', paragraphs: [] },
+  { title: '4. Safety, dilution and sensitive situations', paragraphs: [] },
+  { title: '5. Calm placement of starter kits', paragraphs: [] },
+  { title: '6. Collect questions and clarify next steps', paragraphs: [] },
 ];
 
-const workshopValues = [
-  'I want participants to feel welcome.',
-  'The content should be easy to understand.',
-  'The atmosphere should be calm and considered.',
-  'There should be room for questions.',
-  'Products should be experienced, not pushed.',
-  'And participants should leave the workshop with greater clarity than they had before.',
+const expectations = [
+  'a calm introduction',
+  'clear language without technical overload',
+  'realistic orientation',
+  'no healing promises',
+  'no pressure situation',
+  'room for questions',
+  'orientation for everyday life',
+];
+
+const notIncluded = [
+  'medical guidance',
+  'therapy',
+  'diagnosis',
+  'a treatment promise',
+  'an obligation to buy',
+  'an obligation to open a customer account',
+  'a business event unless this is clearly requested',
+];
+
+const preparationQuestions = [
+  'Who will attend?',
+  'Is the group new, already using oils or mixed?',
+  'Should the focus be starter kits, safety, everyday routines or scent?',
+  'Should the workshop be in English or German?',
+  'Are children, pets or sensitive people part of the environment?',
 ];
 ---
 
-<PageLayout
-  lang="en"
-  title="Experience and Understand Essential Oils"
-  description="Sometimes it is easier to experience natural routines directly rather than only reading about them."
->
+<PageLayout lang="en" title="doTERRA Workshops | Kyle Oils" description="Calm doTERRA workshops with Kyle: understand essential oils, place starter kits, learn safe-use basics and clarify questions without pressure.">
   <HeroSplit
-    title="Experience and Understand Essential Oils"
+    title="doTERRA Workshops with Kyle"
     primaryHref="/en/contact/"
-    primaryLabel="Make a No-Obligation Workshop Enquiry"
-    secondaryHref={contactLinks.whatsapp.href}
-    secondaryLabel="Message Me on WhatsApp"
+    primaryLabel="Request a Workshop"
+    secondaryHref="/en/consultation/"
+    secondaryLabel="Request Guidance"
     imageSrc="/assets/images/workshops/workshop-01.png"
-    imageAlt="Participants at an essential oils workshop"
+    imageAlt="Small group at an essential oils workshop"
     imageWidth={1536}
     imageHeight={1024}
     imagePosition="55% center"
   >
-    <p>Sometimes it is easier to experience natural routines directly rather than only reading about them.</p>
-    <p>In a workshop, participants explore doTERRA products, essential oils and simple everyday routines in a calm, personal setting.</p>
-    <p>It is not about selling something to people.</p>
-    <p>It is about understanding, asking questions, experiencing scents, considering products and finding out what could be useful in daily life.</p>
+    <p class="hero-subtitle">Understand essential oils calmly, personally and without a sales event.</p>
+    <p>A Kyle Oils workshop is not a loud sales evening and not a medical lecture.</p>
+    <p>The goal is to place essential oils clearly, introduce simple routines and clarify questions in a calm setting.</p>
+    <p>You can request a workshop for yourself, a small group, friends, family or a professional environment.</p>
   </HeroSplit>
 
   <section class="section section--cream">
     <div class="container narrow-layout">
-      <SectionIntro title="What a Workshop Is About">
-        <p>A workshop is an invitation to explore essential oils and natural routines in a practical way.</p>
-        <p>Participants learn how the doTERRA product range is structured, which product areas are available and how essential oils can be used responsibly in daily life.</p>
-        <p>The focus is on learning, practical experience and clear direction.</p>
-        <p>Not on pressure.<br />Not on quick decisions.<br />Not on a sales event.</p>
-        <p>After the workshop, participants should have greater clarity and a better understanding of whether the doTERRA product range could fit into their daily routine.</p>
+      <SectionIntro title="What a workshop should do">
+        <p>A workshop helps you and your group understand doTERRA more clearly.</p>
+        <p>The focus is on:</p>
       </SectionIntro>
+      <ul class="check-list">{workshopFocus.map((item) => <li>{item}</li>)}</ul>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <SectionIntro title="Who Workshops Are Suitable For">
-        <p>Workshops can be valuable for different groups and settings.</p>
-        <p>For example:</p>
-      </SectionIntro>
-      <ul class="audience-grid">
-        {workshopAudiences.map((audience) => <li>{audience}</li>)}
-      </ul>
-      <div class="section-copy section-copy--spaced">
-        <p>Each workshop is planned to suit the specific setting.</p>
-        <p>A private essential oil evening calls for a different atmosphere from a workshop in a company, studio or spa.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--sage">
-    <div class="container narrow-layout">
-      <SectionIntro title="What Participants Can Expect">
-        <p>Participants receive a clear introduction to the doTERRA product range and practical routines.</p>
-        <p>Depending on the topic and audience, a workshop may include:</p>
-      </SectionIntro>
-      <ul class="check-list">
-        {workshopContents.map((item) => <li>{item}</li>)}
-      </ul>
-      <div class="section-copy section-copy--spaced">
-        <p>The workshop should be pleasant, clear and easy to understand.</p>
-        <p>No prior knowledge is required.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <SectionIntro title="Possible Workshop Topics" />
-      <div class="topic-grid">
-        {workshopTopics.map((topic) => (
-          <TopicCard title={topic.title}>
-            <p>{topic.copy}</p>
+      <SectionIntro title="Workshop formats" />
+      <div class="format-grid">
+        {formats.map((format) => (
+          <TopicCard title={format.title}>
+            <p>{format.intro}</p>
+            {format.label && <h4>{format.label}</h4>}
+            {format.items && <ul>{format.items.map((item) => <li>{item}</li>)}</ul>}
+            {format.paragraphs?.map((paragraph) => <p>{paragraph}</p>)}
           </TopicCard>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="section section--cream">
+  <section class="section section--sage">
     <div class="container narrow-layout">
-      <SectionIntro title="Individual Workshops and Tailored Formats">
-        <p>Not every workshop needs to look the same.</p>
-        <p>The format can be tailored to the audience, location and occasion.</p>
-        <p>A workshop can be short and compact.</p>
-        <p>It can take place as a relaxed essential oil evening.</p>
-        <p>It can be part of a wellness day.</p>
-        <p>It can be delivered as a talk in a clinic, studio or company.</p>
-        <p>It can also focus on a particular topic when a group already has specific interests.</p>
-        <p>What matters is that the workshop suits the setting and participants feel comfortable.</p>
+      <SectionIntro title="How it works">
+        <p>A workshop can be shaped differently depending on the group.</p>
+        <p>A typical flow:</p>
       </SectionIntro>
+      <StepList steps={steps} />
+      <p class="section-copy">The flow can be discussed beforehand.</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="container format-grid">
-      {workshopFormats.map((format) => (
-        <TopicCard title={format.title}>
-          {format.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
-        </TopicCard>
-      ))}
-    </div>
-  </section>
-
-  <section class="section section--forest">
     <div class="container narrow-layout">
-      <SectionIntro title="Not a Sales Event">
-        <p>It is important to me that workshops do not feel like traditional sales evenings.</p>
-        <p>Participants can, of course, explore products or order after a workshop if they are interested.</p>
-        <p>But the primary focus is on:</p>
+      <SectionIntro title="What participants can expect">
+        <p>Participants receive:</p>
       </SectionIntro>
-      <ul class="focus-list">
-        <li>understanding</li>
-        <li>experiencing</li>
-        <li>asking questions</li>
-        <li>putting things into context</li>
-        <li>making an informed decision</li>
-      </ul>
-      <div class="section-copy section-copy--spaced">
-        <p>No one should feel that they have to buy anything.</p>
-        <p>A good workshop provides clarity and confidence.</p>
-        <p>Anything further may develop from there.</p>
-      </div>
+      <ul class="check-list">{expectations.map((item) => <li>{item}</li>)}</ul>
     </div>
   </section>
 
   <section class="section section--cream">
-    <div class="container split-copy">
+    <div class="container split-layout">
       <div>
-        <SectionIntro title="How a Workshop Enquiry Works">
-          <p>You briefly tell me about the setting in which you are planning a workshop.</p>
-          <p>A few simple details are helpful:</p>
+        <SectionIntro title="What a workshop is not">
+          <p>A workshop is not:</p>
         </SectionIntro>
-        <ul class="question-list">
-          {workshopRequestDetails.map((item) => <li>{item}</li>)}
-        </ul>
-        <div class="section-copy section-copy--spaced">
-          <p>I will then contact you personally and we can discuss which format would work best.</p>
-        </div>
+        <ul class="check-list">{notIncluded.map((item) => <li>{item}</li>)}</ul>
       </div>
-      <div>
-        <SectionIntro title="What Matters to Me in Workshops" />
-        <ul class="value-list">
-          {workshopValues.map((item) => <li>{item}</li>)}
-        </ul>
-      </div>
+      <aside class="calm-panel">
+        <h2>No pressure</h2>
+        <p>The workshop is for orientation. Decisions about products or a customer account remain voluntary at all times.</p>
+      </aside>
     </div>
   </section>
 
-  <CTASection
-    title="Enquire About a Workshop or Collaboration"
-    primaryHref="/en/contact/"
-    primaryLabel="Make a No-Obligation Workshop Enquiry"
-    secondaryHref={contactLinks.whatsapp.href}
-    secondaryLabel="Message Me on WhatsApp"
-  >
-    <p>If you would like to enquire about a workshop, essential oil evening, talk or collaboration, please get in touch.</p>
-    <p>You do not need to have a finished concept.</p>
-    <p>An initial idea is enough.</p>
-    <p>Then we can consider which format suits your group, company, studio or offering.</p>
+  <section class="section">
+    <div class="container narrow-layout">
+      <SectionIntro title="Preparation">
+        <p>A few simple questions help create a good workshop:</p>
+      </SectionIntro>
+      <ul class="check-list">{preparationQuestions.map((item) => <li>{item}</li>)}</ul>
+    </div>
+  </section>
+
+  <CTASection title="Request a workshop" primaryHref="/en/contact/" primaryLabel="Request a Workshop" secondaryHref="/en/consultation/" secondaryLabel="Request Guidance">
+    <p>If you would like to request a workshop with Kyle, send a short message about who the workshop is for and which setting would fit.</p>
+    <p>Kyle will reply with a calm recommendation on whether and how a workshop makes sense.</p>
   </CTASection>
 
   <section class="compliance-section">
     <div class="container">
       <ComplianceNote label="Note">
-        <h2>A Brief Note</h2>
-        <p>My workshops are not a substitute for medical diagnosis, treatment or professional healthcare advice.<br />I do not claim that products can diagnose, treat or cure medical conditions.</p>
-        <p>Essential oils, wellness products and natural routines can be part of a considered daily routine, but they do not replace medical or therapeutic care.</p>
-        <p>Participants with health concerns or medical questions should consult a doctor or another appropriately qualified healthcare professional.</p>
+        <h2>Note</h2>
+        <p>Kyle Oils does not replace medical guidance and does not make healing promises. Workshops help people understand doTERRA products, routines and safety questions more clearly.</p>
       </ComplianceNote>
     </div>
   </section>
@@ -293,52 +186,21 @@ const workshopValues = [
   .section { padding: var(--space-64) 0; }
   .section--cream { background: var(--color-soft-cream); }
   .section--sage { background: rgb(168 184 160 / 20%); }
-  .section--forest { background: var(--color-deep-forest); color: var(--color-text-inverted); }
-  .section--forest :global(.section-intro__copy),
-  .section--forest .section-copy { color: var(--color-linen); }
   .narrow-layout { max-width: var(--container-text); }
-  .section-copy { max-width: var(--container-text); color: var(--color-text-secondary); }
-  .section-copy p { margin: 0 0 var(--space-16); }
-  .section-copy p:last-child { margin-bottom: 0; }
-  .section-copy--spaced { margin-top: var(--space-40); }
-  .audience-grid,
-  .check-list,
-  .focus-list,
-  .question-list,
-  .value-list { margin: 0; padding: 0; list-style: none; }
-  .audience-grid { display: grid; gap: var(--space-12); }
-  .audience-grid li { padding: var(--space-16) var(--space-20); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-button); background: var(--color-warm-white); color: var(--color-text-secondary); }
-  .check-list,
-  .question-list,
-  .value-list { display: grid; gap: var(--space-16); color: var(--color-text-secondary); }
-  .check-list li,
-  .question-list li,
-  .value-list li { position: relative; padding-left: var(--space-32); }
-  .check-list li::before,
-  .question-list li::before,
-  .value-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
-  .topic-grid,
-  .format-grid { display: grid; gap: var(--space-20); }
-  .format-grid :global(.topic-card div p + p) { margin-top: var(--space-12); }
-  .focus-list { display: flex; flex-wrap: wrap; gap: var(--space-12); }
-  .focus-list li { padding: var(--space-8) var(--space-16); border: 1px solid rgb(250 247 241 / 32%); border-radius: var(--radius-pill); color: var(--color-warm-white); }
-  .split-copy { display: grid; gap: var(--space-64); }
+  .hero-subtitle { color: var(--color-deep-forest); font-size: var(--font-size-h3-mobile); font-weight: var(--font-weight-semibold); }
+  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
+  .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
+  .check-list li::before { content: ''; position: absolute; top: .72em; left: 0; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
+  .format-grid, .split-layout { display: grid; gap: var(--space-24); }
+  .format-grid :global(.topic-card h4) { margin: var(--space-20) 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  .format-grid :global(.topic-card ul) { display: grid; gap: var(--space-12); margin: 0; padding-left: var(--space-24); }
+  .format-grid :global(.topic-card p + p) { margin-top: var(--space-16); }
+  .section-copy { margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
+  .calm-panel { align-self: start; padding: var(--space-32); border-radius: var(--radius-section); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
+  .calm-panel h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
+  .calm-panel p { margin: 0; color: var(--color-text-secondary); }
   .compliance-section { padding: 0 0 var(--space-80); }
   .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  .compliance-section :global(p + p) { margin-top: var(--space-12); }
-  @media (min-width: 600px) {
-    .audience-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
-  @media (min-width: 768px) {
-    .section { padding-block: var(--space-96); }
-    .topic-grid,
-    .format-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
-  }
-  @media (min-width: 1024px) {
-    .section { padding-block: var(--space-120); }
-    .audience-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .topic-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .format-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .split-copy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); align-items: start; }
-  }
+  @media (min-width: 768px) { .section { padding-block: var(--space-96); } .format-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 1024px) { .section { padding-block: var(--space-120); } .format-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .split-layout { grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr); gap: var(--space-80); } .hero-subtitle { font-size: var(--font-size-h3-desktop); } }
 </style>

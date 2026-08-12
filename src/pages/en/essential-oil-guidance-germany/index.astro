@@ -1,0 +1,136 @@
+---
+import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
+import CTAGroup from '../../../components/cta/CTAGroup.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import SectionIntro from '../../../components/sections/SectionIntro.astro';
+import PageLayout from '../../../layouts/PageLayout.astro';
+
+const audience = [
+  'live in Germany',
+  'prefer guidance in English',
+  'are new to doTERRA',
+  'are unsure which starter kit fits',
+  'want to understand oils before ordering',
+  'have questions about diffuser use, dilution or everyday routines',
+  'want a personal contact instead of only a shop page',
+  'are an expat, international resident or English speaker in Germany',
+];
+
+const questions = [
+  'what doTERRA is',
+  'how starter kits work',
+  'which products may fit your everyday life',
+  'which products may wait',
+  'how to start with a few simple routines',
+  'what to consider around children, pets or sensitive skin',
+  'how a doTERRA customer account works',
+  'what happens after the purchase',
+];
+
+const contactOptions = ['by WhatsApp', 'by phone', 'by video', 'by message', 'in person by arrangement'];
+---
+
+<PageLayout lang="en" title="Essential Oil Guidance in Germany | Kyle Oils" description="Calm doTERRA and essential oil guidance in English for people in Germany. Understand starter kits, safe routines and next steps with Kyle. No pressure, no healing promises.">
+  <section class="guidance-hero">
+    <div class="container guidance-hero__inner">
+      <p class="eyebrow">GERMANY & ONLINE</p>
+      <h1>Essential Oil Guidance in Germany</h1>
+      <p class="guidance-hero__subtitle">Calm doTERRA guidance in English, with personal support from Kyle.</p>
+      <div class="guidance-hero__copy">
+        <p>If you live in Germany and would like to understand doTERRA essential oils in English, you do not have to figure everything out alone.</p>
+        <p>Kyle Oils helps you calmly place products, starter kits, everyday routines and safety questions. The goal is clarity before you decide.</p>
+        <p>No pressure. No healing promises. No complicated language.</p>
+      </div>
+      <CTAGroup primaryHref="/en/contact/" primaryLabel="Request Guidance" secondaryHref="/en/start-here/" secondaryLabel="Start Here" />
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container narrow-layout">
+      <SectionIntro title="Who this is for" />
+      <ul class="check-list">{audience.map((item) => <li>{item}</li>)}</ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow-layout">
+      <SectionIntro title="What you can clarify with Kyle">
+        <p>A calm guidance conversation can help you understand:</p>
+      </SectionIntro>
+      <ul class="check-list">{questions.map((question) => <li>{question}</li>)}</ul>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container guidance-grid">
+      <div>
+        <SectionIntro title="English-speaking guidance, online or by message">
+          <p>Kyle is a native English speaker and can guide you in English or German.</p>
+          <p>Depending on your situation, guidance can happen:</p>
+        </SectionIntro>
+        <ul class="check-list">{contactOptions.map((option) => <li>{option}</li>)}</ul>
+      </div>
+      <aside class="clarity-panel">
+        <h2>This is especially helpful if you want to understand the products clearly before ordering.</h2>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow-layout">
+      <SectionIntro title="Start with clarity">
+        <p>You do not need to buy a large kit immediately.</p>
+        <p>You do not need to use every oil at once.</p>
+        <p>You do not need to understand the whole product world on day one.</p>
+        <p>A better start is simple:</p>
+      </SectionIntro>
+      <ul class="check-list start-list">
+        <li>understand the basics</li>
+        <li>place the right starter option</li>
+        <li>learn safety first</li>
+        <li>test a few routines</li>
+        <li>collect questions</li>
+        <li>ask Kyle before you feel overwhelmed</li>
+      </ul>
+    </div>
+  </section>
+
+  <CTASection title="Request personal guidance" primaryHref="/en/contact/" primaryLabel="Request Guidance">
+    <p>If you live in Germany and want to understand doTERRA in English, you can send Kyle a no-pressure request.</p>
+    <p>You will not get a sales event. You will get calm orientation for your everyday life.</p>
+  </CTASection>
+
+  <section class="compliance-section">
+    <div class="container">
+      <ComplianceNote label="Note">
+        <h2>Note</h2>
+        <p>Kyle Oils does not replace medical guidance and does not make healing promises. The content helps you understand doTERRA products, routines and safety questions more clearly.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .guidance-hero, .section { padding: var(--space-64) 0; }
+  .guidance-hero { background: var(--color-warm-white); }
+  .guidance-hero__inner, .narrow-layout { max-width: var(--container-text); }
+  .eyebrow { margin: 0 0 var(--space-16); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .04em; text-transform: uppercase; }
+  h1, h2 { margin: 0; line-height: var(--line-height-heading); letter-spacing: -.025em; }
+  h1 { margin-bottom: var(--space-16); font-size: var(--font-size-h1-mobile); }
+  .guidance-hero__subtitle { margin: 0 0 var(--space-24); color: var(--color-deep-forest); font-size: var(--font-size-h3-mobile); font-weight: var(--font-weight-semibold); }
+  .guidance-hero__copy { margin-bottom: var(--space-32); color: var(--color-text-secondary); }
+  .guidance-hero__copy p { margin: 0 0 var(--space-16); }
+  .guidance-hero__copy p:last-child { margin-bottom: 0; }
+  .section--cream { background: var(--color-soft-cream); }
+  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
+  .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
+  .check-list li::before { content: ''; position: absolute; top: .72em; left: 0; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
+  .guidance-grid { display: grid; gap: var(--space-40); align-items: start; }
+  .clarity-panel { padding: var(--space-32); border-radius: var(--radius-section); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
+  .clarity-panel h2 { font-size: var(--font-size-h3-mobile); }
+  .start-list { margin-bottom: var(--space-32); }
+  .compliance-section { padding: 0 0 var(--space-80); }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  @media (min-width: 768px) { .guidance-hero, .section { padding-block: var(--space-96); } .guidance-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-64); } }
+  @media (min-width: 1024px) { .guidance-hero, .section { padding-block: var(--space-120); } h1 { font-size: var(--font-size-h1-desktop); } }
+</style>

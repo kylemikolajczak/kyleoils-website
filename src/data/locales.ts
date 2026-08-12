@@ -4,6 +4,9 @@ import { knowledgeArticleRoutePairs } from './knowledgeArticles';
 
 export const routePairs = [
   { de: '/de/', en: '/en/' },
+  { de: '/de/startbereich/', en: '/en/start-here/' },
+  { de: '/de/30-tage-startplan/', en: '/en/30-day-start-plan/' },
+  { de: '/de/doterra-beratung-lueneburg/', en: '/en/essential-oil-guidance-germany/' },
   { de: '/de/beratung/', en: '/en/consultation/' },
   { de: '/de/oele-routinen/', en: '/en/oils-routines/' },
   { de: '/de/starter-sets/', en: '/en/starter-sets/' },

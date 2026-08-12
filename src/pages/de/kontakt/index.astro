@@ -143,6 +143,17 @@ const contactOptions = [
     </div>
   </section>
 
+  <section class="section section--cream local-guidance-section">
+    <div class="container local-guidance-section__inner">
+      <div>
+        <p class="eyebrow">LÜNEBURG & ONLINE</p>
+        <h2>Beratung in Lüneburg und online</h2>
+        <p>Wenn du aus Lüneburg oder Umgebung kommst, Fragen zu doTERRA hast oder lieber auf Englisch sprechen möchtest, findest du hier einen ruhigen Überblick.</p>
+      </div>
+      <Button href="/de/doterra-beratung-lueneburg/" variant="secondary">doTERRA Beratung in Lüneburg</Button>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container details-layout">
       <div>
@@ -240,6 +251,10 @@ const contactOptions = [
   .section { padding: var(--space-64) 0; }
   .section--cream { background: var(--color-soft-cream); }
   .section--sage { background: rgb(168 184 160 / 20%); }
+  .local-guidance-section__inner { display: grid; gap: var(--space-24); align-items: center; max-width: var(--container-text); }
+  .local-guidance-section__inner h2 { margin: 0 0 var(--space-12); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
+  .local-guidance-section__inner p:not(.eyebrow) { margin: 0; color: var(--color-text-secondary); }
+  .local-guidance-section__inner .eyebrow { margin: 0 0 var(--space-12); }
   .split-copy,
   .details-layout { display: grid; gap: var(--space-48); }
   .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; color: var(--color-text-secondary); }
@@ -290,6 +305,7 @@ const contactOptions = [
   @media (min-width: 768px) {
     .section { padding-block: var(--space-96); }
     .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .local-guidance-section__inner { grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-40); }
     .contact-card { padding: var(--space-32); }
     .contact-details div { grid-template-columns: minmax(120px, .35fr) minmax(0, 1fr); gap: var(--space-24); }
     .final-cta { padding-block: var(--space-80); }
@@ -302,6 +318,7 @@ const contactOptions = [
     .contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .contact-grid--formats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .calm-panel h2,
-    .final-cta h2 { font-size: var(--font-size-h2-desktop); }
+    .final-cta h2,
+    .local-guidance-section__inner h2 { font-size: var(--font-size-h2-desktop); }
   }
 </style>
