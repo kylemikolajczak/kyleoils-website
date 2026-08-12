@@ -6,14 +6,14 @@ import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 
 const audience = [
-  'live in Germany',
   'prefer guidance in English',
+  'live internationally and want to understand doTERRA more clearly',
   'are new to doTERRA',
-  'are unsure which starter kit fits',
+  'are unsure which starter option fits your situation',
   'want to understand oils before ordering',
   'have questions about diffuser use, dilution or everyday routines',
   'want a personal contact instead of only a shop page',
-  'are an expat, international resident or English speaker in Germany',
+  'want calm guidance without pressure or complicated language',
 ];
 
 const questions = [
@@ -27,18 +27,18 @@ const questions = [
   'what happens after the purchase',
 ];
 
-const contactOptions = ['by WhatsApp', 'by phone', 'by video', 'by message', 'in person by arrangement'];
+const contactOptions = ['by WhatsApp', 'by phone', 'by video', 'by message'];
 ---
 
-<PageLayout lang="en" title="Essential Oil Guidance in Germany | Kyle Oils" description="Calm doTERRA and essential oil guidance in English for people in Germany. Understand starter kits, safe routines and next steps with Kyle. No pressure, no healing promises.">
+<PageLayout lang="en" title="Essential Oil Guidance in English | Kyle Oils" description="Calm doTERRA and essential oil guidance in English for people internationally. Understand starter options, safe routines and next steps with Kyle. No pressure, no healing promises.">
   <section class="guidance-hero">
     <div class="container guidance-hero__inner">
-      <p class="eyebrow">GERMANY & ONLINE</p>
-      <h1>Essential Oil Guidance in Germany</h1>
-      <p class="guidance-hero__subtitle">Calm doTERRA guidance in English, with personal support from Kyle.</p>
+      <p class="eyebrow">ENGLISH GUIDANCE</p>
+      <h1>Essential Oil Guidance in English</h1>
+      <p class="guidance-hero__subtitle">Calm doTERRA guidance for English-speaking people internationally.</p>
       <div class="guidance-hero__copy">
-        <p>If you live in Germany and would like to understand doTERRA essential oils in English, you do not have to figure everything out alone.</p>
-        <p>Kyle Oils helps you calmly place products, starter kits, everyday routines and safety questions. The goal is clarity before you decide.</p>
+        <p>If you would like to understand doTERRA essential oils in English, you do not have to figure everything out alone.</p>
+        <p>Kyle Oils helps you place products, starter options, everyday routines and safety questions clearly, wherever you are based.</p>
         <p>No pressure. No healing promises. No complicated language.</p>
       </div>
       <CTAGroup primaryHref="/en/contact/" primaryLabel="Request Guidance" secondaryHref="/en/start-here/" secondaryLabel="Start Here" />
@@ -64,11 +64,12 @@ const contactOptions = ['by WhatsApp', 'by phone', 'by video', 'by message', 'in
   <section class="section section--cream">
     <div class="container guidance-grid">
       <div>
-        <SectionIntro title="English-speaking guidance, online or by message">
+        <SectionIntro title="English-speaking guidance internationally">
           <p>Kyle is a native English speaker and can guide you in English or German.</p>
-          <p>Depending on your situation, guidance can happen:</p>
+          <p>English guidance can support you wherever you are based. Depending on your situation, guidance can happen:</p>
         </SectionIntro>
         <ul class="check-list">{contactOptions.map((option) => <li>{option}</li>)}</ul>
+        <p class="country-note">Ordering options, customer accounts, product availability and official doTERRA details can differ by country. These details should be clarified individually before you decide.</p>
       </div>
       <aside class="clarity-panel">
         <h2>This is especially helpful if you want to understand the products clearly before ordering.</h2>
@@ -96,7 +97,7 @@ const contactOptions = ['by WhatsApp', 'by phone', 'by video', 'by message', 'in
   </section>
 
   <CTASection title="Request personal guidance" primaryHref="/en/contact/" primaryLabel="Request Guidance">
-    <p>If you live in Germany and want to understand doTERRA in English, you can send Kyle a no-pressure request.</p>
+    <p>If you want to understand doTERRA in English, you can send Kyle a no-pressure request.</p>
     <p>You will not get a sales event. You will get calm orientation for your everyday life.</p>
   </CTASection>
 
@@ -121,6 +122,7 @@ const contactOptions = ['by WhatsApp', 'by phone', 'by video', 'by message', 'in
   .guidance-hero__copy { margin-bottom: var(--space-32); color: var(--color-text-secondary); }
   .guidance-hero__copy p { margin: 0 0 var(--space-16); }
   .guidance-hero__copy p:last-child { margin-bottom: 0; }
+  .country-note { margin: var(--space-24) 0 0; color: var(--color-text-secondary); }
   .section--cream { background: var(--color-soft-cream); }
   .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
   .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
