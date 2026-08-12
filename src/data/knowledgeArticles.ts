@@ -76,6 +76,14 @@ const approvedGermanContentPacks = [
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/de'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/article-index.wave-15.json'),
   },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-17-footer-oil-lexicon-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-17-footer-oil-lexicon-expansion-01/article-index.wave-17.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/article-index.wave-18.json'),
+  },
 ];
 
 const approvedEnglishContentPacks = [
@@ -102,6 +110,14 @@ const approvedEnglishContentPacks = [
   {
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/en'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/article-index.wave-15.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-17-footer-oil-lexicon-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-17-footer-oil-lexicon-expansion-01/article-index.wave-17.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/article-index.wave-18.json'),
   },
 ];
 
