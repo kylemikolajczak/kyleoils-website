@@ -2,6 +2,7 @@
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
 import CTAGroup from '../../../components/cta/CTAGroup.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
+import Button from '../../../components/global/Button.astro';
 import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
 import TopicCard from '../../../components/cards/TopicCard.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
@@ -111,6 +112,16 @@ const routineTopics = [
     ],
     cta: 'Wellness-Routine besprechen',
   },
+];
+
+const deeperKnowledgeLinks = [
+  { title: 'Öl-Lexikon', href: '/de/wissen/oel-lexikon/' },
+  { title: 'Routinen', href: '/de/wissen/routinen/' },
+  { title: 'Sicher anwenden', href: '/de/wissen/sicher-anwenden/' },
+  { title: 'Deep Blue: Bewegung, Massage & Körperkomfort', href: '/de/wissen/produkte-systeme/deep-blue-bewegung-massage-koerperkomfort/' },
+  { title: 'ZenGest: Bauchgefühl & Essensalltag', href: '/de/wissen/produkte-systeme/zengest-bauchgefuehl-essensalltag/' },
+  { title: 'Serenity: Abend & Schlafroutine', href: '/de/wissen/produkte-systeme/serenity-abend-schlafroutine-sicher-einordnen/' },
+  { title: 'Lavender: Abendroutine, Duft & Hautpflege', href: '/de/wissen/produkte-systeme/lavender-abendroutine-duft-hautpflege/' },
 ];
 ---
 
@@ -271,6 +282,24 @@ const routineTopics = [
     </div>
   </section>
 
+  <section class="section section--sage deeper-knowledge">
+    <div class="container">
+      <SectionIntro title="Wenn du tiefer einsteigen möchtest">
+        <p>Du kannst einzelne Öle, sichere Anwendung und einfache Routinen Schritt für Schritt kennenlernen. So entsteht Orientierung, bevor du dich für Produkte entscheidest.</p>
+      </SectionIntro>
+      <div class="deeper-knowledge__grid">
+        {deeperKnowledgeLinks.map((link) => (
+          <TopicCard title={link.title}>
+            <Button href={link.href} variant="secondary">Mehr erfahren</Button>
+          </TopicCard>
+        ))}
+      </div>
+      <div class="deeper-knowledge__cta">
+        <CTAGroup primaryHref="/de/kontakt/" primaryLabel="Mit Kyle einordnen" />
+      </div>
+    </div>
+  </section>
+
   <CTASection
     title="Der einfachste nächste Schritt"
     primaryHref="/de/kontakt/"
@@ -316,6 +345,9 @@ const routineTopics = [
   .topic-grid :global(.topic-card p) { margin: 0 0 var(--space-12); }
   .topic-grid :global(.topic-card p:last-of-type) { margin-bottom: var(--space-24); }
   .topic-grid :global(.topic-card .cta-group) { margin-top: auto; }
+  .deeper-knowledge__grid { display: grid; gap: var(--space-16); }
+  .deeper-knowledge__grid :global(.button) { width: 100%; }
+  .deeper-knowledge__cta { margin-top: var(--space-32); }
   .compliance-section { padding: 0 0 var(--space-80); }
   .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
   .compliance-section :global(p + p) { margin-top: var(--space-12); }
@@ -324,7 +356,8 @@ const routineTopics = [
     .application-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: var(--space-24); }
     .orientation-grid { grid-auto-rows: 1fr; }
     .orientation-grid,
-    .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .topic-grid,
+    .deeper-knowledge__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }
   @media (min-width: 1024px) {
     .section { padding-block: var(--space-120); }

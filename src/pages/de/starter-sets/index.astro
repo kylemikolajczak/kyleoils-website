@@ -1,8 +1,10 @@
 ---
 import StarterSetCard from '../../../components/cards/StarterSetCard.astro';
+import TopicCard from '../../../components/cards/TopicCard.astro';
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
 import CTAGroup from '../../../components/cta/CTAGroup.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
+import Button from '../../../components/global/Button.astro';
 import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
 import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import { starterSetLinks } from '../../../data/starterSets';
@@ -168,6 +170,16 @@ const starterSets = [
     ],
   },
 ];
+
+const decisionGuides = [
+  { title: 'Welches doTERRA Starter-Set passt zu mir?', href: '/de/wissen/produkte-systeme/welches-doterra-starter-set-passt-zu-mir/' },
+  { title: 'Introductory Kit oder Einschreibungs-Kit?', href: '/de/wissen/produkte-systeme/introductory-kit-oder-einschreibungs-kit/' },
+  { title: 'Family Essentials Kit sicher einordnen', href: '/de/wissen/produkte-systeme/family-essentials-kit-sicher-einordnen/' },
+  { title: 'Home Essentials Kit: großer Einstieg oder zu viel?', href: '/de/wissen/produkte-systeme/home-essentials-kit-grosser-einstieg-oder-zu-viel/' },
+  { title: 'Wholesale Customer oder Wellness Advocate?', href: '/de/wissen/produkte-systeme/wholesale-customer-oder-wellness-advocate/' },
+  { title: 'LRP Treueprogramm ruhig erklärt', href: '/de/wissen/produkte-systeme/lrp-treueprogramm-ruhig-erklaert/' },
+  { title: 'doTERRA Kundenkonto einfach erklärt', href: '/de/wissen/produkte-systeme/doterra-kundenkonto-einfach-erklaert/' },
+];
 ---
 
 <PageLayout
@@ -237,6 +249,24 @@ const starterSets = [
         <p>Geht es dir gezielt um MetaPWR?</p>
         <p>Wenn du dir unsicher bist, schreib mir kurz. Eine kurze Einordnung kann verhindern, dass du etwas bestellst, das nicht wirklich zu deinem Bedarf passt.</p>
       </SectionIntro>
+    </div>
+  </section>
+
+  <section class="section section--sage decision-guides">
+    <div class="container">
+      <SectionIntro title="Vor dem Kauf lesen">
+        <p>Ein Starter-Set sollte zu deinem Alltag passen, nicht nur gut aussehen. Diese Seiten helfen dir, Set-Größe, Kontoart, LRP und erste Bestellung ruhiger einzuordnen.</p>
+      </SectionIntro>
+      <div class="decision-guides__grid">
+        {decisionGuides.map((guide) => (
+          <TopicCard title={guide.title}>
+            <Button href={guide.href} variant="secondary">Mehr erfahren</Button>
+          </TopicCard>
+        ))}
+      </div>
+      <div class="decision-guides__cta">
+        <CTAGroup primaryHref="/de/kontakt/" primaryLabel="Starter-Set mit Kyle einordnen" />
+      </div>
     </div>
   </section>
 
@@ -362,6 +392,9 @@ const starterSets = [
   .international-note { margin-bottom: var(--space-40); }
   .international-note :global(h3) { margin: 0 0 var(--space-12); color: var(--color-deep-forest); font-size: var(--font-size-body-mobile); line-height: var(--line-height-heading); }
   .international-note :global(p + p) { margin-top: var(--space-12); }
+  .decision-guides__grid { display: grid; gap: var(--space-16); }
+  .decision-guides__grid :global(.button) { width: 100%; }
+  .decision-guides__cta { margin-top: var(--space-32); }
   .starter-set-list { display: grid; gap: var(--space-32); }
   .starter-set-lead { margin: 0 0 var(--space-32); color: var(--color-deep-forest); font-size: 19px; line-height: 1.5; }
   .starter-set-points { display: grid; gap: var(--space-8); margin: 0; padding-left: var(--space-24); }
@@ -375,6 +408,7 @@ const starterSets = [
     .hero { padding-block: var(--space-80); }
     .section { padding-block: var(--space-96); }
     .starter-set-list { gap: var(--space-40); }
+    .decision-guides__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }
   @media (min-width: 1024px) {
     .hero { padding-block: var(--space-96); }

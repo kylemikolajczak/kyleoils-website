@@ -2,6 +2,7 @@
 import ComplianceNote from '../../components/compliance/ComplianceNote.astro';
 import CTAGroup from '../../components/cta/CTAGroup.astro';
 import CTASection from '../../components/cta/CTASection.astro';
+import Button from '../../components/global/Button.astro';
 import TopicCard from '../../components/cards/TopicCard.astro';
 import HeroSplit from '../../components/sections/HeroSplit.astro';
 import ResponsiveImage from '../../components/global/ResponsiveImage.astro';
@@ -70,11 +71,17 @@ const wellnessAreas = [
 
   <section class="section section--sage knowledge-teaser">
     <div class="container knowledge-teaser__inner">
-      <p class="knowledge-teaser__eyebrow">WISSEN &amp; ORIENTIERUNG</p>
-      <SectionIntro title="Ätherische Öle verständlich erklärt">
-        <p>Im Wissensbereich findest du klare Grundlagen, sichere Anwendung, einfache Routinen, das Öl-Lexikon und Produktorientierung. Ruhig erklärt, ohne Druck und ohne Heilversprechen.</p>
+      <p class="knowledge-teaser__eyebrow">WISSEN, BEVOR DU KAUFST</p>
+      <SectionIntro title="Lies dich ein. Entscheide ruhiger.">
+        <p>Auf Kyle Oils findest du klare Grundlagen, sichere Anwendung, einfache Routinen, Ölprofile, Starter-Set Orientierung und Produktwissen rund um doTERRA.</p>
+        <p>Du musst nicht sofort wissen, welches Öl oder welches Set passt. Du kannst erst verstehen, vergleichen und dann mit Kyle einordnen, was wirklich zu deinem Alltag passt.</p>
       </SectionIntro>
-      <CTAGroup primaryHref="/de/wissen/" primaryLabel="Zum Wissensbereich" secondaryHref="/de/wissen/oel-lexikon/" secondaryLabel="Öl-Lexikon ansehen" />
+      <div class="knowledge-teaser__actions">
+        <Button href="/de/wissen/">Zum Wissensbereich</Button>
+        <Button href="/de/wissen/oel-lexikon/" variant="secondary">Öl-Lexikon ansehen</Button>
+        <Button href="/de/starter-sets/" variant="secondary">Starter-Sets verstehen</Button>
+        <Button href="/de/kontakt/" variant="secondary">Beratung anfragen</Button>
+      </div>
     </div>
   </section>
 
@@ -102,9 +109,9 @@ const wellnessAreas = [
       <ul class="statement-grid">
         <li>Du wünschst dir mehr Ruhe in einem vollen Alltag.</li>
         <li>Du möchtest abends besser abschalten.</li>
-        <li>Du suchst mehr Energie und Klarheit für deinen Tag.</li>
+        <li>Du suchst mehr Struktur und bewusste Routinen für deinen Tag.</li>
         <li>Du möchtest natürliche Alternativen für Haushalt, Wohlbefinden oder Familie kennenlernen.</li>
-        <li>Du interessierst dich für hochwertige Nahrungsergänzung und langfristige Gesundheit.</li>
+        <li>Du interessierst dich für hochwertige Wellness-Produkte und Nahrungsergänzung nach Label und langfristige Wellness-Routinen.</li>
         <li>Du hast von ätherischen Ölen gehört, bist aber unsicher bei Anwendung, Auswahl oder Einstieg.</li>
       </ul>
       <div class="section-closing">
@@ -192,7 +199,7 @@ const wellnessAreas = [
           <li>Familie und Alltag.</li>
           <li>Natürlicher Haushalt.</li>
           <li>Langfristige Wellness-Routinen.</li>
-          <li>Hochwertige Nahrungsergänzung.</li>
+          <li>Hochwertige Wellness-Produkte und Nahrungsergänzung nach Label.</li>
         </ul>
         <p>So wird aus einer großen Produktwelt ein klarer, verständlicher Einstieg.</p>
         <CTAGroup primaryHref="/de/kontakt/" primaryLabel="Persönliche Empfehlung anfragen" secondaryHref="/de/doterra-verstehen/" secondaryLabel="Mehr über doTERRA erfahren" />
@@ -235,7 +242,7 @@ const wellnessAreas = [
         <SectionIntro title="Wer ich bin">
           <p>Ich bin Kyle Daniel Mikolajczak und begleite Menschen dabei, doTERRA, ätherische Öle und natürliche Routinen verständlich kennenzulernen.</p>
           <p>Meine zwölf Jahre bei der Bundeswehr haben mich geprägt. Disziplin, Zuverlässigkeit, Verantwortungsbewusstsein und klare Kommunikation gehören bis heute zu meiner Arbeitsweise.</p>
-          <p>Heute verbinde ich diese Haltung mit meiner Begeisterung für natürliche Lösungen, Prävention und bewusste Alltagsroutinen.</p>
+          <p>Heute verbinde ich diese Haltung mit meiner Begeisterung für natürliche Lösungen und bewusste Alltagsroutinen.</p>
           <p>Als doTERRA Wellness Advocate und doTERRA Europe Essential Oils Specialist möchte ich dir helfen, gute Entscheidungen zu treffen.</p>
           <p>Nicht kompliziert. Nicht aufdringlich. Sondern klar, ehrlich und menschlich.</p>
         </SectionIntro>
@@ -288,6 +295,7 @@ const wellnessAreas = [
   .knowledge-teaser { padding-block: var(--space-64); }
   .knowledge-teaser__inner { max-width: var(--container-text); }
   .knowledge-teaser__eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
+  .knowledge-teaser__actions { display: flex; flex-direction: column; gap: var(--space-16); }
   .wellness-areas__eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
   .wellness-areas__grid { display: grid; gap: var(--space-16); }
   .narrow-layout { max-width: var(--container-text); }
@@ -305,6 +313,7 @@ const wellnessAreas = [
   @media (min-width: 768px) {
     .section { padding-block: var(--space-96); }
     .knowledge-teaser { padding-block: var(--space-80); }
+    .knowledge-teaser__actions { flex-direction: row; flex-wrap: wrap; }
     .statement-grid, .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
     .wellness-areas__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }

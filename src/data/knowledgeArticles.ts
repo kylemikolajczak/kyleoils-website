@@ -121,6 +121,14 @@ const approvedGermanContentPacks = [
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/de'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/article-index.wave-30.json'),
   },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-32-starter-set-customer-path-conversion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-32-starter-set-customer-path-conversion-01/article-index.wave-32.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/article-index.wave-35.json'),
+  },
 ];
 
 const approvedEnglishContentPacks = [
@@ -191,6 +199,14 @@ const approvedEnglishContentPacks = [
   {
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/en'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/article-index.wave-30.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-32-starter-set-customer-path-conversion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-32-starter-set-customer-path-conversion-01/article-index.wave-32.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/article-index.wave-35.json'),
   },
 ];
 
@@ -349,6 +365,38 @@ const pillarSearchKeywords: Record<string, string[]> = {
   'KO-W30-EN-006': ['marjoram', 'herbal oil', 'evening routine', 'massage'],
   'KO-W30-EN-007': ['cinnamon bark', 'hot oil', 'spice oil'],
   'KO-W30-EN-008': ['patchouli', 'skin care', 'care feel', 'base note'],
+  'KO-W32-DE-001': ['starter set', 'starter-set', 'erstes set', 'doterra set', 'einsteiger', 'beratung vor kauf'],
+  'KO-W32-DE-002': ['introductory kit', 'einschreibungs-kit', 'enrolment kit', 'einsteiger kit', 'kleines set', 'konto starten'],
+  'KO-W32-DE-003': ['family essentials kit', 'familien set', 'familie', 'kinder', 'sicherheit', 'basisöle'],
+  'KO-W32-DE-004': ['home essentials kit', 'großes set', 'einstieg', 'zu viel', 'produktauswahl', 'routinen'],
+  'KO-W32-DE-005': ['wholesale customer', 'wellness advocate', 'kundenkonto', 'berater werden', 'partner werden', 'kontoart'],
+  'KO-W32-DE-006': ['doterra kundenkonto', 'konto erstellen', 'einschreibung', 'bestellung', 'kunden werden'],
+  'KO-W32-DE-007': ['lrp', 'treueprogramm', 'loyalty rewards', 'wiederbestellung', 'punkte', 'monatliche bestellung'],
+  'KO-W32-DE-008': ['berater werden', 'partner werden', 'wellness advocate', 'doterra business', 'business möglichkeit', 'team'],
+  'KO-W32-EN-001': ['starter kit', 'first kit', 'doterra kit', 'beginner kit', 'guidance before buying'],
+  'KO-W32-EN-002': ['introductory kit', 'enrolment kit', 'starter kit', 'small kit', 'start account'],
+  'KO-W32-EN-003': ['family essentials kit', 'family kit', 'family', 'children', 'safety', 'basic oils'],
+  'KO-W32-EN-004': ['home essentials kit', 'large kit', 'strong start', 'too much', 'product choice', 'routines'],
+  'KO-W32-EN-005': ['wholesale customer', 'wellness advocate', 'customer account', 'become advisor', 'partner', 'account type'],
+  'KO-W32-EN-006': ['doterra customer account', 'create account', 'enrolment', 'order', 'become customer'],
+  'KO-W32-EN-007': ['lrp', 'loyalty rewards', 'loyalty program', 'reorder', 'points', 'monthly order'],
+  'KO-W32-EN-008': ['become advisor', 'become partner', 'wellness advocate', 'doterra business', 'business opportunity', 'team'],
+  'KO-W35-DE-001': ['warum über kyle', 'direkt im shop', 'shop link', 'beratung vor kauf', 'warum berater', 'persönliche empfehlung'],
+  'KO-W35-DE-002': ['doterra teuer', 'zu teuer', 'preis', 'lohnt sich doterra', 'kosten', 'einkaufspreis'],
+  'KO-W35-DE-003': ['amazon öle', 'günstige öle', 'billige ätherische öle', 'qualität', 'warum doterra', 'preisvergleich'],
+  'KO-W35-DE-004': ['großes starter-set', 'muss ich ein set kaufen', 'kleines set', 'starter kit', 'einstieg', 'home essentials'],
+  'KO-W35-DE-005': ['monatlich bestellen', 'muss ich monatlich bestellen', 'lrp pflicht', 'loyalty rewards', 'treueprogramm', 'wiederbestellung'],
+  'KO-W35-DE-006': ['ist doterra mlm', 'network marketing', 'multi level marketing', 'strukturvertrieb', 'berater werden', 'einkommen'],
+  'KO-W35-DE-007': ['nach dem kauf', 'begleitung nach kauf', 'onboarding', 'support', 'fragen nach bestellung', 'team materialien'],
+  'KO-W35-DE-008': ['später berater werden', 'selbst berater werden', 'wellness advocate', 'partner werden', 'business möglichkeit', 'team onboarding'],
+  'KO-W35-EN-001': ['why through kyle', 'directly in shop', 'shop link', 'guidance before buying', 'why advisor', 'personal recommendation'],
+  'KO-W35-EN-002': ['doterra expensive', 'too expensive', 'price', 'is doterra worth it', 'cost', 'wholesale price'],
+  'KO-W35-EN-003': ['amazon oils', 'cheaper oils', 'cheap essential oils', 'quality', 'why doterra', 'price comparison'],
+  'KO-W35-EN-004': ['large starter kit', 'do i have to buy a kit', 'small kit', 'starter kit', 'home essentials', 'first order'],
+  'KO-W35-EN-005': ['order monthly', 'do i have to order monthly', 'lrp required', 'loyalty rewards', 'loyalty program', 'recurring order'],
+  'KO-W35-EN-006': ['is doterra mlm', 'network marketing', 'multi level marketing', 'direct sales', 'become advisor', 'income'],
+  'KO-W35-EN-007': ['after purchase', 'support after purchase', 'onboarding', 'support', 'questions after order', 'team materials'],
+  'KO-W35-EN-008': ['become advisor later', 'become an advisor', 'wellness advocate', 'become partner', 'business possibility', 'team onboarding'],
 };
 
 export const knowledgeArticles: KnowledgeArticle[] = germanIndex.map((item) => {

@@ -2,6 +2,7 @@
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
 import CTAGroup from '../../../components/cta/CTAGroup.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
+import Button from '../../../components/global/Button.astro';
 import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
 import TopicCard from '../../../components/cards/TopicCard.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
@@ -111,6 +112,16 @@ const routineTopics = [
     ],
     cta: 'Discuss a Wellness Routine',
   },
+];
+
+const deeperKnowledgeLinks = [
+  { title: 'Oil Library', href: '/en/knowledge/oil-library/' },
+  { title: 'Routines', href: '/en/knowledge/routines/' },
+  { title: 'Safe Use', href: '/en/knowledge/safe-use/' },
+  { title: 'Deep Blue: Movement, Massage & Body Comfort', href: '/en/knowledge/products-systems/deep-blue-movement-massage-body-comfort/' },
+  { title: 'ZenGest: Digestive Feel & Food Routines', href: '/en/knowledge/products-systems/zengest-digestive-feel-food-routines/' },
+  { title: 'Serenity: Evening & Sleep Routine', href: '/en/knowledge/products-systems/serenity-evening-sleep-routine-safe-context/' },
+  { title: 'Lavender: Evening Routine, Scent & Skin Care', href: '/en/knowledge/products-systems/lavender-evening-routine-scent-skin-care/' },
 ];
 ---
 
@@ -272,6 +283,24 @@ const routineTopics = [
     </div>
   </section>
 
+  <section class="section section--sage deeper-knowledge">
+    <div class="container">
+      <SectionIntro title="If you want to go deeper">
+        <p>You can get to know individual oils, safe use and simple routines step by step. This creates orientation before you decide on products.</p>
+      </SectionIntro>
+      <div class="deeper-knowledge__grid">
+        {deeperKnowledgeLinks.map((link) => (
+          <TopicCard title={link.title}>
+            <Button href={link.href} variant="secondary">Learn more</Button>
+          </TopicCard>
+        ))}
+      </div>
+      <div class="deeper-knowledge__cta">
+        <CTAGroup primaryHref="/en/contact/" primaryLabel="Place it with Kyle" />
+      </div>
+    </div>
+  </section>
+
   <CTASection
     title="The Simplest Next Step"
     primaryHref="/en/contact/"
@@ -317,6 +346,9 @@ const routineTopics = [
   .topic-grid :global(.topic-card p) { margin: 0 0 var(--space-12); }
   .topic-grid :global(.topic-card p:last-of-type) { margin-bottom: var(--space-24); }
   .topic-grid :global(.topic-card .cta-group) { margin-top: auto; }
+  .deeper-knowledge__grid { display: grid; gap: var(--space-16); }
+  .deeper-knowledge__grid :global(.button) { width: 100%; }
+  .deeper-knowledge__cta { margin-top: var(--space-32); }
   .compliance-section { padding: 0 0 var(--space-80); }
   .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
   .compliance-section :global(p + p) { margin-top: var(--space-12); }
@@ -325,7 +357,8 @@ const routineTopics = [
     .application-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: var(--space-24); }
     .orientation-grid { grid-auto-rows: 1fr; }
     .orientation-grid,
-    .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .topic-grid,
+    .deeper-knowledge__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }
   @media (min-width: 1024px) {
     .section { padding-block: var(--space-120); }

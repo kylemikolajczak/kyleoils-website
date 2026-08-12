@@ -2,6 +2,7 @@
 import ComplianceNote from '../../components/compliance/ComplianceNote.astro';
 import CTAGroup from '../../components/cta/CTAGroup.astro';
 import CTASection from '../../components/cta/CTASection.astro';
+import Button from '../../components/global/Button.astro';
 import TopicCard from '../../components/cards/TopicCard.astro';
 import HeroSplit from '../../components/sections/HeroSplit.astro';
 import ResponsiveImage from '../../components/global/ResponsiveImage.astro';
@@ -71,11 +72,17 @@ const wellnessAreas = [
 
   <section class="section section--sage knowledge-teaser">
     <div class="container knowledge-teaser__inner">
-      <p class="knowledge-teaser__eyebrow">KNOWLEDGE &amp; GUIDANCE</p>
-      <SectionIntro title="Essential oils, clearly explained">
-        <p>The Knowledge Hub gives you clear basics, safe-use guidance, simple routines, the Oil Library and product orientation. Explained calmly, without pressure and without medical promises.</p>
+      <p class="knowledge-teaser__eyebrow">KNOWLEDGE BEFORE YOU BUY</p>
+      <SectionIntro title="Read first. Decide calmly.">
+        <p>On Kyle Oils, you will find clear basics, safe-use guidance, simple routines, oil profiles, starter-kit orientation and product knowledge around doTERRA.</p>
+        <p>You do not have to know immediately which oil or kit fits. You can understand first, compare calmly and then place with Kyle what truly fits your everyday life.</p>
       </SectionIntro>
-      <CTAGroup primaryHref="/en/knowledge/" primaryLabel="Explore the Knowledge Hub" secondaryHref="/en/knowledge/oil-library/" secondaryLabel="View the Oil Library" />
+      <div class="knowledge-teaser__actions">
+        <Button href="/en/knowledge/">Explore the Knowledge Hub</Button>
+        <Button href="/en/knowledge/oil-library/" variant="secondary">View the Oil Library</Button>
+        <Button href="/en/starter-sets/" variant="secondary">Understand Starter Kits</Button>
+        <Button href="/en/contact/" variant="secondary">Request a consultation</Button>
+      </div>
     </div>
   </section>
 
@@ -103,9 +110,9 @@ const wellnessAreas = [
       <ul class="statement-grid">
         <li>You would like more calm in a busy day-to-day routine.</li>
         <li>You would like to switch off more easily in the evening.</li>
-        <li>You are looking for more energy and clarity in your day.</li>
+        <li>You are looking for more structure and conscious routines in your day.</li>
         <li>You would like to discover natural alternatives for your home, wellbeing or family.</li>
-        <li>You are interested in high-quality nutritional supplements and long-term wellbeing.</li>
+        <li>You are interested in high-quality wellness products and supplements according to the label and long-term wellness routines.</li>
         <li>You have heard of essential oils but are unsure about their use, selection or how to begin.</li>
       </ul>
       <div class="section-closing">
@@ -289,6 +296,7 @@ const wellnessAreas = [
   .knowledge-teaser { padding-block: var(--space-64); }
   .knowledge-teaser__inner { max-width: var(--container-text); }
   .knowledge-teaser__eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
+  .knowledge-teaser__actions { display: flex; flex-direction: column; gap: var(--space-16); }
   .wellness-areas__eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
   .wellness-areas__grid { display: grid; gap: var(--space-16); }
   .narrow-layout { max-width: var(--container-text); }
@@ -306,6 +314,7 @@ const wellnessAreas = [
   @media (min-width: 768px) {
     .section { padding-block: var(--space-96); }
     .knowledge-teaser { padding-block: var(--space-80); }
+    .knowledge-teaser__actions { flex-direction: row; flex-wrap: wrap; }
     .statement-grid, .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
     .wellness-areas__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }

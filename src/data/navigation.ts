@@ -37,6 +37,7 @@ type HeaderNavigationGroup = { label: string; items: readonly HeaderNavigationLi
 
 export const groupedMainNavigation = [
   { label: 'Start', href: '/de/' },
+  { label: 'Wissen', href: '/de/wissen/' },
   {
     label: 'Beratung',
     items: [
@@ -44,7 +45,6 @@ export const groupedMainNavigation = [
       { label: 'Öle & Routinen', href: '/de/oele-routinen/' },
     ],
   },
-  { label: 'Wissen', href: '/de/wissen/' },
   {
     label: 'Angebote',
     items: [
@@ -58,6 +58,7 @@ export const groupedMainNavigation = [
 
 export const groupedEnglishMainNavigation = [
   { label: 'Home', href: '/en/' },
+  { label: 'Knowledge', href: '/en/knowledge/' },
   {
     label: 'Guidance',
     items: [
@@ -65,7 +66,6 @@ export const groupedEnglishMainNavigation = [
       { label: 'Oils & Routines', href: '/en/oils-routines/' },
     ],
   },
-  { label: 'Knowledge', href: '/en/knowledge/' },
   {
     label: 'Offers',
     items: [
