@@ -84,6 +84,22 @@ const approvedGermanContentPacks = [
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/de'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/article-index.wave-18.json'),
   },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-20-products-systems-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-20-products-systems-expansion-02/article-index.wave-20.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-21-faq-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-21-faq-expansion-02/article-index.wave-21.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-22-oil-lexicon-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-22-oil-lexicon-expansion-02/article-index.wave-22.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/article-index.wave-23.json'),
+  },
 ];
 
 const approvedEnglishContentPacks = [
@@ -118,6 +134,22 @@ const approvedEnglishContentPacks = [
   {
     articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/en'),
     articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/article-index.wave-18.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-20-products-systems-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-20-products-systems-expansion-02/article-index.wave-20.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-21-faq-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-21-faq-expansion-02/article-index.wave-21.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-22-oil-lexicon-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-22-oil-lexicon-expansion-02/article-index.wave-22.json'),
+  },
+  {
+    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/article-index.wave-23.json'),
   },
 ];
 
@@ -215,6 +247,12 @@ function getRawArticles(contentPacks: typeof approvedGermanContentPacks | typeof
 const rawGermanArticles = getRawArticles(approvedGermanContentPacks);
 const rawEnglishArticles = getRawArticles(approvedEnglishContentPacks);
 
+function normalizeWorldId(worldId: string): KnowledgeWorldId {
+  if (worldId === 'products') return 'products-systems';
+  if (worldId === 'everyday') return 'everyday-use';
+  return worldId as KnowledgeWorldId;
+}
+
 export const knowledgeArticles: KnowledgeArticle[] = germanIndex.map((item) => {
   const source = rawGermanArticles.find((article) => article.values.id === item.id);
   if (!source) throw new Error(`Missing approved content for ${item.id}`);
@@ -222,6 +260,7 @@ export const knowledgeArticles: KnowledgeArticle[] = germanIndex.map((item) => {
 
   return {
     ...item,
+    worldId: normalizeWorldId(item.worldId),
     risk,
     relatedArticleIds: item.relatedArticleIds ?? item.related ?? [],
     cta: String(source.values.cta),
@@ -242,6 +281,7 @@ export const englishKnowledgeArticles: EnglishKnowledgeArticle[] = englishIndex.
 
   return {
     ...item,
+    worldId: normalizeWorldId(item.worldId),
     sourceDeId,
     relatedArticleIds: item.relatedArticleIds ?? item.related ?? [],
     cta: String(source.values.cta),

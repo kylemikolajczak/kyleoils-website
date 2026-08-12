@@ -47,7 +47,8 @@ const searchArticles = articles.map(({ title, description, route, worldLabel }) 
   const normalize = (value) => value
     .toLocaleLowerCase(locale)
     .normalize('NFD')
-    .replace(/\p{Diacritic}/gu, '');
+    .replace(/\p{Diacritic}/gu, '')
+    .replace(/\bdislike\b/g, 'not like');
 
   const searchableArticles = searchArticles.map((article) => ({
     ...article,
@@ -93,7 +94,8 @@ const searchArticles = articles.map(({ title, description, route, worldLabel }) 
       return;
     }
 
-    const matches = searchableArticles.filter((article) => article.searchText.includes(query));
+    const queryTerms = query.split(/\s+/).filter(Boolean);
+    const matches = searchableArticles.filter((article) => queryTerms.every((term) => article.searchText.includes(term)));
     if (!matches.length) {
       results.replaceChildren();
       status.textContent = copy.none;
