@@ -6,8 +6,8 @@ interface Props { locale?: Locale; }
 const { locale = 'de' } = Astro.props;
 const data = locale === 'de' ? footerData : englishFooterData;
 const labels = locale === 'de'
-  ? { main: 'Navigation im Footer', mainTitle: 'Navigation', offersAndKnowledge: 'Angebote & Wissen', contactAndOfficial: 'Kontakt & Offizielle Links', legal: 'Rechtliches', home: 'Zur Startseite' }
-  : { main: 'Footer navigation', mainTitle: 'Navigation', offersAndKnowledge: 'Offers & Knowledge', contactAndOfficial: 'Contact & Official Links', legal: 'Legal', home: 'Go to homepage' };
+  ? { main: 'Navigation im Footer', mainTitle: 'Navigation', offersAndKnowledge: 'Angebote & Wissen', contactAndOfficial: 'Kontakt & Offizielle Links', legal: 'Rechtliches', home: 'Zur Startseite', analytics: 'Analytics-Einstellungen' }
+  : { main: 'Footer navigation', mainTitle: 'Navigation', offersAndKnowledge: 'Offers & Knowledge', contactAndOfficial: 'Contact & Official Links', legal: 'Legal', home: 'Go to homepage', analytics: 'Analytics preferences' };
 const independenceNote = locale === 'de'
   ? 'Kyle Daniel Mikolajczak ist doTERRA Wellness Advocate und arbeitet unabhängig. doTERRA ist der Produktpartner, nicht die Hauptmarke dieser Website.'
   : 'Kyle Daniel Mikolajczak is an independent doTERRA Wellness Advocate. doTERRA is the product partner, not the primary brand of this website.';
@@ -37,6 +37,7 @@ const independenceNote = locale === 'de'
     <div class="footer-bottom__legal">
       <p>© {new Date().getFullYear()} Kyle Daniel Mikolajczak</p>
       <nav aria-label={labels.legal}><ul>{data.legalNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
+      <button type="button" class="footer-analytics-preferences" data-analytics-preferences>{labels.analytics}</button>
     </div>
     <p class="footer-bottom__note">{independenceNote}</p>
   </div>
@@ -63,6 +64,8 @@ const independenceNote = locale === 'de'
   .footer-bottom { display: grid; gap: var(--space-16); margin-top: var(--space-48); padding-top: var(--space-24); border-top: 1px solid rgb(239 230 216 / 25%); font-size: var(--font-size-small); }
   .footer-bottom__legal { display: flex; flex-wrap: wrap; gap: var(--space-12) var(--space-24); align-items: center; }
   .footer-bottom nav ul { display: flex; flex-wrap: wrap; gap: var(--space-12) var(--space-20); }
+  .footer-analytics-preferences { margin: 0; padding: 0; border: 0; background: transparent; color: var(--color-linen); cursor: pointer; text-align: left; }
+  .footer-analytics-preferences:hover { text-decoration: underline; }
   .footer-bottom__note { max-width: 92ch; }
   @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 1024px) {

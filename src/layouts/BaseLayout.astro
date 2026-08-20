@@ -1,6 +1,7 @@
 ---
 import SiteHeader from '../components/navigation/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
+import AnalyticsConsent from '../components/global/AnalyticsConsent.astro';
 import { getLanguagePaths, type Locale } from '../data/locales';
 import tokensCss from '../styles/tokens.css?inline';
 import globalCss from '../styles/global.css?inline';
@@ -94,5 +95,6 @@ const structuredData = {
     <SiteHeader locale={lang} {currentPath} />
     <main id="main-content"><slot /></main>
     <SiteFooter locale={lang} />
+    <AnalyticsConsent locale={lang} />
   </body>
 </html>

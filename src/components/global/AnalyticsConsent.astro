@@ -1,0 +1,161 @@
+---
+import type { Locale } from '../../data/locales';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'de' } = Astro.props;
+const copy = locale === 'de'
+  ? {
+      title: 'Analytics-Einstellungen',
+      description: 'Wir verwenden optionale Analytics, um die Nutzung der Website allgemein zu verstehen und sie zu verbessern. Analytics wird nur nach deiner ausdrücklichen Einwilligung geladen. Du kannst deine Auswahl jederzeit ändern.',
+      accept: 'Analytics akzeptieren',
+      reject: 'Optionale Analytics ablehnen',
+      privacy: 'Mehr zum Datenschutz',
+      privacyHref: '/de/datenschutz/',
+    }
+  : {
+      title: 'Analytics preferences',
+      description: 'We use optional analytics to understand general website use and improve the website. Analytics loads only after your explicit consent. You can change your choice at any time.',
+      accept: 'Accept analytics',
+      reject: 'Reject optional analytics',
+      privacy: 'Learn more in the Privacy Policy',
+      privacyHref: '/en/privacy-policy/',
+    };
+---
+
+<aside class="analytics-consent" data-analytics-consent hidden role="dialog" aria-modal="true" aria-labelledby="analytics-consent-title">
+  <div class="analytics-consent__panel">
+    <h2 id="analytics-consent-title">{copy.title}</h2>
+    <p>{copy.description}</p>
+    <div class="analytics-consent__actions">
+      <button type="button" class="analytics-consent__button analytics-consent__button--secondary" data-analytics-reject>{copy.reject}</button>
+      <button type="button" class="analytics-consent__button" data-analytics-accept>{copy.accept}</button>
+    </div>
+    <a href={copy.privacyHref}>{copy.privacy}</a>
+  </div>
+</aside>
+
+<script is:inline>
+  (() => {
+    const measurementId = 'G-54462FVGIC';
+    const storageKey = 'kyle-oils-analytics-consent';
+    const panel = document.querySelector('[data-analytics-consent]');
+    const denied = {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+    };
+    const granted = { ...denied, analytics_storage: 'granted' };
+
+    const getStoredChoice = () => {
+      try {
+        return window.localStorage.getItem(storageKey);
+      } catch {
+        return null;
+      }
+    };
+
+    const saveChoice = (choice) => {
+      try {
+        window.localStorage.setItem(storageKey, choice);
+      } catch {
+        // If storage is unavailable, the visitor can still choose for this page visit.
+      }
+    };
+
+    const ensureGtag = () => {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    };
+
+    const setDefaultConsent = () => {
+      ensureGtag();
+      window.gtag('consent', 'default', denied);
+    };
+
+    const loadAnalytics = () => {
+      ensureGtag();
+      window['ga-disable-' + measurementId] = false;
+      window.gtag('consent', 'update', granted);
+
+      if (window.__kyleOilsGaLoaded) {
+        window.gtag('config', measurementId, {
+          allow_google_signals: false,
+          allow_ad_personalization_signals: false,
+        });
+        return;
+      }
+
+      window.__kyleOilsGaLoaded = true;
+      const analyticsScript = document.createElement('script');
+      analyticsScript.async = true;
+      analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+      analyticsScript.addEventListener('load', () => {
+        window.gtag('js', new Date());
+        window.gtag('config', measurementId, {
+          allow_google_signals: false,
+          allow_ad_personalization_signals: false,
+        });
+      });
+      document.head.appendChild(analyticsScript);
+    };
+
+    const blockAnalytics = () => {
+      ensureGtag();
+      window['ga-disable-' + measurementId] = true;
+      window.gtag('consent', 'update', denied);
+    };
+
+    const showPanel = () => {
+      if (!panel) return;
+      panel.hidden = false;
+    };
+
+    const hidePanel = () => {
+      if (!panel) return;
+      panel.hidden = true;
+    };
+
+    setDefaultConsent();
+    const storedChoice = getStoredChoice();
+    if (storedChoice === 'granted') {
+      loadAnalytics();
+    } else if (storedChoice === 'denied') {
+      blockAnalytics();
+    } else {
+      showPanel();
+    }
+
+    document.querySelector('[data-analytics-accept]')?.addEventListener('click', () => {
+      saveChoice('granted');
+      loadAnalytics();
+      hidePanel();
+    });
+
+    document.querySelector('[data-analytics-reject]')?.addEventListener('click', () => {
+      saveChoice('denied');
+      blockAnalytics();
+      hidePanel();
+    });
+
+    document.querySelectorAll('[data-analytics-preferences]').forEach((trigger) => {
+      trigger.addEventListener('click', showPanel);
+    });
+  })();
+</script>
+
+<style>
+  .analytics-consent { position: fixed; z-index: 90; right: var(--space-20); bottom: var(--space-20); left: var(--space-20); }
+  .analytics-consent__panel { width: min(100%, 560px); margin-left: auto; padding: var(--space-24); border: 1px solid var(--color-sand); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-soft); }
+  h2 { margin: 0 0 var(--space-12); font-size: var(--font-size-h3-mobile); line-height: var(--line-height-heading); color: var(--color-deep-forest); }
+  p { margin: 0; color: var(--color-text-secondary); font-size: var(--font-size-small); line-height: var(--line-height-small); }
+  .analytics-consent__actions { display: grid; gap: var(--space-12); margin-top: var(--space-20); }
+  .analytics-consent__button { min-height: 48px; padding: var(--space-12) var(--space-20); border: 1px solid var(--color-deep-forest); border-radius: var(--radius-button); background: var(--color-deep-forest); color: var(--color-warm-white); font-weight: var(--font-weight-semibold); cursor: pointer; }
+  .analytics-consent__button--secondary { background: transparent; color: var(--color-deep-forest); }
+  a { display: inline-block; margin-top: var(--space-16); color: var(--color-deep-forest); font-size: var(--font-size-small); }
+  @media (min-width: 520px) { .analytics-consent__actions { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 768px) { .analytics-consent { right: var(--space-32); bottom: var(--space-32); left: auto; } .analytics-consent__panel { padding: var(--space-32); } }
+</style>
