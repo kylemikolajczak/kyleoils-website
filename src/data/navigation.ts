@@ -32,7 +32,7 @@ export const englishAdditionalNavigation = [
   { label: 'Business Opportunity', href: '/en/business-opportunity/' },
 ] as const;
 
-type HeaderNavigationLink = { label: string; href: string };
+type HeaderNavigationLink = { label: string; href: string; secondary?: boolean };
 type HeaderNavigationGroup = { label: string; items: readonly HeaderNavigationLink[] };
 
 export const groupedMainNavigation = [
@@ -43,6 +43,7 @@ export const groupedMainNavigation = [
     items: [
       { label: 'Beratung', href: '/de/beratung/' },
       { label: 'Öle & Routinen', href: '/de/oele-routinen/' },
+      { label: 'Business-Möglichkeit', href: '/de/business-moeglichkeit/', secondary: true },
     ],
   },
   {
@@ -64,6 +65,7 @@ export const groupedEnglishMainNavigation = [
     items: [
       { label: 'Consultation', href: '/en/consultation/' },
       { label: 'Oils & Routines', href: '/en/oils-routines/' },
+      { label: 'Business Opportunity', href: '/en/business-opportunity/', secondary: true },
     ],
   },
   {
