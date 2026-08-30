@@ -1,0 +1,26 @@
+# FAQ Completion QA Checklist
+
+- [ ] footer DE points to `/de/faq/`
+- [ ] footer EN points to `/en/faq/`
+- [ ] Knowledge FAQ remains separate
+- [ ] approximately 50 useful questions per locale after deduplication
+- [ ] existing useful questions preserved
+- [ ] no unsupported health claims
+- [ ] no income guarantees
+- [ ] no misleading CPTG wording
+- [ ] all internal links use real routes
+- [ ] title, meta description, canonical and indexability checked
+- [ ] sitemap and locale / hreflang behaviour checked
+- [ ] structured-data decision documented
+- [ ] accordion keyboard accessibility checked
+- [ ] focus state and mobile tap targets checked
+- [ ] production build passes
+- [ ] `git diff --check` passes
+- [ ] no console errors introduced
+- [ ] no horizontal overflow
+- [ ] 1440px desktop QA
+- [ ] 390px mobile QA
+- [ ] no analytics / consent regression
+- [ ] no deploy
+- [ ] no push
+- [ ] final git status reported

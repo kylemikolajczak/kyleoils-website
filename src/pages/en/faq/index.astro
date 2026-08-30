@@ -7,107 +7,88 @@ import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 import { contactLinks } from '../../../data/externalLinks';
 
-const faqItems = [
-  {
-    question: 'Does the first conversation cost anything?',
-    answer: 'No. The first conversation is free and gives you an initial sense of your options. If a workshop, detailed plan or special format is considered later, we will discuss it clearly in advance.',
-  },
-  {
-    question: 'Do I have to buy products straight away?',
-    answer: 'No. The first conversation is about understanding your needs and offering honest advice. If a product or routine may be right for you, I will explain the options. You can then decide in your own time whether you would like to get started.',
-  },
-  {
-    question: 'What happens during a consultation?',
-    answer: 'You briefly tell me what interests you or where you are looking for support. If needed, I will then ask a few simple questions so that I can better understand your situation. Only after that will I suggest products, routines or next steps that may suit you.',
-  },
-  {
-    question: 'Are doTERRA products suitable for everyone?',
-    answer: 'Not necessarily. It is important to me that you understand the available options and what genuinely suits your needs. If doTERRA products are not the right fit, that is completely fine too.',
-  },
-  {
-    question: 'Can I ask questions if I already have doTERRA products?',
-    answer: 'Yes. We can look together at what you already have and how you can use it more purposefully. Many people own products but are unsure how to include them in their daily routine.',
-  },
-  {
-    question: 'Can I decide later whether I want to order anything?',
-    answer: 'Yes. You can decide in your own time whether you would like to get started. You do not have to buy anything simply because you ask a question.',
-  },
-  {
-    question: 'How long does a conversation take?',
-    answer: 'That depends on your questions and your situation. The first conversation is intended to give you a clear starting point.',
-  },
-  {
-    question: 'Is an online consultation available?',
-    answer: 'Yes. A video call is one possible way to hold a consultation. Many questions can also be clarified briefly via WhatsApp or email.',
-  },
-  {
-    question: 'Can I still contact you after a purchase?',
-    answer: 'Yes. You can still contact me if questions come up after your purchase.',
-  },
-  {
-    question: 'Do you also offer workshops?',
-    answer: 'Yes. I offer workshops, essential oil evenings, information sessions and talks. These can take place privately, in small groups or in collaboration with clinics, studios, companies and organisations.',
-  },
-];
+const faqCategories = [
+  { id: 'basics', title: 'Essential Oils: Basics', items: [
+    ['What are essential oils?', 'Essential oils are concentrated aromatic plant extracts. Kyle Oils explains them mainly in the context of scent, conscious everyday routines and responsible use. If you are new, start with the basics and learn a few oils first rather than trying everything at once.'],
+    ['How can essential oils be used?', 'Common approaches include aromatic use, for example in a diffuser, and topical use on the skin, usually with appropriate dilution. Some products also have a specifically labelled internal use. Always follow the individual product label and the directions intended for your market.'],
+    ['What does aromatic use mean?', 'Aromatic use means consciously experiencing the scent, for example from the bottle or with a diffuser. Less is often more. Room size, ventilation, other people, children and pets should all be considered.'],
+    ['What does topical use mean?', 'Topical use means applying an essential oil that is intended for skin use. Because essential oils are highly concentrated, dilution is often appropriate. Consider the product label, skin sensitivity, application area and individual circumstances.'],
+    ['What is a diffuser?', 'A diffuser disperses a fine mist of water and essential oils into a room so the aroma can be experienced. For beginners, short and simple routines with small amounts are often enough. Follow the device instructions and the safety information for the oils you use.'],
+    ['What is a roller?', 'A roller is a small roll-on bottle in which an essential oil or blend is usually diluted with a carrier oil. It can make a simple, repeatable topical routine easier. The appropriate dilution depends on the product and the person using it.'],
+    ['Where should I start as a beginner?', 'Do not begin with as many products as possible. Start with one clear goal and a few simple uses. The Kyle Oils Start Here path guides you through basics, safety, starter kits and first routines step by step. If you are unsure, ask for guidance before buying anything.'],
+  ] },
+  { id: 'safe-use', title: 'Safe Use', items: [
+    ['Are essential oils safe?', 'Essential oils can be used responsibly in everyday routines, but they are highly concentrated and should not be used casually. Product labels, dilution, amount, method of use and individual circumstances all matter. When in doubt, a cautious approach is better.'],
+    ['What does dilution mean with essential oils?', 'Dilution means mixing an essential oil with a suitable carrier oil before topical use. This can make application more controlled and more appropriate for the skin. The level of dilution depends on factors such as the oil, the person and the application area.'],
+    ['What is a carrier oil?', 'A carrier oil is a plant-based oil used to dilute essential oils. Fractionated coconut oil is a common example. Carrier oils make topical application easier and help you work with small amounts of essential oil.'],
+    ['What does photosensitivity mean?', 'Some essential oils can make skin more sensitive to sunlight or UV exposure after topical use. Follow the relevant label and safety instructions carefully. If you are unsure, choose a different approach or ask for guidance.'],
+    ['Can essential oils be used in the eyes or on mucous membranes?', 'No. Essential oils should not be placed in the eyes or on sensitive mucous membranes. If accidental contact or a significant reaction occurs, follow the relevant safety guidance and seek appropriate medical advice when needed.'],
+    ['What should I consider with sensitive skin?', 'With sensitive skin, small amounts, appropriate dilution and a cautious start are especially important. A patch test can provide additional guidance, although it cannot rule out every possible reaction. Stop use if burning, significant redness or another unusual reaction occurs.'],
+    ['What should I consider when children are around?', 'Extra caution is appropriate around children. Age, product label, amount, dilution, room size and method of use all need to be considered. Not every oil or use is appropriate for every age. Seek qualified guidance if you are unsure.'],
+    ['What should I consider when pets are around?', 'Pets can respond differently to aromas and essential oils than people. Consider ventilation, small amounts, the species involved and the animal’s ability to leave the area. Do not simply apply human routines to animals, and seek veterinary advice for specific concerns.'],
+    ['What about pregnancy and breastfeeding?', 'Pregnancy and breastfeeding are situations where a particularly cautious approach is appropriate. Product labels, amount, method of use and individual factors matter. If you are unsure or have medical questions, involve an appropriately qualified healthcare professional.'],
+    ['What if I take medication or have a health condition?', 'If you take medication, have a health condition or are receiving medical treatment, essential oils should not be viewed as a substitute for that care. Discuss relevant questions with a qualified healthcare professional and follow product labelling.'],
+  ] },
+  { id: 'doterra', title: 'Understanding doTERRA', items: [
+    ['What is doTERRA?', 'doTERRA is an international company offering essential oils and other wellness products. Kyle Oils is not an official doTERRA corporate website; it is Kyle’s independent guidance and knowledge platform. The aim is to help you understand products and routines before you decide what fits.'],
+    ['Why does Kyle work with doTERRA?', 'Kyle uses doTERRA products himself and chose to help people understand the products and how they can fit into daily routines. The goal is not to sell as much as possible, but to find a clear and sustainable approach that genuinely fits the person.'],
+    ['What qualification does Kyle have in essential oils?', 'Kyle is a doTERRA Wellness Advocate and a doTERRA Europe Essential Oils Specialist. This supports his ability to explain products, use and safety considerations clearly. His guidance does not replace medical diagnosis or treatment.'],
+    ['What does CPTG mean?', 'CPTG is the term doTERRA uses for its own quality and testing standard for essential oils. It should not be confused with a government or universal independent certification.'],
+    ['Are all essential oils the same?', 'No. Plant species, origin, cultivation, harvest, processing, storage and quality testing can differ. For practical use, it also matters what a specific product is labelled for and which safety instructions apply.'],
+    ['Is Kyle Oils an official doTERRA shop?', 'No. Kyle Oils is Kyle’s independent information and guidance platform. When you choose to order, the relevant links lead to the official doTERRA shop for the appropriate market.'],
+    ['Do I have to buy doTERRA if I ask Kyle a question?', 'No. Asking questions, receiving guidance and having a first conversation do not commit you to a purchase. You can learn first, explore the Knowledge Hub and decide calmly whether any product or next step is right for you.'],
+  ] },
+  { id: 'ordering', title: 'Ordering & Starter Kits', items: [
+    ['How can I order doTERRA products?', 'If you already know what you want, you can use the official doTERRA ordering routes linked from Kyle Oils. If you are unsure, a short conversation can help you avoid buying more than you actually need.'],
+    ['Do I need a starter kit?', 'No. A starter kit can make getting started more structured, but it is not automatically the best choice for everyone. What matters is which products you genuinely want to use and how large you want your first step to be.'],
+    ['Can I buy individual products?', 'Yes. Individual products can also be ordered depending on the market and account type. If you only want to explore one particular product, your first step does not need to be larger than necessary.'],
+    ['Which starter kit is right for me?', 'That depends on what you genuinely want to use in daily life. Family and home, a smaller introduction, a broader kit or a structured wellness system are different starting points. You can compare options on the Starter Sets page and ask Kyle to help you place them in context.'],
+    ['What is a doTERRA customer account?', 'An official doTERRA customer account allows you to purchase through doTERRA under the conditions that apply to the relevant account type. Kyle Oils explains the account primarily as a practical way to access products and personal support, not as an obligation to build a business.'],
+    ['What is the difference between a Wholesale Customer and a Wellness Advocate?', 'A Wholesale Customer primarily uses doTERRA as a customer. A Wellness Advocate can also choose to participate in the business opportunity. You do not have to build a business simply because you want customer purchasing benefits. Current market-specific account terms should be checked before enrolment.'],
+    ['Do I have to order every month?', 'A monthly order should not happen because of pressure or habit. Kyle Oils explains the LRP loyalty programme as an option that only makes sense when it fits your real needs. Current conditions can vary by market.'],
+    ['What happens after my first order?', 'That is when the most important part begins: learning how to use your products meaningfully. Kyle Oils provides a Start Here path, a 30-day plan, safe-use guidance, routines and personal support. You should not be left on your own after buying products.'],
+  ] },
+  { id: 'guidance', title: 'Consultation & Support', items: [
+    ['Is the consultation free?', 'The first conversation with Kyle is free. If a special workshop, detailed concept or another paid format later makes sense, that will be discussed clearly and transparently in advance.'],
+    ['How does a consultation work?', 'You start by sharing what you would like help with. Kyle listens first, places your situation in context and then explains only the options that seem relevant. You can decide without pressure whether to try something, keep reading or buy nothing for now.'],
+    ['Can I ask questions by WhatsApp or email?', 'Yes. Many questions can be handled easily in writing. If a conversation would be more useful, you can then decide together which format works best.'],
+    ['Can Kyle help if I already own doTERRA products?', 'Yes. If you already have products at home but are barely using them, a calm review can be especially useful. The priority is to make meaningful use of what you already own before recommending anything additional.'],
+    ['Will I receive support after I buy?', 'Yes. Support is not intended to end with the order. Questions about use, routines, getting started and making meaningful use of products you already own can still be discussed afterwards.'],
+  ] },
+  { id: 'routines', title: 'Routines & Everyday Use', items: [
+    ['How do I build a simple essential-oil routine?', 'Start with one specific everyday moment instead of many products at once. A short morning routine, a conscious scent moment or a simple evening routine is easier to repeat than a complicated plan. If it works well, you can build on it later.'],
+    ['How often should I use a diffuser?', 'There is no single useful duration for every room and every person. Room size, ventilation, the oil, concentration and the people or animals present all matter. Short, intentional periods with good ventilation are generally a better starting point than continuous scenting.'],
+    ['Can I blend different essential oils?', 'Yes. Many people combine aromas into simple blends. For beginners, it is useful to work with only a few oils and understand each one individually. The safety guidance for every oil in a blend still applies.'],
+    ['Where can I find information about a specific oil?', 'The Kyle Oils Oil Library contains individual oils and blends with clear guidance on aroma profile, everyday context, use and important notes. If your question is not answered there, you can ask Kyle directly.'],
+    ['What is the 30-Day Oil Start Plan?', 'The 30-Day Oil Start Plan is a calm introduction for people with their first doTERRA products. It helps you read labels, try simple uses, collect questions and gradually discover what genuinely fits your everyday life.'],
+  ] },
+  { id: 'workshops', title: 'Workshops & Collaborations', items: [
+    ['Who are the workshops for?', 'Workshops can suit private groups, beginners, existing users and, depending on the topic, studios, companies, communities or other organisations. The content and depth are adapted to the group. The focus is clear education and practical guidance, not sales pressure.'],
+    ['What topics can a workshop cover?', 'Possible topics include essential-oil basics, scent and diffusers, dilution and safe use, simple everyday routines, starter kits or specific questions from the group. The format can be adapted to the audience in advance.'],
+    ['Can a studio, company or organisation collaborate with Kyle?', 'Yes, when the format is relevant and appropriate for the audience. A collaboration could take the form of an information session, workshop or educational event. The practical value for participants and clear, pressure-free communication come first.'],
+  ] },
+  { id: 'business', title: 'Wellness Advocate & Business', items: [
+    ['What is a doTERRA Wellness Advocate?', 'A Wellness Advocate can use doTERRA products and may also choose to build an independent doTERRA business. This is voluntary. Not every customer needs to become a Wellness Advocate, and not every Wellness Advocate needs to build a business.'],
+    ['Who might the business opportunity suit?', 'It may suit someone who genuinely knows the products, enjoys explaining them, wants to build long-term relationships and is willing to learn responsibly. It is not for people expecting quick or guaranteed income.'],
+    ['Are there income guarantees?', 'No. There is no guarantee of income or business success. Results depend on many factors, including time, skills, market conditions, consistent work and personal circumstances. Any business decision should be made without unrealistic expectations.'],
+  ] },
+  { id: 'international', title: 'International', items: [
+    ['Can Kyle support people outside Germany?', 'Yes. Personal guidance can also take place online. Product availability, enrolment and ordering depend on the relevant doTERRA market, however. Kyle can help you identify the appropriate official route for your country.'],
+    ['Which languages are available for guidance?', 'The website and guidance are oriented around German and English.'],
+  ] },
+].map((category) => ({ ...category, items: category.items.map(([question, answer]) => ({ question, answer })) }));
 ---
 
-<PageLayout
-  lang="en"
-  title="Frequently Asked Questions"
-  description="You may already find the answer to your question here. If not, simply get in touch."
->
-  <HeroSplit
-    title="Frequently Asked Questions"
-    primaryHref={contactLinks.whatsapp.href}
-    primaryLabel="Message Me on WhatsApp"
-    secondaryHref="/en/contact/"
-    secondaryLabel="Request a Consultation"
-    imageSrc="/assets/images/nature/nature-heath-hero-02.png"
-    imageAlt="Lüneburg Heath in warm morning light"
-    imageWidth={1672}
-    imageHeight={941}
-    imagePosition="54% center"
-  >
-    <p>You may already find the answer to your question here. If not, simply get in touch. I will be happy to take the time to discuss your concerns.</p>
-  </HeroSplit>
-
-  <section class="section section--cream">
-    <div class="container faq-layout">
-      <SectionIntro title="Questions and Answers" />
-      <FAQAccordion items={faqItems} idPrefix="general-questions" />
-    </div>
-  </section>
-
-  <CTASection
-    title="Still Have Questions?"
-    primaryHref={contactLinks.whatsapp.href}
-    primaryLabel="Message Me on WhatsApp"
-    secondaryHref="/en/contact/"
-    secondaryLabel="Request a Consultation"
-  >
-    <p>If your question has not been answered here, I would be happy to hear from you. Together, we can find out what may be right for you.</p>
-  </CTASection>
-
-  <section class="compliance-section">
-    <div class="container">
-      <ComplianceNote label="Note">
-        <h2>A Brief Note</h2>
-        <p>My support is not a substitute for medical diagnosis or treatment.<br />I do not claim that products can diagnose, treat or cure medical conditions.</p>
-      </ComplianceNote>
-    </div>
-  </section>
+<PageLayout lang="en" title="Essential Oil & doTERRA FAQs | Kyle Oils" description="Answers about essential oils, safe use, doTERRA, starter kits, guidance, workshops and business.">
+  <HeroSplit title="Frequently Asked Questions" primaryHref={contactLinks.whatsapp.href} primaryLabel="Message Me on WhatsApp" secondaryHref="/en/contact/" secondaryLabel="Request a Consultation" imageSrc="/assets/images/nature/nature-heath-hero-02.png" imageAlt="Lüneburg Heath in warm morning light" imageWidth={1672} imageHeight={941} imagePosition="54% center"><p>You may already find the answer to your question here. If not, simply get in touch. I will be happy to take the time to discuss your concerns.</p></HeroSplit>
+  <section class="section section--cream"><div class="container faq-layout"><SectionIntro title="Questions and Answers" />{faqCategories.map((category) => (<section class="faq-category" aria-labelledby={`faq-${category.id}`}><h2 id={`faq-${category.id}`}>{category.title}</h2><FAQAccordion items={category.items} idPrefix={`general-questions-${category.id}`} /></section>))}</div></section>
+  <section class="section"><div class="container faq-layout faq-knowledge"><SectionIntro title="Further guidance" /><p>The Knowledge Hub offers in-depth answers on safe use, individual oils, routines and product choice.</p><div class="faq-links"><a class="button button--secondary" href="/en/knowledge/faq/">Explore Knowledge Hub FAQs</a><a class="button button--secondary" href="/en/knowledge/safe-use/">Explore Safe Use</a><a class="button button--secondary" href="/en/knowledge/oil-library/">View the Oil Library</a><a class="button button--secondary" href="/en/starter-sets/">Understand Starter Sets</a></div></div></section>
+  <CTASection title="Still Have Questions?" primaryHref={contactLinks.whatsapp.href} primaryLabel="Message Me on WhatsApp" secondaryHref="/en/contact/" secondaryLabel="Request a Consultation"><p>If your question has not been answered here, I would be happy to hear from you. Together, we can find out what may be right for you.</p></CTASection>
+  <section class="compliance-section"><div class="container"><ComplianceNote label="Note"><h2>A Brief Note</h2><p>My support is not a substitute for medical diagnosis or treatment.<br />I do not claim that products can diagnose, treat or cure medical conditions.</p></ComplianceNote></div></section>
 </PageLayout>
 
 <style>
-  .section { padding: var(--space-64) 0; }
-  .section--cream { background: var(--color-soft-cream); }
-  .faq-layout { max-width: 920px; }
-  .compliance-section { padding: 0 0 var(--space-80); }
-  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  @media (min-width: 768px) {
-    .section { padding-block: var(--space-96); }
-  }
-  @media (min-width: 1024px) {
-    .section { padding-block: var(--space-120); }
-  }
+  .section { padding: var(--space-64) 0; } .section--cream { background: var(--color-soft-cream); } .faq-layout { max-width: 920px; } .faq-category + .faq-category { margin-top: var(--space-64); } .faq-category h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h2-mobile); } .faq-knowledge p { max-width: 68ch; margin: 0 0 var(--space-24); color: var(--color-text-secondary); } .faq-links { display: flex; flex-wrap: wrap; gap: var(--space-12); } .compliance-section { padding: 0 0 var(--space-80); } .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  @media (min-width: 768px) { .section { padding-block: var(--space-96); } .faq-category + .faq-category { margin-top: var(--space-80); } .faq-category h2 { font-size: var(--font-size-h2-desktop); } }
+  @media (min-width: 1024px) { .section { padding-block: var(--space-120); } }
 </style>

@@ -7,106 +7,88 @@ import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 import { contactLinks } from '../../../data/externalLinks';
 
-const faqItems = [
-  {
-    question: 'Kostet das erste Gespräch etwas?',
-    answer: 'Nein. Das erste Gespräch ist kostenlos und dient der Orientierung. Wenn später ein Workshop, ein ausführliches Konzept oder ein besonderes Format entsteht, besprechen wir das vorher klar und transparent.',
-  },
-  {
-    question: 'Muss ich direkt Produkte kaufen?',
-    answer: 'Nein. Das erste Gespräch dient dazu, dein Anliegen zu verstehen und dir eine ehrliche Orientierung zu geben. Wenn ein Produkt oder eine Routine sinnvoll sein könnte, erkläre ich dir die Möglichkeiten. Danach entscheidest du in Ruhe selbst, ob du starten möchtest.',
-  },
-  {
-    question: 'Was passiert im Beratungsgespräch?',
-    answer: 'Du schreibst mir kurz, was dich interessiert oder wobei du Unterstützung suchst. Danach stelle ich dir bei Bedarf ein paar einfache Fragen, damit ich deine Situation besser verstehe. Erst danach empfehle ich dir passende Produkte, Routinen oder nächste Schritte.',
-  },
-  {
-    question: 'Sind doTERRA-Produkte für jeden geeignet?',
-    answer: 'Nicht automatisch. Mir ist wichtig, dass du verstehst, welche Möglichkeiten es gibt und was wirklich zu deinem Bedarf passt. Wenn doTERRA-Produkte einmal nicht passen, ist das ebenfalls vollkommen in Ordnung.',
-  },
-  {
-    question: 'Kann ich auch Fragen stellen, wenn ich bereits doTERRA-Produkte habe?',
-    answer: 'Ja. Dann können wir gemeinsam schauen, was du bereits hast und wie du es sinnvoller nutzen kannst. Viele Menschen besitzen Produkte, wissen aber nicht genau, wie sie diese in ihren Alltag integrieren sollen.',
-  },
-  {
-    question: 'Kann ich später selbst entscheiden, ob ich etwas bestellen möchte?',
-    answer: 'Ja. Danach entscheidest du in Ruhe selbst, ob du starten möchtest. Du musst nichts kaufen, nur weil du eine Frage stellst.',
-  },
-  {
-    question: 'Wie lange dauert ein Gespräch?',
-    answer: 'Das richtet sich nach deinen Fragen und deiner Situation. Das erste Gespräch dient der Orientierung.',
-  },
-  {
-    question: 'Ist die Beratung auch online möglich?',
-    answer: 'Ja. Ein Videocall ist eine mögliche Form der Beratung. Viele Fragen lassen sich auch kurz per WhatsApp oder E-Mail klären.',
-  },
-  {
-    question: 'Kann ich dich auch nach dem Kauf noch kontaktieren?',
-    answer: 'Ja. Ich begleite dich auch nach dem Kauf, wenn Fragen entstehen.',
-  },
-  {
-    question: 'Bietest du auch Workshops an?',
-    answer: 'Ja. Ich biete Workshops, Öl-Abende, Informationsveranstaltungen und Vorträge an. Diese können privat, in kleinen Gruppen oder in Zusammenarbeit mit Praxen, Studios, Unternehmen und Organisationen stattfinden.',
-  },
-];
+const faqCategories = [
+  { id: 'grundlagen', title: 'Ätherische Öle: Grundlagen', items: [
+    ['Was sind ätherische Öle?', 'Ätherische Öle sind konzentrierte aromatische Pflanzenextrakte. Auf Kyle Oils werden sie vor allem im Zusammenhang mit Duft, bewussten Alltagsroutinen und verantwortungsvoller Anwendung erklärt. Wenn du neu bist, beginne mit den Grundlagen und lerne erst wenige Öle kennen, statt alles gleichzeitig auszuprobieren.'],
+    ['Wie kann man ätherische Öle anwenden?', 'Die häufigsten Wege sind aromatisch, zum Beispiel über einen Diffuser, und topisch auf der Haut, meist passend verdünnt. Manche Produkte haben zusätzlich eine ausdrücklich gekennzeichnete interne Verwendung. Entscheidend ist immer das jeweilige Produktetikett und die für deinen Markt vorgesehene Anwendung.'],
+    ['Was bedeutet aromatische Anwendung?', 'Bei der aromatischen Anwendung wird der Duft bewusst wahrgenommen, zum Beispiel direkt aus der Flasche oder über einen Diffuser. Weniger ist oft mehr. Raumgröße, Lüftung, andere Menschen, Kinder und Haustiere sollten mitgedacht werden.'],
+    ['Was bedeutet topische Anwendung?', 'Topische Anwendung bedeutet, ein dafür vorgesehenes ätherisches Öl auf der Haut zu verwenden. Weil ätherische Öle hoch konzentriert sind, ist Verdünnung häufig sinnvoll. Etikett, Hautempfindlichkeit, Anwendungsstelle und individuelle Situation sollten berücksichtigt werden.'],
+    ['Was ist ein Diffuser?', 'Ein Diffuser verteilt fein vernebeltes Wasser mit ätherischen Ölen im Raum und macht den Duft aromatisch erlebbar. Für den Einstieg reichen oft kurze, einfache Routinen mit kleinen Mengen. Beachte die Anleitung des Geräts und die Sicherheitshinweise der verwendeten Öle.'],
+    ['Was ist ein Roller?', 'Ein Roller ist eine kleine Roll-on-Flasche, in der ein ätherisches Öl oder eine Mischung meist mit einem Trägeröl verdünnt wird. Dadurch lässt sich eine einfache, wiederholbare topische Routine aufbauen. Die passende Verdünnung hängt vom Produkt und von der Person ab.'],
+    ['Womit sollte ich als Anfänger anfangen?', 'Starte nicht mit möglichst vielen Produkten, sondern mit einem klaren Ziel und wenigen einfachen Anwendungen. Der Startbereich von Kyle Oils führt Schritt für Schritt durch Grundlagen, Sicherheit, Starter-Sets und erste Routinen. Wenn du unsicher bist, kannst du dich beraten lassen, bevor du etwas kaufst.'],
+  ] },
+  { id: 'sicherheit', title: 'Sichere Anwendung', items: [
+    ['Sind ätherische Öle sicher?', 'Ätherische Öle können verantwortungsvoll in Alltagsroutinen eingesetzt werden, sind aber hoch konzentriert und sollten nicht gedankenlos verwendet werden. Produktetiketten, Verdünnung, Menge, Anwendungsart und die individuelle Situation spielen eine wichtige Rolle. Bei Unsicherheit ist Zurückhaltung die bessere Wahl.'],
+    ['Was bedeutet Verdünnung bei ätherischen Ölen?', 'Verdünnung bedeutet, ein ätherisches Öl vor der topischen Anwendung mit einem geeigneten Trägeröl zu mischen. Das kann helfen, die Anwendung kontrollierter und hautfreundlicher zu gestalten. Wie stark verdünnt wird, hängt unter anderem vom Öl, der Person und dem Anwendungsbereich ab.'],
+    ['Was ist ein Trägeröl?', 'Ein Trägeröl ist ein pflanzliches Öl, das zur Verdünnung ätherischer Öle verwendet wird. Fraktioniertes Kokosöl ist ein häufig genutztes Beispiel. Trägeröle erleichtern eine gleichmäßige topische Anwendung und helfen dabei, mit kleinen Mengen ätherischen Öls zu arbeiten.'],
+    ['Was bedeutet Fotosensitivität?', 'Einige ätherische Öle können die Haut nach topischer Anwendung empfindlicher gegenüber Sonne oder UV-Licht machen. Deshalb sollten die jeweiligen Etikett- und Sicherheitshinweise genau beachtet werden. Wenn du unsicher bist, wähle eine andere Anwendung oder frage nach.'],
+    ['Dürfen ätherische Öle in die Augen oder auf Schleimhäute?', 'Nein. Ätherische Öle gehören nicht in die Augen und sollten nicht auf empfindliche Schleimhäute aufgetragen werden. Bei versehentlichem Kontakt oder einer starken Reaktion sollten die Sicherheitshinweise beachtet und bei Bedarf medizinischer Rat eingeholt werden.'],
+    ['Was sollte ich bei empfindlicher Haut beachten?', 'Bei empfindlicher Haut sind kleine Mengen, geeignete Verdünnung und ein vorsichtiger Start besonders wichtig. Ein Patch-Test kann zusätzliche Orientierung geben, schließt aber nicht jede mögliche Reaktion aus. Bei Brennen, starker Rötung oder anderen ungewöhnlichen Reaktionen sollte die Anwendung beendet werden.'],
+    ['Was ist bei Kindern wichtig?', 'Bei Kindern sollte besonders vorsichtig vorgegangen werden. Alter, Produktetikett, Menge, Verdünnung, Raumgröße und Art der Anwendung müssen berücksichtigt werden. Nicht jedes Öl und nicht jede Anwendung ist für jedes Alter geeignet. Bei Unsicherheit sollte fachlicher Rat eingeholt werden.'],
+    ['Was ist bei Haustieren wichtig?', 'Haustiere reagieren anders auf Düfte und ätherische Öle als Menschen. Rückzugsmöglichkeiten, gute Lüftung, kleine Mengen und die Tierart sollten mitgedacht werden. Verwende ätherische Öle bei Tieren nicht pauschal nach menschlichen Routinen und hole bei konkreten Fragen tierärztlichen Rat ein.'],
+    ['Was gilt in Schwangerschaft und Stillzeit?', 'Schwangerschaft und Stillzeit sind Situationen, in denen besonders konservativ vorgegangen werden sollte. Produktetiketten, Menge, Anwendungsart und individuelle Faktoren sind wichtig. Bei Unsicherheit oder medizinischen Fragen sollte eine entsprechend qualifizierte Fachperson einbezogen werden.'],
+    ['Was ist bei Medikamenten oder gesundheitlichen Beschwerden zu beachten?', 'Wenn du Medikamente einnimmst, gesundheitliche Beschwerden hast oder eine medizinische Behandlung erhältst, sollte die Nutzung ätherischer Öle nicht als Ersatz dafür verstanden werden. Besprich relevante Fragen mit einer qualifizierten medizinischen Fachperson und beachte die Produktkennzeichnung.'],
+  ] },
+  { id: 'doterra', title: 'doTERRA verstehen', items: [
+    ['Was ist doTERRA?', 'doTERRA ist ein internationales Unternehmen für ätherische Öle und weitere Wellness-Produkte. Kyle Oils ist keine offizielle doTERRA Unternehmensseite, sondern Kyles unabhängige Beratungs- und Wissensplattform. Hier geht es darum, Produkte und Routinen verständlich einzuordnen, bevor du dich entscheidest.'],
+    ['Warum arbeitet Kyle mit doTERRA?', 'Kyle nutzt doTERRA selbst und hat sich bewusst dafür entschieden, Menschen bei der Einordnung der Produkte und ihrer Anwendung zu begleiten. Entscheidend ist nicht, möglichst viel zu verkaufen, sondern eine passende, verständliche und langfristig nutzbare Routine zu finden.'],
+    ['Welche Qualifikation hat Kyle im Bereich ätherische Öle?', 'Kyle ist doTERRA Wellness Advocate und doTERRA Europe Essential Oils Specialist. Diese Qualifikation unterstützt ihn dabei, Produkte, Anwendung und Sicherheitsfragen verständlich einzuordnen. Seine Beratung ersetzt keine medizinische Diagnose oder Behandlung.'],
+    ['Was bedeutet CPTG?', 'CPTG ist die von doTERRA verwendete Bezeichnung für den eigenen Qualitäts- und Prüfstandard rund um ätherische Öle. Die Bezeichnung sollte nicht als staatliche oder allgemein unabhängige Zertifizierung missverstanden werden.'],
+    ['Sind alle ätherischen Öle gleich?', 'Nein. Pflanzenart, Herkunft, Anbau, Ernte, Verarbeitung, Lagerung und Qualitätsprüfung können sich unterscheiden. Für die praktische Anwendung ist außerdem wichtig, wofür ein konkretes Produkt laut Etikett vorgesehen ist und welche Sicherheitshinweise gelten.'],
+    ['Ist Kyle Oils ein offizieller doTERRA Shop?', 'Nein. Kyle Oils ist Kyles unabhängige Informations- und Beratungsplattform. Wenn du bestellen möchtest, führen die entsprechenden Links zum offiziellen doTERRA Shop für den jeweiligen Markt.'],
+    ['Muss ich doTERRA kaufen, wenn ich Kyle eine Frage stelle?', 'Nein. Fragen, Orientierung und das erste Gespräch verpflichten dich zu keinem Kauf. Du kannst dich erst informieren, Inhalte im Wissensbereich lesen und in Ruhe entscheiden, ob ein Produkt oder ein nächster Schritt überhaupt zu dir passt.'],
+  ] },
+  { id: 'bestellung', title: 'Bestellung & Starter-Sets', items: [
+    ['Wie kann ich doTERRA Produkte bestellen?', 'Wenn du weißt, was du möchtest, kannst du über die auf Kyle Oils verlinkten offiziellen doTERRA Bestellwege starten. Wenn du unsicher bist, ist eine kurze Beratung sinnvoll, damit du nicht mehr kaufst, als du tatsächlich brauchst.'],
+    ['Brauche ich ein Starter-Set?', 'Nein. Ein Starter-Set kann einen strukturierten Einstieg erleichtern, ist aber nicht automatisch für jeden die beste Wahl. Entscheidend ist, welche Produkte du wirklich nutzen möchtest und wie groß dein Einstieg sein soll.'],
+    ['Kann ich auch einzelne Produkte kaufen?', 'Ja, einzelne Produkte können je nach Markt und Kontoart ebenfalls bestellt werden. Wenn du nur ein bestimmtes Produkt kennenlernen möchtest, muss dein Einstieg nicht größer sein als nötig.'],
+    ['Welches Starter-Set passt zu mir?', 'Das hängt davon ab, was du im Alltag wirklich nutzen möchtest. Familie und Zuhause, ein überschaubarer Einstieg, ein breiteres Set oder ein strukturiertes Wellness-System sind unterschiedliche Ausgangspunkte. Auf der Starter-Set-Seite kannst du die Optionen vergleichen und sie bei Bedarf mit Kyle einordnen.'],
+    ['Was ist ein doTERRA Kundenkonto?', 'Ein offizielles doTERRA Kundenkonto ermöglicht den Einkauf über doTERRA zu den für die jeweilige Kontoart geltenden Konditionen. Auf Kyle Oils wird das Kundenkonto vor allem als praktischer Zugang zu Produkten und persönlicher Begleitung erklärt, nicht als Verpflichtung zum Business.'],
+    ['Was ist der Unterschied zwischen Wholesale Customer und Wellness Advocate?', 'Ein Wholesale Customer nutzt doTERRA vor allem als Kunde. Ein Wellness Advocate kann zusätzlich die Business-Möglichkeit nutzen. Du musst kein Business aufbauen, nur weil du Produkte zu vergünstigten Konditionen beziehen möchtest. Vor einer Anmeldung sollten die aktuellen Kontobedingungen des jeweiligen Marktes geprüft werden.'],
+    ['Muss ich jeden Monat bestellen?', 'Ein monatlicher Auftrag sollte nicht aus Druck oder Gewohnheit entstehen. Kyle Oils erklärt das LRP Treueprogramm als Möglichkeit, die nur dann sinnvoll ist, wenn sie zu deinem tatsächlichen Bedarf passt. Aktuelle Bedingungen können je nach Markt variieren.'],
+    ['Was passiert nach meiner ersten Bestellung?', 'Dann beginnt der eigentlich wichtige Teil: die Produkte sinnvoll kennenzulernen. Kyle Oils bietet dafür einen Startbereich, einen 30-Tage-Startplan, Sicherheitswissen, Routinen und persönliche Unterstützung. Du sollst nach dem Kauf nicht mit den Produkten allein gelassen werden.'],
+  ] },
+  { id: 'beratung', title: 'Beratung & Begleitung', items: [
+    ['Ist die Beratung kostenlos?', 'Das erste Gespräch mit Kyle ist kostenlos. Wenn später ein besonderer Workshop, ein ausführliches Konzept oder ein anderes kostenpflichtiges Format sinnvoll sein sollte, wird das vorher klar und transparent besprochen.'],
+    ['Wie läuft eine Beratung ab?', 'Du meldest dich kurz mit deinem Anliegen. Kyle hört zuerst zu, ordnet deine Situation ein und erklärt dann nur die Optionen, die wirklich relevant erscheinen. Danach entscheidest du ohne Zeitdruck, ob du etwas ausprobieren, weiterlesen oder zunächst gar nichts kaufen möchtest.'],
+    ['Kann ich auch per WhatsApp oder E-Mail fragen?', 'Ja. Viele Fragen lassen sich unkompliziert schriftlich klären. Wenn ein Gespräch sinnvoller ist, könnt ihr anschließend gemeinsam entscheiden, welches Format am besten passt.'],
+    ['Kann Kyle mir helfen, wenn ich schon doTERRA Produkte habe?', 'Ja. Gerade wenn Produkte bereits zu Hause stehen, aber kaum genutzt werden, kann eine ruhige Einordnung helfen. Ziel ist zuerst, das sinnvoll zu nutzen, was du schon besitzt, bevor zusätzliche Produkte empfohlen werden.'],
+    ['Bekomme ich nach dem Kauf weiter Unterstützung?', 'Ja. Die Begleitung soll nicht mit der Bestellung enden. Fragen zur Anwendung, zu Routinen, zum Einstieg und zur sinnvollen Nutzung vorhandener Produkte können auch danach gemeinsam geklärt werden.'],
+  ] },
+  { id: 'alltag', title: 'Routinen & Alltag', items: [
+    ['Wie baue ich eine einfache Öl-Routine auf?', 'Wähle zuerst einen konkreten Alltagsmoment statt viele Produkte gleichzeitig. Eine kurze Morgenroutine, ein bewusster Duftmoment oder eine einfache Abendroutine lässt sich leichter wiederholen als ein komplizierter Plan. Wenn etwas funktioniert, kannst du später darauf aufbauen.'],
+    ['Wie oft sollte ich einen Diffuser verwenden?', 'Es gibt keine sinnvolle pauschale Dauer für jeden Raum und jede Person. Raumgröße, Lüftung, Öl, Konzentration und anwesende Menschen oder Tiere spielen eine Rolle. Kurze, bewusste Intervalle und gute Lüftung sind für den Einstieg meist sinnvoller als dauerhaftes Beduften.'],
+    ['Kann ich verschiedene ätherische Öle miteinander mischen?', 'Ja, viele Menschen kombinieren Düfte zu einfachen Mischungen. Für den Einstieg ist es sinnvoll, mit wenigen Ölen zu arbeiten und zu verstehen, wie jedes einzelne riecht und angewendet wird. Sicherheitshinweise jedes enthaltenen Öls gelten auch in einer Mischung.'],
+    ['Wo finde ich Informationen zu einem bestimmten Öl?', 'Im Öl-Lexikon von Kyle Oils findest du einzelne Öle und Mischungen mit verständlicher Einordnung zu Duftprofil, Alltag, Anwendung und wichtigen Hinweisen. Wenn eine Frage dort nicht beantwortet wird, kannst du Kyle direkt fragen.'],
+    ['Was ist der 30-Tage Öl-Startplan?', 'Der 30-Tage-Startplan ist ein ruhiger Einstieg für Menschen mit ihren ersten doTERRA Produkten. Er hilft dabei, Etiketten zu lesen, einfache Anwendungen zu testen, Fragen zu sammeln und Schritt für Schritt herauszufinden, was wirklich in den eigenen Alltag passt.'],
+  ] },
+  { id: 'workshops', title: 'Workshops & Kooperationen', items: [
+    ['Für wen sind die Workshops gedacht?', 'Workshops eignen sich für private Gruppen, Einsteiger, bestehende Nutzer und je nach Thema auch für Studios, Unternehmen, Communities oder andere Organisationen. Inhalt und Tiefe werden an die Gruppe angepasst. Es geht um verständliche Bildung und praktische Orientierung, nicht um Verkaufsdruck.'],
+    ['Welche Themen können in einem Workshop vorkommen?', 'Mögliche Themen sind Grundlagen ätherischer Öle, Duft und Diffuser, Verdünnung und sichere Anwendung, einfache Alltagsroutinen, Starter-Sets oder konkrete Fragen der Gruppe. Der Ablauf wird vorher passend zum Publikum abgestimmt.'],
+    ['Kann ich als Studio, Unternehmen oder Organisation mit Kyle zusammenarbeiten?', 'Ja, wenn das Format fachlich und zur Zielgruppe passt. Eine Zusammenarbeit kann zum Beispiel als Informationsabend, Workshop oder Bildungsformat gestaltet werden. Der konkrete Nutzen für die Teilnehmenden und eine seriöse, druckfreie Kommunikation stehen dabei im Vordergrund.'],
+  ] },
+  { id: 'business', title: 'Wellness Advocate & Business', items: [
+    ['Was ist ein doTERRA Wellness Advocate?', 'Ein Wellness Advocate kann doTERRA Produkte nutzen und zusätzlich die Möglichkeit haben, ein eigenes unabhängiges doTERRA Geschäft aufzubauen. Das ist freiwillig. Nicht jeder Kunde muss Wellness Advocate werden und nicht jeder Wellness Advocate muss ein Geschäft aufbauen.'],
+    ['Für wen kann die Business-Möglichkeit interessant sein?', 'Sie kann interessant sein, wenn jemand die Produkte wirklich kennt, gern erklärt, langfristig Beziehungen aufbauen möchte und bereit ist, verantwortungsvoll zu lernen. Sie ist nicht für Menschen gedacht, die schnelle oder garantierte Einnahmen erwarten.'],
+    ['Gibt es Einkommensgarantien?', 'Nein. Es gibt keine Garantie für Einkommen oder geschäftlichen Erfolg. Ergebnisse hängen von vielen Faktoren ab, darunter Zeit, Fähigkeiten, Markt, kontinuierliche Arbeit und persönliche Umstände. Jede Business-Entscheidung sollte ohne unrealistische Erwartungen getroffen werden.'],
+  ] },
+  { id: 'international', title: 'International', items: [
+    ['Kann Kyle Menschen außerhalb Deutschlands unterstützen?', 'Ja, persönliche Orientierung kann auch online stattfinden. Die konkrete Produktverfügbarkeit, Anmeldung und Bestellung hängen jedoch vom jeweiligen doTERRA Markt ab. Kyle kann dir helfen, den passenden offiziellen Weg für dein Land zu finden.'],
+    ['In welchen Sprachen ist die Beratung möglich?', 'Die Website und Beratung sind auf Deutsch und Englisch ausgerichtet.'],
+  ] },
+].map((category) => ({ ...category, items: category.items.map(([question, answer]) => ({ question, answer })) }));
 ---
 
-<PageLayout
-  title="Fragen, die häufig gestellt werden"
-  description="Vielleicht findest du hier bereits die Antwort auf deine Frage. Falls nicht, melde dich einfach bei mir."
->
-  <HeroSplit
-    title="Fragen, die häufig gestellt werden"
-    primaryHref={contactLinks.whatsapp.href}
-    primaryLabel="WhatsApp starten"
-    secondaryHref="/de/kontakt/"
-    secondaryLabel="Beratungsgespräch anfragen"
-    imageSrc="/assets/images/nature/nature-heath-hero-02.png"
-    imageAlt="Lüneburger Heide im warmen Morgenlicht"
-    imageWidth={1672}
-    imageHeight={941}
-    imagePosition="54% center"
-  >
-    <p>Vielleicht findest du hier bereits die Antwort auf deine Frage. Falls nicht, melde dich einfach bei mir. Ich nehme mir gerne Zeit für dein Anliegen.</p>
-  </HeroSplit>
-
-  <section class="section section--cream">
-    <div class="container faq-layout">
-      <SectionIntro title="Fragen und Antworten" />
-      <FAQAccordion items={faqItems} idPrefix="allgemeine-fragen" />
-    </div>
-  </section>
-
-  <CTASection
-    title="Noch Fragen?"
-    primaryHref={contactLinks.whatsapp.href}
-    primaryLabel="WhatsApp starten"
-    secondaryHref="/de/kontakt/"
-    secondaryLabel="Beratungsgespräch anfragen"
-  >
-    <p>Wenn deine Frage hier nicht beantwortet wurde, freue ich mich auf deine Nachricht. Gemeinsam finden wir heraus, was für dich sinnvoll sein könnte.</p>
-  </CTASection>
-
-  <section class="compliance-section">
-    <div class="container">
-      <ComplianceNote>
-        <h2>Kurzer Hinweis</h2>
-        <p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung.<br />Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
-      </ComplianceNote>
-    </div>
-  </section>
+<PageLayout title="Häufige Fragen zu ätherischen Ölen & doTERRA | Kyle Oils" description="Antworten zu ätherischen Ölen, sicherer Anwendung, doTERRA, Starter-Sets, Beratung, Workshops und Business.">
+  <HeroSplit title="Häufige Fragen" primaryHref={contactLinks.whatsapp.href} primaryLabel="WhatsApp starten" secondaryHref="/de/kontakt/" secondaryLabel="Beratungsgespräch anfragen" imageSrc="/assets/images/nature/nature-heath-hero-02.png" imageAlt="Lüneburger Heide im warmen Morgenlicht" imageWidth={1672} imageHeight={941} imagePosition="54% center"><p>Vielleicht findest du hier bereits die Antwort auf deine Frage. Falls nicht, melde dich einfach bei mir. Ich nehme mir gerne Zeit für dein Anliegen.</p></HeroSplit>
+  <section class="section section--cream"><div class="container faq-layout"><SectionIntro title="Fragen und Antworten" />{faqCategories.map((category) => (<section class="faq-category" aria-labelledby={`faq-${category.id}`}><h2 id={`faq-${category.id}`}>{category.title}</h2><FAQAccordion items={category.items} idPrefix={`allgemeine-fragen-${category.id}`} /></section>))}</div></section>
+  <section class="section"><div class="container faq-layout faq-knowledge"><SectionIntro title="Weiterführende Orientierung" /><p>Im Wissensbereich findest du vertiefende Antworten zu sicherer Anwendung, einzelnen Ölen, Routinen und Produktauswahl.</p><div class="faq-links"><a class="button button--secondary" href="/de/wissen/faq/">FAQ im Wissensbereich ansehen</a><a class="button button--secondary" href="/de/wissen/sicher-anwenden/">Sicher anwenden</a><a class="button button--secondary" href="/de/wissen/oel-lexikon/">Öl-Lexikon ansehen</a><a class="button button--secondary" href="/de/starter-sets/">Starter-Sets verstehen</a></div></div></section>
+  <CTASection title="Noch Fragen?" primaryHref={contactLinks.whatsapp.href} primaryLabel="WhatsApp starten" secondaryHref="/de/kontakt/" secondaryLabel="Beratungsgespräch anfragen"><p>Wenn deine Frage hier nicht beantwortet wurde, freue ich mich auf deine Nachricht. Gemeinsam finden wir heraus, was für dich sinnvoll sein könnte.</p></CTASection>
+  <section class="compliance-section"><div class="container"><ComplianceNote><h2>Kurzer Hinweis</h2><p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung.<br />Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p></ComplianceNote></div></section>
 </PageLayout>
 
 <style>
-  .section { padding: var(--space-64) 0; }
-  .section--cream { background: var(--color-soft-cream); }
-  .faq-layout { max-width: 920px; }
-  .compliance-section { padding: 0 0 var(--space-80); }
-  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  @media (min-width: 768px) {
-    .section { padding-block: var(--space-96); }
-  }
-  @media (min-width: 1024px) {
-    .section { padding-block: var(--space-120); }
-  }
+  .section { padding: var(--space-64) 0; } .section--cream { background: var(--color-soft-cream); } .faq-layout { max-width: 920px; } .faq-category + .faq-category { margin-top: var(--space-64); } .faq-category h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h2-mobile); } .faq-knowledge p { max-width: 68ch; margin: 0 0 var(--space-24); color: var(--color-text-secondary); } .faq-links { display: flex; flex-wrap: wrap; gap: var(--space-12); } .compliance-section { padding: 0 0 var(--space-80); } .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  @media (min-width: 768px) { .section { padding-block: var(--space-96); } .faq-category + .faq-category { margin-top: var(--space-80); } .faq-category h2 { font-size: var(--font-size-h2-desktop); } }
+  @media (min-width: 1024px) { .section { padding-block: var(--space-120); } }
 </style>
