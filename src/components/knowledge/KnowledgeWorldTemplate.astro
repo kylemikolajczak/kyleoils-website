@@ -9,7 +9,7 @@ import type { Locale } from '../../data/locales';
 
 interface Props { locale: Locale; world: KnowledgeWorld; breadcrumbs: BreadcrumbItem[]; relatedWorlds: KnowledgeWorld[]; articles?: KnowledgeArticleSummary[]; }
 const { locale, world, breadcrumbs, relatedWorlds, articles = [] } = Astro.props;
-const linkLabel = locale === 'de' ? 'Mehr erfahren' : 'Learn more';
+const linkLabel = locale === 'de' ? 'Wissenswelt öffnen' : 'Open Knowledge World';
 ---
 
 <section class="world-header">

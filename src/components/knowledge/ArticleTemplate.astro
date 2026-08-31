@@ -13,14 +13,15 @@ interface Props {
   title: string;
   intro: string;
   reviewLine?: string;
+  reviewHref?: string;
   safetyNote?: string;
   ctaLabel?: string;
   relatedLinks?: RelatedLink[];
 }
-const { locale, breadcrumbs, worldLabel, title, intro, reviewLine, safetyNote, ctaLabel, relatedLinks = [] } = Astro.props;
+const { locale, breadcrumbs, worldLabel, title, intro, reviewLine, reviewHref, safetyNote, ctaLabel, relatedLinks = [] } = Astro.props;
 ---
 
-<ArticleHeader {breadcrumbs} {worldLabel} {title} {intro} {reviewLine} />
+<ArticleHeader {breadcrumbs} {worldLabel} {title} {intro} {reviewLine} {reviewHref} />
 <article class="article-content">
   <div class="knowledge-container"><slot /></div>
 </article>

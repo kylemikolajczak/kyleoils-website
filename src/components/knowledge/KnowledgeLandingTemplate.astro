@@ -13,7 +13,7 @@ interface Props { locale: Locale; title: string; description: string; worlds: Kn
 const { locale, title, description, worlds, featuredArticles = [], recommendedStartArticles = [], searchArticles = [], startHereCard } = Astro.props;
 const contactHref = locale === 'de' ? '/de/kontakt/' : '/en/contact/';
 const worldLabel = locale === 'de' ? 'Wissenswelten' : 'Knowledge Worlds';
-const linkLabel = locale === 'de' ? 'Mehr erfahren' : 'Learn more';
+const linkLabel = locale === 'de' ? 'Wissenswelt öffnen' : 'Open Knowledge World';
 const recommendedStartTitle = locale === 'de' ? 'Empfohlener Start für Anfänger' : 'Recommended Start for Beginners';
 const recommendedStartDescription = locale === 'en' ? 'Follow these first guides if you are new to essential oils.' : undefined;
 const featuredTitle = locale === 'de' ? 'Ausgewählte Einstiege' : 'Selected Starting Points';

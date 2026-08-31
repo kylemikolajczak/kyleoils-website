@@ -16,6 +16,6 @@ const relatedWorlds = knowledgeWorlds.filter((item) => item.id !== world.id).sli
 const articles = getKnowledgeArticlesForWorld(world.id);
 ---
 
-<PageLayout title={`${world.label.de} | Wissen | Kyle Daniel Mikolajczak`} description={world.description.de}>
+<PageLayout title={world.seoTitle.de} description={world.seoDescription.de}>
   <KnowledgeWorldTemplate locale="de" {world} breadcrumbs={getKnowledgeBreadcrumbs('de', world.id)} {relatedWorlds} {articles} />
 </PageLayout>
