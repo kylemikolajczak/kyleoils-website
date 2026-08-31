@@ -38,6 +38,10 @@ const wellnessAreas = [
     imageWidth={1537}
     imageHeight={1023}
     imagePosition="75% center"
+    imageSources={[
+      { type: 'image/avif', srcset: '/assets/images/optimized/hero-kyle-640.avif 640w, /assets/images/optimized/hero-kyle-960.avif 960w, /assets/images/optimized/hero-kyle-1280.avif 1280w' },
+      { type: 'image/webp', srcset: '/assets/images/optimized/hero-kyle-640.webp 640w, /assets/images/optimized/hero-kyle-960.webp 960w, /assets/images/optimized/hero-kyle-1280.webp 1280w' },
+    ]}
   >
     <p>doTERRA verständlich kennenlernen, passende Produkte einordnen und mit einfachen Routinen starten, die wirklich zu deinem Leben passen.</p>
     <p>Ich begleite dich dabei ruhig, ehrlich und persönlich. Erst klären wir, was du brauchst. Danach schauen wir, ob ätherische Öle, Wellness-Produkte oder ein doTERRA Kundenkonto für dich sinnvoll sind.</p>
@@ -289,7 +293,7 @@ const wellnessAreas = [
   .section { padding: var(--space-64) 0; }
   .section--cream { background: var(--color-soft-cream); }
   .section--nature { position: relative; isolation: isolate; background: var(--color-soft-cream); }
-  .section--nature::before { content: ''; position: absolute; inset: 0; z-index: -2; background: url('/assets/images/nature/nature-heath-hero-01.png') center 54% / cover no-repeat; }
+  .section--nature::before { content: ''; position: absolute; inset: 0; z-index: -2; background-color: var(--color-soft-cream); background-image: image-set(url('/assets/images/optimized/nature-heath-hero-01-640.avif') type('image/avif') 1x, url('/assets/images/optimized/nature-heath-hero-01-960.avif') type('image/avif') 2x, url('/assets/images/optimized/nature-heath-hero-01-640.webp') type('image/webp') 1x, url('/assets/images/optimized/nature-heath-hero-01-960.webp') type('image/webp') 2x); background-position: center 54%; background-size: cover; background-repeat: no-repeat; }
   .section--nature::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(250 247 241 / 74%); }
   .section--sage { background: rgb(168 184 160 / 20%); }
   .knowledge-teaser { padding-block: var(--space-64); }
@@ -311,6 +315,7 @@ const wellnessAreas = [
   .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
   .compliance-section :global(p + p) { margin-top: var(--space-12); }
   @media (min-width: 768px) {
+    .section--nature::before { background-image: image-set(url('/assets/images/optimized/nature-heath-hero-01-960.avif') type('image/avif') 1x, url('/assets/images/optimized/nature-heath-hero-01-1280.avif') type('image/avif') 2x, url('/assets/images/optimized/nature-heath-hero-01-960.webp') type('image/webp') 1x, url('/assets/images/optimized/nature-heath-hero-01-1280.webp') type('image/webp') 2x); }
     .section { padding-block: var(--space-96); }
     .knowledge-teaser { padding-block: var(--space-80); }
     .knowledge-teaser__actions { flex-direction: row; flex-wrap: wrap; }
@@ -318,6 +323,7 @@ const wellnessAreas = [
     .wellness-areas__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }
   @media (min-width: 1024px) {
+    .section--nature::before { background-image: image-set(url('/assets/images/optimized/nature-heath-hero-01-1280.avif') type('image/avif') 1x, url('/assets/images/optimized/nature-heath-hero-01-1672.avif') type('image/avif') 2x, url('/assets/images/optimized/nature-heath-hero-01-1280.webp') type('image/webp') 1x, url('/assets/images/optimized/nature-heath-hero-01-1672.webp') type('image/webp') 2x); }
     .section { padding-block: var(--space-120); }
     .split-layout { grid-template-columns: minmax(0, 1fr) minmax(360px, .8fr); gap: var(--space-80); }
     .split-layout--reverse { grid-template-columns: minmax(360px, .8fr) minmax(0, 1fr); }

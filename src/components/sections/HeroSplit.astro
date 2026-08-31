@@ -13,6 +13,7 @@ interface Props {
   imageWidth: number;
   imageHeight: number;
   imagePosition?: string;
+  imageSources?: Array<{ type: string; srcset: string }>;
 }
 
 const {
@@ -26,6 +27,7 @@ const {
   imageWidth,
   imageHeight,
   imagePosition = 'center',
+  imageSources,
 } = Astro.props;
 ---
 
@@ -43,6 +45,7 @@ const {
       height={imageHeight}
       variant="portrait"
       position={imagePosition}
+      sources={imageSources}
       priority
     />
   </div>
