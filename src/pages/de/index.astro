@@ -12,14 +12,10 @@ import PageLayout from '../../layouts/PageLayout.astro';
 import { contactLinks } from '../../data/externalLinks';
 
 const wellnessAreas = [
-  { title: 'Abend & Schlafroutine', copy: 'Für eine ruhige Abendumgebung, bewusste Duftanker und einfache Routinen rund um die Schlafenszeit.' },
-  { title: 'Stressiger Alltag & innere Orientierung', copy: 'Für kleine Pausen, Duftanker und mehr Struktur an Tagen, die voll oder unruhig wirken.' },
+  { title: 'Abend, Ruhe & Duftanker', copy: 'Für eine ruhige Abendumgebung, kleine Pausen und persönliche Duftmomente an vollen Tagen.' },
   { title: 'Bewegung, Massage & Körperkomfort', copy: 'Für Massage, Pflege und Duft-Routinen nach Sport, Gartenarbeit, viel Sitzen oder aktiven Tagen.' },
-  { title: 'Bauchgefühl & Essensalltag', copy: 'Für Menschen, die Produkte und Routinen rund um Essen, Gewohnheiten und bewusste Entscheidungen besser verstehen möchten.' },
-  { title: 'Emotionale Duftanker', copy: 'Für Duft als persönlichen Anker für Stimmung, Erinnerung, Atmosphäre, Reflexion und kleine Rituale.' },
-  { title: 'Frische Raumluft', copy: 'Für klare Diffuser-Routinen, bewusstes Lüften und ein frisches Raumgefühl im Zuhause.' },
-  { title: 'Hautpflege & Pflegegefühl', copy: 'Für bewusste Pflegeroutinen und einen ruhigen Blick auf Produkte für den Alltag.' },
   { title: 'Familienalltag & sichere Anwendung', copy: 'Für Haushalte mit Kindern, Haustieren oder Besuch, in denen Sicherheit, Menge und Raumgröße wichtig sind.' },
+  { title: 'Zuhause, Alltag & Wellness-Routinen', copy: 'Für Raumduft, Hautpflege, Essensalltag und bewusste Routinen, die sich unkompliziert einfügen.' },
 ];
 ---
 
@@ -93,9 +89,8 @@ const wellnessAreas = [
     <div class="container">
       <p class="wellness-areas__eyebrow">WOFÜR MENSCHEN ORIENTIERUNG SUCHEN</p>
       <SectionIntro title="Ätherische Öle im echten Alltag einordnen">
-        <p>Viele Menschen kommen zu ätherischen Ölen, weil sie bei vier wiederkehrenden Alltagsthemen Orientierung suchen: Abend & Schlafroutine, stressiger Alltag & innere Orientierung, Bewegung, Massage & Körperkomfort sowie Bauchgefühl & Essensalltag.</p>
-        <p>Auch emotionale Duftanker, frische Raumluft, Hautpflege & Pflegegefühl und Familienalltag & sichere Anwendung spielen dabei oft eine Rolle.</p>
-        <p>Kyle Oils hilft dir, diese Bereiche ruhig und sicher einzuordnen. Ohne Heilversprechen, ohne Druck und ohne das Gefühl, sofort alles kaufen zu müssen.</p>
+        <p>Ätherische Öle beginnen für viele nicht mit einem einzelnen Produkt, sondern mit einer Alltagssituation. Diese vier Einstiegsthemen helfen dir, Möglichkeiten ruhig einzuordnen.</p>
+        <p>Wenn du tiefer einsteigen möchtest, findest du im Wissensbereich weitere Themen, Sicherheitshinweise und konkrete Orientierung.</p>
       </SectionIntro>
       <div class="wellness-areas__grid">
         {wellnessAreas.map((area) => (
@@ -110,13 +105,11 @@ const wellnessAreas = [
   <section class="section">
     <div class="container">
       <SectionIntro title="Kommt dir das bekannt vor?" />
-      <ul class="statement-grid">
+      <ul class="statement-list">
         <li>Du wünschst dir mehr Ruhe in einem vollen Alltag.</li>
-        <li>Du möchtest abends besser abschalten.</li>
-        <li>Du suchst mehr Struktur und bewusste Routinen für deinen Tag.</li>
-        <li>Du möchtest natürliche Alternativen für Haushalt, Wohlbefinden oder Familie kennenlernen.</li>
-        <li>Du interessierst dich für hochwertige Wellness-Produkte und Nahrungsergänzung nach Label und langfristige Wellness-Routinen.</li>
-        <li>Du hast von ätherischen Ölen gehört, bist aber unsicher bei Anwendung, Auswahl oder Einstieg.</li>
+        <li>Du suchst bewusstere Routinen für Abend, Zuhause oder Familie.</li>
+        <li>Du möchtest Produkte und Anwendungen verstehen, bevor du etwas auswählst.</li>
+        <li>Du hast von ätherischen Ölen gehört und möchtest ruhig und sicher beginnen.</li>
       </ul>
       <div class="section-closing">
         <p>Dann kann ein kurzes Gespräch helfen, Ordnung in die vielen Möglichkeiten zu bringen.</p>
@@ -152,14 +145,10 @@ const wellnessAreas = [
     <div class="container">
       <SectionIntro title="Was du von mir bekommst" />
       <ul class="benefit-list">
-        <li>Ein kostenloses Erstgespräch.</li>
-        <li>Eine ehrliche Einschätzung, was für dich sinnvoll sein könnte.</li>
-        <li>Verständliche Erklärung ohne Fachchinesisch.</li>
-        <li>Produktempfehlungen, wenn sie wirklich zu deinem Anliegen passen.</li>
-        <li>Einfache Routinen für Alltag, Ruhe, Energie, Familie oder Haushalt.</li>
-        <li>Hilfe beim Einstieg mit doTERRA-Produkten.</li>
-        <li>Begleitung nach dem Kauf, falls Fragen entstehen.</li>
-        <li>Zugang zu Workshops, Informationsabenden und passenden Materialien.</li>
+        <li><strong>Persönliche Orientierung</strong><span>Ein kostenloses Erstgespräch und eine ehrliche Einschätzung für deine Situation.</span></li>
+        <li><strong>Klare Produktbildung</strong><span>Verständliche Erklärungen, damit du Produktwelt, Auswahl und nächste Schritte nachvollziehen kannst.</span></li>
+        <li><strong>Ruhiger, sicherer Einstieg</strong><span>Einfache Routinen und Produktvorschläge, die zu deinem Alltag passen können.</span></li>
+        <li><strong>Begleitung, wenn Fragen entstehen</strong><span>Auch nach dem Kauf bleibe ich für Einordnung, Materialien und passende Formate erreichbar.</span></li>
       </ul>
     </div>
   </section>
@@ -304,9 +293,12 @@ const wellnessAreas = [
   .wellness-areas__grid { display: grid; gap: var(--space-16); }
   .narrow-layout { max-width: var(--container-text); }
   .split-layout { display: grid; gap: var(--space-40); align-items: center; }
-  .statement-grid, .benefit-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
-  .statement-grid li, .benefit-list li { position: relative; padding: var(--space-24) var(--space-24) var(--space-24) var(--space-48); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
-  .statement-grid li::before, .benefit-list li::before { content: ''; position: absolute; left: var(--space-20); top: 29px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-sage-green); }
+  .statement-list, .benefit-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
+  .statement-list { max-width: var(--container-text); }
+  .statement-list li { position: relative; padding: 0 0 var(--space-16) var(--space-32); border-bottom: 1px solid rgb(216 199 173 / 65%); }
+  .statement-list li::before { content: ''; position: absolute; left: 0; top: .6em; width: 9px; height: 9px; border-radius: 50%; background: var(--color-sage-green); }
+  .benefit-list li { display: grid; gap: var(--space-8); padding: var(--space-20) 0; border-top: 1px solid rgb(216 199 173 / 65%); color: var(--color-text-secondary); }
+  .benefit-list strong { color: var(--color-text-primary); font-size: 19px; }
   .section-closing { max-width: var(--container-text); margin-top: var(--space-40); }
   .section-closing > p { margin: 0 0 var(--space-24); }
   .simple-list { display: grid; gap: var(--space-8); margin: 0 0 var(--space-24); padding-left: var(--space-24); color: var(--color-text-secondary); }
@@ -319,7 +311,7 @@ const wellnessAreas = [
     .section { padding-block: var(--space-96); }
     .knowledge-teaser { padding-block: var(--space-80); }
     .knowledge-teaser__actions { flex-direction: row; flex-wrap: wrap; }
-    .statement-grid, .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24) var(--space-40); }
     .wellness-areas__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }
   @media (min-width: 1024px) {

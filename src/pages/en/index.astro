@@ -12,14 +12,10 @@ import PageLayout from '../../layouts/PageLayout.astro';
 import { contactLinks } from '../../data/externalLinks';
 
 const wellnessAreas = [
-  { title: 'Evening & Sleep Routine', copy: 'For a calm evening environment, conscious scent anchors and simple routines around bedtime.' },
-  { title: 'Stressful Days & Inner Orientation', copy: 'For small pauses, scent anchors and more structure on days that feel full or unsettled.' },
+  { title: 'Evening, Calm & Scent Anchors', copy: 'For a calm evening environment, small pauses and personal scent moments on full days.' },
   { title: 'Movement, Massage & Body Comfort', copy: 'For massage, care and scent routines after sport, gardening, long periods of sitting or active days.' },
-  { title: 'Digestive Feel & Food Routines', copy: 'For people who want to better understand products and routines around food, habits and conscious choices.' },
-  { title: 'Emotional Scent Anchors', copy: 'For scent as a personal anchor for mood, memory, atmosphere, reflection and small rituals.' },
-  { title: 'Fresh Room Air', copy: 'For clear diffuser routines, conscious airing and a fresh room feel at home.' },
-  { title: 'Skin Care & Care Feel', copy: 'For conscious care routines and a calm look at products for everyday life.' },
   { title: 'Family Everyday Life & Safe Use', copy: 'For homes with children, pets or visitors where safety, amount and room size matter.' },
+  { title: 'Home, Everyday Life & Wellness Routines', copy: 'For room scent, skin care, food routines and conscious habits that fit in naturally.' },
 ];
 ---
 
@@ -94,9 +90,8 @@ const wellnessAreas = [
     <div class="container">
       <p class="wellness-areas__eyebrow">WHAT PEOPLE LOOK FOR GUIDANCE ON</p>
       <SectionIntro title="Understanding essential oils in real everyday life">
-        <p>Many people come to essential oils because they are looking for guidance around four recurring everyday themes: evening & sleep routine, stressful days & inner orientation, movement, massage & body comfort, and digestive feel & food routines.</p>
-        <p>Emotional scent anchors, fresh room air, skin care & care feel and family everyday life & safe use often matter too.</p>
-        <p>Kyle Oils helps you place these areas calmly and safely. Without medical promises, without pressure and without feeling that you need to buy everything at once.</p>
+        <p>For many people, essential oils begin with an everyday situation rather than a single product. These four starting points help you place the possibilities calmly.</p>
+        <p>If you would like to go deeper, the Knowledge Hub offers further topics, safety guidance and practical orientation.</p>
       </SectionIntro>
       <div class="wellness-areas__grid">
         {wellnessAreas.map((area) => (
@@ -111,13 +106,11 @@ const wellnessAreas = [
   <section class="section">
     <div class="container">
       <SectionIntro title="Does This Sound Familiar?" />
-      <ul class="statement-grid">
+      <ul class="statement-list">
         <li>You would like more calm in a busy day-to-day routine.</li>
-        <li>You would like to switch off more easily in the evening.</li>
-        <li>You are looking for more structure and conscious routines in your day.</li>
-        <li>You would like to discover natural alternatives for your home, wellbeing or family.</li>
-        <li>You are interested in high-quality wellness products and supplements according to the label and long-term wellness routines.</li>
-        <li>You have heard of essential oils but are unsure about their use, selection or how to begin.</li>
+        <li>You are looking for more intentional routines for evenings, home or family life.</li>
+        <li>You would like to understand products and use before choosing anything.</li>
+        <li>You have heard of essential oils and would like to begin calmly and safely.</li>
       </ul>
       <div class="section-closing">
         <p>A short conversation can help make the many options clearer.</p>
@@ -153,14 +146,10 @@ const wellnessAreas = [
     <div class="container">
       <SectionIntro title="What You Can Expect" />
       <ul class="benefit-list">
-        <li>A free initial conversation.</li>
-        <li>An honest assessment of what may be right for you.</li>
-        <li>Clear explanations without complicated jargon.</li>
-        <li>Product recommendations when they genuinely suit your needs.</li>
-        <li>Simple routines for daily life, calm, energy, family or home.</li>
-        <li>Support as you get started with doTERRA products.</li>
-        <li>Continued support after your purchase if questions arise.</li>
-        <li>Access to workshops, information sessions and relevant materials.</li>
+        <li><strong>Personal orientation</strong><span>A free initial conversation and an honest assessment for your situation.</span></li>
+        <li><strong>Clear product education</strong><span>Plain explanations so you can understand the product range, choices and next steps.</span></li>
+        <li><strong>A calm, safety-aware start</strong><span>Simple routines and product suggestions that may fit everyday life.</span></li>
+        <li><strong>Support when questions arise</strong><span>After purchase, I remain available for orientation, materials and suitable formats.</span></li>
       </ul>
     </div>
   </section>
@@ -305,9 +294,12 @@ const wellnessAreas = [
   .wellness-areas__grid { display: grid; gap: var(--space-16); }
   .narrow-layout { max-width: var(--container-text); }
   .split-layout { display: grid; gap: var(--space-40); align-items: center; }
-  .statement-grid, .benefit-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
-  .statement-grid li, .benefit-list li { position: relative; padding: var(--space-24) var(--space-24) var(--space-24) var(--space-48); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
-  .statement-grid li::before, .benefit-list li::before { content: ''; position: absolute; left: var(--space-20); top: 29px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-sage-green); }
+  .statement-list, .benefit-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
+  .statement-list { max-width: var(--container-text); }
+  .statement-list li { position: relative; padding: 0 0 var(--space-16) var(--space-32); border-bottom: 1px solid rgb(216 199 173 / 65%); }
+  .statement-list li::before { content: ''; position: absolute; left: 0; top: .6em; width: 9px; height: 9px; border-radius: 50%; background: var(--color-sage-green); }
+  .benefit-list li { display: grid; gap: var(--space-8); padding: var(--space-20) 0; border-top: 1px solid rgb(216 199 173 / 65%); color: var(--color-text-secondary); }
+  .benefit-list strong { color: var(--color-text-primary); font-size: 19px; }
   .section-closing { max-width: var(--container-text); margin-top: var(--space-40); }
   .section-closing > p { margin: 0 0 var(--space-24); }
   .simple-list { display: grid; gap: var(--space-8); margin: 0 0 var(--space-24); padding-left: var(--space-24); color: var(--color-text-secondary); }
@@ -320,7 +312,7 @@ const wellnessAreas = [
     .section { padding-block: var(--space-96); }
     .knowledge-teaser { padding-block: var(--space-80); }
     .knowledge-teaser__actions { flex-direction: row; flex-wrap: wrap; }
-    .statement-grid, .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24) var(--space-40); }
     .wellness-areas__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
   }
   @media (min-width: 1024px) {
