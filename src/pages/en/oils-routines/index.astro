@@ -53,7 +53,7 @@ const routineTopics = [
       'This may involve scent, breathing, your surroundings, pauses or small rituals.',
       'Essential oils can be included when they are used appropriately and responsibly.',
     ],
-    cta: 'Discuss a Calming Routine',
+    href: '/en/knowledge/products-systems/adaptiv-stressful-days-scent-anchors/',
   },
   {
     title: 'Sleep & Evening Routine',
@@ -64,7 +64,7 @@ const routineTopics = [
       'This might involve a room fragrance, an established ritual, a short pause or a simple application.',
       'What matters is that the routine fits your life and does not feel like another task.',
     ],
-    cta: 'Explore an Evening Routine',
+    href: '/en/knowledge/products-systems/serenity-evening-sleep-routine-safe-context/',
   },
   {
     title: 'Energy & Focus',
@@ -75,7 +75,7 @@ const routineTopics = [
       'The aim is not to push yourself artificially.',
       'It is about creating intentional moments that can support you in daily life.',
     ],
-    cta: 'Discuss a Daytime Routine',
+    href: '/en/knowledge/routines/',
   },
   {
     title: 'Family & Everyday Life',
@@ -87,7 +87,7 @@ const routineTopics = [
       'Not every oil, application or recommendation is automatically right for every situation.',
       'I help you look calmly and clearly at what may be right for you and what to keep in mind.',
     ],
-    cta: 'Discuss a Family Routine',
+    href: '/en/knowledge/safe-use/',
   },
   {
     title: 'Home & Everyday Alternatives',
@@ -99,7 +99,7 @@ const routineTopics = [
       'Not everything needs to change immediately.',
       'A simple first step that feels right and is easy to implement is often enough.',
     ],
-    cta: 'Discuss a Natural Home Routine',
+    href: '/en/knowledge/everyday-use/',
   },
   {
     title: 'Daily Wellness & Nutritional Supplements',
@@ -110,7 +110,7 @@ const routineTopics = [
       'Honest advice is important here too.',
       'Not every product suits every person. That is why we look together at what fits your goals, daily life and current needs.',
     ],
-    cta: 'Discuss a Wellness Routine',
+    href: '/en/knowledge/products-systems/',
   },
 ];
 
@@ -228,9 +228,12 @@ const deeperKnowledgeLinks = [
         {routineTopics.map((topic) => (
           <TopicCard title={topic.title}>
             {topic.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
-            <CTAGroup primaryHref="/en/contact/" primaryLabel={topic.cta} />
+            <Button href={topic.href} variant="secondary">Explore relevant knowledge</Button>
           </TopicCard>
         ))}
+      </div>
+      <div class="topic-grid__cta">
+        <CTAGroup primaryHref="/en/contact/" primaryLabel="Place a routine with Kyle" />
       </div>
     </div>
   </section>
@@ -267,19 +270,6 @@ const deeperKnowledgeLinks = [
           <p>When you get started with doTERRA products through me, you can open an official doTERRA customer account. This allows you to purchase products at wholesale pricing and save 25% on your purchases. You also have someone you can contact for personal support.</p>
         </SectionIntro>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container narrow-layout">
-      <SectionIntro title="What Matters to Me">
-        <p>I want you to understand what you are using.</p>
-        <p>I want you to feel confident.</p>
-        <p>I do not want you to buy more than you need at the beginning.</p>
-        <p>And I want you to know how to use your products in daily life even after your purchase.</p>
-        <p>Good routines do not come from pressure.</p>
-        <p>They grow from clarity, simplicity and the right support.</p>
-      </SectionIntro>
     </div>
   </section>
 
@@ -345,7 +335,8 @@ const deeperKnowledgeLinks = [
   .topic-grid :global(.topic-card > div) { display: flex; height: calc(100% - 52px); flex-direction: column; }
   .topic-grid :global(.topic-card p) { margin: 0 0 var(--space-12); }
   .topic-grid :global(.topic-card p:last-of-type) { margin-bottom: var(--space-24); }
-  .topic-grid :global(.topic-card .cta-group) { margin-top: auto; }
+  .topic-grid :global(.topic-card .button) { margin-top: auto; }
+  .topic-grid__cta { margin-top: var(--space-32); }
   .deeper-knowledge__grid { display: grid; gap: var(--space-16); }
   .deeper-knowledge__grid :global(.button) { width: 100%; }
   .deeper-knowledge__cta { margin-top: var(--space-32); }

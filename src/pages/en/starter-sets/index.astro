@@ -19,7 +19,7 @@ const starterSets = [
     imageAlt: 'Family Essentials Kit with a selection of essential oils',
     imageWidth: 962,
     imageHeight: 1350,
-    orderLabel: 'Order the Family Essentials Kit',
+    orderLabel: 'Order in the Official doTERRA Shop',
     orderHref: starterSetLinks[0].href,
     sections: [
       {
@@ -57,7 +57,7 @@ const starterSets = [
     imageAlt: 'Home Essentials Kit with a diffuser and essential oils',
     imageWidth: 672,
     imageHeight: 256,
-    orderLabel: 'Order the Home Essentials Kit',
+    orderLabel: 'Order in the Official doTERRA Shop',
     orderHref: starterSetLinks[1].href,
     sections: [
       {
@@ -96,7 +96,7 @@ const starterSets = [
     imageAlt: 'Wellness Made Simple with products for daily wellness routines',
     imageWidth: 654,
     imageHeight: 358,
-    orderLabel: 'Order Wellness Made Simple',
+    orderLabel: 'Order in the Official doTERRA Shop',
     orderHref: starterSetLinks[2].href,
     sections: [
       {
@@ -136,7 +136,7 @@ const starterSets = [
     imageAlt: 'MetaPWR System with nutritional supplements and an essential oil blend',
     imageWidth: 3120,
     imageHeight: 1350,
-    orderLabel: 'Order the MetaPWR System',
+    orderLabel: 'Order in the Official doTERRA Shop',
     orderHref: starterSetLinks[3].href,
     sections: [
       {
@@ -173,10 +173,6 @@ const starterSets = [
 
 const decisionGuides = [
   { title: 'Which doTERRA Starter Kit Fits Me?', href: '/en/knowledge/products-systems/which-doterra-starter-kit-fits-me/' },
-  { title: 'Introductory Kit or Enrolment Kit?', href: '/en/knowledge/products-systems/introductory-kit-or-enrolment-kit/' },
-  { title: 'Family Essentials Kit: Safe Context', href: '/en/knowledge/products-systems/family-essentials-kit-safe-context/' },
-  { title: 'Home Essentials Kit: Strong Start or Too Much?', href: '/en/knowledge/products-systems/home-essentials-kit-strong-start-or-too-much/' },
-  { title: 'Wholesale Customer or Wellness Advocate?', href: '/en/knowledge/products-systems/wholesale-customer-or-wellness-advocate/' },
   { title: 'LRP Loyalty Program Explained Calmly', href: '/en/knowledge/products-systems/lrp-loyalty-program-explained-calmly/' },
   { title: 'doTERRA Customer Account Explained Simply', href: '/en/knowledge/products-systems/doterra-customer-account-explained-simply/' },
 ];
@@ -235,7 +231,7 @@ const decisionGuides = [
             orderHref={set.orderHref}
             orderLabel={set.orderLabel}
             consultationHref="/en/contact/"
-            consultationLabel="Speak with Kyle First"
+            consultationLabel="Choose with Kyle"
           >
             <p class="starter-set-lead"><strong>{set.lead}</strong></p>
             {set.sections.map((section) => (
@@ -310,64 +306,6 @@ const decisionGuides = [
         </SectionIntro>
         <CTAGroup primaryHref="/en/30-day-start-plan/" primaryLabel="View 30-Day Start Plan" />
       </article>
-    </div>
-  </section>
-
-  <section class="section section--cream">
-    <div class="container narrow-layout">
-      <SectionIntro title="Why a Starter Kit Can Make Sense">
-        <p>A starter kit can provide a clear, structured introduction to doTERRA products.</p>
-        <p>You receive a clear starting option without having to navigate the entire product range straight away.</p>
-        <p>This is particularly helpful if you:</p>
-      </SectionIntro>
-      <ul class="check-list">
-        <li>want to explore doTERRA products seriously</li>
-        <li>do not want to test just one individual product</li>
-        <li>are looking for a simple basic selection</li>
-        <li>want to begin for family life, daily routines or wellness</li>
-        <li>would like support with your order</li>
-        <li>would prefer help deciding which kit is right</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section section--cream">
-    <div class="container narrow-layout">
-      <SectionIntro title="Not Sure Which Option Is Right for You?">
-        <p>These four starter options offer a considered way to begin. Other kits are also available, for example for children, families or particular areas of focus.</p>
-        <p>If you are unsure which kit genuinely suits you, simply send me a brief message. Together, we can identify which starting point fits your daily routine and goals.</p>
-      </SectionIntro>
-      <CTAGroup primaryHref="/en/contact/" primaryLabel="Get Personal Advice on a Starter Kit" />
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container split-copy">
-      <SectionIntro title="Which Starter Kit Suits You?">
-        <p>If you want to keep it simple, we begin with your daily routine.</p>
-        <p>Is your focus mainly on family and home?</p>
-        <p>Then Family Essentials or Home Essentials could be of interest.</p>
-        <p>Is your focus more on structured wellness routines?</p>
-        <p>Then Wellness Made Simple may be the right choice.</p>
-        <p>Are you specifically interested in MetaPWR?</p>
-        <p>Then we look at whether the system suits your goals and daily routine.</p>
-        <p>You do not have to make this decision alone.</p>
-        <p>A brief message is enough, and I will help you assess the options.</p>
-      </SectionIntro>
-      <div>
-        <SectionIntro title="Order Directly or Speak First?">
-          <p>You can order directly through the official links if you are certain.</p>
-          <p>If you still have questions, it is better to speak with me briefly first.</p>
-          <p>A short conversation can be especially helpful at the beginning:</p>
-        </SectionIntro>
-        <ul class="check-list">
-          <li>so that you choose the right kit</li>
-          <li>so that you understand how to begin</li>
-          <li>so that you know how to use the products purposefully</li>
-          <li>so that you understand your official customer account</li>
-          <li>so that you do not buy more than you need at the beginning</li>
-        </ul>
-      </div>
     </div>
   </section>
 

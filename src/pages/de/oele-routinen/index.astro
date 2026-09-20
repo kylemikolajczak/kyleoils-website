@@ -53,7 +53,7 @@ const routineTopics = [
       'Dabei kann es um Duft, Atmung, Umgebung, Pausen oder kleine Rituale gehen.',
       'Ätherische Öle können hier ein Teil der Routine sein, wenn sie passend und verantwortungsvoll eingesetzt werden.',
     ],
-    cta: 'Ruhe-Routine besprechen',
+    href: '/de/wissen/produkte-systeme/adaptiv-stressiger-alltag-duftanker/',
   },
   {
     title: 'Schlaf & Abendroutine',
@@ -64,7 +64,7 @@ const routineTopics = [
       'Das kann zum Beispiel über Raumduft, ein festes Ritual, eine kurze Pause oder eine einfache Anwendung geschehen.',
       'Wichtig ist, dass die Routine zu deinem Leben passt und nicht wie eine weitere Aufgabe wirkt.',
     ],
-    cta: 'Abendroutine einordnen lassen',
+    href: '/de/wissen/produkte-systeme/serenity-abend-schlafroutine-sicher-einordnen/',
   },
   {
     title: 'Energie & Fokus',
@@ -75,7 +75,7 @@ const routineTopics = [
       'Es geht nicht darum, sich künstlich zu pushen.',
       'Es geht darum, bewusste Momente zu schaffen, die dich in deinem Alltag unterstützen können.',
     ],
-    cta: 'Tagesroutine besprechen',
+    href: '/de/wissen/routinen/',
   },
   {
     title: 'Familie & Alltag',
@@ -87,7 +87,7 @@ const routineTopics = [
       'Nicht jedes Öl, jede Anwendung oder jede Empfehlung passt automatisch für jede Situation.',
       'Ich helfe dir dabei, ruhig und verständlich zu schauen, was sinnvoll sein kann und worauf du achten solltest.',
     ],
-    cta: 'Familienroutine besprechen',
+    href: '/de/wissen/sicher-anwenden/',
   },
   {
     title: 'Haushalt & natürliche Alternativen',
@@ -99,7 +99,7 @@ const routineTopics = [
       'Nicht alles muss sofort umgestellt werden.',
       'Oft reicht ein einfacher erster Schritt, der sich gut anfühlt und leicht umsetzen lässt.',
     ],
-    cta: 'Natürliche Haushaltsroutine besprechen',
+    href: '/de/wissen/alltag/',
   },
   {
     title: 'Nahrungsergänzung & langfristige Wellness',
@@ -110,7 +110,7 @@ const routineTopics = [
       'Wichtig ist auch hier eine ehrliche Einordnung.',
       'Nicht jedes Produkt passt zu jedem Menschen. Deshalb schaue ich mit dir, was zu deinem Ziel, deinem Alltag und deinem aktuellen Einstieg passt.',
     ],
-    cta: 'Wellness-Routine besprechen',
+    href: '/de/wissen/produkte-systeme/',
   },
 ];
 
@@ -227,9 +227,12 @@ const deeperKnowledgeLinks = [
         {routineTopics.map((topic) => (
           <TopicCard title={topic.title}>
             {topic.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
-            <CTAGroup primaryHref="/de/kontakt/" primaryLabel={topic.cta} />
+            <Button href={topic.href} variant="secondary">Passendes Wissen ansehen</Button>
           </TopicCard>
         ))}
+      </div>
+      <div class="topic-grid__cta">
+        <CTAGroup primaryHref="/de/kontakt/" primaryLabel="Routine mit Kyle einordnen" />
       </div>
     </div>
   </section>
@@ -266,19 +269,6 @@ const deeperKnowledgeLinks = [
           <p>Wenn du über mich startest, erhältst du mit einem offiziellen doTERRA Kundenkonto Produkte zum Einkaufspreis und sparst 25 % auf deine Einkäufe. Gleichzeitig hast du einen persönlichen Ansprechpartner an deiner Seite.</p>
         </SectionIntro>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container narrow-layout">
-      <SectionIntro title="Was mir wichtig ist">
-        <p>Ich möchte, dass du verstehst, was du nutzt.</p>
-        <p>Ich möchte, dass du dich sicher fühlst.</p>
-        <p>Ich möchte, dass du nicht mehr kaufst, als für deinen Einstieg sinnvoll ist.</p>
-        <p>Und ich möchte, dass du auch nach dem Kauf weißt, wie du deine Produkte im Alltag einsetzen kannst.</p>
-        <p>Gute Routinen entstehen nicht durch Druck.</p>
-        <p>Sie entstehen durch Klarheit, Einfachheit und passende Begleitung.</p>
-      </SectionIntro>
     </div>
   </section>
 
@@ -344,7 +334,8 @@ const deeperKnowledgeLinks = [
   .topic-grid :global(.topic-card > div) { display: flex; height: calc(100% - 52px); flex-direction: column; }
   .topic-grid :global(.topic-card p) { margin: 0 0 var(--space-12); }
   .topic-grid :global(.topic-card p:last-of-type) { margin-bottom: var(--space-24); }
-  .topic-grid :global(.topic-card .cta-group) { margin-top: auto; }
+  .topic-grid :global(.topic-card .button) { margin-top: auto; }
+  .topic-grid__cta { margin-top: var(--space-32); }
   .deeper-knowledge__grid { display: grid; gap: var(--space-16); }
   .deeper-knowledge__grid :global(.button) { width: 100%; }
   .deeper-knowledge__cta { margin-top: var(--space-32); }

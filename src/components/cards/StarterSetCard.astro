@@ -42,8 +42,8 @@ const {
     <h3>{title}</h3>
     <div class="starter-set-card__copy"><slot /></div>
     <div class="starter-set-card__actions">
-      <LinkButton href={orderHref} variant="primary">{orderLabel}</LinkButton>
-      <Button href={consultationHref} variant="secondary">{consultationLabel}</Button>
+      <Button href={consultationHref}>{consultationLabel}</Button>
+      <LinkButton href={orderHref} variant="secondary">{orderLabel}</LinkButton>
     </div>
   </div>
 </article>

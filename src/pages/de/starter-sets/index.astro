@@ -19,7 +19,7 @@ const starterSets = [
     imageAlt: 'Family Essentials Kit mit einer Auswahl ätherischer Öle',
     imageWidth: 962,
     imageHeight: 1350,
-    orderLabel: 'Family Essentials Kit bestellen',
+    orderLabel: 'Direkt im offiziellen Shop bestellen',
     orderHref: starterSetLinks[0].href,
     sections: [
       {
@@ -57,7 +57,7 @@ const starterSets = [
     imageAlt: 'Home Essentials Kit mit Diffuser und ätherischen Ölen',
     imageWidth: 672,
     imageHeight: 256,
-    orderLabel: 'Home Essentials Kit bestellen',
+    orderLabel: 'Direkt im offiziellen Shop bestellen',
     orderHref: starterSetLinks[1].href,
     sections: [
       {
@@ -96,7 +96,7 @@ const starterSets = [
     imageAlt: 'Wellness Made Simple mit Produkten für tägliche Wellness-Routinen',
     imageWidth: 654,
     imageHeight: 358,
-    orderLabel: 'Wellness Made Simple bestellen',
+    orderLabel: 'Direkt im offiziellen Shop bestellen',
     orderHref: starterSetLinks[2].href,
     sections: [
       {
@@ -136,7 +136,7 @@ const starterSets = [
     imageAlt: 'MetaPWR System mit Nahrungsergänzung und ätherischer Ölmischung',
     imageWidth: 3120,
     imageHeight: 1350,
-    orderLabel: 'MetaPWR System bestellen',
+    orderLabel: 'Direkt im offiziellen Shop bestellen',
     orderHref: starterSetLinks[3].href,
     sections: [
       {
@@ -173,10 +173,6 @@ const starterSets = [
 
 const decisionGuides = [
   { title: 'Welches doTERRA Starter-Set passt zu mir?', href: '/de/wissen/produkte-systeme/welches-doterra-starter-set-passt-zu-mir/' },
-  { title: 'Introductory Kit oder Einschreibungs-Kit?', href: '/de/wissen/produkte-systeme/introductory-kit-oder-einschreibungs-kit/' },
-  { title: 'Family Essentials Kit sicher einordnen', href: '/de/wissen/produkte-systeme/family-essentials-kit-sicher-einordnen/' },
-  { title: 'Home Essentials Kit: großer Einstieg oder zu viel?', href: '/de/wissen/produkte-systeme/home-essentials-kit-grosser-einstieg-oder-zu-viel/' },
-  { title: 'Wholesale Customer oder Wellness Advocate?', href: '/de/wissen/produkte-systeme/wholesale-customer-oder-wellness-advocate/' },
   { title: 'LRP Treueprogramm ruhig erklärt', href: '/de/wissen/produkte-systeme/lrp-treueprogramm-ruhig-erklaert/' },
   { title: 'doTERRA Kundenkonto einfach erklärt', href: '/de/wissen/produkte-systeme/doterra-kundenkonto-einfach-erklaert/' },
 ];
@@ -234,7 +230,7 @@ const decisionGuides = [
             orderHref={set.orderHref}
             orderLabel={set.orderLabel}
             consultationHref="/de/kontakt/"
-            consultationLabel="Vorher mit Kyle sprechen"
+            consultationLabel="Mit Kyle einordnen"
           >
             <p class="starter-set-lead"><strong>{set.lead}</strong></p>
             {set.sections.map((section) => (
@@ -309,64 +305,6 @@ const decisionGuides = [
         </SectionIntro>
         <CTAGroup primaryHref="/de/30-tage-startplan/" primaryLabel="30-Tage-Startplan ansehen" />
       </article>
-    </div>
-  </section>
-
-  <section class="section section--cream">
-    <div class="container narrow-layout">
-      <SectionIntro title="Warum ein Starter-Set sinnvoll sein kann">
-        <p>Ein Starter-Set kann dir helfen, strukturiert in die doTERRA-Produktwelt einzusteigen.</p>
-        <p>Du bekommst eine klare Startoption und musst dich nicht direkt durch die gesamte Produktwelt klicken.</p>
-        <p>Das ist besonders hilfreich, wenn du:</p>
-      </SectionIntro>
-      <ul class="check-list">
-        <li>doTERRA ernsthaft kennenlernen möchtest</li>
-        <li>nicht nur ein einzelnes Produkt testen willst</li>
-        <li>eine einfache Grundauswahl suchst</li>
-        <li>für Familie, Alltag oder Wellness starten möchtest</li>
-        <li>eine geführte Bestellmöglichkeit möchtest</li>
-        <li>nicht allein entscheiden willst, welches Set passt</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section section--cream">
-    <div class="container narrow-layout">
-      <SectionIntro title="Nicht das Richtige gefunden?">
-        <p>Diese vier Starter-Optionen sind ausgewählte Möglichkeiten für den Einstieg. Daneben gibt es weitere Sets, zum Beispiel für Kinder, Familien oder besondere Schwerpunkte.</p>
-        <p>Wenn du unsicher bist, welches Set wirklich zu dir passt, schreib mir einfach kurz. Gemeinsam können wir einordnen, welcher Einstieg zu deinem Alltag und deinen Zielen passt.</p>
-      </SectionIntro>
-      <CTAGroup primaryHref="/de/kontakt/" primaryLabel="Starter-Set persönlich einordnen lassen" />
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container split-copy">
-      <SectionIntro title="Welches Starter-Set passt zu dir?">
-        <p>Wenn du es einfach halten möchtest, starten wir mit deinem Alltag.</p>
-        <p>Geht es dir eher um Familie und Zuhause?</p>
-        <p>Dann könnten Family Essentials oder Home Essentials interessant sein.</p>
-        <p>Geht es dir eher um bewusste Wellness-Routinen?</p>
-        <p>Dann kann Wellness Made Simple passend sein.</p>
-        <p>Interessierst du dich gezielt für MetaPWR?</p>
-        <p>Dann schauen wir, ob das System zu deinem Ziel und deinem Alltag passt.</p>
-        <p>Du musst diese Entscheidung nicht allein treffen.</p>
-        <p>Eine kurze Nachricht reicht und ich helfe dir, die Optionen sinnvoll einzuordnen.</p>
-      </SectionIntro>
-      <div>
-        <SectionIntro title="Direkt bestellen oder vorher sprechen?">
-          <p>Du kannst direkt über die offiziellen Links bestellen, wenn du dir sicher bist.</p>
-          <p>Wenn du noch Fragen hast, ist es besser, vorher kurz mit mir zu sprechen.</p>
-          <p>Gerade am Anfang kann eine kurze Einordnung helfen:</p>
-        </SectionIntro>
-        <ul class="check-list">
-          <li>damit du das richtige Set wählst</li>
-          <li>damit du den Einstieg verstehst</li>
-          <li>damit du weißt, wie du die Produkte sinnvoll nutzt</li>
-          <li>damit du dein offizielles Kundenkonto richtig einordnen kannst</li>
-          <li>damit du nicht mehr kaufst, als für deinen Start sinnvoll ist</li>
-        </ul>
-      </div>
     </div>
   </section>
 
