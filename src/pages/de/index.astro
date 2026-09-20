@@ -1,5 +1,4 @@
 ---
-import ComplianceNote from '../../components/compliance/ComplianceNote.astro';
 import CTAGroup from '../../components/cta/CTAGroup.astro';
 import CTASection from '../../components/cta/CTASection.astro';
 import Button from '../../components/global/Button.astro';
@@ -59,7 +58,7 @@ const wellnessAreas = [
   </section>
 
   <section class="section section--nature">
-    <div class="container narrow-layout">
+    <div class="container narrow-layout" data-reveal>
       <SectionIntro title="Erst verstehen. Dann entscheiden.">
         <p>Vielleicht hast du schon von ätherischen Ölen gehört, weißt aber nicht, womit du anfangen sollst.</p>
         <p>Vielleicht möchtest du bewusster leben, deinen Alltag natürlicher gestalten oder hochwertige Produkte kennenlernen, ohne dich direkt durch einen Shop zu klicken.</p>
@@ -70,7 +69,7 @@ const wellnessAreas = [
   </section>
 
   <section class="section section--sage knowledge-teaser">
-    <div class="container knowledge-teaser__inner">
+    <div class="container knowledge-teaser__inner" data-reveal>
       <p class="knowledge-teaser__eyebrow">WISSEN, BEVOR DU KAUFST</p>
       <SectionIntro title="Lies dich ein. Entscheide ruhiger.">
         <p>Auf Kyle Oils findest du klare Grundlagen, sichere Anwendung, einfache Routinen, Ölprofile, Starter-Set Orientierung und Produktwissen rund um doTERRA.</p>
@@ -86,7 +85,7 @@ const wellnessAreas = [
   </section>
 
   <section class="section section--cream wellness-areas">
-    <div class="container">
+    <div class="container" data-reveal>
       <p class="wellness-areas__eyebrow">WOFÜR MENSCHEN ORIENTIERUNG SUCHEN</p>
       <SectionIntro title="Ätherische Öle im echten Alltag einordnen">
         <p>Ätherische Öle beginnen für viele nicht mit einem einzelnen Produkt, sondern mit einer Alltagssituation. Diese vier Einstiegsthemen helfen dir, Möglichkeiten ruhig einzuordnen.</p>
@@ -102,24 +101,8 @@ const wellnessAreas = [
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <SectionIntro title="Kommt dir das bekannt vor?" />
-      <ul class="statement-list">
-        <li>Du wünschst dir mehr Ruhe in einem vollen Alltag.</li>
-        <li>Du suchst bewusstere Routinen für Abend, Zuhause oder Familie.</li>
-        <li>Du möchtest Produkte und Anwendungen verstehen, bevor du etwas auswählst.</li>
-        <li>Du hast von ätherischen Ölen gehört und möchtest ruhig und sicher beginnen.</li>
-      </ul>
-      <div class="section-closing">
-        <p>Dann kann ein kurzes Gespräch helfen, Ordnung in die vielen Möglichkeiten zu bringen.</p>
-        <CTAGroup primaryHref="/de/kontakt/" primaryLabel="Herausfinden, was zu dir passt" />
-      </div>
-    </div>
-  </section>
-
   <section class="section section--cream">
-    <div class="container split-layout">
+    <div class="container split-layout" data-reveal>
       <div>
         <SectionIntro title="Beratung, die bei dir beginnt">
           <p>Meine Beratung startet nicht mit einer Produktliste.</p>
@@ -181,7 +164,7 @@ const wellnessAreas = [
   </section>
 
   <section class="section">
-    <div class="container split-layout">
+    <div class="container split-layout" data-reveal>
       <div>
         <SectionIntro title="doTERRA verständlich erklärt">
           <p>doTERRA ist ein internationales Unternehmen für ätherische Öle und Wellness-Produkte.</p>
@@ -274,13 +257,9 @@ const wellnessAreas = [
     <p>Dann finden wir den nächsten sinnvollen Schritt.</p>
   </CTASection>
 
-  <section class="compliance-section">
-    <div class="container">
-      <ComplianceNote>
-        <h2>Kurzer Hinweis</h2>
-        <p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung.<br />Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
-        <p>Mein Fokus liegt auf verständlicher Orientierung, natürlichen Alltagsroutinen, hochwertiger Produktinformation und persönlicher Begleitung.</p>
-      </ComplianceNote>
+  <section class="homepage-note" aria-label="Hinweis">
+    <div class="container homepage-note__inner">
+      <p><strong>Hinweis:</strong> Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung. Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen. Mein Fokus liegt auf verständlicher Orientierung, natürlichen Alltagsroutinen, hochwertiger Produktinformation und persönlicher Begleitung.</p>
     </div>
   </section>
 </PageLayout>
@@ -301,19 +280,14 @@ const wellnessAreas = [
   .wellness-areas__grid { display: grid; gap: var(--space-16); }
   .narrow-layout { max-width: var(--container-text); }
   .split-layout { display: grid; gap: var(--space-40); align-items: center; }
-  .statement-list, .benefit-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
-  .statement-list { max-width: var(--container-text); }
-  .statement-list li { position: relative; padding: 0 0 var(--space-16) var(--space-32); border-bottom: 1px solid rgb(216 199 173 / 65%); }
-  .statement-list li::before { content: ''; position: absolute; left: 0; top: .6em; width: 9px; height: 9px; border-radius: 50%; background: var(--color-sage-green); }
+  .benefit-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
   .benefit-list li { display: grid; gap: var(--space-8); padding: var(--space-20) 0; border-top: 1px solid rgb(216 199 173 / 65%); color: var(--color-text-secondary); }
   .benefit-list strong { color: var(--color-text-primary); font-size: 19px; }
-  .section-closing { max-width: var(--container-text); margin-top: var(--space-40); }
-  .section-closing > p { margin: 0 0 var(--space-24); }
   .simple-list { display: grid; gap: var(--space-8); margin: 0 0 var(--space-24); padding-left: var(--space-24); color: var(--color-text-secondary); }
   .simple-list + p { margin: 0 0 var(--space-32); }
-  .compliance-section { padding: 0 0 var(--space-80); }
-  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  .compliance-section :global(p + p) { margin-top: var(--space-12); }
+  .homepage-note { padding: 0 0 var(--space-48); background: var(--color-warm-white); }
+  .homepage-note__inner { max-width: var(--container-text); padding-top: var(--space-24); border-top: 1px solid rgb(216 199 173 / 65%); color: var(--color-text-secondary); font-size: var(--font-size-small); line-height: var(--line-height-small); }
+  .homepage-note p { margin: 0; }
   @media (min-width: 768px) {
     .section--nature::before { background-image: image-set(url('/assets/images/optimized/nature-heath-hero-01-960.avif') type('image/avif') 1x, url('/assets/images/optimized/nature-heath-hero-01-1280.avif') type('image/avif') 2x, url('/assets/images/optimized/nature-heath-hero-01-960.webp') type('image/webp') 1x, url('/assets/images/optimized/nature-heath-hero-01-1280.webp') type('image/webp') 2x); }
     .section { padding-block: var(--space-96); }
