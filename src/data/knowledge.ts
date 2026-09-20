@@ -141,10 +141,10 @@ export const knowledgeWorlds: KnowledgeWorld[] = [
   },
   {
     id: 'faq',
-    label: { de: 'FAQ', en: 'FAQ' },
+    label: { de: 'Fragen im Detail', en: 'Questions in Depth' },
     description: {
-      de: 'Häufige Fragen klar und ruhig beantwortet.',
-      en: 'Common questions answered clearly and calmly.',
+      de: 'Vertiefende Antworten zu häufigen Fragen rund um Öle, Routinen und Produktauswahl.',
+      en: 'In-depth answers to common questions about oils, routines and product choice.',
     },
     seoTitle: { de: 'FAQ zu ätherischen Ölen & doTERRA | Kyle Oils', en: 'Essential Oil & doTERRA Knowledge FAQs | Kyle Oils' },
     seoDescription: {
@@ -152,8 +152,8 @@ export const knowledgeWorlds: KnowledgeWorld[] = [
       en: 'Answers to common questions about use, safety, products, starter kits, guidance and getting started with doTERRA.',
     },
     intro: {
-      de: 'Hier findest du häufige Fragen rund um ätherische Öle, Routinen, Sicherheit und Produktauswahl übersichtlich gebündelt.',
-      en: 'Here you will find common questions about essential oils, routines, safety and product choice gathered in one place.',
+      de: 'Hier findest du vertiefende Antworten rund um ätherische Öle, Routinen, Sicherheit und Produktauswahl.',
+      en: 'Here you will find in-depth answers about essential oils, routines, safety and product choice.',
     },
     href: { de: '/de/wissen/faq/', en: '/en/knowledge/faq/' },
   },

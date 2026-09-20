@@ -26,7 +26,17 @@ const independenceNote = locale === 'de'
       </div>
     </div>
     <nav aria-label={labels.main}><h2>{labels.mainTitle}</h2><ul>{data.primaryNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
-    <nav aria-label={labels.offersAndKnowledge}><h2>{labels.offersAndKnowledge}</h2><ul>{data.offersAndKnowledge.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
+    <nav aria-label={labels.offersAndKnowledge}>
+      <h2>{labels.offersAndKnowledge}</h2>
+      <div class="footer-link-groups">
+        {data.offersAndKnowledgeGroups.map((group) => (
+          <section class="footer-link-group">
+            <h3>{group.label}</h3>
+            <ul>{group.links.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul>
+          </section>
+        ))}
+      </div>
+    </nav>
     <nav aria-label={labels.contactAndOfficial}>
       <h2>{labels.contactAndOfficial}</h2>
       <ul class="footer-contact-links">{data.contactLinks.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul>
@@ -53,6 +63,8 @@ const independenceNote = locale === 'de'
   .footer-brand strong { display: block; }
   .footer-brand strong + p { margin-top: var(--space-8); }
   h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-body-mobile); }
+  .footer-link-groups { display: grid; gap: var(--space-24); }
+  .footer-link-group h3 { margin: 0 0 var(--space-12); color: var(--color-linen); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .04em; text-transform: uppercase; }
   p { margin: 0; color: var(--color-linen); }
   .footer-brand p + p { margin-top: var(--space-12); }
   ul { display: grid; gap: var(--space-12); margin: 0; padding: 0; list-style: none; }

@@ -3,16 +3,14 @@ import ComplianceNote from '../../../components/compliance/ComplianceNote.astro'
 import CTAGroup from '../../../components/cta/CTAGroup.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
 import Button from '../../../components/global/Button.astro';
-import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 
 const steps = [
   {
     title: 'Schritt 1: Verstehen, was doTERRA eigentlich ist',
     intro: 'Bevor du ein Set auswählst oder Öle anwendest, hilft ein ruhiger Überblick.',
-    linkLabel: 'Lies zuerst:',
-    links: [
-      { label: 'doTERRA verstehen', href: '/de/doterra-verstehen/' },
+    primaryLink: { label: 'doTERRA verstehen', href: '/de/doterra-verstehen/' },
+    moreLinks: [
       { label: 'Wholesale Customer oder Wellness Advocate?', href: '/de/wissen/produkte-systeme/wholesale-customer-oder-wellness-advocate/' },
       { label: 'doTERRA Kundenkonto einfach erklärt', href: '/de/wissen/produkte-systeme/doterra-kundenkonto-einfach-erklaert/' },
     ],
@@ -21,9 +19,8 @@ const steps = [
   {
     title: 'Schritt 2: Das richtige Starter-Set einordnen',
     intro: 'Nicht jeder braucht sofort ein großes Set. Nicht jedes Set passt zu jedem Alltag.',
-    linkLabel: 'Lies als Nächstes:',
-    links: [
-      { label: 'Welches doTERRA Starter-Set passt zu mir?', href: '/de/wissen/produkte-systeme/welches-doterra-starter-set-passt-zu-mir/' },
+    primaryLink: { label: 'Welches doTERRA Starter-Set passt zu mir?', href: '/de/wissen/produkte-systeme/welches-doterra-starter-set-passt-zu-mir/' },
+    moreLinks: [
       { label: 'Introductory Kit oder Einschreibungs-Kit?', href: '/de/wissen/produkte-systeme/introductory-kit-oder-einschreibungs-kit/' },
       { label: 'Family Essentials Kit sicher einordnen', href: '/de/wissen/produkte-systeme/family-essentials-kit-sicher-einordnen/' },
       { label: 'Home Essentials Kit: großer Einstieg oder zu viel?', href: '/de/wissen/produkte-systeme/home-essentials-kit-grosser-einstieg-oder-zu-viel/' },
@@ -33,9 +30,8 @@ const steps = [
   {
     title: 'Schritt 3: Sicherheit zuerst',
     intro: 'Ätherische Öle sind konzentriert. Deshalb ist sichere Anwendung ein Teil der Routine.',
-    linkLabel: 'Lies besonders:',
-    links: [
-      { label: 'Ätherische Öle sicher anwenden', href: '/de/wissen/sicher-anwenden/' },
+    primaryLink: { label: 'Ätherische Öle sicher anwenden', href: '/de/wissen/sicher-anwenden/' },
+    moreLinks: [
       { label: 'Verdünnung einfach erklärt', href: '/de/wissen/sicher-anwenden/aetherische-oele-richtig-verduennen/' },
       { label: 'Patch Test', href: '/de/wissen/sicher-anwenden/patch-test-einfach-erklaert/' },
       { label: 'Starke Öle und Hot Oils', href: '/de/wissen/sicher-anwenden/starke-oele-sicher-einordnen/' },
@@ -46,9 +42,8 @@ const steps = [
   {
     title: 'Schritt 4: Die ersten 30 Tage ruhig starten',
     intro: 'Wenn deine Öle da sind, beginnt der eigentliche Einstieg.',
-    linkLabel: 'Lies:',
-    links: [
-      { label: 'Die ersten 30 Tage mit doTERRA: ruhig starten', href: '/de/wissen/routinen/erste-30-tage-mit-doterra-ruhig-starten/' },
+    primaryLink: { label: 'Die ersten 30 Tage mit doTERRA: ruhig starten', href: '/de/wissen/routinen/erste-30-tage-mit-doterra-ruhig-starten/' },
+    moreLinks: [
       { label: 'Woche 1: Öle auspacken, Labels lesen, Fragen sammeln', href: '/de/wissen/routinen/woche-1-oele-auspacken-labels-lesen-fragen-sammeln/' },
       { label: 'Woche 1: Diffuser-Routine ohne Überforderung', href: '/de/wissen/routinen/woche-1-diffuser-routine-ohne-ueberforderung/' },
       { label: 'Woche 2: Eine Abendroutine mit Ölen aufbauen', href: '/de/wissen/routinen/woche-2-abendroutine-mit-oelen-aufbauen/' },
@@ -60,9 +55,8 @@ const steps = [
   {
     title: 'Schritt 5: Alltag und Zuhause',
     intro: 'Wenn die Grundlagen sitzen, kannst du Öle in kleine Alltagsmomente einbauen.',
-    linkLabel: 'Gute Startpunkte:',
-    links: [
-      { label: '5-Minuten Raum-Reset', href: '/de/wissen/routinen/5-minuten-raum-reset-lueften-ordnen-sanft-beduften/' },
+    primaryLink: { label: '5-Minuten Raum-Reset', href: '/de/wissen/routinen/5-minuten-raum-reset-lueften-ordnen-sanft-beduften/' },
+    moreLinks: [
       { label: 'Küche nach dem Kochen', href: '/de/wissen/routinen/kueche-nach-dem-kochen-duft-neu-ausrichten/' },
       { label: 'Bad und Gästebad', href: '/de/wissen/routinen/bad-und-gaestebad-frisch-wirken-ohne-zu-viel-duft/' },
       { label: 'Gäste zu Hause', href: '/de/wissen/routinen/gaeste-zu-hause-duftetikette-mit-aetherischen-oelen/' },
@@ -106,9 +100,13 @@ const questions = [
           <div class="academy-step__content">
             <h2>{step.title}</h2>
             <p>{step.intro}</p>
-            <h3>{step.linkLabel}</h3>
-            <div class="academy-step__links">
-              {step.links.map((link) => <a href={link.href}>{link.label}</a>)}
+            <h3>Empfohlener nächster Schritt</h3>
+            <a class="academy-step__primary-link" href={step.primaryLink.href}>{step.primaryLink.label}</a>
+            <div class="academy-step__more-links">
+              <h3>Mehr dazu</h3>
+              <div class="academy-step__links">
+                {step.moreLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+              </div>
             </div>
             <p class="academy-step__goal"><strong>Ziel:</strong> {step.goal}</p>
           </div>
@@ -171,7 +169,11 @@ const questions = [
   h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
   .academy-step__content > p { margin: 0 0 var(--space-20); color: var(--color-text-secondary); }
   h3 { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  .academy-step__links { display: grid; gap: var(--space-12); margin-bottom: var(--space-24); }
+  .academy-step__primary-link { display: flex; align-items: center; min-height: 52px; margin-bottom: var(--space-24); padding: var(--space-12) var(--space-16); border: 1px solid var(--color-deep-forest); border-radius: var(--radius-button); background: var(--color-deep-forest); color: var(--color-warm-white); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  .academy-step__primary-link:hover, .academy-step__primary-link:focus-visible { color: var(--color-warm-white); text-decoration: underline; }
+  .academy-step__more-links { margin-bottom: var(--space-24); }
+  .academy-step__more-links h3 { margin-bottom: var(--space-12); color: var(--color-text-secondary); }
+  .academy-step__links { display: grid; gap: var(--space-12); }
   .academy-step__links a { display: flex; align-items: center; min-height: 52px; padding: var(--space-12) var(--space-16); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-button); background: var(--color-soft-cream); color: var(--color-text-primary); font-weight: var(--font-weight-semibold); text-decoration: none; }
   .academy-step__links a:hover, .academy-step__links a:focus-visible { border-color: var(--color-sage-green); color: var(--color-deep-forest); text-decoration: underline; }
   .academy-step__goal { margin-bottom: 0 !important; }

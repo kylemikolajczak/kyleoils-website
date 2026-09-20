@@ -10,6 +10,8 @@ import type { Locale } from '../../data/locales';
 interface Props { locale: Locale; world: KnowledgeWorld; breadcrumbs: BreadcrumbItem[]; relatedWorlds: KnowledgeWorld[]; articles?: KnowledgeArticleSummary[]; }
 const { locale, world, breadcrumbs, relatedWorlds, articles = [] } = Astro.props;
 const linkLabel = locale === 'de' ? 'Wissenswelt öffnen' : 'Open Knowledge World';
+const isFaqWorld = world.id === 'faq';
+const mainFaqHref = locale === 'de' ? '/de/faq/' : '/en/faq/';
 ---
 
 <section class="world-header">
@@ -39,6 +41,17 @@ const linkLabel = locale === 'de' ? 'Wissenswelt öffnen' : 'Open Knowledge Worl
 </section>
 )}
 
+{isFaqWorld && (
+  <section class="faq-quick-answers">
+    <div class="container">
+      <p class="eyebrow">{locale === 'de' ? 'SCHNELLE ANTWORTEN' : 'QUICK ANSWERS'}</p>
+      <h2>{locale === 'de' ? 'Eine kurze Frage?' : 'Have a quick question?'}</h2>
+      <p>{locale === 'de' ? 'Für schnelle Antworten zu allgemeinen Fragen findest du die zentrale FAQ außerhalb des Wissensbereichs.' : 'For quick answers to general questions, visit the main FAQ outside the Knowledge Hub.'}</p>
+      <a class="faq-quick-answers__link" href={mainFaqHref}>{locale === 'de' ? 'Zur FAQ: schnelle Antworten' : 'Go to FAQ: Quick Answers'}</a>
+    </div>
+  </section>
+)}
+
 <section class="section">
   <div class="container">
     <h2>{locale === 'de' ? 'Weitere Wissenswelten' : 'More Knowledge Worlds'}</h2>
@@ -58,8 +71,14 @@ const linkLabel = locale === 'de' ? 'Wissenswelt öffnen' : 'Open Knowledge Worl
   .world-header p:last-child, .section-copy { margin: 0; color: var(--color-text-secondary); }
   .section { padding: var(--space-64) 0; }
   .section--cream { background: var(--color-soft-cream); }
+  .faq-quick-answers { padding: var(--space-48) 0; background: var(--color-warm-white); }
+  .faq-quick-answers .container { max-width: var(--container-text); }
+  .faq-quick-answers h2 { margin-bottom: var(--space-12); }
+  .faq-quick-answers p:not(.eyebrow) { max-width: 68ch; margin: 0 0 var(--space-20); color: var(--color-text-secondary); }
+  .faq-quick-answers__link { display: inline-flex; min-height: 48px; align-items: center; padding: var(--space-12) var(--space-16); border: 1px solid var(--color-deep-forest); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  .faq-quick-answers__link:hover, .faq-quick-answers__link:focus-visible { background: var(--color-soft-cream); text-decoration: underline; }
   h2 { margin: 0 0 var(--space-20); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
   .world-grid, .article-grid { display: grid; gap: var(--space-20); }
-  @media (min-width: 768px) { .knowledge-container { width: min(100% - (2 * var(--gutter-tablet)), var(--container-text)); } .world-header, .section { padding-block: var(--space-80); } .world-grid, .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); } }
+  @media (min-width: 768px) { .knowledge-container { width: min(100% - (2 * var(--gutter-tablet)), var(--container-text)); } .world-header, .section { padding-block: var(--space-80); } .faq-quick-answers { padding-block: var(--space-64); } .world-grid, .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); } }
   @media (min-width: 1024px) { .knowledge-container { width: min(100% - (2 * var(--gutter-desktop)), var(--container-text)); } .world-header, .section { padding-block: var(--space-96); } h1 { font-size: var(--font-size-h1-desktop); } h2 { font-size: var(--font-size-h2-desktop); } .world-grid, .article-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 </style>

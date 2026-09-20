@@ -3,16 +3,14 @@ import ComplianceNote from '../../../components/compliance/ComplianceNote.astro'
 import CTAGroup from '../../../components/cta/CTAGroup.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
 import Button from '../../../components/global/Button.astro';
-import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 
 const steps = [
   {
     title: 'Step 1: Understand what doTERRA is',
     intro: 'Before choosing a kit or using oils, a calm overview helps.',
-    linkLabel: 'Read first:',
-    links: [
-      { label: 'Understanding doTERRA', href: '/en/understanding-doterra/' },
+    primaryLink: { label: 'Understanding doTERRA', href: '/en/understanding-doterra/' },
+    moreLinks: [
       { label: 'Wholesale Customer or Wellness Advocate?', href: '/en/knowledge/products-systems/wholesale-customer-or-wellness-advocate/' },
       { label: 'doTERRA customer account explained simply', href: '/en/knowledge/products-systems/doterra-customer-account-explained-simply/' },
     ],
@@ -21,9 +19,8 @@ const steps = [
   {
     title: 'Step 2: Place the right starter kit',
     intro: 'Not everyone needs a large kit immediately. Not every kit fits every everyday life.',
-    linkLabel: 'Read next:',
-    links: [
-      { label: 'Which doTERRA starter kit fits me?', href: '/en/knowledge/products-systems/which-doterra-starter-kit-fits-me/' },
+    primaryLink: { label: 'Which doTERRA starter kit fits me?', href: '/en/knowledge/products-systems/which-doterra-starter-kit-fits-me/' },
+    moreLinks: [
       { label: 'Introductory Kit or enrolment kit?', href: '/en/knowledge/products-systems/introductory-kit-or-enrolment-kit/' },
       { label: 'Family Essentials Kit safe context', href: '/en/knowledge/products-systems/family-essentials-kit-safe-context/' },
       { label: 'Home Essentials Kit: strong start or too much?', href: '/en/knowledge/products-systems/home-essentials-kit-strong-start-or-too-much/' },
@@ -33,9 +30,8 @@ const steps = [
   {
     title: 'Step 3: Safety first',
     intro: 'Essential oils are concentrated. That is why safe use is part of the routine.',
-    linkLabel: 'Especially read:',
-    links: [
-      { label: 'Use essential oils safely', href: '/en/knowledge/safe-use/' },
+    primaryLink: { label: 'Use essential oils safely', href: '/en/knowledge/safe-use/' },
+    moreLinks: [
       { label: 'Dilution explained simply', href: '/en/knowledge/safe-use/how-to-dilute-essential-oils/' },
       { label: 'Patch test', href: '/en/knowledge/safe-use/patch-testing-explained-simply/' },
       { label: 'Strong oils and hot oils', href: '/en/knowledge/safe-use/approaching-strong-oils-safely/' },
@@ -46,9 +42,8 @@ const steps = [
   {
     title: 'Step 4: Start the first 30 days calmly',
     intro: 'When your oils arrive, the real start begins.',
-    linkLabel: 'Read:',
-    links: [
-      { label: 'The first 30 days with doTERRA: start calmly', href: '/en/knowledge/routines/first-30-days-with-doterra-start-calmly/' },
+    primaryLink: { label: 'The first 30 days with doTERRA: start calmly', href: '/en/knowledge/routines/first-30-days-with-doterra-start-calmly/' },
+    moreLinks: [
       { label: 'Week 1: unbox oils, read labels, collect questions', href: '/en/knowledge/routines/week-1-unbox-oils-read-labels-collect-questions/' },
       { label: 'Week 1: diffuser routine without overwhelm', href: '/en/knowledge/routines/week-1-diffuser-routine-without-overwhelm/' },
       { label: 'Week 2: build an evening routine with oils', href: '/en/knowledge/routines/week-2-build-an-evening-routine-with-oils/' },
@@ -60,9 +55,8 @@ const steps = [
   {
     title: 'Step 5: Everyday life and home',
     intro: 'Once the basics feel clear, you can bring oils into small everyday moments.',
-    linkLabel: 'Good starting points:',
-    links: [
-      { label: '5-minute room reset', href: '/en/knowledge/routines/5-minute-room-reset-ventilate-tidy-scent-gently/' },
+    primaryLink: { label: '5-minute room reset', href: '/en/knowledge/routines/5-minute-room-reset-ventilate-tidy-scent-gently/' },
+    moreLinks: [
       { label: 'Kitchen after cooking', href: '/en/knowledge/routines/kitchen-after-cooking-reset-the-scent/' },
       { label: 'Bathroom and guest bathroom', href: '/en/knowledge/routines/bathroom-and-guest-bathroom-fresh-without-too-much-scent/' },
       { label: 'Guests at home', href: '/en/knowledge/routines/guests-at-home-scent-etiquette-with-essential-oils/' },
@@ -106,9 +100,13 @@ const questions = [
           <div class="academy-step__content">
             <h2>{step.title}</h2>
             <p>{step.intro}</p>
-            <h3>{step.linkLabel}</h3>
-            <div class="academy-step__links">
-              {step.links.map((link) => <a href={link.href}>{link.label}</a>)}
+            <h3>Recommended next read</h3>
+            <a class="academy-step__primary-link" href={step.primaryLink.href}>{step.primaryLink.label}</a>
+            <div class="academy-step__more-links">
+              <h3>More on this topic</h3>
+              <div class="academy-step__links">
+                {step.moreLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+              </div>
             </div>
             <p class="academy-step__goal"><strong>Goal:</strong> {step.goal}</p>
           </div>
@@ -171,7 +169,11 @@ const questions = [
   h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
   .academy-step__content > p { margin: 0 0 var(--space-20); color: var(--color-text-secondary); }
   h3 { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  .academy-step__links { display: grid; gap: var(--space-12); margin-bottom: var(--space-24); }
+  .academy-step__primary-link { display: flex; align-items: center; min-height: 52px; margin-bottom: var(--space-24); padding: var(--space-12) var(--space-16); border: 1px solid var(--color-deep-forest); border-radius: var(--radius-button); background: var(--color-deep-forest); color: var(--color-warm-white); font-weight: var(--font-weight-semibold); text-decoration: none; }
+  .academy-step__primary-link:hover, .academy-step__primary-link:focus-visible { color: var(--color-warm-white); text-decoration: underline; }
+  .academy-step__more-links { margin-bottom: var(--space-24); }
+  .academy-step__more-links h3 { margin-bottom: var(--space-12); color: var(--color-text-secondary); }
+  .academy-step__links { display: grid; gap: var(--space-12); }
   .academy-step__links a { display: flex; align-items: center; min-height: 52px; padding: var(--space-12) var(--space-16); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-button); background: var(--color-soft-cream); color: var(--color-text-primary); font-weight: var(--font-weight-semibold); text-decoration: none; }
   .academy-step__links a:hover, .academy-step__links a:focus-visible { border-color: var(--color-sage-green); color: var(--color-deep-forest); text-decoration: underline; }
   .academy-step__goal { margin-bottom: 0 !important; }
