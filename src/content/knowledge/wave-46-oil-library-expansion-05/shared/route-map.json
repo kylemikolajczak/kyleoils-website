@@ -1,0 +1,209 @@
+{
+  "wave": "W46 Oil Library Expansion 05",
+  "expected_before": {
+    "de": 200,
+    "en": 200,
+    "oil_library_per_language": 40,
+    "build_pages_approx": 451
+  },
+  "expected_after": {
+    "de": 208,
+    "en": 208,
+    "oil_library_per_language": 48,
+    "build_pages_approx": 467
+  },
+  "articles": [
+    {
+      "id": "black-pepper-schwarzer-pfeffer",
+      "de_title": "Black Pepper, Schwarzer Pfeffer",
+      "en_title": "Black Pepper",
+      "de_route": "/de/wissen/oel-lexikon/black-pepper-schwarzer-pfeffer/",
+      "en_route": "/en/knowledge/oil-library/black-pepper/",
+      "latin": "Piper nigrum",
+      "type": "Einzelöl / food flavouring context",
+      "source": "doTERRA Europe Black Pepper PIP",
+      "search_de": [
+        "schwarzer pfeffer",
+        "black pepper",
+        "pfeffer öl",
+        "gewürzöl",
+        "küche öl"
+      ],
+      "search_en": [
+        "black pepper",
+        "pepper oil",
+        "spice oil",
+        "kitchen oil",
+        "food flavouring"
+      ]
+    },
+    {
+      "id": "cassia",
+      "de_title": "Cassia",
+      "en_title": "Cassia",
+      "de_route": "/de/wissen/oel-lexikon/cassia/",
+      "en_route": "/en/knowledge/oil-library/cassia/",
+      "latin": "Cinnamomum cassia",
+      "type": "Einzelöl / food flavouring context",
+      "source": "doTERRA Europe Cassia PIP",
+      "search_de": [
+        "cassia",
+        "cassia öl",
+        "zimt ähnlich",
+        "gewürzöl",
+        "starkes öl"
+      ],
+      "search_en": [
+        "cassia",
+        "cassia oil",
+        "cinnamon related",
+        "spice oil",
+        "strong oil"
+      ]
+    },
+    {
+      "id": "green-mandarin-gruene-mandarine",
+      "de_title": "Green Mandarin, Grüne Mandarine",
+      "en_title": "Green Mandarin",
+      "de_route": "/de/wissen/oel-lexikon/green-mandarin-gruene-mandarine/",
+      "en_route": "/en/knowledge/oil-library/green-mandarin/",
+      "latin": "Citrus nobilis",
+      "type": "Zitrusöl / food flavouring context",
+      "source": "doTERRA Europe Green Mandarin PIP",
+      "search_de": [
+        "green mandarin",
+        "grüne mandarine",
+        "mandarine öl",
+        "zitrusöl",
+        "photosensitivität"
+      ],
+      "search_en": [
+        "green mandarin",
+        "mandarin oil",
+        "citrus oil",
+        "photosensitivity",
+        "fresh citrus"
+      ]
+    },
+    {
+      "id": "tangerine-mandarine",
+      "de_title": "Tangerine, Mandarine",
+      "en_title": "Tangerine",
+      "de_route": "/de/wissen/oel-lexikon/tangerine-mandarine/",
+      "en_route": "/en/knowledge/oil-library/tangerine/",
+      "latin": "Citrus reticulata",
+      "type": "Zitrusöl / food flavouring context",
+      "source": "doTERRA Europe Tangerine PIP",
+      "search_de": [
+        "tangerine",
+        "mandarine",
+        "mandarinenöl",
+        "zitrusöl",
+        "zitrus geschmack"
+      ],
+      "search_en": [
+        "tangerine",
+        "tangerine oil",
+        "mandarin",
+        "citrus flavour",
+        "citrus oil"
+      ]
+    },
+    {
+      "id": "pink-pepper-rosa-pfeffer",
+      "de_title": "Pink Pepper, Rosa Pfeffer",
+      "en_title": "Pink Pepper",
+      "de_route": "/de/wissen/oel-lexikon/pink-pepper-rosa-pfeffer/",
+      "en_route": "/en/knowledge/oil-library/pink-pepper/",
+      "latin": "Schinus molle",
+      "type": "Einzelöl / food flavouring context",
+      "source": "doTERRA Europe Pink Pepper PIP",
+      "search_de": [
+        "pink pepper",
+        "rosa pfeffer",
+        "pfefferöl",
+        "gewürzöl",
+        "mild pfeffrig"
+      ],
+      "search_en": [
+        "pink pepper",
+        "pink pepper oil",
+        "peppery oil",
+        "spice oil",
+        "mildly fruity"
+      ]
+    },
+    {
+      "id": "sandalwood-sandelholz",
+      "de_title": "Sandalwood, Sandelholz",
+      "en_title": "Sandalwood",
+      "de_route": "/de/wissen/oel-lexikon/sandalwood-sandelholz/",
+      "en_route": "/en/knowledge/oil-library/sandalwood/",
+      "latin": "Santalum album",
+      "type": "Einzelöl / topical context",
+      "source": "doTERRA Europe Sandalwood PIP",
+      "search_de": [
+        "sandalwood",
+        "sandelholz",
+        "holzöl",
+        "sandelholzöl",
+        "massage öl"
+      ],
+      "search_en": [
+        "sandalwood",
+        "sandalwood oil",
+        "wood oil",
+        "massage oil",
+        "warm woody"
+      ]
+    },
+    {
+      "id": "magnolia-touch",
+      "de_title": "Magnolia Touch",
+      "en_title": "Magnolia Touch",
+      "de_route": "/de/wissen/oel-lexikon/magnolia-touch/",
+      "en_route": "/en/knowledge/oil-library/magnolia-touch/",
+      "latin": "Magnolia Touch",
+      "type": "Touch-Produkt / roll-on",
+      "source": "doTERRA Europe Magnolia Touch PIP",
+      "search_de": [
+        "magnolia touch",
+        "magnolia",
+        "roll on öl",
+        "touch produkt",
+        "floraler duft"
+      ],
+      "search_en": [
+        "magnolia touch",
+        "magnolia",
+        "roll-on oil",
+        "touch product",
+        "floral scent"
+      ]
+    },
+    {
+      "id": "vetiver-touch",
+      "de_title": "Vetiver Touch",
+      "en_title": "Vetiver Touch",
+      "de_route": "/de/wissen/oel-lexikon/vetiver-touch/",
+      "en_route": "/en/knowledge/oil-library/vetiver-touch/",
+      "latin": "Vetiveria zizanioides",
+      "type": "Touch-Produkt / roll-on",
+      "source": "doTERRA Europe Vetiver Touch PIP",
+      "search_de": [
+        "vetiver touch",
+        "vetiver",
+        "erdiger duft",
+        "roll on öl",
+        "touch produkt"
+      ],
+      "search_en": [
+        "vetiver touch",
+        "vetiver",
+        "earthy scent",
+        "roll-on oil",
+        "touch product"
+      ]
+    }
+  ]
+}

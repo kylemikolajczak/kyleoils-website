@@ -1,0 +1,146 @@
+[
+  {
+    "id": "KO-W09-001",
+    "sourceDeId": "KO-W04-001",
+    "language": "en",
+    "title": "Lavender explained",
+    "route": "/en/knowledge/oil-library/lavender/",
+    "deRoute": "/de/wissen/oel-lexikon/lavender-lavendel/",
+    "worldId": "oil-library",
+    "worldLabel": "Oil Library",
+    "seoTitle": "Lavender essential oil explained clearly",
+    "description": "Lavender explained calmly: scent profile, everyday orientation, aromatic use, topical use and important safety notes.",
+    "relatedArticleIds": [
+      "KO-W08-002",
+      "KO-W07-003",
+      "KO-W07-005"
+    ],
+    "translationType": "adapted_english_sync_from_wave_04"
+  },
+  {
+    "id": "KO-W09-002",
+    "sourceDeId": "KO-W04-002",
+    "language": "en",
+    "title": "Lemon explained",
+    "route": "/en/knowledge/oil-library/lemon/",
+    "deRoute": "/de/wissen/oel-lexikon/lemon-zitrone/",
+    "worldId": "oil-library",
+    "worldLabel": "Oil Library",
+    "seoTitle": "Lemon essential oil explained clearly",
+    "description": "Lemon explained calmly: bright citrus scent, everyday room routines, freshness, safety and photosensitivity awareness.",
+    "relatedArticleIds": [
+      "KO-W07-008",
+      "KO-W08-006",
+      "KO-W07-005"
+    ],
+    "translationType": "adapted_english_sync_from_wave_04"
+  },
+  {
+    "id": "KO-W09-003",
+    "sourceDeId": "KO-W04-003",
+    "language": "en",
+    "title": "Peppermint explained",
+    "route": "/en/knowledge/oil-library/peppermint/",
+    "deRoute": "/de/wissen/oel-lexikon/peppermint-pfefferminze/",
+    "worldId": "oil-library",
+    "worldLabel": "Oil Library",
+    "seoTitle": "Peppermint essential oil explained clearly",
+    "description": "Peppermint explained calmly: fresh mint scent, intensity, everyday use, diffuser care, dilution and safety notes.",
+    "relatedArticleIds": [
+      "KO-W07-003",
+      "KO-W07-005",
+      "KO-W08-007"
+    ],
+    "translationType": "adapted_english_sync_from_wave_04"
+  },
+  {
+    "id": "KO-W09-004",
+    "sourceDeId": "KO-W04-004",
+    "language": "en",
+    "title": "Frankincense explained",
+    "route": "/en/knowledge/oil-library/frankincense/",
+    "deRoute": "/de/wissen/oel-lexikon/frankincense-weihrauch/",
+    "worldId": "oil-library",
+    "worldLabel": "Oil Library",
+    "seoTitle": "Frankincense essential oil explained clearly",
+    "description": "Frankincense explained calmly: warm resinous scent, quiet routines, self-care, aromatic use, topical use and safety notes.",
+    "relatedArticleIds": [
+      "KO-W08-004",
+      "KO-W08-002",
+      "KO-W07-003"
+    ],
+    "translationType": "adapted_english_sync_from_wave_04"
+  },
+  {
+    "id": "KO-W09-005",
+    "sourceDeId": "KO-W04-005",
+    "language": "en",
+    "title": "Tea Tree explained",
+    "route": "/en/knowledge/oil-library/tea-tree/",
+    "deRoute": "/de/wissen/oel-lexikon/tea-tree-teebaum/",
+    "worldId": "oil-library",
+    "worldLabel": "Oil Library",
+    "seoTitle": "Tea Tree essential oil explained clearly",
+    "description": "Tea Tree explained calmly: herbal scent, fresh everyday routines, topical care, dilution and important safety notes.",
+    "relatedArticleIds": [
+      "KO-W07-003",
+      "KO-W08-004",
+      "KO-W08-005"
+    ],
+    "translationType": "adapted_english_sync_from_wave_04"
+  },
+  {
+    "id": "KO-W09-006",
+    "sourceDeId": "KO-W04-006",
+    "language": "en",
+    "title": "Wild Orange explained",
+    "route": "/en/knowledge/oil-library/wild-orange/",
+    "deRoute": "/de/wissen/oel-lexikon/wild-orange-wildorange/",
+    "worldId": "oil-library",
+    "worldLabel": "Oil Library",
+    "seoTitle": "Wild Orange essential oil explained clearly",
+    "description": "Wild Orange explained calmly: sweet citrus scent, room atmosphere, everyday routines and photosensitivity awareness.",
+    "relatedArticleIds": [
+      "KO-W07-008",
+      "KO-W08-006",
+      "KO-W08-001"
+    ],
+    "translationType": "adapted_english_sync_from_wave_04"
+  },
+  {
+    "id": "KO-W09-007",
+    "sourceDeId": "KO-W04-007",
+    "language": "en",
+    "title": "Oregano explained",
+    "route": "/en/knowledge/oil-library/oregano/",
+    "deRoute": "/de/wissen/oel-lexikon/oregano/",
+    "worldId": "oil-library",
+    "worldLabel": "Oil Library",
+    "seoTitle": "Oregano essential oil explained clearly",
+    "description": "Oregano explained calmly: an intense herbal oil, why it needs respect, safe-use awareness and beginner caution.",
+    "relatedArticleIds": [
+      "KO-W07-003",
+      "KO-W07-004",
+      "KO-W07-007"
+    ],
+    "translationType": "adapted_english_sync_from_wave_04"
+  },
+  {
+    "id": "KO-W09-008",
+    "sourceDeId": "KO-W04-008",
+    "language": "en",
+    "title": "Copaiba explained",
+    "route": "/en/knowledge/oil-library/copaiba/",
+    "deRoute": "/de/wissen/oel-lexikon/copaiba/",
+    "worldId": "oil-library",
+    "worldLabel": "Oil Library",
+    "seoTitle": "Copaiba essential oil explained clearly",
+    "description": "Copaiba explained calmly: soft woody-resinous scent, personal routines, self-care context and safety notes.",
+    "relatedArticleIds": [
+      "KO-W08-004",
+      "KO-W09-004",
+      "KO-W07-003"
+    ],
+    "translationType": "adapted_english_sync_from_wave_04"
+  }
+]

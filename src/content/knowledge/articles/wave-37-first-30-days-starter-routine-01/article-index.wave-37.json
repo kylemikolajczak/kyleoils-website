@@ -1,0 +1,658 @@
+[
+  {
+    "id": "KO-W37-DE-001",
+    "translationPairId": "KO-W37-PAIR-001",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Die ersten 30 Tage mit doTERRA: ruhig starten",
+    "slug": "erste-30-tage-mit-doterra-ruhig-starten",
+    "route": "/de/wissen/routinen/erste-30-tage-mit-doterra-ruhig-starten/",
+    "enRoute": "/en/knowledge/routines/first-30-days-with-doterra-start-calmly/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Die ersten 30 Tage mit doTERRA: ruhig starten",
+    "description": "Ein ruhiger 30-Tage-Startplan für neue doTERRA Kunden, ohne Überforderung und ohne alles gleichzeitig machen zu wollen.",
+    "focus": "30 Tage, Einstieg, Orientierung, erste Routinen",
+    "searchKeywords": [
+      "erste 30 tage",
+      "30 tage start",
+      "doterra startplan",
+      "nach dem kauf",
+      "erste routine",
+      "starter routine"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-DE-007",
+      "KO-W32-DE-001",
+      "KO-W27-DE-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-EN-001",
+    "translationPairId": "KO-W37-PAIR-001",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "The first 30 days with doTERRA: start calmly",
+    "slug": "first-30-days-with-doterra-start-calmly",
+    "route": "/en/knowledge/routines/first-30-days-with-doterra-start-calmly/",
+    "deRoute": "/de/wissen/routinen/erste-30-tage-mit-doterra-ruhig-starten/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "The first 30 days with doTERRA: start calmly",
+    "description": "A calm 30-day start plan for new doTERRA customers, without overwhelm and without trying to do everything at once.",
+    "focus": "30 days, getting started, orientation, first routines",
+    "searchKeywords": [
+      "first 30 days",
+      "30 day start",
+      "doterra start plan",
+      "after purchase",
+      "first routine",
+      "starter routine"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-EN-007",
+      "KO-W32-EN-001",
+      "KO-W27-EN-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-DE-002",
+    "translationPairId": "KO-W37-PAIR-002",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Woche 1: Öle auspacken, Labels lesen, Fragen sammeln",
+    "slug": "woche-1-oele-auspacken-labels-lesen-fragen-sammeln",
+    "route": "/de/wissen/routinen/woche-1-oele-auspacken-labels-lesen-fragen-sammeln/",
+    "enRoute": "/en/knowledge/routines/week-1-unbox-oils-read-labels-collect-questions/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Woche 1: Öle auspacken, Labels lesen, Fragen sammeln",
+    "description": "Wie du deine ersten doTERRA Produkte in der ersten Woche ruhig kennenlernst.",
+    "focus": "Unboxing, Labels, erste Orientierung",
+    "searchKeywords": [
+      "woche 1",
+      "öle auspacken",
+      "labels lesen",
+      "produktlabel",
+      "fragen sammeln",
+      "unboxing"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-DE-007",
+      "KO-W32-DE-001",
+      "KO-W27-DE-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-EN-002",
+    "translationPairId": "KO-W37-PAIR-002",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Week 1: unbox oils, read labels, collect questions",
+    "slug": "week-1-unbox-oils-read-labels-collect-questions",
+    "route": "/en/knowledge/routines/week-1-unbox-oils-read-labels-collect-questions/",
+    "deRoute": "/de/wissen/routinen/woche-1-oele-auspacken-labels-lesen-fragen-sammeln/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Week 1: unbox oils, read labels, collect questions",
+    "description": "How to get to know your first doTERRA products calmly in the first week.",
+    "focus": "unboxing, labels, first orientation",
+    "searchKeywords": [
+      "week 1",
+      "unbox oils",
+      "read labels",
+      "product label",
+      "collect questions",
+      "unboxing"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-EN-007",
+      "KO-W32-EN-001",
+      "KO-W27-EN-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-DE-003",
+    "translationPairId": "KO-W37-PAIR-003",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Woche 1: Diffuser-Routine ohne Überforderung",
+    "slug": "woche-1-diffuser-routine-ohne-ueberforderung",
+    "route": "/de/wissen/routinen/woche-1-diffuser-routine-ohne-ueberforderung/",
+    "enRoute": "/en/knowledge/routines/week-1-diffuser-routine-without-overwhelm/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Woche 1: Diffuser-Routine ohne Überforderung",
+    "description": "Ein vorsichtiger Einstieg in Raumduft und Diffuser-Routinen, ohne zu viel Duft auf einmal.",
+    "focus": "Diffuser, Raumduft, Menge, Lüften",
+    "searchKeywords": [
+      "diffuser routine",
+      "diffuser einstieg",
+      "raumduft",
+      "duft zu stark",
+      "kinder haustiere",
+      "lüften"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-DE-007",
+      "KO-W32-DE-001",
+      "KO-W27-DE-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-EN-003",
+    "translationPairId": "KO-W37-PAIR-003",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Week 1: diffuser routine without overwhelm",
+    "slug": "week-1-diffuser-routine-without-overwhelm",
+    "route": "/en/knowledge/routines/week-1-diffuser-routine-without-overwhelm/",
+    "deRoute": "/de/wissen/routinen/woche-1-diffuser-routine-ohne-ueberforderung/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Week 1: diffuser routine without overwhelm",
+    "description": "A careful start with room scent and diffuser routines, without too much scent at once.",
+    "focus": "diffuser, room scent, amount, ventilation",
+    "searchKeywords": [
+      "diffuser routine",
+      "diffuser start",
+      "room scent",
+      "scent too strong",
+      "children pets",
+      "ventilation"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-EN-007",
+      "KO-W32-EN-001",
+      "KO-W27-EN-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-DE-004",
+    "translationPairId": "KO-W37-PAIR-004",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Woche 2: Eine Abendroutine mit Ölen aufbauen",
+    "slug": "woche-2-abendroutine-mit-oelen-aufbauen",
+    "route": "/de/wissen/routinen/woche-2-abendroutine-mit-oelen-aufbauen/",
+    "enRoute": "/en/knowledge/routines/week-2-build-an-evening-routine-with-oils/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Woche 2: Eine Abendroutine mit Ölen aufbauen",
+    "description": "Wie du eine einfache Abendroutine mit Duft, Raum und Wiederholung entwickelst, ohne Schlafversprechen.",
+    "focus": "Abendroutine, Duftanker, Wiederholung",
+    "searchKeywords": [
+      "woche 2",
+      "abendroutine",
+      "schlafroutine",
+      "lavender",
+      "serenity",
+      "duftanker"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-DE-007",
+      "KO-W32-DE-001",
+      "KO-W27-DE-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-EN-004",
+    "translationPairId": "KO-W37-PAIR-004",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Week 2: build an evening routine with oils",
+    "slug": "week-2-build-an-evening-routine-with-oils",
+    "route": "/en/knowledge/routines/week-2-build-an-evening-routine-with-oils/",
+    "deRoute": "/de/wissen/routinen/woche-2-abendroutine-mit-oelen-aufbauen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Week 2: build an evening routine with oils",
+    "description": "How to build a simple evening routine with scent, room and repetition, without sleep promises.",
+    "focus": "evening routine, scent anchor, repetition",
+    "searchKeywords": [
+      "week 2",
+      "evening routine",
+      "sleep routine",
+      "lavender",
+      "serenity",
+      "scent anchor"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-EN-007",
+      "KO-W32-EN-001",
+      "KO-W27-EN-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-DE-005",
+    "translationPairId": "KO-W37-PAIR-005",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Woche 2: Topische Anwendung und Verdünnung ruhig lernen",
+    "slug": "woche-2-topische-anwendung-und-verduennung-ruhig-lernen",
+    "route": "/de/wissen/routinen/woche-2-topische-anwendung-und-verduennung-ruhig-lernen/",
+    "enRoute": "/en/knowledge/routines/week-2-learn-topical-use-and-dilution-calmly/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Woche 2: Topische Anwendung und Verdünnung ruhig lernen",
+    "description": "Ein vorsichtiger Einstieg in Hautanwendung, Trägeröl, Patch Test und sensible Haut.",
+    "focus": "topische Anwendung, Verdünnung, Trägeröl, Haut",
+    "searchKeywords": [
+      "topische anwendung",
+      "verdünnung",
+      "trägeröl",
+      "patch test",
+      "hautreaktion",
+      "hot oils"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-DE-007",
+      "KO-W32-DE-001",
+      "KO-W27-DE-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-EN-005",
+    "translationPairId": "KO-W37-PAIR-005",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Week 2: learn topical use and dilution calmly",
+    "slug": "week-2-learn-topical-use-and-dilution-calmly",
+    "route": "/en/knowledge/routines/week-2-learn-topical-use-and-dilution-calmly/",
+    "deRoute": "/de/wissen/routinen/woche-2-topische-anwendung-und-verduennung-ruhig-lernen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Week 2: learn topical use and dilution calmly",
+    "description": "A careful introduction to topical use, carrier oil, patch testing and sensitive skin.",
+    "focus": "topical use, dilution, carrier oil, skin",
+    "searchKeywords": [
+      "topical use",
+      "dilution",
+      "carrier oil",
+      "patch test",
+      "skin reaction",
+      "hot oils"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-EN-007",
+      "KO-W32-EN-001",
+      "KO-W27-EN-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-DE-006",
+    "translationPairId": "KO-W37-PAIR-006",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Woche 3: Deine drei Kernroutinen finden",
+    "slug": "woche-3-drei-kernroutinen-finden",
+    "route": "/de/wissen/routinen/woche-3-drei-kernroutinen-finden/",
+    "enRoute": "/en/knowledge/routines/week-3-find-your-three-core-routines/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Woche 3: Deine drei Kernroutinen finden",
+    "description": "Wie du aus vielen Öl-Ideen drei einfache Alltagsroutinen machst.",
+    "focus": "Kernroutinen, Alltag, Einfachheit",
+    "searchKeywords": [
+      "woche 3",
+      "kernroutinen",
+      "drei routinen",
+      "alltagsroutine",
+      "öle routine",
+      "einfach starten"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-DE-007",
+      "KO-W32-DE-001",
+      "KO-W27-DE-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-EN-006",
+    "translationPairId": "KO-W37-PAIR-006",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Week 3: find your three core routines",
+    "slug": "week-3-find-your-three-core-routines",
+    "route": "/en/knowledge/routines/week-3-find-your-three-core-routines/",
+    "deRoute": "/de/wissen/routinen/woche-3-drei-kernroutinen-finden/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Week 3: find your three core routines",
+    "description": "How to turn many oil ideas into three simple everyday routines.",
+    "focus": "core routines, everyday life, simplicity",
+    "searchKeywords": [
+      "week 3",
+      "core routines",
+      "three routines",
+      "everyday routine",
+      "oil routine",
+      "start simple"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-EN-007",
+      "KO-W32-EN-001",
+      "KO-W27-EN-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-DE-007",
+    "translationPairId": "KO-W37-PAIR-007",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Woche 4: Nachsortieren, Fragen klären, nichts erzwingen",
+    "slug": "woche-4-nachsortieren-fragen-klaeren-nichts-erzwingen",
+    "route": "/de/wissen/routinen/woche-4-nachsortieren-fragen-klaeren-nichts-erzwingen/",
+    "enRoute": "/en/knowledge/routines/week-4-review-clarify-questions-force-nothing/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Woche 4: Nachsortieren, Fragen klären, nichts erzwingen",
+    "description": "Wie du nach den ersten Wochen ehrlich prüfst, was passt, was warten darf und welche Fragen offen sind.",
+    "focus": "Nachsortieren, Fragen, Beratung, nächste Schritte",
+    "searchKeywords": [
+      "woche 4",
+      "nachsortieren",
+      "fragen klären",
+      "30 tage check",
+      "nach dem kauf",
+      "nichts erzwingen"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-DE-007",
+      "KO-W32-DE-001",
+      "KO-W27-DE-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-EN-007",
+    "translationPairId": "KO-W37-PAIR-007",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Week 4: review, clarify questions, force nothing",
+    "slug": "week-4-review-clarify-questions-force-nothing",
+    "route": "/en/knowledge/routines/week-4-review-clarify-questions-force-nothing/",
+    "deRoute": "/de/wissen/routinen/woche-4-nachsortieren-fragen-klaeren-nichts-erzwingen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Week 4: review, clarify questions, force nothing",
+    "description": "How to honestly review what fits, what may wait and which questions remain open after the first weeks.",
+    "focus": "review, questions, guidance, next steps",
+    "searchKeywords": [
+      "week 4",
+      "review",
+      "clarify questions",
+      "30 day check",
+      "after purchase",
+      "force nothing"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-EN-007",
+      "KO-W32-EN-001",
+      "KO-W27-EN-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-DE-008",
+    "translationPairId": "KO-W37-PAIR-008",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "30-Tage-Check mit Kyle: Was passt wirklich?",
+    "slug": "30-tage-check-mit-kyle-was-passt-wirklich",
+    "route": "/de/wissen/routinen/30-tage-check-mit-kyle-was-passt-wirklich/",
+    "enRoute": "/en/knowledge/routines/30-day-check-with-kyle-what-truly-fits/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "30-Tage-Check mit Kyle: Was passt wirklich?",
+    "description": "Ein ruhiger Check nach dem Start, um Produkte, Routinen, Sicherheit und nächste Schritte einzuordnen.",
+    "focus": "30-Tage-Check, Beratung, nächste Schritte",
+    "searchKeywords": [
+      "30 tage check",
+      "check mit kyle",
+      "beratung nach kauf",
+      "produkte sortieren",
+      "nächste schritte",
+      "lrp sinnvoll"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-DE-007",
+      "KO-W32-DE-001",
+      "KO-W27-DE-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W37-EN-008",
+    "translationPairId": "KO-W37-PAIR-008",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "30-day check with Kyle: what truly fits?",
+    "slug": "30-day-check-with-kyle-what-truly-fits",
+    "route": "/en/knowledge/routines/30-day-check-with-kyle-what-truly-fits/",
+    "deRoute": "/de/wissen/routinen/30-tage-check-mit-kyle-was-passt-wirklich/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "30-day check with Kyle: what truly fits?",
+    "description": "A calm check after getting started to place products, routines, safety and next steps.",
+    "focus": "30-day check, guidance, next steps",
+    "searchKeywords": [
+      "30 day check",
+      "check with kyle",
+      "guidance after purchase",
+      "sort products",
+      "next steps",
+      "lrp make sense"
+    ],
+    "relatedArticleIds": [
+      "KO-W35-EN-007",
+      "KO-W32-EN-001",
+      "KO-W27-EN-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "starter-routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/introductory-kit-education",
+      "https://www.doterra.com/US/en/home-essentials",
+      "https://www.doterra.com/US/en/p/family-essentials-kit",
+      "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  }
+]

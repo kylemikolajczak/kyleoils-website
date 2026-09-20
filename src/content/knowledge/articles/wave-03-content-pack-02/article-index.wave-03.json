@@ -1,0 +1,146 @@
+[
+  {
+    "id": "KO-W03-001",
+    "language": "de",
+    "title": "Einfache Morgenroutine mit ätherischen Ölen",
+    "route": "/de/wissen/routinen/einfache-morgenroutine-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Einfache Morgenroutine mit ätherischen Ölen",
+    "description": "Eine ruhige Morgenroutine mit Duft, kleinen Schritten und bewusster Orientierung.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W02-002",
+      "KO-W02-005",
+      "KO-W03-002",
+      "KO-W03-008"
+    ],
+    "enTranslationStatus": "not_included_in_wave_03"
+  },
+  {
+    "id": "KO-W03-002",
+    "language": "de",
+    "title": "Einfache Abendroutine mit ätherischen Ölen",
+    "route": "/de/wissen/routinen/einfache-abendroutine-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Einfache Abendroutine mit ätherischen Ölen",
+    "description": "Wie du mit Duft, kleinen Gewohnheiten und ruhigen Abläufen eine einfache Abendroutine gestalten kannst.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W03-001",
+      "KO-W02-005",
+      "KO-W02-006",
+      "KO-W03-004"
+    ],
+    "enTranslationStatus": "not_included_in_wave_03"
+  },
+  {
+    "id": "KO-W03-003",
+    "language": "de",
+    "title": "Deine ersten 7 Tage mit ätherischen Ölen",
+    "route": "/de/wissen/routinen/deine-ersten-7-tage-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Deine ersten 7 Tage mit ätherischen Ölen",
+    "description": "Ein ruhiger 7-Tage-Einstieg für Anfänger: verstehen, riechen, verdünnen und einfache Routinen aufbauen.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W02-001",
+      "KO-W02-002",
+      "KO-W02-003",
+      "KO-W03-001"
+    ],
+    "enTranslationStatus": "not_included_in_wave_03"
+  },
+  {
+    "id": "KO-W03-004",
+    "language": "de",
+    "title": "Self-Care mit ätherischen Ölen",
+    "route": "/de/wissen/alltag/self-care-mit-aetherischen-oelen/",
+    "worldId": "everyday-use",
+    "worldLabel": "Ätherische Öle im Alltag",
+    "seoTitle": "Self-Care mit ätherischen Ölen",
+    "description": "Wie ätherische Öle kleine Self-Care-Momente durch Duft, Pflege oder ruhige Routinen begleiten können.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W03-002",
+      "KO-W02-003",
+      "KO-W02-004",
+      "KO-W03-005"
+    ],
+    "enTranslationStatus": "not_included_in_wave_03"
+  },
+  {
+    "id": "KO-W03-005",
+    "language": "de",
+    "title": "Ätherische Öle im Haushalt",
+    "route": "/de/wissen/alltag/aetherische-oele-im-haushalt/",
+    "worldId": "everyday-use",
+    "worldLabel": "Ätherische Öle im Alltag",
+    "seoTitle": "Ätherische Öle im Haushalt: Duft, Ordnung und einfache Routinen",
+    "description": "Wie ätherische Öle im Haushalt für Raumduft, Frische und kleine Routinen genutzt werden können.",
+    "riskLevel": "medium",
+    "relatedArticleIds": [
+      "KO-W03-006",
+      "KO-W02-005",
+      "KO-W02-007",
+      "KO-W03-004"
+    ],
+    "enTranslationStatus": "not_included_in_wave_03"
+  },
+  {
+    "id": "KO-W03-006",
+    "language": "de",
+    "title": "Natürlicher Raumduft mit ätherischen Ölen",
+    "route": "/de/wissen/alltag/natuerlicher-raumduft-mit-aetherischen-oelen/",
+    "worldId": "everyday-use",
+    "worldLabel": "Ätherische Öle im Alltag",
+    "seoTitle": "Natürlicher Raumduft mit ätherischen Ölen",
+    "description": "Wie du Raumduft mit ätherischen Ölen bewusst, dezent und passend zu Alltagssituationen gestaltest.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W02-005",
+      "KO-W02-006",
+      "KO-W03-005",
+      "KO-W03-002"
+    ],
+    "enTranslationStatus": "not_included_in_wave_03"
+  },
+  {
+    "id": "KO-W03-007",
+    "language": "de",
+    "title": "Ätherische Öle im Arbeitsalltag",
+    "route": "/de/wissen/routinen/aetherische-oele-im-arbeitsalltag/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Ätherische Öle im Arbeitsalltag",
+    "description": "Wie du ätherische Öle am Schreibtisch, im Homeoffice oder unterwegs dezent und rücksichtsvoll einordnen kannst.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W03-001",
+      "KO-W02-006",
+      "KO-W03-006",
+      "KO-W02-002"
+    ],
+    "enTranslationStatus": "not_included_in_wave_03"
+  },
+  {
+    "id": "KO-W03-008",
+    "language": "de",
+    "title": "Eine einfache Starter-Routine mit ätherischen Ölen",
+    "route": "/de/wissen/routinen/einfache-starter-routine-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Einfache Starter-Routine mit ätherischen Ölen",
+    "description": "Eine klare Starter-Routine für Anfänger: wenige Öle, sichere Grundlagen, Diffuser, Verdünnung und ruhige Alltagsschritte.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W02-002",
+      "KO-W03-003",
+      "KO-W02-003",
+      "KO-W03-001"
+    ],
+    "enTranslationStatus": "not_included_in_wave_03"
+  }
+]

@@ -1,0 +1,658 @@
+[
+  {
+    "id": "KO-W39-DE-001",
+    "translationPairId": "KO-W39-PAIR-001",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Saisonale Raumduft-Routinen ohne Krankheitsversprechen",
+    "slug": "saisonale-raumduft-routinen-ohne-krankheitsversprechen",
+    "route": "/de/wissen/routinen/saisonale-raumduft-routinen-ohne-krankheitsversprechen/",
+    "enRoute": "/en/knowledge/routines/seasonal-room-scent-routines-without-illness-promises/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Saisonale Raumduft-Routinen ohne Krankheitsversprechen",
+    "description": "Wie du saisonale Duftstimmungen mit ätherischen Ölen einordnest, ohne Immun-, Erkältungs- oder Krankheitsclaims.",
+    "focus": "Jahreszeiten, Raumduft, Duftstimmung, sichere Sprache",
+    "searchKeywords": [
+      "saisonale düfte",
+      "jahreszeiten öle",
+      "winter diffuser",
+      "herbst duft",
+      "raumduft saison",
+      "krankheitsversprechen"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-DE-003",
+      "KO-W27-DE-001",
+      "KO-W38-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-EN-001",
+    "translationPairId": "KO-W39-PAIR-001",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Seasonal room-scent routines without illness promises",
+    "slug": "seasonal-room-scent-routines-without-illness-promises",
+    "route": "/en/knowledge/routines/seasonal-room-scent-routines-without-illness-promises/",
+    "deRoute": "/de/wissen/routinen/saisonale-raumduft-routinen-ohne-krankheitsversprechen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Seasonal room-scent routines without illness promises",
+    "description": "How to place seasonal scent moods with essential oils, without immune, cold or illness claims.",
+    "focus": "seasons, room scent, scent mood, safe language",
+    "searchKeywords": [
+      "seasonal scents",
+      "seasonal oils",
+      "winter diffuser",
+      "autumn scent",
+      "room scent season",
+      "illness promises"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-EN-003",
+      "KO-W27-EN-001",
+      "KO-W38-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-DE-002",
+    "translationPairId": "KO-W39-PAIR-002",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "5-Minuten Raum-Reset: lüften, ordnen, sanft beduften",
+    "slug": "5-minuten-raum-reset-lueften-ordnen-sanft-beduften",
+    "route": "/de/wissen/routinen/5-minuten-raum-reset-lueften-ordnen-sanft-beduften/",
+    "enRoute": "/en/knowledge/routines/5-minute-room-reset-ventilate-tidy-scent-gently/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "5-Minuten Raum-Reset: lüften, ordnen, sanft beduften",
+    "description": "Eine einfache Alltagsroutine, um einen Raum frisch und klar wirken zu lassen, ohne viel Aufwand.",
+    "focus": "Raum-Reset, Lüften, Ordnung, sanfter Duft",
+    "searchKeywords": [
+      "raum reset",
+      "5 minuten reset",
+      "lüften",
+      "raumduft",
+      "wild orange",
+      "petitgrain"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-DE-003",
+      "KO-W27-DE-001",
+      "KO-W38-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-EN-002",
+    "translationPairId": "KO-W39-PAIR-002",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "5-minute room reset: ventilate, tidy, scent gently",
+    "slug": "5-minute-room-reset-ventilate-tidy-scent-gently",
+    "route": "/en/knowledge/routines/5-minute-room-reset-ventilate-tidy-scent-gently/",
+    "deRoute": "/de/wissen/routinen/5-minuten-raum-reset-lueften-ordnen-sanft-beduften/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "5-minute room reset: ventilate, tidy, scent gently",
+    "description": "A simple everyday routine to make a room feel fresh and clear without much effort.",
+    "focus": "room reset, ventilation, tidying, gentle scent",
+    "searchKeywords": [
+      "room reset",
+      "5 minute reset",
+      "ventilate",
+      "room scent",
+      "wild orange",
+      "petitgrain"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-EN-003",
+      "KO-W27-EN-001",
+      "KO-W38-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-DE-003",
+    "translationPairId": "KO-W39-PAIR-003",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Küche nach dem Kochen: Duft neu ausrichten",
+    "slug": "kueche-nach-dem-kochen-duft-neu-ausrichten",
+    "route": "/de/wissen/routinen/kueche-nach-dem-kochen-duft-neu-ausrichten/",
+    "enRoute": "/en/knowledge/routines/kitchen-after-cooking-reset-the-scent/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Küche nach dem Kochen: Duft neu ausrichten",
+    "description": "Wie du nach dem Kochen mit Luft, Ordnung und frischen Duftprofilen eine Küche wieder leichter wirken lässt.",
+    "focus": "Küche, Kochen, frischer Duft, Zitrus und Kräuter",
+    "searchKeywords": [
+      "küche nach kochen",
+      "küchenduft",
+      "zitrus küche",
+      "kräuteröl küche",
+      "duft reset",
+      "reinigung keine claims"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-DE-003",
+      "KO-W27-DE-001",
+      "KO-W38-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-EN-003",
+    "translationPairId": "KO-W39-PAIR-003",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Kitchen after cooking: reset the scent",
+    "slug": "kitchen-after-cooking-reset-the-scent",
+    "route": "/en/knowledge/routines/kitchen-after-cooking-reset-the-scent/",
+    "deRoute": "/de/wissen/routinen/kueche-nach-dem-kochen-duft-neu-ausrichten/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Kitchen after cooking: reset the scent",
+    "description": "How to make a kitchen feel lighter after cooking with air, tidying and fresh scent profiles.",
+    "focus": "kitchen, cooking, fresh scent, citrus and herbs",
+    "searchKeywords": [
+      "kitchen after cooking",
+      "kitchen scent",
+      "citrus kitchen",
+      "herbal oil kitchen",
+      "scent reset",
+      "no cleaning claims"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-EN-003",
+      "KO-W27-EN-001",
+      "KO-W38-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-DE-004",
+    "translationPairId": "KO-W39-PAIR-004",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Bad und Gästebad: frisch wirken ohne zu viel Duft",
+    "slug": "bad-und-gaestebad-frisch-wirken-ohne-zu-viel-duft",
+    "route": "/de/wissen/routinen/bad-und-gaestebad-frisch-wirken-ohne-zu-viel-duft/",
+    "enRoute": "/en/knowledge/routines/bathroom-and-guest-bathroom-fresh-without-too-much-scent/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Bad und Gästebad: frisch wirken ohne zu viel Duft",
+    "description": "Eine ruhige Routine für Bad und Gästebad, bei der frischer Eindruck wichtiger ist als starker Duft.",
+    "focus": "Bad, Gästebad, Frische, dezenter Duft",
+    "searchKeywords": [
+      "bad duft",
+      "gästebad",
+      "frischer duft",
+      "tea tree",
+      "eucalyptus",
+      "kleiner raum"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-DE-003",
+      "KO-W27-DE-001",
+      "KO-W38-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-EN-004",
+    "translationPairId": "KO-W39-PAIR-004",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Bathroom and guest bathroom: fresh without too much scent",
+    "slug": "bathroom-and-guest-bathroom-fresh-without-too-much-scent",
+    "route": "/en/knowledge/routines/bathroom-and-guest-bathroom-fresh-without-too-much-scent/",
+    "deRoute": "/de/wissen/routinen/bad-und-gaestebad-frisch-wirken-ohne-zu-viel-duft/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Bathroom and guest bathroom: fresh without too much scent",
+    "description": "A calm routine for bathroom and guest bathroom where a fresh impression matters more than strong scent.",
+    "focus": "bathroom, guest bathroom, freshness, subtle scent",
+    "searchKeywords": [
+      "bathroom scent",
+      "guest bathroom",
+      "fresh scent",
+      "tea tree",
+      "eucalyptus",
+      "small room"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-EN-003",
+      "KO-W27-EN-001",
+      "KO-W38-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-DE-005",
+    "translationPairId": "KO-W39-PAIR-005",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Wäsche, Schrank und Textilien: Duft mit Abstand verwenden",
+    "slug": "waesche-schrank-textilien-duft-mit-abstand-verwenden",
+    "route": "/de/wissen/routinen/waesche-schrank-textilien-duft-mit-abstand-verwenden/",
+    "enRoute": "/en/knowledge/routines/laundry-closet-textiles-use-scent-with-distance/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Wäsche, Schrank und Textilien: Duft mit Abstand verwenden",
+    "description": "Wie du Duft rund um Wäsche und Schrank bewusst einordnest, ohne Öle direkt auf Textilien oder Hautkontaktflächen zu geben.",
+    "focus": "Wäsche, Schrank, Textilien, Hautkontakt, Materialschutz",
+    "searchKeywords": [
+      "wäsche duft",
+      "schrank duft",
+      "textilien ätherische öle",
+      "kleidung öl",
+      "lavender cedarwood",
+      "flecken"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-DE-003",
+      "KO-W27-DE-001",
+      "KO-W38-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-EN-005",
+    "translationPairId": "KO-W39-PAIR-005",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Laundry, closet and textiles: use scent with distance",
+    "slug": "laundry-closet-textiles-use-scent-with-distance",
+    "route": "/en/knowledge/routines/laundry-closet-textiles-use-scent-with-distance/",
+    "deRoute": "/de/wissen/routinen/waesche-schrank-textilien-duft-mit-abstand-verwenden/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Laundry, closet and textiles: use scent with distance",
+    "description": "How to place scent around laundry and closet consciously, without putting oils directly onto textiles or skin-contact surfaces.",
+    "focus": "laundry, closet, textiles, skin contact, material care",
+    "searchKeywords": [
+      "laundry scent",
+      "closet scent",
+      "textiles essential oils",
+      "clothing oil",
+      "lavender cedarwood",
+      "stains"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-EN-003",
+      "KO-W27-EN-001",
+      "KO-W38-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-DE-006",
+    "translationPairId": "KO-W39-PAIR-006",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Auto und unterwegs: Duft bewusst und sicher dosieren",
+    "slug": "auto-und-unterwegs-duft-bewusst-und-sicher-dosieren",
+    "route": "/de/wissen/routinen/auto-und-unterwegs-duft-bewusst-und-sicher-dosieren/",
+    "enRoute": "/en/knowledge/routines/car-and-on-the-go-dose-scent-consciously-and-safely/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Auto und unterwegs: Duft bewusst und sicher dosieren",
+    "description": "Wie du Duft im Auto oder unterwegs sehr zurückhaltend einordnest, ohne Ablenkung oder Überdosierung.",
+    "focus": "Auto, unterwegs, Sicherheit, wenig Duft",
+    "searchKeywords": [
+      "auto duft",
+      "duft unterwegs",
+      "ätherische öle auto",
+      "fahrt sicherheit",
+      "wenig duft",
+      "mitfahrer"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-DE-003",
+      "KO-W27-DE-001",
+      "KO-W38-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-EN-006",
+    "translationPairId": "KO-W39-PAIR-006",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Car and on the go: dose scent consciously and safely",
+    "slug": "car-and-on-the-go-dose-scent-consciously-and-safely",
+    "route": "/en/knowledge/routines/car-and-on-the-go-dose-scent-consciously-and-safely/",
+    "deRoute": "/de/wissen/routinen/auto-und-unterwegs-duft-bewusst-und-sicher-dosieren/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Car and on the go: dose scent consciously and safely",
+    "description": "How to place scent in the car or on the go very carefully, without distraction or overuse.",
+    "focus": "car, on the go, safety, little scent",
+    "searchKeywords": [
+      "car scent",
+      "scent on the go",
+      "essential oils car",
+      "driving safety",
+      "little scent",
+      "passengers"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-EN-003",
+      "KO-W27-EN-001",
+      "KO-W38-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-DE-007",
+    "translationPairId": "KO-W39-PAIR-007",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Gäste zu Hause: Duftetikette mit ätherischen Ölen",
+    "slug": "gaeste-zu-hause-duftetikette-mit-aetherischen-oelen",
+    "route": "/de/wissen/routinen/gaeste-zu-hause-duftetikette-mit-aetherischen-oelen/",
+    "enRoute": "/en/knowledge/routines/guests-at-home-scent-etiquette-with-essential-oils/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Gäste zu Hause: Duftetikette mit ätherischen Ölen",
+    "description": "Warum Duft bei Besuch dezent, gastfreundlich und rücksichtsvoll eingesetzt werden sollte.",
+    "focus": "Gäste, Besuch, Duftetikette, Rücksicht",
+    "searchKeywords": [
+      "duft gäste",
+      "duftetikette",
+      "besuch zuhause",
+      "dezenter duft",
+      "duft empfindlichkeit",
+      "gastfreundlich"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-DE-003",
+      "KO-W27-DE-001",
+      "KO-W38-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-EN-007",
+    "translationPairId": "KO-W39-PAIR-007",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Guests at home: scent etiquette with essential oils",
+    "slug": "guests-at-home-scent-etiquette-with-essential-oils",
+    "route": "/en/knowledge/routines/guests-at-home-scent-etiquette-with-essential-oils/",
+    "deRoute": "/de/wissen/routinen/gaeste-zu-hause-duftetikette-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Guests at home: scent etiquette with essential oils",
+    "description": "Why scent around guests should be subtle, welcoming and considerate.",
+    "focus": "guests, visitors, scent etiquette, consideration",
+    "searchKeywords": [
+      "scent guests",
+      "scent etiquette",
+      "visitors home",
+      "subtle scent",
+      "scent sensitivity",
+      "welcoming"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-EN-003",
+      "KO-W27-EN-001",
+      "KO-W38-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-DE-008",
+    "translationPairId": "KO-W39-PAIR-008",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Haushaltsroutine mit Ölen: frisch wirken, ohne Desinfektionsclaim",
+    "slug": "haushaltsroutine-mit-oelen-frisch-wirken-ohne-desinfektionsclaim",
+    "route": "/de/wissen/routinen/haushaltsroutine-mit-oelen-frisch-wirken-ohne-desinfektionsclaim/",
+    "enRoute": "/en/knowledge/routines/household-routine-with-oils-fresh-impression-without-disinfecting-claims/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Haushaltsroutine mit Ölen: frisch wirken, ohne Desinfektionsclaim",
+    "description": "Wie du ätherische Öle im Haushalt als Duft- und Ritualbaustein nutzt, ohne Reinigungs- oder Desinfektionsversprechen.",
+    "focus": "Haushalt, Frische, Routine, keine Desinfektionsclaims",
+    "searchKeywords": [
+      "haushaltsroutine",
+      "reinigung ohne claims",
+      "desinfektionsclaim",
+      "frischer haushalt",
+      "lemon tea tree",
+      "oberflächen"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-DE-003",
+      "KO-W27-DE-001",
+      "KO-W38-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W39-EN-008",
+    "translationPairId": "KO-W39-PAIR-008",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Household routine with oils: fresh impression without disinfecting claims",
+    "slug": "household-routine-with-oils-fresh-impression-without-disinfecting-claims",
+    "route": "/en/knowledge/routines/household-routine-with-oils-fresh-impression-without-disinfecting-claims/",
+    "deRoute": "/de/wissen/routinen/haushaltsroutine-mit-oelen-frisch-wirken-ohne-desinfektionsclaim/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Household routine with oils: fresh impression without disinfecting claims",
+    "description": "How to use essential oils in the home as scent and ritual support, without cleaning or disinfecting promises.",
+    "focus": "household, freshness, routine, no disinfecting claims",
+    "searchKeywords": [
+      "household routine",
+      "cleaning without claims",
+      "disinfecting claim",
+      "fresh home",
+      "lemon tea tree",
+      "surfaces"
+    ],
+    "relatedArticleIds": [
+      "KO-W37-EN-003",
+      "KO-W27-EN-001",
+      "KO-W38-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "incomeDisclaimerRequired": false,
+    "contentType": "household-seasonal-routine",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/strength-of-doterra/transform-your-atmosphere",
+      "https://www.doterra.com/US/en/blog/healthy-living-diffusing-with-pets",
+      "https://www.doterra.com/US/en/doterra-abode-line",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  }
+]

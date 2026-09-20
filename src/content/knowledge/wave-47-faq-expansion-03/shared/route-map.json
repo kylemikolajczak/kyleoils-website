@@ -1,0 +1,201 @@
+{
+  "wave": "W47 FAQ Expansion 03",
+  "expected_before": {
+    "de": 208,
+    "en": 208,
+    "faq_per_language": 24,
+    "build_pages_approx": 467
+  },
+  "expected_after": {
+    "de": 216,
+    "en": 216,
+    "faq_per_language": 32,
+    "build_pages_approx": 483
+  },
+  "articles": [
+    {
+      "id": "was-ist-der-beste-erste-schritt-wenn-ich-unsicher-bin",
+      "de_title": "Was ist der beste erste Schritt, wenn ich unsicher bin?",
+      "en_title": "What is the best first step if I am unsure?",
+      "de_route": "/de/wissen/faq/was-ist-der-beste-erste-schritt-wenn-ich-unsicher-bin/",
+      "en_route": "/en/knowledge/faq/best-first-step-if-i-am-unsure/",
+      "de_excerpt": "Ein ruhiger Einstieg ist besser als ein schneller Kauf. Diese FAQ erklärt, wie du mit Lesen, Fragen und einfacher Orientierung startest.",
+      "en_excerpt": "A calm start is better than a fast purchase. This FAQ explains how to begin with reading, questions and simple orientation.",
+      "search_de": [
+        "unsicher",
+        "erster schritt",
+        "anfangen",
+        "starten",
+        "orientierung"
+      ],
+      "search_en": [
+        "unsure",
+        "first step",
+        "beginner",
+        "start",
+        "orientation"
+      ]
+    },
+    {
+      "id": "muss-ich-vor-der-beratung-schon-wissen-was-ich-kaufen-will",
+      "de_title": "Muss ich vor der Beratung schon wissen, was ich kaufen will?",
+      "en_title": "Do I need to know what I want to buy before guidance?",
+      "de_route": "/de/wissen/faq/muss-ich-vor-der-beratung-schon-wissen-was-ich-kaufen-will/",
+      "en_route": "/en/knowledge/faq/do-i-need-to-know-what-i-want-to-buy-before-guidance/",
+      "de_excerpt": "Nein. Die Beratung ist genau dafür da, Fragen zu sortieren und nicht vorschnell ein Produkt oder Set zu wählen.",
+      "en_excerpt": "No. Guidance is there to sort questions before choosing a product or kit too quickly.",
+      "search_de": [
+        "beratung",
+        "wissen was kaufen",
+        "kaufentscheidung",
+        "starter set wählen",
+        "fragen"
+      ],
+      "search_en": [
+        "guidance",
+        "what to buy",
+        "purchase decision",
+        "choose starter kit",
+        "questions"
+      ]
+    },
+    {
+      "id": "was-passiert-wenn-ich-nach-dem-kauf-fragen-habe",
+      "de_title": "Was passiert, wenn ich nach dem Kauf Fragen habe?",
+      "en_title": "What happens if I have questions after buying?",
+      "de_route": "/de/wissen/faq/was-passiert-wenn-ich-nach-dem-kauf-fragen-habe/",
+      "en_route": "/en/knowledge/faq/what-happens-if-i-have-questions-after-buying/",
+      "de_excerpt": "Nach dem Kauf sollst du nicht allein sein. Kyle hilft dir, Produkte, Labels und erste Routinen ruhig einzuordnen.",
+      "en_excerpt": "After buying, you should not feel alone. Kyle helps you place products, labels and first routines calmly.",
+      "search_de": [
+        "nach dem kauf",
+        "fragen nach kauf",
+        "nachbetreuung",
+        "starter set ausgepackt",
+        "support"
+      ],
+      "search_en": [
+        "after buying",
+        "questions after purchase",
+        "after purchase support",
+        "unboxed starter kit",
+        "support"
+      ]
+    },
+    {
+      "id": "kann-ich-einen-workshop-auch-ohne-kaufinteresse-anfragen",
+      "de_title": "Kann ich einen Workshop auch ohne Kaufinteresse anfragen?",
+      "en_title": "Can I request a workshop even without buying intent?",
+      "de_route": "/de/wissen/faq/kann-ich-einen-workshop-auch-ohne-kaufinteresse-anfragen/",
+      "en_route": "/en/knowledge/faq/can-i-request-a-workshop-without-buying-intent/",
+      "de_excerpt": "Ja. Ein Workshop kann zuerst Orientierung sein. Es muss keine Verkaufsveranstaltung daraus werden.",
+      "en_excerpt": "Yes. A workshop can be orientation first. It does not have to become a sales event.",
+      "search_de": [
+        "workshop ohne kauf",
+        "kaufinteresse",
+        "einsteiger workshop",
+        "keine verkaufsveranstaltung",
+        "workshop anfragen"
+      ],
+      "search_en": [
+        "workshop without buying",
+        "buying intent",
+        "beginner workshop",
+        "not a sales event",
+        "request workshop"
+      ]
+    },
+    {
+      "id": "kann-ich-auch-auf-englisch-beraten-werden",
+      "de_title": "Kann ich auch auf Englisch beraten werden?",
+      "en_title": "Can I receive guidance in English?",
+      "de_route": "/de/wissen/faq/kann-ich-auch-auf-englisch-beraten-werden/",
+      "en_route": "/en/knowledge/faq/can-i-receive-guidance-in-english/",
+      "de_excerpt": "Ja. Kyle kann auf Deutsch und Englisch beraten. Das ist besonders hilfreich für englischsprachige Menschen in Deutschland.",
+      "en_excerpt": "Yes. Kyle can guide in German and English. This is especially helpful for English speakers in Germany.",
+      "search_de": [
+        "englisch beratung",
+        "english guidance",
+        "expats",
+        "englischsprachig",
+        "deutschland"
+      ],
+      "search_en": [
+        "english guidance",
+        "guidance in English",
+        "expats Germany",
+        "English speakers",
+        "Germany"
+      ]
+    },
+    {
+      "id": "wann-ist-das-doterra-business-noch-zu-frueh",
+      "de_title": "Wann ist das doTERRA Business noch zu früh?",
+      "en_title": "When is the doTERRA business still too early?",
+      "de_route": "/de/wissen/faq/wann-ist-das-doterra-business-noch-zu-frueh/",
+      "en_route": "/en/knowledge/faq/when-is-the-doterra-business-still-too-early/",
+      "de_excerpt": "Wenn Produkte, Alltag und eigene Erfahrung noch unklar sind, ist Business meistens zu früh. Erst Kunde, dann vielleicht Partner.",
+      "en_excerpt": "If products, everyday use and personal experience are still unclear, business is usually too early. Customer first, maybe partner later.",
+      "search_de": [
+        "business zu früh",
+        "doterra business",
+        "erst kunde",
+        "partner werden",
+        "einkommen"
+      ],
+      "search_en": [
+        "business too early",
+        "doterra business",
+        "customer first",
+        "become partner",
+        "income"
+      ]
+    },
+    {
+      "id": "wie-erkenne-ich-ob-ein-oel-zu-stark-fuer-mich-ist",
+      "de_title": "Wie erkenne ich, ob ein Öl zu stark für mich ist?",
+      "en_title": "How do I know if an oil is too strong for me?",
+      "de_route": "/de/wissen/faq/wie-erkenne-ich-ob-ein-oel-zu-stark-fuer-mich-ist/",
+      "en_route": "/en/knowledge/faq/how-do-i-know-if-an-oil-is-too-strong-for-me/",
+      "de_excerpt": "Starke Öle erkennt man nicht nur am Duft. Label, Verdünnung, Hautgefühl und persönliche Sensibilität sind entscheidend.",
+      "en_excerpt": "Strong oils are not only about scent. Label, dilution, skin feel and personal sensitivity matter.",
+      "search_de": [
+        "öl zu stark",
+        "starkes öl",
+        "hot oils",
+        "hautgefühl",
+        "verdünnung"
+      ],
+      "search_en": [
+        "oil too strong",
+        "strong oil",
+        "hot oils",
+        "skin feel",
+        "dilution"
+      ]
+    },
+    {
+      "id": "warum-findet-man-auf-kyle-oils-keine-krankheitsrezepte",
+      "de_title": "Warum findet man auf Kyle Oils keine Krankheitsrezepte?",
+      "en_title": "Why does Kyle Oils not publish illness recipes?",
+      "de_route": "/de/wissen/faq/warum-findet-man-auf-kyle-oils-keine-krankheitsrezepte/",
+      "en_route": "/en/knowledge/faq/why-does-kyle-oils-not-publish-illness-recipes/",
+      "de_excerpt": "Kyle Oils veröffentlicht keine krankheitsbezogenen DIY-Rezepte. Das schützt Besucher, Beratung und eine saubere Produktkommunikation.",
+      "en_excerpt": "Kyle Oils does not publish illness-related DIY recipes. This protects visitors, guidance quality and clear product communication.",
+      "search_de": [
+        "krankheitsrezepte",
+        "flubomb",
+        "öl rezept krankheit",
+        "keine heilversprechen",
+        "diy rezept"
+      ],
+      "search_en": [
+        "illness recipes",
+        "flu bomb",
+        "oil recipe illness",
+        "no healing promises",
+        "diy recipe"
+      ]
+    }
+  ]
+}

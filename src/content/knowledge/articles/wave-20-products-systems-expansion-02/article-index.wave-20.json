@@ -1,0 +1,498 @@
+[
+  {
+    "id": "KO-W20-DE-001",
+    "translationPairId": "KO-W20-PAIR-001",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Wie wähle ich mein erstes doTERRA Produkt?",
+    "slug": "erstes-doterra-produkt-waehlen",
+    "route": "/de/wissen/produkte-systeme/erstes-doterra-produkt-waehlen/",
+    "enRoute": "/en/knowledge/products-systems/choose-your-first-doterra-product/",
+    "worldId": "products",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "Wie wähle ich mein erstes doTERRA Produkt?",
+    "description": "Eine klare Entscheidungshilfe für dein erstes doTERRA Produkt: Öl, Mischung, Touch-Produkt, Diffuser, Starter-Set oder System.",
+    "relatedArticleIds": [
+      "KO-W06-003",
+      "KO-W06-004",
+      "KO-W15-DE-015"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-EN-001",
+    "translationPairId": "KO-W20-PAIR-001",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "How do I choose my first doTERRA product?",
+    "slug": "choose-your-first-doterra-product",
+    "route": "/en/knowledge/products-systems/choose-your-first-doterra-product/",
+    "deRoute": "/de/wissen/produkte-systeme/erstes-doterra-produkt-waehlen/",
+    "worldId": "products",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "How do I choose my first doTERRA product?",
+    "description": "A clear decision guide for your first doTERRA product: oil, blend, Touch product, diffuser, starter kit or system.",
+    "relatedArticleIds": [
+      "KO-W10-003",
+      "KO-W10-004",
+      "KO-W15-EN-015"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-DE-002",
+    "translationPairId": "KO-W20-PAIR-002",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Wann ist ein Starter-Set sinnvoll?",
+    "slug": "wann-ist-ein-starter-set-sinnvoll",
+    "route": "/de/wissen/produkte-systeme/wann-ist-ein-starter-set-sinnvoll/",
+    "enRoute": "/en/knowledge/products-systems/when-does-a-starter-kit-make-sense/",
+    "worldId": "products",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "Wann ist ein Starter-Set sinnvoll?",
+    "description": "Wann ein doTERRA Starter-Set ein guter Einstieg sein kann und wann ein kleinerer Start besser passt.",
+    "relatedArticleIds": [
+      "KO-W06-003",
+      "KO-W14-DE-008",
+      "KO-W20-DE-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-EN-002",
+    "translationPairId": "KO-W20-PAIR-002",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "When does a starter kit make sense?",
+    "slug": "when-does-a-starter-kit-make-sense",
+    "route": "/en/knowledge/products-systems/when-does-a-starter-kit-make-sense/",
+    "deRoute": "/de/wissen/produkte-systeme/wann-ist-ein-starter-set-sinnvoll/",
+    "worldId": "products",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "When does a starter kit make sense?",
+    "description": "When a doTERRA starter kit can be a good first step and when a smaller start may fit better.",
+    "relatedArticleIds": [
+      "KO-W10-003",
+      "KO-W14-EN-008",
+      "KO-W20-EN-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-DE-003",
+    "translationPairId": "KO-W20-PAIR-003",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Unterschied zwischen Einzelöl und Mischung",
+    "slug": "unterschied-einzeloel-und-mischung",
+    "route": "/de/wissen/produkte-systeme/unterschied-einzeloel-und-mischung/",
+    "enRoute": "/en/knowledge/products-systems/difference-between-single-oil-and-blend/",
+    "worldId": "products",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "Unterschied zwischen Einzelöl und Mischung",
+    "description": "Einzelöl oder Mischung? Eine einfache Erklärung, wann was sinnvoll ist und warum beide Produkttypen unterschiedliche Rollen haben.",
+    "relatedArticleIds": [
+      "KO-W15-DE-009",
+      "KO-W15-DE-010",
+      "KO-W06-004"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-EN-003",
+    "translationPairId": "KO-W20-PAIR-003",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Difference between single oil and blend",
+    "slug": "difference-between-single-oil-and-blend",
+    "route": "/en/knowledge/products-systems/difference-between-single-oil-and-blend/",
+    "deRoute": "/de/wissen/produkte-systeme/unterschied-einzeloel-und-mischung/",
+    "worldId": "products",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "Difference between single oil and blend",
+    "description": "Single oil or blend? A simple explanation of when each makes sense and why both product types have different roles.",
+    "relatedArticleIds": [
+      "KO-W15-EN-009",
+      "KO-W15-EN-010",
+      "KO-W10-004"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-DE-004",
+    "translationPairId": "KO-W20-PAIR-004",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Wie plane ich meine erste Bestellung?",
+    "slug": "erste-bestellung-planen",
+    "route": "/de/wissen/produkte-systeme/erste-bestellung-planen/",
+    "enRoute": "/en/knowledge/products-systems/plan-your-first-order/",
+    "worldId": "products",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "Wie plane ich meine erste Bestellung?",
+    "description": "Eine ruhige Schritt-für-Schritt-Orientierung für deine erste doTERRA Bestellung, ohne Druck und ohne Produktchaos.",
+    "relatedArticleIds": [
+      "KO-W14-DE-008",
+      "KO-W20-DE-001",
+      "KO-W20-DE-005"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-EN-004",
+    "translationPairId": "KO-W20-PAIR-004",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "How to plan your first order",
+    "slug": "plan-your-first-order",
+    "route": "/en/knowledge/products-systems/plan-your-first-order/",
+    "deRoute": "/de/wissen/produkte-systeme/erste-bestellung-planen/",
+    "worldId": "products",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "How to plan your first order",
+    "description": "A calm step-by-step orientation for your first doTERRA order without pressure or product overwhelm.",
+    "relatedArticleIds": [
+      "KO-W14-EN-008",
+      "KO-W20-EN-001",
+      "KO-W20-EN-005"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-DE-005",
+    "translationPairId": "KO-W20-PAIR-005",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Wie vermeide ich Produktüberforderung?",
+    "slug": "produktueberforderung-vermeiden",
+    "route": "/de/wissen/produkte-systeme/produktueberforderung-vermeiden/",
+    "enRoute": "/en/knowledge/products-systems/avoid-product-overwhelm/",
+    "worldId": "products",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "Wie vermeide ich Produktüberforderung?",
+    "description": "Warum weniger Produkte oft zu besseren Routinen führen und wie du doTERRA Schritt für Schritt verständlich nutzt.",
+    "relatedArticleIds": [
+      "KO-W20-DE-001",
+      "KO-W20-DE-004",
+      "KO-W06-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-EN-005",
+    "translationPairId": "KO-W20-PAIR-005",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "How to avoid product overwhelm",
+    "slug": "avoid-product-overwhelm",
+    "route": "/en/knowledge/products-systems/avoid-product-overwhelm/",
+    "deRoute": "/de/wissen/produkte-systeme/produktueberforderung-vermeiden/",
+    "worldId": "products",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "How to avoid product overwhelm",
+    "description": "Why fewer products often lead to better routines and how to use doTERRA step by step with more clarity.",
+    "relatedArticleIds": [
+      "KO-W20-EN-001",
+      "KO-W20-EN-004",
+      "KO-W10-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-DE-006",
+    "translationPairId": "KO-W20-PAIR-006",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Wie baue ich eine einfache Monatsroutine?",
+    "slug": "einfache-monatsroutine-aufbauen",
+    "route": "/de/wissen/produkte-systeme/einfache-monatsroutine-aufbauen/",
+    "enRoute": "/en/knowledge/products-systems/build-a-simple-monthly-routine/",
+    "worldId": "products",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "Wie baue ich eine einfache Monatsroutine?",
+    "description": "Eine einfache Monatsroutine mit doTERRA planen: wenige Produkte, klare Wiederholung, Nachbestellung ohne Stress.",
+    "relatedArticleIds": [
+      "KO-W06-008",
+      "KO-W06-006",
+      "KO-W20-DE-005"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-EN-006",
+    "translationPairId": "KO-W20-PAIR-006",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "How to build a simple monthly routine",
+    "slug": "build-a-simple-monthly-routine",
+    "route": "/en/knowledge/products-systems/build-a-simple-monthly-routine/",
+    "deRoute": "/de/wissen/produkte-systeme/einfache-monatsroutine-aufbauen/",
+    "worldId": "products",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "How to build a simple monthly routine",
+    "description": "Plan a simple monthly routine with doTERRA: fewer products, clear repetition and reordering without stress.",
+    "relatedArticleIds": [
+      "KO-W10-008",
+      "KO-W10-006",
+      "KO-W20-EN-005"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-DE-007",
+    "translationPairId": "KO-W20-PAIR-007",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Was sollte ich vor einem doTERRA Einkauf wissen?",
+    "slug": "vor-doterra-einkauf-wissen",
+    "route": "/de/wissen/produkte-systeme/vor-doterra-einkauf-wissen/",
+    "enRoute": "/en/knowledge/products-systems/before-buying-doterra/",
+    "worldId": "products",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "Was sollte ich vor einem doTERRA Einkauf wissen?",
+    "description": "Wichtige Punkte vor dem ersten doTERRA Einkauf: Qualität, Konto, Anwendung, Sicherheit, Budget und Beratung.",
+    "relatedArticleIds": [
+      "KO-W20-DE-004",
+      "KO-W14-DE-008",
+      "KO-W06-002"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-EN-007",
+    "translationPairId": "KO-W20-PAIR-007",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "What should I know before buying doTERRA?",
+    "slug": "before-buying-doterra",
+    "route": "/en/knowledge/products-systems/before-buying-doterra/",
+    "deRoute": "/de/wissen/produkte-systeme/vor-doterra-einkauf-wissen/",
+    "worldId": "products",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "What should I know before buying doTERRA?",
+    "description": "Important points before buying doTERRA: quality, account, use, safety, budget and guidance.",
+    "relatedArticleIds": [
+      "KO-W20-EN-004",
+      "KO-W14-EN-008",
+      "KO-W10-002"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-DE-008",
+    "translationPairId": "KO-W20-PAIR-008",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Warum Beratung vor dem Kauf sinnvoll ist",
+    "slug": "beratung-vor-dem-kauf",
+    "route": "/de/wissen/produkte-systeme/beratung-vor-dem-kauf/",
+    "enRoute": "/en/knowledge/products-systems/guidance-before-buying/",
+    "worldId": "products",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "Warum Beratung vor dem Kauf sinnvoll ist",
+    "description": "Warum persönliche Beratung vor dem doTERRA Kauf Zeit, Geld und Überforderung sparen kann.",
+    "relatedArticleIds": [
+      "KO-W20-DE-001",
+      "KO-W20-DE-004",
+      "KO-W20-DE-005"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  },
+  {
+    "id": "KO-W20-EN-008",
+    "translationPairId": "KO-W20-PAIR-008",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Why guidance before buying makes sense",
+    "slug": "guidance-before-buying",
+    "route": "/en/knowledge/products-systems/guidance-before-buying/",
+    "deRoute": "/de/wissen/produkte-systeme/beratung-vor-dem-kauf/",
+    "worldId": "products",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "Why guidance before buying makes sense",
+    "description": "Why personal guidance before buying doTERRA can save time, money and overwhelm.",
+    "relatedArticleIds": [
+      "KO-W20-EN-001",
+      "KO-W20-EN-004",
+      "KO-W20-EN-005"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "product-education",
+    "sourceUrls": [
+      "https://shop.doterra.com/DE/de_DE/shop/home/",
+      "https://shop.doterra.com/DE/de_DE/shop/wellness-made-simple-bundle/",
+      "https://shop.doterra.com/DE/de_DE/shop/metapwr-brand",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program",
+      "https://www.doterra.com/ME/de_ME/loyalty-rewards-program-faq",
+      "https://www.doterra.com/ME/de_ME/foundational-wellness",
+      "https://media.doterra.com/eu/en/brochures/product-guide.pdf"
+    ]
+  }
+]

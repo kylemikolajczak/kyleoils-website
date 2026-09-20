@@ -1,0 +1,482 @@
+[
+  {
+    "id": "KO-W27-DE-001",
+    "translationPairId": "KO-W27-PAIR-001",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Diffuser sicher in kleinen Räumen nutzen",
+    "slug": "diffuser-sicher-in-kleinen-raeumen-nutzen",
+    "route": "/de/wissen/sicher-anwenden/diffuser-sicher-in-kleinen-raeumen-nutzen/",
+    "enRoute": "/en/knowledge/safe-use/using-a-diffuser-safely-in-small-rooms/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Diffuser sicher in kleinen Räumen nutzen",
+    "description": "Wie du Diffuser in kleinen Räumen sparsam, belüftet und rücksichtsvoll nutzt.",
+    "relatedArticleIds": [
+      "KO-P047-DE",
+      "KO-P121-DE",
+      "KO-W23-DE-003"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-EN-001",
+    "translationPairId": "KO-W27-PAIR-001",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Using a diffuser safely in small rooms",
+    "slug": "using-a-diffuser-safely-in-small-rooms",
+    "route": "/en/knowledge/safe-use/using-a-diffuser-safely-in-small-rooms/",
+    "deRoute": "/de/wissen/sicher-anwenden/diffuser-sicher-in-kleinen-raeumen-nutzen/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Using a diffuser safely in small rooms",
+    "description": "How to use diffusers in small rooms sparingly, with ventilation and consideration.",
+    "relatedArticleIds": [
+      "KO-P047-EN",
+      "KO-P121-EN",
+      "KO-W23-EN-003"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-DE-002",
+    "translationPairId": "KO-W27-PAIR-002",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ätherische Öle und Kinder im Haushalt",
+    "slug": "aetherische-oele-und-kinder-im-haushalt",
+    "route": "/de/wissen/sicher-anwenden/aetherische-oele-und-kinder-im-haushalt/",
+    "enRoute": "/en/knowledge/safe-use/essential-oils-and-children-at-home/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Ätherische Öle und Kinder im Haushalt",
+    "description": "Grundregeln für einen vorsichtigen Umgang mit ätherischen Ölen, wenn Kinder im Haushalt leben.",
+    "relatedArticleIds": [
+      "KO-W26-DE-007",
+      "KO-W18-DE-005",
+      "KO-P045-DE"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-EN-002",
+    "translationPairId": "KO-W27-PAIR-002",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Essential oils and children at home",
+    "slug": "essential-oils-and-children-at-home",
+    "route": "/en/knowledge/safe-use/essential-oils-and-children-at-home/",
+    "deRoute": "/de/wissen/sicher-anwenden/aetherische-oele-und-kinder-im-haushalt/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Essential oils and children at home",
+    "description": "Basic rules for cautious essential oil use when children live in the home.",
+    "relatedArticleIds": [
+      "KO-W26-EN-007",
+      "KO-W18-EN-005",
+      "KO-P045-EN"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-DE-003",
+    "translationPairId": "KO-W27-PAIR-003",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ätherische Öle und Haustiere im Haushalt",
+    "slug": "aetherische-oele-und-haustiere-im-haushalt",
+    "route": "/de/wissen/sicher-anwenden/aetherische-oele-und-haustiere-im-haushalt/",
+    "enRoute": "/en/knowledge/safe-use/essential-oils-and-pets-at-home/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Ätherische Öle und Haustiere im Haushalt",
+    "description": "Wie du Raumduft und ätherische Öle vorsichtig einordnest, wenn Hunde, Katzen oder andere Haustiere im Haushalt leben.",
+    "relatedArticleIds": [
+      "KO-W26-DE-007",
+      "KO-W23-DE-007",
+      "KO-W27-DE-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-EN-003",
+    "translationPairId": "KO-W27-PAIR-003",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Essential oils and pets at home",
+    "slug": "essential-oils-and-pets-at-home",
+    "route": "/en/knowledge/safe-use/essential-oils-and-pets-at-home/",
+    "deRoute": "/de/wissen/sicher-anwenden/aetherische-oele-und-haustiere-im-haushalt/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Essential oils and pets at home",
+    "description": "How to think cautiously about room scent and essential oils when dogs, cats or other pets live in the home.",
+    "relatedArticleIds": [
+      "KO-W26-EN-007",
+      "KO-W23-EN-007",
+      "KO-W27-EN-001"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-DE-004",
+    "translationPairId": "KO-W27-PAIR-004",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Augen, Schleimhäute und ätherische Öle",
+    "slug": "augen-schleimhaeute-und-aetherische-oele",
+    "route": "/de/wissen/sicher-anwenden/augen-schleimhaeute-und-aetherische-oele/",
+    "enRoute": "/en/knowledge/safe-use/eyes-mucous-membranes-and-essential-oils/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Augen, Schleimhäute und ätherische Öle",
+    "description": "Warum ätherische Öle nicht in Augen, Schleimhäute oder empfindliche Körperbereiche gehören.",
+    "relatedArticleIds": [
+      "KO-W18-DE-008",
+      "KO-P021-DE",
+      "KO-P045-DE"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-EN-004",
+    "translationPairId": "KO-W27-PAIR-004",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Eyes, mucous membranes and essential oils",
+    "slug": "eyes-mucous-membranes-and-essential-oils",
+    "route": "/en/knowledge/safe-use/eyes-mucous-membranes-and-essential-oils/",
+    "deRoute": "/de/wissen/sicher-anwenden/augen-schleimhaeute-und-aetherische-oele/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Eyes, mucous membranes and essential oils",
+    "description": "Why essential oils do not belong in eyes, mucous membranes or sensitive body areas.",
+    "relatedArticleIds": [
+      "KO-W18-EN-008",
+      "KO-P021-EN",
+      "KO-P045-EN"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-DE-005",
+    "translationPairId": "KO-W27-PAIR-005",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Zitrusöle, Sonne und Photosensitivität",
+    "slug": "zitrusoele-sonne-und-photosensitivitaet",
+    "route": "/de/wissen/sicher-anwenden/zitrusoele-sonne-und-photosensitivitaet/",
+    "enRoute": "/en/knowledge/safe-use/citrus-oils-sun-exposure-and-photosensitivity/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Zitrusöle, Sonne und Photosensitivität",
+    "description": "Warum manche Zitrusöle vor Sonne und UV-Licht besondere Vorsicht brauchen.",
+    "relatedArticleIds": [
+      "KO-P048-DE",
+      "KO-P115-DE",
+      "KO-W17-DE-008"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-EN-005",
+    "translationPairId": "KO-W27-PAIR-005",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Citrus oils, sun exposure and photosensitivity",
+    "slug": "citrus-oils-sun-exposure-and-photosensitivity",
+    "route": "/en/knowledge/safe-use/citrus-oils-sun-exposure-and-photosensitivity/",
+    "deRoute": "/de/wissen/sicher-anwenden/zitrusoele-sonne-und-photosensitivitaet/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Citrus oils, sun exposure and photosensitivity",
+    "description": "Why some citrus oils require extra caution before sun and UV exposure.",
+    "relatedArticleIds": [
+      "KO-P048-EN",
+      "KO-P115-EN",
+      "KO-W17-EN-008"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-DE-006",
+    "translationPairId": "KO-W27-PAIR-006",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Hautreaktionen vorbeugen: Menge, Verdünnung und Pause",
+    "slug": "hautreaktionen-vorbeugen-menge-verduennung-pause",
+    "route": "/de/wissen/sicher-anwenden/hautreaktionen-vorbeugen-menge-verduennung-pause/",
+    "enRoute": "/en/knowledge/safe-use/preventing-skin-reactions-amount-dilution-breaks/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Hautreaktionen vorbeugen: Menge, Verdünnung und Pause",
+    "description": "Wie du Hautanwendung vorsichtiger planst: wenig Menge, passende Verdünnung, Patch-Test und Pausen.",
+    "relatedArticleIds": [
+      "KO-W18-DE-003",
+      "KO-W18-DE-005",
+      "KO-P045-DE"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-EN-006",
+    "translationPairId": "KO-W27-PAIR-006",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Preventing skin reactions: amount, dilution and breaks",
+    "slug": "preventing-skin-reactions-amount-dilution-breaks",
+    "route": "/en/knowledge/safe-use/preventing-skin-reactions-amount-dilution-breaks/",
+    "deRoute": "/de/wissen/sicher-anwenden/hautreaktionen-vorbeugen-menge-verduennung-pause/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Preventing skin reactions: amount, dilution and breaks",
+    "description": "How to plan topical use more cautiously: less amount, appropriate dilution, patch testing and breaks.",
+    "relatedArticleIds": [
+      "KO-W18-EN-003",
+      "KO-W18-EN-005",
+      "KO-P045-EN"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-DE-007",
+    "translationPairId": "KO-W27-PAIR-007",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ätherische Öle sicher lagern und transportieren",
+    "slug": "aetherische-oele-sicher-lagern-und-transportieren",
+    "route": "/de/wissen/sicher-anwenden/aetherische-oele-sicher-lagern-und-transportieren/",
+    "enRoute": "/en/knowledge/safe-use/storing-and-transporting-essential-oils-safely/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Ätherische Öle sicher lagern und transportieren",
+    "description": "Wie du ätherische Öle vor Hitze, Licht, Auslaufen und Kinderzugriff schützt.",
+    "relatedArticleIds": [
+      "KO-W21-DE-006",
+      "KO-W23-DE-006",
+      "KO-P053-DE"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-EN-007",
+    "translationPairId": "KO-W27-PAIR-007",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Storing and transporting essential oils safely",
+    "slug": "storing-and-transporting-essential-oils-safely",
+    "route": "/en/knowledge/safe-use/storing-and-transporting-essential-oils-safely/",
+    "deRoute": "/de/wissen/sicher-anwenden/aetherische-oele-sicher-lagern-und-transportieren/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Storing and transporting essential oils safely",
+    "description": "How to protect essential oils from heat, light, leaking and children’s access.",
+    "relatedArticleIds": [
+      "KO-W21-EN-006",
+      "KO-W23-EN-006",
+      "KO-P053-EN"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-DE-008",
+    "translationPairId": "KO-W27-PAIR-008",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Wann ätherische Öle gerade nicht passend sind",
+    "slug": "wann-aetherische-oele-nicht-passend-sind",
+    "route": "/de/wissen/sicher-anwenden/wann-aetherische-oele-nicht-passend-sind/",
+    "enRoute": "/en/knowledge/safe-use/when-essential-oils-may-not-be-the-right-choice/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Wann ätherische Öle gerade nicht passend sind",
+    "description": "Warum manchmal weniger, Pause oder Verzicht die bessere Entscheidung ist.",
+    "relatedArticleIds": [
+      "KO-W18-DE-008",
+      "KO-W27-DE-001",
+      "KO-W27-DE-003"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  },
+  {
+    "id": "KO-W27-EN-008",
+    "translationPairId": "KO-W27-PAIR-008",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "When essential oils may not be the right choice",
+    "slug": "when-essential-oils-may-not-be-the-right-choice",
+    "route": "/en/knowledge/safe-use/when-essential-oils-may-not-be-the-right-choice/",
+    "deRoute": "/de/wissen/sicher-anwenden/wann-aetherische-oele-nicht-passend-sind/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "When essential oils may not be the right choice",
+    "description": "Why sometimes less, a break or skipping oils is the better decision.",
+    "relatedArticleIds": [
+      "KO-W18-EN-008",
+      "KO-W27-EN-001",
+      "KO-W27-EN-003"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children"
+    ]
+  }
+]

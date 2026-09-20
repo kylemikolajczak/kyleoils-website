@@ -1,0 +1,138 @@
+[
+  {
+    "id": "KO-W02-001",
+    "title": "Was sind ätherische Öle?",
+    "route": "/de/wissen/aetherische-oele-verstehen/was-sind-aetherische-oele/",
+    "worldId": "understanding-essential-oils",
+    "worldLabel": "Ätherische Öle verstehen",
+    "seoTitle": "Was sind ätherische Öle? Einfach und verständlich erklärt",
+    "description": "Eine ruhige Einführung in ätherische Öle: was sie sind, warum sie so intensiv duften und wie du sie im Alltag bewusst einordnen kannst.",
+    "risk": "low",
+    "language": "de",
+    "relatedArticleIds": [
+      "KO-W02-002",
+      "KO-W02-005",
+      "KO-W02-003"
+    ],
+    "enTranslationStatus": "not_included_in_wave_02"
+  },
+  {
+    "id": "KO-W02-002",
+    "title": "Ätherische Öle für Anfänger",
+    "route": "/de/wissen/aetherische-oele-verstehen/aetherische-oele-fuer-anfaenger/",
+    "worldId": "understanding-essential-oils",
+    "worldLabel": "Ätherische Öle verstehen",
+    "seoTitle": "Ätherische Öle für Anfänger: Ruhig und sicher starten",
+    "description": "Ein einfacher Einstieg für Anfänger: welche Fragen wichtig sind, wie du Öle einordnest und warum weniger am Anfang oft besser ist.",
+    "risk": "low",
+    "language": "de",
+    "relatedArticleIds": [
+      "KO-W02-001",
+      "KO-W02-003",
+      "KO-W02-005"
+    ],
+    "enTranslationStatus": "not_included_in_wave_02"
+  },
+  {
+    "id": "KO-W02-003",
+    "title": "Ätherische Öle richtig verdünnen",
+    "route": "/de/wissen/sicher-anwenden/aetherische-oele-richtig-verduennen/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Ätherische Öle richtig verdünnen: Einfache Orientierung",
+    "description": "Warum Verdünnung wichtig ist, wie Trägeröle helfen und wie du ätherische Öle auf der Haut bewusster und angenehmer nutzt.",
+    "risk": "medium",
+    "language": "de",
+    "relatedArticleIds": [
+      "KO-W02-004",
+      "KO-W02-008",
+      "KO-W02-007"
+    ],
+    "enTranslationStatus": "not_included_in_wave_02"
+  },
+  {
+    "id": "KO-W02-004",
+    "title": "Trägeröle erklärt",
+    "route": "/de/wissen/sicher-anwenden/traegeroele-erklaert/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Trägeröle erklärt: Warum sie bei ätherischen Ölen wichtig sind",
+    "description": "Was Trägeröle sind, warum sie ätherische Öle auf der Haut angenehmer machen und welche Rolle sie in sicheren Routinen spielen.",
+    "risk": "low",
+    "language": "de",
+    "relatedArticleIds": [
+      "KO-W02-003",
+      "KO-W02-008",
+      "KO-W02-007"
+    ],
+    "enTranslationStatus": "not_included_in_wave_02"
+  },
+  {
+    "id": "KO-W02-005",
+    "title": "Diffuser Grundlagen",
+    "route": "/de/wissen/alltag/diffuser-grundlagen/",
+    "worldId": "everyday-use",
+    "worldLabel": "Ätherische Öle im Alltag",
+    "seoTitle": "Diffuser Grundlagen: Ätherische Öle im Raumduft bewusst nutzen",
+    "description": "Wie ein Diffuser funktioniert, worauf du achten solltest und wie du ätherische Öle im Raum ruhig und bewusst einsetzt.",
+    "risk": "low",
+    "language": "de",
+    "relatedArticleIds": [
+      "KO-W02-006",
+      "KO-W02-001",
+      "KO-W02-002"
+    ],
+    "enTranslationStatus": "not_included_in_wave_02"
+  },
+  {
+    "id": "KO-W02-006",
+    "title": "Wie viele Tropfen kommen in den Diffuser?",
+    "route": "/de/wissen/alltag/wie-viele-tropfen-in-den-diffuser/",
+    "worldId": "everyday-use",
+    "worldLabel": "Ätherische Öle im Alltag",
+    "seoTitle": "Wie viele Tropfen in den Diffuser? Ruhig dosieren lernen",
+    "description": "Eine einfache Orientierung zur Tropfenanzahl im Diffuser: warum Raumgröße, Laufzeit und persönliche Empfindlichkeit wichtig sind.",
+    "risk": "low",
+    "language": "de",
+    "relatedArticleIds": [
+      "KO-W02-005",
+      "KO-W02-002",
+      "KO-W02-007"
+    ],
+    "enTranslationStatus": "not_included_in_wave_02"
+  },
+  {
+    "id": "KO-W02-007",
+    "title": "Ätherische Öle richtig aufbewahren",
+    "route": "/de/wissen/sicher-anwenden/aetherische-oele-richtig-aufbewahren/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Ätherische Öle richtig aufbewahren: Einfach und sicher lagern",
+    "description": "Wie du ätherische Öle im Alltag sinnvoll lagerst: Licht, Wärme, Kinder, Verschlüsse und Übersicht einfach erklärt.",
+    "risk": "low",
+    "language": "de",
+    "relatedArticleIds": [
+      "KO-W02-003",
+      "KO-W02-004",
+      "KO-W02-008"
+    ],
+    "enTranslationStatus": "not_included_in_wave_02"
+  },
+  {
+    "id": "KO-W02-008",
+    "title": "Photosensitivität verstehen",
+    "route": "/de/wissen/sicher-anwenden/photosensitivitaet-verstehen/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Photosensitivität bei ätherischen Ölen verständlich erklärt",
+    "description": "Was Photosensitivität bedeutet, warum einige Öle besondere Sonnenhinweise haben und wie du sicherer damit umgehst.",
+    "risk": "medium",
+    "language": "de",
+    "relatedArticleIds": [
+      "KO-W02-003",
+      "KO-W02-007",
+      "KO-W02-004"
+    ],
+    "enTranslationStatus": "not_included_in_wave_02"
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "KO-W26-DE-001",
+    "translationPairId": "KO-W26-PAIR-001",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "5-Minuten-Morgenroutine mit ätherischen Ölen",
+    "slug": "5-minuten-morgenroutine-mit-aetherischen-oelen",
+    "route": "/de/wissen/routinen/5-minuten-morgenroutine-mit-aetherischen-oelen/",
+    "enRoute": "/en/knowledge/routines/5-minute-morning-routine-with-essential-oils/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "5-Minuten-Morgenroutine mit ätherischen Ölen",
+    "description": "Eine einfache Morgenroutine mit ätherischen Ölen: kurz, klar, alltagstauglich und ohne Überforderung.",
+    "relatedArticleIds": [
+      "KO-W20-DE-005",
+      "KO-W21-DE-002",
+      "KO-W18-DE-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-EN-001",
+    "translationPairId": "KO-W26-PAIR-001",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "5-minute morning routine with essential oils",
+    "slug": "5-minute-morning-routine-with-essential-oils",
+    "route": "/en/knowledge/routines/5-minute-morning-routine-with-essential-oils/",
+    "deRoute": "/de/wissen/routinen/5-minuten-morgenroutine-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "5-minute morning routine with essential oils",
+    "description": "A simple morning routine with essential oils: short, clear, everyday-friendly and not overwhelming.",
+    "relatedArticleIds": [
+      "KO-W20-EN-005",
+      "KO-W21-EN-002",
+      "KO-W18-EN-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-DE-002",
+    "translationPairId": "KO-W26-PAIR-002",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Abendroutine ohne Überforderung",
+    "slug": "abendroutine-ohne-ueberforderung",
+    "route": "/de/wissen/routinen/abendroutine-ohne-ueberforderung/",
+    "enRoute": "/en/knowledge/routines/evening-routine-without-overwhelm/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Abendroutine ohne Überforderung",
+    "description": "Eine ruhige Abendroutine mit ätherischen Ölen, die nicht zu groß, zu intensiv oder zu kompliziert wird.",
+    "relatedArticleIds": [
+      "KO-W20-DE-005",
+      "KO-W21-DE-002",
+      "KO-W18-DE-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-EN-002",
+    "translationPairId": "KO-W26-PAIR-002",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Evening routine without overwhelm",
+    "slug": "evening-routine-without-overwhelm",
+    "route": "/en/knowledge/routines/evening-routine-without-overwhelm/",
+    "deRoute": "/de/wissen/routinen/abendroutine-ohne-ueberforderung/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Evening routine without overwhelm",
+    "description": "A calm evening routine with essential oils that does not become too large, intense or complicated.",
+    "relatedArticleIds": [
+      "KO-W20-EN-005",
+      "KO-W21-EN-002",
+      "KO-W18-EN-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-DE-003",
+    "translationPairId": "KO-W26-PAIR-003",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Wochenend-Reset mit ätherischen Ölen",
+    "slug": "wochenend-reset-mit-aetherischen-oelen",
+    "route": "/de/wissen/routinen/wochenend-reset-mit-aetherischen-oelen/",
+    "enRoute": "/en/knowledge/routines/weekend-reset-with-essential-oils/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Wochenend-Reset mit ätherischen Ölen",
+    "description": "Eine einfache Wochenend-Routine für Raum, Kopf und Planung, ohne Wellness-Druck und ohne große Produktliste.",
+    "relatedArticleIds": [
+      "KO-W20-DE-005",
+      "KO-W21-DE-002",
+      "KO-W18-DE-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-EN-003",
+    "translationPairId": "KO-W26-PAIR-003",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Weekend reset with essential oils",
+    "slug": "weekend-reset-with-essential-oils",
+    "route": "/en/knowledge/routines/weekend-reset-with-essential-oils/",
+    "deRoute": "/de/wissen/routinen/wochenend-reset-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Weekend reset with essential oils",
+    "description": "A simple weekend routine for space, mental clearing and planning without wellness pressure or a large product list.",
+    "relatedArticleIds": [
+      "KO-W20-EN-005",
+      "KO-W21-EN-002",
+      "KO-W18-EN-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-DE-004",
+    "translationPairId": "KO-W26-PAIR-004",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Home-Office-Routine mit ätherischen Ölen",
+    "slug": "home-office-routine-mit-aetherischen-oelen",
+    "route": "/de/wissen/routinen/home-office-routine-mit-aetherischen-oelen/",
+    "enRoute": "/en/knowledge/routines/home-office-routine-with-essential-oils/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Home-Office-Routine mit ätherischen Ölen",
+    "description": "Eine einfache Duft- und Struktur-Routine für das Homeoffice ohne Konzentrationsversprechen.",
+    "relatedArticleIds": [
+      "KO-W20-DE-005",
+      "KO-W21-DE-002",
+      "KO-W18-DE-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-EN-004",
+    "translationPairId": "KO-W26-PAIR-004",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Home office routine with essential oils",
+    "slug": "home-office-routine-with-essential-oils",
+    "route": "/en/knowledge/routines/home-office-routine-with-essential-oils/",
+    "deRoute": "/de/wissen/routinen/home-office-routine-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Home office routine with essential oils",
+    "description": "A simple scent and structure routine for the home office without concentration promises.",
+    "relatedArticleIds": [
+      "KO-W20-EN-005",
+      "KO-W21-EN-002",
+      "KO-W18-EN-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-DE-005",
+    "translationPairId": "KO-W26-PAIR-005",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Raumduft-Routine für Gäste",
+    "slug": "raumduft-routine-fuer-gaeste",
+    "route": "/de/wissen/routinen/raumduft-routine-fuer-gaeste/",
+    "enRoute": "/en/knowledge/routines/room-scent-routine-for-guests/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Raumduft-Routine für Gäste",
+    "description": "Eine dezente Gästeroutine mit ätherischen Ölen: freundlich, leicht, sicher und nicht aufdringlich.",
+    "relatedArticleIds": [
+      "KO-W20-DE-005",
+      "KO-W21-DE-002",
+      "KO-W18-DE-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-EN-005",
+    "translationPairId": "KO-W26-PAIR-005",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Room scent routine for guests",
+    "slug": "room-scent-routine-for-guests",
+    "route": "/en/knowledge/routines/room-scent-routine-for-guests/",
+    "deRoute": "/de/wissen/routinen/raumduft-routine-fuer-gaeste/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Room scent routine for guests",
+    "description": "A subtle guest routine with essential oils: friendly, light, safe and not intrusive.",
+    "relatedArticleIds": [
+      "KO-W20-EN-005",
+      "KO-W21-EN-002",
+      "KO-W18-EN-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-DE-006",
+    "translationPairId": "KO-W26-PAIR-006",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Self-Care-Routine nach einem langen Tag",
+    "slug": "self-care-routine-nach-einem-langen-tag",
+    "route": "/de/wissen/routinen/self-care-routine-nach-einem-langen-tag/",
+    "enRoute": "/en/knowledge/routines/self-care-routine-after-a-long-day/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Self-Care-Routine nach einem langen Tag",
+    "description": "Eine einfache Self-Care-Routine mit Duft, Raum und Körperwahrnehmung, ohne Heil- oder Entspannungsversprechen.",
+    "relatedArticleIds": [
+      "KO-W20-DE-005",
+      "KO-W21-DE-002",
+      "KO-W18-DE-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-EN-006",
+    "translationPairId": "KO-W26-PAIR-006",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Self-care routine after a long day",
+    "slug": "self-care-routine-after-a-long-day",
+    "route": "/en/knowledge/routines/self-care-routine-after-a-long-day/",
+    "deRoute": "/de/wissen/routinen/self-care-routine-nach-einem-langen-tag/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Self-care routine after a long day",
+    "description": "A simple self-care routine with scent, space and body awareness, without healing or relaxation promises.",
+    "relatedArticleIds": [
+      "KO-W20-EN-005",
+      "KO-W21-EN-002",
+      "KO-W18-EN-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-DE-007",
+    "translationPairId": "KO-W26-PAIR-007",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Starter-Routine für Familien",
+    "slug": "starter-routine-fuer-familien",
+    "route": "/de/wissen/routinen/starter-routine-fuer-familien/",
+    "enRoute": "/en/knowledge/routines/starter-routine-for-families/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Starter-Routine für Familien",
+    "description": "Eine vorsichtige Familienroutine mit ätherischen Ölen: weniger Produkte, mehr Sicherheit und klare Regeln.",
+    "relatedArticleIds": [
+      "KO-W20-DE-005",
+      "KO-W21-DE-002",
+      "KO-W18-DE-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-EN-007",
+    "translationPairId": "KO-W26-PAIR-007",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Starter routine for families",
+    "slug": "starter-routine-for-families",
+    "route": "/en/knowledge/routines/starter-routine-for-families/",
+    "deRoute": "/de/wissen/routinen/starter-routine-fuer-familien/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Starter routine for families",
+    "description": "A cautious family routine with essential oils: fewer products, more safety and clear rules.",
+    "relatedArticleIds": [
+      "KO-W20-EN-005",
+      "KO-W21-EN-002",
+      "KO-W18-EN-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-DE-008",
+    "translationPairId": "KO-W26-PAIR-008",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Minimalistische Öl-Routine mit 3 Produkten",
+    "slug": "minimalistische-oel-routine-mit-3-produkten",
+    "route": "/de/wissen/routinen/minimalistische-oel-routine-mit-3-produkten/",
+    "enRoute": "/en/knowledge/routines/minimalist-oil-routine-with-3-products/",
+    "worldId": "routines",
+    "worldLabel": "Routinen",
+    "seoTitle": "Minimalistische Öl-Routine mit 3 Produkten",
+    "description": "Wie du mit nur drei Produkten eine klare Öl-Routine aufbaust, statt dich im doTERRA Sortiment zu verlieren.",
+    "relatedArticleIds": [
+      "KO-W20-DE-005",
+      "KO-W21-DE-002",
+      "KO-W18-DE-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  },
+  {
+    "id": "KO-W26-EN-008",
+    "translationPairId": "KO-W26-PAIR-008",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Minimalist oil routine with 3 products",
+    "slug": "minimalist-oil-routine-with-3-products",
+    "route": "/en/knowledge/routines/minimalist-oil-routine-with-3-products/",
+    "deRoute": "/de/wissen/routinen/minimalistische-oel-routine-mit-3-produkten/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Minimalist oil routine with 3 products",
+    "description": "How to build a clear oil routine with only three products instead of getting lost in the doTERRA product range.",
+    "relatedArticleIds": [
+      "KO-W20-EN-005",
+      "KO-W21-EN-002",
+      "KO-W18-EN-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "routine-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-appropriate-dose-topical-dilution",
+      "https://www.doterra.com/PH/en_PH/essential-oil-safety-and-application-toxicity-photosensitivity-phototoxicity",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/"
+    ]
+  }
+]

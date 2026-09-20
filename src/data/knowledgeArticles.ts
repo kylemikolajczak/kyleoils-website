@@ -54,183 +54,183 @@ interface EnglishArticleIndexItem extends Omit<ArticleIndexItem, 'risk' | 'riskL
 
 const approvedGermanContentPacks = [
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-02-content-pack-01/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-02-content-pack-01/article-index.wave-02.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-02-content-pack-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-02-content-pack-01/article-index.wave-02.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-03-content-pack-02/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-03-content-pack-02/article-index.wave-03.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-03-content-pack-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-03-content-pack-02/article-index.wave-03.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-04-oil-lexicon-starter/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-04-oil-lexicon-starter/article-index.wave-04.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-04-oil-lexicon-starter/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-04-oil-lexicon-starter/article-index.wave-04.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-06-products-systems-content-pack-03/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-06-products-systems-content-pack-03/article-index.wave-06.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-06-products-systems-content-pack-03/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-06-products-systems-content-pack-03/article-index.wave-06.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-14-bilingual-faq-starter/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-14-bilingual-faq-starter/article-index.wave-14.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-14-bilingual-faq-starter/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-14-bilingual-faq-starter/article-index.wave-14.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/article-index.wave-15.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-15-header-logo-glossary-starter/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-15-header-logo-glossary-starter/article-index.wave-15.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-17-footer-oil-lexicon-expansion-01/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-17-footer-oil-lexicon-expansion-01/article-index.wave-17.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-17-footer-oil-lexicon-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-17-footer-oil-lexicon-expansion-01/article-index.wave-17.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/article-index.wave-18.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-18-safety-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-18-safety-expansion-01/article-index.wave-18.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-20-products-systems-expansion-02/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-20-products-systems-expansion-02/article-index.wave-20.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-20-products-systems-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-20-products-systems-expansion-02/article-index.wave-20.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-21-faq-expansion-02/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-21-faq-expansion-02/article-index.wave-21.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-21-faq-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-21-faq-expansion-02/article-index.wave-21.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-22-oil-lexicon-expansion-02/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-22-oil-lexicon-expansion-02/article-index.wave-22.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-22-oil-lexicon-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-22-oil-lexicon-expansion-02/article-index.wave-22.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/article-index.wave-23.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-23-everyday-use-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-23-everyday-use-expansion-01/article-index.wave-23.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-25-glossary-expansion-02/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-25-glossary-expansion-02/article-index.wave-25.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-25-glossary-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-25-glossary-expansion-02/article-index.wave-25.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-26-routines-expansion-02/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-26-routines-expansion-02/article-index.wave-26.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-26-routines-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-26-routines-expansion-02/article-index.wave-26.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-27-safety-polish-expansion-02/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-27-safety-polish-expansion-02/article-index.wave-27.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-27-safety-polish-expansion-02/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-27-safety-polish-expansion-02/article-index.wave-27.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-29-core-product-blend-pillar-expansion-01/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-29-core-product-blend-pillar-expansion-01/article-index.wave-29.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-29-core-product-blend-pillar-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-29-core-product-blend-pillar-expansion-01/article-index.wave-29.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/article-index.wave-30.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-30-oil-library-expansion-03/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-30-oil-library-expansion-03/article-index.wave-30.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-32-starter-set-customer-path-conversion-01/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-32-starter-set-customer-path-conversion-01/article-index.wave-32.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-32-starter-set-customer-path-conversion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-32-starter-set-customer-path-conversion-01/article-index.wave-32.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/article-index.wave-35.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-35-buyer-objection-faq-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-35-buyer-objection-faq-expansion-01/article-index.wave-35.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-37-first-30-days-starter-routine-01/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-37-first-30-days-starter-routine-01/article-index.wave-37.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-37-first-30-days-starter-routine-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-37-first-30-days-starter-routine-01/article-index.wave-37.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-38-oil-library-expansion-04/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-38-oil-library-expansion-04/article-index.wave-38.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-38-oil-library-expansion-04/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-38-oil-library-expansion-04/article-index.wave-38.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-39-seasonal-household-routine-expansion-01/de'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-39-seasonal-household-routine-expansion-01/article-index.wave-39.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-39-seasonal-household-routine-expansion-01/de'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-39-seasonal-household-routine-expansion-01/article-index.wave-39.json'),
   },
 ];
 
 const approvedEnglishContentPacks = [
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-07-en-sync-01-basics-safety/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-07-en-sync-01-basics-safety/article-index.wave-07.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-07-en-sync-01-basics-safety/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-07-en-sync-01-basics-safety/article-index.wave-07.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-08-en-sync-02-routines-everyday-use/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-08-en-sync-02-routines-everyday-use/article-index.wave-08.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-08-en-sync-02-routines-everyday-use/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-08-en-sync-02-routines-everyday-use/article-index.wave-08.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-09-en-sync-03-oil-lexicon-starter/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-09-en-sync-03-oil-lexicon-starter/article-index.wave-09.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-09-en-sync-03-oil-lexicon-starter/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-09-en-sync-03-oil-lexicon-starter/article-index.wave-09.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-10-en-sync-04-products-systems/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-10-en-sync-04-products-systems/article-index.wave-10.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-10-en-sync-04-products-systems/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-10-en-sync-04-products-systems/article-index.wave-10.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-14-bilingual-faq-starter/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-14-bilingual-faq-starter/article-index.wave-14.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-14-bilingual-faq-starter/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-14-bilingual-faq-starter/article-index.wave-14.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-15-header-logo-glossary-starter/article-index.wave-15.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-15-header-logo-glossary-starter/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-15-header-logo-glossary-starter/article-index.wave-15.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-17-footer-oil-lexicon-expansion-01/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-17-footer-oil-lexicon-expansion-01/article-index.wave-17.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-17-footer-oil-lexicon-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-17-footer-oil-lexicon-expansion-01/article-index.wave-17.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-18-safety-expansion-01/article-index.wave-18.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-18-safety-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-18-safety-expansion-01/article-index.wave-18.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-20-products-systems-expansion-02/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-20-products-systems-expansion-02/article-index.wave-20.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-20-products-systems-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-20-products-systems-expansion-02/article-index.wave-20.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-21-faq-expansion-02/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-21-faq-expansion-02/article-index.wave-21.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-21-faq-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-21-faq-expansion-02/article-index.wave-21.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-22-oil-lexicon-expansion-02/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-22-oil-lexicon-expansion-02/article-index.wave-22.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-22-oil-lexicon-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-22-oil-lexicon-expansion-02/article-index.wave-22.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-23-everyday-use-expansion-01/article-index.wave-23.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-23-everyday-use-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-23-everyday-use-expansion-01/article-index.wave-23.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-25-glossary-expansion-02/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-25-glossary-expansion-02/article-index.wave-25.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-25-glossary-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-25-glossary-expansion-02/article-index.wave-25.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-26-routines-expansion-02/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-26-routines-expansion-02/article-index.wave-26.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-26-routines-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-26-routines-expansion-02/article-index.wave-26.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-27-safety-polish-expansion-02/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-27-safety-polish-expansion-02/article-index.wave-27.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-27-safety-polish-expansion-02/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-27-safety-polish-expansion-02/article-index.wave-27.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-29-core-product-blend-pillar-expansion-01/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-29-core-product-blend-pillar-expansion-01/article-index.wave-29.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-29-core-product-blend-pillar-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-29-core-product-blend-pillar-expansion-01/article-index.wave-29.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-30-oil-library-expansion-03/article-index.wave-30.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-30-oil-library-expansion-03/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-30-oil-library-expansion-03/article-index.wave-30.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-32-starter-set-customer-path-conversion-01/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-32-starter-set-customer-path-conversion-01/article-index.wave-32.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-32-starter-set-customer-path-conversion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-32-starter-set-customer-path-conversion-01/article-index.wave-32.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-35-buyer-objection-faq-expansion-01/article-index.wave-35.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-35-buyer-objection-faq-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-35-buyer-objection-faq-expansion-01/article-index.wave-35.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-37-first-30-days-starter-routine-01/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-37-first-30-days-starter-routine-01/article-index.wave-37.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-37-first-30-days-starter-routine-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-37-first-30-days-starter-routine-01/article-index.wave-37.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-38-oil-library-expansion-04/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-38-oil-library-expansion-04/article-index.wave-38.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-38-oil-library-expansion-04/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-38-oil-library-expansion-04/article-index.wave-38.json'),
   },
   {
-    articleDirectory: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-39-seasonal-household-routine-expansion-01/en'),
-    articleIndexPath: resolve(process.cwd(), 'review/knowledge-hub/articles/wave-39-seasonal-household-routine-expansion-01/article-index.wave-39.json'),
+    articleDirectory: resolve(process.cwd(), 'src/content/knowledge/articles/wave-39-seasonal-household-routine-expansion-01/en'),
+    articleIndexPath: resolve(process.cwd(), 'src/content/knowledge/articles/wave-39-seasonal-household-routine-expansion-01/article-index.wave-39.json'),
   },
 ];
 
@@ -338,7 +338,7 @@ interface Wave46RouteItem {
   search_en: string[];
 }
 
-const wave46ContentRoot = resolve(process.cwd(), 'review/knowledge-hub/content/wave-46-oil-library-expansion-05');
+const wave46ContentRoot = resolve(process.cwd(), 'src/content/knowledge/wave-46-oil-library-expansion-05');
 const wave46RouteMap = JSON.parse(
   readFileSync(resolve(wave46ContentRoot, 'shared/route-map.json'), 'utf8'),
 ) as { articles: Wave46RouteItem[] };
@@ -443,7 +443,7 @@ interface Wave47RouteItem {
   search_en: string[];
 }
 
-const wave47ContentRoot = resolve(process.cwd(), 'review/knowledge-hub/content/wave-47-faq-expansion-03');
+const wave47ContentRoot = resolve(process.cwd(), 'src/content/knowledge/wave-47-faq-expansion-03');
 const wave47RouteMap = JSON.parse(
   readFileSync(resolve(wave47ContentRoot, 'shared/route-map.json'), 'utf8'),
 ) as { articles: Wave47RouteItem[] };

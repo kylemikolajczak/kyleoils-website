@@ -1,0 +1,146 @@
+[
+  {
+    "id": "KO-W07-001",
+    "sourceDeId": "KO-W02-001",
+    "language": "en",
+    "title": "What are essential oils?",
+    "route": "/en/knowledge/understanding-essential-oils/what-are-essential-oils/",
+    "deRoute": "/de/wissen/aetherische-oele-verstehen/was-sind-aetherische-oele/",
+    "worldId": "understanding-essential-oils",
+    "worldLabel": "Understanding Essential Oils",
+    "seoTitle": "What are essential oils? A calm beginner introduction",
+    "description": "A calm beginner introduction to essential oils: what they are, why they smell so intense and how to understand them as part of everyday routines.",
+    "relatedArticleIds": [
+      "KO-W07-002",
+      "KO-W07-003",
+      "KO-W07-005"
+    ],
+    "translationType": "adapted_english_sync_from_wave_02"
+  },
+  {
+    "id": "KO-W07-002",
+    "sourceDeId": "KO-W02-002",
+    "language": "en",
+    "title": "Essential oils for beginners",
+    "route": "/en/knowledge/understanding-essential-oils/essential-oils-for-beginners/",
+    "deRoute": "/de/wissen/aetherische-oele-verstehen/aetherische-oele-fuer-anfaenger/",
+    "worldId": "understanding-essential-oils",
+    "worldLabel": "Understanding Essential Oils",
+    "seoTitle": "Essential oils for beginners: a calm first guide",
+    "description": "A simple beginner guide to essential oils: what matters first, what to avoid and why less is often better at the beginning.",
+    "relatedArticleIds": [
+      "KO-W07-001",
+      "KO-W07-003",
+      "KO-W07-005"
+    ],
+    "translationType": "adapted_english_sync_from_wave_02"
+  },
+  {
+    "id": "KO-W07-003",
+    "sourceDeId": "KO-W02-003",
+    "language": "en",
+    "title": "How to dilute essential oils",
+    "route": "/en/knowledge/safe-use/how-to-dilute-essential-oils/",
+    "deRoute": "/de/wissen/sicher-anwenden/aetherische-oele-richtig-verduennen/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "How to dilute essential oils safely and simply",
+    "description": "Why dilution matters, how carrier oils help and how to approach topical use of essential oils more consciously.",
+    "relatedArticleIds": [
+      "KO-W07-004",
+      "KO-W07-008",
+      "KO-W07-002"
+    ],
+    "translationType": "adapted_english_sync_from_wave_02"
+  },
+  {
+    "id": "KO-W07-004",
+    "sourceDeId": "KO-W02-004",
+    "language": "en",
+    "title": "Carrier oils explained",
+    "route": "/en/knowledge/safe-use/carrier-oils-explained/",
+    "deRoute": "/de/wissen/sicher-anwenden/traegeroele-erklaert/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Carrier oils explained for essential oil beginners",
+    "description": "What carrier oils are, why they matter for topical use and how they support safer essential oil routines.",
+    "relatedArticleIds": [
+      "KO-W07-003",
+      "KO-W07-008",
+      "KO-W07-002"
+    ],
+    "translationType": "adapted_english_sync_from_wave_02"
+  },
+  {
+    "id": "KO-W07-005",
+    "sourceDeId": "KO-W02-005",
+    "language": "en",
+    "title": "Diffuser basics",
+    "route": "/en/knowledge/everyday-use/diffuser-basics/",
+    "deRoute": "/de/wissen/alltag/diffuser-grundlagen/",
+    "worldId": "everyday-use",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "Diffuser basics for essential oils",
+    "description": "How a diffuser works, what to consider and how to use essential oils aromatically in a calm and conscious way.",
+    "relatedArticleIds": [
+      "KO-W07-006",
+      "KO-W07-001",
+      "KO-W07-002"
+    ],
+    "translationType": "adapted_english_sync_from_wave_02"
+  },
+  {
+    "id": "KO-W07-006",
+    "sourceDeId": "KO-W02-006",
+    "language": "en",
+    "title": "How many drops go in a diffuser?",
+    "route": "/en/knowledge/everyday-use/how-many-drops-go-in-a-diffuser/",
+    "deRoute": "/de/wissen/alltag/wie-viele-tropfen-kommen-in-den-diffuser/",
+    "worldId": "everyday-use",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "How many drops of essential oil go in a diffuser?",
+    "description": "A simple guide to diffuser drop amounts and why room size, runtime and personal sensitivity matter.",
+    "relatedArticleIds": [
+      "KO-W07-005",
+      "KO-W07-001",
+      "KO-W07-002"
+    ],
+    "translationType": "adapted_english_sync_from_wave_02"
+  },
+  {
+    "id": "KO-W07-007",
+    "sourceDeId": "KO-W02-007",
+    "language": "en",
+    "title": "How to store essential oils",
+    "route": "/en/knowledge/safe-use/how-to-store-essential-oils/",
+    "deRoute": "/de/wissen/sicher-anwenden/aetherische-oele-richtig-aufbewahren/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "How to store essential oils safely at home",
+    "description": "How to store essential oils in everyday life: light, heat, children, caps and simple organization explained clearly.",
+    "relatedArticleIds": [
+      "KO-W07-003",
+      "KO-W07-008",
+      "KO-W07-002"
+    ],
+    "translationType": "adapted_english_sync_from_wave_02"
+  },
+  {
+    "id": "KO-W07-008",
+    "sourceDeId": "KO-W02-008",
+    "language": "en",
+    "title": "Understanding photosensitivity",
+    "route": "/en/knowledge/safe-use/understanding-photosensitivity/",
+    "deRoute": "/de/wissen/sicher-anwenden/photosensitivity-understanding/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Photosensitivity and essential oils explained simply",
+    "description": "What photosensitivity means, why some oils have special sun-related safety notes and how to approach them more carefully.",
+    "relatedArticleIds": [
+      "KO-W07-003",
+      "KO-W07-004",
+      "KO-W07-007"
+    ],
+    "translationType": "adapted_english_sync_from_wave_02"
+  }
+]

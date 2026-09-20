@@ -1,0 +1,482 @@
+[
+  {
+    "id": "KO-W23-DE-001",
+    "translationPairId": "KO-W23-PAIR-001",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Frische Küche nach dem Kochen",
+    "slug": "frische-kueche-nach-dem-kochen",
+    "route": "/de/wissen/alltag/frische-kueche-nach-dem-kochen/",
+    "enRoute": "/en/knowledge/everyday-use/fresh-kitchen-scent-after-cooking/",
+    "worldId": "everyday",
+    "worldLabel": "Alltag",
+    "seoTitle": "Frische Küche nach dem Kochen",
+    "description": "Wie du nach dem Kochen eine frische Küchenatmosphäre gestaltest, ohne Duft zu überladen oder Sicherheit zu vergessen.",
+    "relatedArticleIds": [
+      "KO-W03-005",
+      "KO-W21-DE-004",
+      "KO-W22-DE-002"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-EN-001",
+    "translationPairId": "KO-W23-PAIR-001",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Fresh kitchen scent after cooking",
+    "slug": "fresh-kitchen-scent-after-cooking",
+    "route": "/en/knowledge/everyday-use/fresh-kitchen-scent-after-cooking/",
+    "deRoute": "/de/wissen/alltag/frische-kueche-nach-dem-kochen/",
+    "worldId": "everyday",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "Fresh kitchen scent after cooking",
+    "description": "How to create a fresh kitchen atmosphere after cooking without overloading scent or forgetting safety.",
+    "relatedArticleIds": [
+      "KO-W08-005",
+      "KO-W21-EN-004",
+      "KO-W22-EN-002"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-DE-002",
+    "translationPairId": "KO-W23-PAIR-002",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Eingangsbereich angenehm duften lassen",
+    "slug": "eingangsbereich-angenehm-duften-lassen",
+    "route": "/de/wissen/alltag/eingangsbereich-angenehm-duften-lassen/",
+    "enRoute": "/en/knowledge/everyday-use/scent-an-entryway-naturally/",
+    "worldId": "everyday",
+    "worldLabel": "Alltag",
+    "seoTitle": "Eingangsbereich angenehm duften lassen",
+    "description": "Warum der Eingangsbereich ein guter Ort für eine einfache Duft-Routine ist und wie du ihn nicht überlädst.",
+    "relatedArticleIds": [
+      "KO-W03-006",
+      "KO-W21-DE-008",
+      "KO-W17-DE-005"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-EN-002",
+    "translationPairId": "KO-W23-PAIR-002",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "How to scent an entryway naturally",
+    "slug": "scent-an-entryway-naturally",
+    "route": "/en/knowledge/everyday-use/scent-an-entryway-naturally/",
+    "deRoute": "/de/wissen/alltag/eingangsbereich-angenehm-duften-lassen/",
+    "worldId": "everyday",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "How to scent an entryway naturally",
+    "description": "Why the entryway is a useful place for a simple scent routine and how to avoid overloading it.",
+    "relatedArticleIds": [
+      "KO-W08-006",
+      "KO-W21-EN-008",
+      "KO-W17-EN-005"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-DE-003",
+    "translationPairId": "KO-W23-PAIR-003",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Badezimmer-Duftroutine ohne Übertreibung",
+    "slug": "badezimmer-duftroutine-ohne-uebertreibung",
+    "route": "/de/wissen/alltag/badezimmer-duftroutine-ohne-uebertreibung/",
+    "enRoute": "/en/knowledge/everyday-use/bathroom-scent-routine-without-overdoing-it/",
+    "worldId": "everyday",
+    "worldLabel": "Alltag",
+    "seoTitle": "Badezimmer-Duftroutine ohne Übertreibung",
+    "description": "Wie du im Badezimmer mit ätherischen Ölen frisch beduftest, ohne den kleinen Raum zu stark zu machen.",
+    "relatedArticleIds": [
+      "KO-W02-005",
+      "KO-W18-DE-007",
+      "KO-W21-DE-002"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-EN-003",
+    "translationPairId": "KO-W23-PAIR-003",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Bathroom scent routine without overdoing it",
+    "slug": "bathroom-scent-routine-without-overdoing-it",
+    "route": "/en/knowledge/everyday-use/bathroom-scent-routine-without-overdoing-it/",
+    "deRoute": "/de/wissen/alltag/badezimmer-duftroutine-ohne-uebertreibung/",
+    "worldId": "everyday",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "Bathroom scent routine without overdoing it",
+    "description": "How to use essential oils in the bathroom for freshness without making a small room too intense.",
+    "relatedArticleIds": [
+      "KO-W07-005",
+      "KO-W18-EN-007",
+      "KO-W21-EN-002"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-DE-004",
+    "translationPairId": "KO-W23-PAIR-004",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Duftzone im Homeoffice einrichten",
+    "slug": "duftzone-im-homeoffice-einrichten",
+    "route": "/de/wissen/alltag/duftzone-im-homeoffice-einrichten/",
+    "enRoute": "/en/knowledge/everyday-use/create-a-home-office-scent-zone/",
+    "worldId": "everyday",
+    "worldLabel": "Alltag",
+    "seoTitle": "Duftzone im Homeoffice einrichten",
+    "description": "Wie du im Homeoffice eine klare Duftzone nutzt, ohne Konzentrationsversprechen oder Überforderung.",
+    "relatedArticleIds": [
+      "KO-W03-007",
+      "KO-W17-DE-002",
+      "KO-W21-DE-008"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-EN-004",
+    "translationPairId": "KO-W23-PAIR-004",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "How to create a home office scent zone",
+    "slug": "create-a-home-office-scent-zone",
+    "route": "/en/knowledge/everyday-use/create-a-home-office-scent-zone/",
+    "deRoute": "/de/wissen/alltag/duftzone-im-homeoffice-einrichten/",
+    "worldId": "everyday",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "How to create a home office scent zone",
+    "description": "How to use a clear scent zone in a home office without concentration claims or overwhelm.",
+    "relatedArticleIds": [
+      "KO-W08-007",
+      "KO-W17-EN-002",
+      "KO-W21-EN-008"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-DE-005",
+    "translationPairId": "KO-W23-PAIR-005",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Zuhause für Gäste vorbereiten",
+    "slug": "zuhause-fuer-gaeste-vorbereiten",
+    "route": "/de/wissen/alltag/zuhause-fuer-gaeste-vorbereiten/",
+    "enRoute": "/en/knowledge/everyday-use/prepare-your-home-for-guests-with-scent/",
+    "worldId": "everyday",
+    "worldLabel": "Alltag",
+    "seoTitle": "Zuhause für Gäste vorbereiten",
+    "description": "Wie du ätherische Öle nutzt, wenn Besuch kommt: freundlich, dezent, sicher und nicht zu intensiv.",
+    "relatedArticleIds": [
+      "KO-W21-DE-008",
+      "KO-W02-006",
+      "KO-W23-DE-002"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-EN-005",
+    "translationPairId": "KO-W23-PAIR-005",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "How to prepare your home for guests with scent",
+    "slug": "prepare-your-home-for-guests-with-scent",
+    "route": "/en/knowledge/everyday-use/prepare-your-home-for-guests-with-scent/",
+    "deRoute": "/de/wissen/alltag/zuhause-fuer-gaeste-vorbereiten/",
+    "worldId": "everyday",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "How to prepare your home for guests with scent",
+    "description": "How to use essential oils when guests visit: friendly, subtle, safe and not too intense.",
+    "relatedArticleIds": [
+      "KO-W21-EN-008",
+      "KO-W07-006",
+      "KO-W23-EN-002"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-DE-006",
+    "translationPairId": "KO-W23-PAIR-006",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ätherische Öle unterwegs und auf Reisen",
+    "slug": "aetherische-oele-unterwegs-und-auf-reisen",
+    "route": "/de/wissen/alltag/aetherische-oele-unterwegs-und-auf-reisen/",
+    "enRoute": "/en/knowledge/everyday-use/essential-oils-on-the-go-and-when-traveling/",
+    "worldId": "everyday",
+    "worldLabel": "Alltag",
+    "seoTitle": "Ätherische Öle unterwegs und auf Reisen",
+    "description": "Wie du ätherische Öle unterwegs praktisch, reduziert und sicher mitnimmst, ohne die ganze Sammlung einzupacken.",
+    "relatedArticleIds": [
+      "KO-W02-007",
+      "KO-W20-DE-005",
+      "KO-W21-DE-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-EN-006",
+    "translationPairId": "KO-W23-PAIR-006",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Essential oils on the go and when traveling",
+    "slug": "essential-oils-on-the-go-and-when-traveling",
+    "route": "/en/knowledge/everyday-use/essential-oils-on-the-go-and-when-traveling/",
+    "deRoute": "/de/wissen/alltag/aetherische-oele-unterwegs-und-auf-reisen/",
+    "worldId": "everyday",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "Essential oils on the go and when traveling",
+    "description": "How to take essential oils with you practically, minimally and safely without packing your whole collection.",
+    "relatedArticleIds": [
+      "KO-W07-007",
+      "KO-W20-EN-005",
+      "KO-W21-EN-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-DE-007",
+    "translationPairId": "KO-W23-PAIR-007",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ätherische Öle im Auto?",
+    "slug": "aetherische-oele-im-auto",
+    "route": "/de/wissen/alltag/aetherische-oele-im-auto/",
+    "enRoute": "/en/knowledge/everyday-use/essential-oils-in-the-car/",
+    "worldId": "everyday",
+    "worldLabel": "Alltag",
+    "seoTitle": "Ätherische Öle im Auto?",
+    "description": "Was du beachten solltest, wenn du ätherische Öle im Auto nutzen oder transportieren möchtest.",
+    "relatedArticleIds": [
+      "KO-W23-DE-006",
+      "KO-W21-DE-006",
+      "KO-W18-DE-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-EN-007",
+    "translationPairId": "KO-W23-PAIR-007",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Can you use essential oils in the car?",
+    "slug": "essential-oils-in-the-car",
+    "route": "/en/knowledge/everyday-use/essential-oils-in-the-car/",
+    "deRoute": "/de/wissen/alltag/aetherische-oele-im-auto/",
+    "worldId": "everyday",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "Can you use essential oils in the car?",
+    "description": "What to consider if you want to use or transport essential oils in the car.",
+    "relatedArticleIds": [
+      "KO-W23-EN-006",
+      "KO-W21-EN-006",
+      "KO-W18-EN-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-DE-008",
+    "translationPairId": "KO-W23-PAIR-008",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Duft für Schrank, Textilien und Wäsche?",
+    "slug": "duft-fuer-schrank-textilien-und-waesche",
+    "route": "/de/wissen/alltag/duft-fuer-schrank-textilien-und-waesche/",
+    "enRoute": "/en/knowledge/everyday-use/scent-for-wardrobe-textiles-and-laundry/",
+    "worldId": "everyday",
+    "worldLabel": "Alltag",
+    "seoTitle": "Duft für Schrank, Textilien und Wäsche?",
+    "description": "Wie du Schrank, Textilien und Wäsche mit Duftideen einordnest, ohne Öle unkontrolliert auf Stoffe zu geben.",
+    "relatedArticleIds": [
+      "KO-W23-DE-005",
+      "KO-W21-DE-006",
+      "KO-W18-DE-003"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  },
+  {
+    "id": "KO-W23-EN-008",
+    "translationPairId": "KO-W23-PAIR-008",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Scent for wardrobe, textiles and laundry?",
+    "slug": "scent-for-wardrobe-textiles-and-laundry",
+    "route": "/en/knowledge/everyday-use/scent-for-wardrobe-textiles-and-laundry/",
+    "deRoute": "/de/wissen/alltag/duft-fuer-schrank-textilien-und-waesche/",
+    "worldId": "everyday",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "Scent for wardrobe, textiles and laundry?",
+    "description": "How to think about wardrobe, textiles and laundry scent ideas without applying oils uncontrollably to fabrics.",
+    "relatedArticleIds": [
+      "KO-W23-EN-005",
+      "KO-W21-EN-006",
+      "KO-W18-EN-003"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "everyday-use-article",
+    "sourceUrls": [
+      "https://www.doterra.com/using-essential-oils",
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://shop.doterra.com/DE/en_DE/shop/product-guide/",
+      "https://shop.doterra.com/DE/en_DE/shop/lumo-diffuser/",
+      "https://www.doterra.com/US/en/strength-of-doterra/scent-your-home-naturally",
+      "https://www.doterra.com/US/en/blog/diffuser-blends-for-cleansing-the-air"
+    ]
+  }
+]

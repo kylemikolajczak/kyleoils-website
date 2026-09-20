@@ -1,0 +1,658 @@
+[
+  {
+    "id": "KO-W35-DE-001",
+    "translationPairId": "KO-W35-PAIR-001",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Warum über Kyle statt direkt im doTERRA Shop?",
+    "slug": "warum-ueber-kyle-statt-direkt-im-doterra-shop",
+    "route": "/de/wissen/faq/warum-ueber-kyle-statt-direkt-im-doterra-shop/",
+    "enRoute": "/en/knowledge/faq/why-through-kyle-instead-of-directly-in-the-doterra-shop/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Warum über Kyle statt direkt im doTERRA Shop?",
+    "description": "Warum persönliche Orientierung vor dem Kauf oft sinnvoller ist als einfach allein durch den Shop zu klicken.",
+    "question": "Warum sollte ich über Kyle gehen, wenn ich doch auch direkt im Shop schauen kann?",
+    "searchKeywords": [
+      "warum über kyle",
+      "direkt im shop",
+      "shop link",
+      "beratung vor kauf",
+      "warum berater",
+      "persönliche empfehlung"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-DE-001",
+      "KO-W32-DE-005",
+      "KO-W32-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-EN-001",
+    "translationPairId": "KO-W35-PAIR-001",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Why through Kyle instead of directly in the doTERRA shop?",
+    "slug": "why-through-kyle-instead-of-directly-in-the-doterra-shop",
+    "route": "/en/knowledge/faq/why-through-kyle-instead-of-directly-in-the-doterra-shop/",
+    "deRoute": "/de/wissen/faq/warum-ueber-kyle-statt-direkt-im-doterra-shop/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Why through Kyle instead of directly in the doTERRA shop?",
+    "description": "Why personal orientation before buying is often more useful than clicking through the shop alone.",
+    "question": "Why should I go through Kyle if I can also look directly in the shop?",
+    "searchKeywords": [
+      "why through kyle",
+      "directly in shop",
+      "shop link",
+      "guidance before buying",
+      "why advisor",
+      "personal recommendation"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-EN-001",
+      "KO-W32-EN-005",
+      "KO-W32-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-DE-002",
+    "translationPairId": "KO-W35-PAIR-002",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ist doTERRA nicht zu teuer?",
+    "slug": "ist-doterra-nicht-zu-teuer",
+    "route": "/de/wissen/faq/ist-doterra-nicht-zu-teuer/",
+    "enRoute": "/en/knowledge/faq/is-doterra-not-too-expensive/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Ist doTERRA nicht zu teuer?",
+    "description": "Wie du den Preis von doTERRA ruhiger einordnest, ohne Druck und ohne Kaufversprechen.",
+    "question": "Ist doTERRA nicht einfach zu teuer?",
+    "searchKeywords": [
+      "doterra teuer",
+      "zu teuer",
+      "preis",
+      "lohnt sich doterra",
+      "kosten",
+      "einkaufspreis"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-DE-001",
+      "KO-W32-DE-005",
+      "KO-W32-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-EN-002",
+    "translationPairId": "KO-W35-PAIR-002",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Is doTERRA not too expensive?",
+    "slug": "is-doterra-not-too-expensive",
+    "route": "/en/knowledge/faq/is-doterra-not-too-expensive/",
+    "deRoute": "/de/wissen/faq/ist-doterra-nicht-zu-teuer/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Is doTERRA not too expensive?",
+    "description": "How to place the price of doTERRA more calmly, without pressure and without purchase promises.",
+    "question": "Is doTERRA not simply too expensive?",
+    "searchKeywords": [
+      "doterra expensive",
+      "too expensive",
+      "price",
+      "is doterra worth it",
+      "cost",
+      "wholesale price"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-EN-001",
+      "KO-W32-EN-005",
+      "KO-W32-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-DE-003",
+    "translationPairId": "KO-W35-PAIR-003",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Warum nicht Amazon oder günstige Öle?",
+    "slug": "warum-nicht-amazon-oder-guenstige-oele",
+    "route": "/de/wissen/faq/warum-nicht-amazon-oder-guenstige-oele/",
+    "enRoute": "/en/knowledge/faq/why-not-amazon-or-cheaper-oils/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Warum nicht Amazon oder günstige Öle?",
+    "description": "Warum der Vergleich zwischen doTERRA, günstigen Ölen und Amazon nicht nur eine Preisfrage ist.",
+    "question": "Warum sollte ich nicht einfach günstige Öle auf Amazon kaufen?",
+    "searchKeywords": [
+      "amazon öle",
+      "günstige öle",
+      "billige ätherische öle",
+      "qualität",
+      "warum doterra",
+      "preisvergleich"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-DE-001",
+      "KO-W32-DE-005",
+      "KO-W32-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-EN-003",
+    "translationPairId": "KO-W35-PAIR-003",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Why not Amazon or cheaper oils?",
+    "slug": "why-not-amazon-or-cheaper-oils",
+    "route": "/en/knowledge/faq/why-not-amazon-or-cheaper-oils/",
+    "deRoute": "/de/wissen/faq/warum-nicht-amazon-oder-guenstige-oele/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Why not Amazon or cheaper oils?",
+    "description": "Why comparing doTERRA, cheaper oils and Amazon is not only a price question.",
+    "question": "Why should I not simply buy cheaper oils on Amazon?",
+    "searchKeywords": [
+      "amazon oils",
+      "cheaper oils",
+      "cheap essential oils",
+      "quality",
+      "why doterra",
+      "price comparison"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-EN-001",
+      "KO-W32-EN-005",
+      "KO-W32-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-DE-004",
+    "translationPairId": "KO-W35-PAIR-004",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Muss ich ein großes Starter-Set kaufen?",
+    "slug": "muss-ich-ein-grosses-starter-set-kaufen",
+    "route": "/de/wissen/faq/muss-ich-ein-grosses-starter-set-kaufen/",
+    "enRoute": "/en/knowledge/faq/do-i-have-to-buy-a-large-starter-kit/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Muss ich ein großes Starter-Set kaufen?",
+    "description": "Warum ein großes Set keine Pflicht ist und wie du den Einstieg passend einordnest.",
+    "question": "Muss ich direkt ein großes Starter-Set kaufen?",
+    "searchKeywords": [
+      "großes starter-set",
+      "muss ich ein set kaufen",
+      "kleines set",
+      "starter kit",
+      "einstieg",
+      "home essentials"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-DE-001",
+      "KO-W32-DE-005",
+      "KO-W32-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-EN-004",
+    "translationPairId": "KO-W35-PAIR-004",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Do I have to buy a large starter kit?",
+    "slug": "do-i-have-to-buy-a-large-starter-kit",
+    "route": "/en/knowledge/faq/do-i-have-to-buy-a-large-starter-kit/",
+    "deRoute": "/de/wissen/faq/muss-ich-ein-grosses-starter-set-kaufen/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Do I have to buy a large starter kit?",
+    "description": "Why a large kit is not required and how to place the start in a way that fits.",
+    "question": "Do I have to buy a large starter kit right away?",
+    "searchKeywords": [
+      "large starter kit",
+      "do i have to buy a kit",
+      "small kit",
+      "starter kit",
+      "home essentials",
+      "first order"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-EN-001",
+      "KO-W32-EN-005",
+      "KO-W32-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-DE-005",
+    "translationPairId": "KO-W35-PAIR-005",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Muss ich monatlich bestellen?",
+    "slug": "muss-ich-monatlich-bestellen",
+    "route": "/de/wissen/faq/muss-ich-monatlich-bestellen/",
+    "enRoute": "/en/knowledge/faq/do-i-have-to-order-monthly/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Muss ich monatlich bestellen?",
+    "description": "LRP, Wiederbestellung und monatliche Routinen ohne Druck erklärt.",
+    "question": "Muss ich jeden Monat bestellen, wenn ich mit doTERRA starte?",
+    "searchKeywords": [
+      "monatlich bestellen",
+      "muss ich monatlich bestellen",
+      "lrp pflicht",
+      "loyalty rewards",
+      "treueprogramm",
+      "wiederbestellung"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-DE-001",
+      "KO-W32-DE-005",
+      "KO-W32-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-EN-005",
+    "translationPairId": "KO-W35-PAIR-005",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Do I have to order monthly?",
+    "slug": "do-i-have-to-order-monthly",
+    "route": "/en/knowledge/faq/do-i-have-to-order-monthly/",
+    "deRoute": "/de/wissen/faq/muss-ich-monatlich-bestellen/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Do I have to order monthly?",
+    "description": "LRP, reordering and monthly routines explained without pressure.",
+    "question": "Do I have to order every month when I start with doTERRA?",
+    "searchKeywords": [
+      "order monthly",
+      "do i have to order monthly",
+      "lrp required",
+      "loyalty rewards",
+      "loyalty program",
+      "recurring order"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-EN-001",
+      "KO-W32-EN-005",
+      "KO-W32-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-DE-006",
+    "translationPairId": "KO-W35-PAIR-006",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ist doTERRA MLM?",
+    "slug": "ist-doterra-mlm",
+    "route": "/de/wissen/faq/ist-doterra-mlm/",
+    "enRoute": "/en/knowledge/faq/is-doterra-mlm/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Ist doTERRA MLM?",
+    "description": "Eine ehrliche Einordnung von doTERRA, Empfehlungsstruktur, Kundenkonto und Business-Möglichkeit ohne Hype.",
+    "question": "Ist doTERRA MLM?",
+    "searchKeywords": [
+      "ist doterra mlm",
+      "network marketing",
+      "multi level marketing",
+      "strukturvertrieb",
+      "berater werden",
+      "einkommen"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-DE-001",
+      "KO-W32-DE-005",
+      "KO-W32-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-EN-006",
+    "translationPairId": "KO-W35-PAIR-006",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Is doTERRA MLM?",
+    "slug": "is-doterra-mlm",
+    "route": "/en/knowledge/faq/is-doterra-mlm/",
+    "deRoute": "/de/wissen/faq/ist-doterra-mlm/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Is doTERRA MLM?",
+    "description": "An honest placement of doTERRA, referral structure, customer account and business possibility without hype.",
+    "question": "Is doTERRA MLM?",
+    "searchKeywords": [
+      "is doterra mlm",
+      "network marketing",
+      "multi level marketing",
+      "direct sales",
+      "become advisor",
+      "income"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-EN-001",
+      "KO-W32-EN-005",
+      "KO-W32-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-DE-007",
+    "translationPairId": "KO-W35-PAIR-007",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Was passiert nach dem Kauf?",
+    "slug": "was-passiert-nach-dem-kauf",
+    "route": "/de/wissen/faq/was-passiert-nach-dem-kauf/",
+    "enRoute": "/en/knowledge/faq/what-happens-after-the-purchase/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Was passiert nach dem Kauf?",
+    "description": "Warum der Kauf nicht das Ende ist und wie Kyle dich nach dem Einstieg weiter begleitet.",
+    "question": "Bin ich nach dem Kauf allein?",
+    "searchKeywords": [
+      "nach dem kauf",
+      "begleitung nach kauf",
+      "onboarding",
+      "support",
+      "fragen nach bestellung",
+      "team materialien"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-DE-001",
+      "KO-W32-DE-005",
+      "KO-W32-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-EN-007",
+    "translationPairId": "KO-W35-PAIR-007",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "What happens after the purchase?",
+    "slug": "what-happens-after-the-purchase",
+    "route": "/en/knowledge/faq/what-happens-after-the-purchase/",
+    "deRoute": "/de/wissen/faq/was-passiert-nach-dem-kauf/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "What happens after the purchase?",
+    "description": "Why the purchase is not the end and how Kyle supports you after starting.",
+    "question": "Am I alone after the purchase?",
+    "searchKeywords": [
+      "after purchase",
+      "support after purchase",
+      "onboarding",
+      "support",
+      "questions after order",
+      "team materials"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-EN-001",
+      "KO-W32-EN-005",
+      "KO-W32-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-DE-008",
+    "translationPairId": "KO-W35-PAIR-008",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Kann ich später selbst Berater werden?",
+    "slug": "kann-ich-spaeter-selbst-berater-werden",
+    "route": "/de/wissen/faq/kann-ich-spaeter-selbst-berater-werden/",
+    "enRoute": "/en/knowledge/faq/can-i-become-an-advisor-later/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Kann ich später selbst Berater werden?",
+    "description": "Warum du nicht sofort entscheiden musst und wie der Berater-Gedanke ohne Druck eingeordnet werden kann.",
+    "question": "Muss ich sofort wissen, ob ich später selbst Berater werden will?",
+    "searchKeywords": [
+      "später berater werden",
+      "selbst berater werden",
+      "wellness advocate",
+      "partner werden",
+      "business möglichkeit",
+      "team onboarding"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-DE-001",
+      "KO-W32-DE-005",
+      "KO-W32-DE-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  },
+  {
+    "id": "KO-W35-EN-008",
+    "translationPairId": "KO-W35-PAIR-008",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Can I become an advisor later?",
+    "slug": "can-i-become-an-advisor-later",
+    "route": "/en/knowledge/faq/can-i-become-an-advisor-later/",
+    "deRoute": "/de/wissen/faq/kann-ich-spaeter-selbst-berater-werden/",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "seoTitle": "Can I become an advisor later?",
+    "description": "Why you do not have to decide immediately and how the advisor idea can be placed without pressure.",
+    "question": "Do I have to know immediately whether I want to become an advisor later?",
+    "searchKeywords": [
+      "become advisor later",
+      "become an advisor",
+      "wellness advocate",
+      "become partner",
+      "business possibility",
+      "team onboarding"
+    ],
+    "relatedArticleIds": [
+      "KO-W32-EN-001",
+      "KO-W32-EN-005",
+      "KO-W32-EN-007"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": false,
+    "incomeDisclaimerRequired": true,
+    "contentType": "buyer-objection-faq",
+    "sourceUrls": [
+      "https://www.doterra.com/ME/en_ME/enrolment-overview",
+      "https://www.doterra.com/ME/de_ME/enrolment-overview",
+      "https://shop.doterra.com/DE/de_DE/shop/enrolment-kits",
+      "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/",
+      "https://shop.doterra.com/DE/en_DE/shop/lrp-info/",
+      "https://www.doterra.com/ME/en_ME/free-membership",
+      "https://www.doterra.com/US/en/flyers-quick-claims-guide"
+    ]
+  }
+]

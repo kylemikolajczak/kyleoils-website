@@ -1,0 +1,146 @@
+[
+  {
+    "id": "KO-W08-001",
+    "sourceDeId": "KO-W03-001",
+    "language": "en",
+    "title": "A simple morning routine with essential oils",
+    "route": "/en/knowledge/routines/simple-morning-routine-with-essential-oils/",
+    "deRoute": "/de/wissen/routinen/einfache-morgenroutine-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "A simple morning routine with essential oils",
+    "description": "A calm morning routine with scent, small steps and conscious orientation, without pressure or complicated habits.",
+    "relatedArticleIds": [
+      "KO-W07-005",
+      "KO-W08-003",
+      "KO-W08-008"
+    ],
+    "translationType": "adapted_english_sync_from_wave_03"
+  },
+  {
+    "id": "KO-W08-002",
+    "sourceDeId": "KO-W03-002",
+    "language": "en",
+    "title": "A simple evening routine with essential oils",
+    "route": "/en/knowledge/routines/simple-evening-routine-with-essential-oils/",
+    "deRoute": "/de/wissen/routinen/einfache-abendroutine-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "A simple evening routine with essential oils",
+    "description": "How to create a simple evening routine with scent, quiet habits and a calmer transition into the end of the day.",
+    "relatedArticleIds": [
+      "KO-W08-001",
+      "KO-W07-005",
+      "KO-W08-003"
+    ],
+    "translationType": "adapted_english_sync_from_wave_03"
+  },
+  {
+    "id": "KO-W08-003",
+    "sourceDeId": "KO-W03-003",
+    "language": "en",
+    "title": "Your first 7 days with essential oils",
+    "route": "/en/knowledge/routines/your-first-7-days-with-essential-oils/",
+    "deRoute": "/de/wissen/routinen/deine-ersten-7-tage-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Your first 7 days with essential oils",
+    "description": "A calm 7-day beginner path: understand, smell, dilute, use the diffuser and build simple routines step by step.",
+    "relatedArticleIds": [
+      "KO-W07-002",
+      "KO-W07-003",
+      "KO-W08-008"
+    ],
+    "translationType": "adapted_english_sync_from_wave_03"
+  },
+  {
+    "id": "KO-W08-004",
+    "sourceDeId": "KO-W03-004",
+    "language": "en",
+    "title": "Self-care with essential oils",
+    "route": "/en/knowledge/everyday-use/self-care-with-essential-oils/",
+    "deRoute": "/de/wissen/alltag/self-care-mit-aetherischen-oelen/",
+    "worldId": "everyday-use",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "Self-care with essential oils",
+    "description": "How essential oils can support small self-care moments through scent, skincare, massage or calm routines.",
+    "relatedArticleIds": [
+      "KO-W08-002",
+      "KO-W07-003",
+      "KO-W07-004"
+    ],
+    "translationType": "adapted_english_sync_from_wave_03"
+  },
+  {
+    "id": "KO-W08-005",
+    "sourceDeId": "KO-W03-005",
+    "language": "en",
+    "title": "Essential oils in the home",
+    "route": "/en/knowledge/everyday-use/essential-oils-in-the-home/",
+    "deRoute": "/de/wissen/alltag/aetherische-oele-im-haushalt/",
+    "worldId": "everyday-use",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "Essential oils in the home",
+    "description": "How essential oils can be used in the home for scent, freshness and simple routines without turning them into medical or cleaning promises.",
+    "relatedArticleIds": [
+      "KO-W08-006",
+      "KO-W07-005",
+      "KO-W07-007"
+    ],
+    "translationType": "adapted_english_sync_from_wave_03"
+  },
+  {
+    "id": "KO-W08-006",
+    "sourceDeId": "KO-W03-006",
+    "language": "en",
+    "title": "Natural room scent with essential oils",
+    "route": "/en/knowledge/everyday-use/natural-room-scent-with-essential-oils/",
+    "deRoute": "/de/wissen/alltag/natuerlicher-raumduft-mit-aetherischen-oelen/",
+    "worldId": "everyday-use",
+    "worldLabel": "Everyday Use",
+    "seoTitle": "Natural room scent with essential oils",
+    "description": "How to create subtle room scent with essential oils in a conscious, pleasant and everyday-friendly way.",
+    "relatedArticleIds": [
+      "KO-W07-005",
+      "KO-W07-006",
+      "KO-W08-005"
+    ],
+    "translationType": "adapted_english_sync_from_wave_03"
+  },
+  {
+    "id": "KO-W08-007",
+    "sourceDeId": "KO-W03-007",
+    "language": "en",
+    "title": "Essential oils in the workday",
+    "route": "/en/knowledge/routines/essential-oils-in-the-workday/",
+    "deRoute": "/de/wissen/routinen/aetherische-oele-im-arbeitsalltag/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "Essential oils in the workday",
+    "description": "How to include essential oils discreetly and respectfully at your desk, in a home office or while working on the go.",
+    "relatedArticleIds": [
+      "KO-W08-001",
+      "KO-W07-005",
+      "KO-W08-006"
+    ],
+    "translationType": "adapted_english_sync_from_wave_03"
+  },
+  {
+    "id": "KO-W08-008",
+    "sourceDeId": "KO-W03-008",
+    "language": "en",
+    "title": "A simple starter routine with essential oils",
+    "route": "/en/knowledge/routines/simple-starter-routine-with-essential-oils/",
+    "deRoute": "/de/wissen/routinen/einfache-starter-routine-mit-aetherischen-oelen/",
+    "worldId": "routines",
+    "worldLabel": "Routines",
+    "seoTitle": "A simple starter routine with essential oils",
+    "description": "A clear starter routine for beginners: a few oils, basic safety, diffuser, dilution and calm everyday steps.",
+    "relatedArticleIds": [
+      "KO-W07-002",
+      "KO-W08-003",
+      "KO-W07-003"
+    ],
+    "translationType": "adapted_english_sync_from_wave_03"
+  }
+]

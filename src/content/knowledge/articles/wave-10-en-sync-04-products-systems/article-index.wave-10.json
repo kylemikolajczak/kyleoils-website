@@ -1,0 +1,146 @@
+[
+  {
+    "id": "KO-W10-001",
+    "sourceDeId": "KO-W06-001",
+    "language": "en",
+    "title": "Understanding Wellness Made Simple",
+    "route": "/en/knowledge/products-systems/understanding-wellness-made-simple/",
+    "deRoute": "/de/wissen/produkte-systeme/wellness-made-simple-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "Wellness Made Simple explained clearly",
+    "description": "A calm explanation of Wellness Made Simple: what the system means, how to understand it in everyday life and why guidance can be helpful.",
+    "relatedArticleIds": [
+      "KO-W08-008",
+      "KO-W08-003",
+      "KO-W10-005"
+    ],
+    "translationType": "adapted_english_sync_from_wave_06"
+  },
+  {
+    "id": "KO-W10-002",
+    "sourceDeId": "KO-W06-002",
+    "language": "en",
+    "title": "Understanding the MetaPWR System",
+    "route": "/en/knowledge/products-systems/understanding-the-metapwr-system/",
+    "deRoute": "/de/wissen/produkte-systeme/metapwr-system-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "MetaPWR System explained clearly",
+    "description": "A calm and compliance-conscious explanation of the MetaPWR System: product context, everyday orientation and why personal guidance matters.",
+    "relatedArticleIds": [
+      "KO-W10-001",
+      "KO-W10-005",
+      "KO-W08-003"
+    ],
+    "translationType": "adapted_english_sync_from_wave_06"
+  },
+  {
+    "id": "KO-W10-003",
+    "sourceDeId": "KO-W06-003",
+    "language": "en",
+    "title": "Making sense of starter kits",
+    "route": "/en/knowledge/products-systems/making-sense-of-starter-kits/",
+    "deRoute": "/de/wissen/produkte-systeme/starter-sets-sinnvoll-einordnen/",
+    "worldId": "products-systems",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "doTERRA starter kits explained clearly",
+    "description": "How to understand starter kits calmly: when a kit can help, when a smaller start is enough and what to ask before choosing.",
+    "relatedArticleIds": [
+      "KO-W08-008",
+      "KO-W07-002",
+      "KO-W10-006"
+    ],
+    "translationType": "adapted_english_sync_from_wave_06"
+  },
+  {
+    "id": "KO-W10-004",
+    "sourceDeId": "KO-W06-004",
+    "language": "en",
+    "title": "Single oils, blends and Touch products explained",
+    "route": "/en/knowledge/products-systems/single-oils-blends-touch-products-explained/",
+    "deRoute": "/de/wissen/produkte-systeme/einzeloele-mischungen-touch-produkte-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "Single oils blends and Touch products explained",
+    "description": "A simple explanation of single oils, blends and Touch products so you can understand doTERRA product forms more clearly.",
+    "relatedArticleIds": [
+      "KO-W07-001",
+      "KO-W07-003",
+      "KO-W07-004"
+    ],
+    "translationType": "adapted_english_sync_from_wave_06"
+  },
+  {
+    "id": "KO-W10-005",
+    "sourceDeId": "KO-W06-005",
+    "language": "en",
+    "title": "Understanding supplements in the doTERRA context",
+    "route": "/en/knowledge/products-systems/understanding-supplements-in-the-doterra-context/",
+    "deRoute": "/de/wissen/produkte-systeme/nahrungsergaenzung-im-doterra-kontext-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "doTERRA supplements explained responsibly",
+    "description": "A careful explanation of supplements in the doTERRA context: labels, ingredients, responsibility, daily use and personal guidance.",
+    "relatedArticleIds": [
+      "KO-W10-001",
+      "KO-W10-002",
+      "KO-W10-008"
+    ],
+    "translationType": "adapted_english_sync_from_wave_06"
+  },
+  {
+    "id": "KO-W10-006",
+    "sourceDeId": "KO-W06-006",
+    "language": "en",
+    "title": "Understanding the doTERRA customer account and savings",
+    "route": "/en/knowledge/products-systems/understanding-doterra-customer-account-and-savings/",
+    "deRoute": "/de/wissen/produkte-systeme/doterra-kundenkonto-und-einkaufsvorteil-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "doTERRA customer account and savings explained clearly",
+    "description": "How to understand a doTERRA customer account, possible purchasing advantages and why guidance matters more than discounts.",
+    "relatedArticleIds": [
+      "KO-W10-003",
+      "KO-W10-008",
+      "KO-W08-008"
+    ],
+    "translationType": "adapted_english_sync_from_wave_06"
+  },
+  {
+    "id": "KO-W10-007",
+    "sourceDeId": "KO-W06-007",
+    "language": "en",
+    "title": "Combining products without overwhelm",
+    "route": "/en/knowledge/products-systems/combining-products-without-overwhelm/",
+    "deRoute": "/de/wissen/produkte-systeme/produkte-sinnvoll-kombinieren/",
+    "worldId": "products-systems",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "How to combine doTERRA products without overwhelm",
+    "description": "How to combine doTERRA products calmly: fewer products at first, more understanding and routines that actually fit your life.",
+    "relatedArticleIds": [
+      "KO-W10-004",
+      "KO-W08-008",
+      "KO-W07-003"
+    ],
+    "translationType": "adapted_english_sync_from_wave_06"
+  },
+  {
+    "id": "KO-W10-008",
+    "sourceDeId": "KO-W06-008",
+    "language": "en",
+    "title": "Understanding reorder and long-term routine",
+    "route": "/en/knowledge/products-systems/understanding-reorder-and-long-term-routine/",
+    "deRoute": "/de/wissen/produkte-systeme/nachbestellung-und-langfristige-routine-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Products & Systems",
+    "seoTitle": "doTERRA reorder and long-term routine explained",
+    "description": "How to plan doTERRA reorders calmly, understand what you actually use and build a long-term routine without buying too much.",
+    "relatedArticleIds": [
+      "KO-W10-006",
+      "KO-W10-007",
+      "KO-W08-003"
+    ],
+    "translationType": "adapted_english_sync_from_wave_06"
+  }
+]

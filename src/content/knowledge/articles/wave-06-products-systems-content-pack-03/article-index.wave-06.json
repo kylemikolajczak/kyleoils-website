@@ -1,0 +1,138 @@
+[
+  {
+    "id": "KO-W06-001",
+    "language": "de",
+    "title": "Wellness Made Simple verstehen",
+    "route": "/de/wissen/produkte-systeme/wellness-made-simple-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "Wellness Made Simple von doTERRA verständlich erklärt",
+    "description": "Eine ruhige Einordnung von Wellness Made Simple: wofür das System gedacht ist, wie man es im Alltag versteht und warum Beratung sinnvoll sein kann.",
+    "riskLevel": "medium",
+    "relatedArticleIds": [
+      "KO-W03-008",
+      "KO-W03-003",
+      "KO-W06-005"
+    ],
+    "enTranslationStatus": "not_included_in_wave_06"
+  },
+  {
+    "id": "KO-W06-002",
+    "language": "de",
+    "title": "MetaPWR System verstehen",
+    "route": "/de/wissen/produkte-systeme/metapwr-system-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "MetaPWR System von doTERRA verständlich erklärt",
+    "description": "MetaPWR ruhig und compliance-bewusst erklärt: Systemgedanke, Alltagseinordnung, Produktkontext und warum persönliche Beratung wichtig ist.",
+    "riskLevel": "high",
+    "relatedArticleIds": [
+      "KO-W06-001",
+      "KO-W06-005",
+      "KO-W03-003"
+    ],
+    "enTranslationStatus": "not_included_in_wave_06"
+  },
+  {
+    "id": "KO-W06-003",
+    "language": "de",
+    "title": "Starter-Sets sinnvoll einordnen",
+    "route": "/de/wissen/produkte-systeme/starter-sets-sinnvoll-einordnen/",
+    "worldId": "products-systems",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "doTERRA Starter-Sets sinnvoll einordnen",
+    "description": "Wie du Starter-Sets ruhig verstehst: wann ein Set sinnvoll sein kann, wann ein kleiner Einstieg reicht und welche Fragen vor dem Kauf helfen.",
+    "riskLevel": "medium",
+    "relatedArticleIds": [
+      "KO-W03-008",
+      "KO-W02-002",
+      "KO-W06-006"
+    ],
+    "enTranslationStatus": "not_included_in_wave_06"
+  },
+  {
+    "id": "KO-W06-004",
+    "language": "de",
+    "title": "Einzelöle, Mischungen und Touch-Produkte verstehen",
+    "route": "/de/wissen/produkte-systeme/einzeloele-mischungen-touch-produkte-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "Einzelöle Mischungen und Touch-Produkte verständlich erklärt",
+    "description": "Der Unterschied zwischen Einzelölen, Mischungen und Touch-Produkten einfach erklärt, damit du doTERRA-Produkte klarer einordnen kannst.",
+    "riskLevel": "medium",
+    "relatedArticleIds": [
+      "KO-W02-001",
+      "KO-W02-003",
+      "KO-W02-004"
+    ],
+    "enTranslationStatus": "not_included_in_wave_06"
+  },
+  {
+    "id": "KO-W06-005",
+    "language": "de",
+    "title": "Nahrungsergänzung im doTERRA-Kontext verstehen",
+    "route": "/de/wissen/produkte-systeme/nahrungsergaenzung-im-doterra-kontext-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "doTERRA Nahrungsergänzung verständlich und sicher einordnen",
+    "description": "Eine vorsichtige Einordnung von Nahrungsergänzungen im doTERRA-Kontext: Alltag, Etiketten, Verantwortung und persönliche Beratung.",
+    "riskLevel": "high",
+    "relatedArticleIds": [
+      "KO-W06-001",
+      "KO-W06-002",
+      "KO-W06-008"
+    ],
+    "enTranslationStatus": "not_included_in_wave_06"
+  },
+  {
+    "id": "KO-W06-006",
+    "language": "de",
+    "title": "doTERRA Kundenkonto und Einkaufsvorteil verstehen",
+    "route": "/de/wissen/produkte-systeme/doterra-kundenkonto-und-einkaufsvorteil-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "doTERRA Kundenkonto und Einkaufsvorteil verständlich erklärt",
+    "description": "Wie ein doTERRA Kundenkonto grundsätzlich einzuordnen ist, warum der Einkaufsvorteil interessant sein kann und warum Beratung wichtiger bleibt als Rabatt.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W06-003",
+      "KO-W06-008",
+      "KO-W03-008"
+    ],
+    "enTranslationStatus": "not_included_in_wave_06"
+  },
+  {
+    "id": "KO-W06-007",
+    "language": "de",
+    "title": "Produkte sinnvoll kombinieren",
+    "route": "/de/wissen/produkte-systeme/produkte-sinnvoll-kombinieren/",
+    "worldId": "products-systems",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "doTERRA Produkte sinnvoll kombinieren ohne Überforderung",
+    "description": "Wie du doTERRA-Produkte nicht chaotisch, sondern ruhig und alltagstauglich kombinierst: weniger gleichzeitig, mehr Verständnis, bessere Routinen.",
+    "riskLevel": "medium",
+    "relatedArticleIds": [
+      "KO-W06-004",
+      "KO-W03-008",
+      "KO-W02-003"
+    ],
+    "enTranslationStatus": "not_included_in_wave_06"
+  },
+  {
+    "id": "KO-W06-008",
+    "language": "de",
+    "title": "Nachbestellung und langfristige Routine verstehen",
+    "route": "/de/wissen/produkte-systeme/nachbestellung-und-langfristige-routine-verstehen/",
+    "worldId": "products-systems",
+    "worldLabel": "Produkte & Systeme",
+    "seoTitle": "doTERRA Nachbestellung und langfristige Routine verständlich erklärt",
+    "description": "Wie du doTERRA-Produkte langfristig ruhig nutzt, Nachbestellungen sinnvoll planst und nicht aus Gewohnheit zu viel kaufst.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W06-006",
+      "KO-W06-007",
+      "KO-W03-003"
+    ],
+    "enTranslationStatus": "not_included_in_wave_06"
+  }
+]

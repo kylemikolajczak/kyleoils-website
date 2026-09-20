@@ -1,0 +1,306 @@
+[
+  {
+    "id": "KO-W14-DE-001",
+    "pair": "KO-W14-PAIR-001",
+    "title": "Sind ätherische Öle für Anfänger geeignet?",
+    "slug": "aetherische-oele-fuer-anfaenger-geeignet",
+    "route": "/de/wissen/faq/aetherische-oele-fuer-anfaenger-geeignet/",
+    "enRoute": "/en/knowledge/faq/are-essential-oils-suitable-for-beginners/",
+    "seoTitle": "Sind ätherische Öle für Anfänger geeignet?",
+    "description": "Eine ruhige Antwort für Einsteiger: Wann ätherische Öle sinnvoll starten können, worauf Anfänger achten sollten und warum weniger am Anfang besser ist.",
+    "related": [
+      "KO-W02-002",
+      "KO-W02-001",
+      "KO-W03-008"
+    ],
+    "language": "de",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-DE-002",
+    "pair": "KO-W14-PAIR-002",
+    "title": "Muss ich ätherische Öle immer verdünnen?",
+    "slug": "muss-ich-aetherische-oele-immer-verduennen",
+    "route": "/de/wissen/faq/muss-ich-aetherische-oele-immer-verduennen/",
+    "enRoute": "/en/knowledge/faq/do-essential-oils-always-need-to-be-diluted/",
+    "seoTitle": "Muss ich ätherische Öle immer verdünnen?",
+    "description": "Wann Verdünnung wichtig ist, warum Trägeröle helfen und warum Anfänger bei Hautanwendung besonders vorsichtig starten sollten.",
+    "related": [
+      "KO-W02-003",
+      "KO-W02-004",
+      "KO-W02-008"
+    ],
+    "language": "de",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-DE-003",
+    "pair": "KO-W14-PAIR-003",
+    "title": "Wie viele Tropfen gehören in den Diffuser?",
+    "slug": "wie-viele-tropfen-in-den-diffuser",
+    "route": "/de/wissen/faq/wie-viele-tropfen-in-den-diffuser/",
+    "enRoute": "/en/knowledge/faq/how-many-drops-in-a-diffuser/",
+    "seoTitle": "Wie viele Tropfen ätherisches Öl gehören in den Diffuser?",
+    "description": "Eine einfache Diffuser-FAQ: Warum es keine perfekte Tropfenzahl gibt und warum Raumgröße, Laufzeit und Duftintensität entscheidend sind.",
+    "related": [
+      "KO-W02-005",
+      "KO-W02-006",
+      "KO-W03-006"
+    ],
+    "language": "de",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-DE-004",
+    "pair": "KO-W14-PAIR-004",
+    "title": "Kann ich ätherische Öle bei Kindern verwenden?",
+    "slug": "aetherische-oele-bei-kindern",
+    "route": "/de/wissen/faq/aetherische-oele-bei-kindern/",
+    "enRoute": "/en/knowledge/faq/using-essential-oils-around-children/",
+    "seoTitle": "Kann ich ätherische Öle bei Kindern verwenden?",
+    "description": "Eine vorsichtige Einordnung zur Anwendung ätherischer Öle bei Kindern: Verdünnung, Duft, sensible Haut und wann fachliche Beratung wichtig ist.",
+    "related": [
+      "KO-W02-003",
+      "KO-W02-005",
+      "KO-W02-007"
+    ],
+    "language": "de",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-DE-005",
+    "pair": "KO-W14-PAIR-005",
+    "title": "Was muss ich bei ätherischen Ölen und Haustieren beachten?",
+    "slug": "aetherische-oele-und-haustiere",
+    "route": "/de/wissen/faq/aetherische-oele-und-haustiere/",
+    "enRoute": "/en/knowledge/faq/essential-oils-and-pets/",
+    "seoTitle": "Ätherische Öle und Haustiere: Was beachten?",
+    "description": "Eine vorsichtige FAQ zu ätherischen Ölen und Haustieren: Belüftung, Beobachtung, Rückzugsmöglichkeiten und warum Tierfragen besonders sensibel sind.",
+    "related": [
+      "KO-W02-005",
+      "KO-W02-006",
+      "KO-W02-007"
+    ],
+    "language": "de",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-DE-006",
+    "pair": "KO-W14-PAIR-006",
+    "title": "Darf ich ätherische Öle innerlich einnehmen?",
+    "slug": "aetherische-oele-innerlich-einnehmen",
+    "route": "/de/wissen/faq/aetherische-oele-innerlich-einnehmen/",
+    "enRoute": "/en/knowledge/faq/can-essential-oils-be-taken-internally/",
+    "seoTitle": "Darf ich ätherische Öle innerlich einnehmen?",
+    "description": "Eine vorsichtige FAQ zur inneren Anwendung ätherischer Öle: Produktlabel, Fachfragen, Risiken und warum Anfänger hier nicht experimentieren sollten.",
+    "related": [
+      "KO-W02-002",
+      "KO-W06-005",
+      "KO-W02-003"
+    ],
+    "language": "de",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-DE-007",
+    "pair": "KO-W14-PAIR-007",
+    "title": "Was bedeutet Photosensitivität?",
+    "slug": "was-bedeutet-photosensitivitaet",
+    "route": "/de/wissen/faq/was-bedeutet-photosensitivitaet/",
+    "enRoute": "/en/knowledge/faq/what-does-photosensitivity-mean/",
+    "seoTitle": "Was bedeutet Photosensitivität bei ätherischen Ölen?",
+    "description": "Eine einfache Erklärung von Photosensitivität: warum manche Öle besondere Vorsicht vor Sonne oder UV-Licht erfordern.",
+    "related": [
+      "KO-W02-008",
+      "KO-W02-003",
+      "KO-W04-002"
+    ],
+    "language": "de",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-DE-008",
+    "pair": "KO-W14-PAIR-008",
+    "title": "Brauche ich ein doTERRA Kundenkonto?",
+    "slug": "brauche-ich-ein-doterra-kundenkonto",
+    "route": "/de/wissen/faq/brauche-ich-ein-doterra-kundenkonto/",
+    "enRoute": "/en/knowledge/faq/do-i-need-a-doterra-customer-account/",
+    "seoTitle": "Brauche ich ein doTERRA Kundenkonto?",
+    "description": "Eine klare Einordnung, wann ein doTERRA Kundenkonto sinnvoll sein kann und warum Beratung wichtiger ist als ein schneller Kauf.",
+    "related": [
+      "KO-W06-006",
+      "KO-W06-003",
+      "KO-W06-008"
+    ],
+    "language": "de",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-EN-001",
+    "pair": "KO-W14-PAIR-001",
+    "title": "Are essential oils suitable for beginners?",
+    "slug": "are-essential-oils-suitable-for-beginners",
+    "route": "/en/knowledge/faq/are-essential-oils-suitable-for-beginners/",
+    "deRoute": "/de/wissen/faq/aetherische-oele-fuer-anfaenger-geeignet/",
+    "seoTitle": "Are essential oils suitable for beginners?",
+    "description": "A calm beginner answer: when essential oils can be a good start, what beginners should learn first and why less is often better.",
+    "related": [
+      "KO-W07-002",
+      "KO-W07-001",
+      "KO-W08-008"
+    ],
+    "language": "en",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-EN-002",
+    "pair": "KO-W14-PAIR-002",
+    "title": "Do essential oils always need to be diluted?",
+    "slug": "do-essential-oils-always-need-to-be-diluted",
+    "route": "/en/knowledge/faq/do-essential-oils-always-need-to-be-diluted/",
+    "deRoute": "/de/wissen/faq/muss-ich-aetherische-oele-immer-verduennen/",
+    "seoTitle": "Do essential oils always need to be diluted?",
+    "description": "When dilution matters, why carrier oils are useful and why beginners should be especially careful with topical use.",
+    "related": [
+      "KO-W07-003",
+      "KO-W07-004",
+      "KO-W07-008"
+    ],
+    "language": "en",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-EN-003",
+    "pair": "KO-W14-PAIR-003",
+    "title": "How many drops should I use in a diffuser?",
+    "slug": "how-many-drops-in-a-diffuser",
+    "route": "/en/knowledge/faq/how-many-drops-in-a-diffuser/",
+    "deRoute": "/de/wissen/faq/wie-viele-tropfen-in-den-diffuser/",
+    "seoTitle": "How many drops of essential oil should I use in a diffuser?",
+    "description": "A simple diffuser FAQ: why there is no perfect drop number and why room size, runtime and scent intensity matter.",
+    "related": [
+      "KO-W07-005",
+      "KO-W07-006",
+      "KO-W08-006"
+    ],
+    "language": "en",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-EN-004",
+    "pair": "KO-W14-PAIR-004",
+    "title": "Can I use essential oils around children?",
+    "slug": "using-essential-oils-around-children",
+    "route": "/en/knowledge/faq/using-essential-oils-around-children/",
+    "deRoute": "/de/wissen/faq/aetherische-oele-bei-kindern/",
+    "seoTitle": "Can I use essential oils around children?",
+    "description": "A careful guide to essential oils around children: dilution, scent, sensitive skin and when professional guidance matters.",
+    "related": [
+      "KO-W07-003",
+      "KO-W07-005",
+      "KO-W07-007"
+    ],
+    "language": "en",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-EN-005",
+    "pair": "KO-W14-PAIR-005",
+    "title": "What should I consider around pets?",
+    "slug": "essential-oils-and-pets",
+    "route": "/en/knowledge/faq/essential-oils-and-pets/",
+    "deRoute": "/de/wissen/faq/aetherische-oele-und-haustiere/",
+    "seoTitle": "Essential oils and pets: what should I consider?",
+    "description": "A careful FAQ about essential oils around pets: ventilation, observation, exit options and why pet questions need extra caution.",
+    "related": [
+      "KO-W07-005",
+      "KO-W07-006",
+      "KO-W07-007"
+    ],
+    "language": "en",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-EN-006",
+    "pair": "KO-W14-PAIR-006",
+    "title": "Can essential oils be taken internally?",
+    "slug": "can-essential-oils-be-taken-internally",
+    "route": "/en/knowledge/faq/can-essential-oils-be-taken-internally/",
+    "deRoute": "/de/wissen/faq/aetherische-oele-innerlich-einnehmen/",
+    "seoTitle": "Can essential oils be taken internally?",
+    "description": "A careful FAQ about internal use of essential oils: labels, professional questions, risk context and why beginners should not experiment.",
+    "related": [
+      "KO-W07-002",
+      "KO-W10-005",
+      "KO-W07-003"
+    ],
+    "language": "en",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-EN-007",
+    "pair": "KO-W14-PAIR-007",
+    "title": "What does photosensitivity mean?",
+    "slug": "what-does-photosensitivity-mean",
+    "route": "/en/knowledge/faq/what-does-photosensitivity-mean/",
+    "deRoute": "/de/wissen/faq/was-bedeutet-photosensitivitaet/",
+    "seoTitle": "What does photosensitivity mean with essential oils?",
+    "description": "A simple explanation of photosensitivity: why some oils require extra care before sunlight or UV exposure.",
+    "related": [
+      "KO-W07-008",
+      "KO-W07-003",
+      "KO-W09-002"
+    ],
+    "language": "en",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  },
+  {
+    "id": "KO-W14-EN-008",
+    "pair": "KO-W14-PAIR-008",
+    "title": "Do I need a doTERRA customer account?",
+    "slug": "do-i-need-a-doterra-customer-account",
+    "route": "/en/knowledge/faq/do-i-need-a-doterra-customer-account/",
+    "deRoute": "/de/wissen/faq/brauche-ich-ein-doterra-kundenkonto/",
+    "seoTitle": "Do I need a doTERRA customer account?",
+    "description": "A clear explanation of when a doTERRA customer account can make sense and why guidance matters more than a fast purchase.",
+    "related": [
+      "KO-W10-006",
+      "KO-W10-003",
+      "KO-W10-008"
+    ],
+    "language": "en",
+    "worldId": "faq",
+    "worldLabel": "FAQ",
+    "contentType": "faq-article"
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "id": "KO-W04-001",
+    "language": "de",
+    "title": "Lavender (Lavendel) verstehen",
+    "route": "/de/wissen/oel-lexikon/lavender-lavendel/",
+    "worldId": "oil-library",
+    "worldLabel": "Öl-Lexikon",
+    "seoTitle": "Lavender Lavendel ätherisches Öl verständlich erklärt",
+    "description": "Lavender ruhig erklärt: Duftprofil, Alltagseinordnung, aromatische Nutzung, äußerliche Anwendung und wichtige Sicherheitshinweise.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W02-002",
+      "KO-W03-002",
+      "KO-W02-003"
+    ],
+    "enTranslationStatus": "not_included_in_wave_04"
+  },
+  {
+    "id": "KO-W04-002",
+    "language": "de",
+    "title": "Lemon (Zitrone) verstehen",
+    "route": "/de/wissen/oel-lexikon/lemon-zitrone/",
+    "worldId": "oil-library",
+    "worldLabel": "Öl-Lexikon",
+    "seoTitle": "Lemon Zitrone ätherisches Öl verständlich erklärt",
+    "description": "Lemon ruhig erklärt: frisches Duftprofil, Alltagssituationen, Diffuser-Ideen, Vorsicht bei Haut und Sonne sowie sichere Einordnung.",
+    "riskLevel": "medium",
+    "relatedArticleIds": [
+      "KO-W02-008",
+      "KO-W02-005",
+      "KO-W02-006"
+    ],
+    "enTranslationStatus": "not_included_in_wave_04"
+  },
+  {
+    "id": "KO-W04-003",
+    "language": "de",
+    "title": "Peppermint (Pfefferminze) verstehen",
+    "route": "/de/wissen/oel-lexikon/peppermint-pfefferminze/",
+    "worldId": "oil-library",
+    "worldLabel": "Öl-Lexikon",
+    "seoTitle": "Peppermint Pfefferminze ätherisches Öl verständlich erklärt",
+    "description": "Peppermint ruhig erklärt: kühles Duftprofil, klare Alltagseinordnung, Diffuser- und Hautthemen sowie wichtige Vorsicht bei intensiven Ölen.",
+    "riskLevel": "medium",
+    "relatedArticleIds": [
+      "KO-W02-003",
+      "KO-W02-005",
+      "KO-W03-007"
+    ],
+    "enTranslationStatus": "not_included_in_wave_04"
+  },
+  {
+    "id": "KO-W04-004",
+    "language": "de",
+    "title": "Frankincense (Weihrauch) verstehen",
+    "route": "/de/wissen/oel-lexikon/frankincense-weihrauch/",
+    "worldId": "oil-library",
+    "worldLabel": "Öl-Lexikon",
+    "seoTitle": "Frankincense Weihrauch ätherisches Öl verständlich erklärt",
+    "description": "Frankincense ruhig erklärt: warm-harziges Duftprofil, Alltagseinordnung, persönliche Routinen, doTERRA-Kontext und Sicherheitshinweise.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W02-002",
+      "KO-W03-004",
+      "KO-W02-003"
+    ],
+    "enTranslationStatus": "not_included_in_wave_04"
+  },
+  {
+    "id": "KO-W04-005",
+    "language": "de",
+    "title": "Tea Tree (Teebaum) verstehen",
+    "route": "/de/wissen/oel-lexikon/tea-tree-teebaum/",
+    "worldId": "oil-library",
+    "worldLabel": "Öl-Lexikon",
+    "seoTitle": "Tea Tree Teebaum ätherisches Öl verständlich erklärt",
+    "description": "Tea Tree ruhig erklärt: klares krautiges Duftprofil, Hautpflege-Kontext, Alltagseinordnung und wichtige Hinweise zur sicheren Nutzung.",
+    "riskLevel": "medium",
+    "relatedArticleIds": [
+      "KO-W02-003",
+      "KO-W02-004",
+      "KO-W03-004"
+    ],
+    "enTranslationStatus": "not_included_in_wave_04"
+  },
+  {
+    "id": "KO-W04-006",
+    "language": "de",
+    "title": "Wild Orange (Wildorange) verstehen",
+    "route": "/de/wissen/oel-lexikon/wild-orange-wildorange/",
+    "worldId": "oil-library",
+    "worldLabel": "Öl-Lexikon",
+    "seoTitle": "Wild Orange Wildorange ätherisches Öl verständlich erklärt",
+    "description": "Wild Orange ruhig erklärt: süß-zitrisches Duftprofil, Diffuser, Raumduft, Alltag und wichtige Hinweise zur Hautanwendung.",
+    "riskLevel": "medium",
+    "relatedArticleIds": [
+      "KO-W02-008",
+      "KO-W02-005",
+      "KO-W03-006"
+    ],
+    "enTranslationStatus": "not_included_in_wave_04"
+  },
+  {
+    "id": "KO-W04-007",
+    "language": "de",
+    "title": "Oregano verstehen",
+    "route": "/de/wissen/oel-lexikon/oregano/",
+    "worldId": "oil-library",
+    "worldLabel": "Öl-Lexikon",
+    "seoTitle": "Oregano ätherisches Öl verständlich erklärt",
+    "description": "Oregano als intensives ätherisches Öl ruhig erklärt: Duftprofil, Alltagseinordnung, kulinarischer Kontext und wichtige Sicherheitshinweise.",
+    "riskLevel": "high",
+    "relatedArticleIds": [
+      "KO-W02-003",
+      "KO-W02-004",
+      "KO-W02-007"
+    ],
+    "enTranslationStatus": "not_included_in_wave_04"
+  },
+  {
+    "id": "KO-W04-008",
+    "language": "de",
+    "title": "Copaiba verstehen",
+    "route": "/de/wissen/oel-lexikon/copaiba/",
+    "worldId": "oil-library",
+    "worldLabel": "Öl-Lexikon",
+    "seoTitle": "Copaiba ätherisches Öl verständlich erklärt",
+    "description": "Copaiba ruhig erklärt: warmes Duftprofil, Alltagseinordnung, doTERRA-Beschaffungskontext und sichere Nutzung ohne Heilversprechen.",
+    "riskLevel": "low",
+    "relatedArticleIds": [
+      "KO-W02-002",
+      "KO-W03-004",
+      "KO-W02-003"
+    ],
+    "enTranslationStatus": "not_included_in_wave_04"
+  }
+]

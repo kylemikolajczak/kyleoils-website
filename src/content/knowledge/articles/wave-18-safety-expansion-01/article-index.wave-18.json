@@ -1,0 +1,466 @@
+[
+  {
+    "id": "KO-W18-DE-001",
+    "translationPairId": "KO-W18-PAIR-001",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ätherische Öle und Schwangerschaft",
+    "slug": "aetherische-oele-und-schwangerschaft",
+    "route": "/de/wissen/sicher-anwenden/aetherische-oele-und-schwangerschaft/",
+    "enRoute": "/en/knowledge/safe-use/essential-oils-and-pregnancy/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Ätherische Öle und Schwangerschaft",
+    "description": "Eine vorsichtige Orientierung zur Nutzung ätherischer Öle in der Schwangerschaft: warum fachliche Rücksprache, Label und Zurückhaltung wichtig sind.",
+    "relatedArticleIds": [
+      "KO-W14-DE-004",
+      "KO-W14-DE-006",
+      "KO-W15-DE-013"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-EN-001",
+    "translationPairId": "KO-W18-PAIR-001",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Essential oils and pregnancy",
+    "slug": "essential-oils-and-pregnancy",
+    "route": "/en/knowledge/safe-use/essential-oils-and-pregnancy/",
+    "deRoute": "/de/wissen/sicher-anwenden/aetherische-oele-und-schwangerschaft/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Essential oils and pregnancy",
+    "description": "A careful guide to essential oils during pregnancy: why professional guidance, labels and restraint matter.",
+    "relatedArticleIds": [
+      "KO-W14-EN-004",
+      "KO-W14-EN-006",
+      "KO-W15-EN-013"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-DE-002",
+    "translationPairId": "KO-W18-PAIR-002",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ätherische Öle und Stillzeit",
+    "slug": "aetherische-oele-und-stillzeit",
+    "route": "/de/wissen/sicher-anwenden/aetherische-oele-und-stillzeit/",
+    "enRoute": "/en/knowledge/safe-use/essential-oils-and-breastfeeding/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Ätherische Öle und Stillzeit",
+    "description": "Eine vorsichtige Einordnung zu ätherischen Ölen während der Stillzeit: Duft, Hautkontakt, Baby-Nähe, Fachfragen und Produktlabel.",
+    "relatedArticleIds": [
+      "KO-W18-DE-001",
+      "KO-W14-DE-004",
+      "KO-W14-DE-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-EN-002",
+    "translationPairId": "KO-W18-PAIR-002",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Essential oils and breastfeeding",
+    "slug": "essential-oils-and-breastfeeding",
+    "route": "/en/knowledge/safe-use/essential-oils-and-breastfeeding/",
+    "deRoute": "/de/wissen/sicher-anwenden/aetherische-oele-und-stillzeit/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Essential oils and breastfeeding",
+    "description": "A careful guide to essential oils during breastfeeding: scent, skin contact, baby proximity, professional questions and product labels.",
+    "relatedArticleIds": [
+      "KO-W18-EN-001",
+      "KO-W14-EN-004",
+      "KO-W14-EN-006"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-DE-003",
+    "translationPairId": "KO-W18-PAIR-003",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ätherische Öle bei sensibler Haut",
+    "slug": "aetherische-oele-bei-sensibler-haut",
+    "route": "/de/wissen/sicher-anwenden/aetherische-oele-bei-sensibler-haut/",
+    "enRoute": "/en/knowledge/safe-use/essential-oils-for-sensitive-skin/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Ätherische Öle bei sensibler Haut",
+    "description": "Eine einfache Sicherheitsorientierung für sensible Haut: warum Verdünnung, Patch-Test, kleine Mengen und Stopp-Regeln wichtig sind.",
+    "relatedArticleIds": [
+      "KO-W02-003",
+      "KO-W15-DE-014",
+      "KO-W18-DE-005"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-EN-003",
+    "translationPairId": "KO-W18-PAIR-003",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Essential oils for sensitive skin",
+    "slug": "essential-oils-for-sensitive-skin",
+    "route": "/en/knowledge/safe-use/essential-oils-for-sensitive-skin/",
+    "deRoute": "/de/wissen/sicher-anwenden/aetherische-oele-bei-sensibler-haut/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Essential oils for sensitive skin",
+    "description": "A simple safety guide for sensitive skin: why dilution, patch testing, small amounts and stop-rules matter.",
+    "relatedArticleIds": [
+      "KO-W07-003",
+      "KO-W15-EN-014",
+      "KO-W18-EN-005"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-DE-004",
+    "translationPairId": "KO-W18-PAIR-004",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ätherische Öle und Medikamente",
+    "slug": "aetherische-oele-und-medikamente",
+    "route": "/de/wissen/sicher-anwenden/aetherische-oele-und-medikamente/",
+    "enRoute": "/en/knowledge/safe-use/essential-oils-and-medication/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Ätherische Öle und Medikamente",
+    "description": "Eine konservative Einordnung, warum bei Medikamenten, Erkrankungen und innerer Anwendung fachliche Rücksprache wichtig ist.",
+    "relatedArticleIds": [
+      "KO-W14-DE-006",
+      "KO-W18-DE-001",
+      "KO-W15-DE-013"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-EN-004",
+    "translationPairId": "KO-W18-PAIR-004",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Essential oils and medication",
+    "slug": "essential-oils-and-medication",
+    "route": "/en/knowledge/safe-use/essential-oils-and-medication/",
+    "deRoute": "/de/wissen/sicher-anwenden/aetherische-oele-und-medikamente/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Essential oils and medication",
+    "description": "A conservative guide to why medication, medical conditions and internal use require qualified guidance.",
+    "relatedArticleIds": [
+      "KO-W14-EN-006",
+      "KO-W18-EN-001",
+      "KO-W15-EN-013"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-DE-005",
+    "translationPairId": "KO-W18-PAIR-005",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Patch-Test einfach erklärt",
+    "slug": "patch-test-einfach-erklaert",
+    "route": "/de/wissen/sicher-anwenden/patch-test-einfach-erklaert/",
+    "enRoute": "/en/knowledge/safe-use/patch-testing-explained-simply/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Patch-Test einfach erklärt",
+    "description": "Was ein Patch-Test ist, wann er sinnvoll ist und warum er Hautreaktionen nicht vollständig ausschließen kann.",
+    "relatedArticleIds": [
+      "KO-W18-DE-003",
+      "KO-W02-003",
+      "KO-W15-DE-014"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-EN-005",
+    "translationPairId": "KO-W18-PAIR-005",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Patch testing explained simply",
+    "slug": "patch-testing-explained-simply",
+    "route": "/en/knowledge/safe-use/patch-testing-explained-simply/",
+    "deRoute": "/de/wissen/sicher-anwenden/patch-test-einfach-erklaert/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Patch testing explained simply",
+    "description": "What a patch test is, when it can help and why it cannot rule out all skin reactions.",
+    "relatedArticleIds": [
+      "KO-W18-EN-003",
+      "KO-W07-003",
+      "KO-W15-EN-014"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-DE-006",
+    "translationPairId": "KO-W18-PAIR-006",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Starke Öle sicher einordnen",
+    "slug": "starke-oele-sicher-einordnen",
+    "route": "/de/wissen/sicher-anwenden/starke-oele-sicher-einordnen/",
+    "enRoute": "/en/knowledge/safe-use/approaching-strong-oils-safely/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Starke Öle sicher einordnen",
+    "description": "Wie Anfänger starke ätherische Öle besser erkennen und warum weniger, Verdünnung und Label wichtiger sind als Mut zum Experiment.",
+    "relatedArticleIds": [
+      "KO-W04-007",
+      "KO-W17-DE-002",
+      "KO-W17-DE-004"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-EN-006",
+    "translationPairId": "KO-W18-PAIR-006",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "How to approach strong oils safely",
+    "slug": "approaching-strong-oils-safely",
+    "route": "/en/knowledge/safe-use/approaching-strong-oils-safely/",
+    "deRoute": "/de/wissen/sicher-anwenden/starke-oele-sicher-einordnen/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "How to approach strong oils safely",
+    "description": "How beginners can recognize stronger essential oils and why less, dilution and labels matter more than experimenting.",
+    "relatedArticleIds": [
+      "KO-W09-007",
+      "KO-W17-EN-002",
+      "KO-W17-EN-004"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-DE-007",
+    "translationPairId": "KO-W18-PAIR-007",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Ätherische Öle im Gesicht anwenden?",
+    "slug": "aetherische-oele-im-gesicht-anwenden",
+    "route": "/de/wissen/sicher-anwenden/aetherische-oele-im-gesicht-anwenden/",
+    "enRoute": "/en/knowledge/safe-use/can-essential-oils-be-used-on-the-face/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Ätherische Öle im Gesicht anwenden?",
+    "description": "Warum Gesichtsanwendung besonders vorsichtig eingeordnet werden sollte: Augen, Schleimhäute, Hautsensibilität, Verdünnung und Patch-Test.",
+    "relatedArticleIds": [
+      "KO-W18-DE-003",
+      "KO-W18-DE-005",
+      "KO-W15-DE-014"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-EN-007",
+    "translationPairId": "KO-W18-PAIR-007",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "Can essential oils be used on the face?",
+    "slug": "can-essential-oils-be-used-on-the-face",
+    "route": "/en/knowledge/safe-use/can-essential-oils-be-used-on-the-face/",
+    "deRoute": "/de/wissen/sicher-anwenden/aetherische-oele-im-gesicht-anwenden/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "Can essential oils be used on the face?",
+    "description": "Why facial use needs special caution: eyes, mucous membranes, skin sensitivity, dilution and patch testing.",
+    "relatedArticleIds": [
+      "KO-W18-EN-003",
+      "KO-W18-EN-005",
+      "KO-W15-EN-014"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-DE-008",
+    "translationPairId": "KO-W18-PAIR-008",
+    "language": "de",
+    "status": "approved-content-pack-ready",
+    "title": "Was tun bei Hautreaktion?",
+    "slug": "was-tun-bei-hautreaktion",
+    "route": "/de/wissen/sicher-anwenden/was-tun-bei-hautreaktion/",
+    "enRoute": "/en/knowledge/safe-use/what-to-do-after-a-skin-reaction/",
+    "worldId": "safe-use",
+    "worldLabel": "Sicher anwenden",
+    "seoTitle": "Was tun bei Hautreaktion?",
+    "description": "Eine klare, vorsichtige Orientierung, was du bei Rötung, Brennen, Jucken oder ungewöhnlicher Hautreaktion nach ätherischen Ölen tun solltest.",
+    "relatedArticleIds": [
+      "KO-W18-DE-003",
+      "KO-W18-DE-005",
+      "KO-W15-DE-014"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  },
+  {
+    "id": "KO-W18-EN-008",
+    "translationPairId": "KO-W18-PAIR-008",
+    "language": "en",
+    "status": "approved-content-pack-ready",
+    "title": "What to do after a skin reaction?",
+    "slug": "what-to-do-after-a-skin-reaction",
+    "route": "/en/knowledge/safe-use/what-to-do-after-a-skin-reaction/",
+    "deRoute": "/de/wissen/sicher-anwenden/was-tun-bei-hautreaktion/",
+    "worldId": "safe-use",
+    "worldLabel": "Safe Use",
+    "seoTitle": "What to do after a skin reaction?",
+    "description": "A clear, cautious guide for redness, burning, itching or unusual skin reactions after using essential oils.",
+    "relatedArticleIds": [
+      "KO-W18-EN-003",
+      "KO-W18-EN-005",
+      "KO-W15-EN-014"
+    ],
+    "reviewedBy": "Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist",
+    "medicalDisclaimerRequired": true,
+    "contentType": "safety-article",
+    "sourceUrls": [
+      "https://www.doterra.com/US/en/essential-oil-safety?OwnerID=11253103",
+      "https://www.poison.org/articles/essential-oils",
+      "https://www.hopkinsmedicine.org/health/wellness-and-prevention/are-essential-oils-safe-for-children",
+      "https://www.nccih.nih.gov/health/peppermint-oil",
+      "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    ]
+  }
+]
