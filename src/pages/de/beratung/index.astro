@@ -1,6 +1,5 @@
 ---
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
-import CTAGroup from '../../../components/cta/CTAGroup.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
 import FAQAccordion from '../../../components/faq/FAQAccordion.astro';
 import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
@@ -13,40 +12,22 @@ import PageLayout from '../../../layouts/PageLayout.astro';
 import { contactLinks } from '../../../data/externalLinks';
 
 const consultationSteps = [
-  {
-    title: '1. Du nimmst Kontakt auf',
-    paragraphs: [
-      'Du schreibst mir kurz, worum es bei dir geht. Das kann über WhatsApp oder E-Mail sein.',
-      'Du musst nichts perfekt vorbereiten. Ein kurzer Satz reicht.',
-    ],
-  },
+  { title: '1. Du nimmst Kontakt auf', paragraphs: ['Du schreibst mir kurz, worum es bei dir geht. WhatsApp oder E-Mail reichen dafür völlig aus.'] },
   {
     title: '2. Ich höre zu',
-    paragraphs: [
-      'Wir sprechen darüber, was dich interessiert, welche Ziele du hast und was in deinem Alltag realistisch umsetzbar ist.',
-      'Mir ist wichtig, erst zu verstehen, bevor ich etwas empfehle.',
-    ],
+    paragraphs: ['Wir sprechen darüber, was dich interessiert und was in deinem Alltag realistisch umsetzbar ist, bevor wir Möglichkeiten einordnen.'],
   },
   {
     title: '3. Wir ordnen deine Möglichkeiten ein',
-    paragraphs: [
-      'Ich erkläre dir, welche doTERRA-Produkte, Routinen oder Themenbereiche für dich relevant sein könnten.',
-      'Dabei geht es nicht darum, möglichst viel zu empfehlen. Es geht darum, Klarheit zu schaffen.',
-    ],
+    paragraphs: ['Ich erkläre dir verständlich, welche Routinen, Themenbereiche oder doTERRA-Produkte relevant sein könnten. Es geht um Klarheit, nicht um möglichst viel.'],
   },
   {
     title: '4. Du entscheidest in Ruhe',
-    paragraphs: [
-      'Wenn etwas für dich passt, besprechen wir den nächsten Schritt.',
-      'Das kann eine Produktempfehlung sein, ein Starter-Set, ein doTERRA Kundenkonto oder erstmal nur weiteres Infomaterial.',
-    ],
+    paragraphs: ['Wenn etwas zu dir passt, besprechen wir den nächsten Schritt. Das kann eine Produktempfehlung, ein Starter-Set, ein Kundenkonto oder zunächst nur weitere Information sein.'],
   },
   {
     title: '5. Ich begleite dich weiter',
-    paragraphs: [
-      'Wenn du startest, lasse ich dich nicht allein.',
-      'Ich helfe dir bei Fragen zur Anwendung, beim Aufbau deiner Routine und dabei, die Produkte sinnvoll in deinen Alltag zu integrieren.',
-    ],
+    paragraphs: ['Wenn du startest, bleibe ich bei Fragen zur Anwendung und beim Aufbau einer passenden Routine ansprechbar.'],
   },
 ];
 
@@ -54,12 +35,9 @@ const expectations = [
   'Eine ruhige und ehrliche Einschätzung.',
   'Verständliche Erklärung ohne komplizierte Begriffe.',
   'Empfehlungen, die zu deinem Anliegen passen.',
-  'Keine künstliche Dringlichkeit.',
-  'Keine übertriebenen Versprechen.',
+  'Keine künstliche Dringlichkeit oder übertriebenen Versprechen.',
   'Keine medizinischen Aussagen oder Heilversprechen.',
-  'Unterstützung beim Einstieg mit doTERRA-Produkten.',
-  'Begleitung nach dem Kauf.',
-  'Klare Kommunikation und persönliche Erreichbarkeit.',
+  'Persönliche Unterstützung beim Einstieg und danach.',
 ];
 
 const consultationTopics = [
@@ -138,20 +116,16 @@ const consultationFaqs = [
     imagePosition="52% center"
   >
     <p>Du interessierst dich für ätherische Öle, natürliche Routinen oder die Produktwelt von doTERRA, bist aber noch unsicher, womit du starten sollst?</p>
-    <p>Dann ist ein Gespräch mit mir ein einfacher erster Schritt.</p>
-    <p>Meine Beratung beginnt nicht mit Produkten, sondern mit deiner Situation. Ich möchte verstehen, was dich beschäftigt, was du verändern möchtest und welche Routinen wirklich in deinen Alltag passen.</p>
-    <p>Erst danach geht es darum, ob doTERRA-Produkte für dich sinnvoll sind und welche Möglichkeiten zu dir passen könnten.</p>
+    <p>Ein Gespräch mit mir ist ein ruhiger erster Schritt.</p>
+    <p>Meine Beratung beginnt mit deiner Situation und den Routinen, die wirklich in deinen Alltag passen. Erst danach ordnen wir ein, ob doTERRA-Produkte oder andere nächste Schritte sinnvoll sein könnten.</p>
   </HeroSplit>
 
   <section class="section section--cream">
     <div class="container split-layout">
       <div>
         <SectionIntro title="Worum es in der Beratung geht">
-          <p>Viele Menschen hören von ätherischen Ölen und sind zuerst neugierig, aber auch etwas überfordert.</p>
-          <p>Viele Menschen suchen Orientierung rund um Abendroutine, stressige Tage, Bewegung und Körperpflege, frische Raumluft, Bauchgefühl, Emotionen, Familie oder die erste Produktauswahl.</p>
-          <p>Welches Öl ist sinnvoll?<br />Wie nutzt man es richtig?<br />Welches Set passt zum Einstieg?<br />Was ist für Familie, Alltag, Ruhe, Energie oder Haushalt geeignet?<br />Und woran erkennt man, ob etwas wirklich zu den eigenen Zielen passt?</p>
-          <p>Genau hier unterstütze ich dich.</p>
-          <p>Ich erkläre dir die Möglichkeiten verständlich, ruhig und ohne Fachchinesisch. Du bekommst keine pauschale Empfehlung, sondern eine ehrliche Einschätzung passend zu deinem Alltag.</p>
+          <p>Ätherische Öle und die doTERRA-Produktwelt können anfangs schnell unübersichtlich wirken. Viele Menschen suchen Orientierung rund um Abendroutinen, stressige Tage, Bewegung und Körperpflege, Raumduft, Familie oder die erste Produktauswahl.</p>
+          <p>Ich erkläre dir die Möglichkeiten verständlich und ohne Fachchinesisch. Statt einer pauschalen Empfehlung bekommst du eine ehrliche Einordnung für deinen Alltag.</p>
         </SectionIntro>
       </div>
       <ResponsiveImage
@@ -168,8 +142,7 @@ const consultationFaqs = [
   <section class="section">
     <div class="container narrow-layout">
       <SectionIntro title="Für wen die Beratung geeignet ist">
-        <p>Die Beratung ist für dich geeignet, wenn du natürliche Lösungen kennenlernen möchtest, aber nicht einfach blind Produkte kaufen willst.</p>
-        <p>Sie passt besonders gut, wenn du:</p>
+          <p>Die Beratung passt, wenn du natürliche Routinen kennenlernen möchtest, aber nicht einfach blind Produkte kaufen willst. Besonders hilfreich ist sie, wenn du:</p>
       </SectionIntro>
       <ul class="check-list">
         <li>mehr Ruhe in deinen Alltag bringen möchtest</li>
@@ -210,25 +183,11 @@ const consultationFaqs = [
         position="62% center"
       />
       <div>
-        <SectionIntro title="Der Vorteil, wenn du über mich startest">
-          <p>Wenn du über mich mit doTERRA startest, bekommst du nicht nur Zugang zu hochwertigen Produkten.</p>
-          <p>Du hast auch einen persönlichen Ansprechpartner, der dich begleitet.</p>
-          <p>Mit einem offiziellen doTERRA Kundenkonto erhältst du Produkte zum Einkaufspreis und sparst 25 % auf deine Einkäufe. Gleichzeitig bekommst du Unterstützung bei Auswahl, Anwendung und Routinen.</p>
-          <p>Das ist besonders hilfreich, wenn du nicht einfach allein durch den Shop klicken möchtest.</p>
+        <SectionIntro title="Begleitung auch nach dem Start">
+          <p>Wenn du über mich mit doTERRA startest, hast du neben dem Zugang zu Produkten einen persönlichen Ansprechpartner für Auswahl, Anwendung und Routinen.</p>
+          <p>Mit einem offiziellen doTERRA Kundenkonto erhältst du Produkte zum Einkaufspreis und sparst 25 % auf deine Einkäufe. Gerade am Anfang kann das helfen, wenn du den Shop nicht allein einordnen möchtest.</p>
         </SectionIntro>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container narrow-layout">
-      <SectionIntro title="Was bewusst nicht passiert">
-        <p>Ich werde dich nicht zu einem Kauf drängen.</p>
-        <p>Ich werde dir nicht ein großes Set empfehlen, nur weil es möglich ist.</p>
-        <p>Ich werde keine Versprechen machen, die unseriös oder medizinisch problematisch wären.</p>
-        <p>Ich werde dir auch sagen, wenn ein Produkt oder Thema aus meiner Sicht nicht passend ist.</p>
-        <p>Gute Beratung bedeutet für mich, dass du am Ende mehr Klarheit hast und eine Entscheidung treffen kannst, die sich für dich richtig anfühlt.</p>
-      </SectionIntro>
     </div>
   </section>
 
@@ -242,17 +201,6 @@ const consultationFaqs = [
           </TopicCard>
         ))}
       </div>
-    </div>
-  </section>
-
-  <section class="section section--nature">
-    <div class="container narrow-layout">
-      <SectionIntro title="Nach dem Kauf bin ich weiter da">
-        <p>Viele Menschen kaufen ein Produkt und wissen danach nicht genau, wie sie es sinnvoll nutzen sollen.</p>
-        <p>Bei mir endet die Begleitung nicht nach der Bestellung.</p>
-        <p>Du kannst Fragen stellen, Erfahrungen teilen und deine Routine nach und nach anpassen.</p>
-        <p>Gerade am Anfang ist es hilfreich, jemanden zu haben, der dir ruhig erklärt, was möglich ist und worauf du achten solltest.</p>
-      </SectionIntro>
     </div>
   </section>
 
@@ -279,11 +227,7 @@ const consultationFaqs = [
     secondaryHref={contactLinks.whatsapp.href}
     secondaryLabel="WhatsApp starten"
   >
-    <p>Du musst nicht wissen, welches Öl du brauchst.</p>
-    <p>Du musst kein Set auswählen.</p>
-    <p>Du musst nicht sicher sein, ob die doTERRA-Produktwelt zu dir passt.</p>
-    <p>Schreib mir einfach, was dich interessiert oder wobei du Orientierung suchst.</p>
-    <p>Dann finden wir den nächsten sinnvollen Schritt.</p>
+    <p>Du musst weder ein Öl noch ein Set ausgewählt haben. Schreib mir einfach, was dich interessiert oder wobei du Orientierung suchst. Dann finden wir den nächsten sinnvollen Schritt.</p>
   </CTASection>
 
   <section class="compliance-section">

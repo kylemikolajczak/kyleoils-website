@@ -26,19 +26,6 @@ const contactSteps = [
   },
 ];
 
-const helpTopics = [
-  'doTERRA kennenlernen möchtest',
-  'unsicher bist, womit du starten sollst',
-  'Fragen zu ätherischen Ölen hast',
-  'eine einfache Routine für deinen Alltag suchst',
-  'mehr über ein bestimmtes Produkt wissen möchtest',
-  'bereits doTERRA-Produkte hast, sie aber kaum nutzt',
-  'ein offizielles doTERRA Kundenkonto besprechen möchtest',
-  'dich für Workshops oder Öl-Abende interessierst',
-  'eine Kooperation anfragen möchtest',
-  'mehr über die Business-Möglichkeit erfahren willst',
-];
-
 const contactOptions = [
   {
     title: 'WhatsApp',
@@ -78,44 +65,16 @@ const contactOptions = [
     primaryHref={contactLinks.whatsapp.href}
     primaryLabel="WhatsApp starten"
     secondaryHref="#contact-options"
-    secondaryLabel="Kostenloses Beratungsgespräch anfragen"
+    secondaryLabel="Kontaktmöglichkeiten ansehen"
     imageSrc="/assets/images/about/contact-kyle-horse.jpg"
     imageAlt="Kyle mit einem Pferd in der Natur"
     imageWidth={1132}
     imageHeight={1390}
     imagePosition="50% 52%"
   >
-    <p>Du musst noch nicht wissen, welches Öl, welches Starter-Set oder welche Routine die richtige ist.</p>
-    <p>Die Kontaktaufnahme dient zuerst dazu, Fragen zu stellen, Orientierung zu bekommen und gemeinsam herauszufinden, was sinnvoll sein könnte.</p>
-    <p>Kein Verkaufsdruck. Du entscheidest selbst, ob du mich per WhatsApp, Telefon, E-Mail, Videocall oder persönlich kontaktieren möchtest.</p>
+    <p>Du musst noch nicht wissen, welches Öl, Starter-Set oder welche Routine zu dir passt.</p>
+    <p>Schreib mir einfach, was dich interessiert oder wobei du Orientierung suchst. Du erreichst mich per WhatsApp, Telefon oder E-Mail. Persönliche Treffen nach Absprache und Videocalls sind ebenfalls möglich.</p>
   </HeroSplit>
-
-  <section class="section section--cream">
-    <div class="container">
-      <SectionIntro title="So läuft die Beratung ab" />
-      <StepList steps={contactSteps} />
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container split-copy">
-      <div>
-        <SectionIntro title="Wobei ich dir helfen kann">
-          <p>Du kannst dich bei mir melden, wenn du:</p>
-        </SectionIntro>
-        <ul class="check-list">
-          {helpTopics.map((topic) => <li>{topic}</li>)}
-        </ul>
-      </div>
-      <div class="calm-panel">
-        <h2>Kein Druck. Keine Verpflichtung.</h2>
-        <p>Du musst nach deiner Anfrage nichts kaufen.</p>
-        <p>Du musst kein Kundenkonto eröffnen.</p>
-        <p>Du musst dich auch nicht sofort entscheiden.</p>
-        <p>Der erste Kontakt ist dafür da, dass du Klarheit bekommst und ein Gefühl dafür entwickelst, ob die doTERRA-Produktwelt und meine Begleitung zu dir passen.</p>
-      </div>
-    </div>
-  </section>
 
   <section id="contact-options" class="section section--sage">
     <div class="container">
@@ -140,6 +99,13 @@ const contactOptions = [
           </article>
         ))}
       </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container">
+      <SectionIntro title="So läuft der erste Kontakt ab" />
+      <StepList steps={contactSteps} />
     </div>
   </section>
 
@@ -221,27 +187,12 @@ const contactOptions = [
     </div>
   </section>
 
-  <section class="final-cta">
-    <div class="container final-cta__inner">
-      <div>
-        <h2>Du musst dich heute noch nicht entscheiden.</h2>
-        <p>Wenn du Fragen hast oder einfach Orientierung möchtest, freue ich mich auf deine Nachricht.</p>
-      </div>
-      <div class="final-cta__actions">
-        <Button href={contactLinks.whatsapp.href}>WhatsApp starten</Button>
-        <Button href="#contact-options" variant="secondary">Beratungsgespräch anfragen</Button>
-        <Button href={contactLinks.phone.href} variant="secondary">Telefonisch kontaktieren</Button>
-      </div>
-    </div>
-  </section>
-
   <section class="compliance-section">
     <div class="container">
       <ComplianceNote>
         <h2>Kurzer Hinweis</h2>
         <p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung.<br />Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
-        <p>Mein Fokus liegt auf verständlicher Orientierung, natürlichen Alltagsroutinen, hochwertiger Produktinformation und persönlicher Begleitung.</p>
-        <p>Wenn du gesundheitliche Beschwerden hast oder medizinische Fragen klären möchtest, wende dich bitte an einen Arzt, Heilpraktiker oder eine entsprechend qualifizierte Fachperson.</p>
+        <p>Mein Fokus liegt auf verständlicher Orientierung, natürlichen Alltagsroutinen, Produktinformation und persönlicher Begleitung. Bei gesundheitlichen oder medizinischen Fragen wende dich bitte an eine qualifizierte Fachperson.</p>
       </ComplianceNote>
     </div>
   </section>
@@ -255,15 +206,7 @@ const contactOptions = [
   .local-guidance-section__inner h2 { margin: 0 0 var(--space-12); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
   .local-guidance-section__inner p:not(.eyebrow) { margin: 0; color: var(--color-text-secondary); }
   .local-guidance-section__inner .eyebrow { margin: 0 0 var(--space-12); }
-  .split-copy,
   .details-layout { display: grid; gap: var(--space-48); }
-  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; color: var(--color-text-secondary); }
-  .check-list li { position: relative; padding-left: var(--space-32); }
-  .check-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
-  .calm-panel { align-self: start; padding: var(--space-32); border-radius: var(--radius-section); background: var(--color-deep-forest); color: var(--color-text-inverted); }
-  .calm-panel h2 { margin: 0 0 var(--space-20); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
-  .calm-panel p { margin: 0 0 var(--space-16); color: var(--color-linen); }
-  .calm-panel p:last-child { margin-bottom: 0; }
   .contact-grid { display: grid; gap: var(--space-20); }
   .contact-subheading { margin: var(--space-48) 0 var(--space-24); font-size: var(--font-size-h3-mobile); line-height: 1.25; }
   .contact-card { min-height: 230px; display: flex; flex-direction: column; align-items: flex-start; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
@@ -285,13 +228,6 @@ const contactOptions = [
   .social-links a { min-height: 52px; display: inline-flex; align-items: center; gap: var(--space-12); padding: var(--space-12) var(--space-20); border: 1px solid var(--color-sand); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; }
   .social-links a:hover { border-color: var(--color-sage-green); background: var(--color-warm-white); }
   .social-links svg { width: 22px; height: 22px; fill: currentColor; }
-  .final-cta { padding: var(--space-64) 0; }
-  .final-cta__inner { display: grid; gap: var(--space-32); padding: var(--space-40) var(--space-24); border-radius: var(--radius-section); background: var(--color-deep-forest); color: var(--color-text-inverted); }
-  .final-cta h2 { max-width: var(--container-text); margin: 0 0 var(--space-20); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
-  .final-cta p { max-width: var(--container-text); margin: 0; color: var(--color-linen); }
-  .final-cta__actions { display: flex; flex-direction: column; gap: var(--space-16); }
-  .final-cta :global(.button--primary) { border-color: var(--color-warm-white); background: var(--color-warm-white); color: var(--color-deep-forest); }
-  .final-cta :global(.button--secondary) { color: var(--color-warm-white); }
   .compliance-section { padding: 0 0 var(--space-80); }
   .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
   .compliance-section :global(p + p) { margin-top: var(--space-12); }
@@ -299,26 +235,18 @@ const contactOptions = [
   @media (prefers-reduced-motion: no-preference) {
     :global(html) { scroll-behavior: smooth; }
   }
-  @media (min-width: 600px) {
-    .final-cta__actions { flex-direction: row; flex-wrap: wrap; }
-  }
   @media (min-width: 768px) {
     .section { padding-block: var(--space-96); }
     .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
     .local-guidance-section__inner { grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-40); }
     .contact-card { padding: var(--space-32); }
     .contact-details div { grid-template-columns: minmax(120px, .35fr) minmax(0, 1fr); gap: var(--space-24); }
-    .final-cta { padding-block: var(--space-80); }
-    .final-cta__inner { padding: var(--space-64); }
   }
   @media (min-width: 1024px) {
     .section { padding-block: var(--space-120); }
-    .split-copy,
     .details-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); align-items: start; }
     .contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .contact-grid--formats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .calm-panel h2,
-    .final-cta h2,
     .local-guidance-section__inner h2 { font-size: var(--font-size-h2-desktop); }
   }
 </style>
