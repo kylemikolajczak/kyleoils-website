@@ -165,9 +165,9 @@ const contactOptions = [
     </div>
   </section>
 
-  <section class="section section--cream">
+  <section class="social-section" aria-label="Social Media">
     <div class="container social-layout">
-      <SectionIntro title="Social Media" />
+      <p class="social-section__label">Auch auf Social Media</p>
       <div class="social-links">
         <a href={socialLinks.facebook.href} target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -227,12 +227,15 @@ const contactOptions = [
   .qualification h2 { margin: 0 0 var(--space-24); font-size: var(--font-size-h3-mobile); line-height: 1.25; }
   .qualification ul { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; color: var(--color-text-secondary); }
   .qualification li { padding-top: var(--space-16); border-top: 1px solid var(--color-sand); }
-  .social-layout :global(.section-intro) { margin-bottom: var(--space-24); }
+  .social-section { padding: var(--space-24) 0 var(--space-48); }
+  .social-layout { display: flex; flex-wrap: wrap; gap: var(--space-16) var(--space-24); align-items: center; }
+  .social-section__label { margin: 0; color: var(--color-text-muted); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
   .social-links { display: flex; flex-wrap: wrap; gap: var(--space-16); }
   .social-links a { min-height: 52px; display: inline-flex; align-items: center; gap: var(--space-12); padding: var(--space-12) var(--space-20); border: 1px solid var(--color-sand); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; }
   .social-links a:hover { border-color: var(--color-sage-green); background: var(--color-warm-white); }
   .social-links svg { width: 22px; height: 22px; fill: currentColor; }
-  .compliance-section { padding: 0 0 var(--space-80); }
+  .compliance-section { padding: var(--space-24) 0 var(--space-64); }
+  .compliance-section :global(.compliance-note) { max-width: 760px; padding: var(--space-24) 0 0; border: 0; border-top: 1px solid rgb(216 199 173 / 65%); border-radius: 0; background: transparent; }
   .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
   .compliance-section :global(p + p) { margin-top: var(--space-12); }
   #contact-options { scroll-margin-top: var(--space-32); }
@@ -241,6 +244,7 @@ const contactOptions = [
   }
   @media (min-width: 768px) {
     .section { padding-block: var(--space-96); }
+    .social-section { padding: var(--space-32) 0 var(--space-64); }
     .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
     .local-guidance-section__inner { grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-40); }
     .contact-card { padding: var(--space-32); }
@@ -248,6 +252,7 @@ const contactOptions = [
   }
   @media (min-width: 1024px) {
     .section { padding-block: var(--space-120); }
+    .social-section { padding: var(--space-40) 0 var(--space-80); }
     .details-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); align-items: start; }
     .contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .contact-grid--formats { grid-template-columns: repeat(2, minmax(0, 1fr)); }

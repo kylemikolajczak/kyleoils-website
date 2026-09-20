@@ -2,6 +2,7 @@
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
 import FAQAccordion from '../../../components/faq/FAQAccordion.astro';
+import Button from '../../../components/global/Button.astro';
 import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
 import TopicCard from '../../../components/cards/TopicCard.astro';
 import TrustCard from '../../../components/cards/TrustCard.astro';
@@ -217,7 +218,7 @@ const consultationFaqs = [
     <div class="container narrow-layout">
       <SectionIntro title="Guidance in Germany, in English">
         <p>If you live in Germany, guidance can be arranged in person, online or by phone. English guidance is also available.</p>
-        <p><a href="/en/essential-oil-guidance-germany/">More about Essential Oil Guidance in Germany</a></p>
+        <Button href="/en/essential-oil-guidance-germany/" variant="secondary">More about Essential Oil Guidance in Germany</Button>
       </SectionIntro>
     </div>
   </section>
@@ -262,7 +263,7 @@ const consultationFaqs = [
   .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
   .check-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
   .trust-grid, .topic-grid { display: grid; gap: var(--space-20); }
-  .local-guidance-context :global(a) { color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
+  .local-guidance-context :global(.button) { margin-top: var(--space-24); }
   .compliance-section { padding: 0 0 var(--space-80); }
   .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
   @media (min-width: 768px) {

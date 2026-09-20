@@ -6,8 +6,8 @@ interface Props { locale?: Locale; }
 const { locale = 'de' } = Astro.props;
 const data = locale === 'de' ? footerData : englishFooterData;
 const labels = locale === 'de'
-  ? { main: 'Navigation im Footer', mainTitle: 'Navigation', offersAndKnowledge: 'Angebote & Wissen', contactAndOfficial: 'Kontakt & Offizielle Links', legal: 'Rechtliches', home: 'Zur Startseite', analytics: 'Analytics-Einstellungen' }
-  : { main: 'Footer navigation', mainTitle: 'Navigation', offersAndKnowledge: 'Offers & Knowledge', contactAndOfficial: 'Contact & Official Links', legal: 'Legal', home: 'Go to homepage', analytics: 'Analytics preferences' };
+  ? { main: 'Navigation im Footer', mainTitle: 'Navigation', knowledge: 'Wissen & Orientierung', contactAndOfficial: 'Kontakt & Offizielle Links', legal: 'Rechtliches', home: 'Zur Startseite', analytics: 'Analytics-Einstellungen' }
+  : { main: 'Footer navigation', mainTitle: 'Navigation', knowledge: 'Knowledge & Guidance', contactAndOfficial: 'Contact & Official Links', legal: 'Legal', home: 'Go to homepage', analytics: 'Analytics preferences' };
 const independenceNote = locale === 'de'
   ? ['Kyle Daniel Mikolajczak ist doTERRA Wellness Advocate und arbeitet unabhängig.', 'doTERRA ist der Produktpartner, nicht die Hauptmarke dieser Website.']
   : ['Kyle Daniel Mikolajczak is an independent doTERRA Wellness Advocate.', 'doTERRA is the product partner, not the primary brand of this website.'];
@@ -26,16 +26,9 @@ const independenceNote = locale === 'de'
       </div>
     </div>
     <nav aria-label={labels.main}><h2>{labels.mainTitle}</h2><ul>{data.primaryNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
-    <nav aria-label={labels.offersAndKnowledge}>
-      <h2>{labels.offersAndKnowledge}</h2>
-      <div class="footer-link-groups">
-        {data.offersAndKnowledgeGroups.map((group) => (
-          <section class="footer-link-group">
-            <h3>{group.label}</h3>
-            <ul>{group.links.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul>
-          </section>
-        ))}
-      </div>
+    <nav aria-label={labels.knowledge}>
+      <h2>{labels.knowledge}</h2>
+      <ul>{data.knowledgeLinks.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul>
     </nav>
     <nav aria-label={labels.contactAndOfficial}>
       <h2>{labels.contactAndOfficial}</h2>
@@ -54,34 +47,32 @@ const independenceNote = locale === 'de'
 </footer>
 
 <style>
-  .site-footer { padding: var(--space-64) 0 var(--space-32); background: var(--color-warm-anthracite); color: var(--color-text-inverted); }
-  .footer-grid { display: grid; gap: var(--space-40); align-items: start; }
+  .site-footer { padding: var(--space-48) 0 var(--space-24); background: var(--color-warm-anthracite); color: var(--color-text-inverted); }
+  .footer-grid { display: grid; gap: var(--space-32); align-items: start; }
   .footer-brand { display: flex; align-items: flex-start; gap: var(--space-16); }
   .footer-brand__mark-link { display: block; flex: 0 0 auto; border-radius: 50%; }
   .footer-brand__mark { width: 56px; height: 56px; flex: 0 0 auto; }
-  .footer-brand__copy { min-width: 0; max-width: 34ch; }
+  .footer-brand__copy { min-width: 0; max-width: 31ch; }
   .footer-brand strong { display: block; }
   .footer-brand strong + p { margin-top: var(--space-8); }
-  h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-body-mobile); }
-  .footer-link-groups { display: grid; gap: var(--space-24); }
-  .footer-link-group h3 { margin: 0 0 var(--space-12); color: var(--color-linen); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .04em; text-transform: uppercase; }
+  h2 { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
   p { margin: 0; color: var(--color-linen); }
-  .footer-brand p + p { margin-top: var(--space-12); }
-  ul { display: grid; gap: var(--space-12); margin: 0; padding: 0; list-style: none; }
+  .footer-brand p + p { margin-top: var(--space-8); }
+  ul { display: grid; gap: var(--space-8); margin: 0; padding: 0; list-style: none; }
   a { color: var(--color-linen); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .footer-brand__mark-link:hover { text-decoration: none; }
   .footer-brand__mark-link:focus-visible { outline-color: var(--color-linen); }
-  .footer-contact-links { margin-bottom: var(--space-20); padding-bottom: var(--space-20); border-bottom: 1px solid rgb(239 230 216 / 25%); }
-  .footer-bottom { display: grid; gap: var(--space-16); margin-top: var(--space-48); padding-top: var(--space-24); border-top: 1px solid rgb(239 230 216 / 25%); font-size: var(--font-size-small); }
+  .footer-contact-links { margin-bottom: var(--space-12); padding-bottom: var(--space-12); border-bottom: 1px solid rgb(239 230 216 / 25%); }
+  .footer-bottom { display: grid; gap: var(--space-12); margin-top: var(--space-32); padding-top: var(--space-20); border-top: 1px solid rgb(239 230 216 / 25%); font-size: var(--font-size-small); }
   .footer-bottom__legal { display: flex; flex-wrap: wrap; gap: var(--space-12) var(--space-24); align-items: center; }
-  .footer-bottom nav ul { display: flex; flex-wrap: wrap; gap: var(--space-12) var(--space-20); }
+  .footer-bottom nav ul { display: flex; flex-wrap: wrap; gap: var(--space-8) var(--space-20); }
   .footer-analytics-preferences { margin: 0; padding: 0; border: 0; background: transparent; color: var(--color-linen); cursor: pointer; text-align: left; }
   .footer-analytics-preferences:hover { text-decoration: underline; }
   .footer-bottom__note { display: grid; gap: var(--space-4); max-width: 520px; line-height: var(--line-height-small); }
   @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 1024px) {
-    .footer-grid { grid-template-columns: minmax(300px, 1.55fr) repeat(3, minmax(0, 1fr)); gap: var(--space-48); }
+    .footer-grid { grid-template-columns: minmax(280px, 1.45fr) repeat(3, minmax(0, 1fr)); gap: var(--space-40); }
     .footer-bottom { grid-template-columns: max-content minmax(0, 1fr); align-items: center; }
     .footer-bottom__note { text-align: left; justify-self: end; }
   }
