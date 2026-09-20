@@ -1,20 +1,16 @@
 ---
-import CTAGroup from '../../components/cta/CTAGroup.astro';
 import CTASection from '../../components/cta/CTASection.astro';
 import Button from '../../components/global/Button.astro';
-import TopicCard from '../../components/cards/TopicCard.astro';
 import HeroSplit from '../../components/sections/HeroSplit.astro';
 import ResponsiveImage from '../../components/global/ResponsiveImage.astro';
 import SectionIntro from '../../components/sections/SectionIntro.astro';
-import TrustBar from '../../components/sections/TrustBar.astro';
 import PageLayout from '../../layouts/PageLayout.astro';
-import { contactLinks } from '../../data/externalLinks';
 
-const wellnessAreas = [
-  { title: 'Evenings, Calm & Scent Anchors', copy: 'For winding down in the evening, taking small pauses and creating personal scent moments on busy days.' },
-  { title: 'Movement, Massage & Body Comfort', copy: 'For massage, care and scent routines after sport, gardening, long periods of sitting or active days.' },
-  { title: 'Family Everyday Life & Safe Use', copy: 'For homes with children, pets or visitors where safety, amount and room size matter.' },
-  { title: 'Home & Everyday Wellness', copy: 'For room scent, skin care, food routines and simple habits that are easy to live with.' },
+const intentPaths = [
+  { title: 'Evening & calm', copy: 'For a gentler evening atmosphere and personal scent moments.', href: '/en/knowledge/routines/simple-evening-routine-with-essential-oils/' },
+  { title: 'Movement & body care', copy: 'For massage, body care and routines after active days.', href: '/en/knowledge/products-systems/deep-blue-movement-massage-body-comfort/' },
+  { title: 'Family & safe use', copy: 'For homes where amount, room size and consideration matter.', href: '/en/knowledge/safe-use/' },
+  { title: 'Home & routines', copy: 'For room scent, care rituals and conscious habits at home.', href: '/en/knowledge/everyday-use/' },
 ];
 ---
 
@@ -26,9 +22,9 @@ const wellnessAreas = [
   <HeroSplit
     title="Natural Routines for More Balance in Daily Life"
     primaryHref="/en/contact/"
-    primaryLabel="Request a Free Consultation"
-    secondaryHref={contactLinks.whatsapp.href}
-    secondaryLabel="Message Me on WhatsApp"
+    primaryLabel="Request Guidance"
+    secondaryHref="/en/knowledge/"
+    secondaryLabel="Explore Knowledge"
     imageSrc="/assets/images/kyle/hero-kyle.png"
     imageAlt="Kyle Daniel Mikolajczak in a calm, light setting"
     imageWidth={1537}
@@ -40,80 +36,59 @@ const wellnessAreas = [
       { type: 'image/webp', srcset: '/assets/images/optimized/hero-kyle-640.webp 640w, /assets/images/optimized/hero-kyle-960.webp 960w, /assets/images/optimized/hero-kyle-1280.webp 1280w, /assets/images/optimized/hero-kyle-1536.webp 1536w' },
     ]}
   >
-    <p>Understand doTERRA, explore products that may suit you and begin with simple routines that work in real life.</p>
-    <p>I offer honest, personal support. First, we talk about what you need. Then we consider whether essential oils, wellness products or a doTERRA customer account could be right for you.</p>
-    <p>When you get started with doTERRA products through me, you gain more than access to high-quality products: you also have someone you can turn to. With an official doTERRA customer account, you can purchase products at wholesale pricing and save 25% on your purchases.</p>
+    <p>Understand doTERRA, essential oils and routines that may suit the way you live before you choose.</p>
+    <p>I listen first, offer clear guidance and stay available for the next steps.</p>
   </HeroSplit>
 
-  <section class="trust-section" aria-label="Trust and Qualifications">
-    <div class="container">
-      <TrustBar
-        logoSrc="/assets/images/branding/doterra-wellness-advocate-en.png"
-        logoAlt="doTERRA Independent Wellness Advocates"
-        logoWidth={1000}
-        logoHeight={308}
-      >
-        <p>doTERRA Europe Essential Oils Specialist</p>
-        <p>Personal Guidance</p>
-      </TrustBar>
+  <section class="trust-strip" aria-label="Qualifications and guidance">
+    <div class="container trust-strip__inner">
+      <span>doTERRA Europe Essential Oils Specialist</span>
+      <span>Independent Wellness Advocate</span>
+      <span>Personal guidance in German & English</span>
     </div>
   </section>
 
   <section class="section section--nature">
     <div class="container narrow-layout" data-reveal>
-      <SectionIntro title="Understand Your Options. Then Decide.">
-        <p>Perhaps you have heard of essential oils but are unsure where to begin.</p>
-        <p>Perhaps you would like to make more conscious choices, bring more natural elements into daily life or discover high-quality products without immediately navigating an online shop.</p>
-        <p>That is exactly what this website is here for.</p>
-        <p>Here you will find clear answers, practical support and a simple first step. You do not have to decide anything immediately. You can begin by asking questions.</p>
+      <SectionIntro title="Understand first. Then choose what fits.">
+        <p>Kyle Oils is a clear place to begin with essential oils, doTERRA products and wellness routines that fit your life.</p>
+        <p>Explore your options, ask questions and choose what you will actually use.</p>
       </SectionIntro>
     </div>
   </section>
 
-  <section class="section section--sage knowledge-teaser">
-    <div class="container knowledge-teaser__inner" data-reveal>
-      <p class="knowledge-teaser__eyebrow">KNOWLEDGE BEFORE YOU BUY</p>
-      <SectionIntro title="Read first. Decide calmly.">
-        <p>On Kyle Oils, you will find clear basics, safe-use guidance, simple routines, oil profiles, starter-kit orientation and product knowledge around doTERRA.</p>
-        <p>You do not need to know straight away which oil or kit is right for you. Learn first, compare at your own pace and then talk through your options with Kyle.</p>
-      </SectionIntro>
-      <div class="knowledge-teaser__actions">
-        <Button href="/en/knowledge/">Explore the Knowledge Hub</Button>
-        <Button href="/en/knowledge/oil-library/" variant="secondary">View the Oil Library</Button>
-        <Button href="/en/starter-sets/" variant="secondary">Understand Starter Kits</Button>
-        <Button href="/en/contact/" variant="secondary">Request a consultation</Button>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--cream wellness-areas">
+  <section class="section section--cream intent-section">
     <div class="container" data-reveal>
-      <p class="wellness-areas__eyebrow">WHAT PEOPLE LOOK FOR GUIDANCE ON</p>
-      <SectionIntro title="Understanding essential oils in real everyday life">
-        <p>For many people, essential oils begin with an everyday situation rather than a single product. These four starting points make it easier to explore the options.</p>
-        <p>If you would like to go deeper, the Knowledge Hub offers further topics, safe-use guidance and practical information.</p>
-      </SectionIntro>
-      <div class="wellness-areas__grid">
-        {wellnessAreas.map((area) => (
-          <TopicCard title={area.title}>
-            <p>{area.copy}</p>
-          </TopicCard>
-        ))}
+      <p class="eyebrow">A CLEAR PLACE TO BEGIN</p>
+      <SectionIntro title="Where would you like to start?"><p>Choose the everyday situation that feels most relevant right now.</p></SectionIntro>
+      <div class="intent-grid">
+        {intentPaths.map((path) => <a class="intent-card" href={path.href}><h2>{path.title}</h2><p>{path.copy}</p><span aria-hidden="true">Explore →</span></a>)}
       </div>
+    </div>
+  </section>
+
+  <section class="section section--sage knowledge-section">
+    <div class="container knowledge-section__inner" data-reveal>
+      <p class="eyebrow">KNOWLEDGE</p>
+      <SectionIntro title="Knowledge that moves you forward.">
+        <p>Clear basics, safe-use guidance, routines, oil profiles and product context. Find a well-informed starting point for the questions you have.</p>
+      </SectionIntro>
+      <Button href="/en/knowledge/">Explore the Knowledge Hub</Button>
+      <p class="knowledge-links"><a href="/en/knowledge/oil-library/">Oil Library</a><a href="/en/starter-sets/">Starter Kits</a><a href="/en/knowledge/safe-use/">Safe Use</a></p>
     </div>
   </section>
 
   <section class="section">
     <div class="container split-layout" data-reveal>
       <div>
-        <SectionIntro title="A Consultation That Starts with You">
-          <p>My consultation does not begin with a product list.</p>
-          <p>It begins with your situation.</p>
-        <p>What would you like to change?<br />What is on your mind right now?<br />What would you like to make simpler or more manageable?</p>
-          <p>Only then do I suggest doTERRA products or simple routines that may suit you. Sometimes that is a single oil. Sometimes a starter kit. Sometimes a wellness system. And sometimes the first step is simply an honest assessment.</p>
-          <p>It is important to me that you feel confident and understand what you are using.</p>
+        <p class="eyebrow">START WITH KYLE</p>
+        <SectionIntro title="Guidance that starts with you.">
+          <p>I do not begin with a product list. I listen first, so that your choices and routines genuinely fit your life.</p>
+          <p>You receive clear product context, a safety-aware beginning and a real person to turn to as questions arise.</p>
         </SectionIntro>
-        <CTAGroup primaryHref="/en/contact/" primaryLabel="Request a Consultation" secondaryHref={contactLinks.whatsapp.href} secondaryLabel="Ask a Question on WhatsApp" />
+        <ul class="trust-points"><li>Clear product and routine guidance</li><li>Safety-aware use</li><li>Personal support when questions arise</li></ul>
+        <div class="credential-row"><img src="/assets/images/certificates/eos-specialist-badge.png" alt="doTERRA Europe Essential Oils Specialist certificate" width="74" height="74" loading="lazy" decoding="async" /><p><strong>Qualified and personal.</strong><br />doTERRA Europe Essential Oils Specialist</p></div>
+        <Button href="/en/contact/">Speak with Kyle</Button>
       </div>
       <ResponsiveImage
         src="/assets/images/workshops/consultation-01.png"
@@ -130,130 +105,57 @@ const wellnessAreas = [
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <SectionIntro title="What You Can Expect" />
-      <ul class="benefit-list">
-        <li><strong>Personal guidance</strong><span>A free initial conversation and an honest assessment of your situation.</span></li>
-        <li><strong>Clear product education</strong><span>Plain explanations so you can understand the product range, choices and next steps.</span></li>
-        <li><strong>A safety-aware start</strong><span>Simple routines and product suggestions that may work in everyday life.</span></li>
-        <li><strong>Support when questions arise</strong><span>After purchase, I remain available for questions, resources and appropriate next steps.</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section section--sage">
-    <div class="container split-layout split-layout--reverse">
-      <ResponsiveImage
-        src="/assets/images/certificates/eos-specialist-badge.png"
-        alt="doTERRA Europe Essential Oils Specialist certificate"
-        width={4167}
-        height={4167}
-        variant="badge"
-        scale={1.365}
-      />
+  <section class="section next-path-section">
+    <div class="container next-path" data-reveal>
       <div>
-        <SectionIntro title="Why Start with Kyle?">
-          <p>You receive more than just a shop link from me.</p>
-          <p>I take the time to listen and help you understand the product range, so you do not have to guess which oil, kit or routine is right for you.</p>
-          <p>If you open an official doTERRA customer account through me, you can purchase products at wholesale pricing and save 25% on your purchases. You also have someone you can turn to afterwards.</p>
-          <p>I will tell you honestly if something is not a good fit.</p>
-          <p>For me, good support is not about recommending as much as possible. It means helping you make a decision with confidence.</p>
+        <p class="eyebrow">NEXT STEP</p>
+        <SectionIntro title="Understand doTERRA">
+          <p>Explore the product range, quality and customer account in clear context.</p>
+          <p>That turns a broad selection into a starting point you can understand.</p>
         </SectionIntro>
-        <CTAGroup primaryHref="/en/contact/" primaryLabel="Speak with Kyle" />
+        <div class="next-path__actions">
+          <Button href="/en/understanding-doterra/">Understand doTERRA</Button>
+          <Button href="/en/starter-sets/" variant="secondary">Starter Kits</Button>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container split-layout" data-reveal>
+  <section class="section section--cream next-path-section">
+    <div class="container next-path">
       <div>
-        <SectionIntro title="Understanding doTERRA">
-          <p>doTERRA is an international wellness company offering essential oils and wellness products.</p>
-          <p>These include single essential oils, oil blends, personal care products, household products, nutritional supplements and wellness systems such as MetaPWR.</p>
-          <p>At first, this variety can quickly feel overwhelming.</p>
-          <p>Rather than organising the doTERRA product range around individual products, I organise it around everyday needs:</p>
+        <p class="eyebrow">NEXT STEP</p>
+        <SectionIntro title="Workshops">
+          <p>A relaxed setting to understand essential oils, experience them and ask questions together.</p>
         </SectionIntro>
-        <ul class="simple-list">
-          <li>Calm and relaxation.</li>
-          <li>Sleep and evening routines.</li>
-          <li>Energy and focus.</li>
-          <li>Family and daily life.</li>
-          <li>A more natural home.</li>
-          <li>Long-term wellness routines.</li>
-          <li>High-quality nutritional supplements.</li>
-        </ul>
-        <p>This turns a broad product range into a clear and accessible starting point.</p>
-        <CTAGroup primaryHref="/en/contact/" primaryLabel="Request a Personal Recommendation" secondaryHref="/en/understanding-doterra/" secondaryLabel="Learn More About doTERRA" />
-      </div>
-      <ResponsiveImage
-        src="/assets/images/products/product-detail-01.png"
-        alt="Essential oils on a wooden plate in warm daylight"
-        width={1672}
-        height={941}
-        variant="portrait"
-        position="62% center"
-      />
-    </div>
-  </section>
-
-  <section class="section section--cream">
-    <div class="container split-layout split-layout--reverse">
-      <ResponsiveImage
-        src="/assets/images/workshops/workshop-01.png"
-        alt="Participants at an essential oils workshop"
-        width={1536}
-        height={1024}
-        position="center"
-        sources={[
-          { type: 'image/avif', srcset: '/assets/images/optimized/workshop-01-640.avif 640w, /assets/images/optimized/workshop-01-960.avif 960w, /assets/images/optimized/workshop-01-1280.avif 1280w' },
-          { type: 'image/webp', srcset: '/assets/images/optimized/workshop-01-640.webp 640w, /assets/images/optimized/workshop-01-960.webp 960w, /assets/images/optimized/workshop-01-1280.webp 1280w' },
-        ]}
-      />
-      <div>
-        <SectionIntro title="Workshops, Essential Oil Evenings and Collaborations">
-          <p>Alongside one-to-one consultations, I also offer workshops, essential oil evenings and information sessions.</p>
-          <p>These formats are designed for private groups, companies, clinics, studios and organisations that would like to explore essential oils and natural routines in an accessible way.</p>
-          <p>Possible formats include wellness workshops, talks, company events or collaborations with yoga studios, fitness studios, clinics, beauty studios, hotels and spas.</p>
-          <p>The focus is on sharing information, experiencing products and answering questions without pressure.</p>
-        </SectionIntro>
-        <CTAGroup primaryHref="/en/contact/" primaryLabel="Enquire About a Workshop or Collaboration" />
+        <Button href="/en/workshops/">Explore Workshops</Button>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container narrow-layout">
+  <section class="section next-path-section">
+    <div class="container next-path">
       <div>
-        <SectionIntro title="About Me">
-          <p>I am Kyle Daniel Mikolajczak, and I help people understand doTERRA, essential oils and practical everyday routines.</p>
-          <p>My twelve years in the German Armed Forces shaped me. Discipline, reliability, a sense of responsibility and clear communication remain central to how I work today.</p>
-          <p>Today, I combine this mindset with my enthusiasm for natural solutions, proactive wellbeing and conscious daily habits.</p>
-          <p>As a doTERRA Wellness Advocate and doTERRA Europe Essential Oils Specialist, I want to help you make informed decisions.</p>
-          <p>Not complicated. Not pushy. Simply clear, honest and personal.</p>
+        <p class="eyebrow">ABOUT KYLE</p>
+        <SectionIntro title="About Kyle">
+          <p>Warm, practical guidance shaped around the routines that matter to you.</p>
         </SectionIntro>
-        <CTAGroup primaryHref="/en/about-kyle/" primaryLabel="Learn More About Kyle" />
+        <Button href="/en/about-kyle/" variant="secondary">Meet Kyle</Button>
       </div>
     </div>
   </section>
 
   <CTASection
-    title="Your First Step Can Be Simple"
+    title="Ready to begin personally?"
     primaryHref="/en/contact/"
-    primaryLabel="Request a Free Consultation"
-    secondaryHref={contactLinks.whatsapp.href}
-    secondaryLabel="Message Me on WhatsApp"
+    primaryLabel="Request Guidance"
   >
-    <p>You do not need to know which oil you need yet.</p>
-    <p>You do not have to choose a kit.</p>
-    <p>You do not even need to be sure whether the doTERRA product range is right for you.</p>
-    <p>Simply tell me what interests you or what you would like help with.</p>
-    <p>Then we can work out a sensible next step together.</p>
+    <p>Tell Kyle what you are curious about. Together, you can find a next step that fits.</p>
   </CTASection>
 
   <section class="homepage-note" aria-label="Note">
     <div class="container homepage-note__inner">
-      <p><strong>Note:</strong> My support is not a substitute for medical diagnosis or treatment. I do not claim that products can diagnose, treat or cure medical conditions. My focus is on clear advice, practical daily routines, high-quality product information and personal support.</p>
+      <p><strong>Note:</strong> Kyle Oils shares general wellbeing information and does not replace medical, therapeutic or professional advice. The focus is on clear orientation, safe everyday routines and product guidance according to the label.</p>
     </div>
   </section>
 </PageLayout>
@@ -266,35 +168,45 @@ const wellnessAreas = [
   .section--nature::before { content: ''; position: absolute; inset: 0; z-index: -2; background-color: var(--color-soft-cream); background-image: image-set(url('/assets/images/optimized/nature-heath-hero-01-640.avif') type('image/avif') 1x, url('/assets/images/optimized/nature-heath-hero-01-960.avif') type('image/avif') 2x, url('/assets/images/optimized/nature-heath-hero-01-640.webp') type('image/webp') 1x, url('/assets/images/optimized/nature-heath-hero-01-960.webp') type('image/webp') 2x); background-position: center 54%; background-size: cover; background-repeat: no-repeat; }
   .section--nature::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(250 247 241 / 74%); }
   .section--sage { background: rgb(168 184 160 / 20%); }
-  .knowledge-teaser { padding-block: var(--space-64); }
-  .knowledge-teaser__inner { max-width: var(--container-text); }
-  .knowledge-teaser__eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
-  .knowledge-teaser__actions { display: flex; flex-direction: column; gap: var(--space-16); }
-  .wellness-areas__eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
-  .wellness-areas__grid { display: grid; gap: var(--space-16); }
+  .trust-strip { padding: var(--space-20) 0; border-bottom: 1px solid rgb(216 199 173 / 55%); background: var(--color-warm-white); }
+  .trust-strip__inner { display: grid; gap: var(--space-12); color: var(--color-text-secondary); font-size: var(--font-size-small); font-weight: var(--font-weight-medium); text-align: center; }
+  .eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
+  .knowledge-section__inner { max-width: var(--container-text); }
+  .knowledge-links { display: flex; flex-wrap: wrap; gap: var(--space-16) var(--space-24); margin: var(--space-24) 0 0; }
+  .knowledge-links a { color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
+  .intent-grid { display: grid; gap: var(--space-16); margin-top: var(--space-32); }
+  .intent-card { display: grid; gap: var(--space-12); padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); color: var(--color-text-primary); text-decoration: none; transition: transform 160ms ease, box-shadow 160ms ease; }
+  .intent-card:hover, .intent-card:focus-visible { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+  .intent-card h2 { margin: 0; font-size: var(--font-size-h3-mobile); line-height: 1.2; }
+  .intent-card p { margin: 0; color: var(--color-text-secondary); }
+  .intent-card > span { color: var(--color-deep-forest); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
+  .trust-points { display: grid; gap: var(--space-8); margin: 0 0 var(--space-24); padding: 0; list-style: none; color: var(--color-text-secondary); }
+  .trust-points li { position: relative; padding-left: var(--space-20); }
+  .trust-points li::before { content: ''; position: absolute; top: .68em; left: 0; width: 8px; height: 8px; border-radius: 50%; background: var(--color-sage-green); }
+  .credential-row { display: flex; align-items: center; gap: var(--space-16); margin: 0 0 var(--space-24); padding-top: var(--space-20); border-top: 1px solid rgb(216 199 173 / 70%); }
+  .credential-row img { width: 64px; height: 64px; object-fit: contain; }
+  .credential-row p { margin: 0; color: var(--color-text-secondary); font-size: var(--font-size-small); }
+  .next-path-section { padding-block: var(--space-48); }
+  .next-path { max-width: var(--container-text); }
+  .next-path__actions { display: flex; flex-wrap: wrap; gap: var(--space-12); }
   .narrow-layout { max-width: var(--container-text); }
   .split-layout { display: grid; gap: var(--space-40); align-items: center; }
-  .benefit-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
-  .benefit-list li { display: grid; gap: var(--space-8); padding: var(--space-20) 0; border-top: 1px solid rgb(216 199 173 / 65%); color: var(--color-text-secondary); }
-  .benefit-list strong { color: var(--color-text-primary); font-size: 19px; }
-  .simple-list { display: grid; gap: var(--space-8); margin: 0 0 var(--space-24); padding-left: var(--space-24); color: var(--color-text-secondary); }
-  .simple-list + p { margin: 0 0 var(--space-32); }
   .homepage-note { padding: 0 0 var(--space-48); background: var(--color-warm-white); }
   .homepage-note__inner { max-width: var(--container-text); padding-top: var(--space-24); border-top: 1px solid rgb(216 199 173 / 65%); color: var(--color-text-secondary); font-size: var(--font-size-small); line-height: var(--line-height-small); }
   .homepage-note p { margin: 0; }
   @media (min-width: 768px) {
     .section--nature::before { background-image: image-set(url('/assets/images/optimized/nature-heath-hero-01-960.avif') type('image/avif') 1x, url('/assets/images/optimized/nature-heath-hero-01-1280.avif') type('image/avif') 2x, url('/assets/images/optimized/nature-heath-hero-01-960.webp') type('image/webp') 1x, url('/assets/images/optimized/nature-heath-hero-01-1280.webp') type('image/webp') 2x); }
     .section { padding-block: var(--space-96); }
-    .knowledge-teaser { padding-block: var(--space-80); }
-    .knowledge-teaser__actions { flex-direction: row; flex-wrap: wrap; }
-    .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24) var(--space-40); }
-    .wellness-areas__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .trust-strip__inner { grid-template-columns: repeat(3, 1fr); gap: 0; }
+    .trust-strip__inner span + span { border-left: 1px solid rgb(216 199 173 / 70%); }
+    .intent-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .next-path-section { padding-block: var(--space-64); }
   }
   @media (min-width: 1024px) {
     .section--nature::before { background-image: image-set(url('/assets/images/optimized/nature-heath-hero-01-1280.avif') type('image/avif') 1x, url('/assets/images/optimized/nature-heath-hero-01-1672.avif') type('image/avif') 2x, url('/assets/images/optimized/nature-heath-hero-01-1280.webp') type('image/webp') 1x, url('/assets/images/optimized/nature-heath-hero-01-1672.webp') type('image/webp') 2x); }
     .section { padding-block: var(--space-120); }
     .split-layout { grid-template-columns: minmax(0, 1fr) minmax(360px, .8fr); gap: var(--space-80); }
-    .split-layout--reverse { grid-template-columns: minmax(360px, .8fr) minmax(0, 1fr); }
-    .wellness-areas__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .intent-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .intent-card h2 { font-size: var(--font-size-h3-desktop); }
   }
 </style>

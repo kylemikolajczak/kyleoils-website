@@ -18,6 +18,7 @@ const consultationLabel = locale === 'de' ? 'Beratung anfragen' : 'Request a Con
 const whatsappLabel = locale === 'de' ? 'WhatsApp starten' : 'Message Me on WhatsApp';
 const homeHref = locale === 'de' ? '/de/' : '/en/';
 const brandLabel = locale === 'de' ? 'Zur Startseite von Kyle Oils' : 'Go to the Kyle Oils homepage';
+const closeLabel = locale === 'de' ? 'Menü schließen' : 'Close menu';
 const normalizedPath = currentPath.endsWith('/') ? currentPath : `${currentPath}/`;
 const isCurrentPage = (href: string) => href === homeHref
   ? normalizedPath === href
@@ -28,9 +29,12 @@ const isCurrentGroup = (items: readonly { href: string }[]) => items.some((item)
 <details class="mobile-menu">
   <summary>{menuLabel}</summary>
   <nav aria-label={navigationLabel}>
-    <a class="menu-brand" href={homeHref} aria-label={brandLabel}>
-      <img src="/assets/images/optimized/kyle-oils-mark-128.png" alt="" width="56" height="56" />
-    </a>
+    <div class="menu-sheet__top">
+      <a class="menu-brand" href={homeHref} aria-label={brandLabel}>
+        <img src="/assets/images/optimized/kyle-oils-mark-128.png" alt="" width="56" height="56" />
+      </a>
+      <button class="menu-close" type="button" aria-label={closeLabel}>×</button>
+    </div>
     <ul>
       {navigation.map((item) => 'items' in item ? (
         <li class={`menu-group${isCurrentGroup(item.items) ? ' menu-group--active' : ''}`}>
@@ -47,12 +51,33 @@ const isCurrentGroup = (items: readonly { href: string }[]) => items.some((item)
   </nav>
 </details>
 
+<script>
+  const menu = document.querySelector<HTMLDetailsElement>('.mobile-menu');
+  const closeButton = menu?.querySelector<HTMLButtonElement>('.menu-close');
+
+  const closeMenu = () => {
+    if (menu) menu.open = false;
+  };
+
+  closeButton?.addEventListener('click', closeMenu);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMenu();
+  });
+  menu?.addEventListener('toggle', () => {
+    document.body.style.overflow = menu.open ? 'hidden' : '';
+  });
+</script>
+
 <style>
-  .mobile-menu { position: relative; }
+  .mobile-menu { position: relative; z-index: 30; }
   summary { min-height: 48px; display: inline-flex; align-items: center; cursor: pointer; font-weight: var(--font-weight-semibold); }
-  nav { position: absolute; right: 0; top: calc(100% + var(--space-12)); z-index: 10; width: min(86vw, 360px); max-height: calc(100vh - 96px); overflow-y: auto; overscroll-behavior: contain; padding: var(--space-24); border: 1px solid var(--color-sand); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-soft); }
-  .menu-brand { display: inline-flex; margin-bottom: var(--space-16); border-radius: 50%; }
+  nav { position: fixed; inset: 0; display: none; grid-template-rows: auto 1fr auto auto; align-content: start; z-index: 40; min-height: 100dvh; overflow-y: auto; overscroll-behavior: contain; padding: var(--space-20); background: var(--color-warm-white); box-shadow: var(--shadow-soft); }
+  .mobile-menu[open] nav { display: grid; }
+  .menu-sheet__top { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-20); padding-bottom: var(--space-16); border-bottom: 1px solid rgb(216 199 173 / 65%); }
+  .menu-brand { display: inline-flex; border-radius: 50%; }
   .menu-brand img { width: 56px; height: 56px; }
+  .menu-close { display: grid; width: 48px; height: 48px; place-items: center; border: 1px solid var(--color-sand); border-radius: 50%; background: transparent; color: var(--color-deep-forest); font-family: inherit; font-size: 32px; line-height: 1; cursor: pointer; }
+  .menu-close:focus-visible { outline: 3px solid var(--color-sage-green); outline-offset: 3px; }
   ul { display: grid; gap: var(--space-8); margin: 0 0 var(--space-20); padding: 0; list-style: none; }
   li a { display: flex; min-height: 48px; align-items: center; text-decoration: none; }
   li a[aria-current='page'] { padding-left: var(--space-12); border-left: 2px solid var(--color-sage-green); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
@@ -65,6 +90,5 @@ const isCurrentGroup = (items: readonly { href: string }[]) => items.some((item)
   .menu-language { display: flex; margin: 0 0 var(--space-20); padding: var(--space-12) 0; border-top: 1px solid var(--color-sand); border-bottom: 1px solid var(--color-sand); }
   .menu-cta { display: flex; min-height: 48px; align-items: center; justify-content: center; padding: var(--space-12) var(--space-16); border-radius: var(--radius-button); background: var(--color-deep-forest); color: var(--color-warm-white); font-weight: var(--font-weight-semibold); text-decoration: none; }
   .menu-quick-action { display: flex; min-height: 48px; align-items: center; justify-content: center; margin-top: var(--space-12); padding: var(--space-12) var(--space-16); border: 1px solid var(--color-deep-forest); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; }
-  @supports (height: 100dvh) { nav { max-height: calc(100dvh - 96px); } }
   @media (min-width: 1180px) { .mobile-menu { display: none; } }
 </style>

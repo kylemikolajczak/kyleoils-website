@@ -1,21 +1,18 @@
 ---
-import CTAGroup from '../../components/cta/CTAGroup.astro';
 import CTASection from '../../components/cta/CTASection.astro';
 import Button from '../../components/global/Button.astro';
-import TopicCard from '../../components/cards/TopicCard.astro';
 import HeroSplit from '../../components/sections/HeroSplit.astro';
 import ResponsiveImage from '../../components/global/ResponsiveImage.astro';
 import SectionIntro from '../../components/sections/SectionIntro.astro';
-import TrustBar from '../../components/sections/TrustBar.astro';
 import PageLayout from '../../layouts/PageLayout.astro';
-import { contactLinks } from '../../data/externalLinks';
 
-const wellnessAreas = [
-  { title: 'Abend, Ruhe & Duftanker', copy: 'Für eine ruhige Abendumgebung, kleine Pausen und persönliche Duftmomente an vollen Tagen.' },
-  { title: 'Bewegung, Massage & Körperkomfort', copy: 'Für Massage, Pflege und Duft-Routinen nach Sport, Gartenarbeit, viel Sitzen oder aktiven Tagen.' },
-  { title: 'Familienalltag & sichere Anwendung', copy: 'Für Haushalte mit Kindern, Haustieren oder Besuch, in denen Sicherheit, Menge und Raumgröße wichtig sind.' },
-  { title: 'Zuhause, Alltag & Wellness-Routinen', copy: 'Für Raumduft, Hautpflege, Essensalltag und bewusste Routinen, die sich unkompliziert einfügen.' },
+const intentPaths = [
+  { title: 'Ruhe & Abend', copy: 'Für eine angenehme Abendumgebung und persönliche Duftmomente.', href: '/de/wissen/routinen/einfache-abendroutine-mit-aetherischen-oelen/' },
+  { title: 'Bewegung & Körperpflege', copy: 'Für Massage, Pflege und Routinen nach aktiven Tagen.', href: '/de/wissen/produkte-systeme/deep-blue-bewegung-massage-koerperkomfort/' },
+  { title: 'Familie & sichere Anwendung', copy: 'Für Haushalte, in denen Menge, Raumgröße und Rücksicht wichtig sind.', href: '/de/wissen/sicher-anwenden/' },
+  { title: 'Zuhause & Routinen', copy: 'Für Raumduft, Pflegegefühl und bewusste Gewohnheiten zuhause.', href: '/de/wissen/alltag/' },
 ];
+
 ---
 
 <PageLayout
@@ -25,9 +22,9 @@ const wellnessAreas = [
   <HeroSplit
     title="Natürliche Routinen für mehr Balance im Alltag"
     primaryHref="/de/kontakt/"
-    primaryLabel="Kostenloses Beratungsgespräch anfragen"
-    secondaryHref={contactLinks.whatsapp.href}
-    secondaryLabel="WhatsApp starten"
+    primaryLabel="Beratung anfragen"
+    secondaryHref="/de/wissen/"
+    secondaryLabel="Wissen entdecken"
     imageSrc="/assets/images/kyle/hero-kyle.png"
     imageAlt="Kyle Daniel Mikolajczak in ruhiger, heller Umgebung"
     imageWidth={1537}
@@ -39,80 +36,67 @@ const wellnessAreas = [
       { type: 'image/webp', srcset: '/assets/images/optimized/hero-kyle-640.webp 640w, /assets/images/optimized/hero-kyle-960.webp 960w, /assets/images/optimized/hero-kyle-1280.webp 1280w, /assets/images/optimized/hero-kyle-1536.webp 1536w' },
     ]}
   >
-    <p>doTERRA verständlich kennenlernen, passende Produkte einordnen und mit einfachen Routinen starten, die wirklich zu deinem Leben passen.</p>
-    <p>Ich begleite dich dabei ruhig, ehrlich und persönlich. Erst klären wir, was du brauchst. Danach schauen wir, ob ätherische Öle, Wellness-Produkte oder ein doTERRA Kundenkonto für dich sinnvoll sind.</p>
-    <p>Wenn du über mich startest, hast du nicht nur Zugang zu hochwertigen doTERRA-Produkten, sondern auch einen Ansprechpartner an deiner Seite. Mit einem offiziellen doTERRA Kundenkonto erhältst du Produkte zum Einkaufspreis und sparst 25 % auf deine Einkäufe.</p>
+    <p>Verstehe doTERRA, ätherische Öle und passende Routinen, bevor du entscheidest.</p>
+    <p>Ich höre zu, ordne ein und begleite dich bei den nächsten Schritten.</p>
   </HeroSplit>
 
-  <section class="trust-section" aria-label="Vertrauen und Qualifikation">
-    <div class="container">
-      <TrustBar
-        logoSrc="/assets/images/branding/doterra-wellness-advocate-de.png"
-        logoAlt="doTERRA Unabhängige Wellness-Botschafterinnen und Wellness-Botschafter"
-        logoWidth={1000}
-        logoHeight={301}
-      >
-        <p>doTERRA Europe Essential Oils Specialist</p>
-        <p>Persönliche Beratung</p>
-      </TrustBar>
+  <section class="trust-strip" aria-label="Qualifikation und Begleitung">
+    <div class="container trust-strip__inner">
+      <span>doTERRA Europe Essential Oils Specialist</span>
+      <span>Unabhängiger Wellness Advocate</span>
+      <span>Persönliche Begleitung auf Deutsch & Englisch</span>
     </div>
   </section>
 
   <section class="section section--nature">
     <div class="container narrow-layout" data-reveal>
-      <SectionIntro title="Erst verstehen. Dann entscheiden.">
-        <p>Vielleicht hast du schon von ätherischen Ölen gehört, weißt aber nicht, womit du anfangen sollst.</p>
-        <p>Vielleicht möchtest du bewusster leben, deinen Alltag natürlicher gestalten oder hochwertige Produkte kennenlernen, ohne dich direkt durch einen Shop zu klicken.</p>
-        <p>Genau dafür ist diese Website da.</p>
-        <p>Hier bekommst du Orientierung, klare Antworten und einen einfachen ersten Schritt. Du musst nichts sofort entscheiden. Du kannst erstmal fragen.</p>
+      <SectionIntro title="Erst verstehen. Dann das Richtige wählen.">
+        <p>Kyle Oils ist ein klarer Einstieg in ätherische Öle, doTERRA Produkte und Wellness-Routinen, die zu deinem Leben passen.</p>
+        <p>Entdecke deine Möglichkeiten, stelle Fragen und wähle dann, was du wirklich nutzen wirst.</p>
       </SectionIntro>
     </div>
   </section>
 
-  <section class="section section--sage knowledge-teaser">
-    <div class="container knowledge-teaser__inner" data-reveal>
-      <p class="knowledge-teaser__eyebrow">WISSEN, BEVOR DU KAUFST</p>
-      <SectionIntro title="Lies dich ein. Entscheide ruhiger.">
-        <p>Auf Kyle Oils findest du klare Grundlagen, sichere Anwendung, einfache Routinen, Ölprofile, Starter-Set Orientierung und Produktwissen rund um doTERRA.</p>
-        <p>Du musst nicht sofort wissen, welches Öl oder welches Set passt. Du kannst erst verstehen, vergleichen und dann mit Kyle einordnen, was wirklich zu deinem Alltag passt.</p>
-      </SectionIntro>
-      <div class="knowledge-teaser__actions">
-        <Button href="/de/wissen/">Zum Wissensbereich</Button>
-        <Button href="/de/wissen/oel-lexikon/" variant="secondary">Öl-Lexikon ansehen</Button>
-        <Button href="/de/starter-sets/" variant="secondary">Starter-Sets verstehen</Button>
-        <Button href="/de/kontakt/" variant="secondary">Beratung anfragen</Button>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--cream wellness-areas">
+  <section class="section section--cream intent-section">
     <div class="container" data-reveal>
-      <p class="wellness-areas__eyebrow">WOFÜR MENSCHEN ORIENTIERUNG SUCHEN</p>
-      <SectionIntro title="Ätherische Öle im echten Alltag einordnen">
-        <p>Ätherische Öle beginnen für viele nicht mit einem einzelnen Produkt, sondern mit einer Alltagssituation. Diese vier Einstiegsthemen helfen dir, Möglichkeiten ruhig einzuordnen.</p>
-        <p>Wenn du tiefer einsteigen möchtest, findest du im Wissensbereich weitere Themen, Sicherheitshinweise und konkrete Orientierung.</p>
+      <p class="eyebrow">DEIN EINSTIEG</p>
+      <SectionIntro title="Womit möchtest du anfangen?">
+        <p>Wähle die Alltagssituation, die gerade am besten zu dir passt.</p>
       </SectionIntro>
-      <div class="wellness-areas__grid">
-        {wellnessAreas.map((area) => (
-          <TopicCard title={area.title}>
-            <p>{area.copy}</p>
-          </TopicCard>
+      <div class="intent-grid">
+        {intentPaths.map((path) => (
+          <a class="intent-card" href={path.href}>
+            <h2>{path.title}</h2>
+            <p>{path.copy}</p>
+            <span aria-hidden="true">Entdecken →</span>
+          </a>
         ))}
       </div>
+    </div>
+  </section>
+
+  <section class="section section--sage knowledge-section">
+    <div class="container knowledge-section__inner" data-reveal>
+      <p class="eyebrow">WISSEN</p>
+      <SectionIntro title="Wissen, das dich weiterbringt.">
+        <p>Klare Grundlagen, sichere Anwendung, Routinen, Ölprofile und Produktwissen. So findest du einen fundierten Einstieg, der zu deinen Fragen passt.</p>
+      </SectionIntro>
+      <Button href="/de/wissen/">Wissen entdecken</Button>
+      <p class="knowledge-links"><a href="/de/wissen/oel-lexikon/">Öl-Lexikon</a><a href="/de/starter-sets/">Starter-Sets</a><a href="/de/wissen/sicher-anwenden/">Sicher anwenden</a></p>
     </div>
   </section>
 
   <section class="section">
     <div class="container split-layout" data-reveal>
       <div>
-        <SectionIntro title="Beratung, die bei dir beginnt">
-          <p>Meine Beratung startet nicht mit einer Produktliste.</p>
-          <p>Sie startet mit deiner Situation.</p>
-          <p>Was möchtest du verändern?<br />Was beschäftigt dich gerade?<br />Was soll einfacher, ruhiger oder bewusster werden?</p>
-          <p>Erst danach empfehle ich dir passende doTERRA-Produkte oder einfache Routinen. Manchmal ist das ein einzelnes Öl. Manchmal ein Starter-Set. Manchmal ein Wellness-System. Und manchmal ist der erste Schritt einfach nur eine ehrliche Einschätzung.</p>
-          <p>Mir ist wichtig, dass du dich sicher fühlst und verstehst, was du nutzt.</p>
+        <p class="eyebrow">MIT KYLE STARTEN</p>
+        <SectionIntro title="Guidance, die bei dir beginnt.">
+          <p>Meine Beratung startet nicht mit einer Produktliste. Ich höre erst zu, damit Auswahl und Routinen wirklich zu dir passen.</p>
+          <p>Du bekommst klare Einordnung, einen sicherheitsbewussten Einstieg und jemanden, der auch nach dem Start ansprechbar bleibt.</p>
         </SectionIntro>
-        <CTAGroup primaryHref="/de/kontakt/" primaryLabel="Beratungsgespräch anfragen" secondaryHref={contactLinks.whatsapp.href} secondaryLabel="Frage per WhatsApp stellen" />
+        <ul class="trust-points"><li>Klare Produkt- und Routinen-Einordnung</li><li>Sicherheitsbewusste Anwendung</li><li>Persönliche Begleitung, wenn Fragen entstehen</li></ul>
+        <div class="credential-row"><img src="/assets/images/certificates/eos-specialist-badge.png" alt="doTERRA Europe Essential Oils Specialist Zertifikat" width="74" height="74" loading="lazy" decoding="async" /><p><strong>Qualifiziert und persönlich.</strong><br />doTERRA Europe Essential Oils Specialist</p></div>
+        <Button href="/de/kontakt/">Mit Kyle sprechen</Button>
       </div>
       <ResponsiveImage
         src="/assets/images/workshops/consultation-01.png"
@@ -129,171 +113,106 @@ const wellnessAreas = [
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <SectionIntro title="Was du von mir bekommst" />
-      <ul class="benefit-list">
-        <li><strong>Persönliche Orientierung</strong><span>Ein kostenloses Erstgespräch und eine ehrliche Einschätzung für deine Situation.</span></li>
-        <li><strong>Klare Produktbildung</strong><span>Verständliche Erklärungen, damit du Produktwelt, Auswahl und nächste Schritte nachvollziehen kannst.</span></li>
-        <li><strong>Ruhiger, sicherer Einstieg</strong><span>Einfache Routinen und Produktvorschläge, die zu deinem Alltag passen können.</span></li>
-        <li><strong>Begleitung, wenn Fragen entstehen</strong><span>Auch nach dem Kauf bleibe ich für Einordnung, Materialien und passende Formate erreichbar.</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section section--sage">
-    <div class="container split-layout split-layout--reverse">
-      <ResponsiveImage
-        src="/assets/images/certificates/eos-specialist-badge.png"
-        alt="doTERRA Europe Essential Oils Specialist Zertifikat"
-        width={4167}
-        height={4167}
-        variant="badge"
-        scale={1.365}
-      />
+  <section class="section next-path-section">
+    <div class="container next-path" data-reveal>
       <div>
-        <SectionIntro title="Warum mit Kyle starten?">
-          <p>Du bekommst bei mir nicht einfach einen Shop-Link.</p>
-          <p>Ich nehme mir Zeit, höre zu und helfe dir, die Produktwelt sinnvoll einzuordnen. So musst du nicht raten, welches Öl, welches Set oder welche Routine zu dir passt.</p>
-          <p>Wenn du über mich ein offizielles doTERRA Kundenkonto eröffnest, erhältst du Produkte zum Einkaufspreis und sparst 25 % auf deine Einkäufe. Gleichzeitig hast du jemanden, der dir auch danach weiterhilft.</p>
-          <p>Ich sage dir ehrlich, wenn etwas nicht passt.</p>
-          <p>Für mich ist gute Beratung nicht, möglichst viel zu empfehlen. Gute Beratung bedeutet, dass du am Ende eine Entscheidung triffst, die sich für dich richtig anfühlt.</p>
+        <p class="eyebrow">NÄCHSTER SCHRITT</p>
+        <SectionIntro title="doTERRA verstehen">
+          <p>Entdecke die Produktwelt, Qualität und das Kundenkonto in einem klaren Zusammenhang.</p>
+          <p>So wird aus einer großen Auswahl ein Einstieg, den du nachvollziehen kannst.</p>
         </SectionIntro>
-        <CTAGroup primaryHref="/de/kontakt/" primaryLabel="Mit Kyle sprechen" />
+        <div class="next-path__actions">
+          <Button href="/de/doterra-verstehen/">doTERRA verstehen</Button>
+          <Button href="/de/starter-sets/" variant="secondary">Starter-Sets</Button>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container split-layout" data-reveal>
+  <section class="section section--cream next-path-section">
+    <div class="container next-path">
       <div>
-        <SectionIntro title="doTERRA verständlich erklärt">
-          <p>doTERRA ist ein internationales Unternehmen für ätherische Öle und Wellness-Produkte.</p>
-          <p>Dazu gehören ätherische Einzelöle, Ölmischungen, Pflegeprodukte, Haushaltsprodukte, Nahrungsergänzung und Wellness-Systeme wie MetaPWR.</p>
-          <p>Am Anfang kann diese Vielfalt schnell unübersichtlich wirken.</p>
-          <p>Deshalb ordne ich die doTERRA-Produktwelt nicht zuerst nach einzelnen Produkten, sondern nach Alltagsthemen:</p>
+        <p class="eyebrow">NÄCHSTER SCHRITT</p>
+        <SectionIntro title="Workshops">
+          <p>Ätherische Öle gemeinsam verstehen, praktisch erleben und Fragen in einer kleinen Gruppe klären.</p>
         </SectionIntro>
-        <ul class="simple-list">
-          <li>Ruhe und Entspannung.</li>
-          <li>Schlaf- und Abendroutine.</li>
-          <li>Energie und Fokus.</li>
-          <li>Familie und Alltag.</li>
-          <li>Natürlicher Haushalt.</li>
-          <li>Langfristige Wellness-Routinen.</li>
-          <li>Hochwertige Wellness-Produkte und Nahrungsergänzung nach Label.</li>
-        </ul>
-        <p>So wird aus einer großen Produktwelt ein klarer, verständlicher Einstieg.</p>
-        <CTAGroup primaryHref="/de/kontakt/" primaryLabel="Persönliche Empfehlung anfragen" secondaryHref="/de/doterra-verstehen/" secondaryLabel="Mehr über doTERRA erfahren" />
-      </div>
-      <ResponsiveImage
-        src="/assets/images/products/product-detail-01.png"
-        alt="Ätherische Öle auf einem Holzteller in warmem Tageslicht"
-        width={1672}
-        height={941}
-        variant="portrait"
-        position="62% center"
-      />
-    </div>
-  </section>
-
-  <section class="section section--cream">
-    <div class="container split-layout split-layout--reverse">
-      <ResponsiveImage
-        src="/assets/images/workshops/workshop-01.png"
-        alt="Teilnehmerinnen bei einem Workshop zu ätherischen Ölen"
-        width={1536}
-        height={1024}
-        position="center"
-        sources={[
-          { type: 'image/avif', srcset: '/assets/images/optimized/workshop-01-640.avif 640w, /assets/images/optimized/workshop-01-960.avif 960w, /assets/images/optimized/workshop-01-1280.avif 1280w' },
-          { type: 'image/webp', srcset: '/assets/images/optimized/workshop-01-640.webp 640w, /assets/images/optimized/workshop-01-960.webp 960w, /assets/images/optimized/workshop-01-1280.webp 1280w' },
-        ]}
-      />
-      <div>
-        <SectionIntro title="Workshops, Öl-Abende und Kooperationen">
-          <p>Neben der 1:1-Begleitung biete ich auch Workshops, Öl-Abende und Informationsveranstaltungen an.</p>
-          <p>Diese Formate eignen sich für private Gruppen, Unternehmen, Praxen, Studios und Organisationen, die ätherische Öle und natürliche Routinen verständlich kennenlernen möchten.</p>
-          <p>Mögliche Formate sind Wellness-Workshops, Vorträge, Firmenveranstaltungen oder Kooperationen mit Yoga-Studios, Fitnessstudios, Praxen, Kosmetikstudios, Hotels und Spas.</p>
-          <p>Der Fokus bleibt auch hier ruhig und hochwertig: informieren, erleben, Fragen beantworten.</p>
-        </SectionIntro>
-        <CTAGroup primaryHref="/de/kontakt/" primaryLabel="Workshop oder Kooperation anfragen" />
+        <Button href="/de/workshops/">Workshops entdecken</Button>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container narrow-layout">
+  <section class="section next-path-section">
+    <div class="container next-path">
       <div>
-        <SectionIntro title="Wer ich bin">
-          <p>Ich bin Kyle Daniel Mikolajczak und begleite Menschen dabei, doTERRA, ätherische Öle und natürliche Routinen verständlich kennenzulernen.</p>
-          <p>Meine zwölf Jahre bei der Bundeswehr haben mich geprägt. Disziplin, Zuverlässigkeit, Verantwortungsbewusstsein und klare Kommunikation gehören bis heute zu meiner Arbeitsweise.</p>
-          <p>Heute verbinde ich diese Haltung mit meiner Begeisterung für natürliche Lösungen und bewusste Alltagsroutinen.</p>
-          <p>Als doTERRA Wellness Advocate und doTERRA Europe Essential Oils Specialist möchte ich dir helfen, gute Entscheidungen zu treffen.</p>
-          <p>Nicht kompliziert. Nicht aufdringlich. Sondern klar, ehrlich und menschlich.</p>
+        <p class="eyebrow">ÜBER KYLE</p>
+        <SectionIntro title="Über Kyle">
+          <p>Ich verbinde klare Kommunikation, doTERRA Fachwissen und einen persönlichen Blick auf das, was für dich wirklich passt.</p>
         </SectionIntro>
-        <CTAGroup primaryHref="/de/ueber-kyle/" primaryLabel="Mehr über Kyle erfahren" />
+        <Button href="/de/ueber-kyle/" variant="secondary">Mehr über Kyle erfahren</Button>
       </div>
     </div>
   </section>
 
   <CTASection
-    title="Dein erster Schritt muss nicht groß sein"
+    title="Möchtest du persönlich starten?"
     primaryHref="/de/kontakt/"
-    primaryLabel="Kostenloses Beratungsgespräch anfragen"
-    secondaryHref={contactLinks.whatsapp.href}
-    secondaryLabel="WhatsApp starten"
+    primaryLabel="Beratung anfragen"
   >
-    <p>Du musst noch nicht wissen, welches Öl du brauchst.</p>
-    <p>Du musst kein Set auswählen.</p>
-    <p>Du musst auch nicht sicher sein, ob die doTERRA-Produktwelt überhaupt zu dir passt.</p>
-    <p>Schreib mir einfach, was dich interessiert oder wobei du Orientierung suchst.</p>
-    <p>Dann finden wir den nächsten sinnvollen Schritt.</p>
+    <p>Erzähl mir, was dich interessiert. Gemeinsam finden wir einen klaren nächsten Schritt.</p>
   </CTASection>
 
   <section class="homepage-note" aria-label="Hinweis">
     <div class="container homepage-note__inner">
-      <p><strong>Hinweis:</strong> Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung. Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen. Mein Fokus liegt auf verständlicher Orientierung, natürlichen Alltagsroutinen, hochwertiger Produktinformation und persönlicher Begleitung.</p>
+      <p><strong>Hinweis:</strong> Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung. Mein Fokus liegt auf verständlicher Orientierung, sicheren Alltagsroutinen und persönlicher Begleitung.</p>
     </div>
   </section>
 </PageLayout>
 
 <style>
-  .trust-section { padding: 0 0 var(--space-64); }
   .section { padding: var(--space-64) 0; }
   .section--cream { background: var(--color-soft-cream); }
   .section--nature { position: relative; isolation: isolate; background: var(--color-soft-cream); }
   .section--nature::before { content: ''; position: absolute; inset: 0; z-index: -2; background-color: var(--color-soft-cream); background-image: image-set(url('/assets/images/optimized/nature-heath-hero-01-640.avif') type('image/avif') 1x, url('/assets/images/optimized/nature-heath-hero-01-960.avif') type('image/avif') 2x, url('/assets/images/optimized/nature-heath-hero-01-640.webp') type('image/webp') 1x, url('/assets/images/optimized/nature-heath-hero-01-960.webp') type('image/webp') 2x); background-position: center 54%; background-size: cover; background-repeat: no-repeat; }
   .section--nature::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(250 247 241 / 74%); }
   .section--sage { background: rgb(168 184 160 / 20%); }
-  .knowledge-teaser { padding-block: var(--space-64); }
-  .knowledge-teaser__inner { max-width: var(--container-text); }
-  .knowledge-teaser__eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
-  .knowledge-teaser__actions { display: flex; flex-direction: column; gap: var(--space-16); }
-  .wellness-areas__eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
-  .wellness-areas__grid { display: grid; gap: var(--space-16); }
-  .narrow-layout { max-width: var(--container-text); }
+  .trust-strip { padding: var(--space-20) 0; border-bottom: 1px solid rgb(216 199 173 / 55%); background: var(--color-warm-white); }
+  .trust-strip__inner { display: grid; gap: var(--space-12); color: var(--color-text-secondary); font-size: var(--font-size-small); font-weight: var(--font-weight-medium); text-align: center; }
+  .eyebrow { margin: 0 0 var(--space-12); color: var(--color-olive-grey); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); letter-spacing: .12em; }
+  .knowledge-section__inner, .narrow-layout { max-width: var(--container-text); }
+  .knowledge-links { display: flex; flex-wrap: wrap; gap: var(--space-16) var(--space-24); margin: var(--space-24) 0 0; }
+  .knowledge-links a { color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
+  .intent-grid { display: grid; gap: var(--space-16); margin-top: var(--space-32); }
+  .intent-card { display: grid; gap: var(--space-12); padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); color: var(--color-text-primary); text-decoration: none; transition: transform 160ms ease, box-shadow 160ms ease; }
+  .intent-card:hover, .intent-card:focus-visible { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+  .intent-card h2 { margin: 0; font-size: var(--font-size-h3-mobile); line-height: 1.2; }
+  .intent-card p { margin: 0; color: var(--color-text-secondary); }
+  .intent-card > span { color: var(--color-deep-forest); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
   .split-layout { display: grid; gap: var(--space-40); align-items: center; }
-  .benefit-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
-  .benefit-list li { display: grid; gap: var(--space-8); padding: var(--space-20) 0; border-top: 1px solid rgb(216 199 173 / 65%); color: var(--color-text-secondary); }
-  .benefit-list strong { color: var(--color-text-primary); font-size: 19px; }
-  .simple-list { display: grid; gap: var(--space-8); margin: 0 0 var(--space-24); padding-left: var(--space-24); color: var(--color-text-secondary); }
-  .simple-list + p { margin: 0 0 var(--space-32); }
+  .trust-points { display: grid; gap: var(--space-8); margin: 0 0 var(--space-24); padding: 0; list-style: none; color: var(--color-text-secondary); }
+  .trust-points li { position: relative; padding-left: var(--space-20); }
+  .trust-points li::before { content: ''; position: absolute; top: .68em; left: 0; width: 8px; height: 8px; border-radius: 50%; background: var(--color-sage-green); }
+  .credential-row { display: flex; align-items: center; gap: var(--space-16); margin: 0 0 var(--space-24); padding-top: var(--space-20); border-top: 1px solid rgb(216 199 173 / 70%); }
+  .credential-row img { width: 64px; height: 64px; object-fit: contain; }
+  .credential-row p { margin: 0; color: var(--color-text-secondary); font-size: var(--font-size-small); }
+  .next-path-section { padding-block: var(--space-48); }
+  .next-path { max-width: var(--container-text); }
+  .next-path__actions { display: flex; flex-wrap: wrap; gap: var(--space-12); }
   .homepage-note { padding: 0 0 var(--space-48); background: var(--color-warm-white); }
   .homepage-note__inner { max-width: var(--container-text); padding-top: var(--space-24); border-top: 1px solid rgb(216 199 173 / 65%); color: var(--color-text-secondary); font-size: var(--font-size-small); line-height: var(--line-height-small); }
   .homepage-note p { margin: 0; }
   @media (min-width: 768px) {
     .section--nature::before { background-image: image-set(url('/assets/images/optimized/nature-heath-hero-01-960.avif') type('image/avif') 1x, url('/assets/images/optimized/nature-heath-hero-01-1280.avif') type('image/avif') 2x, url('/assets/images/optimized/nature-heath-hero-01-960.webp') type('image/webp') 1x, url('/assets/images/optimized/nature-heath-hero-01-1280.webp') type('image/webp') 2x); }
     .section { padding-block: var(--space-96); }
-    .knowledge-teaser { padding-block: var(--space-80); }
-    .knowledge-teaser__actions { flex-direction: row; flex-wrap: wrap; }
-    .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24) var(--space-40); }
-    .wellness-areas__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .trust-strip__inner { grid-template-columns: repeat(3, 1fr); gap: 0; }
+    .trust-strip__inner span + span { border-left: 1px solid rgb(216 199 173 / 70%); }
+    .intent-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
+    .next-path-section { padding-block: var(--space-64); }
   }
   @media (min-width: 1024px) {
     .section--nature::before { background-image: image-set(url('/assets/images/optimized/nature-heath-hero-01-1280.avif') type('image/avif') 1x, url('/assets/images/optimized/nature-heath-hero-01-1672.avif') type('image/avif') 2x, url('/assets/images/optimized/nature-heath-hero-01-1280.webp') type('image/webp') 1x, url('/assets/images/optimized/nature-heath-hero-01-1672.webp') type('image/webp') 2x); }
     .section { padding-block: var(--space-120); }
     .split-layout { grid-template-columns: minmax(0, 1fr) minmax(360px, .8fr); gap: var(--space-80); }
-    .split-layout--reverse { grid-template-columns: minmax(360px, .8fr) minmax(0, 1fr); }
-    .wellness-areas__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .intent-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .intent-card h2 { font-size: var(--font-size-h3-desktop); }
   }
 </style>
