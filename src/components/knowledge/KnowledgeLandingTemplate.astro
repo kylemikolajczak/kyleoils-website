@@ -81,7 +81,7 @@ const orientationPaths = locale === 'de'
   <div class="container">
     <header class="section-intro">
       <h2>{worldLabel}</h2>
-      <p>{locale === 'de' ? 'Für eine vertiefende Erkundung kannst du alle Wissenswelten entdecken.' : 'For a deeper exploration, you can discover all Knowledge Worlds.'}</p>
+      <p>{locale === 'de' ? 'Für eine vertiefende Erkundung kannst du alle Wissenswelten entdecken.' : 'Explore a Knowledge World when you would like to go deeper.'}</p>
     </header>
     <div class="world-grid">
       {worlds.map((world) => <KnowledgeWorldCard label={world.label[locale]} description={world.description[locale]} href={world.href[locale]} {linkLabel} />)}
