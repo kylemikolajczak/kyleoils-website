@@ -71,9 +71,6 @@ const orientationPaths = locale === 'de'
     <div class="knowledge-orientation__grid">
       {orientationPaths.map((path) => <a href={path.href}>{path.label}</a>)}
     </div>
-    <div class="knowledge-orientation__cta">
-      <CTAGroup primaryHref={contactHref} primaryLabel={locale === 'de' ? 'Beratung anfragen' : 'Request a consultation'} />
-    </div>
   </div>
 </section>
 
@@ -88,6 +85,8 @@ const orientationPaths = locale === 'de'
     </div>
   </div>
 </section>
+
+{searchArticles.length > 0 && <KnowledgeArticleSearch articles={searchArticles} {locale} />}
 
 {recommendedStartArticles.length > 0 && (
   <section class="section knowledge-start-path">
@@ -107,8 +106,6 @@ const orientationPaths = locale === 'de'
     </div>
   </section>
 )}
-
-{searchArticles.length > 0 && <KnowledgeArticleSearch articles={searchArticles} {locale} />}
 
 {featuredArticles.length > 0 && (
   <section class="section">
@@ -148,7 +145,6 @@ const orientationPaths = locale === 'de'
   .knowledge-orientation__grid { display: grid; gap: var(--space-12); max-width: 860px; }
   .knowledge-orientation__grid a { display: flex; min-height: 56px; align-items: center; padding: var(--space-16) var(--space-20); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-soft-cream); color: var(--color-text-primary); font-weight: var(--font-weight-semibold); text-decoration: none; }
   .knowledge-orientation__grid a:hover, .knowledge-orientation__grid a:focus-visible { border-color: var(--color-sage-green); color: var(--color-deep-forest); text-decoration: underline; }
-  .knowledge-orientation__cta { margin-top: var(--space-32); }
   .knowledge-start-path { background: var(--color-warm-white); }
   .knowledge-start-path__list { display: grid; gap: var(--space-12); max-width: var(--container-text); margin: 0; padding: 0; list-style: none; }
   .knowledge-start-path__list li { display: flex; align-items: center; gap: var(--space-16); padding: var(--space-16) var(--space-20); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-soft-cream); }

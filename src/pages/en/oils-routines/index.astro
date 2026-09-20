@@ -29,18 +29,22 @@ const orientationTopics = [
   {
     title: 'Busy Days & Emotional Wellbeing',
     copy: 'For small pauses, scent anchors and more structure on days that feel full or unsettled.',
+    href: '/en/knowledge/products-systems/adaptiv-stressful-days-scent-anchors/',
   },
   {
     title: 'Evening & Sleep Routine',
     copy: 'For a calm evening environment, conscious scent anchors and simple routines around bedtime.',
+    href: '/en/knowledge/routines/simple-evening-routine-with-essential-oils/',
   },
   {
     title: 'Food & Everyday Wellness Habits',
     copy: 'For people who want to better understand products and routines around meals, habits and everyday choices.',
+    href: '/en/knowledge/products-systems/zengest-digestive-feel-food-routines/',
   },
   {
     title: 'Movement, Massage & Body Comfort',
     copy: 'For massage, care and scent routines after sport, gardening, long periods of sitting or active days.',
+    href: '/en/knowledge/products-systems/deep-blue-movement-massage-body-comfort/',
   },
 ];
 
@@ -133,9 +137,9 @@ const deeperKnowledgeLinks = [
   <HeroSplit
     title="Essential Oils as Part of Your Daily Routine"
     primaryHref="/en/contact/"
-    primaryLabel="Discuss a Suitable Routine"
-    secondaryHref={contactLinks.whatsapp.href}
-    secondaryLabel="Message Me on WhatsApp"
+    primaryLabel="Request Guidance"
+    secondaryHref="/en/knowledge/"
+    secondaryLabel="Explore Knowledge"
     imageSrc="/assets/images/products/essential-oils-display.jpg"
     imageAlt="Essential oils arranged clearly in a wooden holder"
     imageWidth={2400}
@@ -146,13 +150,8 @@ const deeperKnowledgeLinks = [
       { type: 'image/webp', srcset: '/assets/images/optimized/essential-oils-display-640.webp 640w, /assets/images/optimized/essential-oils-display-960.webp 960w, /assets/images/optimized/essential-oils-display-1280.webp 1280w' },
     ]}
   >
-    <p>Essential oils do not have to be complicated.</p>
-    <p>For many people, getting started does not begin with a particular product, but with a simple question:</p>
-    <p>What would I like more of in my daily life?</p>
-    <p>More calm.<br />An easier evening.<br />More energy in the morning.<br />A more pleasant home.<br />Thoughtful household alternatives.<br />More structure for small wellness routines.</p>
-    <p>This is where essential oils and simple routines may become relevant.</p>
-    <p>Not as a quick solution for everything.<br />Not as a substitute for medical treatment.<br />But as considered additions to your daily routine.</p>
-    <p>I help you understand these options and find out what genuinely suits you.</p>
+    <p>Essential oils become valuable when they find a real place in your routines.</p>
+    <p>Explore methods, topics and knowledge before you choose products.</p>
   </HeroSplit>
 
   <section class="section section--cream">
@@ -193,11 +192,7 @@ const deeperKnowledgeLinks = [
         <p>These four areas are often a good place to begin:</p>
       </SectionIntro>
       <div class="orientation-grid">
-        {orientationTopics.map((topic) => (
-          <TopicCard title={topic.title}>
-            <p>{topic.copy}</p>
-          </TopicCard>
-        ))}
+        {orientationTopics.map((topic) => <a class="orientation-card" href={topic.href}><h2>{topic.title}</h2><p>{topic.copy}</p><span aria-hidden="true">Explore →</span></a>)}
       </div>
       <p class="orientation-closing">These areas are not separate categories. Mood, sleep, physical wellbeing and everyday routines often influence one another. During a consultation, we therefore look at what best fits your individual situation.</p>
     </div>
@@ -342,6 +337,10 @@ const deeperKnowledgeLinks = [
   .application-safety { margin: var(--space-32) 0 0; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-soft-cream); color: var(--color-text-secondary); }
   .application-connection { max-width: var(--container-text); margin: var(--space-24) 0 0; color: var(--color-text-secondary); }
   .orientation-grid { display: grid; gap: var(--space-20); }
+  .orientation-card { display: grid; gap: var(--space-12); padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); color: var(--color-text-primary); text-decoration: none; }
+  .orientation-card h2, .orientation-card p { margin: 0; }
+  .orientation-card p { color: var(--color-text-secondary); }
+  .orientation-card span { color: var(--color-deep-forest); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
   .orientation-closing { max-width: var(--container-text); margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
   .topic-grid { display: grid; gap: var(--space-20); }
   .topic-grid :global(.topic-card > div) { display: flex; height: calc(100% - 52px); flex-direction: column; }

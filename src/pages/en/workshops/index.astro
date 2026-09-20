@@ -59,16 +59,6 @@ const expectations = [
   'orientation for everyday life',
 ];
 
-const notIncluded = [
-  'medical guidance',
-  'therapy',
-  'diagnosis',
-  'a treatment promise',
-  'an obligation to buy',
-  'an obligation to open a customer account',
-  'a business event unless this is clearly requested',
-];
-
 const preparationQuestions = [
   'Who will attend?',
   'Is the group new, already using oils or mixed?',
@@ -95,8 +85,7 @@ const preparationQuestions = [
       { type: 'image/webp', srcset: '/assets/images/optimized/workshop-01-640.webp 640w, /assets/images/optimized/workshop-01-960.webp 960w, /assets/images/optimized/workshop-01-1280.webp 1280w' },
     ]}
   >
-    <p class="hero-subtitle">Understand essential oils calmly, personally and without a sales event.</p>
-    <p>A Kyle Oils workshop is not a loud sales evening and not a medical lecture.</p>
+    <p class="hero-subtitle">Understand essential oils calmly, personally and at your own pace.</p>
     <p>The goal is to explain essential oils clearly, introduce simple routines and answer questions in a relaxed setting.</p>
     <p>You can request a workshop for yourself, a small group, friends, family or a professional environment.</p>
   </HeroSplit>
@@ -147,21 +136,6 @@ const preparationQuestions = [
     </div>
   </section>
 
-  <section class="section section--cream">
-    <div class="container split-layout">
-      <div>
-        <SectionIntro title="What a workshop is not">
-          <p>A workshop is not:</p>
-        </SectionIntro>
-        <ul class="check-list">{notIncluded.map((item) => <li>{item}</li>)}</ul>
-      </div>
-      <aside class="calm-panel">
-        <h2>No pressure</h2>
-        <p>The workshop is for orientation. Decisions about products or a customer account remain voluntary at all times.</p>
-      </aside>
-    </div>
-  </section>
-
   <section class="section">
     <div class="container narrow-layout">
       <SectionIntro title="Preparation">
@@ -195,16 +169,13 @@ const preparationQuestions = [
   .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
   .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
   .check-list li::before { content: ''; position: absolute; top: .72em; left: 0; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
-  .format-grid, .split-layout { display: grid; gap: var(--space-24); }
+  .format-grid { display: grid; gap: var(--space-24); }
   .format-grid :global(.topic-card h4) { margin: var(--space-20) 0 var(--space-12); font-size: var(--font-size-body-mobile); }
   .format-grid :global(.topic-card ul) { display: grid; gap: var(--space-12); margin: 0; padding-left: var(--space-24); }
   .format-grid :global(.topic-card p + p) { margin-top: var(--space-16); }
   .section-copy { margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
-  .calm-panel { align-self: start; padding: var(--space-32); border-radius: var(--radius-section); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
-  .calm-panel h2 { margin: 0 0 var(--space-16); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
-  .calm-panel p { margin: 0; color: var(--color-text-secondary); }
   .compliance-section { padding: 0 0 var(--space-80); }
   .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
   @media (min-width: 768px) { .section { padding-block: var(--space-96); } .format-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (min-width: 1024px) { .section { padding-block: var(--space-120); } .format-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .split-layout { grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr); gap: var(--space-80); } .hero-subtitle { font-size: var(--font-size-h3-desktop); } }
+  @media (min-width: 1024px) { .section { padding-block: var(--space-120); } .format-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .hero-subtitle { font-size: var(--font-size-h3-desktop); } }
 </style>

@@ -5,12 +5,12 @@ import { englishAdditionalNavigation, englishMainNavigation } from './navigation
 
 export const footerData = {
   brand: 'Kyle Daniel Mikolajczak',
-  claim: 'Natürliche Routinen. Persönliche Beratung.',
-  description: 'Persönliche doTERRA Wellness Beratung für natürliche Routinen und verständliche Orientierung',
+  claim: 'Natürlich. Klar. Mit Kyle.',
+  description: 'doTERRA Produkte und Routinen verständlich begleitet.',
   primaryNavigation: [mainNavigation[0], mainNavigation[1], mainNavigation[3], mainNavigation[4], mainNavigation[5], mainNavigation[6]],
   knowledgeLinks: [
     additionalNavigation[0],
-    { label: 'Startpfad', href: '/de/startbereich/' },
+    additionalNavigation[1],
     { label: 'Öl-Lexikon', href: '/de/wissen/oel-lexikon/' },
     { label: 'Sicher anwenden', href: '/de/wissen/sicher-anwenden/' },
   ],
@@ -27,12 +27,12 @@ export const footerData = {
 
 export const englishFooterData = {
   brand: 'Kyle Daniel Mikolajczak',
-  claim: 'Natural routines. Personal support.',
-  description: 'Personal doTERRA support for natural routines and clear, practical guidance.',
+  claim: 'Natural. Clear. With Kyle.',
+  description: 'A clear guide to doTERRA products and routines.',
   primaryNavigation: [englishMainNavigation[0], englishMainNavigation[1], englishMainNavigation[3], englishMainNavigation[4], englishMainNavigation[5], englishMainNavigation[6]],
   knowledgeLinks: [
     englishAdditionalNavigation[0],
-    { label: 'Start Here', href: '/en/start-here/' },
+    englishAdditionalNavigation[1],
     { label: 'Oil Library', href: '/en/knowledge/oil-library/' },
     { label: 'Safe Use', href: '/en/knowledge/safe-use/' },
   ],

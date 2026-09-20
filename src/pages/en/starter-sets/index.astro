@@ -176,6 +176,13 @@ const decisionGuides = [
   { title: 'LRP Loyalty Program Explained Calmly', href: '/en/knowledge/products-systems/lrp-loyalty-program-explained-calmly/' },
   { title: 'doTERRA Customer Account Explained Simply', href: '/en/knowledge/products-systems/doterra-customer-account-explained-simply/' },
 ];
+
+const decisionOptions = [
+  { title: 'Compact oil beginning', copy: 'Family Essentials Kit for a contained introduction to essential oils.' },
+  { title: 'Home & diffuser', copy: 'Home Essentials Kit for a broader home setup including a diffuser.' },
+  { title: 'Daily wellness routine', copy: 'Wellness Made Simple for a more systematic product introduction.' },
+  { title: 'System-focused start', copy: 'MetaPWR System for people considering a coordinated system.' },
+];
 ---
 
 <PageLayout
@@ -211,6 +218,15 @@ const decisionGuides = [
           { type: 'image/webp', srcset: '/assets/images/optimized/starter-sets-hero-lifestyle-640.webp 640w, /assets/images/optimized/starter-sets-hero-lifestyle-960.webp 960w, /assets/images/optimized/starter-sets-hero-lifestyle-1280.webp 1280w' },
         ]}
       />
+    </div>
+  </section>
+
+  <section class="section decision-section">
+    <div class="container">
+      <SectionIntro title="Which start suits you?">
+        <p>Use this overview to place the four official options before comparing them in detail.</p>
+      </SectionIntro>
+      <div class="decision-grid">{decisionOptions.map((option) => <article><h2>{option.title}</h2><p>{option.copy}</p></article>)}</div>
     </div>
   </section>
 
@@ -347,6 +363,10 @@ const decisionGuides = [
   .section { padding: var(--space-64) 0; }
   .section--cream { background: var(--color-soft-cream); }
   .section--sage { background: rgb(168 184 160 / 20%); }
+  .decision-grid { display: grid; gap: var(--space-16); margin-top: var(--space-32); }
+  .decision-grid article { padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); }
+  .decision-grid h2, .decision-grid p { margin: 0; }
+  .decision-grid p { margin-top: var(--space-12); color: var(--color-text-secondary); }
   .narrow-layout { max-width: var(--container-text); }
   .split-copy { display: grid; gap: var(--space-48); }
   .international-note { margin-bottom: var(--space-40); }
@@ -367,6 +387,7 @@ const decisionGuides = [
   .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
   .compliance-section :global(p + p) { margin-top: var(--space-12); }
   @media (min-width: 768px) {
+    .decision-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
     .hero { padding-block: var(--space-80); }
     .section { padding-block: var(--space-96); }
     .starter-set-list { gap: var(--space-40); }

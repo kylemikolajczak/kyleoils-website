@@ -29,18 +29,22 @@ const orientationTopics = [
   {
     title: 'Stressiger Alltag & innere Orientierung',
     copy: 'Für kleine Pausen, Duftanker und mehr Struktur an Tagen, die voll oder unruhig wirken.',
+    href: '/de/wissen/produkte-systeme/adaptiv-stressiger-alltag-duftanker/',
   },
   {
     title: 'Abend & Schlafroutine',
     copy: 'Für eine ruhige Abendumgebung, bewusste Duftanker und einfache Routinen rund um die Schlafenszeit.',
+    href: '/de/wissen/routinen/einfache-abendroutine-mit-aetherischen-oelen/',
   },
   {
     title: 'Bauchgefühl & Essensalltag',
     copy: 'Für Menschen, die Produkte und Routinen rund um Essen, Gewohnheiten und bewusste Entscheidungen besser verstehen möchten.',
+    href: '/de/wissen/produkte-systeme/zengest-bauchgefuehl-essensalltag/',
   },
   {
     title: 'Bewegung, Massage & Körperkomfort',
     copy: 'Für Massage, Pflege und Duft-Routinen nach Sport, Gartenarbeit, viel Sitzen oder aktiven Tagen.',
+    href: '/de/wissen/produkte-systeme/deep-blue-bewegung-massage-koerperkomfort/',
   },
 ];
 
@@ -132,9 +136,9 @@ const deeperKnowledgeLinks = [
   <HeroSplit
     title="Ätherische Öle einfach in den Alltag integrieren"
     primaryHref="/de/kontakt/"
-    primaryLabel="Passende Routine besprechen"
-    secondaryHref={contactLinks.whatsapp.href}
-    secondaryLabel="WhatsApp starten"
+    primaryLabel="Beratung anfragen"
+    secondaryHref="/de/wissen/"
+    secondaryLabel="Wissen entdecken"
     imageSrc="/assets/images/products/essential-oils-display.jpg"
     imageAlt="Ätherische Öle übersichtlich in einer Holzhalterung"
     imageWidth={2400}
@@ -145,13 +149,8 @@ const deeperKnowledgeLinks = [
       { type: 'image/webp', srcset: '/assets/images/optimized/essential-oils-display-640.webp 640w, /assets/images/optimized/essential-oils-display-960.webp 960w, /assets/images/optimized/essential-oils-display-1280.webp 1280w' },
     ]}
   >
-    <p>Ätherische Öle müssen nicht kompliziert sein.</p>
-    <p>Für viele Menschen beginnt der Einstieg nicht mit einem bestimmten Produkt, sondern mit einer einfachen Frage:</p>
-    <p>Was wünsche ich mir im Alltag?</p>
-    <p>Mehr Ruhe.<br />Einen bewussteren Abend.<br />Mehr Energie am Morgen.<br />Ein angenehmeres Zuhause.<br />Natürliche Alternativen im Haushalt.<br />Mehr Struktur für kleine Wellness-Routinen.</p>
-    <p>Genau hier können ätherische Öle und natürliche Routinen interessant werden.</p>
-    <p>Nicht als schnelle Lösung für alles.<br />Nicht als Ersatz für medizinische Behandlung.<br />Sondern als bewusste Begleiter im Alltag.</p>
-    <p>Ich helfe dir dabei, diese Möglichkeiten verständlich einzuordnen und herauszufinden, was wirklich zu dir passt.</p>
+    <p>Ätherische Öle werden dann wertvoll, wenn sie einen echten Platz in deinen Routinen finden.</p>
+    <p>Entdecke Anwendung, Themen und Wissen, bevor du dich für Produkte entscheidest.</p>
   </HeroSplit>
 
   <section class="section section--cream">
@@ -192,11 +191,7 @@ const deeperKnowledgeLinks = [
         <p>Häufig stehen dabei diese vier Themen im Mittelpunkt:</p>
       </SectionIntro>
       <div class="orientation-grid">
-        {orientationTopics.map((topic) => (
-          <TopicCard title={topic.title}>
-            <p>{topic.copy}</p>
-          </TopicCard>
-        ))}
+        {orientationTopics.map((topic) => <a class="orientation-card" href={topic.href}><h2>{topic.title}</h2><p>{topic.copy}</p><span aria-hidden="true">Entdecken →</span></a>)}
       </div>
       <p class="orientation-closing">Diese Bereiche sind keine festen Schubladen. Oft hängen Stimmung, Schlaf, körperliches Wohlbefinden und tägliche Routinen miteinander zusammen. In der Beratung schauen wir deshalb gemeinsam darauf, was zu deiner persönlichen Situation passt.</p>
     </div>
@@ -341,6 +336,10 @@ const deeperKnowledgeLinks = [
   .application-safety { margin: var(--space-32) 0 0; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-soft-cream); color: var(--color-text-secondary); }
   .application-connection { max-width: var(--container-text); margin: var(--space-24) 0 0; color: var(--color-text-secondary); }
   .orientation-grid { display: grid; gap: var(--space-20); }
+  .orientation-card { display: grid; gap: var(--space-12); padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); color: var(--color-text-primary); text-decoration: none; }
+  .orientation-card h2, .orientation-card p { margin: 0; }
+  .orientation-card p { color: var(--color-text-secondary); }
+  .orientation-card span { color: var(--color-deep-forest); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
   .orientation-closing { max-width: var(--container-text); margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
   .topic-grid { display: grid; gap: var(--space-20); }
   .topic-grid :global(.topic-card > div) { display: flex; height: calc(100% - 52px); flex-direction: column; }

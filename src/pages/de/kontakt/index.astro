@@ -3,28 +3,8 @@ import ComplianceNote from '../../../components/compliance/ComplianceNote.astro'
 import Button from '../../../components/global/Button.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
 import SectionIntro from '../../../components/sections/SectionIntro.astro';
-import StepList from '../../../components/sections/StepList.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 import { contactLinks, socialLinks } from '../../../data/externalLinks';
-
-const contactSteps = [
-  {
-    title: '1. Du meldest dich bei mir.',
-    paragraphs: [],
-  },
-  {
-    title: '2. Wir sprechen über deine Situation und deine Fragen.',
-    paragraphs: [],
-  },
-  {
-    title: '3. Gemeinsam schauen wir, welche Möglichkeiten sinnvoll sein könnten.',
-    paragraphs: [],
-  },
-  {
-    title: '4. Danach entscheidest du ganz in Ruhe, wie du weitergehen möchtest.',
-    paragraphs: [],
-  },
-];
 
 const contactOptions = [
   {
@@ -83,7 +63,7 @@ const contactOptions = [
   <section id="contact-options" class="section section--sage">
     <div class="container">
       <SectionIntro title="So kannst du mich erreichen">
-        <p>Ich antworte in der Regel innerhalb von 24 Stunden.</p>
+          <p>WhatsApp, Telefon oder E-Mail sind ein guter erster Schritt. Ich antworte in der Regel innerhalb von 24 Stunden.</p>
       </SectionIntro>
       <div class="contact-grid">
         {contactOptions.slice(0, 3).map((option) => (
@@ -94,22 +74,7 @@ const contactOptions = [
           </article>
         ))}
       </div>
-      <h2 class="contact-subheading">Weitere Möglichkeiten der Beratung</h2>
-      <div class="contact-grid contact-grid--formats">
-        {contactOptions.slice(3).map((option) => (
-          <article class="contact-card">
-            <h3>{option.title}</h3>
-            <p>{option.copy}</p>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--cream">
-    <div class="container">
-      <SectionIntro title="So läuft der erste Kontakt ab" />
-      <StepList steps={contactSteps} />
+      <p class="contact-formats">Persönliche Treffen im Landkreis Lüneburg und Videocalls sind nach Absprache ebenfalls möglich.</p>
     </div>
   </section>
 
@@ -121,47 +86,6 @@ const contactOptions = [
         <p>Wenn du aus Lüneburg oder Umgebung kommst, Fragen zu doTERRA hast oder lieber auf Englisch sprechen möchtest, findest du hier einen ruhigen Überblick.</p>
       </div>
       <Button href="/de/doterra-beratung-lueneburg/" variant="secondary">doTERRA Beratung in Lüneburg</Button>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container details-layout">
-      <div>
-        <SectionIntro title="Kontaktdaten" />
-        <dl class="contact-details">
-          <div>
-            <dt>Name</dt>
-            <dd>Kyle Daniel Mikolajczak</dd>
-          </div>
-          <div>
-            <dt>Telefon</dt>
-            <dd><a href={contactLinks.phone.href}>{contactLinks.phone.label}</a></dd>
-          </div>
-          <div>
-            <dt>WhatsApp</dt>
-            <dd><a href={contactLinks.whatsapp.href}>WhatsApp starten</a></dd>
-          </div>
-          <div>
-            <dt>E-Mail</dt>
-            <dd><a href={contactLinks.email.href}>{contactLinks.email.label}</a></dd>
-          </div>
-          <div>
-            <dt>Standort</dt>
-            <dd>Landkreis Lüneburg</dd>
-          </div>
-          <div>
-            <dt>Antwortzeit</dt>
-            <dd>Ich antworte in der Regel innerhalb von 24 Stunden.</dd>
-          </div>
-        </dl>
-      </div>
-      <aside class="qualification" aria-labelledby="qualification-title">
-        <h2 id="qualification-title">Qualifikation</h2>
-        <ul>
-          <li>doTERRA Wellness Advocate</li>
-          <li>doTERRA Europe Essential Oils Specialist</li>
-        </ul>
-      </aside>
     </div>
   </section>
 
@@ -210,23 +134,13 @@ const contactOptions = [
   .local-guidance-section__inner h2 { margin: 0 0 var(--space-12); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
   .local-guidance-section__inner p:not(.eyebrow) { margin: 0; color: var(--color-text-secondary); }
   .local-guidance-section__inner .eyebrow { margin: 0 0 var(--space-12); }
-  .details-layout { display: grid; gap: var(--space-48); }
   .contact-grid { display: grid; gap: var(--space-20); }
-  .contact-subheading { margin: var(--space-48) 0 var(--space-24); font-size: var(--font-size-h3-mobile); line-height: 1.25; }
   .contact-card { min-height: 230px; display: flex; flex-direction: column; align-items: flex-start; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
   .contact-card h3 { margin: 0 0 var(--space-12); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
   .contact-card p { margin: 0 0 var(--space-24); overflow-wrap: anywhere; color: var(--color-text-secondary); }
   .contact-card a { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; margin-top: auto; padding: var(--space-12) var(--space-20); border: 1px solid var(--color-sand); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); line-height: 1.2; text-align: center; text-decoration: none; }
   .contact-card a:hover { border-color: var(--color-sage-green); background: var(--color-soft-cream); }
-  .contact-details { display: grid; gap: 1px; overflow: hidden; margin: 0; border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-sand); }
-  .contact-details div { display: grid; gap: var(--space-4); padding: var(--space-20); background: var(--color-warm-white); }
-  .contact-details dt { color: var(--color-text-muted); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
-  .contact-details dd { margin: 0; overflow-wrap: anywhere; color: var(--color-text-secondary); }
-  .contact-details a { color: var(--color-deep-forest); }
-  .qualification { align-self: start; padding: var(--space-32); border-radius: var(--radius-section); background: var(--color-soft-cream); }
-  .qualification h2 { margin: 0 0 var(--space-24); font-size: var(--font-size-h3-mobile); line-height: 1.25; }
-  .qualification ul { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; color: var(--color-text-secondary); }
-  .qualification li { padding-top: var(--space-16); border-top: 1px solid var(--color-sand); }
+  .contact-formats { max-width: var(--container-text); margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
   .social-section { padding: var(--space-24) 0 var(--space-48); }
   .social-layout { display: flex; flex-wrap: wrap; gap: var(--space-16) var(--space-24); align-items: center; }
   .social-section__label { margin: 0; color: var(--color-text-muted); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
@@ -248,14 +162,11 @@ const contactOptions = [
     .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
     .local-guidance-section__inner { grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-40); }
     .contact-card { padding: var(--space-32); }
-    .contact-details div { grid-template-columns: minmax(120px, .35fr) minmax(0, 1fr); gap: var(--space-24); }
   }
   @media (min-width: 1024px) {
     .section { padding-block: var(--space-120); }
     .social-section { padding: var(--space-40) 0 var(--space-80); }
-    .details-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); align-items: start; }
     .contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .contact-grid--formats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .local-guidance-section__inner h2 { font-size: var(--font-size-h2-desktop); }
   }
 </style>
