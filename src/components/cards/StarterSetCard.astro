@@ -28,7 +28,7 @@ const {
 } = Astro.props;
 ---
 
-<article class="starter-set-card">
+<article class="starter-set-card" data-reveal>
   <div class="starter-set-card__image">
     <ResponsiveImage
       src={imageSrc}
@@ -49,7 +49,8 @@ const {
 </article>
 
 <style>
-  .starter-set-card { display: grid; gap: var(--space-32); padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
+  .starter-set-card { display: grid; gap: var(--space-32); padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); transition: box-shadow 220ms ease, border-color 220ms ease; }
+  .starter-set-card:focus-within { border-color: var(--color-sage-green); box-shadow: 0 16px 34px rgb(38 56 47 / 14%); }
   .starter-set-card__image { display: flex; align-items: center; justify-content: center; }
   h3 { margin: 0 0 var(--space-24); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); letter-spacing: -0.02em; }
   .starter-set-card__copy { color: var(--color-text-secondary); }

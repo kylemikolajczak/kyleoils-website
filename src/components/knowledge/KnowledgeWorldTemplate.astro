@@ -27,7 +27,7 @@ const mainFaqHref = locale === 'de' ? '/de/faq/' : '/en/faq/';
   <section class="section section--cream">
     <div class="container">
       <h2>{locale === 'de' ? 'Artikel in dieser Wissenswelt' : 'Articles in this Knowledge World'}</h2>
-      <div class="article-grid">
+      <div class="article-grid" data-reveal>
         {articles.map((article) => <KnowledgeArticleCard title={article.title} description={article.description} href={article.route} {locale} />)}
       </div>
     </div>
@@ -55,7 +55,7 @@ const mainFaqHref = locale === 'de' ? '/de/faq/' : '/en/faq/';
 <section class="section">
   <div class="container">
     <h2>{locale === 'de' ? 'Weitere Wissenswelten' : 'More Knowledge Worlds'}</h2>
-    <div class="world-grid">
+    <div class="world-grid" data-reveal>
       {relatedWorlds.map((item) => <KnowledgeWorldCard label={item.label[locale]} description={item.description[locale]} href={item.href[locale]} {linkLabel} />)}
     </div>
   </div>

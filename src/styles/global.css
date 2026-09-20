@@ -12,6 +12,17 @@ button, a { font: inherit; }
 .skip-link { position: absolute; left: var(--space-20); top: -100px; z-index: 100; padding: var(--space-12); background: var(--color-deep-forest); color: var(--color-warm-white); }
 .skip-link:focus { top: var(--space-20); }
 
+html.reveal-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 560ms ease var(--reveal-delay, 0ms), transform 560ms ease var(--reveal-delay, 0ms);
+}
+html.reveal-ready [data-reveal].is-revealed { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  html.reveal-ready [data-reveal] { opacity: 1; transform: none; transition: none; }
+}
+
 @media (min-width: 768px) {
   body { font-size: var(--font-size-body-desktop); }
   .container { width: min(100% - (2 * var(--gutter-tablet)), var(--container-main)); }

@@ -65,6 +65,7 @@ const structuredData = {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="p:domain_verify" content="35e6a82d3fa103d880c6364cbd95ba9e" />
+    <script is:inline>document.documentElement.classList.add('reveal-ready');</script>
     <style set:html={tokensCss} />
     <style set:html={globalCss} />
     <meta name="theme-color" content="#a8b8a0" />
@@ -98,5 +99,31 @@ const structuredData = {
     <main id="main-content"><slot /></main>
     <SiteFooter locale={lang} />
     <AnalyticsConsent locale={lang} />
+    <script is:inline>
+      (() => {
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        const revealTargets = [...document.querySelectorAll('[data-reveal]')];
+        const showAll = () => {
+          document.documentElement.classList.remove('reveal-ready');
+          revealTargets.forEach((target) => target.classList.add('is-revealed'));
+        };
+
+        if (!revealTargets.length || reducedMotion.matches || !('IntersectionObserver' in window)) {
+          showAll();
+        } else {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add('is-revealed');
+              observer.unobserve(entry.target);
+            });
+          }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+          revealTargets.forEach((target, index) => {
+            target.style.setProperty('--reveal-delay', `${Math.min(index % 3, 2) * 70}ms`);
+            observer.observe(target);
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
