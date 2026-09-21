@@ -5,7 +5,6 @@ import CTASection from '../../../components/cta/CTASection.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
 import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
-import { contactLinks } from '../../../data/externalLinks';
 
 const qualityPrinciples = [
   'Sorgfältige Auswahl der Pflanzen',
@@ -50,10 +49,10 @@ const accountDetails = [
 >
   <HeroSplit
     title="doTERRA verstehen"
-    primaryHref={contactLinks.whatsapp.href}
-    primaryLabel="WhatsApp starten"
-    secondaryHref="/de/kontakt/"
-    secondaryLabel="Beratungsgespräch anfragen"
+    primaryHref="/de/starter-sets/"
+    primaryLabel="Starter-Sets vergleichen"
+    secondaryHref="/de/wissen/produkte-systeme/doterra-kundenkonto-und-einkaufsvorteil-verstehen/"
+    secondaryLabel="Kundenkonto verstehen"
     imageSrc="/assets/images/nature/nature-heath-hero-01.png"
     imageAlt="Lüneburger Heide im warmen Licht"
     imageWidth={1672}
@@ -144,13 +143,13 @@ const accountDetails = [
   </section>
 
   <CTASection
-    title="Du möchtest mehr erfahren?"
-    primaryHref={contactLinks.whatsapp.href}
-    primaryLabel="WhatsApp starten"
+    title="Nächster Schritt: weiter verstehen"
+    primaryHref="/de/wissen/"
+    primaryLabel="Wissensbereich entdecken"
     secondaryHref="/de/kontakt/"
-    secondaryLabel="Beratungsgespräch anfragen"
+    secondaryLabel="Mit Kyle sprechen"
   >
-    <p>Wenn du Fragen hast oder einfach verstehen möchtest, ob die doTERRA-Produktwelt zu dir passt, freue ich mich auf deine Nachricht.</p>
+    <p>Wenn du die Produktwelt erst weiter erkunden möchtest, findest du im Wissensbereich klare Grundlagen und Entscheidungshilfen. Persönliche Fragen kannst du jederzeit mit Kyle besprechen.</p>
   </CTASection>
 </PageLayout>
 

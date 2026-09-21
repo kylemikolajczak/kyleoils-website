@@ -13,13 +13,14 @@ import { contactLinks } from '../../../data/externalLinks';
 
 const starterSets = [
   {
+    anchorId: 'family-essentials-kit',
     title: 'Family Essentials Kit',
     lead: 'The simplest introduction to the world of essential oils.',
     imageSrc: '/assets/images/products/starter-family-essentials.png',
     imageAlt: 'Family Essentials Kit with a selection of essential oils',
     imageWidth: 962,
     imageHeight: 1350,
-    orderLabel: 'Order in the Official doTERRA Shop',
+    orderLabel: 'Official doTERRA Shop · Germany',
     orderHref: starterSetLinks[0].href,
     sections: [
       {
@@ -51,13 +52,14 @@ const starterSets = [
     ],
   },
   {
+    anchorId: 'home-essentials-kit',
     title: 'Home Essentials Kit',
     lead: 'A more comprehensive introduction for the home and regular use.',
     imageSrc: '/assets/images/products/starter-home-essentials.png',
     imageAlt: 'Home Essentials Kit with a diffuser and essential oils',
     imageWidth: 672,
     imageHeight: 256,
-    orderLabel: 'Order in the Official doTERRA Shop',
+    orderLabel: 'Official doTERRA Shop · Germany',
     orderHref: starterSetLinks[1].href,
     sections: [
       {
@@ -90,13 +92,14 @@ const starterSets = [
     ],
   },
   {
+    anchorId: 'wellness-made-simple',
     title: 'Wellness Made Simple',
     lead: 'A structured introduction to daily wellness and nutritional supplement routines.',
     imageSrc: '/assets/images/products/starter-wellness-made-simple.png',
     imageAlt: 'Wellness Made Simple with products for daily wellness routines',
     imageWidth: 654,
     imageHeight: 358,
-    orderLabel: 'Order in the Official doTERRA Shop',
+    orderLabel: 'Official doTERRA Shop · Germany',
     orderHref: starterSetLinks[2].href,
     sections: [
       {
@@ -130,13 +133,14 @@ const starterSets = [
     ],
   },
   {
+    anchorId: 'metapwr-system',
     title: 'MetaPWR System',
     lead: 'A system-oriented introduction for active people and long-term habits.',
     imageSrc: '/assets/images/products/starter-metapwr.png',
     imageAlt: 'MetaPWR System with nutritional supplements and an essential oil blend',
     imageWidth: 3120,
     imageHeight: 1350,
-    orderLabel: 'Order in the Official doTERRA Shop',
+    orderLabel: 'Official doTERRA Shop · Germany',
     orderHref: starterSetLinks[3].href,
     sections: [
       {
@@ -178,10 +182,10 @@ const decisionGuides = [
 ];
 
 const decisionOptions = [
-  { title: 'Compact oil beginning', copy: 'Family Essentials Kit for a contained introduction to essential oils.' },
-  { title: 'Home & diffuser', copy: 'Home Essentials Kit for a broader home setup including a diffuser.' },
-  { title: 'Daily wellness routine', copy: 'Wellness Made Simple for a more systematic product introduction.' },
-  { title: 'System-focused start', copy: 'MetaPWR System for people considering a coordinated system.' },
+  { title: 'A compact oil beginning', copy: 'Family Essentials Kit for a manageable introduction to essential oils.', href: '#family-essentials-kit' },
+  { title: 'Home & diffuser', copy: 'Home Essentials Kit for a broader home setup including a diffuser.', href: '#home-essentials-kit' },
+  { title: 'A daily wellness routine', copy: 'Wellness Made Simple for a more structured product introduction.', href: '#wellness-made-simple' },
+  { title: 'A system-focused start', copy: 'MetaPWR System for people considering a coordinated system.', href: '#metapwr-system' },
 ];
 ---
 
@@ -226,7 +230,7 @@ const decisionOptions = [
       <SectionIntro title="Which start suits you?">
         <p>Use this overview to place the four official options before comparing them in detail.</p>
       </SectionIntro>
-      <div class="decision-grid">{decisionOptions.map((option) => <article><h2>{option.title}</h2><p>{option.copy}</p></article>)}</div>
+      <div class="decision-grid">{decisionOptions.map((option) => <a href={option.href}><h2>{option.title}</h2><p>{option.copy}</p><span>View this kit <span aria-hidden="true">→</span></span></a>)}</div>
     </div>
   </section>
 
@@ -237,11 +241,12 @@ const decisionOptions = [
         <ComplianceNote label="Information for International Visitors">
           <h3>Information for International Visitors</h3>
           <p>The direct links on this page lead to the official German doTERRA shop and are intended for customers in Germany.</p>
-          <p>If you live in another country, simply get in touch. I will be happy to send you the official starter kits and ordering links for your country and help you get started.</p>
+          <p>Outside Germany? Contact Kyle for the official starter-kit and ordering link for your country.</p>
         </ComplianceNote>
       </div>
       <div class="starter-set-list">
         {starterSets.map((set) => (
+          <div id={set.anchorId} class="starter-set-anchor" tabindex="-1">
           <StarterSetCard
             title={set.title}
             imageSrc={set.imageSrc}
@@ -268,6 +273,7 @@ const decisionOptions = [
               </section>
             ))}
           </StarterSetCard>
+          </div>
         ))}
       </div>
     </div>
@@ -364,9 +370,11 @@ const decisionOptions = [
   .section--cream { background: var(--color-soft-cream); }
   .section--sage { background: rgb(168 184 160 / 20%); }
   .decision-grid { display: grid; gap: var(--space-16); margin-top: var(--space-32); }
-  .decision-grid article { padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); }
+  .decision-grid a { display: flex; min-height: 100%; flex-direction: column; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); color: var(--color-text-primary); text-decoration: none; }
+  .decision-grid a:hover, .decision-grid a:focus-visible { border-color: var(--color-deep-forest); }
   .decision-grid h2, .decision-grid p { margin: 0; }
   .decision-grid p { margin-top: var(--space-12); color: var(--color-text-secondary); }
+  .decision-grid span { margin-top: var(--space-20); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
   .narrow-layout { max-width: var(--container-text); }
   .split-copy { display: grid; gap: var(--space-48); }
   .international-note { margin-bottom: var(--space-40); }
@@ -378,6 +386,7 @@ const decisionOptions = [
   .orientation-module__grid { display: grid; gap: var(--space-32); }
   .orientation-module__grid :global(.section-intro) { margin-bottom: var(--space-24); }
   .starter-set-list { display: grid; gap: var(--space-32); }
+  .starter-set-anchor { scroll-margin-top: var(--space-120); }
   .starter-set-lead { margin: 0 0 var(--space-32); color: var(--color-deep-forest); font-size: 19px; line-height: 1.5; }
   .starter-set-points { display: grid; gap: var(--space-8); margin: 0; padding-left: var(--space-24); }
   .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; color: var(--color-text-secondary); }

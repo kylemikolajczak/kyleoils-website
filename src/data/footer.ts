@@ -1,12 +1,12 @@
 import { additionalNavigation, mainNavigation } from './navigation';
-import { contactLinks, officialLinks } from './externalLinks';
+import { contactLinks, officialLinks, socialLinks } from './externalLinks';
 import { englishContactLinks, englishOfficialLinks } from './externalLinks';
 import { englishAdditionalNavigation, englishMainNavigation } from './navigation';
 
 export const footerData = {
   brand: 'Kyle Daniel Mikolajczak',
   claim: 'Natürlich. Klar. Mit Kyle.',
-  description: 'doTERRA Produkte und Routinen verständlich begleitet.',
+  description: 'doTERRA Produkte und Routinen klar begleitet.',
   primaryNavigation: [mainNavigation[0], mainNavigation[1], mainNavigation[3], mainNavigation[4], mainNavigation[5], mainNavigation[6]],
   knowledgeLinks: [
     additionalNavigation[0],
@@ -17,6 +17,7 @@ export const footerData = {
   contactLinks: [
     contactLinks.whatsapp,
     contactLinks.email,
+    socialLinks.linkedin,
   ],
   officialLinks: Object.values(officialLinks),
   legalNavigation: [
@@ -27,8 +28,8 @@ export const footerData = {
 
 export const englishFooterData = {
   brand: 'Kyle Daniel Mikolajczak',
-  claim: 'Natural. Clear. With Kyle.',
-  description: 'A clear guide to doTERRA products and routines.',
+  claim: 'Natural routines. Clear guidance.',
+  description: 'Thoughtful guidance for doTERRA products and routines.',
   primaryNavigation: [englishMainNavigation[0], englishMainNavigation[1], englishMainNavigation[3], englishMainNavigation[4], englishMainNavigation[5], englishMainNavigation[6]],
   knowledgeLinks: [
     englishAdditionalNavigation[0],
@@ -39,6 +40,7 @@ export const englishFooterData = {
   contactLinks: [
     englishContactLinks.whatsapp,
     englishContactLinks.email,
+    socialLinks.linkedin,
   ],
   officialLinks: Object.values(englishOfficialLinks),
   legalNavigation: [

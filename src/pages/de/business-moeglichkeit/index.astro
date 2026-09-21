@@ -1,197 +1,62 @@
 ---
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
-import TopicCard from '../../../components/cards/TopicCard.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
 import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import StepList from '../../../components/sections/StepList.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 
-const notForKyle = [
-  'Menschen drängen',
-  'große Versprechen machen',
-  'schnelle Erfolge verkaufen',
-  'mit Lifestyle-Bildern beeindrucken',
-  'jemanden zu monatlichen Bestellungen überreden',
-];
-
-const meansForKyle = [
+const responsiblePractice = [
   'Produkte erst selbst verstehen',
-  'ehrlich beraten',
-  'Fragen beantworten',
-  'Sicherheit und Alltag erklären',
-  'Menschen nach dem Kauf begleiten',
-  'nur dann über Business sprechen, wenn echtes Interesse da ist',
+  'ehrlich beraten und Fragen beantworten',
+  'Sicherheit und Alltag verständlich einordnen',
+  'Menschen nach dem Kauf respektvoll begleiten',
+  'nur bei echtem Interesse über eine Business-Rolle sprechen',
 ];
 
 const couldFit = [
-  'doTERRA Produkte wirklich magst',
-  'gerne erklärst und Menschen unterstützt',
-  'langfristig denkst',
-  'ehrlich kommunizieren möchtest',
-  'keine Lust auf Druckverkauf hast',
-  'bereit bist zu lernen',
-  'verstehst, dass Aufbau Zeit braucht',
-  'erst Produkte und Kunden verstehen möchtest, bevor du über Teamaufbau nachdenkst',
-];
-
-const probablyNot = [
-  'schnelles Geld erwartest',
-  'keine Produkte nutzen oder verstehen möchtest',
-  'Menschen zu etwas drängen willst',
-  'Einkommensversprechen brauchst',
-  'sofort ein fertiges System erwartest',
-  'keine Lust auf Lernen, Nachfragen und Begleitung hast',
-  'eigentlich nur Rabatte willst',
+  'doTERRA Produkte wirklich magst und gern weitergibst',
+  'Menschen ehrlich begleiten möchtest',
+  'bereit bist zu lernen und Fragen zu stellen',
+  'langfristig denkst und einen verantwortungsvollen Aufbau schätzt',
+  'Produkte und Kunden verstehen möchtest, bevor du über Teamaufbau nachdenkst',
 ];
 
 const customerFirstSteps = [
-  { title: '1. doTERRA ruhig kennenlernen', paragraphs: [] },
+  { title: '1. doTERRA kennenlernen', paragraphs: [] },
   { title: '2. Produkte und Starter-Sets verstehen', paragraphs: [] },
   { title: '3. Eigene Routinen finden', paragraphs: [] },
-  { title: '4. Nach dem Kauf Erfahrung sammeln', paragraphs: [] },
-  { title: '5. Fragen klären', paragraphs: [] },
-  { title: '6. Erst dann über eine mögliche Business-Rolle sprechen', paragraphs: [] },
+  { title: '4. Erfahrung sammeln und Fragen klären', paragraphs: [] },
+  { title: '5. Erst dann eine mögliche Business-Rolle betrachten', paragraphs: [] },
 ];
 
 const conversationQuestions = [
   'Warum interessiert dich die Business-Möglichkeit?',
-  'Möchtest du nur Produkte günstiger beziehen?',
-  'Möchtest du Freunde und Familie ehrlich begleiten?',
-  'Hast du Interesse an Workshops oder kleinen Gruppen?',
-  'Wie viel Zeit und Energie hast du wirklich?',
+  'Welche Produkte und Erfahrungen möchtest du wirklich teilen?',
+  'Wie viel Zeit und Energie hast du realistisch?',
   'Passt dir ein langsamer, seriöser Aufbau?',
-  'Welche Erwartungen sollten direkt realistisch eingeordnet werden?',
-];
-
-const noPressureAnswers = [
-  'Das passt nicht zu mir.',
-  'Ich möchte erstmal Kunde bleiben.',
-  'Ich brauche mehr Zeit.',
-  'Ich möchte nur Produkte verstehen.',
-  'Ich möchte später nochmal darüber sprechen.',
+  'Welche Erwartungen sollten von Anfang an klar eingeordnet werden?',
 ];
 ---
 
-<PageLayout
-  lang="de"
-  title="doTERRA Business ruhig verstehen | Kyle Oils"
-  description="Eine ehrliche Orientierung zur doTERRA Business-Möglichkeit: Für wen sie passen kann, für wen nicht, warum Produkte zuerst kommen und warum Kyle keine Einkommensversprechen macht."
->
-  <HeroSplit
-    title="doTERRA Business ruhig verstehen"
-    primaryHref="/de/kontakt/"
-    primaryLabel="Business-Möglichkeit besprechen"
-    secondaryHref="/de/beratung/"
-    secondaryLabel="Erst Beratung anfragen"
-    imageSrc="/assets/images/business/business-kyle-hero.jpg"
-    imageAlt="Kyle in einer ruhigen Arbeitsumgebung"
-    imageWidth={1023}
-    imageHeight={1537}
-    imagePosition="66% center"
-  >
+<PageLayout lang="de" title="doTERRA Business-Möglichkeit | Kyle Oils" description="Eine ehrliche Orientierung zur doTERRA Business-Möglichkeit: Produkte zuerst verstehen, Menschen verantwortungsvoll begleiten und Erwartungen realistisch einordnen.">
+  <HeroSplit title="Die doTERRA Business-Möglichkeit" primaryHref="/de/kontakt/" primaryLabel="Business-Möglichkeit besprechen" secondaryHref="/de/beratung/" secondaryLabel="Erst Beratung anfragen" imageSrc="/assets/images/business/business-kyle-hero.jpg" imageAlt="Kyle in einer ruhigen Arbeitsumgebung" imageWidth={1023} imageHeight={1537} imagePosition="66% center">
     <p class="core-message">Aus Begeisterung kann etwas Eigenes entstehen.</p>
     <p>Nicht jeder, der doTERRA nutzt, möchte daraus ein Business machen. Und das ist völlig in Ordnung.</p>
     <p>Produkte verstehen, ehrlich begleiten und Kunden respektvoll unterstützen stehen immer vor einer möglichen Business-Rolle.</p>
   </HeroSplit>
 
-  <section class="section section--cream">
-    <div class="container">
-      <SectionIntro title="Was bedeutet doTERRA Business?">
-        <p>doTERRA arbeitet mit selbstständigen Beraterinnen und Beratern, die Produkte erklären, Kunden begleiten und Menschen beim Einstieg unterstützen können.</p>
-      </SectionIntro>
-      <div class="topic-grid">
-        <TopicCard title="Für Kyle bedeutet das nicht">
-          <ul class="check-list">{notForKyle.map((item) => <li>{item}</li>)}</ul>
-        </TopicCard>
-        <TopicCard title="Für Kyle bedeutet es eher">
-          <ul class="check-list">{meansForKyle.map((item) => <li>{item}</li>)}</ul>
-        </TopicCard>
-      </div>
-    </div>
-  </section>
+  <section class="section section--cream"><div class="container narrow-layout"><SectionIntro title="Was doTERRA Business bedeuten kann"><p>doTERRA arbeitet mit selbstständigen Beraterinnen und Beratern, die Produkte erklären, Kunden begleiten und Menschen beim Einstieg unterstützen können.</p><p>Bei Kyle beginnt das mit Verantwortung: verständliche Informationen, aufmerksame Begleitung und ein ehrlicher Blick darauf, ob dieser Weg überhaupt passt.</p></SectionIntro><ul class="check-list">{responsiblePractice.map((item) => <li>{item}</li>)}</ul></div></section>
 
-  <section class="section section--sage">
-    <div class="container narrow-layout">
-      <SectionIntro title="Für wen kann es passen?">
-        <p>Die doTERRA Business-Möglichkeit kann interessant sein, wenn du:</p>
-      </SectionIntro>
-      <ul class="check-list">{couldFit.map((item) => <li>{item}</li>)}</ul>
-    </div>
-  </section>
+  <section class="section section--sage"><div class="container narrow-layout"><SectionIntro title="Wenn dieser Weg zu dir passen kann"><p>Die Business-Möglichkeit kann interessant sein, wenn du:</p></SectionIntro><ul class="check-list">{couldFit.map((item) => <li>{item}</li>)}</ul><p class="section-closing">Es geht nicht um schnelle Ergebnisse. Ein kundennaher, verantwortungsvoller Aufbau braucht Zeit, Lernen und echtes Interesse an den Produkten.</p></div></section>
 
-  <section class="section">
-    <div class="container narrow-layout">
-      <SectionIntro title="Für wen passt es eher nicht?">
-        <p>Es passt wahrscheinlich nicht, wenn du:</p>
-      </SectionIntro>
-      <ul class="check-list">{probablyNot.map((item) => <li>{item}</li>)}</ul>
-      <p class="section-closing">Rabatte und Kundenkonto können auch ohne Business-Druck sinnvoll sein. Nicht jeder Kunde muss Partner werden.</p>
-    </div>
-  </section>
+  <section class="section section--cream"><div class="container"><SectionIntro title="Erst Kunde, dann vielleicht Partner"><p>Der sinnvollere Weg führt zuerst über eigene Erfahrung und ein gutes Produktverständnis.</p></SectionIntro><div class="step-grid"><StepList steps={customerFirstSteps} /></div></div></section>
 
-  <section class="section section--cream">
-    <div class="container">
-      <SectionIntro title="Erst Kunde, dann vielleicht Partner">
-        <p>Kyle Oils trennt bewusst zwischen Kunde und Business. Der bessere Weg ist:</p>
-      </SectionIntro>
-      <div class="step-grid"><StepList steps={customerFirstSteps} /></div>
-      <p class="section-closing">Wenn du Produkte noch nicht verstehst, ist Business meistens zu früh.</p>
-    </div>
-  </section>
+  <section class="section"><div class="container split-copy"><SectionIntro title="Was Kyle in einem Business-Gespräch klärt"><p>Ein Gespräch hilft, Möglichkeiten und Erwartungen in eine realistische Reihenfolge zu bringen.</p></SectionIntro><ul class="check-list">{conversationQuestions.map((item) => <li>{item}</li>)}</ul></div></section>
 
-  <section class="section">
-    <div class="container split-copy">
-      <SectionIntro title="Was Kyle in einem Business-Gespräch klärt">
-        <p>Ein ruhiges Gespräch kann helfen, folgende Fragen zu sortieren:</p>
-      </SectionIntro>
-      <ul class="check-list">{conversationQuestions.map((item) => <li>{item}</li>)}</ul>
-    </div>
-  </section>
+  <CTASection title="Business-Möglichkeit besprechen" primaryHref="/de/kontakt/" primaryLabel="Business-Möglichkeit besprechen" secondaryHref="/de/beratung/" secondaryLabel="Erst Beratung anfragen"><p>Wenn du doTERRA bereits interessant findest und wissen möchtest, ob die Business-Möglichkeit zu dir passen könnte, kannst du Kyle eine unverbindliche Nachricht schicken.</p><p>Der Fokus bleibt ehrlich und realistisch.</p></CTASection>
 
-  <section class="notice-section">
-    <div class="container">
-      <ComplianceNote>
-        <h2>Keine Einkommensversprechen</h2>
-        <p>Kyle Oils macht keine Einkommensversprechen.</p>
-        <p>Es gibt keine Garantie auf Umsatz, Provision, Rang oder Erfolg. Ergebnisse hängen von vielen Faktoren ab, unter anderem von Zeit, Einsatz, Lernbereitschaft, Kommunikation, Kundeninteresse und persönlicher Situation.</p>
-        <p>Wenn über die offizielle doTERRA Business-Möglichkeit gesprochen wird, sollten immer die aktuellen offiziellen doTERRA Informationen, Regeln und Einkommenshinweise beachtet werden.</p>
-      </ComplianceNote>
-    </div>
-  </section>
-
-  <section class="section section--sage">
-    <div class="container split-copy">
-      <SectionIntro title="Business ohne Druck">
-        <p>Ein Business-Gespräch mit Kyle ist kein Abschlussgespräch. Es ist eine Orientierung.</p>
-        <p>Du darfst danach sagen:</p>
-      </SectionIntro>
-      <div>
-        <ul class="check-list">{noPressureAnswers.map((item) => <li>{item}</li>)}</ul>
-        <p class="section-closing">Das ist alles in Ordnung.</p>
-      </div>
-    </div>
-  </section>
-
-  <CTASection
-    title="Business-Möglichkeit besprechen"
-    primaryHref="/de/kontakt/"
-    primaryLabel="Business-Möglichkeit besprechen"
-    secondaryHref="/de/beratung/"
-    secondaryLabel="Erst Beratung anfragen"
-  >
-    <p>Wenn du doTERRA bereits interessant findest und wissen möchtest, ob die Business-Möglichkeit zu dir passen könnte, kannst du Kyle eine unverbindliche Nachricht schicken.</p>
-    <p>Der Fokus bleibt ruhig, ehrlich und realistisch.</p>
-  </CTASection>
-
-  <section class="compliance-section">
-    <div class="container">
-      <ComplianceNote>
-        <h2>Hinweis</h2>
-        <p>Kyle Oils ersetzt keine rechtliche, steuerliche oder finanzielle Beratung und gibt keine Einkommensversprechen. Inhalte zur doTERRA Business-Möglichkeit dienen der allgemeinen Orientierung und sollten immer mit den aktuellen offiziellen doTERRA Informationen abgeglichen werden.</p>
-      </ComplianceNote>
-    </div>
-  </section>
+  <section class="compliance-section"><div class="container"><ComplianceNote><h2>Hinweis</h2><p>Kyle Oils ersetzt keine rechtliche, steuerliche oder finanzielle Beratung und gibt keine Einkommensversprechen. Inhalte zur doTERRA Business-Möglichkeit dienen der allgemeinen Orientierung und sollten immer mit aktuellen offiziellen doTERRA Informationen abgeglichen werden.</p></ComplianceNote></div></section>
 </PageLayout>
 
 <style>
@@ -201,26 +66,14 @@ const noPressureAnswers = [
   .section--cream { background: var(--color-soft-cream); }
   .section--sage { background: rgb(168 184 160 / 20%); }
   .narrow-layout { max-width: var(--container-text); }
-  .topic-grid, .split-copy { display: grid; gap: var(--space-24); }
+  .split-copy { display: grid; gap: var(--space-24); }
   .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
   .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
-  .check-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
+  .check-list li::before { content: ''; position: absolute; top: .72em; left: 0; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
   .section-closing { max-width: var(--container-text); margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
   .step-grid :global(.step-list) { grid-template-columns: minmax(0, 1fr); }
-  .notice-section { padding: var(--space-64) 0; }
-  .notice-section :global(.compliance-note) { max-width: 920px; }
-  .notice-section :global(h2), .compliance-section :global(h2) { margin: 0 0 var(--space-16); font-size: var(--font-size-h3-mobile); line-height: 1.25; }
-  .notice-section :global(p + p) { margin-top: var(--space-12); }
   .compliance-section { padding: 0 0 var(--space-80); }
-  @media (min-width: 768px) {
-    .section { padding-block: var(--space-96); }
-    .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
-    .step-grid :global(.step-list) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .notice-section { padding-block: var(--space-80); }
-  }
-  @media (min-width: 1024px) {
-    .section { padding-block: var(--space-120); }
-    .split-copy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-64); }
-    :global(.hero .core-message) { font-size: var(--font-size-h3-desktop); }
-  }
+  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  @media (min-width: 768px) { .section { padding-block: var(--space-96); } .step-grid :global(.step-list) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 1024px) { .section { padding-block: var(--space-120); } .split-copy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-64); } :global(.hero .core-message) { font-size: var(--font-size-h3-desktop); } }
 </style>

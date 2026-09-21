@@ -5,7 +5,6 @@ import CTASection from '../../../components/cta/CTASection.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
 import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
-import { contactLinks } from '../../../data/externalLinks';
 
 const qualityPrinciples = [
   'Careful Plant Selection',
@@ -51,10 +50,10 @@ const accountDetails = [
 >
   <HeroSplit
     title="Understanding doTERRA"
-    primaryHref={contactLinks.whatsapp.href}
-    primaryLabel="Message Me on WhatsApp"
-    secondaryHref="/en/contact/"
-    secondaryLabel="Request a Consultation"
+    primaryHref="/en/starter-sets/"
+    primaryLabel="Compare Starter Kits"
+    secondaryHref="/en/knowledge/products-systems/doterra-customer-account-explained-simply/"
+    secondaryLabel="Understand Customer Accounts"
     imageSrc="/assets/images/nature/nature-heath-hero-01.png"
     imageAlt="Lüneburg Heath in warm light"
     imageWidth={1672}
@@ -145,13 +144,13 @@ const accountDetails = [
   </section>
 
   <CTASection
-    title="Would You Like to Learn More?"
-    primaryHref={contactLinks.whatsapp.href}
-    primaryLabel="Message Me on WhatsApp"
+    title="A useful next step: keep learning"
+    primaryHref="/en/knowledge/"
+    primaryLabel="Explore the Knowledge Hub"
     secondaryHref="/en/contact/"
-    secondaryLabel="Request a Consultation"
+    secondaryLabel="Talk with Kyle"
   >
-    <p>If you have questions or simply want to understand whether the doTERRA product range could be right for you, I would be happy to hear from you.</p>
+    <p>If you would like to explore the product range first, the Knowledge Hub offers clear foundations and decision guides. You can always talk through personal questions with Kyle.</p>
   </CTASection>
 </PageLayout>
 

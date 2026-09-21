@@ -43,7 +43,6 @@ export const groupedMainNavigation = [
     items: [
       { label: 'Beratung', href: '/de/beratung/' },
       { label: 'Öle & Routinen', href: '/de/oele-routinen/' },
-      { label: 'Business-Möglichkeit', href: '/de/business-moeglichkeit/', secondary: true },
     ],
   },
   {
@@ -51,6 +50,7 @@ export const groupedMainNavigation = [
     items: [
       { label: 'Starter-Sets', href: '/de/starter-sets/' },
       { label: 'Workshops', href: '/de/workshops/' },
+      { label: 'Business-Möglichkeit', href: '/de/business-moeglichkeit/', secondary: true },
     ],
   },
   { label: 'Über Kyle', href: '/de/ueber-kyle/' },
@@ -65,7 +65,6 @@ export const groupedEnglishMainNavigation = [
     items: [
       { label: 'Consultation', href: '/en/consultation/' },
       { label: 'Oils & Routines', href: '/en/oils-routines/' },
-      { label: 'Business Opportunity', href: '/en/business-opportunity/', secondary: true },
     ],
   },
   {
@@ -73,6 +72,7 @@ export const groupedEnglishMainNavigation = [
     items: [
       { label: 'Starter Kits', href: '/en/starter-sets/' },
       { label: 'Workshops', href: '/en/workshops/' },
+      { label: 'Business Opportunity', href: '/en/business-opportunity/', secondary: true },
     ],
   },
   { label: 'About Kyle', href: '/en/about-kyle/' },

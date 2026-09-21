@@ -13,6 +13,7 @@ import { contactLinks } from '../../../data/externalLinks';
 
 const starterSets = [
   {
+    anchorId: 'family-essentials-kit',
     title: 'Family Essentials Kit',
     lead: 'Der einfachste Einstieg in die Welt der ätherischen Öle.',
     imageSrc: '/assets/images/products/starter-family-essentials.png',
@@ -51,6 +52,7 @@ const starterSets = [
     ],
   },
   {
+    anchorId: 'home-essentials-kit',
     title: 'Home Essentials Kit',
     lead: 'Der umfangreichere Einstieg für Zuhause und regelmäßige Nutzung.',
     imageSrc: '/assets/images/products/starter-home-essentials.png',
@@ -90,6 +92,7 @@ const starterSets = [
     ],
   },
   {
+    anchorId: 'wellness-made-simple',
     title: 'Wellness Made Simple',
     lead: 'Ein strukturierter Einstieg in tägliche Wellness- und Nahrungsergänzungsroutinen.',
     imageSrc: '/assets/images/products/starter-wellness-made-simple.png',
@@ -130,6 +133,7 @@ const starterSets = [
     ],
   },
   {
+    anchorId: 'metapwr-system',
     title: 'MetaPWR System',
     lead: 'Ein systemorientierter Einstieg für aktive Menschen und langfristige Gewohnheiten.',
     imageSrc: '/assets/images/products/starter-metapwr.png',
@@ -178,10 +182,10 @@ const decisionGuides = [
 ];
 
 const decisionOptions = [
-  { title: 'Kompakter Öl-Einstieg', copy: 'Family Essentials Kit für einen überschaubaren Beginn mit ätherischen Ölen.' },
-  { title: 'Zuhause & Diffuser', copy: 'Home Essentials Kit für eine breitere Ausstattung mit Diffuser.' },
-  { title: 'Tägliche Wellness-Routine', copy: 'Wellness Made Simple für einen systematischen Produkt-Einstieg.' },
-  { title: 'Systemorientierter Start', copy: 'MetaPWR System für Menschen, die gezielt ein abgestimmtes System betrachten möchten.' },
+  { title: 'Kompakter Öl-Einstieg', copy: 'Family Essentials Kit für einen überschaubaren Beginn mit ätherischen Ölen.', href: '#family-essentials-kit' },
+  { title: 'Zuhause & Diffuser', copy: 'Home Essentials Kit für eine breitere Ausstattung mit Diffuser.', href: '#home-essentials-kit' },
+  { title: 'Tägliche Wellness-Routine', copy: 'Wellness Made Simple für einen systematischen Produkt-Einstieg.', href: '#wellness-made-simple' },
+  { title: 'Systemorientierter Start', copy: 'MetaPWR System für Menschen, die gezielt ein abgestimmtes System betrachten möchten.', href: '#metapwr-system' },
 ];
 ---
 
@@ -225,7 +229,7 @@ const decisionOptions = [
       <SectionIntro title="Welcher Einstieg passt zu dir?">
         <p>Diese Übersicht hilft dir, die vier offiziellen Optionen vor dem detaillierten Vergleich schneller einzuordnen.</p>
       </SectionIntro>
-      <div class="decision-grid">{decisionOptions.map((option) => <article><h2>{option.title}</h2><p>{option.copy}</p></article>)}</div>
+      <div class="decision-grid">{decisionOptions.map((option) => <a href={option.href}><h2>{option.title}</h2><p>{option.copy}</p><span>Set ansehen <span aria-hidden="true">→</span></span></a>)}</div>
     </div>
   </section>
 
@@ -241,6 +245,7 @@ const decisionOptions = [
       </div>
       <div class="starter-set-list">
         {starterSets.map((set) => (
+          <div id={set.anchorId} class="starter-set-anchor" tabindex="-1">
           <StarterSetCard
             title={set.title}
             imageSrc={set.imageSrc}
@@ -267,6 +272,7 @@ const decisionOptions = [
               </section>
             ))}
           </StarterSetCard>
+          </div>
         ))}
       </div>
     </div>
@@ -363,9 +369,11 @@ const decisionOptions = [
   .section--cream { background: var(--color-soft-cream); }
   .section--sage { background: rgb(168 184 160 / 20%); }
   .decision-grid { display: grid; gap: var(--space-16); margin-top: var(--space-32); }
-  .decision-grid article { padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); }
+  .decision-grid a { display: flex; min-height: 100%; flex-direction: column; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); color: var(--color-text-primary); text-decoration: none; }
+  .decision-grid a:hover, .decision-grid a:focus-visible { border-color: var(--color-deep-forest); }
   .decision-grid h2, .decision-grid p { margin: 0; }
   .decision-grid p { margin-top: var(--space-12); color: var(--color-text-secondary); }
+  .decision-grid span { margin-top: var(--space-20); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
   .narrow-layout { max-width: var(--container-text); }
   .split-copy { display: grid; gap: var(--space-48); }
   .international-note { margin-bottom: var(--space-40); }
@@ -377,6 +385,7 @@ const decisionOptions = [
   .orientation-module__grid { display: grid; gap: var(--space-32); }
   .orientation-module__grid :global(.section-intro) { margin-bottom: var(--space-24); }
   .starter-set-list { display: grid; gap: var(--space-32); }
+  .starter-set-anchor { scroll-margin-top: var(--space-120); }
   .starter-set-lead { margin: 0 0 var(--space-32); color: var(--color-deep-forest); font-size: 19px; line-height: 1.5; }
   .starter-set-points { display: grid; gap: var(--space-8); margin: 0; padding-left: var(--space-24); }
   .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; color: var(--color-text-secondary); }

@@ -1,370 +1,53 @@
 ---
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
-import CTAGroup from '../../../components/cta/CTAGroup.astro';
-import CTASection from '../../../components/cta/CTASection.astro';
-import Button from '../../../components/global/Button.astro';
-import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
 import TopicCard from '../../../components/cards/TopicCard.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
 import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
-import { contactLinks } from '../../../data/externalLinks';
 
 const applicationMethods = [
-  {
-    title: 'Aromatic',
-    copy: 'Through aroma, for example in a diffuser, directly from the open bottle or as part of an intentional scent routine.',
-  },
-  {
-    title: 'Topical',
-    copy: 'On the skin, for example diluted with a suitable carrier oil, in a roller blend or as part of a massage or personal care routine.',
-  },
-  {
-    title: 'Internal',
-    copy: 'Only for products that are specifically labelled for internal use and only in accordance with the directions provided for that product.',
-  },
+  { title: 'Aromatic use', copy: 'Through scent, for example in a diffuser, from an opened bottle or as a considered scent moment.' },
+  { title: 'Topical use', copy: 'On the skin, for example diluted with a suitable carrier oil or as part of a massage and care routine.' },
+  { title: 'Internal use', copy: 'Only for products explicitly labelled for that purpose, and only in line with their instructions for use.' },
 ];
 
-const orientationTopics = [
-  {
-    title: 'Busy Days & Emotional Wellbeing',
-    copy: 'For small pauses, scent anchors and more structure on days that feel full or unsettled.',
-    href: '/en/knowledge/products-systems/adaptiv-stressful-days-scent-anchors/',
-  },
-  {
-    title: 'Evening & Sleep Routine',
-    copy: 'For a calm evening environment, conscious scent anchors and simple routines around bedtime.',
-    href: '/en/knowledge/routines/simple-evening-routine-with-essential-oils/',
-  },
-  {
-    title: 'Food & Everyday Wellness Habits',
-    copy: 'For people who want to better understand products and routines around meals, habits and everyday choices.',
-    href: '/en/knowledge/products-systems/zengest-digestive-feel-food-routines/',
-  },
-  {
-    title: 'Movement, Massage & Body Comfort',
-    copy: 'For massage, care and scent routines after sport, gardening, long periods of sitting or active days.',
-    href: '/en/knowledge/products-systems/deep-blue-movement-massage-body-comfort/',
-  },
-];
-
-const routineTopics = [
-  {
-    title: 'Calm & Stress',
-    paragraphs: [
-      'Many people keep going all day and only notice later how busy their mind has become.',
-      'A small routine can help you pause for a moment and bring more calm into your day.',
-      'This may involve scent, breathing, your surroundings, pauses or small rituals.',
-      'Essential oils can be included when they are used appropriately and responsibly.',
-    ],
-    href: '/en/knowledge/products-systems/adaptiv-stressful-days-scent-anchors/',
-  },
-  {
-    title: 'Sleep & Evening Routine',
-    paragraphs: [
-      'A good evening often begins before you go to bed.',
-      'Many people would like an easier transition from day to night.',
-      'An evening routine can help bring the day to a clearer close and create a calmer atmosphere.',
-      'This might involve a room fragrance, an established ritual, a short pause or a simple application.',
-      'What matters is that the routine fits your life and does not feel like another task.',
-    ],
-    href: '/en/knowledge/products-systems/serenity-evening-sleep-routine-safe-context/',
-  },
-  {
-    title: 'Energy & Focus',
-    paragraphs: [
-      'Sometimes the day needs greater clarity.',
-      'Many people look for a simple way to approach their day more consciously, whether in the morning, at work or in between.',
-      'Routines involving scent, structure, movement, freshness or high-quality wellness products may be of interest here.',
-      'The aim is not to push yourself artificially.',
-      'It is about creating intentional moments that can support you in daily life.',
-    ],
-    href: '/en/knowledge/routines/',
-  },
-  {
-    title: 'Family & Everyday Life',
-    paragraphs: [
-      'In family life especially, a routine should be simple, safe and realistic.',
-      'Parents often want to explore natural options while being understandably cautious.',
-      'That is a good thing.',
-      'Clear, responsible advice is particularly important for families and children.',
-      'Not every oil, application or recommendation is automatically right for every situation.',
-      'I help you look calmly and clearly at what may be right for you and what to keep in mind.',
-    ],
-    href: '/en/knowledge/safe-use/',
-  },
-  {
-    title: 'Home & Everyday Alternatives',
-    paragraphs: [
-      'Many people want a simpler approach to their home and fewer conventional household products.',
-      'Essential oils and natural products can have a useful role here.',
-      'For example, for room fragrance, freshness, cleaning or small household routines.',
-      'The same applies here:',
-      'Not everything needs to change immediately.',
-      'A simple first step that feels right and is easy to implement is often enough.',
-    ],
-    href: '/en/knowledge/everyday-use/',
-  },
-  {
-    title: 'Daily Wellness & Nutritional Supplements',
-    paragraphs: [
-      'Alongside essential oils, doTERRA also offers high-quality wellness products and nutritional supplements.',
-      'This may be of interest to people who want to build steady long-term habits alongside their daily routines.',
-      'This can include topics such as general wellbeing, conscious nutrition, daily life, energy, balance or systems such as MetaPWR.',
-      'Honest advice is important here too.',
-      'Not every product suits every person. That is why we look together at what fits your goals, daily life and current needs.',
-    ],
-    href: '/en/knowledge/products-systems/',
-  },
-];
-
-const deeperKnowledgeLinks = [
-  { title: 'Oil Library', href: '/en/knowledge/oil-library/' },
-  { title: 'Routines', href: '/en/knowledge/routines/' },
-  { title: 'Safe Use', href: '/en/knowledge/safe-use/' },
-  { title: 'Deep Blue: Movement, Massage & Body Comfort', href: '/en/knowledge/products-systems/deep-blue-movement-massage-body-comfort/' },
-  { title: 'ZenGest: Food & Everyday Wellness Habits', href: '/en/knowledge/products-systems/zengest-digestive-feel-food-routines/' },
-  { title: 'Serenity: Evening & Sleep Routine', href: '/en/knowledge/products-systems/serenity-evening-sleep-routine-safe-context/' },
-  { title: 'Lavender: Evening Routine, Scent & Skin Care', href: '/en/knowledge/products-systems/lavender-evening-routine-scent-skin-care/' },
+const intentPaths = [
+  { title: 'Stressful days & inner orientation', copy: 'Scent anchors and small pauses for days that ask a lot of you.', href: '/en/knowledge/products-systems/adaptiv-stressful-days-scent-anchors/' },
+  { title: 'Evening & sleep routine', copy: 'A pleasant evening setting and considered rituals around bedtime.', href: '/en/knowledge/products-systems/serenity-evening-sleep-routine-safe-context/' },
+  { title: 'Movement, massage & body care', copy: 'Care, massage and routines after active days.', href: '/en/knowledge/products-systems/deep-blue-movement-massage-body-comfort/' },
+  { title: 'Digestive feel & food routines', copy: 'Product and routine knowledge around meals, travel and considered habits.', href: '/en/knowledge/products-systems/zengest-digestive-feel-food-routines/' },
+  { title: 'Family & safe use', copy: 'Safety knowledge for households where quantity, room size and consideration matter.', href: '/en/knowledge/safe-use/' },
+  { title: 'Home & everyday routines', copy: 'Room scent, household moments and small habits that fit your home.', href: '/en/knowledge/everyday-use/' },
 ];
 ---
 
-<PageLayout
-  lang="en"
-  title="Essential Oils in Everyday Life | Use & Routines | Kyle Oils"
-  description="Make sense of essential oils in daily life: aromatic, topical and label-aware use, plus simple routines that fit your everyday context."
->
-  <HeroSplit
-    title="Essential Oils as Part of Your Daily Routine"
-    primaryHref="/en/contact/"
-    primaryLabel="Request Guidance"
-    secondaryHref="/en/knowledge/"
-    secondaryLabel="Explore Knowledge"
-    imageSrc="/assets/images/products/essential-oils-display.jpg"
-    imageAlt="Essential oils arranged clearly in a wooden holder"
-    imageWidth={2400}
-    imageHeight={3600}
-    imagePosition="54% center"
-    imageSources={[
-      { type: 'image/avif', srcset: '/assets/images/optimized/essential-oils-display-640.avif 640w, /assets/images/optimized/essential-oils-display-960.avif 960w, /assets/images/optimized/essential-oils-display-1280.avif 1280w' },
-      { type: 'image/webp', srcset: '/assets/images/optimized/essential-oils-display-640.webp 640w, /assets/images/optimized/essential-oils-display-960.webp 960w, /assets/images/optimized/essential-oils-display-1280.webp 1280w' },
-    ]}
-  >
-    <p>Essential oils become valuable when they find a real place in your routines.</p>
-    <p>Explore methods, topics and knowledge before you choose products.</p>
+<PageLayout lang="en" title="Essential Oils for Everyday Life | Uses & Routines | Kyle Oils" description="Place essential oils in everyday life: aromatic, topical and label-aware use, plus routines that fit your day.">
+  <HeroSplit title="Essential Oils for Everyday Life" primaryHref="/en/knowledge/" primaryLabel="Explore the Knowledge Hub" secondaryHref="/en/contact/" secondaryLabel="Talk with Kyle" imageSrc="/assets/images/products/essential-oils-display.jpg" imageAlt="Essential oils arranged in a wooden holder" imageWidth={2400} imageHeight={3600} imagePosition="54% center" imageSources={[{ type: 'image/avif', srcset: '/assets/images/optimized/essential-oils-display-640.avif 640w, /assets/images/optimized/essential-oils-display-960.avif 960w, /assets/images/optimized/essential-oils-display-1280.avif 1280w' }, { type: 'image/webp', srcset: '/assets/images/optimized/essential-oils-display-640.webp 640w, /assets/images/optimized/essential-oils-display-960.webp 960w, /assets/images/optimized/essential-oils-display-1280.webp 1280w' }]}>
+    <p>Essential oils become most useful when they earn a real place in your routines.</p>
+    <p>Explore use and interests first. Products can follow when they genuinely fit.</p>
   </HeroSplit>
 
-  <section class="section section--cream">
-    <div class="container narrow-layout">
-      <SectionIntro title="Everyday Life First, Then the Product">
-        <p>Many people begin with the question:</p>
-        <p>“Which oil do I need?”</p>
-        <p>In my view, the better question is:</p>
-        <p>“What would I like to make easier or more manageable in my daily life?”</p>
-        <p>A product recommendation is only useful once the real aim is clear.</p>
-        <p>Perhaps you do not need a large selection.<br />Perhaps a simple start is enough.<br />Perhaps a starter kit is the right choice.<br />Perhaps the first step is simply understanding how the oils can be used and what the options are.</p>
-        <p>My support helps you make a considered start instead of buying products blindly.</p>
-      </SectionIntro>
-    </div>
-  </section>
+  <section class="section"><div class="container"><SectionIntro title="Three ways to use essential oils"><p>Depending on the product, essential oils can be used through scent, on the skin or internally where a label supports it.</p></SectionIntro><div class="application-grid">{applicationMethods.map((method) => <TopicCard title={method.title}><p>{method.copy}</p></TopicCard>)}</div><p class="safety-note">Not every oil suits every use. Always follow the label and product packaging. Professional advice matters if you are unsure, pregnant, breastfeeding, considering use around children or managing health questions.</p></div></section>
 
-  <section class="section">
-    <div class="container">
-      <SectionIntro title="Three Ways to Use Essential Oils">
-        <p>Depending on the product, essential oils can become part of everyday life in different ways. The three main methods are aromatic, topical and internal use.</p>
-      </SectionIntro>
-      <div class="application-grid">
-        {applicationMethods.map((method) => (
-          <TopicCard title={method.title}>
-            <p>{method.copy}</p>
-          </TopicCard>
-        ))}
-      </div>
-      <p class="application-safety">Not every essential oil is suitable for every method of use. Always follow the directions and warnings on the label and packaging. If you are unsure, have an existing health condition, are pregnant or breastfeeding, or are considering use with children, seek appropriate professional advice first.</p>
-      <p class="application-connection">The method of use explains how an oil is used. The following four everyday areas show where many people begin when creating a personal routine.</p>
-    </div>
-  </section>
+  <section class="section section--sage"><div class="container"><SectionIntro title="Where would you like to start?"><p>Choose the topic that feels relevant today. From there, the Knowledge Hub can take you deeper.</p></SectionIntro><div class="intent-grid">{intentPaths.map((path) => <a class="intent-card" href={path.href}><h2>{path.title}</h2><p>{path.copy}</p><span aria-hidden="true">Explore <span aria-hidden="true">→</span></span></a>)}</div></div></section>
 
-  <section class="section section--sage">
-    <div class="container">
-      <SectionIntro title="Four Areas Where Many People Begin">
-        <p>Many people come to essential oils because they are looking for orientation around specific everyday topics. Rather than beginning with individual products, we first look at what matters most to you.</p>
-        <p>These four areas are often a good place to begin:</p>
-      </SectionIntro>
-      <div class="orientation-grid">
-        {orientationTopics.map((topic) => <a class="orientation-card" href={topic.href}><h2>{topic.title}</h2><p>{topic.copy}</p><span aria-hidden="true">Explore →</span></a>)}
-      </div>
-      <p class="orientation-closing">These areas are not separate categories. Mood, sleep, physical wellbeing and everyday routines often influence one another. During a consultation, we therefore look at what best fits your individual situation.</p>
-    </div>
-  </section>
+  <section class="section section--cream"><div class="container split-layout"><div><SectionIntro title="A routine you will actually keep"><p>A useful beginning does not need to be large. A scent moment in the morning, massage after movement or a considered room can be enough.</p><p>Choose one moment, one kind of use and one small habit that is easy to repeat. This is how curiosity becomes practical experience.</p></SectionIntro></div><ResponsiveImage src="/assets/images/products/diffuser-lemon.jpg" alt="A diffuser and essential lemon oil in a bright setting" width={3600} height={2400} variant="portrait-wide" position="58% center" sources={[{ type: 'image/avif', srcset: '/assets/images/optimized/diffuser-lemon-640.avif 640w, /assets/images/optimized/diffuser-lemon-960.avif 960w, /assets/images/optimized/diffuser-lemon-1280.avif 1280w' }, { type: 'image/webp', srcset: '/assets/images/optimized/diffuser-lemon-640.webp 640w, /assets/images/optimized/diffuser-lemon-960.webp 960w, /assets/images/optimized/diffuser-lemon-1280.webp 1280w' }]}/></div></section>
 
-  <section class="section">
-    <div class="container split-layout">
-      <div>
-        <SectionIntro title="Keeping Everyday Routines Simple">
-          <p>A natural routine is not a complicated programme.</p>
-          <p>It can be a small moment that you regularly build into daily life.</p>
-          <p>A scent in the morning.<br />A calm close to the evening.<br />A conscious pause in between.<br />A pleasant room fragrance.<br />A natural household alternative.<br />A regular moment for you or your family.</p>
-          <p>The goal is not perfection.</p>
-          <p>The goal is to find simple things that you will genuinely use and that fit naturally into your life.</p>
-        </SectionIntro>
-      </div>
-      <ResponsiveImage
-        src="/assets/images/products/diffuser-lemon.jpg"
-        alt="Diffuser and lemon essential oil in a calm setting"
-        width={3600}
-        height={2400}
-        variant="portrait-wide"
-        position="58% center"
-        sources={[
-          { type: 'image/avif', srcset: '/assets/images/optimized/diffuser-lemon-640.avif 640w, /assets/images/optimized/diffuser-lemon-960.avif 960w, /assets/images/optimized/diffuser-lemon-1280.avif 1280w' },
-          { type: 'image/webp', srcset: '/assets/images/optimized/diffuser-lemon-640.webp 640w, /assets/images/optimized/diffuser-lemon-960.webp 960w, /assets/images/optimized/diffuser-lemon-1280.webp 1280w' },
-        ]}
-      />
-    </div>
-  </section>
+  <section class="section knowledge-continuation"><div class="container narrow-layout"><SectionIntro title="Keep learning in the Knowledge Hub"><p>Find oil profiles, safe-use guidance, routines and product knowledge in one place. Explore further before you choose anything.</p></SectionIntro><a class="knowledge-continuation__link" href="/en/knowledge/">Go to the Knowledge Hub <span aria-hidden="true">→</span></a></div></section>
 
-  <section class="section section--sage">
-    <div class="container">
-      <SectionIntro title="Areas We Can Explore Together" />
-      <div class="topic-grid">
-        {routineTopics.map((topic) => (
-          <TopicCard title={topic.title}>
-            {topic.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
-            <Button href={topic.href} variant="secondary">Explore relevant knowledge</Button>
-          </TopicCard>
-        ))}
-      </div>
-      <div class="topic-grid__cta">
-        <CTAGroup primaryHref="/en/contact/" primaryLabel="Talk Through a Routine with Kyle" />
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--nature">
-    <div class="container narrow-layout">
-      <SectionIntro title="Why Personal Guidance Is Helpful">
-        <p>doTERRA offers a broad range of products.</p>
-        <p>That is exciting, but it can also feel overwhelming at first.</p>
-        <p>Single oils.<br />Oil blends.<br />Starter kits.<br />Personal care products.<br />Household products.<br />Nutritional supplements.<br />Wellness systems.</p>
-        <p>When you browse the shop alone, it is not always easy to tell which products are right for you.</p>
-        <p>That is why the best first step is often a short conversation rather than a purchase.</p>
-        <p>We clarify what you are looking for, what you already know and which starting point may be right for you.</p>
-      </SectionIntro>
-    </div>
-  </section>
-
-  <section class="section section--cream">
-    <div class="container split-layout split-layout--reverse">
-      <ResponsiveImage
-        src="/assets/images/products/product-detail-01.png"
-        alt="Essential oils on a wooden plate in warm daylight"
-        width={1672}
-        height={941}
-        variant="portrait-wide"
-        position="62% center"
-        sources={[
-          { type: 'image/avif', srcset: '/assets/images/optimized/product-detail-01-640.avif 640w, /assets/images/optimized/product-detail-01-960.avif 960w, /assets/images/optimized/product-detail-01-1280.avif 1280w' },
-          { type: 'image/webp', srcset: '/assets/images/optimized/product-detail-01-640.webp 640w, /assets/images/optimized/product-detail-01-960.webp 960w, /assets/images/optimized/product-detail-01-1280.webp 1280w' },
-        ]}
-      />
-      <div>
-        <SectionIntro title="A Simple Way to Begin">
-          <p>You briefly tell me what interests you.</p>
-          <p>I ask a few simple questions so that I can better understand your needs.</p>
-          <p>Then we consider the available options.</p>
-          <p>This could be a small routine.<br />A single product.<br />A starter kit.<br />A doTERRA customer account.<br />Or simply a clear answer to your questions for now.</p>
-          <p>When you get started with doTERRA products through me, you can open an official doTERRA customer account. This allows you to purchase products at wholesale pricing and save 25% on your purchases. You also have someone you can contact for personal support.</p>
-        </SectionIntro>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--sage deeper-knowledge">
-    <div class="container">
-      <SectionIntro title="If you want to go deeper">
-        <p>You can get to know individual oils, safe use and simple routines step by step. This gives you useful background before you decide on products.</p>
-      </SectionIntro>
-      <div class="deeper-knowledge__grid">
-        {deeperKnowledgeLinks.map((link) => (
-          <TopicCard title={link.title}>
-            <Button href={link.href} variant="secondary">Learn more</Button>
-          </TopicCard>
-        ))}
-      </div>
-      <div class="deeper-knowledge__cta">
-        <CTAGroup primaryHref="/en/contact/" primaryLabel="Talk It Through with Kyle" />
-      </div>
-    </div>
-  </section>
-
-  <CTASection
-    title="The Simplest Next Step"
-    primaryHref="/en/contact/"
-    primaryLabel="Discuss a Suitable Routine"
-    secondaryHref={contactLinks.whatsapp.href}
-    secondaryLabel="Message Me on WhatsApp"
-  >
-    <p>You do not need to know which oil you need.</p>
-    <p>You do not need to know which kit is right.</p>
-    <p>You do not need to be sure yet whether the doTERRA product range is right for you.</p>
-    <p>Simply tell me which topic interests you.</p>
-    <p>Then we can work out a sensible next step.</p>
-  </CTASection>
-
-  <section class="compliance-section">
-    <div class="container">
-      <ComplianceNote label="Note">
-        <h2>A Brief Note</h2>
-        <p>My support is not a substitute for medical diagnosis or treatment.<br />I do not claim that products can diagnose, treat or cure medical conditions.</p>
-        <p>Essential oils, wellness products and everyday routines can be part of your life, but they do not replace medical or therapeutic care.</p>
-        <p>If you have health concerns or medical questions, please consult a doctor or another appropriately qualified healthcare professional.</p>
-      </ComplianceNote>
-    </div>
-  </section>
+  <CTASection title="Questions about your next step?" primaryHref="/en/contact/" primaryLabel="Talk with Kyle"><p>If you would like to place a topic more clearly, Kyle can help you find a sensible next step.</p></CTASection>
+  <section class="compliance-section"><div class="container"><ComplianceNote label="A brief note"><h2>A brief note</h2><p>Guidance does not replace medical diagnosis or treatment. Essential oils and wellness products can be part of considered routines, but not a substitute for medical care.</p></ComplianceNote></div></section>
 </PageLayout>
 
 <style>
-  .section { padding: var(--space-64) 0; }
-  .section--cream { background: var(--color-soft-cream); }
-  .section--sage { background: rgb(168 184 160 / 20%); }
-  .section--nature { position: relative; isolation: isolate; background: var(--color-soft-cream); }
-  .section--nature::before { content: ''; position: absolute; inset: 0; z-index: -2; background: url('/assets/images/nature/nature-heath-hero-02.png') center 52% / cover no-repeat; }
-  .section--nature::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgb(250 247 241 / 76%); }
-  .narrow-layout { max-width: var(--container-text); }
-  .split-layout { display: grid; gap: var(--space-40); align-items: center; }
-  .application-grid { display: grid; gap: var(--space-20); }
-  .application-safety { margin: var(--space-32) 0 0; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-soft-cream); color: var(--color-text-secondary); }
-  .application-connection { max-width: var(--container-text); margin: var(--space-24) 0 0; color: var(--color-text-secondary); }
-  .orientation-grid { display: grid; gap: var(--space-20); }
-  .orientation-card { display: grid; gap: var(--space-12); padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); color: var(--color-text-primary); text-decoration: none; }
-  .orientation-card h2, .orientation-card p { margin: 0; }
-  .orientation-card p { color: var(--color-text-secondary); }
-  .orientation-card span { color: var(--color-deep-forest); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
-  .orientation-closing { max-width: var(--container-text); margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
-  .topic-grid { display: grid; gap: var(--space-20); }
-  .topic-grid :global(.topic-card > div) { display: flex; height: calc(100% - 52px); flex-direction: column; }
-  .topic-grid :global(.topic-card p) { margin: 0 0 var(--space-12); }
-  .topic-grid :global(.topic-card p:last-of-type) { margin-bottom: var(--space-24); }
-  .topic-grid :global(.topic-card .button) { margin-top: auto; }
-  .topic-grid__cta { margin-top: var(--space-32); }
-  .deeper-knowledge__grid { display: grid; gap: var(--space-16); }
-  .deeper-knowledge__grid :global(.button) { width: 100%; }
-  .deeper-knowledge__cta { margin-top: var(--space-32); }
-  .compliance-section { padding: 0 0 var(--space-80); }
-  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  .compliance-section :global(p + p) { margin-top: var(--space-12); }
-  @media (min-width: 768px) {
-    .section { padding-block: var(--space-96); }
-    .application-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: var(--space-24); }
-    .orientation-grid { grid-auto-rows: 1fr; }
-    .orientation-grid,
-    .topic-grid,
-    .deeper-knowledge__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
-  }
-  @media (min-width: 1024px) {
-    .section { padding-block: var(--space-120); }
-    .split-layout { grid-template-columns: minmax(0, 1fr) minmax(360px, .8fr); gap: var(--space-80); }
-    .split-layout--reverse { grid-template-columns: minmax(360px, .8fr) minmax(0, 1fr); }
-  }
+  .section { padding: var(--space-64) 0; } .section--cream { background: var(--color-soft-cream); } .section--sage { background: rgb(168 184 160 / 20%); } .narrow-layout { max-width: var(--container-text); } .application-grid, .intent-grid, .split-layout { display: grid; gap: var(--space-20); }
+  .safety-note { max-width: var(--container-text); margin: var(--space-32) 0 0; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-soft-cream); color: var(--color-text-secondary); }
+  .intent-card { display: grid; gap: var(--space-12); min-height: 190px; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); color: var(--color-text-primary); text-decoration: none; }
+  .intent-card h2, .intent-card p { margin: 0; } .intent-card h2 { font-size: var(--font-size-h3-mobile); line-height: 1.2; } .intent-card p { color: var(--color-text-secondary); } .intent-card span { align-self: end; margin-top: auto; color: var(--color-deep-forest); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); } .intent-card:hover, .intent-card:focus-visible { border-color: var(--color-sage-green); }
+  .knowledge-continuation { background: var(--color-warm-white); } .knowledge-continuation__link { display: inline-flex; align-items: center; gap: var(--space-8); min-height: 48px; color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; } .knowledge-continuation__link:hover, .knowledge-continuation__link:focus-visible { text-decoration: underline; }
+  .compliance-section { padding: 0 0 var(--space-80); } .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  @media (min-width: 768px) { .section { padding-block: var(--space-96); } .application-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .intent-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); } }
+  @media (min-width: 1024px) { .section { padding-block: var(--space-120); } .intent-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .split-layout { grid-template-columns: minmax(0, 1fr) minmax(360px, .82fr); gap: var(--space-80); align-items: center; } }
 </style>

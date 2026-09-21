@@ -9,7 +9,7 @@ route: "/en/knowledge/glossary/doterra-customer-account/"
 deRoute: "/de/wissen/glossar/doterra-kundenkonto/"
 worldId: "glossary"
 worldLabel: "Glossary"
-seoTitle: "doTERRA customer account explained simply"
+seoTitle: "doTERRA customer account: glossary entry"
 description: "A doTERRA customer account is an account used to order products and, depending on the market, access purchasing advantages."
 relatedArticleIds:
   - "KO-W14-EN-008"

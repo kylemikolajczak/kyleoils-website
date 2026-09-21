@@ -9,7 +9,7 @@ route: "/de/wissen/glossar/doterra-kundenkonto/"
 enRoute: "/en/knowledge/glossary/doterra-customer-account/"
 worldId: "glossary"
 worldLabel: "Glossar"
-seoTitle: "doTERRA Kundenkonto einfach erklärt"
+seoTitle: "doTERRA Kundenkonto: Glossar-Eintrag"
 description: "Ein doTERRA Kundenkonto ist ein Zugang, über den Produkte bestellt und je nach Markt Einkaufsvorteile genutzt werden können."
 relatedArticleIds:
   - "KO-W14-DE-008"

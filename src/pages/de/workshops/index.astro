@@ -8,13 +8,10 @@ import StepList from '../../../components/sections/StepList.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 
 const workshopFocus = [
-  'Was ätherische Öle sind und wie konzentriert sie sind',
-  'Wie doTERRA grundsätzlich funktioniert',
-  'Welche Starter-Sets es gibt und für wen sie passen können',
-  'Wie man mit Diffuser, Duft und einfachen Routinen ruhig startet',
-  'Was bei Verdünnung, Hautkontakt und sensiblen Personen wichtig ist',
-  'Welche Fragen vor einer Bestellung sinnvoll sind',
-  'Wie persönliche Begleitung nach dem Kauf aussehen kann',
+  'ein klares Grundverständnis für ätherische Öle und doTERRA',
+  'eine sichere erste Einordnung von Duft, Diffuser und einfachen Routinen',
+  'einen Überblick über Starter-Sets und sinnvolle Fragen vor einer Entscheidung',
+  'Raum für eigene Fragen und realistische nächste Schritte',
 ];
 
 const formats = [
@@ -45,18 +42,8 @@ const steps = [
   { title: '2. Grundverständnis ätherischer Öle', paragraphs: [] },
   { title: '3. Duft, Diffuser und einfache Alltagsroutinen', paragraphs: [] },
   { title: '4. Sicherheit, Verdünnung und sensible Situationen', paragraphs: [] },
-  { title: '5. Starter-Sets ruhig einordnen', paragraphs: [] },
+  { title: '5. Starter-Sets verstehen und vergleichen', paragraphs: [] },
   { title: '6. Fragen sammeln und nächste Schritte klären', paragraphs: [] },
-];
-
-const expectations = [
-  'eine ruhige Einführung',
-  'klare Sprache ohne Fachchaos',
-  'realistische Einordnung',
-  'keine Heilversprechen',
-  'keine Drucksituation',
-  'Raum für Fragen',
-  'Orientierung für den eigenen Alltag',
 ];
 
 const preparationQuestions = [
@@ -92,9 +79,8 @@ const preparationQuestions = [
 
   <section class="section section--cream">
     <div class="container narrow-layout">
-      <SectionIntro title="Was ein Workshop leisten soll">
-        <p>Ein Workshop hilft dir und deiner Gruppe, doTERRA besser zu verstehen.</p>
-        <p>Im Mittelpunkt stehen:</p>
+      <SectionIntro title="Was deine Gruppe mitnimmt">
+        <p>Ein Workshop gibt deiner Gruppe einen klaren, sicheren Einstieg und genug Raum für eigene Fragen.</p>
       </SectionIntro>
       <ul class="check-list">{workshopFocus.map((item) => <li>{item}</li>)}</ul>
     </div>
@@ -129,15 +115,6 @@ const preparationQuestions = [
 
   <section class="section">
     <div class="container narrow-layout">
-      <SectionIntro title="Was Teilnehmer erwarten können">
-        <p>Teilnehmer bekommen:</p>
-      </SectionIntro>
-      <ul class="check-list">{expectations.map((item) => <li>{item}</li>)}</ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container narrow-layout">
       <SectionIntro title="Vorbereitung">
         <p>Für einen guten Workshop helfen ein paar einfache Fragen:</p>
       </SectionIntro>
@@ -154,7 +131,7 @@ const preparationQuestions = [
     <div class="container">
       <ComplianceNote label="Hinweis">
         <h2>Hinweis</h2>
-        <p>Kyle Oils ersetzt keine medizinische Beratung und gibt keine Heilversprechen. Workshops dienen der verständlichen Einordnung von doTERRA Produkten, Routinen und Sicherheitsfragen.</p>
+        <p>Workshops dienen der verständlichen Einordnung von doTERRA Produkten, Routinen und Sicherheitsfragen. Sie ersetzen keine medizinische Beratung und enthalten keine Heilversprechen.</p>
       </ComplianceNote>
     </div>
   </section>

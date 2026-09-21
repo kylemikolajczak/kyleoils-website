@@ -18,7 +18,7 @@ export const socialLinks = {
 } as const;
 
 export const englishOfficialLinks = {
-  shop: { label: 'Official doTERRA Shop', href: officialLinks.shop.href },
+  shop: { label: 'Official doTERRA Shop · Germany', href: officialLinks.shop.href },
   office: { label: 'Personal doTERRA Office', href: officialLinks.office.href },
   facebook: officialLinks.facebook,
   instagram: officialLinks.instagram,

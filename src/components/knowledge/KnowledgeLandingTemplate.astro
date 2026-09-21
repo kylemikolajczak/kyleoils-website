@@ -11,7 +11,6 @@ import type { Locale } from '../../data/locales';
 interface StartHereCard { title: string; description: string; href: string; label: string; }
 interface Props { locale: Locale; title: string; description: string; worlds: KnowledgeWorld[]; featuredArticles?: KnowledgeArticleSummary[]; recommendedStartArticles?: KnowledgeArticleSummary[]; searchArticles?: KnowledgeArticleSummary[]; startHereCard?: StartHereCard; }
 const { locale, title, description, worlds, featuredArticles = [], recommendedStartArticles = [], searchArticles = [], startHereCard } = Astro.props;
-const contactHref = locale === 'de' ? '/de/kontakt/' : '/en/contact/';
 const worldLabel = locale === 'de' ? 'Wissenswelten' : 'Knowledge Worlds';
 const linkLabel = locale === 'de' ? 'Wissenswelt öffnen' : 'Open Knowledge World';
 const recommendedStartTitle = locale === 'de' ? 'Empfohlener Start für Anfänger' : 'Recommended Start for Beginners';
@@ -41,7 +40,7 @@ const orientationPaths = locale === 'de'
       <p class="eyebrow">{locale === 'de' ? 'Kyle Oils Wissen' : 'Kyle Oils Knowledge'}</p>
       <h1>{title}</h1>
       <p class="knowledge-hero__intro">{description}</p>
-      <CTAGroup primaryHref={contactHref} primaryLabel={locale === 'de' ? 'Persönliche Beratung anfragen' : 'Request a personal consultation'} />
+      <CTAGroup primaryHref="#knowledge-search" primaryLabel={locale === 'de' ? 'Wissen durchsuchen' : 'Search the Knowledge Hub'} />
     </div>
     <div class="knowledge-hero__image" role="img" aria-label={locale === 'de' ? 'Lüneburger Heide in warmem Licht' : 'Lüneburg Heath in warm light'}></div>
   </div>
