@@ -3,13 +3,13 @@ id: "KO-W32-DE-007"
 translationPairId: "KO-W32-PAIR-007"
 language: "de"
 status: "approved-content-pack-ready"
-title: "LRP Treueprogramm ruhig erklärt"
+title: "LRP Treueprogramm verständlich erklärt"
 slug: "lrp-treueprogramm-ruhig-erklaert"
 route: "/de/wissen/produkte-systeme/lrp-treueprogramm-ruhig-erklaert/"
 enRoute: "/en/knowledge/products-systems/lrp-loyalty-program-explained-calmly/"
 worldId: "products-systems"
 worldLabel: "Produkte & Systeme"
-seoTitle: "LRP Treueprogramm ruhig erklärt"
+seoTitle: "LRP Treueprogramm verständlich erklärt"
 description: "Was das doTERRA LRP grundsätzlich ist, wann es sinnvoll sein kann und warum es keine Pflicht für den Einstieg ist."
 focus: "LRP, Treueprogramm, Wiederbestellung, Produktpunkte"
 searchKeywords:
@@ -37,7 +37,7 @@ sourceUrls:
   - "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/"
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
 ---
-# LRP Treueprogramm ruhig erklärt
+# LRP Treueprogramm verständlich erklärt
 
 Was das doTERRA LRP grundsätzlich ist, wann es sinnvoll sein kann und warum es keine Pflicht für den Einstieg ist.
 

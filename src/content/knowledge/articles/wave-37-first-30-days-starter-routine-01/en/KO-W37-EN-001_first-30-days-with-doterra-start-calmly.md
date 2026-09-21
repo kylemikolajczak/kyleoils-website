@@ -3,13 +3,13 @@ id: "KO-W37-EN-001"
 translationPairId: "KO-W37-PAIR-001"
 language: "en"
 status: "approved-content-pack-ready"
-title: "The first 30 days with doTERRA: start calmly"
+title: "Your First 30 Days with doTERRA: A Clear Place to Begin"
 slug: "first-30-days-with-doterra-start-calmly"
 route: "/en/knowledge/routines/first-30-days-with-doterra-start-calmly/"
 deRoute: "/de/wissen/routinen/erste-30-tage-mit-doterra-ruhig-starten/"
 worldId: "routines"
 worldLabel: "Routines"
-seoTitle: "The first 30 days with doTERRA: start calmly"
+seoTitle: "Your First 30 Days with doTERRA: A Clear Place to Begin"
 description: "A calm 30-day start plan for new doTERRA customers, without overwhelm and without trying to do everything at once."
 focus: "30 days, getting started, orientation, first routines"
 searchKeywords:
@@ -36,7 +36,7 @@ sourceUrls:
   - "https://shop.doterra.com/DE/de_DE/shop/introductory-kit/"
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
 ---
-# The first 30 days with doTERRA: start calmly
+# Your First 30 Days with doTERRA: A Clear Place to Begin
 
 A calm 30-day start plan for new doTERRA customers, without overwhelm and without trying to do everything at once.
 

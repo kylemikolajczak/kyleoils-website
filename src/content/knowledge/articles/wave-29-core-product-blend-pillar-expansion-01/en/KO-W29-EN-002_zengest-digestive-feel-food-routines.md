@@ -3,15 +3,15 @@ id: "KO-W29-EN-002"
 translationPairId: "KO-W29-PAIR-002"
 language: "en"
 status: "approved-content-pack-ready"
-title: "ZenGest: digestive feel & food routines"
+title: "ZenGest: meals, travel & everyday habits"
 slug: "zengest-digestive-feel-food-routines"
 route: "/en/knowledge/products-systems/zengest-digestive-feel-food-routines/"
 deRoute: "/de/wissen/produkte-systeme/zengest-bauchgefuehl-essensalltag/"
 worldId: "products-systems"
 worldLabel: "Products & Systems"
-seoTitle: "ZenGest: digestive feel & food routines"
+seoTitle: "ZenGest: meals, travel & everyday habits"
 description: "How to explain ZenGest safely: food routines, digestive feel, travel and conscious product choice without stomach pain or digestive problem claims."
-pillar: "Digestive feel & food routines"
+pillar: "Meals, travel & everyday habits"
 relatedArticleIds:
   - "KO-W28-EN-FOOD"
   - "KO-W25-EN-023"
@@ -30,7 +30,7 @@ sourceUrls:
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
   - "https://www.doterra.com/US/en/essential-oil-safety"
 ---
-# ZenGest: digestive feel & food routines
+# ZenGest: meals, travel & everyday habits
 
 doTERRA ZenGest belongs to the product areas where people have very concrete expectations. That is exactly why public language needs the right balance: close enough to real everyday use, but without medical or exaggerated claims.
 

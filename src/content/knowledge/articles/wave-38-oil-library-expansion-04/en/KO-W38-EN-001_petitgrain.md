@@ -3,13 +3,13 @@ id: "KO-W38-EN-001"
 translationPairId: "KO-W38-PAIR-001"
 language: "en"
 status: "approved-content-pack-ready"
-title: "Petitgrain: green, fresh and calmly placed"
+title: "Petitgrain: green, fresh and versatile"
 slug: "petitgrain"
 route: "/en/knowledge/oil-library/petitgrain/"
 deRoute: "/de/wissen/oel-lexikon/petitgrain/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
-seoTitle: "Petitgrain: green, fresh and calmly placed"
+seoTitle: "Petitgrain: green, fresh and versatile"
 description: "Petitgrain is a green, fresh oil from the bitter orange tree that can be placed in scent, evening and body-care routines."
 focus: "green-fresh scent, room scent, evening routine, body care"
 searchKeywords:
@@ -44,7 +44,7 @@ sourceUrls:
   - "https://www.doterra.com/US/en/thyme-oil-education"
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
 ---
-# Petitgrain: green, fresh and calmly placed
+# Petitgrain: green, fresh and versatile
 
 Petitgrain is a green, fresh oil from the bitter orange tree that can be placed in scent, evening and body-care routines.
 

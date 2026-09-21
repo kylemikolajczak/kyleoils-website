@@ -3,13 +3,13 @@ id: "KO-W29-EN-008"
 translationPairId: "KO-W29-PAIR-008"
 language: "en"
 status: "approved-content-pack-ready"
-title: "How to place oil capsule recipes safely"
+title: "Oil capsule recipes: a safety-first guide"
 slug: "oil-capsule-recipes-safe-context"
 route: "/en/knowledge/products-systems/oil-capsule-recipes-safe-context/"
 deRoute: "/de/wissen/produkte-systeme/oel-kapsel-rezepte-sicher-einordnen/"
 worldId: "products-systems"
 worldLabel: "Products & Systems"
-seoTitle: "How to place oil capsule recipes safely"
+seoTitle: "Oil capsule recipes: a safety-first guide"
 description: "Why Kyle Oils does not publish illness or FluBomb capsule recipes publicly and how internal use is placed more safely."
 pillar: "Product choice, safety & personal guidance"
 relatedArticleIds:
@@ -30,7 +30,7 @@ sourceUrls:
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
   - "https://www.doterra.com/US/en/essential-oil-safety"
 ---
-# How to place oil capsule recipes safely
+# Oil capsule recipes: a safety-first guide
 
 Capsule recipes and internal use belongs to the product areas where people have very concrete expectations. That is exactly why public language needs the right balance: close enough to real everyday use, but without medical or exaggerated claims.
 

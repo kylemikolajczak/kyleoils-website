@@ -3,13 +3,13 @@ id: "KO-W32-EN-003"
 translationPairId: "KO-W32-PAIR-003"
 language: "en"
 status: "approved-content-pack-ready"
-title: "How to place the Family Essentials Kit safely"
+title: "Family Essentials Kit: a considered introduction"
 slug: "family-essentials-kit-safe-context"
 route: "/en/knowledge/products-systems/family-essentials-kit-safe-context/"
 deRoute: "/de/wissen/produkte-systeme/family-essentials-kit-sicher-einordnen/"
 worldId: "products-systems"
 worldLabel: "Products & Systems"
-seoTitle: "How to place the Family Essentials Kit safely"
+seoTitle: "Family Essentials Kit: a considered introduction"
 description: "Who the Family Essentials Kit may interest and why families still need good safety logic."
 focus: "family, basic oils, everyday routines, safety"
 searchKeywords:
@@ -37,7 +37,7 @@ sourceUrls:
   - "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/"
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
 ---
-# How to place the Family Essentials Kit safely
+# Family Essentials Kit: a considered introduction
 
 Who the Family Essentials Kit may interest and why families still need good safety logic.
 

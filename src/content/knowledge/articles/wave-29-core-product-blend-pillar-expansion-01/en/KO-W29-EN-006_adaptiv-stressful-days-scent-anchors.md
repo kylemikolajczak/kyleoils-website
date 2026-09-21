@@ -3,15 +3,15 @@ id: "KO-W29-EN-006"
 translationPairId: "KO-W29-PAIR-006"
 language: "en"
 status: "approved-content-pack-ready"
-title: "Adaptiv: stressful days & scent anchors"
+title: "Adaptiv: scent anchors for busy days"
 slug: "adaptiv-stressful-days-scent-anchors"
 route: "/en/knowledge/products-systems/adaptiv-stressful-days-scent-anchors/"
 deRoute: "/de/wissen/produkte-systeme/adaptiv-stressiger-alltag-duftanker/"
 worldId: "products-systems"
 worldLabel: "Products & Systems"
-seoTitle: "Adaptiv: stressful days & scent anchors"
+seoTitle: "Adaptiv: scent anchors for busy days"
 description: "How to explain Adaptiv safely: scent anchors, full days and inner orientation without stress or anxiety treatment claims."
-pillar: "Stressful days & inner orientation"
+pillar: "Busy days & small pauses"
 relatedArticleIds:
   - "KO-W26-EN-006"
   - "KO-W25-EN-007"
@@ -30,7 +30,7 @@ sourceUrls:
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
   - "https://www.doterra.com/US/en/essential-oil-safety"
 ---
-# Adaptiv: stressful days & scent anchors
+# Adaptiv: scent anchors for busy days
 
 doTERRA Adaptiv belongs to the product areas where people have very concrete expectations. That is exactly why public language needs the right balance: close enough to real everyday use, but without medical or exaggerated claims.
 

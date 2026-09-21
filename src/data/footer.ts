@@ -6,7 +6,7 @@ import { englishAdditionalNavigation, englishMainNavigation } from './navigation
 export const footerData = {
   brand: 'Kyle Daniel Mikolajczak',
   claim: 'Natürlich. Klar. Mit Kyle.',
-  description: 'doTERRA Produkte und Routinen klar begleitet.',
+  description: 'Praktische Begleitung rund um doTERRA Produkte und Routinen.',
   primaryNavigation: [mainNavigation[0], mainNavigation[1], mainNavigation[3], mainNavigation[4], mainNavigation[5], mainNavigation[6]],
   knowledgeLinks: [
     additionalNavigation[0],
@@ -29,7 +29,7 @@ export const footerData = {
 export const englishFooterData = {
   brand: 'Kyle Daniel Mikolajczak',
   claim: 'Natural routines. Clear guidance.',
-  description: 'Thoughtful guidance for doTERRA products and routines.',
+  description: 'Practical support for doTERRA products and everyday routines.',
   primaryNavigation: [englishMainNavigation[0], englishMainNavigation[1], englishMainNavigation[3], englishMainNavigation[4], englishMainNavigation[5], englishMainNavigation[6]],
   knowledgeLinks: [
     englishAdditionalNavigation[0],

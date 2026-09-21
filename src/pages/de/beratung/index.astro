@@ -215,8 +215,8 @@ const consultationFaqs = [
 
   <section class="compliance-section">
     <div class="container">
-      <ComplianceNote>
-        <h2>Ersetzt die Beratung einen Arzt oder Therapeuten?</h2>
+      <ComplianceNote label="Hinweis">
+        <p class="compliance-section__label">Hinweis</p>
         <p>Nein. Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung. Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
       </ComplianceNote>
     </div>
@@ -238,7 +238,8 @@ const consultationFaqs = [
   .trust-grid, .topic-grid { display: grid; gap: var(--space-20); }
   .local-guidance-context :global(.button) { margin-top: var(--space-24); }
   .compliance-section { padding: 0 0 var(--space-80); }
-  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
+  .compliance-section__label { color: var(--color-text-primary); font-size: .7rem; font-weight: var(--font-weight-semibold); letter-spacing: .1em; text-transform: uppercase; }
+  .compliance-section__label + :global(p) { margin-top: var(--space-8); }
   @media (min-width: 768px) {
     .section { padding-block: var(--space-96); }
     .trust-grid, .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }

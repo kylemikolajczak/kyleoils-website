@@ -3,13 +3,13 @@ id: "KO-W32-EN-007"
 translationPairId: "KO-W32-PAIR-007"
 language: "en"
 status: "approved-content-pack-ready"
-title: "LRP loyalty program explained calmly"
+title: "How the doTERRA LRP Loyalty Program Works"
 slug: "lrp-loyalty-program-explained-calmly"
 route: "/en/knowledge/products-systems/lrp-loyalty-program-explained-calmly/"
 deRoute: "/de/wissen/produkte-systeme/lrp-treueprogramm-ruhig-erklaert/"
 worldId: "products-systems"
 worldLabel: "Products & Systems"
-seoTitle: "LRP loyalty program explained calmly"
+seoTitle: "How the doTERRA LRP Loyalty Program Works"
 description: "What doTERRA LRP basically is, when it may make sense and why it is not mandatory for getting started."
 focus: "LRP, loyalty program, reorder, product points"
 searchKeywords:
@@ -37,7 +37,7 @@ sourceUrls:
   - "https://shop.doterra.com/DE/de_DE/shop/my-loyalty-rewards/"
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
 ---
-# LRP loyalty program explained calmly
+# How the doTERRA LRP Loyalty Program Works
 
 What doTERRA LRP basically is, when it may make sense and why it is not mandatory for getting started.
 

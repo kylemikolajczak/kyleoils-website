@@ -39,6 +39,7 @@ const independenceNote = locale === 'de'
       <div class="footer-link-group">
         <p class="footer-link-group__label">{labels.official}</p>
         <ul>{data.officialLinks.map((item) => <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a></li>)}</ul>
+        {locale === 'en' && <a class="footer-international-link" href="/en/contact/">Outside Germany? Ask Kyle for your country link.</a>}
       </div>
       <div class="footer-link-group">
         <p class="footer-link-group__label">{labels.social}</p>
@@ -75,6 +76,7 @@ const independenceNote = locale === 'de'
   .footer-brand__mark-link:focus-visible { outline-color: var(--color-linen); }
   .footer-link-group + .footer-link-group { margin-top: var(--space-16); }
   .footer-link-group__label { margin: 0 0 var(--space-8); color: rgb(239 230 216 / 72%); font-size: .7rem; font-weight: var(--font-weight-semibold); letter-spacing: .1em; text-transform: uppercase; }
+  .footer-international-link { display: inline-block; margin-top: var(--space-8); color: rgb(239 230 216 / 82%); font-size: var(--font-size-small); line-height: var(--line-height-small); }
   .footer-social-links { display: flex; flex-wrap: wrap; gap: var(--space-8) var(--space-16); }
   .footer-bottom { display: grid; gap: var(--space-12); margin-top: var(--space-32); padding-top: var(--space-20); border-top: 1px solid rgb(239 230 216 / 25%); font-size: var(--font-size-small); }
   .footer-bottom__legal { display: flex; flex-wrap: wrap; gap: var(--space-12) var(--space-24); align-items: center; }
@@ -85,6 +87,9 @@ const independenceNote = locale === 'de'
   @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 1024px) {
     .footer-grid { grid-template-columns: minmax(280px, 1.45fr) repeat(3, minmax(0, 1fr)); gap: var(--space-40); }
+    .footer-social-links { flex-wrap: nowrap; gap: var(--space-8); font-size: var(--font-size-small); }
+    .footer-social-links li { display: flex; align-items: center; white-space: nowrap; }
+    .footer-social-links li + li::before { content: '·'; margin-right: var(--space-8); color: rgb(239 230 216 / 65%); }
     .footer-bottom { grid-template-columns: max-content minmax(0, 1fr); align-items: center; }
     .footer-bottom__note { text-align: left; justify-self: end; }
   }
