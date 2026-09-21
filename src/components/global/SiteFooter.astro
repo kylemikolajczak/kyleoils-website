@@ -6,8 +6,8 @@ interface Props { locale?: Locale; }
 const { locale = 'de' } = Astro.props;
 const data = locale === 'de' ? footerData : englishFooterData;
 const labels = locale === 'de'
-  ? { main: 'Navigation im Footer', mainTitle: 'Navigation', knowledge: 'Wissen & Orientierung', contactAndOfficial: 'Kontakt & Offizielle Links', legal: 'Rechtliches', home: 'Zur Startseite', analytics: 'Analytics-Einstellungen' }
-  : { main: 'Footer navigation', mainTitle: 'Navigation', knowledge: 'Knowledge & Guidance', contactAndOfficial: 'Contact & Official Links', legal: 'Legal', home: 'Go to homepage', analytics: 'Analytics preferences' };
+  ? { main: 'Navigation im Footer', mainTitle: 'Navigation', knowledge: 'Wissen & Orientierung', contactAndOfficial: 'Kontakt & Offizielle Links', directContact: 'Direkter Kontakt', official: 'Offizielles doTERRA', social: 'Social Media', legal: 'Rechtliches', home: 'Zur Startseite', analytics: 'Analytics-Einstellungen' }
+  : { main: 'Footer navigation', mainTitle: 'Navigation', knowledge: 'Knowledge & Guidance', contactAndOfficial: 'Contact & Official Links', directContact: 'Direct contact', official: 'Official doTERRA', social: 'Social', legal: 'Legal', home: 'Go to homepage', analytics: 'Analytics preferences' };
 const independenceNote = locale === 'de'
   ? ['Kyle Daniel Mikolajczak ist doTERRA Wellness Advocate und arbeitet unabhängig.', 'doTERRA ist der Produktpartner, nicht die Hauptmarke dieser Website.']
   : ['Kyle Daniel Mikolajczak is an independent doTERRA Wellness Advocate.', 'doTERRA is the product partner, not the primary brand of this website.'];
@@ -32,8 +32,18 @@ const independenceNote = locale === 'de'
     </nav>
     <nav aria-label={labels.contactAndOfficial}>
       <h2>{labels.contactAndOfficial}</h2>
-      <ul class="footer-contact-links">{data.contactLinks.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul>
-      <ul>{data.officialLinks.map((item) => <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a></li>)}</ul>
+      <div class="footer-link-group">
+        <p class="footer-link-group__label">{labels.directContact}</p>
+        <ul>{data.directContactLinks.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul>
+      </div>
+      <div class="footer-link-group">
+        <p class="footer-link-group__label">{labels.official}</p>
+        <ul>{data.officialLinks.map((item) => <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a></li>)}</ul>
+      </div>
+      <div class="footer-link-group">
+        <p class="footer-link-group__label">{labels.social}</p>
+        <ul class="footer-social-links">{data.socialLinks.map((item) => <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a></li>)}</ul>
+      </div>
     </nav>
   </div>
   <div class="container footer-bottom">
@@ -63,7 +73,9 @@ const independenceNote = locale === 'de'
   a:hover { text-decoration: underline; }
   .footer-brand__mark-link:hover { text-decoration: none; }
   .footer-brand__mark-link:focus-visible { outline-color: var(--color-linen); }
-  .footer-contact-links { margin-bottom: var(--space-12); padding-bottom: var(--space-12); border-bottom: 1px solid rgb(239 230 216 / 25%); }
+  .footer-link-group + .footer-link-group { margin-top: var(--space-16); }
+  .footer-link-group__label { margin: 0 0 var(--space-8); color: rgb(239 230 216 / 72%); font-size: .7rem; font-weight: var(--font-weight-semibold); letter-spacing: .1em; text-transform: uppercase; }
+  .footer-social-links { display: flex; flex-wrap: wrap; gap: var(--space-8) var(--space-16); }
   .footer-bottom { display: grid; gap: var(--space-12); margin-top: var(--space-32); padding-top: var(--space-20); border-top: 1px solid rgb(239 230 216 / 25%); font-size: var(--font-size-small); }
   .footer-bottom__legal { display: flex; flex-wrap: wrap; gap: var(--space-12) var(--space-24); align-items: center; }
   .footer-bottom nav ul { display: flex; flex-wrap: wrap; gap: var(--space-8) var(--space-20); }

@@ -14,12 +14,12 @@ export const footerData = {
     { label: 'Öl-Lexikon', href: '/de/wissen/oel-lexikon/' },
     { label: 'Sicher anwenden', href: '/de/wissen/sicher-anwenden/' },
   ],
-  contactLinks: [
+  directContactLinks: [
     contactLinks.whatsapp,
     contactLinks.email,
-    socialLinks.linkedin,
   ],
-  officialLinks: Object.values(officialLinks),
+  officialLinks: [officialLinks.shop, officialLinks.office],
+  socialLinks: [socialLinks.linkedin, socialLinks.facebook, socialLinks.instagram],
   legalNavigation: [
     { label: 'Impressum', href: '/de/impressum/' },
     { label: 'Datenschutz', href: '/de/datenschutz/' },
@@ -37,12 +37,12 @@ export const englishFooterData = {
     { label: 'Oil Library', href: '/en/knowledge/oil-library/' },
     { label: 'Safe Use', href: '/en/knowledge/safe-use/' },
   ],
-  contactLinks: [
+  directContactLinks: [
     englishContactLinks.whatsapp,
     englishContactLinks.email,
-    socialLinks.linkedin,
   ],
-  officialLinks: Object.values(englishOfficialLinks),
+  officialLinks: [englishOfficialLinks.shop, englishOfficialLinks.office],
+  socialLinks: [socialLinks.linkedin, socialLinks.facebook, socialLinks.instagram],
   legalNavigation: [
     { label: 'Legal Notice', href: '/en/legal-notice/' },
     { label: 'Privacy Policy', href: '/en/privacy-policy/' },
