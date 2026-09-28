@@ -20,7 +20,10 @@ const baseUrl = Astro.site ?? Astro.url.origin;
 const canonicalUrl = new URL(currentPath, baseUrl);
 const germanUrl = languagePaths ? new URL(languagePaths.de, baseUrl) : undefined;
 const englishUrl = languagePaths ? new URL(languagePaths.en, baseUrl) : undefined;
-const socialImageUrl = new URL('/og-image.jpg', baseUrl);
+const socialImageUrl = new URL('/og-image-v2.jpg', baseUrl);
+const socialImageAlt = lang === 'de'
+  ? 'Kyle Oils: natürliche Routinen und persönliche Beratung'
+  : 'Kyle Oils: natural routines and personal support';
 const siteUrl = 'https://kyleoils.com';
 const personId = `${siteUrl}/#person`;
 const organizationId = `${siteUrl}/#organization`;
@@ -81,15 +84,21 @@ const structuredData = {
     {englishUrl && <link rel="alternate" hreflang="en" href={englishUrl} />}
     {germanUrl && <link rel="alternate" hreflang="x-default" href={germanUrl} />}
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Kyle Daniel Mikolajczak" />
+    <meta property="og:site_name" content="Kyle Oils" />
     <meta property="og:title" content={title} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={socialImageUrl} />
+    <meta property="og:image:secure_url" content={socialImageUrl} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={socialImageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     {description && <meta name="twitter:description" content={description} />}
     <meta name="twitter:image" content={socialImageUrl} />
+    <meta name="twitter:image:alt" content={socialImageAlt} />
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
   <body>
