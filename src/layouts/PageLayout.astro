@@ -1,5 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import EssenceDrop from '../components/interaction/EssenceDrop.astro';
+import { getEssenceStory } from '../data/essenceStories';
 import type { Locale } from '../data/locales';
 
 interface Props {
@@ -9,10 +11,12 @@ interface Props {
 }
 
 const { title, description, lang = 'de' } = Astro.props;
+const essenceStory = getEssenceStory(Astro.url.pathname);
 ---
 
 <BaseLayout title={title} description={description} {lang}>
   <div class="page-shell"><slot /></div>
+  {essenceStory && <EssenceDrop words={essenceStory.words} anchors={essenceStory.anchors} />}
 </BaseLayout>
 
 <style>

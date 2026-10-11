@@ -1,0 +1,141 @@
+---
+interface Props {
+  words: string[];
+  anchors: string[];
+}
+
+const { words, anchors } = Astro.props;
+---
+
+<div
+  class="essence-drop"
+  data-essence-drop
+  data-words={JSON.stringify(words)}
+  data-anchors={JSON.stringify(anchors)}
+  data-footer-selector=".site-footer"
+  aria-hidden="true"
+>
+  <span class="essence-drop__word" data-essence-word></span>
+  <span class="essence-drop__trail"></span>
+  <span class="essence-drop__gem">
+    <svg viewBox="0 0 10 15" focusable="false" aria-hidden="true">
+      <defs>
+        <linearGradient id="essence-drop-fill" x1="1.4" y1="2" x2="8.5" y2="13.7" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#efe6d8" stop-opacity=".92" />
+          <stop offset=".48" stop-color="#d8c7ad" stop-opacity=".9" />
+          <stop offset="1" stop-color="#6f7b68" stop-opacity=".94" />
+        </linearGradient>
+      </defs>
+      <path class="essence-drop__body" d="M5 .55C4.5 2.45 1.15 6.35 1.15 9.72 1.15 12.38 2.86 14.28 5 14.28s3.85-1.9 3.85-4.56C8.85 6.35 5.5 2.45 5 .55Z" />
+      <ellipse class="essence-drop__highlight" cx="3.35" cy="8.55" rx=".62" ry="1.55" />
+    </svg>
+  </span>
+</div>
+
+<script is:inline src="/scripts/kyle-oils-essence-drop.js" defer></script>
+
+<style>
+  .essence-drop {
+    --essence-y: 24vh;
+    position: fixed;
+    top: 0;
+    right: 30px;
+    z-index: 24;
+    width: 10px;
+    height: 15px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate3d(0, var(--essence-y), 0);
+    transition: opacity 320ms ease;
+    will-change: transform;
+  }
+
+  .essence-drop.is-ready { opacity: 1; }
+
+  .essence-drop__gem {
+    position: absolute;
+    inset: 0;
+    filter: drop-shadow(0 2px 3px rgb(38 61 50 / 24%));
+    transform: scale(1);
+    transform-origin: 50% 66%;
+    transition: transform 180ms ease;
+  }
+
+  .essence-drop__gem svg { display: block; width: 100%; height: 100%; overflow: visible; }
+  .essence-drop__body { fill: url('#essence-drop-fill'); stroke: rgb(250 247 241 / 78%); stroke-width: .52; }
+  .essence-drop__highlight { fill: rgb(255 255 255 / 72%); }
+
+  .essence-drop[data-direction='down'] .essence-drop__gem { transform: scale(.92, 1.1); }
+
+  .essence-drop[data-direction='up'] .essence-drop__gem { transform: scale(1.04, .9); }
+
+  .essence-drop__trail {
+    position: absolute;
+    right: 4.5px;
+    bottom: 12px;
+    width: 1px;
+    height: 54px;
+    background: linear-gradient(to top, rgb(111 123 104 / 38%), rgb(216 199 173 / 16%) 42%, transparent);
+    opacity: .46;
+    transform-origin: bottom;
+    transition: height 180ms ease, opacity 180ms ease, transform 180ms ease;
+  }
+
+  .essence-drop[data-direction='up'] .essence-drop__trail {
+    top: 12px;
+    bottom: auto;
+    background: linear-gradient(to bottom, rgb(111 123 104 / 36%), rgb(216 199 173 / 15%) 42%, transparent);
+  }
+
+  .essence-drop[data-direction='still'] .essence-drop__trail {
+    height: 34px;
+    opacity: .22;
+    transform: scaleY(.75);
+  }
+
+  .essence-drop__word {
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    min-width: max-content;
+    color: var(--color-deep-forest);
+    font-size: 10px;
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: .16em;
+    line-height: 1;
+    text-shadow: 0 1px 0 rgb(250 247 241 / 95%), 0 0 8px rgb(250 247 241 / 88%);
+    opacity: 0;
+    transform: translate3d(0, -36%, 0);
+    transition: opacity 300ms ease, transform 360ms ease;
+  }
+
+  .essence-drop__word.is-visible {
+    opacity: .82;
+    transform: translate3d(0, -50%, 0);
+  }
+
+  .essence-drop__word.is-exiting {
+    opacity: 0;
+    transform: translate3d(0, -72%, 0);
+  }
+
+  @media (max-width: 767px) {
+    .essence-drop {
+      right: 14px;
+      width: 8px;
+      height: 12px;
+    }
+
+    .essence-drop__trail { display: none; }
+    .essence-drop__word { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .essence-drop { display: none; }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    :global(html:has([data-essence-drop])) { scrollbar-width: none; }
+    :global(html:has([data-essence-drop]))::-webkit-scrollbar { display: none; width: 0; height: 0; }
+  }
+</style>
