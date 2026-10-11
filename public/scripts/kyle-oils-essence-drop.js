@@ -19,6 +19,7 @@
 
   root.dataset.initialized = 'true';
   root.dataset.direction = 'still';
+  root.dataset.theme = 'light';
 
   const mobileQuery = window.matchMedia('(max-width: 767px)');
   const anchors = [];
@@ -35,9 +36,56 @@
   let settleTimer = 0;
   let mobileWordTimer = 0;
   let wordTransitionTimer = 0;
+  let lastContrastCheck = 0;
 
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
   const smoothstep = (value) => value * value * (3 - (2 * value));
+
+  const parseColor = (value) => {
+    const match = value.match(/rgba?\(([^)]+)\)/i);
+    if (!match) return null;
+    const parts = match[1].split(/[ ,/]+/).filter(Boolean).map(Number);
+    if (parts.length < 3 || parts.some((part) => Number.isNaN(part))) return null;
+    return { red: parts[0], green: parts[1], blue: parts[2], alpha: parts[3] ?? 1 };
+  };
+
+  const colorLuminance = ({ red, green, blue, alpha }) => {
+    const composite = [red, green, blue].map((channel) => ((channel * alpha) + (250 * (1 - alpha))) / 255);
+    const linear = composite.map((channel) => channel <= .04045 ? channel / 12.92 : ((channel + .055) / 1.055) ** 2.4);
+    return (.2126 * linear[0]) + (.7152 * linear[1]) + (.0722 * linear[2]);
+  };
+
+  const backgroundModeAtDrop = () => {
+    const rect = root.getBoundingClientRect();
+    const x = clamp(rect.left + (rect.width / 2), 0, window.innerWidth - 1);
+    const y = clamp(rect.top + (rect.height / 2), 0, window.innerHeight - 1);
+    const stack = document.elementsFromPoint(x, y);
+
+    for (const element of stack) {
+      if (element === root || root.contains(element) || element.closest('.site-header')) continue;
+      if (element.closest('.site-footer')) return root.dataset.theme || 'light';
+      if (element.closest('.section--forest')) return 'dark';
+
+      const style = getComputedStyle(element);
+      if (element.matches('img, picture, video, canvas') || style.backgroundImage !== 'none') return 'dark';
+      const color = parseColor(style.backgroundColor);
+      if (!color || color.alpha < .08) continue;
+      const luminance = colorLuminance(color);
+      if (luminance <= .36) return 'dark';
+      if (luminance >= .48) return 'light';
+      return root.dataset.theme || 'light';
+    }
+
+    return 'light';
+  };
+
+  const updateContrast = (force = false) => {
+    const now = performance.now();
+    if (!force && now - lastContrastCheck < 90) return;
+    lastContrastCheck = now;
+    const candidate = backgroundModeAtDrop();
+    root.dataset.theme = candidate;
+  };
 
   const collectAnchors = () => {
     anchors.length = 0;
@@ -66,8 +114,8 @@
     const footerTop = footer
       ? footer.getBoundingClientRect().top + window.scrollY
       : document.documentElement.scrollHeight;
-    fadeStart = clamp(footerTop - (viewport * .78), storyStart + (viewport * .8), pageLimit);
-    fadeEnd = clamp(footerTop - (viewport * .54), fadeStart + (viewport * .18), pageLimit);
+    fadeStart = clamp(footerTop - (viewport * .9), storyStart + (viewport * .8), pageLimit);
+    fadeEnd = clamp(footerTop - (viewport * .78), fadeStart + (viewport * .1), pageLimit);
     motionEnd = fadeStart;
 
     const availableSpan = Math.max(viewport, fadeStart - storyStart);
@@ -100,6 +148,7 @@
     }
 
     root.classList.add('is-ready');
+    updateContrast(true);
     update(true);
   };
 
@@ -162,6 +211,7 @@
     const corridorBottom = mobileQuery.matches ? 72 : 76;
     root.style.setProperty('--essence-y', `${corridorTop + ((corridorBottom - corridorTop) * progress)}vh`);
     showStage(stageForScroll(currentScrollY), force);
+    updateContrast(force);
 
     const footerFade = smoothstep(clamp((currentScrollY - fadeStart) / Math.max(1, fadeEnd - fadeStart), 0, 1));
     root.style.opacity = String(1 - footerFade);

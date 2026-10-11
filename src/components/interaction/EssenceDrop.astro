@@ -21,9 +21,9 @@ const { words, anchors } = Astro.props;
     <svg viewBox="0 0 10 15" focusable="false" aria-hidden="true">
       <defs>
         <linearGradient id="essence-drop-fill" x1="1.4" y1="2" x2="8.5" y2="13.7" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#efe6d8" stop-opacity=".92" />
-          <stop offset=".48" stop-color="#d8c7ad" stop-opacity=".9" />
-          <stop offset="1" stop-color="#6f7b68" stop-opacity=".94" />
+          <stop class="essence-drop__stop essence-drop__stop--top" offset="0" stop-color="#efe6d8" stop-opacity=".92" />
+          <stop class="essence-drop__stop essence-drop__stop--middle" offset=".48" stop-color="#d8c7ad" stop-opacity=".9" />
+          <stop class="essence-drop__stop essence-drop__stop--bottom" offset="1" stop-color="#6f7b68" stop-opacity=".94" />
         </linearGradient>
       </defs>
       <path class="essence-drop__body" d="M5 .55C4.5 2.45 1.15 6.35 1.15 9.72 1.15 12.38 2.86 14.28 5 14.28s3.85-1.9 3.85-4.56C8.85 6.35 5.5 2.45 5 .55Z" />
@@ -58,12 +58,13 @@ const { words, anchors } = Astro.props;
     filter: drop-shadow(0 2px 3px rgb(38 61 50 / 24%));
     transform: scale(1);
     transform-origin: 50% 66%;
-    transition: transform 180ms ease;
+    transition: filter 200ms ease, transform 180ms ease;
   }
 
   .essence-drop__gem svg { display: block; width: 100%; height: 100%; overflow: visible; }
-  .essence-drop__body { fill: url('#essence-drop-fill'); stroke: rgb(250 247 241 / 78%); stroke-width: .52; }
+  .essence-drop__body { fill: url('#essence-drop-fill'); stroke: rgb(250 247 241 / 78%); stroke-width: .52; transition: stroke 200ms ease; }
   .essence-drop__highlight { fill: rgb(255 255 255 / 72%); }
+  .essence-drop__stop { transition: stop-color 200ms ease, stop-opacity 200ms ease; }
 
   .essence-drop[data-direction='down'] .essence-drop__gem { transform: scale(.92, 1.1); }
 
@@ -106,7 +107,7 @@ const { words, anchors } = Astro.props;
     text-shadow: 0 1px 0 rgb(250 247 241 / 95%), 0 0 8px rgb(250 247 241 / 88%);
     opacity: 0;
     transform: translate3d(0, -36%, 0);
-    transition: opacity 300ms ease, transform 360ms ease;
+    transition: color 200ms ease, opacity 300ms ease, text-shadow 200ms ease, transform 360ms ease;
   }
 
   .essence-drop__word.is-visible {
@@ -117,6 +118,31 @@ const { words, anchors } = Astro.props;
   .essence-drop__word.is-exiting {
     opacity: 0;
     transform: translate3d(0, -72%, 0);
+  }
+
+  .essence-drop[data-theme='dark'] .essence-drop__gem {
+    filter: drop-shadow(0 2px 4px rgb(250 247 241 / 18%));
+  }
+
+  .essence-drop[data-theme='dark'] .essence-drop__body {
+    stroke: rgb(250 247 241 / 88%);
+  }
+
+  .essence-drop[data-theme='dark'] .essence-drop__stop--top { stop-color: #faf7f1; stop-opacity: .98; }
+  .essence-drop[data-theme='dark'] .essence-drop__stop--middle { stop-color: #e9ddcc; stop-opacity: .95; }
+  .essence-drop[data-theme='dark'] .essence-drop__stop--bottom { stop-color: #b8c6b2; stop-opacity: .96; }
+
+  .essence-drop[data-theme='dark'] .essence-drop__trail {
+    background: linear-gradient(to top, rgb(250 247 241 / 48%), rgb(184 198 178 / 24%) 42%, transparent);
+  }
+
+  .essence-drop[data-theme='dark'][data-direction='up'] .essence-drop__trail {
+    background: linear-gradient(to bottom, rgb(250 247 241 / 46%), rgb(184 198 178 / 23%) 42%, transparent);
+  }
+
+  .essence-drop[data-theme='dark'] .essence-drop__word {
+    color: var(--color-warm-white);
+    text-shadow: 0 1px 4px rgb(38 61 50 / 44%);
   }
 
   @media (max-width: 767px) {
