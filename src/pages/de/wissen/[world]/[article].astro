@@ -20,15 +20,16 @@ const relatedLinks = article.relatedArticleIds
   .map((id) => knowledgeArticles.find((item) => item.id === id))
   .filter((item): item is NonNullable<typeof item> => Boolean(item))
   .map((item) => ({ label: item.title, href: item.route, description: item.description }));
+const breadcrumbs = getKnowledgeBreadcrumbs('de', article.worldId, article.title);
 const safetyNote = article.medicalDisclaimerRequired
   ? 'Die Informationen auf dieser Seite dienen der allgemeinen Orientierung rund um ätherische Öle, Duft, Alltag und Wellness-Routinen. Sie ersetzen keine medizinische Beratung, Diagnose oder Behandlung.'
   : undefined;
 ---
 
-<PageLayout title={article.seoTitle} description={article.description}>
+<PageLayout title={article.seoTitle} description={article.description} {breadcrumbs}>
   <ArticleTemplate
     locale="de"
-    breadcrumbs={getKnowledgeBreadcrumbs('de', article.worldId, article.title)}
+    {breadcrumbs}
     worldLabel={world.label.de}
     title={article.title}
     intro={article.description}

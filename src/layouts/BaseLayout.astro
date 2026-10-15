@@ -3,6 +3,7 @@ import SiteHeader from '../components/navigation/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
 import AnalyticsConsent from '../components/global/AnalyticsConsent.astro';
 import { getLanguagePaths, type Locale } from '../data/locales';
+import type { BreadcrumbItem } from '../data/knowledge';
 import tokensCss from '../styles/tokens.css?inline';
 import globalCss from '../styles/global.css?inline';
 
@@ -11,9 +12,10 @@ interface Props {
   description?: string;
   lang?: Locale;
   robots?: string;
+  breadcrumbs?: BreadcrumbItem[];
 }
 
-const { title, description, lang = 'de', robots } = Astro.props;
+const { title, description, lang = 'de', robots, breadcrumbs } = Astro.props;
 const currentPath = Astro.url.pathname;
 const languagePaths = getLanguagePaths(currentPath);
 const baseUrl = Astro.site ?? Astro.url.origin;
@@ -27,6 +29,16 @@ const socialImageAlt = lang === 'de'
 const siteUrl = 'https://kyleoils.com';
 const personId = `${siteUrl}/#person`;
 const organizationId = `${siteUrl}/#organization`;
+const breadcrumbData = breadcrumbs && breadcrumbs.length > 1 ? {
+  '@type': 'BreadcrumbList',
+  '@id': `${canonicalUrl.href}#breadcrumb`,
+  itemListElement: breadcrumbs.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.label,
+    item: new URL(item.href ?? currentPath, baseUrl).href,
+  })),
+} : undefined;
 const structuredData = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -58,6 +70,7 @@ const structuredData = {
       url: siteUrl,
       logo: `${siteUrl}/favicon-32x32.png`,
     },
+    ...(breadcrumbData ? [breadcrumbData] : []),
   ],
 };
 ---

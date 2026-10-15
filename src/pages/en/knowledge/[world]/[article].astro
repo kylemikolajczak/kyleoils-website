@@ -20,15 +20,16 @@ const relatedLinks = article.relatedArticleIds
   .map((id) => englishKnowledgeArticles.find((item) => item.id === id))
   .filter((item): item is NonNullable<typeof item> => Boolean(item))
   .map((item) => ({ label: item.title, href: item.route, description: item.description }));
+const breadcrumbs = getKnowledgeBreadcrumbs('en', article.worldId, article.title);
 const safetyNote = article.medicalDisclaimerRequired
   ? 'The information on this page is for general orientation around essential oils, scent, everyday routines and wellness. It does not replace medical advice, diagnosis or treatment.'
   : undefined;
 ---
 
-<PageLayout lang="en" title={article.seoTitle} description={article.description}>
+<PageLayout lang="en" title={article.seoTitle} description={article.description} {breadcrumbs}>
   <ArticleTemplate
     locale="en"
-    breadcrumbs={getKnowledgeBreadcrumbs('en', article.worldId, article.title)}
+    {breadcrumbs}
     worldLabel={world.label.en}
     title={article.title}
     intro={article.description}

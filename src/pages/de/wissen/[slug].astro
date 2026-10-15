@@ -14,8 +14,9 @@ const world = getKnowledgeWorldBySlug('de', Astro.params.slug ?? '');
 if (!world) return Astro.redirect('/de/wissen/');
 const relatedWorlds = knowledgeWorlds.filter((item) => item.id !== world.id).slice(0, 3);
 const articles = getKnowledgeArticlesForWorld(world.id);
+const breadcrumbs = getKnowledgeBreadcrumbs('de', world.id);
 ---
 
-<PageLayout title={world.seoTitle.de} description={world.seoDescription.de}>
-  <KnowledgeWorldTemplate locale="de" {world} breadcrumbs={getKnowledgeBreadcrumbs('de', world.id)} {relatedWorlds} {articles} />
+<PageLayout title={world.seoTitle.de} description={world.seoDescription.de} {breadcrumbs}>
+  <KnowledgeWorldTemplate locale="de" {world} {breadcrumbs} {relatedWorlds} {articles} />
 </PageLayout>

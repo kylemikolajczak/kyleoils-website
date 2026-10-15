@@ -3,18 +3,20 @@ import BaseLayout from './BaseLayout.astro';
 import EssenceDrop from '../components/interaction/EssenceDrop.astro';
 import { getEssenceStory } from '../data/essenceStories';
 import type { Locale } from '../data/locales';
+import type { BreadcrumbItem } from '../data/knowledge';
 
 interface Props {
   title: string;
   description?: string;
   lang?: Locale;
+  breadcrumbs?: BreadcrumbItem[];
 }
 
-const { title, description, lang = 'de' } = Astro.props;
+const { title, description, lang = 'de', breadcrumbs } = Astro.props;
 const essenceStory = getEssenceStory(Astro.url.pathname);
 ---
 
-<BaseLayout title={title} description={description} {lang}>
+<BaseLayout title={title} description={description} {lang} {breadcrumbs}>
   <div class="page-shell"><slot /></div>
   {essenceStory && <EssenceDrop words={essenceStory.words} anchors={essenceStory.anchors} />}
 </BaseLayout>
