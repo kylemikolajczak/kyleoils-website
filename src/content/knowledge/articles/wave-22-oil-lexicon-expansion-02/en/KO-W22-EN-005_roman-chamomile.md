@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/roman-chamomile-roemische-kamille/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Roman Chamomile explained simply"
-description: "A clear guide to Roman Chamomile: scent profile, blending logic, everyday use and safe use without medical promises."
+description: "Explore Roman Chamomile: scent profile, pairing ideas, practical routines and responsible use."
 relatedArticleIds:
   - "KO-W17-EN-008"
   - "KO-W18-EN-006"

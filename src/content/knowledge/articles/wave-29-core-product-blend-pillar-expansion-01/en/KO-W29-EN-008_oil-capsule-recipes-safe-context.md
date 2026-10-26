@@ -44,23 +44,15 @@ There are doTERRA products and recipe ideas involving internal use. Publicly on 
 
 Kyle Oils uses this area through a clean guidance logic: What is the product? Which everyday situation is it searched for? Which safe-use context matters? Where does personal guidance begin?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This page may place Capsule recipes and internal use like this:
+Here are practical ideas for Capsule recipes and internal use:
 
 - as a clear boundary between public website and personal guidance
 - as an explanation of why products, labels and market matter more than internet recipes
 - as protection against disease, prevention and treatment claims
 - as a trust signal because Kyle does not publish every recipe publicly
 
-## What we do not write publicly
-
-These statements do not belong on the website:
-
-- FluBomb recipe against illness
-- when you get sick, fight it off immediately
-- helps colds or flu
-- Oregano/On Guard capsules as treatment
 
 ## How Kyle places this in guidance
 
@@ -73,7 +65,7 @@ Personal guidance is not about quickly selling a product as a solution. It is ab
 - Are children, pets, pregnancy, medication or sensitive skin involved?
 - Is a finished doTERRA product more appropriate than a DIY recipe?
 
-This keeps the recommendation closer to what doTERRA actually offers, but without risky online promises.
+This helps keep the recommendation practical and aligned with the product label.
 
 ## Safety
 

@@ -16,4 +16,20 @@ const { href, variant = 'primary' } = Astro.props;
   .button--secondary { border-color: var(--color-sand); background: transparent; color: var(--color-deep-forest); }
   .button--secondary:hover { border-color: var(--color-sage-green); background: var(--color-soft-cream); }
   @media (min-width: 768px) { .button { padding-inline: 24px; } }
+
+
+  /* Shared action-button typography: clear sans-serif against editorial Georgia headings. */
+  .button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: clamp(.875rem, .96vw, .91rem);
+    font-weight: 650;
+    letter-spacing: .012em;
+    line-height: 1.3;
+    min-height: 48px;
+    border-radius: 12px;
+    text-wrap: balance;
+    text-decoration: none;
+  }
+  .button:focus-visible { outline: 2px solid #739875; outline-offset: 3px; }
+
 </style>

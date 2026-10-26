@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/cypress/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Cypress (Zypresse) einfach erklärt"
-description: "Eine klare Einordnung von Cypress (Zypresse): Duftprofil, Mischlogik, Alltag und sichere Anwendung ohne Heilversprechen."
+description: "Cypress (Zypresse) gezielt entdecken: Duftprofil, passende Mischungen und Anwendungsideen für den Alltag."
 relatedArticleIds:
   - "KO-W17-DE-008"
   - "KO-W18-DE-006"

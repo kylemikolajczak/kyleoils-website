@@ -8,7 +8,7 @@ route: "/de/wissen/oel-lexikon/lavender-lavendel/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Lavender Lavendel ätherisches Öl verständlich erklärt"
-description: "Lavender ruhig erklärt: Duftprofil, Alltagseinordnung, aromatische Nutzung, äußerliche Anwendung und wichtige Sicherheitshinweise."
+description: "Lavender entdecken: Duftprofil, Alltagsideen, aromatische Nutzung, äußerliche Anwendung und wichtige Sicherheitshinweise."
 riskLevel: "low"
 cta: "Lavender mit Kyle einordnen"
 relatedArticleIds:
@@ -24,7 +24,7 @@ enTranslationStatus: "not_included_in_wave_04"
 
 Lavender, auf Deutsch Lavendel, ist für viele Menschen eines der bekanntesten ätherischen Öle. Es wirkt im Duft weich, blumig, klar und vertraut. Genau deshalb ist es oft eines der ersten Öle, mit denen Anfänger in Berührung kommen.
 
-Diese Seite soll dir Lavender ruhig und verständlich einordnen. Nicht als Wundermittel, sondern als ätherisches Öl, das in vielen einfachen Alltagsroutinen eine angenehme Rolle spielen kann.
+Hier entdeckst du, wie Lavender mit seinem blumig-weichen Duft Abendrituale, Diffusermischungen und persönliche Pflegemomente bereichern kann.
 
 ## Kurzprofil
 

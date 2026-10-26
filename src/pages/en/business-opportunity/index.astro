@@ -2,24 +2,23 @@
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
-import SectionIntro from '../../../components/sections/SectionIntro.astro';
-import StepList from '../../../components/sections/StepList.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
+import '../../../styles/business-opportunity-refined.css';
 
 const responsiblePractice = [
-  'understanding products first',
-  'giving honest guidance and answering questions',
-  'placing safety and everyday use in clear context',
-  'supporting people respectfully after purchase',
-  'only discussing a business role when there is genuine interest',
+  'Knowing and understanding the products yourself',
+  'Offering honest guidance and answering questions',
+  'Explaining responsible everyday use clearly',
+  'Supporting customers after their first purchase',
+  'Discussing business only when there is genuine interest',
 ];
 
 const couldFit = [
-  'you genuinely like doTERRA products and enjoy sharing them',
-  'you would like to support people honestly',
-  'you are willing to learn and ask questions',
-  'you value a considered, long-term approach',
-  'you want to understand products and customers before thinking about a team',
+  'You genuinely enjoy doTERRA products and sharing your experience.',
+  'You like helping people with clear, honest guidance.',
+  'You are curious, willing to learn and comfortable asking questions.',
+  'You value a responsible, long-term approach.',
+  'You want to understand products and customers before building a team.',
 ];
 
 const customerFirstSteps = [
@@ -41,39 +40,88 @@ const conversationQuestions = [
 
 <PageLayout lang="en" title="The doTERRA Business Opportunity | Kyle Oils" description="Honest guidance on the doTERRA business opportunity: understand products first, support people responsibly and place expectations in a realistic context.">
   <HeroSplit title="The doTERRA Business Opportunity" primaryHref="/en/contact/" primaryLabel="Discuss the Business Opportunity" secondaryHref="/en/consultation/" secondaryLabel="Request Guidance First" imageSrc="/assets/images/business/business-kyle-hero.jpg" imageAlt="Kyle in a calm working environment" imageWidth={1023} imageHeight={1537} imagePosition="66% center">
-    <p class="core-message">Something of your own can grow from genuine enthusiasm.</p>
-    <p>Not everyone who uses doTERRA wants to build a business with it. And that is completely fine.</p>
-    <p>Understanding products, guiding people honestly and supporting customers respectfully always come before a possible business role.</p>
+    <p class="core-message">Build something of your own, rooted in what you love.</p>
+    <p>If you enjoy essential oils, like learning and naturally share useful experiences, you may want to explore developing an independent business over time.</p>
+    <p>I can explain what getting started involves, the responsibilities of a Wellness Advocate and what matters for a sustainable long-term approach.</p>
   </HeroSplit>
 
-  <section class="section section--cream"><div class="container narrow-layout"><SectionIntro title="What the doTERRA business opportunity can mean"><p>doTERRA works with independent advisors who can explain products, support customers and help people get started.</p><p>With Kyle, that begins with responsibility: clear information, thoughtful support and an honest look at whether this path fits at all.</p></SectionIntro><ul class="check-list">{responsiblePractice.map((item) => <li>{item}</li>)}</ul></div></section>
+  <section class="section business-values" aria-labelledby="business-values-title">
+    <div class="container business-wrap business-values__grid" data-reveal>
+      <div class="business-values__intro">
+        <p class="eyebrow">WHAT REALLY MATTERS</p>
+        <h2 id="business-values-title">A business built around people.</h2>
+        <p>As an independent doTERRA Wellness Advocate, you can recommend products, share education and support customers over time. At Kyle Oils, five principles guide that work.</p>
+        <p class="business-values__note">Build trust first. Discuss business only when there is genuine interest.</p>
+      </div>
+      <div class="business-values__list">
+        <ol>{responsiblePractice.map((item,index)=><li>
+          <span class="business-num" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+          <span>{item}</span>
+        </li>)}</ol>
+      </div>
+    </div>
+  </section>
 
-  <section class="section section--sage"><div class="container narrow-layout"><SectionIntro title="When this path could suit you"><p>The business opportunity may be interesting if:</p></SectionIntro><ul class="check-list">{couldFit.map((item) => <li>{item}</li>)}</ul><p class="section-closing">This is not about quick results. A customer-centred, responsible approach takes time, learning and genuine interest in the products.</p></div></section>
+  <section class="section business-fit" aria-labelledby="business-fit-title">
+    <div class="container business-wrap">
+      <header class="business-heading" data-reveal>
+        <p class="eyebrow">IS IT FOR YOU?</p>
+        <h2 id="business-fit-title">Could this be your kind of opportunity?</h2>
+        <p>You do not need a perfect plan. Genuine product interest, curiosity and a willingness to support people over time matter much more.</p>
+      </header>
+      <div class="business-fit__grid" data-consultation-cards>
+        {couldFit.map((item,index)=><article class="business-fit-card" data-consultation-card>
+          <span class="business-num" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+          <p>{item}</p>
+        </article>)}
+      </div>
+      <p class="business-fit__note">The aim is to build lasting relationships, not recruit people as quickly as possible.</p>
+    </div>
+  </section>
 
-  <section class="section section--cream"><div class="container"><SectionIntro title="Customer first, maybe partner later"><p>The more useful path begins with personal experience and a sound understanding of the products.</p></SectionIntro><div class="step-grid"><StepList steps={customerFirstSteps} /></div></div></section>
+  <section class="section business-journey" aria-labelledby="business-journey-title">
+    <div class="container business-wrap">
+      <header class="business-heading" data-reveal>
+        <p class="eyebrow">YOUR PATH</p>
+        <h2 id="business-journey-title">Five steps toward an informed decision.</h2>
+        <p>A solid starting point grows from personal experience. These steps can help you find out whether the business side genuinely appeals to you.</p>
+      </header>
+      <ol class="business-journey__grid" data-consultation-cards>
+        {customerFirstSteps.map((step,index)=><li class="business-journey-card" data-consultation-card>
+          <span class="business-journey-card__num" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+          <h3>{step.title.replace(/^\d+\.\s*/, "")}</h3>
+        </li>)}
+      </ol>
+      <p class="business-journey__note">This is a possible approach, not a mandatory programme or a guarantee of results.</p>
+    </div>
+  </section>
 
-  <section class="section"><div class="container split-copy"><SectionIntro title="What Kyle clarifies in a business conversation"><p>A conversation helps put possibilities and expectations into a realistic order.</p></SectionIntro><ul class="check-list">{conversationQuestions.map((item) => <li>{item}</li>)}</ul></div></section>
+  <section class="section business-discussion" aria-labelledby="business-discussion-title">
+    <div class="container business-wrap business-discussion__grid" data-reveal>
+      <div class="business-discussion__intro">
+        <p class="eyebrow">LET’S TALK ABOUT IT</p>
+        <h2 id="business-discussion-title">What could your next step look like?</h2>
+        <p>In a personal conversation, we can explore your interests, experience and expectations, and whether the doTERRA opportunity is a sensible fit.</p>
+        <p class="business-discussion__disclosure">Before deciding, we should review the current official compensation plan, possible costs and company rules together.</p>
+      </div>
+      <div class="business-discussion__card">
+        <p class="eyebrow">QUESTIONS WE CAN DISCUSS</p>
+        <ol>{conversationQuestions.map((q,index)=><li>
+          <span class="business-num" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+          <span>{q}</span>
+        </li>)}</ol>
+      </div>
+    </div>
+  </section>
 
-  <CTASection title="Discuss the business opportunity" primaryHref="/en/contact/" primaryLabel="Discuss the Business Opportunity" secondaryHref="/en/consultation/" secondaryLabel="Request Guidance First"><p>If doTERRA already interests you and you would like to know whether the business opportunity may suit you, send Kyle a no-pressure message.</p><p>The focus stays honest and realistic.</p></CTASection>
-
-  <section class="compliance-section"><div class="container"><ComplianceNote label="Note"><h2>Note</h2><p>Kyle Oils does not replace legal, tax or financial advice and does not make income promises. Content about the doTERRA business opportunity is general guidance and should always be checked against current official doTERRA information.</p></ComplianceNote></div></section>
+  <CTASection title="Let’s explore your business idea." primaryHref="/en/contact/" primaryLabel="Ask about the business" secondaryHref="/en/consultation/" secondaryLabel="Explore products first">
+    <p>Thinking about an independent doTERRA business? Tell me what interests you, and I can explain how the opportunity works without making income promises.</p>
+  </CTASection>
+  <section class="compliance-section business-compliance"><div class="container">
+    <ComplianceNote label="IMPORTANT NOTE">
+      <p class="business-compliance__label">IMPORTANT NOTE</p>
+      <p>Building an independent doTERRA business involves effort and business risk. Income or success is never guaranteed. Refer to current official doTERRA policies and compensation information. Kyle Oils does not provide legal, tax or financial advice.</p>
+    </ComplianceNote>
+  </div></section>
+  <script is:inline src="/scripts/consultation-motion.js" defer></script>
 </PageLayout>
-
-<style>
-  :global(.hero .responsive-image img) { transform: scale(1.06); }
-  :global(.hero .core-message) { color: var(--color-deep-forest); font-size: var(--font-size-h3-mobile); font-weight: 600; }
-  .section { padding: var(--space-64) 0; }
-  .section--cream { background: var(--color-soft-cream); }
-  .section--sage { background: rgb(168 184 160 / 20%); }
-  .narrow-layout { max-width: var(--container-text); }
-  .split-copy { display: grid; gap: var(--space-24); }
-  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
-  .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
-  .check-list li::before { content: ''; position: absolute; top: .72em; left: 0; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
-  .section-closing { max-width: var(--container-text); margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
-  .step-grid :global(.step-list) { grid-template-columns: minmax(0, 1fr); }
-  .compliance-section { padding: 0 0 var(--space-80); }
-  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  @media (min-width: 768px) { .section { padding-block: var(--space-96); } .step-grid :global(.step-list) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (min-width: 1024px) { .section { padding-block: var(--space-120); } .split-copy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-64); } :global(.hero .core-message) { font-size: var(--font-size-h3-desktop); } }
-</style>

@@ -2,8 +2,9 @@
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
 import Button from '../../../components/global/Button.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
-import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import '../../../styles/contact-refined.css';
 import { contactLinks, socialLinks } from '../../../data/externalLinks';
 
 const contactOptions = [
@@ -60,38 +61,52 @@ const contactOptions = [
     <p>Schreib mir einfach, was dich interessiert oder wobei du Orientierung suchst. Du erreichst mich per WhatsApp, Telefon oder E-Mail. Persönliche Treffen nach Absprache und Videocalls sind ebenfalls möglich.</p>
   </HeroSplit>
 
-  <section id="contact-options" class="section section--sage">
-    <div class="container">
-      <SectionIntro title="So kannst du mich erreichen">
-          <p>WhatsApp, Telefon oder E-Mail sind ein guter erster Schritt. Ich antworte in der Regel innerhalb von 24 Stunden.</p>
-      </SectionIntro>
-      <div class="contact-grid">
-        {contactOptions.slice(0, 3).map((option) => (
-          <article class="contact-card">
+  <section id="contact-options" class="section contact-options" aria-labelledby="contact-options-heading">
+    <div class="container contact-wrap">
+      <header class="contact-heading" data-reveal>
+        <p class="eyebrow">DIREKT & PERSÖNLICH</p>
+        <h2 id="contact-options-heading">So erreichst du mich.</h2>
+        <p>Wähle den Kontaktweg, der sich für dich am besten anfühlt. Ich antworte in der Regel innerhalb von 24 Stunden.</p>
+      </header>
+      <div class="contact-grid" data-consultation-cards>
+        {contactOptions.slice(0, 3).map((option,index) => (
+          <article class="contact-card" data-consultation-card>
+            <div class="contact-card__top"><span class="contact-number" aria-hidden="true">{String(index + 1).padStart(2,"0")}</span><span class="contact-card__category">KONTAKTWEG</span></div>
             <h3>{option.title}</h3>
             {option.copy && <p>{option.copy}</p>}
-            {option.href && option.label && <a href={option.href}>{option.label}</a>}
+            {option.href && option.label && <a href={option.href} class="contact-card__link"><span>{option.label}</span><span aria-hidden="true">↗</span></a>}
           </article>
         ))}
       </div>
-      <p class="contact-formats">Persönliche Treffen im Landkreis Lüneburg und Videocalls sind nach Absprache ebenfalls möglich.</p>
+      <p class="contact-formats">Persönliche Treffen im Raum Lüneburg und Videocalls sind nach Absprache ebenfalls möglich.</p>
     </div>
   </section>
 
-  <section class="section section--cream local-guidance-section">
-    <div class="container local-guidance-section__inner">
-      <div>
-        <p class="eyebrow">LÜNEBURG & ONLINE</p>
-        <h2>Beratung in Lüneburg und online</h2>
-        <p>Wenn du aus Lüneburg oder Umgebung kommst, Fragen zu doTERRA hast oder lieber auf Englisch sprechen möchtest, findest du hier einen ruhigen Überblick.</p>
+  <section class="section local-guidance-section" aria-labelledby="local-guidance-heading">
+    <div class="container contact-wrap">
+      <div class="local-guidance-panel" data-reveal>
+        <div class="local-guidance-panel__primary">
+          <p class="eyebrow">LÜNEBURG & ONLINE</p>
+          <h2 id="local-guidance-heading">Persönlich vor Ort. Oder ganz entspannt online.</h2>
+          <p>Wenn du im Raum Lüneburg wohnst, können wir uns nach Absprache persönlich treffen. Auch ein Videocall ist möglich – auf Deutsch oder Englisch. Du entscheidest, was am besten zu deinem Alltag passt.</p>
+          <Button href="/de/doterra-beratung-lueneburg/" variant="secondary">Beratung in Lüneburg entdecken</Button>
+        </div>
+        <div class="local-guidance-panel__aside">
+          <p class="eyebrow">FLEXIBEL IN VERBINDUNG</p>
+          <h3>Nicht in Lüneburg?</h3>
+          <p>Auch überregional oder international können wir erst einmal unkompliziert per Nachricht oder Video sprechen.</p>
+        </div>
       </div>
-      <Button href="/de/doterra-beratung-lueneburg/" variant="secondary">doTERRA Beratung in Lüneburg</Button>
     </div>
   </section>
 
-  <section class="social-section" aria-label="Social Media">
-    <div class="container social-layout">
-      <p class="social-section__label">Auch auf Social Media</p>
+  <section class="social-section" aria-labelledby="contact-social-heading">
+    <div class="container contact-wrap social-layout" data-reveal>
+      <div class="social-layout__heading">
+        <p class="eyebrow">IN VERBINDUNG BLEIBEN</p>
+        <h2 id="contact-social-heading">Auch hier findest du Kyle Oils.</h2>
+        <p>Einblicke, einfache Routinen und Neues rund um ätherische Öle.</p>
+      </div>
       <div class="social-links">
         <a href={socialLinks.facebook.href} target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -115,7 +130,11 @@ const contactOptions = [
     </div>
   </section>
 
-  <section class="compliance-section">
+  <CTASection title="Du musst noch keinen Plan haben." primaryHref={contactLinks.whatsapp.href} primaryLabel="Direkt per WhatsApp schreiben" secondaryHref="/de/beratung/" secondaryLabel="Mehr über meine Beratung">
+    <p>Eine kurze Nachricht reicht. Erzähle mir, was dich interessiert, und ich helfe dir beim nächsten sinnvollen Schritt.</p>
+  </CTASection>
+
+  <section class="compliance-section contact-compliance">
     <div class="container">
       <ComplianceNote>
         <h2>Kurzer Hinweis</h2>
@@ -124,49 +143,5 @@ const contactOptions = [
       </ComplianceNote>
     </div>
   </section>
+  <script is:inline src="/scripts/consultation-motion.js" defer></script>
 </PageLayout>
-
-<style>
-  .section { padding: var(--space-64) 0; }
-  .section--cream { background: var(--color-soft-cream); }
-  .section--sage { background: rgb(168 184 160 / 20%); }
-  .local-guidance-section__inner { display: grid; gap: var(--space-24); align-items: center; max-width: var(--container-text); }
-  .local-guidance-section__inner h2 { margin: 0 0 var(--space-12); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
-  .local-guidance-section__inner p:not(.eyebrow) { margin: 0; color: var(--color-text-secondary); }
-  .local-guidance-section__inner .eyebrow { margin: 0 0 var(--space-12); }
-  .contact-grid { display: grid; gap: var(--space-20); }
-  .contact-card { min-height: 230px; display: flex; flex-direction: column; align-items: flex-start; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
-  .contact-card h3 { margin: 0 0 var(--space-12); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
-  .contact-card p { margin: 0 0 var(--space-24); overflow-wrap: anywhere; color: var(--color-text-secondary); }
-  .contact-card a { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; margin-top: auto; padding: var(--space-12) var(--space-20); border: 1px solid var(--color-sand); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); line-height: 1.2; text-align: center; text-decoration: none; }
-  .contact-card a:hover { border-color: var(--color-sage-green); background: var(--color-soft-cream); }
-  .contact-formats { max-width: var(--container-text); margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
-  .social-section { padding: var(--space-24) 0 var(--space-48); }
-  .social-layout { display: flex; flex-wrap: wrap; gap: var(--space-16) var(--space-24); align-items: center; }
-  .social-section__label { margin: 0; color: var(--color-text-muted); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
-  .social-links { display: flex; flex-wrap: wrap; gap: var(--space-16); }
-  .social-links a { min-height: 52px; display: inline-flex; align-items: center; gap: var(--space-12); padding: var(--space-12) var(--space-20); border: 1px solid var(--color-sand); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; }
-  .social-links a:hover { border-color: var(--color-sage-green); background: var(--color-warm-white); }
-  .social-links svg { width: 22px; height: 22px; fill: currentColor; }
-  .compliance-section { padding: var(--space-24) 0 var(--space-64); }
-  .compliance-section :global(.compliance-note) { max-width: 760px; padding: var(--space-24) 0 0; border: 0; border-top: 1px solid rgb(216 199 173 / 65%); border-radius: 0; background: transparent; }
-  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  .compliance-section :global(p + p) { margin-top: var(--space-12); }
-  #contact-options { scroll-margin-top: var(--space-32); }
-  @media (prefers-reduced-motion: no-preference) {
-    :global(html) { scroll-behavior: smooth; }
-  }
-  @media (min-width: 768px) {
-    .section { padding-block: var(--space-96); }
-    .social-section { padding: var(--space-32) 0 var(--space-64); }
-    .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
-    .local-guidance-section__inner { grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-40); }
-    .contact-card { padding: var(--space-32); }
-  }
-  @media (min-width: 1024px) {
-    .section { padding-block: var(--space-120); }
-    .social-section { padding: var(--space-40) 0 var(--space-80); }
-    .contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .local-guidance-section__inner h2 { font-size: var(--font-size-h2-desktop); }
-  }
-</style>

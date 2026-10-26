@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/cedarwood/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Cedarwood (Zeder) einfach erklärt"
-description: "Eine ruhige Einordnung von Cedarwood (Zeder): Duftprofil, einfache Routinen, Kombinationen und sichere Anwendung ohne Heilversprechen."
+description: "Cedarwood (Zeder) im Alltag: Duftcharakter, kombinierbare Duftnoten und Ideen für deine Alltagsroutine."
 relatedArticleIds:
   - "KO-W04-001"
   - "KO-W02-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/cedarwood-oil/"
 
 Cedarwood ist ein ruhiges Holzöl für warme Abendroutinen, sanfte Raumduft-Mischungen und eine natürliche Basisnote.
 
-Diese Seite hilft dir, Cedarwood (Zeder) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Es geht nicht um Heilversprechen, sondern um klare Orientierung.
+Diese Seite hilft dir, Cedarwood (Zeder) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Entdecke konkrete Duftideen, stimmige Kombinationen und bewusste Anwendungen.
 
 ## Duftprofil
 

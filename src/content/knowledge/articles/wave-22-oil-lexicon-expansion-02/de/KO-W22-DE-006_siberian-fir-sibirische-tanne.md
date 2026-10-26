@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/siberian-fir/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Siberian Fir (Sibirische Tanne) einfach erklärt"
-description: "Eine klare Einordnung von Siberian Fir (Sibirische Tanne): Duftprofil, Mischlogik, Alltag und sichere Anwendung ohne Heilversprechen."
+description: "Siberian Fir (Sibirische Tanne) gezielt entdecken: Duftprofil, passende Mischungen und Anwendungsideen für den Alltag."
 relatedArticleIds:
   - "KO-W17-DE-008"
   - "KO-W18-DE-006"

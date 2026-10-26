@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/lemon-zitrone/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Lemon essential oil explained clearly"
-description: "Lemon explained calmly: bright citrus scent, everyday room routines, freshness, safety and photosensitivity awareness."
+description: "Explore Lemon: bright citrus scent, everyday room routines, freshness, safety and photosensitivity awareness."
 relatedArticleIds:
   - "KO-W07-008"
   - "KO-W08-006"

@@ -8,7 +8,7 @@ route: "/de/wissen/oel-lexikon/lemon-zitrone/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Lemon Zitrone ätherisches Öl verständlich erklärt"
-description: "Lemon ruhig erklärt: frisches Duftprofil, Alltagssituationen, Diffuser-Ideen, Vorsicht bei Haut und Sonne sowie sichere Einordnung."
+description: "Lemon entdecken: frisches Duftprofil, Alltagssituationen, Diffuser-Ideen, Vorsicht bei Haut und Sonne sowie bewusste Anwendung."
 riskLevel: "medium"
 cta: "Lemon sicher mit Kyle einordnen"
 relatedArticleIds:

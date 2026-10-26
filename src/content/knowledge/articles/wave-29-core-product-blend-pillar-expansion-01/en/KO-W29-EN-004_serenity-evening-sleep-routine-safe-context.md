@@ -44,23 +44,15 @@ doTERRA positions Serenity around calm, relaxation, bedtime and the Essential Ar
 
 Kyle Oils uses this area through a clean guidance logic: What is the product? Which everyday situation is it searched for? Which safe-use context matters? Where does personal guidance begin?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This page may place doTERRA Serenity like this:
+Here are practical ideas for doTERRA Serenity:
 
 - for a calm evening environment
 - as a scent anchor around bedtime and evening routine
 - for people looking for a clear transition from day into evening
 - as a guidance area for scent, amount, room and personal preference
 
-## What we do not write publicly
-
-These statements do not belong on the website:
-
-- helps sleep disorders
-- guarantees better sleep
-- treats trouble falling asleep
-- replaces sleep guidance or medical help
 
 ## How Kyle places this in guidance
 
@@ -73,7 +65,7 @@ Personal guidance is not about quickly selling a product as a solution. It is ab
 - Are children, pets, pregnancy, medication or sensitive skin involved?
 - Is a finished doTERRA product more appropriate than a DIY recipe?
 
-This keeps the recommendation closer to what doTERRA actually offers, but without risky online promises.
+This helps keep the recommendation practical and aligned with the product label.
 
 ## Safety
 

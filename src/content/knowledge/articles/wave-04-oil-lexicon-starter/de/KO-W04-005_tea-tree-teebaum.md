@@ -8,7 +8,7 @@ route: "/de/wissen/oel-lexikon/tea-tree-teebaum/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Tea Tree Teebaum ätherisches Öl verständlich erklärt"
-description: "Tea Tree ruhig erklärt: klares krautiges Duftprofil, Hautpflege-Kontext, Alltagseinordnung und wichtige Hinweise zur sicheren Nutzung."
+description: "Tea Tree entdecken: klares krautiges Duftprofil, Hautpflege-Kontext, Alltagsideen und wichtige Hinweise zur sicheren Nutzung."
 riskLevel: "medium"
 cta: "Tea Tree mit Kyle sicher einordnen"
 relatedArticleIds:

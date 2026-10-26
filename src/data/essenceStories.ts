@@ -23,27 +23,27 @@ const stories: Record<string, EssenceStory> = {
   },
   '/de/oele-routinen/': {
     words: ['VERSTEHEN', 'ANWENDEN', 'SICHERHEIT', 'ENTDECKEN', 'ROUTINE'],
-    anchors: ['.hero', '.application-grid', '.intent-grid', '.split-layout', '.knowledge-continuation'],
+    anchors: ['.hero', '.oils-methods', '.oils-safety-note', '.oils-interests', '.oils-routine'],
   },
   '/en/oils-routines/': {
     words: ['UNDERSTAND', 'USE', 'SAFETY', 'EXPLORE', 'ROUTINE'],
-    anchors: ['.hero', '.application-grid', '.intent-grid', '.split-layout', '.knowledge-continuation'],
+    anchors: ['.hero', '.oils-methods', '.oils-safety-note', '.oils-interests', '.oils-routine'],
   },
   '/de/doterra-verstehen/': {
     words: ['VERSTEHEN', 'QUALITÄT', 'HERKUNFT', 'PRODUKTE', 'KONTO', 'BEGLEITUNG'],
-    anchors: ['.hero', '.fact-grid', '.section--sage .check-list', '.topic-grid', '.account-list', '.section--forest'],
+    anchors: ['.hero', '.dt-quality', '.dt-sourcing', '.dt-products', '.dt-account', '.dt-support'],
   },
   '/en/understanding-doterra/': {
     words: ['UNDERSTAND', 'QUALITY', 'SOURCING', 'PRODUCTS', 'ACCOUNT', 'SUPPORT'],
-    anchors: ['.hero', '.fact-grid', '.section--sage .check-list', '.topic-grid', '.account-list', '.section--forest'],
+    anchors: ['.hero', '.dt-quality', '.dt-sourcing', '.dt-products', '.dt-account', '.dt-support'],
   },
   '/de/starter-sets/': {
     words: ['ORIENTIEREN', 'VERGLEICHEN', 'ABWÄGEN', 'WÄHLEN', 'STARTEN'],
-    anchors: ['.hero', '.decision-section', '.starter-set-list', '.decision-guides', '.orientation-module'],
+    anchors: ['.hero', '.starter-decision', '.starter-pricing', '.starter-set-list', '.starter-orientation'],
   },
   '/en/starter-sets/': {
     words: ['ORIENT', 'COMPARE', 'CONSIDER', 'CHOOSE', 'BEGIN'],
-    anchors: ['.hero', '.decision-section', '.starter-set-list', '.decision-guides', '.orientation-module'],
+    anchors: ['.hero', '.starter-decision', '.starter-pricing', '.starter-set-list', '.starter-orientation'],
   },
   '/de/startbereich/': {
     words: ['VERSTEHEN', 'WÄHLEN', 'SICHERHEIT', 'ROUTINE', 'ALLTAG', 'KLÄREN'],
@@ -55,19 +55,35 @@ const stories: Record<string, EssenceStory> = {
   },
   '/de/beratung/': {
     words: ['ZUHÖREN', 'KLÄREN', 'EINORDNEN', 'ENTSCHEIDEN', 'BEGLEITEN'],
-    anchors: ['.hero', '.page-shell > .section:nth-of-type(2)', '.section--sage', '.topic-grid', '.faq-layout'],
+    anchors: ['.hero', '.consultation-overview', '.consultation-process', '.consultation-topics', '.cta-section'],
   },
   '/en/consultation/': {
     words: ['LISTEN', 'CLARIFY', 'GUIDE', 'DECIDE', 'SUPPORT'],
-    anchors: ['.hero', '.page-shell > .section:nth-of-type(2)', '.section--sage', '.topic-grid', '.faq-layout'],
+    anchors: ['.hero', '.consultation-overview', '.consultation-process', '.consultation-topics', '.cta-section'],
   },
   '/de/ueber-kyle/': {
     words: ['WEG', 'WERTE', 'ALLTAG', 'ROLLE', 'VERTRAUEN', 'BEGLEITUNG'],
-    anchors: ['.hero', '.editorial-layout', '.page-shell > .section:nth-of-type(3)', '.page-shell > .section:nth-of-type(4)', '.section--forest', '.page-shell > .section:nth-of-type(7)'],
+    anchors: ['.hero', '.about-path', '.about-routines', '.about-role', '.about-method', '.about-audience'],
   },
   '/en/about-kyle/': {
     words: ['JOURNEY', 'VALUES', 'EVERYDAY', 'ROLE', 'TRUST', 'SUPPORT'],
-    anchors: ['.hero', '.editorial-layout', '.page-shell > .section:nth-of-type(3)', '.page-shell > .section:nth-of-type(4)', '.section--forest', '.page-shell > .section:nth-of-type(7)'],
+    anchors: ['.hero', '.about-path', '.about-routines', '.about-role', '.about-method', '.about-audience'],
+  },
+  '/de/kontakt/': {
+    words: ['ANSPRECHEN', 'KONTAKT', 'VOR ORT', 'VERBINDEN'],
+    anchors: ['.hero', '#contact-options', '.local-guidance-section', '.social-section'],
+  },
+  '/en/contact/': {
+    words: ['REACH OUT', 'CONTACT', 'LOCAL', 'CONNECT'],
+    anchors: ['.hero', '#contact-options', '.local-guidance-section', '.social-section'],
+  },
+  '/de/faq/': {
+    words: ['FRAGEN', 'ANTWORTEN', 'VERTIEFEN', 'KLÄREN'],
+    anchors: ['.hero', '.faq-category', '.faq-knowledge', '.cta-section'],
+  },
+  '/en/faq/': {
+    words: ['QUESTIONS', 'ANSWERS', 'EXPLORE', 'CLARIFY'],
+    anchors: ['.hero', '.faq-category', '.faq-knowledge', '.cta-section'],
   },
   '/de/wissen/': {
     words: ['ORIENTIEREN', 'SUCHEN', 'VERSTEHEN', 'VERTIEFEN', 'ANWENDEN'],
@@ -79,19 +95,19 @@ const stories: Record<string, EssenceStory> = {
   },
   '/de/workshops/': {
     words: ['ENTDECKEN', 'VERSTEHEN', 'ERLEBEN', 'KLÄREN'],
-    anchors: ['.hero', '.format-grid', '.section--sage', '.cta-section'],
+    anchors: ['.hero', '.workshops-outcomes', '.workshops-formats', '.workshops-preparation'],
   },
   '/en/workshops/': {
     words: ['DISCOVER', 'UNDERSTAND', 'EXPERIENCE', 'CLARIFY'],
-    anchors: ['.hero', '.format-grid', '.section--sage', '.cta-section'],
+    anchors: ['.hero', '.workshops-outcomes', '.workshops-formats', '.workshops-preparation'],
   },
   '/de/business-moeglichkeit/': {
     words: ['ERFAHRUNG', 'VERANTWORTUNG', 'PASSUNG', 'LERNEN', 'BEGLEITEN', 'AUFBAU'],
-    anchors: ['.hero', '.page-shell > .section:nth-of-type(2)', '.section--sage', '.page-shell > .section:nth-of-type(4)', '.page-shell > .section:nth-of-type(5)', '.cta-section'],
+    anchors: ['.hero', '.business-values', '.business-fit', '.business-journey', '.business-discussion', '.cta-section'],
   },
   '/en/business-opportunity/': {
     words: ['EXPERIENCE', 'RESPONSIBILITY', 'FIT', 'LEARN', 'SUPPORT', 'BUILD'],
-    anchors: ['.hero', '.page-shell > .section:nth-of-type(2)', '.section--sage', '.page-shell > .section:nth-of-type(4)', '.page-shell > .section:nth-of-type(5)', '.cta-section'],
+    anchors: ['.hero', '.business-values', '.business-fit', '.business-journey', '.business-discussion', '.cta-section'],
   },
 };
 

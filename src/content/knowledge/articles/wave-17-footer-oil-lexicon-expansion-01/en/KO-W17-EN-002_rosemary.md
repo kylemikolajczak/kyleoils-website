@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/rosemary-rosmarin/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Rosemary explained simply"
-description: "A calm guide to Rosemary: scent profile, simple routines, blending ideas and safe use without medical promises."
+description: "Discover Rosemary: scent character, inspiring everyday rituals, blend ideas and responsible use."
 relatedArticleIds:
   - "KO-W09-001"
   - "KO-W07-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/rosemary-oil/"
 
 Rosemary is a classic herbal oil for structured everyday routines, work areas and clear aromatic blends.
 
-This page helps you understand Rosemary calmly: scent, everyday use, simple routines, blending ideas and important safety points. The goal is not medical promises. The goal is clear orientation.
+This page helps you understand Rosemary calmly: scent, everyday use, simple routines, blending ideas and important safety points. Discover its scent character, practical blend ideas and conscious ways to use it.
 
 ## Scent profile
 

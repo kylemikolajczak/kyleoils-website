@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/thyme-thymian/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Thyme: herbal oil between kitchen, scent and caution"
-description: "Thyme is a strong herbal oil that should be placed very consciously between kitchen, scent and topical use."
+description: "Thyme brings a bold herbal aroma to intentional scent ideas. Explore its character and product-specific use and dilution guidance."
 focus: "herbal oil, kitchen, dilution, strong use"
 searchKeywords:
   - "thyme"
@@ -46,7 +46,7 @@ sourceUrls:
 ---
 # Thyme: herbal oil between kitchen, scent and caution
 
-Thyme is a strong herbal oil that should be placed very consciously between kitchen, scent and topical use.
+Thyme brings a bold herbal aroma to intentional scent ideas. Explore its character and product-specific use and dilution guidance.
 
 ## Focus
 

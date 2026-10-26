@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/cilantro/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Cilantro (Korianderkraut) einfach erklärt"
-description: "Eine klare Einordnung von Cilantro (Korianderkraut): Duftprofil, Mischlogik, Alltag und sichere Anwendung ohne Heilversprechen."
+description: "Cilantro (Korianderkraut) gezielt entdecken: Duftprofil, passende Mischungen und Anwendungsideen für den Alltag."
 relatedArticleIds:
   - "KO-W17-DE-008"
   - "KO-W18-DE-006"

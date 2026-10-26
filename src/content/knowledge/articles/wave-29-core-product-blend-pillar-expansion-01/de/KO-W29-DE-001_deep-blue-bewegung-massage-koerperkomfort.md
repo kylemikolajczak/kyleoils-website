@@ -44,23 +44,15 @@ doTERRA positioniert Deep Blue rund um Sport, Massage nach dem Training sowie ei
 
 Kyle Oils greift diesen Bereich auf, aber in einer sauberen Beratungslogik: Was ist das Produkt? Für welche Alltagssituation wird es gesucht? Welche sichere Anwendung ist wichtig? Wo beginnt persönliche Einordnung?
 
-## Sichere öffentliche Positionierung
+## Passende Ideen für deinen Alltag
 
-Diese Seite darf doTERRA Deep Blue so einordnen:
+Hier findest du konkrete Anregungen rund um doTERRA Deep Blue:
 
 - nach Sport, Gartenarbeit, Umzug, langem Sitzen oder aktiven Tagen
 - als Teil einer bewussten Massage- oder Körperpflegeroutine
 - für Menschen, die ein kühlendes und wohltuendes Pflegegefühl suchen
 - als Beispiel dafür, wie doTERRA nahe an Körperthemen sein kann, ohne medizinisch zu sprechen
 
-## Was wir öffentlich nicht schreiben
-
-Diese Aussagen gehören nicht auf die Website:
-
-- hilft gegen Schmerzen
-- behandelt Verletzungen
-- wirkt entzündungshemmend
-- ersetzt Physiotherapie oder medizinische Behandlung
 
 ## Wie Kyle das in der Beratung einordnet
 
@@ -73,7 +65,7 @@ In der persönlichen Beratung geht es nicht darum, schnell ein Produkt als Lösu
 - Gibt es Kinder, Haustiere, Schwangerschaft, Medikamente oder sensible Haut?
 - Ist ein fertiges doTERRA Produkt sinnvoller als ein DIY-Rezept?
 
-So bleibt die Empfehlung näher an dem, was doTERRA wirklich anbietet, aber ohne riskante Online-Versprechen.
+So bleibt die Empfehlung auf deinen Alltag und die Kennzeichnung des jeweiligen Produkts abgestimmt.
 
 ## Sicherheit
 

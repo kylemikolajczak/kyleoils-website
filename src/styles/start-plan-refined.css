@@ -1,0 +1,91 @@
+/* Kyle Oils | 30-day free guide — use the same premium type and page system as Knowledge. */
+.page-shell:has(> .start-plan-hero) {--sp-w:#faf7f1;--sp-sage:#f1f2ea;--sp-sand:#f5eee5;--sp-forest:#263d32;background:var(--sp-w);}
+.page-shell:has(> .start-plan-hero) > section {background:var(--sp-w);}
+.page-shell:has(> .start-plan-hero) .start-plan-hero {padding:clamp(3.4rem,5.5vw,5.6rem) 0 clamp(3rem,4.2vw,4.5rem);}
+.page-shell:has(> .start-plan-hero) .start-plan-hero__inner,
+.page-shell:has(> .start-plan-hero) .start-plan-content {max-width:930px;}
+.page-shell:has(> .start-plan-hero) .eyebrow {font-size:.72rem;letter-spacing:.15em;color:#769078;font-weight:750;margin:0 0 1.1rem;}
+.page-shell:has(> .start-plan-hero) h1,.page-shell:has(> .start-plan-hero) h2 {
+  font-family:Georgia,"Times New Roman",serif;font-weight:500;
+  letter-spacing:-.03em;line-height:1.15;color:var(--sp-forest);
+}
+.page-shell:has(> .start-plan-hero) h1 {font-size:clamp(2.7rem,4.3vw,4.55rem);max-width:15ch;margin:0 0 1.1rem;}
+.page-shell:has(> .start-plan-hero) h2 {font-size:clamp(1.9rem,2.9vw,2.85rem);margin:0 0 1rem;}
+.page-shell:has(> .start-plan-hero) .start-plan-hero__subtitle {
+  font:500 clamp(1.45rem,2vw,1.9rem)/1.3 Georgia,"Times New Roman",serif;
+  color:#56745e;margin:0 0 1.3rem;
+}
+.page-shell:has(> .start-plan-hero) .start-plan-hero__copy {max-width:64ch;color:#5d6c60;line-height:1.7;margin-bottom:1.75rem;}
+.page-shell:has(> .start-plan-hero) .start-plan-hero__copy p {font-size:1.02rem;line-height:1.7;}
+.page-shell:has(> .start-plan-hero) > .section {padding:clamp(3.2rem,4.6vw,4.9rem) 0;}
+.page-shell:has(> .start-plan-hero) .section-intro {margin-bottom:1.65rem;}
+.page-shell:has(> .start-plan-hero) .section-intro p {color:#5c6f61;line-height:1.65;}
+.page-shell:has(> .start-plan-hero) .start-plan-list {
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;list-style:none;
+  padding:0;margin:0;
+}
+.page-shell:has(> .start-plan-hero) .start-plan-list li {
+  display:flex;align-items:flex-start;gap:1rem;padding:1.2rem 1.35rem;
+  color:#48604f;font-size:.94rem;line-height:1.56;
+  border-radius:17px;border:1px solid rgba(106,137,109,.24);background:var(--sp-sage);
+}
+.page-shell:has(> .start-plan-hero) .start-plan-list li:before {
+  content:"✓";font-weight:750;color:#719679;flex:none;
+}
+.page-shell:has(> .start-plan-hero) .start-plan-steps {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;}
+.page-shell:has(> .start-plan-hero) .start-plan-steps li {
+  background:var(--sp-sage);border:1px solid rgba(106,137,109,.23);
+  box-shadow:0 8px 26px rgba(39,61,43,.04);border-radius:18px;
+  padding:1.5rem;gap:.7rem;min-height:105px;
+}
+.page-shell:has(> .start-plan-hero) .start-plan-steps li:nth-child(2n) {
+  background:var(--sp-sand);border-color:rgba(153,139,115,.23);
+}
+.page-shell:has(> .start-plan-hero) .start-plan-steps li span {color:#779679;font-weight:750;}
+.page-shell:has(> .start-plan-hero) .start-plan-steps li p {font-size:.96rem;line-height:1.5;font-weight:550;color:#3d5b46;}
+.page-shell:has(> .start-plan-hero) .start-plan-download {
+  display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1.25rem;
+  max-width:1050px;background:var(--sp-sand);border:1px solid rgba(155,140,116,.23);
+  border-radius:24px;padding:clamp(1.5rem,2.8vw,2.75rem);
+}
+.page-shell:has(> .start-plan-hero) .start-plan-download p {font-size:.94rem;line-height:1.6;color:#607061;}
+.page-shell:has(> .start-plan-hero) > .cta-section {padding:clamp(2.5rem,4vw,3.8rem) 0;}
+.page-shell:has(> .start-plan-hero) > .cta-section .cta-section__inner {
+  box-sizing:border-box;max-width:1050px;
+  width:min(calc(100% - 2.5rem),1050px);margin-inline:auto;
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(210px,.85fr);
+  align-items:center;gap:clamp(1.4rem,3vw,3rem);
+  padding:clamp(1.6rem,3.2vw,2.7rem);
+  border-radius:26px;background:var(--sp-forest);box-shadow:0 18px 38px rgba(38,61,50,.12);
+}
+.page-shell:has(> .start-plan-hero) > .cta-section .cta-section__inner h2 {
+  color:#faf7f1;font:500 clamp(1.7rem,2.3vw,2.3rem)/1.18 Georgia,"Times New Roman",serif;
+}
+.page-shell:has(> .start-plan-hero) > .cta-section .cta-section__copy {color:#e5e9df;font-size:.92rem;line-height:1.6;}
+.page-shell:has(> .start-plan-hero) > .cta-section .cta-group {display:flex;flex-direction:column;align-items:stretch;}
+.page-shell:has(> .start-plan-hero) > .cta-section .cta-group .button {width:100%;justify-content:center;text-align:center;}
+.page-shell:has(> .start-plan-hero) > .cta-section .cta-group .button--primary {background:#faf7f1;color:#263d32;border-color:#faf7f1;}
+.page-shell:has(> .start-plan-hero) > .start-plan-note {padding:0 0 4rem;}
+.page-shell:has(> .start-plan-hero) > .start-plan-note .container {display:flex;justify-content:center;}
+.page-shell:has(> .start-plan-hero) > .start-plan-note .compliance-note {
+  box-sizing:border-box;max-width:760px;width:100%;
+  margin-inline:auto;background:#f4eee3;border:1px solid rgba(172,153,117,.3);border-radius:19px;
+  padding:1.15rem 1.45rem;
+}
+.page-shell:has(> .start-plan-hero) > .start-plan-note .compliance-note p {font-size:.84rem;line-height:1.6;color:#686658;}
+.page-shell:has(> .start-plan-hero) > .start-plan-note .compliance-note h2 {
+  font:750 .7rem/1.4 system-ui,sans-serif;color:#696556;letter-spacing:.12em;text-transform:uppercase;
+}
+@media(max-width:767px) {
+  .page-shell:has(> .start-plan-hero) .start-plan-list,.page-shell:has(> .start-plan-hero) .start-plan-steps {grid-template-columns:1fr;}
+  .page-shell:has(> .start-plan-hero) .start-plan-download {grid-template-columns:1fr;}
+  .page-shell:has(> .start-plan-hero) .start-plan-list li {padding:1.15rem;}
+}
+@media(max-width:850px) {
+  .page-shell:has(> .start-plan-hero) > .cta-section .cta-section__inner {grid-template-columns:1fr;max-width:680px;}
+}
+@media(max-width:490px) {
+  .page-shell:has(> .start-plan-hero) > .cta-section .cta-section__inner {padding:1.55rem;}
+  .page-shell:has(> .start-plan-hero) .start-plan-download .button,
+  .page-shell:has(> .start-plan-hero) > .cta-section .cta-group .button {white-space:normal;max-width:100%;}
+}

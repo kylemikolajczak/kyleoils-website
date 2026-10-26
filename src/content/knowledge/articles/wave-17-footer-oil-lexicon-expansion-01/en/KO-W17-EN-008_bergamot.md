@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/bergamot-bergamotte/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Bergamot explained simply"
-description: "A calm guide to Bergamot: scent profile, simple routines, blending ideas and safe use without medical promises."
+description: "Discover Bergamot: scent character, inspiring everyday rituals, blend ideas and responsible use."
 relatedArticleIds:
   - "KO-W09-001"
   - "KO-W07-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/bergamot-oil/"
 
 Bergamot is an elegant citrus oil for bright, calm aromatic blends and personal room-scent routines.
 
-This page helps you understand Bergamot calmly: scent, everyday use, simple routines, blending ideas and important safety points. The goal is not medical promises. The goal is clear orientation.
+This page helps you understand Bergamot calmly: scent, everyday use, simple routines, blending ideas and important safety points. Discover its scent character, practical blend ideas and conscious ways to use it.
 
 ## Scent profile
 

@@ -1,0 +1,57 @@
+/*
+ * Kyle Oils Premium Soft-Luminous Frame.
+ * One visual treatment for top-level DE/EN hero photographs and featured
+ * editorial portraits. The cinematic animated homepage hero is excluded.
+ */
+.ko-premium-frame {
+  position: relative;
+  isolation: isolate;
+  border: 1px solid rgba(221, 213, 192, .7);
+  --image-frame-radius: clamp(24px, 2.5vw, 30px);
+  border-radius: var(--image-frame-radius);
+  overflow: hidden;
+  background-clip: padding-box;
+  --image-frame-shadow:
+    0 0 0 1px rgba(101, 128, 106, .32),
+    0 0 0 5px rgba(240, 235, 223, .42),
+    0 18px 55px -19px rgba(37, 65, 47, .28),
+    0 8px 22px -11px rgba(47, 63, 52, .18);
+  box-shadow: var(--image-frame-shadow);
+}
+/* The editorial light catches the upper edge and right corner of the image. */
+.ko-premium-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    linear-gradient(142deg, rgba(253, 251, 240, .19) 0%, rgba(247, 245, 232, .055) 20%, transparent 43%, transparent 72%, rgba(24, 55, 37, .07) 100%);
+}
+/* A fine inner luminous seam – not a thick solid frame. */
+.ko-premium-frame::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  z-index: 2;
+  border-radius: max(14px, calc(clamp(24px, 2.5vw, 30px) - 8px));
+  border: 1px solid rgba(254, 250, 235, .43);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 249, .11);
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(135deg, #000 0%, rgba(0,0,0,.66) 29%, rgba(0,0,0,.06) 60%, rgba(0,0,0,.35) 100%);
+  mask-image: linear-gradient(135deg, #000 0%, rgba(0,0,0,.66) 29%, rgba(0,0,0,.06) 60%, rgba(0,0,0,.35) 100%);
+}
+/* Respect small screens: keep the frame subtle and avoid wide outer rings. */
+@media (max-width: 767px) {
+  .ko-premium-frame {
+    --image-frame-radius: 23px;
+    border-radius: var(--image-frame-radius);
+    --image-frame-shadow:
+      0 0 0 1px rgba(101,128,106,.24),
+      0 0 0 3px rgba(240,235,223,.32),
+      0 13px 36px -17px rgba(37,65,47,.23);
+    box-shadow: var(--image-frame-shadow);
+  }
+  .ko-premium-frame::after { inset: 6px; border-radius: 17px; }
+}

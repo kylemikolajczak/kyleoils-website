@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/turmeric-kurkuma/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Turmeric: warm, spicy and label-conscious"
-description: "Turmeric is a warm-spicy oil that should be placed clearly according to label, market and use context."
+description: "Turmeric offers an earthy, warm-spicy aroma. Explore scent ideas and product uses that match the label for your market."
 focus: "spicy oil, kitchen, body care, label context"
 searchKeywords:
   - "turmeric"
@@ -46,7 +46,7 @@ sourceUrls:
 ---
 # Turmeric: warm, spicy and label-conscious
 
-Turmeric is a warm-spicy oil that should be placed clearly according to label, market and use context.
+Turmeric offers an earthy, warm-spicy aroma. Explore scent ideas and product uses that match the label for your market.
 
 ## Focus
 

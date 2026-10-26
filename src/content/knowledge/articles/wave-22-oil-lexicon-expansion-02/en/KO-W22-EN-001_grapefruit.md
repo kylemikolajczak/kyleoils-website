@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/grapefruit/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Grapefruit explained simply"
-description: "A clear guide to Grapefruit: scent profile, blending logic, everyday use and safe use without medical promises."
+description: "Explore Grapefruit: scent profile, pairing ideas, practical routines and responsible use."
 relatedArticleIds:
   - "KO-W17-EN-008"
   - "KO-W18-EN-006"

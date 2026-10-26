@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/glossary/patch-test/"
 worldId: "glossary"
 worldLabel: "Glossar"
 seoTitle: "Patch-Test: Glossar-Eintrag"
-description: "Kurze Erklärung: Ein Patch-Test ist ein kleiner Verträglichkeitstest auf einer unauffälligen Hautstelle, bevor ein neues Öl oder eine neue Mischung größerflächig genutzt wird."
+description: "Ein Patch-Test prüft die Hautverträglichkeit auf einer kleinen Stelle. So gehst du bei neuen Ölen und Mischungen vorsichtig vor."
 relatedArticleIds:
   - "KO-P041-DE"
   - "KO-P045-DE"

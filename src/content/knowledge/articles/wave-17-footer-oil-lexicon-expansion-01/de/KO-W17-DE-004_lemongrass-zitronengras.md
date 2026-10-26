@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/lemongrass/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Lemongrass (Zitronengras) einfach erklärt"
-description: "Eine ruhige Einordnung von Lemongrass (Zitronengras): Duftprofil, einfache Routinen, Kombinationen und sichere Anwendung ohne Heilversprechen."
+description: "Lemongrass (Zitronengras) im Alltag: Duftcharakter, kombinierbare Duftnoten und Ideen für deine Alltagsroutine."
 relatedArticleIds:
   - "KO-W04-001"
   - "KO-W02-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/lemongrass-oil/"
 
 Lemongrass ist ein sehr präsentes Öl für helle Raumduft-Mischungen, frische Routinen und bewusste Duftakzente.
 
-Diese Seite hilft dir, Lemongrass (Zitronengras) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Es geht nicht um Heilversprechen, sondern um klare Orientierung.
+Diese Seite hilft dir, Lemongrass (Zitronengras) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Entdecke konkrete Duftideen, stimmige Kombinationen und bewusste Anwendungen.
 
 ## Duftprofil
 

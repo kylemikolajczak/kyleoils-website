@@ -1,0 +1,92 @@
+---
+import '../../styles/botanical-hero.css';
+import '../../styles/botanical-hero-v2.css';
+
+interface Props { lang?: 'de' | 'en'; }
+const { lang = 'de' } = Astro.props;
+const de = lang === 'de';
+const content = de ? {
+  kicker: 'KYLE OILS · NATUR BEWUSST ERLEBEN',
+  heading: 'Natürliche Routinen für mehr Balance im Alltag',
+  sub: 'Erst verstehen. Dann in Ruhe entscheiden.',
+  primary: 'Beratung anfragen', secondary: 'Wissen entdecken',
+  eyebrow: 'ZWEI PERSPEKTIVEN · EIN MOMENT',
+  instruction: 'Bewege die Maus, um die Essenz zu entdecken',
+  cueTitle: 'Kraft der Natur', hint: 'Weiter scrollen', reveal: 'Essenz entdecken', back: 'Zurück zum Porträt',
+  real: 'GESCHENK', deeper: 'DER ERDE',
+  a11y: 'Interaktives Kyle Oils Hero. Beim Bewegen der Maus und Scrollen wird die zweite Ebene mit Heidelandschaft und einer grafischen Essenzfigur sichtbar.'
+} : {
+  kicker: 'KYLE OILS · NATURAL WELLNESS',
+  heading: 'Natural Routines for Everyday Life',
+  sub: 'Understand first. Choose at your own pace.',
+  primary: 'Request Guidance', secondary: 'Explore Knowledge',
+  eyebrow: 'TWO PERSPECTIVES · ONE MOMENT',
+  instruction: 'Move your pointer to discover the essence',
+  cueTitle: 'Power of Nature', hint: 'Scroll to explore', reveal: 'Discover the essence', back: 'Back to portrait',
+  real: 'GIFT', deeper: 'OF THE EARTH',
+  a11y: 'Interactive Kyle Oils hero. Moving the pointer and scrolling reveals a second layer with a heathland landscape and a graphical essence figure.'
+};
+const base = '/assets/images/kyle/';
+---
+<section class="botanical-hero hero" data-botanical-hero data-stage="surface" aria-label={content.a11y} data-locale={lang}>
+  <div class="botanical-hero__stage">
+
+    <svg class="botanical-hero__wipe-defs" aria-hidden="true" focusable="false">
+      <defs>
+        <radialGradient id="kyle-fluid-smoke" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+          <stop offset="46%" stop-color="#fff" stop-opacity=".96"/>
+          <stop offset="72%" stop-color="#fff" stop-opacity=".75"/>
+          <stop offset="90%" stop-color="#fff" stop-opacity=".28"/>
+          <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="kyle-fluid-smoke-warp" x="-12%" y="-12%" width="124%" height="124%" color-interpolation-filters="sRGB">
+          <feTurbulence type="fractalNoise" baseFrequency=".011 .017" numOctaves="3" seed="17" result="swirl"/>
+          <feDisplacementMap in="SourceGraphic" in2="swirl" scale="38" xChannelSelector="R" yChannelSelector="G"/>
+          <feGaussianBlur stdDeviation="1.2"/>
+        </filter>
+        <mask id="kyle-fluid-mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" mask-type="alpha">
+          <g data-fluid-mask filter="url(#kyle-fluid-smoke-warp)"></g>
+        </mask>
+      </defs>
+    </svg>
+    <div class="botanical-hero__scene botanical-hero__scene--essence" aria-hidden="true">
+      <div class="botanical-hero__landscape"></div>
+      <div class="botanical-hero__landscape-tint"></div>
+      <canvas class="botanical-hero__flow" data-flow-canvas="essence"></canvas>
+      <div class="botanical-hero__portrait-frame botanical-hero__portrait-frame--essence">
+        <img src={base + 'kyle-oils-essenzfigur-salbeigruen-creme.png'} width="1447" height="1087" alt="" decoding="async" />
+      </div>
+    </div>
+    <div class="botanical-hero__scene botanical-hero__scene--surface" aria-hidden="true">
+      <div class="botanical-hero__surface-atmosphere"></div>
+      <canvas class="botanical-hero__flow" data-flow-canvas="surface"></canvas>
+      <div class="botanical-hero__portrait-frame botanical-hero__portrait-frame--surface">
+        <img src={base + 'hero-kyle-transparent-v2.png'} width="1448" height="1086" alt="" fetchpriority="high" decoding="async" />
+        <div class="botanical-hero__oil-scan"></div>
+      </div>
+    </div>
+    <div class="botanical-hero__scene botanical-hero__scene--peek" aria-hidden="true">
+      <div class="botanical-hero__landscape"></div>
+      <div class="botanical-hero__landscape-tint"></div>
+      <canvas class="botanical-hero__flow" data-flow-canvas="peek"></canvas>
+      <div class="botanical-hero__portrait-frame botanical-hero__portrait-frame--essence">
+        <img src={base + 'kyle-oils-essenzfigur-salbeigruen-creme.png'} width="1447" height="1087" alt="" decoding="async" loading="lazy" />
+      </div>
+    </div>
+
+    <svg class="botanical-hero__wipe-edge" aria-hidden="true" focusable="false"><g data-fluid-edge></g></svg>\n    <div class="botanical-hero__story" aria-hidden="true">
+      <span class="botanical-hero__word botanical-hero__word--left" data-hero-word="left">{content.real}</span>
+      <span class="botanical-hero__word botanical-hero__word--right" data-hero-word="right">{content.deeper}</span>
+    </div>
+
+    <div class="botanical-hero__scrollcue" aria-hidden="true">
+      <span class="botanical-hero__scrollcue-title">{content.cueTitle}</span>
+      <span class="botanical-hero__scrollcue-instruction">{content.hint}</span>
+      <span class="botanical-hero__scrollcue-line"></span>
+    </div>
+    <button type="button" class="botanical-hero__mobile-toggle" data-hero-toggle aria-pressed="false" aria-label={content.reveal} data-reveal-label={content.reveal} data-back-label={content.back}><span class="botanical-hero__toggle-gem" aria-hidden="true"></span><span data-hero-toggle-label>{content.reveal}</span></button>
+
+  </div>
+</section>
+<script is:inline src="/scripts/botanical-hero.js" defer></script>

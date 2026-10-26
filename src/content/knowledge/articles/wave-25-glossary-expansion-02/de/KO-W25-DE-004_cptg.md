@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/glossary/cptg/"
 worldId: "glossary"
 worldLabel: "Glossar"
 seoTitle: "CPTG einfach erklärt"
-description: "Kurze Erklärung: CPTG steht bei doTERRA für Certified Pure Tested Grade. doTERRA verwendet diesen Begriff für den eigenen Prüfprozess rund um Reinheit, Zusammensetzung und mögliche Verfälschung."
+description: "CPTG steht für Certified Pure Tested Grade: Erfahre, was doTERRA mit diesem Begriff über sein eigenes Prüfverfahren beschreibt."
 relatedArticleIds:
   - "KO-P041-DE"
   - "KO-P045-DE"

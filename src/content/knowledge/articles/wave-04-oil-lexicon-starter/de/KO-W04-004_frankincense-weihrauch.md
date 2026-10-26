@@ -8,7 +8,7 @@ route: "/de/wissen/oel-lexikon/frankincense-weihrauch/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Frankincense Weihrauch ätherisches Öl verständlich erklärt"
-description: "Frankincense ruhig erklärt: warm-harziges Duftprofil, Alltagseinordnung, persönliche Routinen, doTERRA-Kontext und Sicherheitshinweise."
+description: "Frankincense entdecken: warm-harziges Duftprofil, Alltagsideen, persönliche Routinen, doTERRA-Kontext und Sicherheitshinweise."
 riskLevel: "low"
 cta: "Frankincense mit Kyle einordnen"
 relatedArticleIds:
@@ -24,7 +24,7 @@ enTranslationStatus: "not_included_in_wave_04"
 
 Frankincense, auf Deutsch Weihrauch, hat ein warmes, harziges und tiefes Duftprofil. Der Duft wirkt für viele Menschen besonders ruhig, erdig und hochwertig.
 
-Frankincense wird oft als besonderes Öl wahrgenommen, weil Weihrauch historisch und kulturell eine lange Bedeutung hat. Auf Kyle Oils geht es aber nicht um Mystik oder übertriebene Versprechen, sondern um eine klare, sichere und alltagstaugliche Einordnung.
+Frankincense wird oft als besonderes Öl wahrgenommen, weil Weihrauch historisch und kulturell eine lange Bedeutung hat. Hier lernst du, wie Weihrauch mit seiner warmen, balsamischen Tiefe Duftmischungen, Pflegerituale und bewusst gestaltete Ruhephasen begleiten kann.
 
 ## Kurzprofil
 
@@ -73,7 +73,7 @@ Mögliche Alltagssituationen:
 - Self-Care-Abend
 - bewusstes Auftragen als Duftmoment
 
-Auch hier gilt: keine medizinische Erwartung, sondern eine persönliche Duft- und Pflegeroutine.
+Auch eine kleine, bewusst gewählte Pflegeroutine kann sich besonders anfühlen.
 
 ## doTERRA-Kontext
 

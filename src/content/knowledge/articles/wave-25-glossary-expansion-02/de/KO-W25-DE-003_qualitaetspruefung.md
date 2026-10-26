@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/glossary/quality-testing/"
 worldId: "glossary"
 worldLabel: "Glossar"
 seoTitle: "Qualitätsprüfung einfach erklärt"
-description: "Kurze Erklärung: Qualitätsprüfung beschreibt Tests und Kontrollen, mit denen geprüft wird, ob ein Öl dem gewünschten Standard entspricht. doTERRA beschreibt dafür unter anderem den CPTG-Testprozess."
+description: "Wie wird die Qualität ätherischer Öle geprüft? Erfahre mehr über Reinheit, Inhaltsstofftests und das CPTG-Prüfverfahren von doTERRA."
 relatedArticleIds:
   - "KO-P041-DE"
   - "KO-P045-DE"

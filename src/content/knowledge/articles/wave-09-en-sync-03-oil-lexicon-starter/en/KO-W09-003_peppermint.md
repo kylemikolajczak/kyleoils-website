@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/peppermint-pfefferminze/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Peppermint essential oil explained clearly"
-description: "Peppermint explained calmly: fresh mint scent, intensity, everyday use, diffuser care, dilution and safety notes."
+description: "Explore Peppermint: fresh mint scent, intensity, everyday use, diffuser care, dilution and safety notes."
 relatedArticleIds:
   - "KO-W07-003"
   - "KO-W07-005"

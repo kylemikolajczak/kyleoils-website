@@ -1,0 +1,392 @@
+/*
+ * Kyle Oils homepage refinement v2.
+ * Intent: calm editorial rhythm, restrained sage/cream cards, clear knowledge
+ * navigation, and purposeful card entrance motion. Hero itself is untouched.
+ */
+
+/* The qualification strip's separator aligns with the reading column. */
+.page-shell:has(> .botanical-hero) > .trust-strip {
+  border-bottom: 0;
+}
+.page-shell:has(> .botanical-hero) .trust-strip__inner {
+  position: relative;
+}
+.page-shell:has(> .botanical-hero) .trust-strip__inner::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(-1.25rem - 1px);
+  transform: translateX(-50%);
+  width: min(100%, 1110px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(73, 101, 80, .26) 7%, rgba(73, 101, 80, .26) 93%, transparent);
+}
+.page-shell:has(> .botanical-hero) .section--nature .narrow-layout {
+  max-width: 980px;
+}
+.page-shell:has(> .botanical-hero) .section--nature .section-intro {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+.page-shell:has(> .botanical-hero) .section--nature .section-intro h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: clamp(2.05rem, 3vw, 2.8rem);
+  color: var(--color-deep-forest);
+  letter-spacing: -.028em;
+}
+.page-shell:has(> .botanical-hero) .section--nature .section-intro__copy {
+  max-width: 65ch;
+  margin-inline: auto;
+}
+
+/* Entry paths: four quiet, tactile editorial cards. */
+.page-shell:has(> .botanical-hero) .intent-section > .container,
+.page-shell:has(> .botanical-hero) .next-paths-section > .container {
+  max-width: 1190px;
+}
+.page-shell:has(> .botanical-hero) .intent-section .section-intro,
+.page-shell:has(> .botanical-hero) .next-paths-section .section-intro {
+  max-width: 730px;
+  margin-bottom: 1.55rem;
+}
+.page-shell:has(> .botanical-hero) .intent-grid,
+.page-shell:has(> .botanical-hero) .next-paths-grid {
+  margin-top: 1.4rem;
+  gap: clamp(.8rem, 1.45vw, 1.35rem);
+}
+.page-shell:has(> .botanical-hero) .intent-card,
+.page-shell:has(> .botanical-hero) .next-path-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .95rem;
+  padding: clamp(1.4rem, 2.4vw, 2rem);
+  border-radius: 22px;
+  text-decoration: none;
+}
+.page-shell:has(> .botanical-hero) .intent-card::before,
+.page-shell:has(> .botanical-hero) .next-path-card::before {
+  content: "";
+  width: 32px;
+  height: 2px;
+  border-radius: 4px;
+  background: rgba(68, 112, 78, .63);
+  margin-bottom: .2rem;
+}
+.page-shell:has(> .botanical-hero) .intent-card h2,
+.page-shell:has(> .botanical-hero) .next-path-card h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #263d32;
+  font-weight: 500;
+  font-size: clamp(1.35rem, 1.65vw, 1.65rem);
+  line-height: 1.2;
+  letter-spacing: -.018em;
+}
+.page-shell:has(> .botanical-hero) .intent-card p,
+.page-shell:has(> .botanical-hero) .next-path-card p {
+  font-size: .96rem;
+  line-height: 1.57;
+  flex: 1;
+}
+.page-shell:has(> .botanical-hero) .intent-card > span,
+.page-shell:has(> .botanical-hero) .next-path-card > span {
+  font-size: .76rem;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+  padding-top: .3rem;
+  border-top: 1px solid rgba(70, 106, 77, .16);
+  width: 100%;
+}
+.page-shell:has(> .botanical-hero) .next-path-card {
+  min-height: 225px;
+}
+.page-shell:has(> .botanical-hero) .next-path-card::before {
+  background: rgba(143, 116, 83, .58);
+}
+
+/* Knowledge: substantial, discoverable resource selection, no underlined links. */
+.page-shell:has(> .botanical-hero) .knowledge-section__inner {
+  max-width: 1190px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 240px);
+  column-gap: clamp(1.5rem, 5vw, 5.5rem);
+  row-gap: clamp(1.3rem, 3vw, 2.2rem);
+  align-items: center;
+}
+.page-shell:has(> .botanical-hero) .knowledge-section__header {
+  min-width: 0;
+}
+.page-shell:has(> .botanical-hero) .knowledge-section__header .section-intro {
+  margin: 0;
+  max-width: 690px;
+}
+.page-shell:has(> .botanical-hero) .knowledge-section__header .section-intro h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  color: #263d32;
+  letter-spacing: -.028em;
+  font-size: clamp(2.2rem, 3.4vw, 3.35rem);
+}
+.page-shell:has(> .botanical-hero) .knowledge-section__action {
+  justify-self: end;
+  max-width: 240px;
+  display: grid;
+  justify-items: start;
+  gap: .8rem;
+}
+.page-shell:has(> .botanical-hero) .knowledge-section__action .button {
+  width: 100%;
+}
+.page-shell:has(> .botanical-hero) .knowledge-section__action p {
+  font-size: .84rem;
+  color: #657165;
+  line-height: 1.5;
+  margin: 0;
+}
+.page-shell:has(> .botanical-hero) .knowledge-resources {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.8rem, 1.4vw, 1.3rem);
+}
+.page-shell:has(> .botanical-hero) .knowledge-resource {
+  text-decoration: none;
+  display: grid;
+  align-content: start;
+  gap: .47rem;
+  padding: clamp(1.2rem, 2vw, 1.6rem);
+  min-height: 171px;
+  border: 1px solid rgba(98, 132, 103, .21);
+  border-radius: 19px;
+  background: rgba(238, 241, 233, .87);
+  color: #263d32;
+  box-shadow: 0 5px 18px rgba(37, 64, 45, .034);
+  transition: background-color .22s ease, border-color .22s ease, transform .22s ease, box-shadow .22s ease;
+}
+.page-shell:has(> .botanical-hero) .knowledge-resource:hover,
+.page-shell:has(> .botanical-hero) .knowledge-resource:focus-visible {
+  background: #e9efe4;
+  border-color: rgba(67, 111, 74, .42);
+  box-shadow: 0 12px 25px rgba(37, 64, 45, .09);
+  transform: translateY(-3px);
+}
+.page-shell:has(> .botanical-hero) .knowledge-resource__index {
+  font-size: .7rem;
+  color: #708771;
+  letter-spacing: .16em;
+  font-weight: 700;
+}
+.page-shell:has(> .botanical-hero) .knowledge-resource strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 1.45rem;
+}
+.page-shell:has(> .botanical-hero) .knowledge-resource__description {
+  font-size: .88rem;
+  color: #627368;
+  line-height: 1.46;
+}
+
+/* Consultation: a legible two-column narrative, subtle credential surface. */
+.page-shell:has(> .botanical-hero) .consultation-section .split-layout {
+  max-width: 1190px;
+  gap: clamp(2rem, 5vw, 4.6rem);
+}
+.page-shell:has(> .botanical-hero) .consultation-section .section-intro {
+  margin-bottom: 1.7rem;
+}
+.page-shell:has(> .botanical-hero) .consultation-section .section-intro h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #263d32;
+  font-weight: 500;
+  letter-spacing: -.026em;
+  font-size: clamp(2.2rem, 3.5vw, 3.4rem);
+}
+.page-shell:has(> .botanical-hero) .consultation-section .trust-points {
+  gap: .6rem;
+  font-size: .95rem;
+  margin-bottom: 1.7rem;
+}
+.page-shell:has(> .botanical-hero) .consultation-section .credential-row {
+  border: 1px solid rgba(98,132,103,.14);
+  background: rgba(238, 241, 233, .75);
+  border-radius: 19px;
+  padding: .8rem 1.15rem;
+  margin-bottom: 1.65rem;
+}
+.page-shell:has(> .botanical-hero) .consultation-section .credential-row img {
+  width: 78px;
+  height: 78px;
+}
+.page-shell:has(> .botanical-hero) .consultation-section .split-layout > :last-child {
+  border-radius: var(--image-frame-radius, 28px);
+  overflow: hidden;
+}
+
+/* The final green callout remains our single stronger visual moment. */
+.page-shell:has(> .botanical-hero) .cta-section__inner {
+  border-radius: 28px;
+  box-shadow: 0 18px 38px rgba(38,61,50,.11);
+}
+
+/* Individual cards fly from either side on first encounter only. */
+@media (prefers-reduced-motion: no-preference) {
+  html.home-cards-ready .page-shell .intent-card[data-card-motion]:not(.is-in-view),
+  html.home-cards-ready .page-shell .next-path-card[data-card-motion]:not(.is-in-view) {
+    opacity: 0;
+    transform: translate3d(var(--card-offset, -36px), 0, 0);
+  }
+  html.home-cards-ready .page-shell .intent-card[data-card-motion],
+  html.home-cards-ready .page-shell .next-path-card[data-card-motion] {
+    transition: opacity 680ms ease var(--card-delay, 0ms),
+                transform 780ms cubic-bezier(.22, 1, .36, 1) var(--card-delay, 0ms),
+                box-shadow 220ms ease,
+                background-color 220ms ease;
+  }
+  html.home-cards-ready .page-shell .intent-card.is-in-view,
+  html.home-cards-ready .page-shell .next-path-card.is-in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  html.home-cards-ready .page-shell .intent-card.is-in-view:hover,
+  html.home-cards-ready .page-shell .next-path-card.is-in-view:hover {
+    transform: translate3d(0, -4px, 0);
+    transition-delay: 0ms;
+  }
+}
+@media (max-width: 900px) {
+  .page-shell:has(> .botanical-hero) .knowledge-section__inner {
+    grid-template-columns: 1fr;
+    gap: 1.45rem;
+  }
+  .page-shell:has(> .botanical-hero) .knowledge-section__action {
+    justify-self: start;
+    max-width: none;
+  }
+  .page-shell:has(> .botanical-hero) .knowledge-resources {
+    grid-column: 1;
+  }
+  .page-shell:has(> .botanical-hero) .intent-card {
+    min-height: 215px;
+  }
+}
+@media (max-width: 650px) {
+  .page-shell:has(> .botanical-hero) .section--nature .section-intro {
+    text-align: left;
+    margin: 0;
+  }
+  .page-shell:has(> .botanical-hero) .knowledge-resources {
+    grid-template-columns: 1fr;
+  }
+  .page-shell:has(> .botanical-hero) .knowledge-resource {
+    min-height: 0;
+    padding: 1rem 1.15rem;
+  }
+  .page-shell:has(> .botanical-hero) .intent-card,
+  .page-shell:has(> .botanical-hero) .next-path-card {
+    min-height: 0;
+    padding: 1.35rem;
+  }
+  .page-shell:has(> .botanical-hero) .knowledge-section__header .section-intro h2,
+  .page-shell:has(> .botanical-hero) .consultation-section .section-intro h2 {
+    font-size: clamp(2rem, 7vw, 2.5rem);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-shell:has(> .botanical-hero) .intent-card,
+  .page-shell:has(> .botanical-hero) .next-path-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/* FINAL MAIN-PAGE TYPOGRAPHY AUDIT (DE/EN) — same editorial type as the other seven pages. */
+.page-shell:has(> .botanical-hero) .intent-section .section-intro h2,
+.page-shell:has(> .botanical-hero) .next-paths-section .section-intro h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #263d32;
+  font-weight: 500;
+  letter-spacing: -.028em;
+  line-height: 1.14;
+  font-size: clamp(2.08rem, 3.15vw, 3.1rem);
+}
+.page-shell:has(> .botanical-hero) > .cta-section {
+  padding-block: clamp(2.4rem, 3.6vw, 3.5rem);
+  background: #faf7f1;
+}
+.page-shell:has(> .botanical-hero) > .cta-section .cta-section__inner {
+  box-sizing: border-box;
+  width: min(calc(100% - 2.5rem), 1080px);
+  max-width: 1080px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(240px, .85fr);
+  align-items: center;
+  gap: clamp(1.45rem, 3.4vw, 3.2rem);
+  padding: clamp(1.8rem, 3.3vw, 2.8rem);
+  border-radius: 27px;
+  background: #263d32;
+  box-shadow: 0 18px 38px rgba(38, 61, 50, .12);
+}
+.page-shell:has(> .botanical-hero) > .cta-section .cta-section__inner h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.72rem, 2.32vw, 2.35rem);
+  font-weight: 500;
+  letter-spacing: -.025em;
+  line-height: 1.17;
+  color: #faf7f1;
+  margin: 0 0 .86rem;
+}
+.page-shell:has(> .botanical-hero) > .cta-section .cta-section__copy {
+  font-size: .94rem;
+  line-height: 1.6;
+  max-width: 54ch;
+  color: #e6eadf;
+}
+.page-shell:has(> .botanical-hero) > .cta-section .cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: .8rem;
+}
+.page-shell:has(> .botanical-hero) > .cta-section .cta-group .button {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: 47px;
+  border-radius: 12px;
+}
+@media (max-width: 850px) {
+  .page-shell:has(> .botanical-hero) > .cta-section .cta-section__inner {
+    grid-template-columns: 1fr;
+    max-width: 680px;
+    gap: 1.5rem;
+  }
+  .page-shell:has(> .botanical-hero) > .cta-section .cta-group {
+    align-items: flex-start;
+  }
+  .page-shell:has(> .botanical-hero) > .cta-section .cta-group .button {
+    width: auto;
+    max-width: 100%;
+  }
+}
+@media (max-width: 490px) {
+  .page-shell:has(> .botanical-hero) > .cta-section .cta-section__inner {
+    padding: 1.55rem;
+  }
+  .page-shell:has(> .botanical-hero) > .cta-section .cta-group {
+    align-items: stretch;
+  }
+  .page-shell:has(> .botanical-hero) > .cta-section .cta-group .button {
+    width: 100%;
+    white-space: normal;
+  }
+}

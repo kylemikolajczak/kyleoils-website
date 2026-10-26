@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/blue-tansy-blauer-rainfarn/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Blue Tansy: blue scent note for body care and massage context"
-description: "Blue Tansy is a distinctive blue oil often placed through scent, body care, skin feel and massage context."
+description: "Blue Tansy adds its distinctive blue colour and unique aroma to premium skin-care rituals, diluted massage blends and balanced scents."
 focus: "blue oil, body care, massage context, scent blends"
 searchKeywords:
   - "blue tansy"
@@ -46,7 +46,7 @@ sourceUrls:
 ---
 # Blue Tansy: blue scent note for body care and massage context
 
-Blue Tansy is a distinctive blue oil often placed through scent, body care, skin feel and massage context.
+Blue Tansy adds its distinctive blue colour and unique aroma to premium skin-care rituals, diluted massage blends and balanced scents.
 
 ## Focus
 

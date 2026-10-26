@@ -8,7 +8,7 @@ route: "/de/wissen/oel-lexikon/oregano/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Oregano ätherisches Öl verständlich erklärt"
-description: "Oregano als intensives ätherisches Öl ruhig erklärt: Duftprofil, Alltagseinordnung, kulinarischer Kontext und wichtige Sicherheitshinweise."
+description: "Oregano als intensives ätherisches Öl entdecken: Duftprofil, Alltagsideen, kulinarischer Kontext und wichtige Sicherheitshinweise."
 riskLevel: "high"
 cta: "Oregano vor Anwendung mit Kyle einordnen"
 relatedArticleIds:

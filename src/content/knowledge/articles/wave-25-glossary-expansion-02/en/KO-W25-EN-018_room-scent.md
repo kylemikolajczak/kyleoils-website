@@ -10,7 +10,7 @@ deRoute: "/de/wissen/glossar/raumduft/"
 worldId: "glossary"
 worldLabel: "Glossary"
 seoTitle: "Room scent explained simply"
-description: "Short explanation: Room scent describes the intentionally shaped scent atmosphere in a room. Essential oils can be used for this through diffusers or other suitable methods."
+description: "Room scent creates a chosen aroma at home. Discover how diffusers and suitable essential oils can bring fragrance into everyday life."
 relatedArticleIds:
   - "KO-P041-EN"
   - "KO-P045-EN"

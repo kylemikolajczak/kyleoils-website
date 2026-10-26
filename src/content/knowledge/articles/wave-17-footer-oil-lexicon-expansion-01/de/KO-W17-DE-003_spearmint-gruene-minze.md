@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/spearmint/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Spearmint (Grüne Minze) einfach erklärt"
-description: "Eine ruhige Einordnung von Spearmint (Grüne Minze): Duftprofil, einfache Routinen, Kombinationen und sichere Anwendung ohne Heilversprechen."
+description: "Spearmint (Grüne Minze) im Alltag: Duftcharakter, kombinierbare Duftnoten und Ideen für deine Alltagsroutine."
 relatedArticleIds:
   - "KO-W04-001"
   - "KO-W02-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/en_DE/shop/spearmint-oil/"
 
 Spearmint wirkt im Duftprofil oft weicher als Peppermint und passt gut zu frischen, freundlichen Alltagsmischungen.
 
-Diese Seite hilft dir, Spearmint (Grüne Minze) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Es geht nicht um Heilversprechen, sondern um klare Orientierung.
+Diese Seite hilft dir, Spearmint (Grüne Minze) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Entdecke konkrete Duftideen, stimmige Kombinationen und bewusste Anwendungen.
 
 ## Duftprofil
 

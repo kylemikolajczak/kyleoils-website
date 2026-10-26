@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/geranium/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Geranium (Geranie) einfach erklärt"
-description: "Eine ruhige Einordnung von Geranium (Geranie): Duftprofil, einfache Routinen, Kombinationen und sichere Anwendung ohne Heilversprechen."
+description: "Geranium (Geranie) im Alltag: Duftcharakter, kombinierbare Duftnoten und Ideen für deine Alltagsroutine."
 relatedArticleIds:
   - "KO-W04-001"
   - "KO-W02-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/geranium-oil"
 
 Geranium ist ein blumiges Öl für weiche Duftmischungen, persönliche Pflegeroutinen und warme Alltagsmomente.
 
-Diese Seite hilft dir, Geranium (Geranie) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Es geht nicht um Heilversprechen, sondern um klare Orientierung.
+Diese Seite hilft dir, Geranium (Geranie) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Entdecke konkrete Duftideen, stimmige Kombinationen und bewusste Anwendungen.
 
 ## Duftprofil
 

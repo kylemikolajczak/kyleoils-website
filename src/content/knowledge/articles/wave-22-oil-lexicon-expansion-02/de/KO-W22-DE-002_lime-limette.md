@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/lime/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Lime (Limette) einfach erklärt"
-description: "Eine klare Einordnung von Lime (Limette): Duftprofil, Mischlogik, Alltag und sichere Anwendung ohne Heilversprechen."
+description: "Lime (Limette) gezielt entdecken: Duftprofil, passende Mischungen und Anwendungsideen für den Alltag."
 relatedArticleIds:
   - "KO-W17-DE-008"
   - "KO-W18-DE-006"

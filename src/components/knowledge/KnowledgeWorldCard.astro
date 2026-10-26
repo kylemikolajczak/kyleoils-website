@@ -8,11 +8,11 @@ interface Props {
 const { label, description, href, linkLabel } = Astro.props;
 ---
 
-<article class="world-card">
+<a class="world-card" href={href} aria-label={label + " – " + linkLabel}>
   <h2>{label}</h2>
   <p>{description}</p>
-  <a class="world-card__link" href={href}>{linkLabel} <span aria-hidden="true">→</span></a>
-</article>
+  <span class="world-card__link">{linkLabel} <span aria-hidden="true">↗</span></span>
+</a>
 
 <style>
   .world-card { display: flex; min-height: 230px; flex-direction: column; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }

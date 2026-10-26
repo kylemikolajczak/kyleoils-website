@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/rosemary/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Rosemary (Rosmarin) einfach erklärt"
-description: "Eine ruhige Einordnung von Rosemary (Rosmarin): Duftprofil, einfache Routinen, Kombinationen und sichere Anwendung ohne Heilversprechen."
+description: "Rosemary (Rosmarin) im Alltag: Duftcharakter, kombinierbare Duftnoten und Ideen für deine Alltagsroutine."
 relatedArticleIds:
   - "KO-W04-001"
   - "KO-W02-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/rosemary-oil/"
 
 Rosemary ist ein klassisches Kräuteröl für strukturierte Alltagsroutinen, Arbeitsbereiche und klare Duftmischungen.
 
-Diese Seite hilft dir, Rosemary (Rosmarin) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Es geht nicht um Heilversprechen, sondern um klare Orientierung.
+Diese Seite hilft dir, Rosemary (Rosmarin) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Entdecke konkrete Duftideen, stimmige Kombinationen und bewusste Anwendungen.
 
 ## Duftprofil
 

@@ -43,6 +43,7 @@ export const groupedMainNavigation = [
     items: [
       { label: 'Beratung', href: '/de/beratung/' },
       { label: 'Öle & Routinen', href: '/de/oele-routinen/' },
+      { label: 'doTERRA verstehen', href: '/de/doterra-verstehen/' },
     ],
   },
   {
@@ -65,6 +66,7 @@ export const groupedEnglishMainNavigation = [
     items: [
       { label: 'Consultation', href: '/en/consultation/' },
       { label: 'Oils & Routines', href: '/en/oils-routines/' },
+      { label: 'Understanding doTERRA', href: '/en/understanding-doterra/' },
     ],
   },
   {

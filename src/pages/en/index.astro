@@ -1,7 +1,9 @@
 ---
 import CTASection from '../../components/cta/CTASection.astro';
 import Button from '../../components/global/Button.astro';
-import HeroSplit from '../../components/sections/HeroSplit.astro';
+import BotanicalHero from '../../components/sections/BotanicalHero.astro';
+import '../../styles/homepage-unified.css';
+import '../../styles/homepage-refinement.css';
 import ResponsiveImage from '../../components/global/ResponsiveImage.astro';
 import SectionIntro from '../../components/sections/SectionIntro.astro';
 import PageLayout from '../../layouts/PageLayout.astro';
@@ -25,27 +27,25 @@ const nextPaths = [
   title="doTERRA Guidance & Essential Oils for Everyday Life | Kyle Oils"
   description="Personal doTERRA guidance, essential oils and everyday-friendly routines. Explore knowledge, products and safe next steps with Kyle."
 >
-  <HeroSplit
-    title="Natural Routines for Everyday Life"
-    primaryHref="/en/contact/"
-    primaryLabel="Request Guidance"
-    secondaryHref="/en/knowledge/"
-    secondaryLabel="Explore Knowledge"
-    imageSrc="/assets/images/kyle/hero-kyle.png"
-    imageAlt="Kyle Daniel Mikolajczak in a calm, light setting"
-    imageWidth={1537}
-    imageHeight={1023}
-    imagePosition="75% center"
-    imageSizes="(min-width: 1024px) 80vw, calc(100vw - 40px)"
-    imageSources={[
-      { type: 'image/avif', srcset: '/assets/images/optimized/hero-kyle-640.avif 640w, /assets/images/optimized/hero-kyle-960.avif 960w, /assets/images/optimized/hero-kyle-1280.avif 1280w, /assets/images/optimized/hero-kyle-1536.avif 1536w' },
-      { type: 'image/webp', srcset: '/assets/images/optimized/hero-kyle-640.webp 640w, /assets/images/optimized/hero-kyle-960.webp 960w, /assets/images/optimized/hero-kyle-1280.webp 1280w, /assets/images/optimized/hero-kyle-1536.webp 1536w' },
-    ]}
-  >
-    <p>Understand doTERRA, essential oils and routines that may suit the way you live before you choose.</p>
-    <p>I listen first, offer clear guidance and stay available for the next steps.</p>
-  </HeroSplit>
+  <BotanicalHero lang="en" />
 
+  <section class="botanical-followup" aria-labelledby="home-heading">
+    <div class="container botanical-followup__inner" data-reveal>
+      <p class="botanical-followup__eyebrow">KYLE OILS · NATURAL WELLNESS</p>
+      <div class="botanical-followup__content">
+        <h1 id="home-heading">Natural Routines for Everyday Life</h1>
+        <div class="botanical-followup__copy">
+          <p class="botanical-followup__sub">Understand first. Choose at your own pace.</p>
+          <p>Understand doTERRA, essential oils and routines that may suit the way you live before you choose.</p>
+          <p>I listen first, offer clear guidance and stay available for the next steps.</p>
+        </div>
+      </div>
+      <div class="botanical-followup__actions" aria-label="Next steps">
+      <a href="/en/contact/" class="botanical-followup__button botanical-followup__button--primary">Request Guidance</a>
+      <a href="/en/knowledge/" class="botanical-followup__button botanical-followup__button--secondary">Explore Knowledge</a>
+      </div>
+    </div>
+  </section>
   <section class="trust-strip" aria-label="Qualifications and guidance">
     <div class="container trust-strip__inner">
       <span>doTERRA Europe Essential Oils Specialist</span>
@@ -75,22 +75,41 @@ const nextPaths = [
 
   <section class="section section--sage knowledge-section">
     <div class="container knowledge-section__inner" data-reveal>
-      <p class="eyebrow">KNOWLEDGE</p>
-      <SectionIntro title="Knowledge that moves you forward.">
-        <p>Clear basics, safe-use guidance, routines, oil profiles and product context. Find a well-informed starting point for the questions you have.</p>
-      </SectionIntro>
-      <Button href="/en/knowledge/">Explore the Knowledge Hub</Button>
-      <p class="knowledge-links"><a href="/en/knowledge/oil-library/">Oil Library</a><a href="/en/starter-sets/">Starter Kits</a><a href="/en/knowledge/safe-use/">Safe Use</a></p>
+      <div class="knowledge-section__header">
+        <p class="eyebrow">EXPLORE & LEARN</p>
+        <SectionIntro title="Understand essential oils. Use them with care.">
+          <p>Clear answers without the jargon: explore oils, responsible use and everyday routines at your own pace.</p>
+        </SectionIntro>
+      </div>
+      <div class="knowledge-section__action">
+        <Button href="/en/knowledge/">Visit the Knowledge Hub</Button>
+        <p>Read, compare and find answers at your own pace.</p>
+      </div>
+      <div class="knowledge-resources" aria-label="Explore key topics">
+        <a class="knowledge-resource" href="/en/knowledge/oil-library/">
+          <span class="knowledge-resource__index" aria-hidden="true">01</span>
+          <strong>Oil Library</strong>
+          <span class="knowledge-resource__description">Oil profiles & properties</span>
+        </a>
+        <a class="knowledge-resource" href="/en/starter-sets/">
+          <span class="knowledge-resource__index" aria-hidden="true">02</span>
+          <strong>Starter Kits</strong>
+          <span class="knowledge-resource__description">Compare ways to begin</span>
+        </a>
+        <a class="knowledge-resource" href="/en/knowledge/safe-use/">
+          <span class="knowledge-resource__index" aria-hidden="true">03</span>
+          <strong>Safe Use</strong>
+          <span class="knowledge-resource__description">Dilution & essentials</span>
+        </a>
+      </div>
     </div>
-  </section>
-
-  <section class="section">
+  </section>  <section class="section consultation-section">
     <div class="container split-layout" data-reveal>
       <div>
-        <p class="eyebrow">START WITH KYLE</p>
-        <SectionIntro title="Guidance that starts with you.">
-          <p>I do not begin with a product list. I listen first, so that your choices and routines genuinely fit your life.</p>
-          <p>You receive clear product context, a safety-aware beginning and a real person to turn to as questions arise.</p>
+        <p class="eyebrow">PERSONAL GUIDANCE</p>
+        <SectionIntro title="Your questions come first.">
+          <p>I start with you, not a product list. We talk about what interests you and which routines might suit your everyday life.</p>
+          <p>I help you understand your options, use products responsibly and find answers to questions that come up later.</p>
         </SectionIntro>
         <ul class="trust-points"><li>Clear product and routine guidance</li><li>Safety-aware use</li><li>Personal support when questions arise</li></ul>
         <div class="credential-row"><img src="/assets/images/certificates/eos-specialist-badge-cropped.png" alt="doTERRA Europe Essential Oils Specialist certificate" width="108" height="108" loading="lazy" decoding="async" /><p><strong>Qualified and personal.</strong><br />doTERRA Europe Essential Oils Specialist</p></div>
@@ -103,6 +122,7 @@ const nextPaths = [
         height={941}
         variant="portrait"
         position="50% center"
+        treatment="hero"
         sources={[
           { type: 'image/avif', srcset: '/assets/images/optimized/consultation-01-640.avif 640w, /assets/images/optimized/consultation-01-960.avif 960w, /assets/images/optimized/consultation-01-1280.avif 1280w' },
           { type: 'image/webp', srcset: '/assets/images/optimized/consultation-01-640.webp 640w, /assets/images/optimized/consultation-01-960.webp 960w, /assets/images/optimized/consultation-01-1280.webp 1280w' },
@@ -113,20 +133,26 @@ const nextPaths = [
 
   <section class="section section--cream next-paths-section">
     <div class="container" data-reveal>
-      <p class="eyebrow">CONTINUE EXPLORING</p>
-      <SectionIntro title="Where would you like to go next?" />
+      <p class="eyebrow">YOUR NEXT STEPS</p>
+      <SectionIntro title="Explore what feels right for you.">
+        <p>Learn more about doTERRA, join a workshop or get to know me. You decide where to go from here.</p>
+      </SectionIntro>
       <div class="next-paths-grid">
-        {nextPaths.map((path) => <a class="next-path-card" href={path.href}><h2>{path.title}</h2><p>{path.copy}</p><span aria-hidden="true">Explore →</span></a>)}
+        {nextPaths.map((path) => (
+          <a class="next-path-card" href={path.href}>
+            <h2>{path.title}</h2>
+            <p>{path.copy}</p>
+            <span aria-hidden="true">Learn more</span>
+          </a>
+        ))}
       </div>
     </div>
-  </section>
-
-  <CTASection
-    title="Ready for a more personal next step?"
+  </section>  <CTASection
+    title="Let’s find what fits your everyday life."
     primaryHref="/en/contact/"
     primaryLabel="Request Guidance"
   >
-    <p>Tell Kyle what you are curious about. Together, you can find a next step that fits.</p>
+    <p>Have questions or want help choosing a routine? Send me a message and we can explore your options together.</p>
   </CTASection>
 
   <section class="homepage-note" aria-label="Note">
@@ -134,9 +160,17 @@ const nextPaths = [
       <p><strong>Note:</strong> Kyle Oils shares general wellbeing information and does not replace medical, therapeutic or professional advice. The focus is on clear orientation, safe everyday routines and product guidance according to the label.</p>
     </div>
   </section>
+  <script is:inline src="/scripts/home-card-motion.js" defer></script>
 </PageLayout>
 
 <style>
+  .botanical-followup { padding: clamp(4rem, 8vw, 8rem) 0; background: var(--color-warm-white); }
+  .botanical-followup__inner { display: grid; gap: 1.6rem; max-width: 1050px; }
+  .botanical-followup__eyebrow { margin: 0; color: var(--color-olive-grey); letter-spacing: .16em; font-size: .73rem; font-weight: 750; }
+  .botanical-followup h2 { margin: 0 0 1.25rem; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.85rem, 3.3vw, 3.2rem); font-weight: 500; color: var(--color-deep-forest); line-height: 1.17; }
+  .botanical-followup p:not(.botanical-followup__eyebrow) { margin: .45rem 0; color: var(--color-text-secondary); font-size: clamp(1rem, 1.3vw, 1.13rem); max-width: 58ch; }
+  @media (min-width: 800px) { .botanical-followup__inner { grid-template-columns: .38fr 1fr; gap: 3rem; } }
+
   .trust-section { padding: 0 0 var(--space-64); }
   .section { padding: var(--space-64) 0; }
   .section--cream { background: var(--color-soft-cream); }

@@ -2,8 +2,9 @@
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
 import Button from '../../../components/global/Button.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
-import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
+import CTASection from '../../../components/cta/CTASection.astro';
+import '../../../styles/contact-refined.css';
 import { contactLinks, socialLinks } from '../../../data/externalLinks';
 
 const contactOptions = [
@@ -61,38 +62,52 @@ const contactOptions = [
     <p>Simply tell me what interests you or what you would like help with. You can reach me by WhatsApp, phone or email. In-person meetings by arrangement and video calls are also possible.</p>
   </HeroSplit>
 
-  <section id="contact-options" class="section section--sage">
-    <div class="container">
-      <SectionIntro title="How to Reach Me">
-          <p>WhatsApp, phone or email are all good first steps. I usually respond within 24 hours.</p>
-      </SectionIntro>
-      <div class="contact-grid">
-        {contactOptions.slice(0, 3).map((option) => (
-          <article class="contact-card">
+  <section id="contact-options" class="section contact-options" aria-labelledby="contact-options-heading">
+    <div class="container contact-wrap">
+      <header class="contact-heading" data-reveal>
+        <p class="eyebrow">DIRECT & PERSONAL</p>
+        <h2 id="contact-options-heading">Here is how to reach me.</h2>
+        <p>Choose the way of getting in touch that feels best for you. I usually reply within 24 hours.</p>
+      </header>
+      <div class="contact-grid" data-consultation-cards>
+        {contactOptions.slice(0, 3).map((option,index) => (
+          <article class="contact-card" data-consultation-card>
+            <div class="contact-card__top"><span class="contact-number" aria-hidden="true">{String(index + 1).padStart(2,"0")}</span><span class="contact-card__category">CONTACT METHOD</span></div>
             <h3>{option.title}</h3>
             {option.copy && <p>{option.copy}</p>}
-            {option.href && option.label && <a href={option.href}>{option.label}</a>}
+            {option.href && option.label && <a href={option.href} class="contact-card__link"><span>{option.label}</span><span aria-hidden="true">↗</span></a>}
           </article>
         ))}
       </div>
-      <p class="contact-formats">In-person meetings in the Lüneburg district and video calls are also possible by arrangement.</p>
+      <p class="contact-formats">In-person meetings in the Lüneburg area and video calls are also possible by arrangement.</p>
     </div>
   </section>
 
-  <section class="section section--cream local-guidance-section">
-    <div class="container local-guidance-section__inner">
-      <div>
-        <p class="eyebrow">GERMANY & ONLINE</p>
-        <h2>Essential oil guidance in Germany</h2>
-        <p>If you live in Germany, have questions about doTERRA or prefer to speak English, you can find a calm overview here.</p>
+  <section class="section local-guidance-section" aria-labelledby="local-guidance-heading">
+    <div class="container contact-wrap">
+      <div class="local-guidance-panel" data-reveal>
+        <div class="local-guidance-panel__primary">
+          <p class="eyebrow">GERMANY & ONLINE</p>
+          <h2 id="local-guidance-heading">Meet locally. Or connect online.</h2>
+          <p>If you are in the Lüneburg area, we can arrange to meet in person. A video call is also an option, in English or German. We can find what works for you.</p>
+          <Button href="/en/essential-oil-guidance-germany/" variant="secondary">Explore guidance in Germany</Button>
+        </div>
+        <div class="local-guidance-panel__aside">
+          <p class="eyebrow">FLEXIBLE CONNECTION</p>
+          <h3>Not based near Lüneburg?</h3>
+          <p>If you live elsewhere in Germany or abroad, we can still begin with a simple message or a video call.</p>
+        </div>
       </div>
-      <Button href="/en/essential-oil-guidance-germany/" variant="secondary">Essential Oil Guidance Germany</Button>
     </div>
   </section>
 
-  <section class="social-section" aria-label="Social Media">
-    <div class="container social-layout">
-      <p class="social-section__label">Find Kyle Oils on social media</p>
+  <section class="social-section" aria-labelledby="contact-social-heading">
+    <div class="container contact-wrap social-layout" data-reveal>
+      <div class="social-layout__heading">
+        <p class="eyebrow">STAY CONNECTED</p>
+        <h2 id="contact-social-heading">Find Kyle Oils on social media.</h2>
+        <p>Everyday inspiration, simple routines and essential oil education.</p>
+      </div>
       <div class="social-links">
         <a href={socialLinks.facebook.href} target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -116,7 +131,11 @@ const contactOptions = [
     </div>
   </section>
 
-  <section class="compliance-section">
+  <CTASection title="You do not need a plan yet." primaryHref={contactLinks.whatsapp.href} primaryLabel="Send me a WhatsApp message" secondaryHref="/en/consultation/" secondaryLabel="Learn about my guidance">
+    <p>A brief message is enough. Tell me what interests you and I will help you find a sensible next step.</p>
+  </CTASection>
+
+  <section class="compliance-section contact-compliance">
     <div class="container">
       <ComplianceNote label="Note">
         <h2>A Brief Note</h2>
@@ -125,49 +144,5 @@ const contactOptions = [
       </ComplianceNote>
     </div>
   </section>
+  <script is:inline src="/scripts/consultation-motion.js" defer></script>
 </PageLayout>
-
-<style>
-  .section { padding: var(--space-64) 0; }
-  .section--cream { background: var(--color-soft-cream); }
-  .section--sage { background: rgb(168 184 160 / 20%); }
-  .local-guidance-section__inner { display: grid; gap: var(--space-24); align-items: center; max-width: var(--container-text); }
-  .local-guidance-section__inner h2 { margin: 0 0 var(--space-12); font-size: var(--font-size-h2-mobile); line-height: var(--line-height-heading); }
-  .local-guidance-section__inner p:not(.eyebrow) { margin: 0; color: var(--color-text-secondary); }
-  .local-guidance-section__inner .eyebrow { margin: 0 0 var(--space-12); }
-  .contact-grid { display: grid; gap: var(--space-20); }
-  .contact-card { min-height: 230px; display: flex; flex-direction: column; align-items: flex-start; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }
-  .contact-card h3 { margin: 0 0 var(--space-12); font-size: var(--font-size-h3-mobile); line-height: 1.2; }
-  .contact-card p { margin: 0 0 var(--space-24); overflow-wrap: anywhere; color: var(--color-text-secondary); }
-  .contact-card a { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; margin-top: auto; padding: var(--space-12) var(--space-20); border: 1px solid var(--color-sand); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); line-height: 1.2; text-align: center; text-decoration: none; }
-  .contact-card a:hover { border-color: var(--color-sage-green); background: var(--color-soft-cream); }
-  .contact-formats { max-width: var(--container-text); margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
-  .social-section { padding: var(--space-24) 0 var(--space-48); }
-  .social-layout { display: flex; flex-wrap: wrap; gap: var(--space-16) var(--space-24); align-items: center; }
-  .social-section__label { margin: 0; color: var(--color-text-muted); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
-  .social-links { display: flex; flex-wrap: wrap; gap: var(--space-16); }
-  .social-links a { min-height: 52px; display: inline-flex; align-items: center; gap: var(--space-12); padding: var(--space-12) var(--space-20); border: 1px solid var(--color-sand); border-radius: var(--radius-button); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; }
-  .social-links a:hover { border-color: var(--color-sage-green); background: var(--color-warm-white); }
-  .social-links svg { width: 22px; height: 22px; fill: currentColor; }
-  .compliance-section { padding: var(--space-24) 0 var(--space-64); }
-  .compliance-section :global(.compliance-note) { max-width: 760px; padding: var(--space-24) 0 0; border: 0; border-top: 1px solid rgb(216 199 173 / 65%); border-radius: 0; background: transparent; }
-  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  .compliance-section :global(p + p) { margin-top: var(--space-12); }
-  #contact-options { scroll-margin-top: var(--space-32); }
-  @media (prefers-reduced-motion: no-preference) {
-    :global(html) { scroll-behavior: smooth; }
-  }
-  @media (min-width: 768px) {
-    .section { padding-block: var(--space-96); }
-    .social-section { padding: var(--space-32) 0 var(--space-64); }
-    .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
-    .local-guidance-section__inner { grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-40); }
-    .contact-card { padding: var(--space-32); }
-  }
-  @media (min-width: 1024px) {
-    .section { padding-block: var(--space-120); }
-    .social-section { padding: var(--space-40) 0 var(--space-80); }
-    .contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .local-guidance-section__inner h2 { font-size: var(--font-size-h2-desktop); }
-  }
-</style>

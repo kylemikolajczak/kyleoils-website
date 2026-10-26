@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/glossary/top-note/"
 worldId: "glossary"
 worldLabel: "Glossar"
 seoTitle: "Kopfnote einfach erklärt"
-description: "Kurze Erklärung: Eine Kopfnote ist ein Duftanteil, der häufig zuerst wahrgenommen wird und oft leichter oder flüchtiger wirkt. Viele Zitrusöle werden als kopfnah beschrieben."
+description: "Kopfnoten werden in Duftmischungen häufig zuerst wahrgenommen. Erfahre, warum dazu oft frische und flüchtige Zitrusnoten zählen."
 relatedArticleIds:
   - "KO-P041-DE"
   - "KO-P045-DE"

@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/clary-sage/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Clary Sage (Muskatellersalbei) einfach erklärt"
-description: "Eine klare Einordnung von Clary Sage (Muskatellersalbei): Duftprofil, Mischlogik, Alltag und sichere Anwendung ohne Heilversprechen."
+description: "Clary Sage (Muskatellersalbei) gezielt entdecken: Duftprofil, passende Mischungen und Anwendungsideen für den Alltag."
 relatedArticleIds:
   - "KO-W17-DE-008"
   - "KO-W18-DE-006"

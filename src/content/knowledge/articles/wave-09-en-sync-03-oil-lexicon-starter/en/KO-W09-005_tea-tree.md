@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/tea-tree-teebaum/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Tea Tree essential oil explained clearly"
-description: "Tea Tree explained calmly: herbal scent, fresh everyday routines, topical care, dilution and important safety notes."
+description: "Explore Tea Tree: herbal scent, fresh everyday routines, topical care, dilution and important safety notes."
 relatedArticleIds:
   - "KO-W07-003"
   - "KO-W08-004"

@@ -1,0 +1,400 @@
+/*
+ * Kyle Oils Workshops DE / EN
+ * Same Warm White editorial system as Home, Knowledge Hub, Consultation.
+ * Preserves global hero media frame and the original workshop content.
+ */
+.page-shell:has(> .workshops-outcomes) {
+  --wk-canvas: #faf7f1;
+  --wk-sage: #f1f2ea;
+  --wk-sage-hover: #e9f0e5;
+  --wk-cream: #f5eee5;
+  --wk-forest: #263d32;
+  background: var(--wk-canvas);
+}
+.page-shell:has(> .workshops-outcomes) > section { background: var(--wk-canvas); }
+.page-shell:has(> .workshops-outcomes) > .section { padding-block: clamp(3.5rem,5vw,5.1rem); }
+.page-shell:has(> .workshops-outcomes) > .hero { padding-block: clamp(3.5rem,5vw,5.7rem); }
+.page-shell:has(> .workshops-outcomes) .hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--wk-forest);
+  font-weight: 500;
+  font-size: clamp(2.7rem,4.15vw,4.2rem);
+  line-height: 1.12;
+  letter-spacing: -.027em;
+}
+.page-shell:has(> .workshops-outcomes) .hero-subtitle {
+  font-family: Georgia,"Times New Roman",serif;
+  font-size: clamp(1.4rem,1.85vw,1.9rem);
+  color: #3d6249;
+  font-weight: 500;
+  line-height: 1.32;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-wrap { max-width: 1190px; }
+.page-shell:has(> .workshops-outcomes) .eyebrow {
+  text-transform: uppercase;
+  color: #758771;
+  font-size: .72rem;
+  font-weight: 750;
+  letter-spacing: .15em;
+  margin: 0 0 .9rem;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-heading {
+  max-width: 790px;
+  margin: 0 0 clamp(1.5rem,3vw,2.35rem);
+}
+.page-shell:has(> .workshops-outcomes) .workshops-heading h2,
+.page-shell:has(> .workshops-outcomes) .workshops-preparation__copy h2 {
+  font-family: Georgia,"Times New Roman",serif;
+  font-weight: 500;
+  font-size: clamp(2.05rem,3.15vw,3.1rem);
+  color: var(--wk-forest);
+  letter-spacing: -.027em;
+  line-height: 1.13;
+  margin: 0 0 .95rem;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-heading > p:last-child,
+.page-shell:has(> .workshops-outcomes) .workshops-preparation__copy > p:not(.eyebrow):not(.workshops-preparation__foot) {
+  font-size: 1rem;
+  line-height: 1.67;
+  color: #647065;
+  max-width: 66ch;
+  margin: 0;
+}
+/* Four outcomes; intentionally shorter than ordinary offer cards */
+.page-shell:has(> .workshops-outcomes) .workshops-outcomes__grid {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:clamp(.8rem,1.5vw,1.3rem);
+}
+.page-shell:has(> .workshops-outcomes) .workshops-outcome-card {
+  min-width:0;
+  min-height:178px;
+  display:flex;
+  flex-direction:column;
+  gap:1.35rem;
+  border:1px solid rgba(107,136,109,.22);
+  border-radius:21px;
+  background:var(--wk-sage);
+  padding:clamp(1.25rem,1.95vw,1.8rem);
+  box-shadow:0 7px 21px rgba(40,67,47,.041);
+}
+.page-shell:has(> .workshops-outcomes) .workshops-number {
+  color:#819982;
+  font-size:.75rem;
+  font-weight:750;
+  letter-spacing:.14em;
+  flex:none;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-outcome-card p {
+  color:#435c4c;
+  font-size:.98rem;
+  line-height:1.55;
+  margin:0;
+}
+/* Three real format choices; no extra fictional offer. */
+.page-shell:has(> .workshops-outcomes) .workshops-formats__grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(.9rem,1.65vw,1.4rem);
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card {
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  border:1px solid rgba(112,142,112,.22);
+  border-radius:24px;
+  padding:clamp(1.45rem,2.2vw,2rem);
+  background:var(--wk-sage);
+  box-shadow:0 8px 25px rgba(36,62,44,.044);
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card:nth-child(2) {
+  background:var(--wk-cream);
+  border-color:rgba(149,139,118,.26);
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card__top {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.5rem;
+  margin-bottom:1.25rem;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card__tag {
+  font-size:.64rem;
+  font-weight:750;
+  letter-spacing:.12em;
+  color:#7a8f7c;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card h3 {
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.44rem,1.85vw,1.85rem);
+  letter-spacing:-.02em;
+  font-weight:500;
+  line-height:1.25;
+  color:var(--wk-forest);
+  margin:0 0 .85rem;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card__intro {
+  color:#5f7064;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 1.15rem;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card h4 {
+  font-size:.76rem;
+  font-weight:750;
+  letter-spacing:.045em;
+  color:#56745b;
+  margin:0 0 .85rem;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card ul {
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:.7rem;
+  list-style:none;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card li {
+  display:flex;
+  align-items:baseline;
+  gap:.65rem;
+  font-size:.88rem;
+  line-height:1.5;
+  color:#5d6b61;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card li::before {
+  content:"✓";
+  color:#698d70;
+  font-weight:750;
+  flex:none;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card__details {
+  display:grid;
+  gap:.7rem;
+  margin-top:auto;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-format-card__details p {
+  margin:0;
+  color:#5d6b61;
+  font-size:.88rem;
+  line-height:1.56;
+}
+/* Six steps arranged as clear 3x2 progress cards. */
+.page-shell:has(> .workshops-outcomes) .workshops-process__grid {
+  padding:0;
+  margin:0;
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(.85rem,1.55vw,1.35rem);
+}
+.page-shell:has(> .workshops-outcomes) .workshops-process-card {
+  min-width:0;
+  min-height:172px;
+  padding:clamp(1.45rem,2.2vw,2rem);
+  border-radius:22px;
+  border:1px solid rgba(106,136,108,.22);
+  background:var(--wk-sage);
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:1.3rem;
+  box-shadow:0 6px 23px rgba(37,62,45,.035);
+}
+.page-shell:has(> .workshops-outcomes) .workshops-process-card__number {
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.8rem,2.55vw,2.5rem);
+  line-height:1;
+  color:#759478;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-process-card h3 {
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:500;
+  font-size:clamp(1.25rem,1.5vw,1.5rem);
+  line-height:1.3;
+  letter-spacing:-.01em;
+  color:var(--wk-forest);
+  margin:0;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-process__note {
+  color:#7b8074;
+  font-size:.86rem;
+  margin:1.3rem 0 0;
+  line-height:1.5;
+}
+/* Planning is one designed card, not another full-bleed colored band. */
+.page-shell:has(> .workshops-outcomes) .workshops-preparation__grid {
+  display:grid;
+  grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr);
+  gap:clamp(2rem,5vw,5.3rem);
+  padding:clamp(1.75rem,3.3vw,3.2rem);
+  background:var(--wk-cream);
+  border:1px solid rgba(155,142,118,.24);
+  border-radius:27px;
+  align-items:center;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-preparation__foot {
+  border-left:2px solid #98af94;
+  border-radius:0 9px 9px 0;
+  padding:.8rem 1rem;
+  margin:1.6rem 0 0;
+  background:rgba(238,241,232,.77);
+  color:#53715a;
+  font-size:.88rem;
+  line-height:1.55;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-preparation__questions ol {
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:0;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-preparation__questions li {
+  display:flex;
+  align-items:baseline;
+  gap:1.15rem;
+  padding:1.05rem .1rem;
+  border-bottom:1px solid rgba(153,141,117,.23);
+  color:#4e6354;
+  font-size:.96rem;
+  line-height:1.55;
+}
+.page-shell:has(> .workshops-outcomes) .workshops-preparation__questions li:last-child {border-bottom:0;}
+/* CTA and compliance share the finished Consultation proportions. */
+.page-shell:has(> .workshops-outcomes) > .cta-section {padding-block:clamp(2.3rem,3.6vw,3.5rem);}
+.page-shell:has(> .workshops-outcomes) > .cta-section .cta-section__inner {
+  box-sizing:border-box;
+  width:min(calc(100% - 2.5rem),1080px);
+  max-width:1080px;
+  margin-inline:auto;
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);
+  align-items:center;
+  gap:clamp(1.5rem,3.4vw,3.4rem);
+  padding:clamp(1.85rem,3.3vw,2.8rem);
+  border-radius:27px;
+  box-shadow:0 18px 38px rgba(38,61,50,.12);
+}
+.page-shell:has(> .workshops-outcomes) > .cta-section .cta-section__inner h2 {
+  color:#faf7f1;
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:500;
+  letter-spacing:-.023em;
+  font-size:clamp(1.7rem,2.3vw,2.35rem);
+  line-height:1.15;
+  margin:0 0 .85rem;
+}
+.page-shell:has(> .workshops-outcomes) > .cta-section .cta-section__copy {
+  max-width:55ch;
+  font-size:.94rem;
+  line-height:1.58;
+}
+.page-shell:has(> .workshops-outcomes) > .cta-section .cta-group {
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  min-width:0;
+  gap:.8rem;
+}
+.page-shell:has(> .workshops-outcomes) > .cta-section .cta-group .button {
+  width:100%;
+  justify-content:center;
+  text-align:center;
+}
+.page-shell:has(> .workshops-outcomes) > .workshops-compliance {
+  padding:0 0 clamp(2rem,4vw,4rem);
+}
+.page-shell:has(> .workshops-outcomes) > .workshops-compliance > .container {
+  display:flex;
+  justify-content:center;
+}
+.page-shell:has(> .workshops-outcomes) > .workshops-compliance .compliance-note {
+  box-sizing:border-box;
+  width:min(100%,760px);
+  max-width:760px;
+  margin-inline:auto;
+  padding:1.1rem 1.45rem;
+  border:1px solid rgba(172,153,117,.32);
+  border-radius:19px;
+  background:#f4eee3;
+  box-shadow:0 5px 18px rgba(65,58,44,.035);
+}
+.page-shell:has(> .workshops-outcomes) > .workshops-compliance .workshops-compliance__label {
+  color:#6f6857;
+  font-size:.69rem;
+  font-weight:750;
+  letter-spacing:.12em;
+  margin:0 0 .45rem;
+}
+.page-shell:has(> .workshops-outcomes) > .workshops-compliance .compliance-note p:last-child {
+  margin:0;
+  color:#625f54;
+  font-size:.86rem;
+  line-height:1.65;
+}
+/* Entrance animation uses the existing tested helper script. */
+@media (prefers-reduced-motion:no-preference) {
+  html.consultation-cards-ready .workshops-outcome-card[data-consultation-card]:not(.is-in-view),
+  html.consultation-cards-ready .workshops-format-card[data-consultation-card]:not(.is-in-view),
+  html.consultation-cards-ready .workshops-process-card[data-consultation-card]:not(.is-in-view) {
+    opacity:0;
+    transform:translate3d(var(--consultation-offset,-34px),9px,0);
+  }
+  html.consultation-cards-ready .workshops-outcome-card[data-consultation-card],
+  html.consultation-cards-ready .workshops-format-card[data-consultation-card],
+  html.consultation-cards-ready .workshops-process-card[data-consultation-card] {
+    transition:opacity .65s ease var(--consultation-delay,0ms),
+       transform .75s cubic-bezier(.22,1,.36,1) var(--consultation-delay,0ms),
+       box-shadow .2s ease;
+  }
+  html.consultation-cards-ready [data-consultation-card].is-in-view {
+    opacity:1;
+    transform:translate3d(0,0,0);
+  }
+}
+@media (max-width:1023px) {
+  .page-shell:has(> .workshops-outcomes) .workshops-outcomes__grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .page-shell:has(> .workshops-outcomes) .workshops-formats__grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .page-shell:has(> .workshops-outcomes) .workshops-process__grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .page-shell:has(> .workshops-outcomes) .workshops-preparation__grid {grid-template-columns:1fr;}
+}
+@media (max-width:850px) {
+  .page-shell:has(> .workshops-outcomes) > .cta-section .cta-section__inner {
+    grid-template-columns:1fr;
+    width:min(calc(100% - 2.5rem),680px);
+    gap:1.45rem;
+  }
+  .page-shell:has(> .workshops-outcomes) > .cta-section .cta-group {align-items:flex-start;}
+  .page-shell:has(> .workshops-outcomes) > .cta-section .cta-group .button {width:auto;max-width:100%;}
+}
+@media (max-width:650px) {
+  .page-shell:has(> .workshops-outcomes) > .section {padding-block:3.1rem;}
+  .page-shell:has(> .workshops-outcomes) .workshops-outcomes__grid,
+  .page-shell:has(> .workshops-outcomes) .workshops-formats__grid,
+  .page-shell:has(> .workshops-outcomes) .workshops-process__grid {grid-template-columns:1fr;}
+  .page-shell:has(> .workshops-outcomes) .workshops-outcome-card,
+  .page-shell:has(> .workshops-outcomes) .workshops-process-card {min-height:0;}
+  .page-shell:has(> .workshops-outcomes) .workshops-preparation__grid {padding:1.5rem;}
+}
+@media (max-width:490px) {
+  .page-shell:has(> .workshops-outcomes) > .cta-section .cta-section__inner {padding:1.5rem;}
+  .page-shell:has(> .workshops-outcomes) > .cta-section .cta-group {align-items:stretch;}
+  .page-shell:has(> .workshops-outcomes) > .cta-section .cta-group .button {
+    width:100%;
+    white-space:normal;
+    text-align:center;
+  }
+}
+
+/* Preserve readable contrast on the pale secondary CTA hover surface. */
+.page-shell:has(> .workshops-outcomes) > .cta-section .cta-group .button--secondary {
+  border-color: rgba(250,247,241,.7);
+  background: transparent;
+  color: #faf7f1;
+}
+.page-shell:has(> .workshops-outcomes) > .cta-section .cta-group .button--secondary:hover,
+.page-shell:has(> .workshops-outcomes) > .cta-section .cta-group .button--secondary:focus-visible {
+  border-color: #f5eee5;
+  background: #f5eee5;
+  color: #263d32;
+}

@@ -44,23 +44,15 @@ doTERRA führt Adaptiv im Essential Aromatics System als Mischung für gängige 
 
 Kyle Oils greift diesen Bereich auf, aber in einer sauberen Beratungslogik: Was ist das Produkt? Für welche Alltagssituation wird es gesucht? Welche sichere Anwendung ist wichtig? Wo beginnt persönliche Einordnung?
 
-## Sichere öffentliche Positionierung
+## Passende Ideen für deinen Alltag
 
-Diese Seite darf doTERRA Adaptiv so einordnen:
+Hier findest du konkrete Anregungen rund um doTERRA Adaptiv:
 
 - für volle, unruhige oder wechselhafte Alltagssituationen
 - als Duftanker für bewusste Pausen
 - für Menschen, die nicht sofort ein Produkt kaufen, sondern erst eine passende Routine verstehen möchten
 - als Beispiel für emotionales Duftprofil ohne psychische Behandlungsclaims
 
-## Was wir öffentlich nicht schreiben
-
-Diese Aussagen gehören nicht auf die Website:
-
-- hilft gegen Stress
-- behandelt Angst
-- beruhigt psychische Beschwerden
-- ersetzt Coaching, Therapie oder medizinische Hilfe
 
 ## Wie Kyle das in der Beratung einordnet
 
@@ -73,7 +65,7 @@ In der persönlichen Beratung geht es nicht darum, schnell ein Produkt als Lösu
 - Gibt es Kinder, Haustiere, Schwangerschaft, Medikamente oder sensible Haut?
 - Ist ein fertiges doTERRA Produkt sinnvoller als ein DIY-Rezept?
 
-So bleibt die Empfehlung näher an dem, was doTERRA wirklich anbietet, aber ohne riskante Online-Versprechen.
+So bleibt die Empfehlung auf deinen Alltag und die Kennzeichnung des jeweiligen Produkts abgestimmt.
 
 ## Sicherheit
 

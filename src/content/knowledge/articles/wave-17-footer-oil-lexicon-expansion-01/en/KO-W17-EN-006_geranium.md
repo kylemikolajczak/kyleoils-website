@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/geranium-geranie/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Geranium explained simply"
-description: "A calm guide to Geranium: scent profile, simple routines, blending ideas and safe use without medical promises."
+description: "Discover Geranium: scent character, inspiring everyday rituals, blend ideas and responsible use."
 relatedArticleIds:
   - "KO-W09-001"
   - "KO-W07-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/geranium-oil"
 
 Geranium is a floral oil for soft aromatic blends, personal care routines and warm everyday moments.
 
-This page helps you understand Geranium calmly: scent, everyday use, simple routines, blending ideas and important safety points. The goal is not medical promises. The goal is clear orientation.
+This page helps you understand Geranium calmly: scent, everyday use, simple routines, blending ideas and important safety points. Discover its scent character, practical blend ideas and conscious ways to use it.
 
 ## Scent profile
 

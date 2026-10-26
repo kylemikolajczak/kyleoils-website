@@ -1,0 +1,314 @@
+/* Kyle Oils — previously overlooked entry, SEO-guidance, and FAQ pages.
+   Applies to the six landing routes only; preserves contents/links/FAQ behavior. */
+.page-shell:has(> .academy-hero),
+.page-shell:has(> .guidance-hero),
+.page-shell:has(.faq-category) {
+  --extra-paper:#faf7f1;
+  --extra-sage:#f1f2ea;
+  --extra-cream:#f5eee5;
+  --extra-forest:#263d32;
+  --extra-muted:#536859;
+  background:var(--extra-paper);
+}
+.page-shell:has(> .academy-hero) > section,
+.page-shell:has(> .guidance-hero) > section,
+.page-shell:has(.faq-category) > section {background:var(--extra-paper);}
+.page-shell:has(> .academy-hero) .academy-hero,
+.page-shell:has(> .guidance-hero) .guidance-hero {padding:clamp(3.5rem,6vw,5.7rem) 0 clamp(2.4rem,4.5vw,4.2rem);}
+.page-shell:has(> .academy-hero) .academy-hero__inner,
+.page-shell:has(> .guidance-hero) .guidance-hero__inner {max-width:1050px;}
+.page-shell:has(> .academy-hero) .eyebrow,
+.page-shell:has(> .guidance-hero) .eyebrow {
+  font-size:.72rem;
+  font-weight:750;
+  line-height:1.4;
+  color:#6f8c75;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  margin:0 0 1rem;
+}
+.page-shell:has(> .academy-hero) .academy-hero h1,
+.page-shell:has(> .guidance-hero) .guidance-hero h1 {
+  max-width:17ch;
+  font:500 clamp(2.75rem,4.65vw,4.6rem)/1.09 Georgia,"Times New Roman",serif;
+  letter-spacing:-.036em;
+  color:var(--extra-forest);
+  margin:0 0 1.15rem;
+  overflow-wrap:anywhere;
+}
+.page-shell:has(> .academy-hero) .academy-hero__subtitle,
+.page-shell:has(> .guidance-hero) .guidance-hero__subtitle {
+  color:#56765e;
+  font:500 clamp(1.35rem,1.8vw,1.8rem)/1.38 Georgia,"Times New Roman",serif;
+  margin:0 0 1.2rem;
+}
+.page-shell:has(> .academy-hero) .academy-hero__copy,
+.page-shell:has(> .guidance-hero) .guidance-hero__copy {
+  max-width:70ch;
+  color:#5b705e;
+  font-size:1rem;
+  line-height:1.76;
+  margin-bottom:1.8rem;
+}
+.page-shell:has(> .academy-hero) .academy-back-control {
+  margin-bottom:2rem;
+}
+.page-shell:has(> .academy-hero) .academy-back-control .button {
+  min-height:40px;
+  padding:.56rem .85rem;
+  font-size:.8rem;
+  border-color:rgba(119,152,119,.32);
+  color:#3d5d46;
+  background:#f1f2ea;
+}
+/* Startbereich: six progressive steps, readable links and a subdued purpose statement. */
+.page-shell:has(> .academy-hero) > .academy-path {
+  padding:clamp(1.8rem,3vw,3rem) 0 clamp(3rem,4.8vw,4.8rem);
+}
+.page-shell:has(> .academy-hero) .academy-path__container {
+  max-width:1150px;
+  gap:clamp(.9rem,1.65vw,1.45rem);
+}
+.page-shell:has(> .academy-hero) .academy-step {
+  min-width:0;
+  padding:clamp(1.55rem,3vw,3rem);
+  background:var(--extra-sage);
+  border:1px solid rgba(105,138,110,.23);
+  border-radius:25px;
+  box-shadow:0 8px 26px rgba(42,63,44,.035);
+}
+.page-shell:has(> .academy-hero) .academy-step:nth-child(2n) {
+  background:var(--extra-cream);
+  border-color:rgba(157,143,117,.23);
+}
+.page-shell:has(> .academy-hero) .academy-step h2 {
+  font:500 clamp(1.8rem,2.55vw,2.7rem)/1.19 Georgia,"Times New Roman",serif;
+  color:var(--extra-forest);
+  letter-spacing:-.027em;
+  margin:0 0 1.05rem;
+  overflow-wrap:anywhere;
+}
+.page-shell:has(> .academy-hero) .academy-step h3 {
+  font:500 clamp(1.22rem,1.65vw,1.48rem)/1.25 Georgia,"Times New Roman",serif;
+  color:#3d5c43;
+  margin:0 0 .9rem;
+}
+.page-shell:has(> .academy-hero) .academy-step__content > p,
+.page-shell:has(> .academy-hero) .academy-step li {
+  color:#5c715e;font-size:.95rem;line-height:1.72;
+}
+.page-shell:has(> .academy-hero) .academy-step__primary-link,
+.page-shell:has(> .academy-hero) .academy-step__links a {
+  display:flex;align-items:center;min-height:47px;
+  padding:.74rem 1.1rem;
+  line-height:1.42;
+  border-radius:11px;
+  font-weight:700;
+  font-size:.83rem;
+  text-decoration:none;
+  overflow-wrap:anywhere;
+}
+.page-shell:has(> .academy-hero) .academy-step__primary-link {
+  background:#263d32;color:#faf7f1;border-color:#263d32;
+}
+.page-shell:has(> .academy-hero) .academy-step__primary-link:hover,
+.page-shell:has(> .academy-hero) .academy-step__primary-link:focus-visible {
+  background:#3b6349;color:#faf7f1;text-decoration:none;border-color:#3b6349;
+}
+.page-shell:has(> .academy-hero) .academy-step__links a {
+  background:#faf7f1;color:#31553e;border:1px solid rgba(106,140,109,.24);
+}
+.page-shell:has(> .academy-hero) .academy-step__links a:hover,
+.page-shell:has(> .academy-hero) .academy-step__links a:focus-visible {
+  background:#e7eee2;color:#263d32;border-color:#8ba68d;text-decoration:none;
+}
+.page-shell:has(> .academy-hero) .academy-step__goal {
+  margin:1.2rem 0 0!important;
+  padding:1.1rem 1.3rem;
+  border-radius:11px;
+  background:rgba(250,247,241,.74);
+  border-left:2px solid #8dab8d;
+}
+.page-shell:has(> .academy-hero) .academy-step__more-links h3 {margin-bottom:.9rem;}
+.page-shell:has(> .academy-hero) .academy-worlds-link {
+  text-align:center;
+  padding:1.2rem 0 clamp(1.7rem,2.6vw,2.5rem);
+}
+/* Regional and international SEO guidance: editorial sections rather than broad color shifts. */
+.page-shell:has(> .guidance-hero) > .section {
+  padding:clamp(2rem,3.8vw,3.65rem) 0;
+}
+.page-shell:has(> .guidance-hero) .narrow-layout {max-width:990px;}
+.page-shell:has(> .guidance-hero) .section-intro h2,
+.page-shell:has(> .guidance-hero) .clarity-panel h2 {
+  font:500 clamp(1.9rem,2.6vw,2.75rem)/1.2 Georgia,"Times New Roman",serif;
+  letter-spacing:-.028em;
+  color:var(--extra-forest);
+  margin:0 0 1.05rem;
+}
+.page-shell:has(> .guidance-hero) .section-intro {max-width:950px;margin-bottom:1.5rem;}
+.page-shell:has(> .guidance-hero) .section-intro__copy,
+.page-shell:has(> .guidance-hero) .section-intro p,
+.page-shell:has(> .guidance-hero) .country-note {
+  color:#596f5d;font-size:.97rem;line-height:1.73;
+}
+.page-shell:has(> .guidance-hero) .check-list {
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.8rem;
+}
+.page-shell:has(> .guidance-hero) .check-list li {
+  box-sizing:border-box;min-width:0;
+  background:var(--extra-sage);
+  border:1px solid rgba(107,138,109,.23);
+  border-radius:14px;
+  color:#526b57;
+  padding:1rem 1.1rem 1rem 2.7rem;
+  font-size:.92rem;
+  line-height:1.55;
+}
+.page-shell:has(> .guidance-hero) .check-list li:nth-child(2n) {
+  background:var(--extra-cream);
+  border-color:rgba(157,141,112,.23);
+}
+.page-shell:has(> .guidance-hero) .check-list li::before {left:1.1rem;top:1.52rem;background:#819d81;width:8px;height:8px;}
+.page-shell:has(> .guidance-hero) .guidance-grid {max-width:1090px;gap:clamp(2rem,4vw,4rem);}
+.page-shell:has(> .guidance-hero) .guidance-grid .check-list {grid-template-columns:1fr;}
+.page-shell:has(> .guidance-hero) .clarity-panel {
+  align-self:center;
+  padding:clamp(1.5rem,2.7vw,2.65rem);
+  border:1px solid rgba(161,145,117,.24);
+  border-radius:22px;
+  background:var(--extra-cream);
+  box-shadow:0 8px 27px rgba(44,55,43,.035);
+}
+.page-shell:has(> .guidance-hero) .clarity-panel h2 {
+  font-size:clamp(1.4rem,1.9vw,1.95rem);
+  line-height:1.28;
+}
+.page-shell:has(> .guidance-hero) .clarity-panel p {color:#5e705f;line-height:1.65;}
+/* FAQ: keep accordion JS intact; only cards, headings, and contrast evolve. */
+.page-shell:has(.faq-category) > .section {
+  padding:clamp(2.4rem,4.1vw,4.25rem) 0;
+}
+.page-shell:has(.faq-category) > .section--cream {background:var(--extra-paper);}
+.page-shell:has(.faq-category) .faq-layout {max-width:1140px;}
+.page-shell:has(.faq-category) .faq-layout > .section-intro {margin-bottom:clamp(1.5rem,2.8vw,2.7rem);}
+.page-shell:has(.faq-category) .section-intro h2 {
+  font:500 clamp(1.9rem,2.7vw,2.75rem)/1.2 Georgia,"Times New Roman",serif;
+  letter-spacing:-.027em;color:var(--extra-forest);
+  margin:0 0 1rem;
+}
+.page-shell:has(.faq-category) .faq-category {
+  box-sizing:border-box;
+  padding:clamp(1.5rem,2.8vw,2.65rem);
+  background:var(--extra-sage);
+  border:1px solid rgba(106,139,108,.23);
+  border-radius:24px;
+  box-shadow:0 8px 26px rgba(38,61,45,.035);
+}
+.page-shell:has(.faq-category) .faq-category:nth-child(2n){
+  background:var(--extra-cream);
+  border-color:rgba(154,140,113,.23);
+}
+.page-shell:has(.faq-category) .faq-category + .faq-category {margin-top:clamp(.9rem,1.6vw,1.45rem);}
+.page-shell:has(.faq-category) .faq-category h2 {
+  font:500 clamp(1.55rem,2.3vw,2.4rem)/1.2 Georgia,"Times New Roman",serif;
+  color:var(--extra-forest);letter-spacing:-.025em;
+  margin:0 0 1.3rem;
+}
+.page-shell:has(.faq-category) .faq-category .faq-accordion {border-top:1px solid rgba(111,145,111,.24);}
+.page-shell:has(.faq-category) .faq-category .faq-item {border-color:rgba(121,150,120,.24);}
+.page-shell:has(.faq-category) .faq-category .faq-item button {
+  font-size:clamp(.95rem,1.2vw,1.05rem);
+  font-weight:675;
+  line-height:1.53;
+  color:#2e4b37;
+}
+.page-shell:has(.faq-category) .faq-category .faq-item__panel p {
+  font-size:.94rem;line-height:1.72;color:#5e715f;
+}
+.page-shell:has(.faq-category) .faq-knowledge {
+  box-sizing:border-box;
+  background:var(--extra-cream);
+  border:1px solid rgba(155,138,109,.22);
+  border-radius:24px;
+  padding:clamp(1.5rem,3.2vw,3rem);
+}
+.page-shell:has(.faq-category) .faq-knowledge p {color:#607163;line-height:1.7;}
+.page-shell:has(.faq-category) .faq-links {gap:.72rem;}
+.page-shell:has(.faq-category) .faq-links .button {white-space:normal;}
+/* Compact, consistent call-to-action on these previously overlooked routes. */
+.page-shell:has(> .academy-hero) > .cta-section,
+.page-shell:has(> .guidance-hero) > .cta-section,
+.page-shell:has(.faq-category) > .cta-section {padding:clamp(2.1rem,3.6vw,3.6rem) 0;}
+.page-shell:has(> .academy-hero) > .cta-section .cta-section__inner,
+.page-shell:has(> .guidance-hero) > .cta-section .cta-section__inner,
+.page-shell:has(.faq-category) > .cta-section .cta-section__inner {
+  width:min(calc(100% - 2.5rem),1080px);
+  max-width:1080px;box-sizing:border-box;
+  margin-inline:auto;display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(220px,.9fr);
+  align-items:center;gap:clamp(1.3rem,3.1vw,3.2rem);
+  padding:clamp(1.6rem,3.2vw,2.75rem);
+  border-radius:26px;background:#263d32;
+  box-shadow:0 18px 38px rgba(38,61,50,.11);
+}
+.page-shell:has(> .academy-hero) > .cta-section .cta-section__inner h2,
+.page-shell:has(> .guidance-hero) > .cta-section .cta-section__inner h2,
+.page-shell:has(.faq-category) > .cta-section .cta-section__inner h2 {
+  color:#faf7f1;font:500 clamp(1.65rem,2.2vw,2.3rem)/1.2 Georgia,"Times New Roman",serif;
+  letter-spacing:-.024em;margin:0 0 .8rem;
+}
+.page-shell:has(> .academy-hero) > .cta-section .cta-section__copy,
+.page-shell:has(> .guidance-hero) > .cta-section .cta-section__copy,
+.page-shell:has(.faq-category) > .cta-section .cta-section__copy {
+  color:#e1e9dd;font-size:.94rem;line-height:1.65;
+}
+.page-shell:has(> .academy-hero) > .cta-section .cta-group,
+.page-shell:has(> .guidance-hero) > .cta-section .cta-group,
+.page-shell:has(.faq-category) > .cta-section .cta-group {
+  display:flex;flex-direction:column;align-items:stretch;gap:.8rem;min-width:0;
+}
+.page-shell:has(> .academy-hero) > .cta-section .cta-group .button,
+.page-shell:has(> .guidance-hero) > .cta-section .cta-group .button,
+.page-shell:has(.faq-category) > .cta-section .cta-group .button {
+  max-width:100%;width:100%;justify-content:center;text-align:center;white-space:normal;
+}
+.page-shell:has(> .academy-hero) > .cta-section .cta-group .button--primary,
+.page-shell:has(> .guidance-hero) > .cta-section .cta-group .button--primary,
+.page-shell:has(.faq-category) > .cta-section .cta-group .button--primary {
+  background:#faf7f1;color:#263d32;border-color:#faf7f1;
+}
+.page-shell:has(> .academy-hero) > .cta-section .cta-group .button--secondary,
+.page-shell:has(> .guidance-hero) > .cta-section .cta-group .button--secondary,
+.page-shell:has(.faq-category) > .cta-section .cta-group .button--secondary {
+  color:#faf7f1;background:transparent;border-color:rgba(250,247,241,.68);
+}
+.page-shell:has(> .academy-hero) > .academy-note,
+.page-shell:has(> .guidance-hero) > .compliance-section,
+.page-shell:has(.faq-category) > .compliance-section {
+  padding:0 0 clamp(3rem,5vw,5rem);
+}
+.page-shell:has(> .academy-hero) > .academy-note .container,
+.page-shell:has(> .guidance-hero) > .compliance-section .container,
+.page-shell:has(.faq-category) > .compliance-section .container {display:flex;justify-content:center;}
+.page-shell:has(> .academy-hero) > .academy-note .compliance-note,
+.page-shell:has(> .guidance-hero) > .compliance-section .compliance-note,
+.page-shell:has(.faq-category) > .compliance-section .compliance-note {
+  box-sizing:border-box;width:min(100%,760px);
+  background:#f5eee5;
+  border:1px solid rgba(162,143,114,.28);
+  border-radius:18px;padding:1.1rem 1.45rem;
+}
+@media(max-width:870px){
+  .page-shell:has(> .guidance-hero) .check-list {grid-template-columns:1fr;}
+  .page-shell:has(> .academy-hero) > .cta-section .cta-section__inner,
+  .page-shell:has(> .guidance-hero) > .cta-section .cta-section__inner,
+  .page-shell:has(.faq-category) > .cta-section .cta-section__inner {grid-template-columns:1fr;max-width:680px;}
+}
+@media(max-width:600px){
+  .page-shell:has(> .academy-hero) .academy-step {padding:1.45rem;}
+  .page-shell:has(> .academy-hero) .academy-step__links {grid-template-columns:1fr;}
+  .page-shell:has(.faq-category) .faq-category {padding:1.35rem;}
+  .page-shell:has(> .guidance-hero) .guidance-grid {grid-template-columns:1fr;}
+}

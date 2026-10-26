@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/spearmint-gruene-minze/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Spearmint explained simply"
-description: "A calm guide to Spearmint: scent profile, simple routines, blending ideas and safe use without medical promises."
+description: "Discover Spearmint: scent character, inspiring everyday rituals, blend ideas and responsible use."
 relatedArticleIds:
   - "KO-W09-001"
   - "KO-W07-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/en_DE/shop/spearmint-oil/"
 
 Spearmint often feels softer than Peppermint in its scent profile and fits fresh, friendly everyday blends.
 
-This page helps you understand Spearmint calmly: scent, everyday use, simple routines, blending ideas and important safety points. The goal is not medical promises. The goal is clear orientation.
+This page helps you understand Spearmint calmly: scent, everyday use, simple routines, blending ideas and important safety points. Discover its scent character, practical blend ideas and conscious ways to use it.
 
 ## Scent profile
 

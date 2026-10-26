@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/eucalyptus/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Eucalyptus (Eukalyptus) einfach erklärt"
-description: "Eine ruhige Einordnung von Eucalyptus (Eukalyptus): Duftprofil, einfache Routinen, Kombinationen und sichere Anwendung ohne Heilversprechen."
+description: "Eucalyptus (Eukalyptus) im Alltag: Duftcharakter, kombinierbare Duftnoten und Ideen für deine Alltagsroutine."
 relatedArticleIds:
   - "KO-W04-001"
   - "KO-W02-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/eucalyptus-oil/"
 
 Eucalyptus ist ein Öl für klare Raumduft-Momente, frische Alltagsroutinen und eine bewusste, eher kühle Duftatmosphäre.
 
-Diese Seite hilft dir, Eucalyptus (Eukalyptus) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Es geht nicht um Heilversprechen, sondern um klare Orientierung.
+Diese Seite hilft dir, Eucalyptus (Eukalyptus) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Entdecke konkrete Duftideen, stimmige Kombinationen und bewusste Anwendungen.
 
 ## Duftprofil
 

@@ -3,14 +3,14 @@ id: "KO-W38-EN-007"
 translationPairId: "KO-W38-PAIR-007"
 language: "en"
 status: "approved-content-pack-ready"
-title: "Clove: warm spice oil with a clear dilution boundary"
+title: "Clove: a rich, warm spice aroma"
 slug: "clove"
 route: "/en/knowledge/oil-library/clove/"
 deRoute: "/de/wissen/oel-lexikon/clove-gewuerznelke/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
-seoTitle: "Clove: warm spice oil with a clear dilution boundary"
-description: "Clove is an intense warm spice oil that should be placed especially carefully because of its strength."
+seoTitle: "Clove: a rich, warm spice aroma"
+description: "Clove lends a bold, warm spice note to seasonal diffuser blends. Learn how to use this potent oil thoughtfully and with proper dilution."
 focus: "spice oil, hot oil, dilution, seasonal scent"
 searchKeywords:
   - "clove"
@@ -44,9 +44,9 @@ sourceUrls:
   - "https://www.doterra.com/US/en/thyme-oil-education"
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
 ---
-# Clove: warm spice oil with a clear dilution boundary
+# Clove: a rich, warm spice aroma
 
-Clove is an intense warm spice oil that should be placed especially carefully because of its strength.
+Clove lends a bold, warm spice note to seasonal diffuser blends. Learn how to use this potent oil thoughtfully and with proper dilution.
 
 ## Focus
 

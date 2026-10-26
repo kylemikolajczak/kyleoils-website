@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/patchouli/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Patchouli / Patschuli einfach erklärt"
-description: "Patchouli / Patschuli im Öl-Lexikon: Duftprofil, Kernbereich, sichere Einordnung und Beratung ohne Heilversprechen."
+description: "Patchouli / Patschuli im Öl-Lexikon: Duftcharakter, passende Einsatzideen, Kombinationen und Hinweise zur sicheren Anwendung."
 botanicalName: "Pogostemon cablin"
 scentFamily: "Erdig-holziges Öl"
 pillar: "Hautpflege, Erdung im Duft & Basisnote"
@@ -59,22 +59,15 @@ doTERRA positioniert Patchouli unter anderem im Hautpflegekontext und weist auf 
 
 Kyle Oils übersetzt diesen Produktkontext in eine Sprache, die für Besucher verständlich bleibt: Was rieche ich? Wofür wird das Öl gesucht? Wo passt es in Routinen? Welche Sicherheitsgrenzen gelten?
 
-## Sichere öffentliche Einordnung
+## Duft- und Anwendungsideen
 
-Dieses Öl lässt sich öffentlich so einordnen:
+Für diese Alltagsmomente ist das Duftprofil interessant:
 
 - für Hautpflege- und Pflegegefühl nach Label
 - als tiefe Basisnote in Duftmischungen
 - für Menschen, die erdige Öle statt heller Zitrusprofile suchen
 - als Verbindung zwischen Öl-Lexikon, Hautpflege und Duftfamilien
 
-## Was wir nicht schreiben
-
-Diese Aussagen gehören nicht auf die öffentliche Website:
-
-- Hautprobleme behandeln
-- Akne oder Ekzeme heilen
-- psychische Erdung versprechen
 
 ## Wie du dieses Öl sinnvoll kennenlernst
 

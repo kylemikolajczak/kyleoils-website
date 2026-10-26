@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/ylang-ylang/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Ylang Ylang einfach erklärt"
-description: "Eine ruhige Einordnung von Ylang Ylang: Duftprofil, einfache Routinen, Kombinationen und sichere Anwendung ohne Heilversprechen."
+description: "Ylang Ylang im Alltag: Duftcharakter, kombinierbare Duftnoten und Ideen für deine Alltagsroutine."
 relatedArticleIds:
   - "KO-W04-001"
   - "KO-W02-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/ylang-ylang-oil/"
 
 Ylang Ylang ist ein intensives Blütenöl für sehr kleine Duftakzente, warme Abendmischungen und persönliche Duftprofile.
 
-Diese Seite hilft dir, Ylang Ylang ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Es geht nicht um Heilversprechen, sondern um klare Orientierung.
+Diese Seite hilft dir, Ylang Ylang ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Entdecke konkrete Duftideen, stimmige Kombinationen und bewusste Anwendungen.
 
 ## Duftprofil
 

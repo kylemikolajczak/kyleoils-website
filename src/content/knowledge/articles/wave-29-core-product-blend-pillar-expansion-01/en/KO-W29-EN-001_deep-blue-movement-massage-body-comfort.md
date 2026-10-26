@@ -44,23 +44,15 @@ doTERRA positions Deep Blue around sports, after-workout massage and a comfortin
 
 Kyle Oils uses this area through a clean guidance logic: What is the product? Which everyday situation is it searched for? Which safe-use context matters? Where does personal guidance begin?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This page may place doTERRA Deep Blue like this:
+Here are practical ideas for doTERRA Deep Blue:
 
 - after workouts, yardwork, moving, long sitting or active days
 - as part of a conscious massage or body-care routine
 - for people looking for a cooling and comforting care feel
 - as an example of how doTERRA can be close to body topics without becoming medical
 
-## What we do not write publicly
-
-These statements do not belong on the website:
-
-- helps pain
-- treats injuries
-- is anti-inflammatory
-- replaces physiotherapy or medical treatment
 
 ## How Kyle places this in guidance
 
@@ -73,7 +65,7 @@ Personal guidance is not about quickly selling a product as a solution. It is ab
 - Are children, pets, pregnancy, medication or sensitive skin involved?
 - Is a finished doTERRA product more appropriate than a DIY recipe?
 
-This keeps the recommendation closer to what doTERRA actually offers, but without risky online promises.
+This helps keep the recommendation practical and aligned with the product label.
 
 ## Safety
 

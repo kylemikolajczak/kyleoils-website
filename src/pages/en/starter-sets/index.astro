@@ -1,14 +1,11 @@
 ---
 import StarterSetCard from '../../../components/cards/StarterSetCard.astro';
-import TopicCard from '../../../components/cards/TopicCard.astro';
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
-import CTAGroup from '../../../components/cta/CTAGroup.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
-import Button from '../../../components/global/Button.astro';
 import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
-import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import { starterSetLinks } from '../../../data/starterSets';
 import PageLayout from '../../../layouts/PageLayout.astro';
+import '../../../styles/starter-sets-refined.css';
 import { contactLinks } from '../../../data/externalLinks';
 
 const starterSets = [
@@ -189,25 +186,15 @@ const decisionOptions = [
 ];
 ---
 
-<PageLayout
-  lang="en"
-  title="Compare & Choose doTERRA Starter Kits | Kyle Oils"
-  description="Compare official doTERRA starter kits, read practical guidance before you choose and find a fitting starting point with Kyle."
->
-  <section class="hero">
+<PageLayout lang="en" title="A better start begins with the right kit. | Kyle Oils" description="Four official starter options, explained clearly. Choose what fits your life, build useful habits and discover the benefits of a doTERRA customer account.">
+  <section class="hero starter-sets-hero">
     <div class="container hero__grid">
       <div class="hero__content">
-        <h1>A Simple Start with doTERRA</h1>
-        <div class="hero__copy">
-          <p>If you already know that you would like to get started with doTERRA products, starter kits can be a useful introduction.</p>
-          <p>They allow you to begin with an official starter option rather than choosing every product individually.</p>
-          <p>Even so:</p>
-          <p>Not every kit suits every person.</p>
-          <p>The best starting point depends on what you genuinely want to use in your daily routine: family, home, calm, energy, wellness or a particular system.</p>
-          <p>This page presents four official starter options that can make it easier to begin.</p>
-          <p>If you are certain, you can order directly.<br />If you are unsure, speak with me briefly first.</p>
-        </div>
-        <CTAGroup primaryHref="/en/contact/" primaryLabel="Get Personal Advice on a Starter Kit" secondaryHref={contactLinks.whatsapp.href} secondaryLabel="Message Me on WhatsApp" />
+        <p class="eyebrow">START WITH DOTERRA</p>
+        <h1>A better start begins with the right kit.</h1>
+        <div class="hero__copy"><p>Four official starter options, explained clearly. Choose what fits your life, build useful habits and discover the benefits of a doTERRA customer account.</p></div>
+        <p class="starter-hero__deal"><strong>25 %</strong><span>below regular retail with eligible customer membership. This is not an extra reduction on the displayed kit price.</span></p>
+        <div class="starter-hero__buttons"><a class="starter-button starter-button--primary" href="#starter-options">Explore kit</a><a class="starter-button starter-button--secondary" href="/en/contact/">Ask Kyle for guidance</a></div>
       </div>
       <ResponsiveImage
         src="/assets/images/products/starter-sets-hero-lifestyle.png"
@@ -216,6 +203,7 @@ const decisionOptions = [
         height={941}
         variant="portrait-wide"
         position="67% center"
+        treatment="hero"
         priority
         sources={[
           { type: 'image/avif', srcset: '/assets/images/optimized/starter-sets-hero-lifestyle-640.avif 640w, /assets/images/optimized/starter-sets-hero-lifestyle-960.avif 960w, /assets/images/optimized/starter-sets-hero-lifestyle-1280.avif 1280w' },
@@ -224,191 +212,63 @@ const decisionOptions = [
       />
     </div>
   </section>
-
-  <section class="section decision-section">
-    <div class="container">
-      <SectionIntro title="Which start suits you?">
-        <p>Use this overview to place the four official options before comparing them in detail.</p>
-      </SectionIntro>
-      <div class="decision-grid">{decisionOptions.map((option) => <a href={option.href}><h2>{option.title}</h2><p>{option.copy}</p><span>View this kit <span aria-hidden="true">→</span></span></a>)}</div>
+  <section class="section starter-decision">
+    <div class="container starter-main-container">
+      <header class="starter-section-heading" data-reveal><p class="eyebrow">FIND YOUR STARTING POINT</p><h2>Which kit fits your everyday life?</h2><p>Four different ways to begin. Choose what matters to you and explore the matching starter kit.</p></header>
+      <div class="starter-decision__grid" data-consultation-cards>
+      {decisionOptions.map((option,index)=><a class="starter-decision__card" href={option.href} data-consultation-card>
+        <span class="starter-card-index">{String(index+1).padStart(2,"0")}</span><h3>{option.title}</h3><p>{option.copy}</p><span class="starter-card-more">Explore kit ↗</span>
+      </a>)}
+      </div>
     </div>
   </section>
-
-  <section class="section section--sage">
-    <div class="container">
-      <SectionIntro title="Four Official Starter Options" />
-      <div class="international-note">
-        <ComplianceNote label="Information for International Visitors">
-          <h3>Information for International Visitors</h3>
-          <p>The direct links on this page lead to the official German doTERRA shop and are intended for customers in Germany.</p>
-          <p>Outside Germany? Contact Kyle for the official starter-kit and ordering link for your country.</p>
-        </ComplianceNote>
-      </div>
+  <section class="section starter-offers" id="starter-options">
+    <div class="container starter-main-container">
+      <header class="starter-section-heading" data-reveal><p class="eyebrow">FOUR OFFICIAL OPTIONS</p><h2>Explore the starter kits.</h2><p>View the products, their everyday uses and my personal take. All direct order buttons on this page link to the German doTERRA shop.</p></header>
+      <aside class="starter-international">
+        <div class="starter-international__copy"><p class="eyebrow">IMPORTANT FOR INTERNATIONAL VISITORS</p><h3>Living outside Germany? Contact me first.</h3><p>Every direct order button on this page links to the official German doTERRA shop and is intended for Germany. Tell me which country you live in and which kit interests you. I can check locally available official options and guide you to your country’s appropriate ordering and customer enrolment process.</p><small>Availability, currencies, eligibility and prices vary by country.</small></div>
+        <a href="/en/contact/" class="starter-button starter-button--primary">Ask for your country’s ordering options</a>
+      </aside>
+      <aside class="starter-pricing"><strong>25 %</strong><div><p class="eyebrow">25% WHOLESALE CUSTOMER BENEFIT</p><p>With an eligible doTERRA Wholesale Customer account, you can shop at wholesale pricing, generally 25% below regular retail. This is not an additional 25% reduction on an already listed starter-kit price. I can guide you through your available enrolment and ordering options.</p></div></aside>
       <div class="starter-set-list">
-        {starterSets.map((set) => (
-          <div id={set.anchorId} class="starter-set-anchor" tabindex="-1">
-          <StarterSetCard
-            title={set.title}
-            imageSrc={set.imageSrc}
-            imageAlt={set.imageAlt}
-            imageWidth={set.imageWidth}
-            imageHeight={set.imageHeight}
-            orderHref={set.orderHref}
-            orderLabel={set.orderLabel}
-            consultationHref="/en/contact/"
-    consultationLabel="Get Help Choosing This Kit"
-          >
-            <p class="starter-set-lead"><strong>{set.lead}</strong></p>
-            {set.sections.map((section) => (
-              <section>
-                <h4>{section.title}</h4>
-                {'items' in section && (
-                  <ul class="starter-set-points">
-                    {section.items.map((item) => <li>{item}</li>)}
-                  </ul>
-                )}
-                {'paragraphs' in section && section.paragraphs.map((paragraph) => (
-                  <p>{paragraph.split('\n').map((line, index) => <>{index > 0 && <br />}{line}</>)}</p>
-                ))}
-              </section>
-            ))}
+        {starterSets.map((set,index)=><div id={set.anchorId} class="starter-set-anchor" tabindex="-1">
+          <StarterSetCard title={set.title} imageSrc={set.imageSrc} imageAlt={set.imageAlt} imageWidth={set.imageWidth} imageHeight={set.imageHeight}
+            orderHref={set.orderHref} orderLabel="Order from German doTERRA shop" consultationHref="/en/contact/" consultationLabel="Outside Germany? Ask Kyle"
+            kitIndex={index+1} countryLabel="OFFICIAL SHOP · GERMANY ONLY" priceNotice="Eligible member pricing is 25% below regular retail, not an extra discount on displayed starter-kit prices.">
+              <p class="starter-set-lead">{set.lead}</p>
+              {set.sections.map((section)=><section><h4>{section.title}</h4>
+                {"items" in section && <ul class="starter-set-points">{section.items.map(item=><li>{item}</li>)}</ul>}
+                {"paragraphs" in section && section.paragraphs.map(paragraph=><p>{paragraph}</p>)}
+              </section>)}
           </StarterSetCard>
-          </div>
-        ))}
+        </div>)}
       </div>
     </div>
   </section>
-
-  <section class="section">
-    <div class="container split-copy">
-      <SectionIntro title="The Benefit of an Official Customer Account">
-        <p>With an official doTERRA customer account, you can purchase products at wholesale pricing and save 25% on your purchases.</p>
-        <p>At the same time, you have someone you can contact for help with getting started, questions and product use.</p>
-        <p>This means:</p>
-        <p>You are not simply ordering anonymously.<br />You have someone who helps you use your products purposefully in daily life.</p>
-      </SectionIntro>
-      <SectionIntro title="Important Before Ordering">
-        <p>A starter kit is a good choice when it suits your daily routine.</p>
-        <p>That is why I recommend considering a few questions before ordering:</p>
-        <p>What would you mainly like to achieve?</p>
-        <p>Are you mainly getting started for family and daily life?</p>
-        <p>Are you looking for a solid basic selection?</p>
-        <p>Are you more interested in wellness and long-term routines?</p>
-        <p>Is MetaPWR your main focus?</p>
-        <p>If you are unsure, send me a brief message. A short conversation can help you avoid ordering something that does not genuinely suit your needs.</p>
-      </SectionIntro>
+  <section class="section starter-benefits">
+    <div class="container starter-main-container starter-benefits__grid">
+      <article class="starter-benefits__account" data-reveal><p class="eyebrow">YOUR CUSTOMER BENEFITS</p><h2>An account with real benefits.</h2><p>With a suitable doTERRA Wholesale Customer account, you gain access to member pricing and have me as a personal guide for your first products and routines.</p><ul><li><span>01</span><p>Wholesale prices 25% below regular retail, where eligible</p></li><li><span>02</span><p>Personal guidance on enrolment, kit choice and safe use</p></li><li><span>03</span><p>No mandatory monthly order for Wholesale Customer membership</p></li></ul></article>
+      <article class="starter-benefits__before" data-reveal><p class="eyebrow">BEFORE YOU ORDER</p><h2>Choose a kit you will actually use.</h2><p>Start with your needs. Are you exploring oils for the first time, looking for a diffuser or planning a specific wellness routine? The best fit is not necessarily the largest kit.</p><ul><li>An introduction to oils and family routines</li><li>A diffuser and a broader home essentials setup</li><li>Daily nutrition and wellness products</li><li>A focused approach with MetaPWR</li></ul></article>
     </div>
   </section>
-
-  <section class="section section--sage decision-guides">
-    <div class="container">
-      <SectionIntro title="Read before you choose">
-        <p>A starter kit should work for your everyday life, not just look good. These pages explain kit size, account type, LRP and a first order in straightforward terms.</p>
-      </SectionIntro>
-      <div class="decision-guides__grid">
-        {decisionGuides.map((guide) => (
-          <TopicCard title={guide.title}>
-            <Button href={guide.href} variant="secondary">Learn more</Button>
-          </TopicCard>
-        ))}
-      </div>
-      <div class="decision-guides__cta">
-        <CTAGroup primaryHref="/en/contact/" primaryLabel="Talk Through a Starter Kit with Kyle" />
+  <section class="section starter-guides">
+    <div class="container starter-main-container">
+      <header class="starter-section-heading" data-reveal><p class="eyebrow">UNDERSTAND BEFORE YOU BUY</p><h2>Get ready for your first order.</h2><p>Three short guides explain kit choices, customer accounts and the Loyalty Rewards Program.</p></header>
+      <div class="starter-guides__grid" data-consultation-cards>{decisionGuides.map((guide,index)=><a href={guide.href} class="starter-guides__card" data-consultation-card>
+        <span class="starter-card-index">{String(index+1).padStart(2,"0")}</span><h3>{guide.title}</h3><span class="starter-card-more">Read guide ↗</span>
+      </a>)}</div>
+    </div>
+  </section>
+  <section class="section starter-orientation">
+    <div class="container starter-main-container">
+      <header class="starter-section-heading" data-reveal><p class="eyebrow">GETTING STARTED</p><h2>What happens after your first order?</h2></header>
+      <div class="starter-orientation__grid">
+        <article><span class="starter-card-index">01</span><h3>Start Here</h3><p>Explore responsible essential-oil use with our Start Here guides.</p><a class="starter-button starter-button--secondary" href="/en/start-here/">Explore Start Here</a></article>
+        <article><span class="starter-card-index">02</span><h3>30-Day Start Plan</h3><p>Build your first everyday habits with our free 30-Day Oil Start Plan.</p><a class="starter-button starter-button--secondary" href="/en/30-day-start-plan/">View the 30-Day Start Plan</a></article>
       </div>
     </div>
   </section>
-
-  <section class="section section--cream orientation-module">
-    <div class="container orientation-module__grid">
-      <article>
-        <SectionIntro title="New? Start with the Start Here path.">
-          <p>You do not have to understand everything immediately, know every oil or have the perfect routine right away.</p>
-        </SectionIntro>
-        <CTAGroup primaryHref="/en/start-here/" primaryLabel="Open Start Here" />
-      </article>
-      <article>
-        <SectionIntro title="Free 30-Day Oil Start Plan">
-          <p>The free 30-Day Oil Start Plan helps you get to know your first products, read labels carefully, try simple routines and collect questions for Kyle.</p>
-        </SectionIntro>
-        <CTAGroup primaryHref="/en/30-day-start-plan/" primaryLabel="View 30-Day Start Plan" />
-      </article>
-    </div>
-  </section>
-
-  <CTASection
-    title="Your Next Step"
-    primaryHref="/en/contact/"
-    primaryLabel="Get Personal Advice on a Starter Kit"
-    secondaryHref={contactLinks.whatsapp.href}
-    secondaryLabel="Message Me on WhatsApp"
-  >
-    <p>When you are ready, you can order your starter kit directly using the relevant button.</p>
-    <p>If you are still unsure, simply send me a brief message.</p>
-        <p>Then we can work out which option suits you.</p>
-  </CTASection>
-
-  <section class="compliance-section">
-    <div class="container">
-      <ComplianceNote label="Note">
-        <h2>A Brief Note</h2>
-        <p>My support is not a substitute for medical diagnosis or treatment.<br />I do not claim that products can diagnose, treat or cure medical conditions.</p>
-        <p>Essential oils, wellness products, nutritional supplements and everyday routines can be part of your life, but they do not replace medical or therapeutic care.</p>
-        <p>If you have health concerns or medical questions, please consult a doctor or another appropriately qualified healthcare professional.</p>
-      </ComplianceNote>
-    </div>
-  </section>
+  <CTASection title="Ready to start with doTERRA?" primaryHref="/en/contact/" primaryLabel="Contact Kyle" secondaryHref={contactLinks.whatsapp.href} secondaryLabel="Message on WhatsApp"><p>If you are in Germany, choose your kit in the German shop. Living elsewhere or unsure which kit fits? Message me and I will help you explore your country’s official ordering options.</p></CTASection>
+  <section class="compliance-section starter-compliance"><div class="container"><ComplianceNote label="IMPORTANT NOTE"><p class="starter-compliance__label">IMPORTANT NOTE</p><p>The 25% customer benefit refers to eligible wholesale pricing compared with regular retail; it is not an extra discount on a displayed starter-kit price. doTERRA determines availability, pricing and enrolment terms in each country. My guidance is not medical advice.</p></ComplianceNote></div></section>
+  <script is:inline src="/scripts/consultation-motion.js" defer></script>
 </PageLayout>
-
-<style>
-  .hero { padding: var(--space-64) 0; overflow: hidden; background: var(--color-warm-white); }
-  .hero__grid { display: grid; gap: var(--space-40); align-items: center; }
-  h1 { max-width: 760px; margin: 0 0 var(--space-24); font-size: var(--font-size-h1-mobile); line-height: var(--line-height-heading); letter-spacing: -0.025em; }
-  .hero__copy { max-width: var(--container-text); margin-bottom: var(--space-32); color: var(--color-text-secondary); }
-  .hero__copy p { margin: 0 0 var(--space-16); }
-  .hero__copy p:last-child { margin-bottom: 0; }
-  .section { padding: var(--space-64) 0; }
-  .section--cream { background: var(--color-soft-cream); }
-  .section--sage { background: rgb(168 184 160 / 20%); }
-  .decision-grid { display: grid; gap: var(--space-16); margin-top: var(--space-32); }
-  .decision-grid a { display: flex; min-height: 100%; flex-direction: column; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); color: var(--color-text-primary); text-decoration: none; }
-  .decision-grid a:hover, .decision-grid a:focus-visible { border-color: var(--color-deep-forest); }
-  .decision-grid h2, .decision-grid p { margin: 0; }
-  .decision-grid p { margin-top: var(--space-12); color: var(--color-text-secondary); }
-  .decision-grid span { margin-top: var(--space-20); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
-  .narrow-layout { max-width: var(--container-text); }
-  .split-copy { display: grid; gap: var(--space-48); }
-  .international-note { margin-bottom: var(--space-40); }
-  .international-note :global(h3) { margin: 0 0 var(--space-12); color: var(--color-deep-forest); font-size: var(--font-size-body-mobile); line-height: var(--line-height-heading); }
-  .international-note :global(p + p) { margin-top: var(--space-12); }
-  .decision-guides__grid { display: grid; gap: var(--space-16); }
-  .decision-guides__grid :global(.button) { width: 100%; }
-  .decision-guides__cta { margin-top: var(--space-32); }
-  .orientation-module__grid { display: grid; gap: var(--space-32); }
-  .orientation-module__grid :global(.section-intro) { margin-bottom: var(--space-24); }
-  .starter-set-list { display: grid; gap: var(--space-32); }
-  .starter-set-anchor { scroll-margin-top: var(--space-120); }
-  .starter-set-lead { margin: 0 0 var(--space-32); color: var(--color-deep-forest); font-size: 19px; line-height: 1.5; }
-  .starter-set-points { display: grid; gap: var(--space-8); margin: 0; padding-left: var(--space-24); }
-  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; color: var(--color-text-secondary); }
-  .check-list li { position: relative; padding-left: var(--space-32); }
-  .check-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
-  .compliance-section { padding: 0 0 var(--space-80); }
-  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  .compliance-section :global(p + p) { margin-top: var(--space-12); }
-  @media (min-width: 768px) {
-    .decision-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
-    .hero { padding-block: var(--space-80); }
-    .section { padding-block: var(--space-96); }
-    .starter-set-list { gap: var(--space-40); }
-    .decision-guides__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
-    .orientation-module__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-48); }
-  }
-  @media (min-width: 1024px) {
-    .hero { padding-block: var(--space-96); }
-    .hero__grid { grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr); gap: var(--space-64); }
-    h1 { font-size: var(--font-size-h1-desktop); }
-    .section { padding-block: var(--space-120); }
-    .split-copy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); align-items: start; }
-    .starter-set-list { gap: var(--space-48); }
-  }
-</style>

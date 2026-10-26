@@ -44,23 +44,15 @@ doTERRA describes Lavender with its distinctive aroma, calming scent profile and
 
 Kyle Oils uses this area through a clean guidance logic: What is the product? Which everyday situation is it searched for? Which safe-use context matters? Where does personal guidance begin?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This page may place doTERRA Lavender like this:
+Here are practical ideas for doTERRA Lavender:
 
 - for a calm evening environment and scent anchors around bedtime
 - for people who want to start with a classic single oil
 - for skin care, care feel and cosmetic context according to the label
 - as a bridge between Oil Library, Routines and guidance
 
-## What we do not write publicly
-
-These statements do not belong on the website:
-
-- heals wounds
-- helps cuts
-- treats sunburn
-- treats sleep disorders
 
 ## How Kyle places this in guidance
 
@@ -73,7 +65,7 @@ Personal guidance is not about quickly selling a product as a solution. It is ab
 - Are children, pets, pregnancy, medication or sensitive skin involved?
 - Is a finished doTERRA product more appropriate than a DIY recipe?
 
-This keeps the recommendation closer to what doTERRA actually offers, but without risky online promises.
+This helps keep the recommendation practical and aligned with the product label.
 
 ## Safety
 

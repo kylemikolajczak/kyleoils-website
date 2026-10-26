@@ -44,23 +44,15 @@ doTERRA presents ZenGest as a supporting blend in the food and digestive context
 
 Kyle Oils uses this area through a clean guidance logic: What is the product? Which everyday situation is it searched for? Which safe-use context matters? Where does personal guidance begin?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This page may place doTERRA ZenGest like this:
+Here are practical ideas for doTERRA ZenGest:
 
 - for people who want to understand doTERRA around food and digestive feel
 - as a product area around meals, travel and everyday habits
 - for guidance before buying because form, label and use matter
 - as an example of product logic instead of spontaneous DIY recipes
 
-## What we do not write publicly
-
-These statements do not belong on the website:
-
-- helps stomach pain
-- treats digestive problems
-- helps nausea
-- heals gastrointestinal complaints
 
 ## How Kyle places this in guidance
 
@@ -73,7 +65,7 @@ Personal guidance is not about quickly selling a product as a solution. It is ab
 - Are children, pets, pregnancy, medication or sensitive skin involved?
 - Is a finished doTERRA product more appropriate than a DIY recipe?
 
-This keeps the recommendation closer to what doTERRA actually offers, but without risky online promises.
+This helps keep the recommendation practical and aligned with the product label.
 
 ## Safety
 

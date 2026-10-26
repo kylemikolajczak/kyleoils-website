@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/black-spruce-schwarzfichte/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Black Spruce explained simply"
-description: "A clear guide to Black Spruce: scent profile, blending logic, everyday use and safe use without medical promises."
+description: "Explore Black Spruce: scent profile, pairing ideas, practical routines and responsible use."
 relatedArticleIds:
   - "KO-W17-EN-008"
   - "KO-W18-EN-006"

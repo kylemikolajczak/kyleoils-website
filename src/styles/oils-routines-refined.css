@@ -1,0 +1,424 @@
+/*
+ * Kyle Oils · Oils & Routines landing refinement (shared DE / EN).
+ * Same editorial palette as homepage, Knowledge Hub and Consultation.
+ * No changes to the global header, footer, or cinematic homepage hero.
+ */
+.page-shell:has(> .oils-methods) {
+  --oils-canvas: #faf7f1;
+  --oils-sage: #f1f2ea;
+  --oils-cream: #f5eee5;
+  --oils-deep: #263d32;
+  background: var(--oils-canvas);
+}
+.page-shell:has(> .oils-methods) > section {
+  background-color: var(--oils-canvas);
+}
+.page-shell:has(> .oils-methods) > .section {
+  padding-block: clamp(3.65rem, 5vw, 5.15rem);
+}
+.page-shell:has(> .oils-methods) > .hero {
+  padding-block: clamp(3.75rem, 5.5vw, 6rem);
+}
+.page-shell:has(> .oils-methods) > .hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.65rem, 4.15vw, 4.2rem);
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -.026em;
+  color: var(--oils-deep);
+}
+.page-shell:has(> .oils-methods) .oils-layout,
+.page-shell:has(> .oils-methods) .oils-routine__grid,
+.page-shell:has(> .oils-methods) .oils-learning__inner {
+  max-width: 1190px;
+}
+.page-shell:has(> .oils-methods) .eyebrow {
+  color: #70816f;
+  font-size: .73rem;
+  font-weight: 700;
+  letter-spacing: .13em;
+  margin: 0 0 .85rem;
+}
+.page-shell:has(> .oils-methods) .oils-section-heading {
+  max-width: 760px;
+  margin-bottom: clamp(1.6rem, 3vw, 2.35rem);
+}
+.page-shell:has(> .oils-methods) .oils-section-heading h2,
+.page-shell:has(> .oils-methods) .oils-routine__text h2,
+.page-shell:has(> .oils-methods) .oils-learning__inner h2 {
+  color: var(--oils-deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.1rem, 3.15vw, 3.1rem);
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: -.028em;
+  margin: 0 0 .95rem;
+}
+.page-shell:has(> .oils-methods) .oils-section-heading > p:last-child,
+.page-shell:has(> .oils-methods) .oils-routine__text > p:not(.eyebrow):not(.oils-routine__detail),
+.page-shell:has(> .oils-methods) .oils-learning__inner > div > p:not(.eyebrow):not(.oils-learning__note) {
+  max-width: 66ch;
+  color: #607067;
+  line-height: 1.68;
+  margin: 0 0 .95rem;
+}
+
+/* Three safety-conscious routes: a matched set of calm sage cards. */
+.page-shell:has(> .oils-methods) .oils-methods__grid,
+.page-shell:has(> .oils-methods) .oils-interests__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: clamp(.8rem, 1.6vw, 1.35rem);
+}
+.page-shell:has(> .oils-methods) .oils-method-card,
+.page-shell:has(> .oils-methods) .oils-interest-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 23px;
+  border: 1px solid rgba(103, 135, 105, .21);
+  background: var(--oils-sage);
+  padding: clamp(1.45rem, 2.25vw, 2rem);
+  box-shadow: 0 7px 23px rgba(37, 64, 45, .045);
+}
+.page-shell:has(> .oils-methods) .oils-method-card {
+  min-height: 222px;
+}
+.page-shell:has(> .oils-methods) .oils-interest-card {
+  min-height: 256px;
+  color: var(--oils-deep);
+  text-decoration: none;
+  transition: border-color .25s ease, background .25s ease, box-shadow .25s ease;
+}
+.page-shell:has(> .oils-methods) .oils-interest-card:hover,
+.page-shell:has(> .oils-methods) .oils-interest-card:focus-visible {
+  border-color: rgba(76, 113, 78, .46);
+  background: #eaf0e5;
+  box-shadow: 0 13px 27px rgba(37, 64, 45, .093);
+}
+.page-shell:has(> .oils-methods) .oils-card-index {
+  color: #859b87;
+  font-size: .74rem;
+  font-weight: 750;
+  letter-spacing: .16em;
+  display: inline-block;
+  margin-bottom: 1.55rem;
+}
+.page-shell:has(> .oils-methods) .oils-method-card h3,
+.page-shell:has(> .oils-methods) .oils-interest-card h3 {
+  color: var(--oils-deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: clamp(1.35rem, 1.65vw, 1.65rem);
+  line-height: 1.24;
+  letter-spacing: -.016em;
+  margin: 0 0 .8rem;
+}
+.page-shell:has(> .oils-methods) .oils-method-card p,
+.page-shell:has(> .oils-methods) .oils-interest-card p {
+  color: #5e7064;
+  font-size: .95rem;
+  line-height: 1.58;
+  margin: 0;
+}
+.page-shell:has(> .oils-methods) .oils-interest-card__more {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1.2rem;
+  border-bottom: 0;
+  color: #426d4b;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .74rem;
+  letter-spacing: .045em;
+}
+.page-shell:has(> .oils-methods) .oils-interest-card__more > span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: transform .2s ease;
+}
+.page-shell:has(> .oils-methods) .oils-interest-card:hover .oils-interest-card__more > span {
+  transform: translate(3px, -3px);
+}
+.page-shell:has(> .oils-methods) .oils-safety-note {
+  margin-top: 1.5rem;
+  padding: 1.1rem 1.45rem;
+  border: 1px solid rgba(157, 144, 117, .25);
+  border-radius: 17px;
+  background: var(--oils-cream);
+  display: flex;
+  align-items: baseline;
+  gap: clamp(.8rem, 2vw, 2rem);
+}
+.page-shell:has(> .oils-methods) .oils-safety-note__title {
+  flex: 0 0 auto;
+  color: #817260;
+  font-weight: 750;
+  font-size: .71rem;
+  letter-spacing: .11em;
+}
+.page-shell:has(> .oils-methods) .oils-safety-note p {
+  margin: 0;
+  color: #675f56;
+  line-height: 1.57;
+  font-size: .87rem;
+}
+/* Preserve the image and give it the global Soft Luminous Frame. */
+.page-shell:has(> .oils-methods) .oils-routine__grid {
+  display: grid;
+  grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr);
+  gap: clamp(2rem, 5vw, 5.2rem);
+  align-items: center;
+}
+.page-shell:has(> .oils-methods) .oils-routine__text {
+  max-width: 620px;
+}
+.page-shell:has(> .oils-methods) .oils-routine__detail {
+  display: inline-flex;
+  padding: .85rem 1.1rem;
+  background: var(--oils-sage);
+  border-left: 2px solid #a1b49f;
+  border-radius: 0 12px 12px 0;
+  color: #496251;
+  font-size: .86rem;
+  margin: .8rem 0 0;
+  line-height: 1.5;
+}
+.page-shell:has(> .oils-methods) .oils-routine .responsive-image {
+  max-height: 540px;
+}
+/* A deliberate two-column editorial invitation to deeper reading. */
+.page-shell:has(> .oils-methods) .oils-learning__inner {
+  padding: clamp(1.6rem, 3.3vw, 2.9rem);
+  background: var(--oils-cream);
+  border: 1px solid rgba(156, 144, 121, .23);
+  border-radius: 26px;
+  box-shadow: 0 7px 21px rgba(38, 61, 47, .04);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(200px, 245px);
+  align-items: center;
+  gap: clamp(2rem, 4vw, 5rem);
+}
+.page-shell:has(> .oils-methods) .oils-learning__inner h2 {
+  font-size: clamp(1.9rem, 2.8vw, 2.8rem);
+}
+.page-shell:has(> .oils-methods) .oils-learning__note {
+  font-size: .83rem;
+  color: #818075;
+  font-style: italic;
+  margin: 1rem 0 0;
+}
+.page-shell:has(> .oils-methods) .oils-learning__actions {
+  display: grid;
+  align-content: center;
+  gap: .85rem;
+}
+.page-shell:has(> .oils-methods) .oils-learning__primary,
+.page-shell:has(> .oils-methods) .oils-learning__secondary {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 51px;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 650;
+  line-height: 1.25;
+  font-size: .9rem;
+  transition: background-color .22s, border-color .22s, transform .22s, box-shadow .22s;
+}
+.page-shell:has(> .oils-methods) .oils-learning__primary {
+  color: #faf7f1;
+  border: 1px solid var(--oils-deep);
+  background: var(--oils-deep);
+}
+.page-shell:has(> .oils-methods) .oils-learning__primary:hover {
+  background: #365343;
+  box-shadow: 0 8px 16px rgba(38,61,50,.14);
+  transform: translateY(-2px);
+}
+.page-shell:has(> .oils-methods) .oils-learning__secondary {
+  background: rgba(250, 247, 241, .7);
+  border: 1px solid rgba(128, 147, 116, .39);
+  color: var(--oils-deep);
+  gap: .4rem;
+}
+.page-shell:has(> .oils-methods) .oils-learning__secondary:hover {
+  background: #eaf0e4;
+  border-color: #739277;
+  transform: translateY(-2px);
+}
+/* Identical compact CTA/notebook alignment to the finished consultation page. */
+.page-shell:has(> .oils-methods) > .cta-section {
+  padding-block: clamp(2.4rem, 3.6vw, 3.6rem);
+}
+.page-shell:has(> .oils-methods) > .cta-section .cta-section__inner {
+  box-sizing: border-box;
+  width: min(calc(100% - 2.5rem), 1080px);
+  max-width: 1080px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(255px, .85fr);
+  align-items: center;
+  gap: clamp(1.5rem, 3.4vw, 3.4rem);
+  padding: clamp(1.8rem, 3.3vw, 2.75rem);
+  border-radius: 27px;
+  box-shadow: 0 18px 38px rgba(38, 61, 50, .12);
+}
+.page-shell:has(> .oils-methods) > .cta-section .cta-section__inner h2 {
+  color: #faf7f1;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.7rem, 2.3vw, 2.3rem);
+  line-height: 1.16;
+  font-weight: 500;
+  letter-spacing: -.023em;
+  margin: 0 0 .8rem;
+}
+.page-shell:has(> .oils-methods) > .cta-section .cta-section__copy {
+  max-width: 53ch;
+  line-height: 1.58;
+  font-size: .93rem;
+}
+.page-shell:has(> .oils-methods) > .cta-section .cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: .8rem;
+  min-width: 0;
+}
+.page-shell:has(> .oils-methods) > .cta-section .cta-group .button {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.page-shell:has(> .oils-methods) > .oils-compliance {
+  padding: 0 0 clamp(2rem, 4vw, 4rem);
+}
+.page-shell:has(> .oils-methods) > .oils-compliance > .container {
+  display: flex;
+  justify-content: center;
+}
+.page-shell:has(> .oils-methods) > .oils-compliance .compliance-note {
+  box-sizing: border-box;
+  width: min(100%, 760px);
+  max-width: 760px;
+  margin-inline: auto;
+  padding: 1.1rem 1.45rem;
+  border: 1px solid rgba(172, 153, 117, .32);
+  border-radius: 19px;
+  background: #f4eee3;
+  box-shadow: 0 5px 18px rgba(65, 58, 44, .035);
+}
+.page-shell:has(> .oils-methods) > .oils-compliance .oils-compliance__label {
+  color: #6f6857;
+  font-size: .69rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  margin-bottom: .45rem;
+  text-transform: uppercase;
+}
+.page-shell:has(> .oils-methods) > .oils-compliance .compliance-note p:not(.oils-compliance__label) {
+  color: #625f54;
+  font-size: .86rem;
+  line-height: 1.65;
+  margin: 0;
+}
+/* The two card sets quietly fly in when encountered, preserving reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  html.consultation-cards-ready .oils-method-card[data-consultation-card]:not(.is-in-view),
+  html.consultation-cards-ready .oils-interest-card[data-consultation-card]:not(.is-in-view) {
+    opacity: 0;
+    transform: translate3d(var(--consultation-offset, -32px), 9px, 0);
+  }
+  html.consultation-cards-ready .oils-method-card[data-consultation-card],
+  html.consultation-cards-ready .oils-interest-card[data-consultation-card] {
+    transition: opacity .65s ease var(--consultation-delay,0ms),
+      transform .75s cubic-bezier(.22,1,.36,1) var(--consultation-delay,0ms),
+      box-shadow .23s ease, background-color .23s ease;
+  }
+  html.consultation-cards-ready [data-consultation-card].is-in-view {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+@media (max-width: 1023px) {
+  .page-shell:has(> .oils-methods) .oils-methods__grid,
+  .page-shell:has(> .oils-methods) .oils-interests__grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+  .page-shell:has(> .oils-methods) .oils-routine__grid,
+  .page-shell:has(> .oils-methods) .oils-learning__inner {
+    grid-template-columns: 1fr;
+  }
+  .page-shell:has(> .oils-methods) .oils-routine__grid .responsive-image {
+    max-height: 490px;
+  }
+  .page-shell:has(> .oils-methods) .oils-learning__actions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 850px) {
+  .page-shell:has(> .oils-methods) > .cta-section .cta-section__inner {
+    grid-template-columns: 1fr;
+    width: min(calc(100% - 2.5rem), 680px);
+    gap: 1.4rem;
+  }
+  .page-shell:has(> .oils-methods) > .cta-section .cta-group {
+    align-items: flex-start;
+  }
+  .page-shell:has(> .oils-methods) > .cta-section .cta-group .button {
+    width: auto;
+    max-width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .page-shell:has(> .oils-methods) > .section {
+    padding-block: 3.15rem;
+  }
+  .page-shell:has(> .oils-methods) .oils-methods__grid,
+  .page-shell:has(> .oils-methods) .oils-interests__grid {
+    grid-template-columns: 1fr;
+  }
+  .page-shell:has(> .oils-methods) .oils-method-card,
+  .page-shell:has(> .oils-methods) .oils-interest-card {
+    min-height: 0;
+    padding: 1.35rem;
+  }
+  .page-shell:has(> .oils-methods) .oils-safety-note {
+    display: block;
+  }
+  .page-shell:has(> .oils-methods) .oils-safety-note__title {
+    display: block;
+    margin-bottom: .65rem;
+  }
+  .page-shell:has(> .oils-methods) .oils-routine__grid .responsive-image {
+    max-height: none;
+  }
+  .page-shell:has(> .oils-methods) .oils-learning__inner {
+    padding: 1.5rem;
+  }
+  .page-shell:has(> .oils-methods) .oils-learning__actions {
+    display: grid;
+  }
+}
+@media (max-width: 490px) {
+  .page-shell:has(> .oils-methods) > .cta-section .cta-section__inner {
+    padding: 1.5rem;
+  }
+  .page-shell:has(> .oils-methods) > .cta-section .cta-group {
+    align-items: stretch;
+  }
+  .page-shell:has(> .oils-methods) > .cta-section .cta-group .button {
+    max-width: 100%;
+    width: 100%;
+    white-space: normal;
+  }
+}

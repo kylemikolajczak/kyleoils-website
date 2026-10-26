@@ -1,4 +1,5 @@
 ---
+import '../../styles/knowledge-detail-refined.css';
 import Breadcrumbs from './Breadcrumbs.astro';
 import KnowledgeCta from './KnowledgeCta.astro';
 import KnowledgeWorldCard from './KnowledgeWorldCard.astro';
@@ -22,6 +23,42 @@ const mainFaqHref = locale === 'de' ? '/de/faq/' : '/en/faq/';
     <p>{world.intro[locale]}</p>
   </div>
 </section>
+
+{world.id === 'products-systems' && (
+  <section class="knowledge-featured-plan" aria-label={locale === 'de' ? 'Starter-Sets kennenlernen' : 'Discover Starter Kits'}>
+    <div class="container">
+      <div class="knowledge-featured-plan__inner">
+        <div>
+          <p class="eyebrow">{locale === 'de' ? 'PRODUKTE PRAKTISCH ERKUNDEN' : 'EXPLORE PRODUCTS'}</p>
+          <h2>{locale === 'de' ? 'Vom Wissen zur passenden Produktauswahl.' : 'From understanding to finding your products.'}</h2>
+          <p>{locale === 'de' ? 'Du möchtest konkrete Öle und Sets vergleichen? Entdecke die offiziellen Starter-Optionen oder lass dir helfen, einen sinnvollen Einstieg für deine Wünsche zu finden.' : 'Ready to compare oils and starter kits? Explore the official starter options or get personal help finding what suits your needs.'}</p>
+        </div>
+        <div class="knowledge-featured-plan__actions">
+          <a href={locale === 'de' ? '/de/starter-sets/' : '/en/starter-sets/'}>{locale === 'de' ? 'Starter-Sets vergleichen' : 'Compare starter kits'} <span aria-hidden="true">↗</span></a>
+          <a href={locale === 'de' ? '/de/kontakt/' : '/en/contact/'}>{locale === 'de' ? 'Persönliche Beratung anfragen' : 'Request personal guidance'}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
+{world.id === 'routines' && (
+  <section class="knowledge-featured-plan" aria-label={locale === 'de' ? 'Kostenloser 30-Tage-Startplan' : 'Free 30-Day Start Plan'}>
+    <div class="container">
+      <div class="knowledge-featured-plan__inner">
+        <div>
+          <p class="eyebrow">{locale === 'de' ? 'KOSTENLOSER EINSTIEG' : 'FREE STARTER RESOURCE'}</p>
+          <h2>{locale === 'de' ? 'Deine ersten 30 Tage mit ätherischen Ölen.' : 'Your first 30 days with essential oils.'}</h2>
+          <p>{locale === 'de' ? 'Ein strukturierter Startplan mit einfachen Routinen, Sicherheitsgrundlagen und Raum für deine Fragen.' : 'A structured starting plan with simple routines, safety basics and space for your questions.'}</p>
+        </div>
+        <div class="knowledge-featured-plan__actions">
+          <a href={locale === 'de' ? '/de/30-tage-startplan/' : '/en/30-day-start-plan/'}>{locale === 'de' ? 'Kostenlosen Startplan ansehen' : 'Explore the free start plan'} <span aria-hidden="true">↗</span></a>
+          <a href={locale === 'de' ? '/de/wissen/routinen/erste-30-tage-mit-doterra-ruhig-starten/' : '/en/knowledge/routines/first-30-days-with-doterra-start-calmly/'}>{locale === 'de' ? '30-Tage-Artikel lesen' : 'Read the 30-day guide'}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
 
 {articles.length > 0 ? (
   <section class="section section--cream">

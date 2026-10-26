@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/roman-chamomile/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Roman Chamomile (Römische Kamille) einfach erklärt"
-description: "Eine klare Einordnung von Roman Chamomile (Römische Kamille): Duftprofil, Mischlogik, Alltag und sichere Anwendung ohne Heilversprechen."
+description: "Roman Chamomile (Römische Kamille) gezielt entdecken: Duftprofil, passende Mischungen und Anwendungsideen für den Alltag."
 relatedArticleIds:
   - "KO-W17-DE-008"
   - "KO-W18-DE-006"

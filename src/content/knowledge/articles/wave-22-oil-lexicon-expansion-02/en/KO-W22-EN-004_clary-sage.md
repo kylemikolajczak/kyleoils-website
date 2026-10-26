@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/clary-sage-muskatellersalbei/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Clary Sage explained simply"
-description: "A clear guide to Clary Sage: scent profile, blending logic, everyday use and safe use without medical promises."
+description: "Explore Clary Sage: scent profile, pairing ideas, practical routines and responsible use."
 relatedArticleIds:
   - "KO-W17-EN-008"
   - "KO-W18-EN-006"

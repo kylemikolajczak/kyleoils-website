@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/turmeric/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Turmeric: warm, würzig und labelbewusst einordnen"
-description: "Turmeric ist ein warm-würziges Öl, das besonders klar nach Label, Markt und Anwendungskontext eingeordnet werden sollte."
+description: "Turmeric (Kurkuma) eröffnet ein erdig-würziges Duftprofil. Entdecke Duftideen und Produktanwendungen passend zur jeweiligen Kennzeichnung."
 focus: "würziges Öl, Küche, Körperpflege, Label-Kontext"
 searchKeywords:
   - "turmeric"
@@ -46,7 +46,7 @@ sourceUrls:
 ---
 # Turmeric: warm, würzig und labelbewusst einordnen
 
-Turmeric ist ein warm-würziges Öl, das besonders klar nach Label, Markt und Anwendungskontext eingeordnet werden sollte.
+Turmeric (Kurkuma) eröffnet ein erdig-würziges Duftprofil. Entdecke Duftideen und Produktanwendungen passend zur jeweiligen Kennzeichnung.
 
 ## Fokus
 

@@ -6,11 +6,11 @@ const { title, description, href, locale } = Astro.props;
 const readLabel = locale === 'de' ? 'Artikel lesen' : 'Read article';
 ---
 
-<article class="article-card">
+<a class="article-card" href={href} aria-label={title + " – " + readLabel}>
   <h2>{title}</h2>
   <p>{description}</p>
-  <a class="article-card__link" href={href}>{readLabel} <span aria-hidden="true">→</span></a>
-</article>
+  <span class="article-card__link">{readLabel} <span aria-hidden="true">↗</span></span>
+</a>
 
 <style>
   .article-card { display: flex; min-height: 230px; flex-direction: column; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); }

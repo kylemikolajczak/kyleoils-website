@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/oregano/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Oregano essential oil explained clearly"
-description: "Oregano explained calmly: an intense herbal oil, why it needs respect, safe-use awareness and beginner caution."
+description: "Explore Oregano: an intense herbal oil, why it needs respect, safe-use awareness and beginner caution."
 relatedArticleIds:
   - "KO-W07-003"
   - "KO-W07-004"

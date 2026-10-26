@@ -13,6 +13,9 @@ interface Props {
   orderLabel: string;
   consultationHref: string;
   consultationLabel: string;
+  kitIndex?: number;
+  countryLabel?: string;
+  priceNotice?: string;
 }
 
 const {
@@ -25,6 +28,9 @@ const {
   orderLabel,
   consultationHref,
   consultationLabel,
+  kitIndex,
+  countryLabel,
+  priceNotice,
 } = Astro.props;
 ---
 
@@ -39,11 +45,13 @@ const {
     />
   </div>
   <div class="starter-set-card__content">
+    <div class="starter-set-card__meta">{kitIndex && <span class="starter-set-card__number">{String(kitIndex).padStart(2, "0")}</span>}{countryLabel && <span class="starter-set-card__country">{countryLabel}</span>}</div>
     <h3>{title}</h3>
     <div class="starter-set-card__copy"><slot /></div>
     <div class="starter-set-card__actions">
-      <Button href={consultationHref}>{consultationLabel}</Button>
-      <LinkButton href={orderHref} variant="secondary">{orderLabel}</LinkButton>
+      <LinkButton href={orderHref} variant="primary">{orderLabel}</LinkButton>
+      <Button href={consultationHref} variant="secondary">{consultationLabel}</Button>
+      {priceNotice && <small class="starter-set-card__price-notice">{priceNotice}</small>}
     </div>
   </div>
 </article>

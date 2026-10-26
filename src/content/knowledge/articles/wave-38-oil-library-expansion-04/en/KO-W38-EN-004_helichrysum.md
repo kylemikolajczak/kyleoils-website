@@ -3,14 +3,14 @@ id: "KO-W38-EN-004"
 translationPairId: "KO-W38-PAIR-004"
 language: "en"
 status: "approved-content-pack-ready"
-title: "Helichrysum: skin care, premium oil and clear boundaries"
+title: "Helichrysum (Immortelle): elevated skin care"
 slug: "helichrysum"
 route: "/en/knowledge/oil-library/helichrysum/"
 deRoute: "/de/wissen/oel-lexikon/helichrysum-immortelle/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
-seoTitle: "Helichrysum: skin care, premium oil and clear boundaries"
-description: "Helichrysum is a valued oil for skin-care context and conscious routines, but not for healing or wound promises."
+seoTitle: "Helichrysum (Immortelle): elevated skin care"
+description: "Helichrysum (Immortelle) has a honey-like herbal aroma and a valued place in cosmetic care. Explore doTERRA Helichrysum Touch and its skin-care uses."
 focus: "skin care, premium oil, conscious use"
 searchKeywords:
   - "helichrysum"
@@ -44,29 +44,33 @@ sourceUrls:
   - "https://www.doterra.com/US/en/thyme-oil-education"
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
 ---
-# Helichrysum: skin care, premium oil and clear boundaries
+# Helichrysum (Immortelle): elevated skin care
 
-Helichrysum is a valued oil for skin-care context and conscious routines, but not for healing or wound promises.
+Helichrysum (Immortelle) has a honey-like herbal aroma and a valued place in cosmetic care. Explore doTERRA Helichrysum Touch and its skin-care uses.
 
 ## Focus
 
 skin care, premium oil, conscious use
 
-## How to place Helichrysum
+## What makes Helichrysum special
 
-Helichrysum is a special oil that many people connect with skin care and a premium product feel.
+Helichrysum, also known as Immortelle or Everlasting Flower, has a distinctive honey-like herbal aroma and a valued place in refined skin-care rituals. It is an interesting choice if you want to add a considered, aromatic step to your cosmetic routine.
 
 ## Scent profile
 
 The scent is warm, herbal, slightly honey-like and distinct. It is not a classic room scent for everyone, but more of a targeted oil.
 
-## Typical Kyle Oils placement
+## Helichrysum Touch for beautiful-looking skin
 
-Kyle would place Helichrysum carefully through skin care, skin feel, care routine and product value. Not through wounds, injuries or healing promises.
+The official European doTERRA product information describes Helichrysum Touch as a ready-to-use roll-on blended with Fractionated Coconut Oil. It is intended for cosmetic care and may help reduce the appearance of blemishes and support a radiant-looking complexion.
+
+Try incorporating it into a mindful facial-care routine or a gentle massage for a pleasant, aromatic self-care moment.
+
+Please note: These cosmetic claims refer to the European Helichrysum Touch formulation. The undiluted essential oil is a different product with different use and dilution directions.
 
 ## Safe use
 
-For topical use, always read the label, dilute and test on a small area. With existing skin concerns or uncertainty, do not experiment. Clarify professionally.
+Helichrysum Touch is already diluted in Fractionated Coconut Oil. Follow the product label, introduce new skin-care products carefully and avoid the eyes and sensitive areas. The undiluted Helichrysum essential oil has separate dilution guidance. Seek professional advice for existing skin concerns or reactions.
 
 ## Fits better if
 
@@ -78,11 +82,11 @@ you are just starting, need simple routines or are not sure whether a premium oi
 
 ## In short
 
-Helichrysum is not an oil for quick promises. It is a conscious care oil that needs clear boundaries.
+Helichrysum combines a distinctive honey-herbal scent with a premium cosmetic-care experience. Helichrysum Touch is worth exploring if you would like an aromatic, mindful addition to your personal skin-care ritual.
 
-## Place it with Kyle
+## Find the right format for your routine
 
-If this oil interests you but you are unsure whether it fits your everyday life, Kyle can calmly place scent profile, use, safety and alternatives with you.
+Curious whether Helichrysum or Helichrysum Touch is a better fit? I can help you compare the formulations and choose a suitable way to use them.
 
 ## Note
 

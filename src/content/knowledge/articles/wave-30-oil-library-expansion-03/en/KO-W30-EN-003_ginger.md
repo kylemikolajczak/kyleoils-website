@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/ginger-ingwer/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Ginger explained simply"
-description: "Ginger in the Oil Library: scent profile, core area, safe positioning and guidance without healing promises."
+description: "Ginger in the Oil Library: scent character, suitable everyday uses, blend ideas and mindful application."
 botanicalName: "Zingiber officinale"
 scentFamily: "Spice oil"
 pillar: "Warmth, food routines & travel feel"
@@ -59,23 +59,15 @@ doTERRA lists Ginger as an oil from the rhizome of the ginger plant. In the Kyle
 
 Kyle Oils translates this product context into language visitors can understand: What do I smell? Why are people looking for this oil? Where does it fit into routines? Which safety boundaries matter?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This oil can be placed publicly like this:
+Explore this oil through these everyday ideas:
 
 - for warm blends around kitchen, food and autumn or winter scent
 - as a product profile often associated with digestive feel and travel
 - for people who want to understand ZenGest and Ginger Drops better
 - as an example of why product form matters
 
-## What we do not write
-
-These statements do not belong on the public website:
-
-- treat nausea
-- solve stomach issues
-- treat motion sickness
-- recommend capsules for complaints
 
 ## How to get to know this oil
 

@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/arborvitae-lebensbaum/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Arborvitae: woody scent, calm and conscious use"
-description: "Arborvitae is a deep woody scent that fits room scent, wood-care context and calm diffuser blends."
+description: "Arborvitae offers a distinctive woody aroma for grounded diffuser blends, intentional scent moments and suitable wood-care uses."
 focus: "woody scent, room scent, conscious diffuser blends"
 searchKeywords:
   - "arborvitae"
@@ -46,7 +46,7 @@ sourceUrls:
 ---
 # Arborvitae: woody scent, calm and conscious use
 
-Arborvitae is a deep woody scent that fits room scent, wood-care context and calm diffuser blends.
+Arborvitae offers a distinctive woody aroma for grounded diffuser blends, intentional scent moments and suitable wood-care uses.
 
 ## Focus
 

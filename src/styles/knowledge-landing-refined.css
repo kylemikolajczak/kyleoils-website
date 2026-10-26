@@ -1,0 +1,431 @@
+/*
+  Kyle Oils Knowledge Hub landing · DE/EN shared design.
+  Home-inspired Warm White editorial flow; this file affects this landing only.
+  The header, footer, search engine and other knowledge/article pages are untouched.
+*/
+.page-shell:has(> .knowledge-hero) {
+  --hub-canvas: #faf7f1;
+  --hub-sage: #f1f2ea;
+  --hub-cream: #f5eee5;
+  --hub-forest: #263d32;
+  background: var(--hub-canvas);
+  overflow-x: clip;
+}
+.page-shell:has(> .knowledge-hero) > section {
+  background: var(--hub-canvas);
+  overflow-x: clip;
+}
+.page-shell:has(> .knowledge-hero) > .section {
+  padding-block: clamp(3.5rem, 5vw, 5rem);
+}
+.page-shell:has(> .knowledge-hero) .knowledge-hero {
+  padding-block: clamp(3.5rem, 6vw, 6rem);
+}
+.page-shell:has(> .knowledge-hero) .knowledge-hero__grid {
+  gap: clamp(2rem, 5vw, 5.5rem);
+}
+.page-shell:has(> .knowledge-hero) .knowledge-hero h1,
+.page-shell:has(> .knowledge-hero) .knowledge-orientation h2,
+.page-shell:has(> .knowledge-hero) .knowledge-worlds-section h2,
+.page-shell:has(> .knowledge-hero) .knowledge-search h2,
+.page-shell:has(> .knowledge-hero) .knowledge-start-path h2,
+.page-shell:has(> .knowledge-hero) .knowledge-featured-section h2 {
+  color: var(--hub-forest);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -.028em;
+  line-height: 1.12;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-hero h1 {
+  font-size: clamp(2.7rem, 4.2vw, 4.15rem);
+  max-width: 650px;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-hero__intro {
+  font-size: clamp(1.02rem, 1.38vw, 1.15rem);
+}
+.page-shell:has(> .knowledge-hero) .knowledge-hero__image {
+  border-radius: var(--image-frame-radius, 29px);
+}
+.page-shell:has(> .knowledge-hero) .knowledge-hero .eyebrow,
+.page-shell:has(> .knowledge-hero) .section .eyebrow {
+  letter-spacing: .13em;
+  color: #6f806b;
+}
+.page-shell:has(> .knowledge-hero) > .knowledge-start-here {
+  padding-top: clamp(1rem, 2.5vw, 2.4rem);
+}
+.page-shell:has(> .knowledge-hero) .knowledge-start-here__card {
+  max-width: 1160px;
+  margin-inline: auto;
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+  border: 1px solid rgba(153, 144, 120, .26);
+  border-radius: 26px;
+  background: var(--hub-cream);
+  box-shadow: 0 8px 24px rgba(34, 59, 40, .05);
+}
+.page-shell:has(> .knowledge-hero) .knowledge-start-here__card h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.55rem, 2.15vw, 2.15rem);
+  font-weight: 500;
+  color: var(--hub-forest);
+}
+.page-shell:has(> .knowledge-hero) .knowledge-start-here__link {
+  border-radius: 14px;
+  box-shadow: none;
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-start-here__link:hover {
+  text-decoration: none;
+  background: #344c3f;
+  box-shadow: 0 9px 20px rgba(38, 61, 50, .13);
+  transform: translateY(-2px);
+}
+.page-shell:has(> .knowledge-hero) .knowledge-start-here__gap {
+  display: none;
+}
+/* Narrow editorial measure for introduction, wider grids for browsing. */
+.page-shell:has(> .knowledge-hero) .knowledge-orientation .container,
+.page-shell:has(> .knowledge-hero) .knowledge-worlds-section .container,
+.page-shell:has(> .knowledge-hero) .knowledge-featured-section .container,
+.page-shell:has(> .knowledge-hero) .knowledge-start-path .container {
+  max-width: 1190px;
+}
+.page-shell:has(> .knowledge-hero) .section-intro {
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
+}
+.page-shell:has(> .knowledge-hero) .section-intro h2 {
+  font-size: clamp(2.05rem, 3vw, 3rem);
+}
+.page-shell:has(> .knowledge-hero) .section-intro > p:last-child {
+  color: #625f57;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-orientation__grid {
+  max-width: none;
+  gap: 1rem;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-orientation__grid a {
+  min-height: 93px;
+  display: flex;
+  gap: 1rem;
+  padding: clamp(1.05rem, 1.6vw, 1.4rem);
+  align-items: center;
+  border-radius: 19px;
+  border: 1px solid rgba(99, 128, 99, .23);
+  background: var(--hub-sage);
+  color: var(--hub-forest);
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(36, 65, 46, .04);
+  transition: transform .24s ease, border-color .24s ease, background .24s ease, box-shadow .24s ease;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-orientation__grid a:hover,
+.page-shell:has(> .knowledge-hero) .knowledge-orientation__grid a:focus-visible {
+  text-decoration: none;
+  transform: translateY(-3px);
+  border-color: rgba(64, 103, 75, .43);
+  background: #eaf0e6;
+  box-shadow: 0 10px 23px rgba(36, 65, 46, .08);
+}
+.page-shell:has(> .knowledge-hero) .knowledge-orientation__number {
+  flex: 0 0 auto;
+  color: #819783;
+  font-size: .72rem;
+  font-weight: 750;
+  letter-spacing: .12em;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-orientation__text {
+  flex: 1;
+  line-height: 1.32;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-orientation__arrow {
+  color: #6a8972;
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: transform .24s ease;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-orientation__grid a:hover .knowledge-orientation__arrow {
+  transform: translate(2px, -2px);
+}
+/* Eight consistent, mint-tinged topic cards. */
+.page-shell:has(> .knowledge-hero) .world-grid {
+  gap: clamp(.8rem, 1.6vw, 1.35rem);
+}
+.page-shell:has(> .knowledge-hero) .knowledge-world-entrance {
+  display: flex;
+  min-width: 0;
+  min-height: 100%;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-world-entrance > .world-card {
+  width: 100%;
+  min-width: 0;
+  min-height: 244px;
+  padding: clamp(1.3rem, 2vw, 1.8rem);
+  background: var(--hub-sage);
+  border: 1px solid rgba(109, 139, 108, .22);
+  border-radius: 22px;
+  box-shadow: 0 7px 24px rgba(36, 65, 46, .047);
+  transition: border-color .24s ease, background .24s ease, box-shadow .24s ease;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-world-entrance > .world-card::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 2px;
+  border-radius: 2px;
+  background: #91aa91;
+  margin-bottom: 1.3rem;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-world-entrance:hover > .world-card {
+  border-color: rgba(64, 103, 75, .42);
+  background: #eaf0e5;
+  box-shadow: 0 12px 28px rgba(36, 65, 46, .1);
+}
+.page-shell:has(> .knowledge-hero) .world-card h2 {
+  font-size: clamp(1.3rem, 1.45vw, 1.6rem);
+  line-height: 1.2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  color: var(--hub-forest);
+  margin-bottom: 1rem;
+}
+.page-shell:has(> .knowledge-hero) .world-card p {
+  font-size: .93rem;
+  line-height: 1.55;
+  margin-bottom: 1.45rem;
+}
+.page-shell:has(> .knowledge-hero) .world-card__link {
+  font-size: .78rem;
+  line-height: 1.5;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(82, 112, 88, .19);
+  padding-top: .7rem;
+}
+.page-shell:has(> .knowledge-hero) .world-card__link:hover {
+  text-decoration: none;
+  color: #456e50;
+}
+/* Search and step-by-step guides integrate into the same light canvas. */
+.page-shell:has(> .knowledge-hero) .knowledge-search__container {
+  max-width: 1190px;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-search__field {
+  max-width: 810px;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-search__field input {
+  min-height: 58px;
+  background: #f1f2ea;
+  border: 1px solid rgba(100, 133, 107, .31);
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(32, 60, 40, .035);
+  padding: 1rem 1.3rem;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-search__field input:focus-visible {
+  outline: 2px solid #91ac92;
+  border-color: #719176;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-search__result {
+  background: var(--hub-sage);
+  border-color: rgba(98, 132, 103, .23);
+  border-radius: 19px;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-start-path__list {
+  max-width: 920px;
+  gap: .85rem;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-start-path__list li {
+  border-radius: 18px;
+  border: 1px solid rgba(99, 128, 99, .2);
+  background: var(--hub-sage);
+  min-height: 73px;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-start-path__number {
+  background: #577560;
+}
+.page-shell:has(> .knowledge-hero) .article-grid {
+  gap: clamp(.8rem, 1.6vw, 1.35rem);
+}
+.page-shell:has(> .knowledge-hero) .article-grid .article-card {
+  background: var(--hub-cream);
+  border: 1px solid rgba(153, 144, 120, .25);
+  border-radius: 22px;
+  box-shadow: 0 6px 20px rgba(36, 65, 46, .044);
+  padding: clamp(1.3rem, 2vw, 1.8rem);
+}
+.page-shell:has(> .knowledge-hero) .article-card h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  color: var(--hub-forest);
+  font-size: clamp(1.3rem, 1.5vw, 1.6rem);
+}
+.page-shell:has(> .knowledge-hero) .article-card__link {
+  border-top: 1px solid rgba(136, 127, 109, .19);
+  padding-top: .7rem;
+  font-size: .8rem;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-cta {
+  padding-block: clamp(3rem, 4.5vw, 4.5rem);
+  background: var(--hub-canvas);
+  overflow-x: clip;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-cta__inner {
+  max-width: 1000px;
+  box-shadow: 0 15px 34px rgba(38, 61, 50, .13);
+}
+@media (min-width: 1024px) {
+  .page-shell:has(> .knowledge-hero) .knowledge-start-here__card {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .page-shell:has(> .knowledge-hero) .knowledge-orientation__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 767px) {
+  .page-shell:has(> .knowledge-hero) > .section {
+    padding-block: 3.2rem;
+  }
+  .page-shell:has(> .knowledge-hero) .knowledge-hero {
+    padding-block: 3rem;
+  }
+  .page-shell:has(> .knowledge-hero) .knowledge-hero h1 {
+    font-size: clamp(2.45rem, 9vw, 3.3rem);
+  }
+  .page-shell:has(> .knowledge-hero) .knowledge-hero__image {
+    min-height: 220px;
+  }
+  .page-shell:has(> .knowledge-hero) .knowledge-start-here__card {
+    padding: 1.4rem;
+  }
+  .page-shell:has(> .knowledge-hero) .knowledge-world-entrance > .world-card {
+    min-height: 0;
+  }
+  .page-shell:has(> .knowledge-hero) .knowledge-orientation__grid a {
+    min-height: 75px;
+  }
+}
+/* Seven or eight world cards appear one after another when reached. */
+@media (prefers-reduced-motion: no-preference) {
+  html.hub-worlds-ready .knowledge-world-entrance[data-knowledge-fly]:not(.is-in-view) {
+    opacity: 0;
+    transform: translate3d(var(--hub-card-x, -38px), 12px, 0);
+  }
+  html.hub-worlds-ready .knowledge-world-entrance[data-knowledge-fly] {
+    transition: opacity 680ms ease var(--hub-delay, 0ms),
+      transform 790ms cubic-bezier(.22, 1, .36, 1) var(--hub-delay, 0ms);
+  }
+  html.hub-worlds-ready .knowledge-world-entrance[data-knowledge-fly].is-in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .knowledge-world-entrance { opacity: 1; transform: none; }
+}
+
+/* Beginner cards reuse exactly the orientation selection-card design. */
+.page-shell:has(> .knowledge-hero) .knowledge-start-path__list {
+  max-width: none;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-start-path__list li {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.page-shell:has(> .knowledge-hero) .knowledge-start-path__list .knowledge-start-path__link {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .page-shell:has(> .knowledge-hero) .knowledge-start-path__list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+
+/* Knowledge Hub closing invitation: match the premium homepage and guidance design. */
+.page-shell:has(> .knowledge-hero) > .knowledge-cta {
+  padding-block: clamp(2.4rem, 3.6vw, 3.5rem);
+  background: #faf7f1;
+}
+.page-shell:has(> .knowledge-hero) > .knowledge-cta .knowledge-cta__inner {
+  box-sizing: border-box;
+  width: min(calc(100% - 2.5rem), 1080px);
+  max-width: 1080px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(250px, .85fr);
+  gap: clamp(1.45rem, 3.4vw, 3.2rem);
+  align-items: center;
+  background: #263d32;
+  padding: clamp(1.85rem, 3.3vw, 2.8rem);
+  border-radius: 27px;
+  box-shadow: 0 18px 38px rgba(38, 61, 50, .12);
+}
+.page-shell:has(> .knowledge-hero) > .knowledge-cta .knowledge-cta__inner h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #faf7f1;
+  font-weight: 500;
+  font-size: clamp(1.72rem, 2.32vw, 2.35rem);
+  letter-spacing: -.025em;
+  line-height: 1.17;
+  margin: 0 0 .86rem;
+}
+.page-shell:has(> .knowledge-hero) > .knowledge-cta .knowledge-cta__inner p {
+  font-size: .94rem;
+  line-height: 1.6;
+  color: #e6eadf;
+  max-width: 54ch;
+}
+.page-shell:has(> .knowledge-hero) > .knowledge-cta .cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 0;
+  gap: .8rem;
+}
+.page-shell:has(> .knowledge-hero) > .knowledge-cta .cta-group .button {
+  display: inline-flex;
+  min-height: 47px;
+  width: 100%;
+  border-radius: 12px;
+  justify-content: center;
+  text-align: center;
+}
+.page-shell:has(> .knowledge-hero) > .knowledge-cta .cta-group .button--secondary {
+  color: #faf7f1;
+  border-color: rgba(250,247,241,.75);
+  background: transparent;
+}
+.page-shell:has(> .knowledge-hero) > .knowledge-cta .cta-group .button--secondary:hover,
+.page-shell:has(> .knowledge-hero) > .knowledge-cta .cta-group .button--secondary:focus-visible {
+  color: #263d32;
+  border-color: #f5eee5;
+  background: #f5eee5;
+}
+@media (max-width: 850px) {
+  .page-shell:has(> .knowledge-hero) > .knowledge-cta .knowledge-cta__inner {
+    grid-template-columns: 1fr;
+    width: min(calc(100% - 2.5rem), 680px);
+    gap: 1.5rem;
+  }
+  .page-shell:has(> .knowledge-hero) > .knowledge-cta .cta-group {align-items:flex-start;}
+  .page-shell:has(> .knowledge-hero) > .knowledge-cta .cta-group .button {width:auto; max-width:100%;}
+}
+@media (max-width: 490px) {
+  .page-shell:has(> .knowledge-hero) > .knowledge-cta .knowledge-cta__inner {padding:1.55rem;}
+  .page-shell:has(> .knowledge-hero) > .knowledge-cta .cta-group {align-items:stretch;}
+  .page-shell:has(> .knowledge-hero) > .knowledge-cta .cta-group .button {
+    width:100%;
+    max-width:100%;
+    white-space:normal;
+  }
+}

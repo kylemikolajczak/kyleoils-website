@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/fennel-fenchel/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Fennel explained simply"
-description: "Fennel in the Oil Library: scent profile, core area, safe positioning and guidance without healing promises."
+description: "Fennel in the Oil Library: scent character, suitable everyday uses, blend ideas and mindful application."
 botanicalName: "Foeniculum vulgare"
 scentFamily: "Herbal and spice oil"
 pillar: "Digestive feel, food routines & anise-like scent profiles"
@@ -59,22 +59,15 @@ doTERRA lists Fennel as a single oil and mentions the careful toothpick method i
 
 Kyle Oils translates this product context into language visitors can understand: What do I smell? Why are people looking for this oil? Where does it fit into routines? Which safety boundaries matter?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This oil can be placed publicly like this:
+Explore this oil through these everyday ideas:
 
 - for people who want to understand Fennel as a scent and kitchen profile
 - as an anise-like profile in digestive feel and food routines
 - for a clear explanation of very small amounts in culinary logic
 - as guidance context, not as a DIY remedy recipe
 
-## What we do not write
-
-These statements do not belong on the public website:
-
-- treat digestive complaints
-- solve baby or child issues with Fennel oil
-- generalize internal use publicly
 
 ## How to get to know this oil
 

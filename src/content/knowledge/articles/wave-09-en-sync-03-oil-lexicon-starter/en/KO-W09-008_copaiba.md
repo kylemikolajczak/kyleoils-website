@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/copaiba/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Copaiba essential oil explained clearly"
-description: "Copaiba explained calmly: soft woody-resinous scent, personal routines, self-care context and safety notes."
+description: "Explore Copaiba: soft woody-resinous scent, personal routines, self-care context and safety notes."
 relatedArticleIds:
   - "KO-W08-004"
   - "KO-W09-004"

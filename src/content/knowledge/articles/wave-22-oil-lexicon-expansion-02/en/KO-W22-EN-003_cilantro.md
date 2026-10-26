@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/cilantro-korianderkraut/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Cilantro explained simply"
-description: "A clear guide to Cilantro: scent profile, blending logic, everyday use and safe use without medical promises."
+description: "Explore Cilantro: scent profile, pairing ideas, practical routines and responsible use."
 relatedArticleIds:
   - "KO-W17-EN-008"
   - "KO-W18-EN-006"

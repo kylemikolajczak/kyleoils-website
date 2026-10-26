@@ -1,9 +1,7 @@
 ---
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
-import TopicCard from '../../../components/cards/TopicCard.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
-import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 
 const qualityPrinciples = [
@@ -41,7 +39,9 @@ const accountDetails = [
   'Kein Abo notwendig',
   'Jeder entscheidet selbst',
 ];
+import '../../../styles/doterra-understanding-refined.css';
 ---
+
 
 <PageLayout
   title="doTERRA verstehen | Produkte, Kundenkonto & Einstieg | Kyle Oils"
@@ -67,124 +67,118 @@ const accountDetails = [
     <p>Auf dieser Seite findest du einen einfachen Überblick, ohne Verkaufsdruck und ohne komplizierte Fachbegriffe.</p>
   </HeroSplit>
 
-  <section class="section section--cream">
-    <div class="container narrow-layout">
-      <SectionIntro title="Was ist doTERRA?">
-        <p>doTERRA wurde 2008 gegründet. Der Name bedeutet „Geschenk der Erde“.</p>
-        <p>Das Unternehmen ist eine internationale Wellnessfirma mit Fokus auf hochwertige ätherische Öle.</p>
-        <p>Ziel ist es, natürliche Routinen im Alltag zu unterstützen.</p>
-      </SectionIntro>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <SectionIntro title="Was macht doTERRA besonders?">
-        <p>doTERRA legt Wert auf die Auswahl der Pflanzen, hohe Qualitätsstandards und nachvollziehbare Kontrollen.</p>
-      </SectionIntro>
-      <ul class="fact-grid" aria-label="Besondere Merkmale von doTERRA">
-        {qualityPrinciples.map((principle) => <li>{principle}</li>)}
-      </ul>
-    </div>
-  </section>
-
-  <section class="section section--sage">
-    <div class="container split-layout">
-      <SectionIntro title="Co-Impact Sourcing®">
-        <p>Co-Impact Sourcing® beschreibt die Zusammenarbeit mit Bauern und Gemeinschaften in verschiedenen Regionen der Welt.</p>
-      </SectionIntro>
-      <ul class="check-list">
-        {sourcingPrinciples.map((principle) => <li>{principle}</li>)}
-      </ul>
-    </div>
-  </section>
-
-  <section class="section section--cream">
-    <div class="container">
-      <SectionIntro title="Welche Produkte gibt es?">
-        <p>Das Sortiment umfasst verschiedene Bereiche für natürliche Routinen im Alltag.</p>
-      </SectionIntro>
-      <div class="topic-grid">
-        {productAreas.map((area) => <TopicCard title={area} />)}
+  <section class="section dt-overview" aria-labelledby="dt-overview-title">
+    <div class="container dt-wrap dt-overview__layout" data-reveal>
+      <div class="dt-overview__heading">
+        <p class="eyebrow">DIE MARKE KENNENLERNEN</p>
+        <h2 id="dt-overview-title">Die Idee hinter doTERRA.</h2>
+        <p>Bevor du dich für ein Öl oder ein Set entscheidest, lohnt sich ein Blick darauf, wer hinter den Produkten steht.</p>
+      </div>
+      <div class="dt-overview__panel">
+        <p>doTERRA ist ein international tätiges Wellness-Unternehmen mit Schwerpunkt ätherische Öle. Der Name bedeutet „Geschenk der Erde“.</p>
+        <ul><li>2008 gegründet</li><li>Internationales Unternehmen</li><li>Ätherische Öle & Wellness</li></ul>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container split-layout">
-      <SectionIntro title="Wie funktioniert das Kundenkonto?">
-        <p>Ein offizielles Kundenkonto wird direkt bei doTERRA geführt.</p>
-        <p>Du entscheidest selbst, ob, wann und wie du bestellen möchtest.</p>
-      </SectionIntro>
-      <ul class="check-list account-list">
-        {accountDetails.map((detail) => <li>{detail}</li>)}
-      </ul>
+  <section class="section dt-quality" aria-labelledby="dt-quality-title">
+    <div class="container dt-wrap">
+      <header class="dt-heading" data-reveal>
+        <p class="eyebrow">QUALITÄT & KONTROLLE</p>
+        <h2 id="dt-quality-title">Warum die Qualität im Mittelpunkt steht.</h2>
+        <p>doTERRA beschreibt umfassende Schritte von der Pflanzenauswahl bis zur Prüfung der fertigen Öle. Diese Prinzipien zeigen, worauf das Unternehmen Wert legt.</p>
+      </header>
+      <ol class="dt-quality__grid" data-consultation-cards>
+        {qualityPrinciples.map((principle,index)=><li class="dt-quality__card" data-consultation-card>
+          <span class="dt-number" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+          <h3>{principle}</h3>
+        </li>)}
+      </ol>
     </div>
   </section>
 
-  <section class="section section--forest">
-    <div class="container narrow-layout">
-      <SectionIntro title="Ich begleite dich persönlich">
-        <p>Ich bin nicht der Hersteller der Produkte.</p>
-        <p>Meine Aufgabe ist es, dir zuzuhören, Fragen zu beantworten und gemeinsam herauszufinden, welche Möglichkeiten für dich sinnvoll sein könnten.</p>
-        <p>Auch nach dem Kauf begleite ich dich gern weiter.</p>
-      </SectionIntro>
+  <section class="section dt-sourcing" aria-labelledby="dt-sourcing-title">
+    <div class="container dt-wrap">
+      <div class="dt-sourcing__panel" data-reveal>
+        <div class="dt-sourcing__copy">
+          <p class="eyebrow">VERANTWORTUNG & HERKUNFT</p>
+          <h2 id="dt-sourcing-title">Woher die Pflanzen kommen.</h2>
+          <p>Co-Impact Sourcing® beschreibt das Beschaffungsmodell von doTERRA mit langfristigen Beziehungen zu landwirtschaftlichen Erzeugern und Gemeinschaften. Nachhaltigkeit ist ein wichtiges Ziel des Modells.</p>
+          <span class="dt-sourcing__tag">Co-Impact Sourcing®</span>
+          <p class="dt-sourcing__note">Wie Anbau und Projekte konkret aussehen, hängt von Region, Pflanzenart und lokaler Partnerschaft ab.</p>
+        </div>
+        <ol class="dt-sourcing__list">
+          {sourcingPrinciples.map((principle,index)=><li>
+            <span class="dt-number" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+            <span>{principle}</span>
+          </li>)}
+        </ol>
+      </div>
     </div>
   </section>
 
-  <section class="compliance-section">
-    <div class="container">
-      <ComplianceNote>
-        <h2>Kurzer Hinweis</h2>
-        <p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung.</p>
-        <p>Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
-      </ComplianceNote>
+  <section class="section dt-products" aria-labelledby="dt-products-title">
+    <div class="container dt-wrap">
+      <header class="dt-heading" data-reveal>
+        <p class="eyebrow">PRODUKTVIELFALT</p>
+        <h2 id="dt-products-title">Mehr als einzelne ätherische Öle.</h2>
+        <p>Vom einzelnen Öl bis zur durchdachten Alltagsroutine: Entdecke, welche Produktbereiche es gibt, und informiere dich vor der Anwendung.</p>
+      </header>
+      <div class="dt-products__grid" data-consultation-cards>
+        {productAreas.map((area,index)=><article class="dt-products__card" data-consultation-card>
+          <span class="dt-number" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+          <h3>{area}</h3>
+        </article>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section dt-account" aria-labelledby="dt-account-title">
+    <div class="container dt-wrap dt-account__layout" data-reveal>
+      <div class="dt-account__copy">
+        <p class="eyebrow">DEIN KUNDENKONTO</p>
+        <h2 id="dt-account-title">Selbst entscheiden, wie du startest.</h2>
+        <p>Ein offizielles Kundenkonto wird direkt bei doTERRA geführt. Du entscheidest selbst, ob, wann und welche Produkte du bestellst.</p>
+        <p class="dt-account__note">Der 25-%-Preisvorteil bezieht sich auf den regulären Verkaufspreis bei entsprechender Kundenberechtigung. Bereits ausgewiesene Mitglieds- oder Setpreise werden dadurch nicht noch einmal reduziert. Bedingungen können je nach Markt variieren.</p>
+      </div>
+      <ol class="dt-account__list">
+        {accountDetails.map((detail,index)=><li>
+          <span class="dt-number" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+          <span>{detail}</span>
+        </li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section dt-support" aria-labelledby="dt-support-title">
+    <div class="container dt-wrap">
+      <div class="dt-support__panel" data-reveal>
+        <div>
+          <p class="eyebrow">DEINE PERSÖNLICHE BEGLEITUNG</p>
+          <h2 id="dt-support-title">Eine Ansprechperson. Auch nach der Bestellung.</h2>
+        </div>
+        <div class="dt-support__text"><p>Ich bin nicht der Hersteller und möchte dir nichts aufdrängen. Ich höre zu, beantworte Fragen und helfe dir dabei, Produkte und einfache, sichere Routinen kennenzulernen.</p><p>Du brauchst dich nicht allein durch alle Möglichkeiten zu arbeiten. Wir finden gemeinsam heraus, womit du sinnvoll beginnst.</p></div>
+      </div>
     </div>
   </section>
 
   <CTASection
-    title="Nächster Schritt: weiter verstehen"
+    title="Dein nächster Schritt: entdecken oder fragen."
     primaryHref="/de/wissen/"
-    primaryLabel="Wissensbereich entdecken"
+    primaryLabel="Wissen entdecken"
     secondaryHref="/de/kontakt/"
     secondaryLabel="Mit Kyle sprechen"
   >
-    <p>Wenn du die Produktwelt erst weiter erkunden möchtest, findest du im Wissensbereich klare Grundlagen und Entscheidungshilfen. Persönliche Fragen kannst du jederzeit mit Kyle besprechen.</p>
+    <p>Lies in Ruhe weiter oder schreib mir persönlich. Wir finden gemeinsam heraus, welche Informationen oder Produkte für dich wirklich relevant sind.</p>
   </CTASection>
+
+  <section class="compliance-section dt-compliance">
+    <div class="container">
+      <ComplianceNote label="Hinweis">
+        <p class="dt-compliance__label">Hinweis</p>
+        <p>Meine Begleitung ersetzt keine medizinische Diagnose oder Behandlung. Ich gebe keine Heilversprechen und mache keine medizinischen Behandlungsaussagen.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+  <script is:inline src="/scripts/consultation-motion.js" defer></script>
 </PageLayout>
-
-<style>
-  .section { padding: var(--space-64) 0; }
-  .section--cream { background: var(--color-soft-cream); }
-  .section--sage { background: rgb(168 184 160 / 20%); }
-  .section--forest { background: var(--color-deep-forest); color: var(--color-text-inverted); }
-  .section--forest :global(.section-intro__copy) { color: var(--color-linen); }
-  .narrow-layout { max-width: var(--container-text); }
-  .split-layout { display: grid; gap: var(--space-40); align-items: start; }
-  .fact-grid,
-  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
-  .fact-grid li { min-height: 96px; display: flex; align-items: center; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 65%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); }
-  .check-list { align-content: start; }
-  .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
-  .check-list li::before { content: ''; position: absolute; left: 0; top: .72em; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
-  .account-list { padding: var(--space-32); border-radius: var(--radius-section); background: var(--color-soft-cream); }
-  .topic-grid { display: grid; gap: var(--space-20); }
-  .topic-grid :global(.topic-card h3) { margin-bottom: 0; }
-  .compliance-section { padding: var(--space-64) 0 0; }
-  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  .compliance-section :global(p + p) { margin-top: var(--space-8); }
-
-  @media (min-width: 768px) {
-    .section { padding-block: var(--space-96); }
-    .fact-grid,
-    .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); }
-    .compliance-section { padding-top: var(--space-80); }
-  }
-
-  @media (min-width: 1024px) {
-    .section { padding-block: var(--space-120); }
-    .split-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-80); }
-    .fact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .topic-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  }
-</style>

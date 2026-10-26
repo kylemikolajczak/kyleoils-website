@@ -1,6 +1,7 @@
 ---
 import TopicCard from '../../../components/cards/TopicCard.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
+import '../../../styles/legal-refined.css';
 ---
 
 <PageLayout
@@ -10,10 +11,24 @@ import PageLayout from '../../../layouts/PageLayout.astro';
 >
   <section class="legal-hero">
     <div class="container legal-hero__inner">
+      <p class="legal-hero__eyebrow">TRUST & TRANSPARENCY</p>
       <h1>Legal Notice</h1>
       <p>Here you will find the legally required information about this website.<br /><small>This English version is provided for information only. In the event of any discrepancy, the German version shall prevail.</small></p>
     </div>
   </section>
+
+  <nav class="legal-index" aria-label="Jump to section">
+  <div class="container">
+    <div class="legal-index__inner">
+      <p class="legal-index__title">ON THIS PAGE</p>
+      <ul class="legal-index__links">
+        <li><a href="#haftung-inhalte">Liability for Content</a></li>
+        <li><a href="#haftung-links">Liability for Links</a></li>
+        <li><a href="#urheberrecht">Copyright</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
   <section class="section section--cream">
     <div class="container details-grid">

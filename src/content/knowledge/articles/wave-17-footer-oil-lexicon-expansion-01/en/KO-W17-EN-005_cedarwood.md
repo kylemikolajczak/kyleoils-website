@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/cedarwood-zeder/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Cedarwood explained simply"
-description: "A calm guide to Cedarwood: scent profile, simple routines, blending ideas and safe use without medical promises."
+description: "Discover Cedarwood: scent character, inspiring everyday rituals, blend ideas and responsible use."
 relatedArticleIds:
   - "KO-W09-001"
   - "KO-W07-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/cedarwood-oil/"
 
 Cedarwood is a calm wood oil for warm evening routines, soft room-scent blends and a natural base note.
 
-This page helps you understand Cedarwood calmly: scent, everyday use, simple routines, blending ideas and important safety points. The goal is not medical promises. The goal is clear orientation.
+This page helps you understand Cedarwood calmly: scent, everyday use, simple routines, blending ideas and important safety points. Discover its scent character, practical blend ideas and conscious ways to use it.
 
 ## Scent profile
 

@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/glossary/essential-oil/"
 worldId: "glossary"
 worldLabel: "Glossar"
 seoTitle: "Ätherisches Öl einfach erklärt"
-description: "Ein ätherisches Öl ist ein konzentrierter aromatischer Pflanzenextrakt. Es enthält flüchtige Duftbestandteile einer Pflanze und sollte bewusst, sparsam und sicher verwendet werden."
+description: "Ätherische Öle sind konzentrierte, flüchtige Pflanzenextrakte. Erfahre, wie sie duften und was bei der sicheren Anwendung wichtig ist."
 relatedArticleIds:
   - "KO-W02-001"
   - "KO-W02-002"

@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/cypress-zypresse/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Cypress explained simply"
-description: "A clear guide to Cypress: scent profile, blending logic, everyday use and safe use without medical promises."
+description: "Explore Cypress: scent profile, pairing ideas, practical routines and responsible use."
 relatedArticleIds:
   - "KO-W17-EN-008"
   - "KO-W18-EN-006"

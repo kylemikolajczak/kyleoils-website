@@ -9,8 +9,8 @@ const labels = locale === 'de'
   ? { main: 'Navigation im Footer', mainTitle: 'Navigation', knowledge: 'Wissen & Orientierung', contactAndOfficial: 'Kontakt & Offizielle Links', directContact: 'Direkter Kontakt', official: 'Offizielles doTERRA', social: 'Social Media', legal: 'Rechtliches', home: 'Zur Startseite', analytics: 'Analytics-Einstellungen' }
   : { main: 'Footer navigation', mainTitle: 'Navigation', knowledge: 'Knowledge & Guidance', contactAndOfficial: 'Contact & Official Links', directContact: 'Direct contact', official: 'Official doTERRA', social: 'Social', legal: 'Legal', home: 'Go to homepage', analytics: 'Analytics preferences' };
 const independenceNote = locale === 'de'
-  ? ['Kyle Daniel Mikolajczak ist doTERRA Wellness Advocate und arbeitet unabhängig.', 'doTERRA ist der Produktpartner, nicht die Hauptmarke dieser Website.']
-  : ['Kyle Daniel Mikolajczak is an independent doTERRA Wellness Advocate.', 'doTERRA is the product partner, not the primary brand of this website.'];
+  ? ['Kyle Daniel Mikolajczak ist doTERRA Wellness Advocate und arbeitet unabhängig.', 'doTERRA ist der Produktpartner, nicht die Hauptmarke dieser Website.', 'Bei Käufen über meine Empfehlung kann ich eine Vergütung von doTERRA erhalten.']
+  : ['Kyle Daniel Mikolajczak is an independent doTERRA Wellness Advocate.', 'doTERRA is the product partner, not the primary brand of this website.', 'I may receive compensation from doTERRA when you purchase through my referral.'];
 ---
 
 <footer class="site-footer">
@@ -53,7 +53,7 @@ const independenceNote = locale === 'de'
       <nav aria-label={labels.legal}><ul>{data.legalNavigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>
       <button type="button" class="footer-analytics-preferences" data-analytics-preferences>{labels.analytics}</button>
     </div>
-    <p class="footer-bottom__note"><span>{independenceNote[0]}</span><span>{independenceNote[1]}</span></p>
+    <p class="footer-bottom__note"><span>{independenceNote[0]}</span><span>{independenceNote[1]}</span><span>{independenceNote[2]}</span></p>
   </div>
 </footer>
 
@@ -75,6 +75,7 @@ const independenceNote = locale === 'de'
   .footer-brand__mark-link:hover { text-decoration: none; }
   .footer-brand__mark-link:focus-visible { outline-color: var(--color-linen); }
   .footer-link-group + .footer-link-group { margin-top: var(--space-16); }
+  .footer-link-group ul li, .footer-link-group ul a { overflow-wrap: anywhere; }
   .footer-link-group__label { margin: 0 0 var(--space-8); color: rgb(239 230 216 / 72%); font-size: .7rem; font-weight: var(--font-weight-semibold); letter-spacing: .1em; text-transform: uppercase; }
   .footer-international-link { display: inline-block; margin-top: var(--space-8); color: rgb(239 230 216 / 82%); font-size: var(--font-size-small); line-height: var(--line-height-small); }
   .footer-social-links { display: flex; flex-wrap: wrap; gap: var(--space-8) var(--space-16); }
@@ -93,4 +94,286 @@ const independenceNote = locale === 'de'
     .footer-bottom { grid-template-columns: max-content minmax(0, 1fr); align-items: center; }
     .footer-bottom__note { text-align: left; justify-self: end; }
   }
+  @media (min-width: 1024px) and (max-width: 1179px) {
+    .footer-social-links { flex-wrap: wrap; }
+    .footer-social-links li { white-space: normal; }
+  }
+
+  /* Kyle Oils • premium global footer. Every original href and its label remain intact. */
+  .site-footer {
+    position:relative;
+    overflow:clip;
+    padding:clamp(64px,6.4vw,95px) 0 24px;
+    color:#f3f0e8;
+    background:
+      radial-gradient(ellipse 52% 85% at 0% 95%,rgb(132 163 132 / 7%),transparent 76%),
+      linear-gradient(115deg,#28382e 0%,#26382e 48%,#203229 100%);
+    border-top:1px solid rgba(168,184,160,.33);
+  }
+  .site-footer::before {
+    content:"";
+    position:absolute;
+    top:0;left:50%;
+    width:min(1200px,calc(100% - 40px));
+    height:1px;
+    transform:translateX(-50%);
+    background:linear-gradient(90deg,transparent,rgba(192,204,176,.58),transparent);
+    pointer-events:none;
+  }
+  .footer-grid {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:clamp(35px,4vw,58px);
+    align-items:start;
+  }
+  .footer-grid > nav {min-width:0;}
+  .footer-brand {gap:17px; align-items:flex-start;}
+  .footer-brand__mark-link {
+    padding:4px;
+    border:1px solid rgba(226,232,211,.2);
+    background:rgba(238,239,223,.05);
+    box-shadow:0 8px 24px rgba(9,24,15,.12);
+    transition:background .2s ease, border-color .2s ease;
+  }
+  .footer-brand__mark-link:hover {background:rgba(238,239,223,.13);border-color:rgba(228,236,218,.34);}
+  .footer-brand__mark {width:67px;height:67px;}
+  .footer-brand__copy {max-width:280px;}
+  .footer-brand strong {
+    font-family:Georgia,"Times New Roman",serif;
+    color:#faf7f0;
+    font-weight:500;
+    letter-spacing:-.019em;
+    line-height:1.23;
+    font-size:clamp(1.3rem,1.62vw,1.68rem);
+  }
+  .footer-brand p {color:#c7d1c3;line-height:1.6;}
+  .footer-brand strong + p {
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:1rem;
+    color:#d8ddcb;
+    margin-top:12px;
+  }
+  .footer-brand p + p {margin-top:15px;max-width:33ch;font-size:.84rem;}
+  .footer-grid nav > h2 {
+    position:relative;
+    margin:0 0 25px;
+    padding:5px 0 17px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(1.18rem,1.45vw,1.45rem);
+    font-weight:500;
+    letter-spacing:-.018em;
+    line-height:1.22;
+    color:#f5f1e7;
+  }
+  .footer-grid nav > h2::after {
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:1px;
+    width:45px;
+    background:#839b7e;
+    opacity:.8;
+  }
+  .footer-grid nav ul {gap:11px;}
+  .footer-grid nav li {min-width:0;}
+  .footer-grid nav a {
+    display:inline-flex;
+    align-items:center;
+    min-height:26px;
+    max-width:100%;
+    color:#ced8cc;
+    font-size:.86rem;
+    font-weight:450;
+    line-height:1.55;
+    text-decoration:none;
+    overflow-wrap:anywhere;
+    transition:color .2s ease, transform .2s ease;
+  }
+  .footer-grid nav a:hover,
+  .footer-grid nav a:focus-visible {
+    color:#fffdf4;
+    text-decoration:none;
+    transform:translateX(3px);
+  }
+  .footer-link-group + .footer-link-group {margin-top:21px;}
+  .footer-link-group__label {
+    color:#a5b59c;
+    font-size:.63rem;
+    font-weight:750;
+    letter-spacing:.14em;
+    line-height:1.4;
+    margin:0 0 9px;
+  }
+  .footer-link-group:first-of-type ul li:first-child a {
+    border:1px solid rgba(184,209,176,.46);
+    border-radius:11px;
+    background:rgba(167,192,162,.10);
+    padding:9px 14px;
+    min-height:40px;
+    color:#e2eadb;
+    font-weight:650;
+    font-size:.79rem;
+  }
+  .footer-link-group:first-of-type ul li:first-child a:hover,
+  .footer-link-group:first-of-type ul li:first-child a:focus-visible {
+    color:#263d32;
+    background:#e0e8d9;
+    border-color:#e0e8d9;
+    transform:none;
+  }
+  .footer-international-link {
+    margin-top:11px;
+    font-size:.78rem!important;
+    line-height:1.45;
+    color:#b8c9b4!important;
+  }
+  .footer-social-links {
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 13px;
+  }
+  .footer-social-links li {display:flex;align-items:center;white-space:normal;}
+  .footer-social-links li a {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:33px;
+    border:1px solid rgba(189,210,180,.2);
+    border-radius:9px;
+    padding:4px 10px;
+    font-size:.76rem;
+    color:#d5dfd0;
+    white-space:nowrap;
+  }
+  .footer-social-links li a:hover {border-color:rgba(210,230,202,.6);transform:none;background:rgba(209,231,201,.1);}
+  .footer-bottom {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+    align-items:center;
+    margin-top:clamp(54px,5.1vw,80px);
+    border-top:1px solid rgba(214,227,206,.21);
+    padding-top:22px;
+    font-size:.77rem;
+  }
+  .footer-bottom__legal {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:12px 22px;
+  }
+  .footer-bottom__legal > p {color:#b8c4b5;font-size:.75rem;}
+  .footer-bottom nav ul {gap:7px 20px;}
+  .footer-bottom nav a {
+    display:inline-flex;
+    align-items:center;
+    min-height:36px;
+    color:#d0d8cb;
+    font-size:.75rem;
+    text-decoration:none;
+    transition:color .2s ease;
+  }
+  .footer-bottom nav a:hover {color:#fffdf4;text-decoration:underline;text-underline-offset:3px;}
+  .footer-analytics-preferences {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:9px 12px;
+    min-height:39px;
+    color:#d9e3d1;
+    background:rgba(212,228,209,.05);
+    border:1px solid rgba(201,221,194,.27);
+    border-radius:10px;
+    font-size:.72rem;
+    font-weight:600;
+    line-height:1.25;
+    transition:background .2s ease,border-color .2s ease,color .2s ease;
+  }
+  .footer-analytics-preferences:hover,
+  .footer-analytics-preferences:focus-visible {
+    background:#e5e9db;
+    color:#263d32;
+    border-color:#e5e9db;
+    text-decoration:none;
+  }
+  .footer-bottom__note {
+    display:grid;
+    gap:4px;
+    max-width:520px;
+    color:#afbbad;
+    font-size:.72rem;
+    line-height:1.6;
+  }
+  .site-footer a:focus-visible,.site-footer button:focus-visible {
+    outline:2px solid #d7e5cd;
+    outline-offset:3px;
+  }
+  @media (min-width:680px) and (max-width:1179px) {
+    .footer-grid {grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(24px,4vw,50px);row-gap:50px;}
+  }
+  @media (min-width:1180px) {
+    .footer-grid {
+      grid-template-columns:minmax(250px,1.25fr) minmax(130px,.72fr) minmax(155px,.93fr) minmax(220px,1.15fr);
+      column-gap:clamp(24px,2.65vw,42px);
+      row-gap:30px;
+    }
+    .footer-bottom {
+      grid-template-columns:minmax(0,1fr) minmax(300px,.7fr);
+      gap:28px;
+    }
+    .footer-bottom__note {justify-self:end;text-align:right;}
+  }
+  @media (min-width:1024px) {
+    .footer-social-links {flex-wrap:wrap;gap:8px 10px;}
+    .footer-social-links li {white-space:normal;}
+    .footer-social-links li + li::before {content:none;}
+  }
+  @media (max-width:679px) {
+    .site-footer {padding-top:52px;padding-bottom:25px;}
+    .footer-grid {gap:38px;}
+    .footer-grid nav > h2 {margin-bottom:18px;}
+    .footer-bottom {margin-top:47px;}
+    .footer-bottom__legal {gap:10px 16px;}
+    .footer-bottom nav ul {gap:5px 14px;}
+  }
+  @media (prefers-reduced-motion:reduce) {
+    .site-footer a,.site-footer button {transition:none;}
+  }
+
+
+
+  /* One circle only: the round Kyle Oils artwork is the entire clickable mark. */
+  .footer-brand__mark-link,
+  .footer-brand__mark-link:hover,
+  .footer-brand__mark-link:focus-visible {
+    display: block;
+    flex: 0 0 auto;
+    width: 76px;
+    height: 76px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: none;
+    box-shadow: none;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  .footer-brand__mark-link:focus-visible {
+    outline: 2px solid #d7e5cd;
+    outline-offset: 4px;
+  }
+  .footer-brand__mark {
+    display: block;
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: none;
+    /* Crop only the PNG internal transparent margin, leaving the logo artwork intact. */
+    transform: translateY(3px) scale(1.39);
+    transform-origin: center;
+  }
+
 </style>

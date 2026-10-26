@@ -44,23 +44,15 @@ doTERRA beschreibt Lavender mit unverwechselbarem Aroma, beruhigendem Duftprofil
 
 Kyle Oils greift diesen Bereich auf, aber in einer sauberen Beratungslogik: Was ist das Produkt? Für welche Alltagssituation wird es gesucht? Welche sichere Anwendung ist wichtig? Wo beginnt persönliche Einordnung?
 
-## Sichere öffentliche Positionierung
+## Passende Ideen für deinen Alltag
 
-Diese Seite darf doTERRA Lavender so einordnen:
+Entdecke Lavender in diesen Situationen:
 
 - für eine ruhige Abendumgebung und Duftanker rund um die Schlafenszeit
 - für Menschen, die mit einem klassischen Einzelöl starten möchten
 - für Hautpflege, Pflegegefühl und kosmetische Einordnung nach Label
 - als Brücke zwischen Öl-Lexikon, Routinen und Beratung
 
-## Was wir öffentlich nicht schreiben
-
-Diese Aussagen gehören nicht auf die Website:
-
-- heilt Wunden
-- hilft bei Schnittwunden
-- behandelt Sonnenbrand
-- behandelt Schlafstörungen
 
 ## Wie Kyle das in der Beratung einordnet
 
@@ -73,7 +65,7 @@ In der persönlichen Beratung geht es nicht darum, schnell ein Produkt als Lösu
 - Gibt es Kinder, Haustiere, Schwangerschaft, Medikamente oder sensible Haut?
 - Ist ein fertiges doTERRA Produkt sinnvoller als ein DIY-Rezept?
 
-So bleibt die Empfehlung näher an dem, was doTERRA wirklich anbietet, aber ohne riskante Online-Versprechen.
+So bleibt die Empfehlung auf deinen Alltag und die Kennzeichnung des jeweiligen Produkts abgestimmt.
 
 ## Sicherheit
 

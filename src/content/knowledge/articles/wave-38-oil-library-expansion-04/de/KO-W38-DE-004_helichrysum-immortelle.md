@@ -3,14 +3,14 @@ id: "KO-W38-DE-004"
 translationPairId: "KO-W38-PAIR-004"
 language: "de"
 status: "approved-content-pack-ready"
-title: "Helichrysum: Hautpflege, Luxusöl und klare Grenzen"
+title: "Helichrysum (Immortelle): besondere Hautpflege"
 slug: "helichrysum-immortelle"
 route: "/de/wissen/oel-lexikon/helichrysum-immortelle/"
 enRoute: "/en/knowledge/oil-library/helichrysum/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
-seoTitle: "Helichrysum: Hautpflege, Luxusöl und klare Grenzen"
-description: "Helichrysum ist ein wertvolles Öl für Hautpflege-Kontext und bewusste Routinen, aber nicht für Heil- oder Wundversprechen."
+seoTitle: "Helichrysum (Immortelle): besondere Hautpflege"
+description: "Helichrysum (Immortelle): honigartig-krautiger Duft und ausgewählte Hautpflege. Entdecke die kosmetischen Möglichkeiten von doTERRA Helichrysum Touch."
 focus: "Hautpflege, Premiumöl, bewusste Anwendung"
 searchKeywords:
   - "helichrysum"
@@ -44,29 +44,33 @@ sourceUrls:
   - "https://www.doterra.com/US/en/thyme-oil-education"
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
 ---
-# Helichrysum: Hautpflege, Luxusöl und klare Grenzen
+# Helichrysum (Immortelle): besondere Hautpflege
 
-Helichrysum ist ein wertvolles Öl für Hautpflege-Kontext und bewusste Routinen, aber nicht für Heil- oder Wundversprechen.
+Helichrysum (Immortelle): honigartig-krautiger Duft und ausgewählte Hautpflege. Entdecke die kosmetischen Möglichkeiten von doTERRA Helichrysum Touch.
 
 ## Fokus
 
 Hautpflege, Premiumöl, bewusste Anwendung
 
-## Wie Helichrysum einzuordnen ist
+## Was Helichrysum so besonders macht
 
-Helichrysum, oft auch Immortelle genannt, ist ein besonderes Öl, das viele Menschen mit Hautpflege und hochwertiger Produktwirkung verbinden.
+Helichrysum, auch Immortelle oder Strohblume genannt, begeistert mit seinem charakteristischen honigartig-krautigen Duft und ist vor allem in hochwertigen Hautpflegeritualen interessant. Gerade für Menschen, die ihre Pflege gezielt mit einem besonderen ätherischen Öl ergänzen möchten, lohnt sich ein genauerer Blick.
 
 ## Duftprofil
 
 Der Duft ist warm, kräuterig, leicht honigartig und markant. Es ist kein klassischer Raumduft für jeden, sondern eher ein gezieltes Öl.
 
-## Typische Kyle Oils Einordnung
+## Helichrysum Touch für ein gepflegtes Hautbild
 
-Kyle würde Helichrysum vorsichtig über Hautpflege, Hautgefühl, Pflegeroutine und Produktwert einordnen. Nicht über Wunden, Verletzungen oder Heilversprechen.
+Die offizielle europäische doTERRA-Produktinformation beschreibt Helichrysum Touch als vorverdünnten Roll-on mit fraktioniertem Kokosöl. Er wird für kosmetische Hautpflege eingesetzt und kann dazu beitragen, das Erscheinungsbild von Hautunebenheiten optisch zu mildern und einen strahlend wirkenden Teint zu unterstützen.
+
+Eine schöne Möglichkeit ist die bewusste Gesichtspflege oder eine kleine Massage als Teil deiner persönlichen Self-Care-Routine. Das besondere Aroma macht aus der Anwendung einen angenehmen Pflegemoment.
+
+Wichtig: Diese Angaben beziehen sich auf das fertig formulierte Produkt Helichrysum Touch aus der europäischen Produktinformation. Das reine ätherische Öl ist ein anderes Produkt und benötigt seine eigenen Anwendungshinweise.
 
 ## Sicher anwenden
 
-Für Hautanwendung immer Label beachten, verdünnen und kleinflächig testen. Bei bestehenden Hautthemen oder Unsicherheit nicht experimentieren, sondern fachlich klären.
+Helichrysum Touch ist bereits in fraktioniertem Kokosöl vorverdünnt. Beachte dennoch die jeweilige Produktkennzeichnung, teste neue Hautpflegeprodukte vorsichtig und vermeide Augen und empfindliche Bereiche. Beim reinen ätherischen Helichrysum-Öl gelten andere Vorgaben zur Verdünnung. Bei bestehenden Hautproblemen oder Unverträglichkeiten solltest du fachlichen Rat einholen.
 
 ## Passt eher, wenn
 
@@ -78,11 +82,11 @@ du gerade erst startest, einfache Routinen brauchst oder nicht sicher bist, ob e
 
 ## Kurz gesagt
 
-Helichrysum ist kein Öl für schnelle Versprechen. Es ist ein bewusstes Pflegeöl, das klare Grenzen braucht.
+Helichrysum verbindet einen unverwechselbaren Duft mit einer hochwertigen kosmetischen Pflegeroutine. Besonders Helichrysum Touch kann interessant sein, wenn du deine Hautpflege um einen bewussten, angenehm duftenden Schritt ergänzen möchtest.
 
-## Mit Kyle einordnen
+## Persönlich die passende Variante finden
 
-Wenn du dieses Öl interessant findest, aber unsicher bist, ob es zu deinem Alltag passt, ordnet Kyle mit dir Duftprofil, Anwendung, Sicherheit und Alternativen ruhig ein.
+Du möchtest wissen, ob Helichrysum oder Helichrysum Touch besser zu deiner Routine passt? Ich helfe dir gern, die unterschiedlichen Produkte und ihre Anwendung sinnvoll einzuordnen.
 
 ## Hinweis
 

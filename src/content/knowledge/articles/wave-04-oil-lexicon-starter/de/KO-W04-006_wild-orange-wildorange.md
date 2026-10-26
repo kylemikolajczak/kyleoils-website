@@ -8,7 +8,7 @@ route: "/de/wissen/oel-lexikon/wild-orange-wildorange/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Wild Orange Wildorange ätherisches Öl verständlich erklärt"
-description: "Wild Orange ruhig erklärt: süß-zitrisches Duftprofil, Diffuser, Raumduft, Alltag und wichtige Hinweise zur Hautanwendung."
+description: "Wild Orange entdecken: süß-zitrisches Duftprofil, Diffuser, Raumduft, Alltag und wichtige Hinweise zur Hautanwendung."
 riskLevel: "medium"
 cta: "Wild Orange mit Kyle einordnen"
 relatedArticleIds:

@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/patchouli-patschuli/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Patchouli explained simply"
-description: "Patchouli in the Oil Library: scent profile, core area, safe positioning and guidance without healing promises."
+description: "Patchouli in the Oil Library: scent character, suitable everyday uses, blend ideas and mindful application."
 botanicalName: "Pogostemon cablin"
 scentFamily: "Earthy-woody oil"
 pillar: "Skin care, grounding scent & base note"
@@ -59,22 +59,15 @@ doTERRA positions Patchouli partly in a skin-care context and mentions dilution 
 
 Kyle Oils translates this product context into language visitors can understand: What do I smell? Why are people looking for this oil? Where does it fit into routines? Which safety boundaries matter?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This oil can be placed publicly like this:
+Explore this oil through these everyday ideas:
 
 - for skin care and care feel according to the label
 - as a deep base note in blends
 - for people who prefer earthy oils instead of bright citrus profiles
 - as a bridge between Oil Library, skin care and scent families
 
-## What we do not write
-
-These statements do not belong on the public website:
-
-- treat skin problems
-- heal acne or eczema
-- promise psychological grounding
 
 ## How to get to know this oil
 

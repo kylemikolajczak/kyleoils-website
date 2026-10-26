@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/glossary/adulteration/"
 worldId: "glossary"
 worldLabel: "Glossar"
 seoTitle: "Verfälschung einfach erklärt"
-description: "Kurze Erklärung: Verfälschung bedeutet, dass ein Öl verändert, gestreckt oder mit nicht erwarteten Stoffen ergänzt wurde. Qualitätsprüfungen sollen solche Abweichungen erkennen."
+description: "Verfälschung bei ätherischen Ölen: Was bedeutet das, wie können Öle verändert werden und welche Rolle spielen Qualitätsprüfungen?"
 relatedArticleIds:
   - "KO-P041-DE"
   - "KO-P045-DE"

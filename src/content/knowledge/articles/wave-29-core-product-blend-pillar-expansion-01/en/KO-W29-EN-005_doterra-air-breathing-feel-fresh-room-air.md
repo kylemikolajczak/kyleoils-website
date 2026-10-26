@@ -44,23 +44,15 @@ doTERRA positions Air strongly in the breathing and soothing, cooling-feel conte
 
 Kyle Oils uses this area through a clean guidance logic: What is the product? Which everyday situation is it searched for? Which safe-use context matters? Where does personal guidance begin?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This page may place doTERRA Air like this:
+Here are practical ideas for doTERRA Air:
 
 - for clear, minty room-scent profiles
 - for conscious diffuser routines in well-ventilated rooms
 - for fresh room air in everyday life and seasonal contexts
 - for people who want to separate doTERRA Air safely from medical respiratory language
 
-## What we do not write publicly
-
-These statements do not belong on the website:
-
-- opens airways
-- helps coughs or colds
-- treats asthma
-- helps respiratory disease
 
 ## How Kyle places this in guidance
 
@@ -73,7 +65,7 @@ Personal guidance is not about quickly selling a product as a solution. It is ab
 - Are children, pets, pregnancy, medication or sensitive skin involved?
 - Is a finished doTERRA product more appropriate than a DIY recipe?
 
-This keeps the recommendation closer to what doTERRA actually offers, but without risky online promises.
+This helps keep the recommendation practical and aligned with the product label.
 
 ## Safety
 

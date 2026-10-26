@@ -44,23 +44,15 @@ doTERRA beschreibt On Guard als Protective Blend und führt eine ganze Produktli
 
 Kyle Oils greift diesen Bereich auf, aber in einer sauberen Beratungslogik: Was ist das Produkt? Für welche Alltagssituation wird es gesucht? Welche sichere Anwendung ist wichtig? Wo beginnt persönliche Einordnung?
 
-## Sichere öffentliche Positionierung
+## Passende Ideen für deinen Alltag
 
-Diese Seite darf doTERRA On Guard so einordnen:
+Hier findest du konkrete Anregungen rund um doTERRA On Guard:
 
 - als Duft- und Produktbereich rund um Jahreszeiten und Familienalltag
 - für Haushaltsroutinen, Handprodukte und Produktauswahl mit doTERRA On Guard
 - für Beratung, welches Produkt sinnvoller ist: Öl, Drops, Softgels, Beadlets, Seife oder andere Varianten
 - als Beispiel, warum Produktform und Label wichtiger sind als Internet-Rezepte
 
-## Was wir öffentlich nicht schreiben
-
-Diese Aussagen gehören nicht auf die Website:
-
-- wehrt Krankheiten ab
-- hilft wenn man krank wird
-- ersetzt Hygiene oder medizinische Hilfe
-- schützt sicher vor Infektionen
 
 ## Wie Kyle das in der Beratung einordnet
 
@@ -73,7 +65,7 @@ In der persönlichen Beratung geht es nicht darum, schnell ein Produkt als Lösu
 - Gibt es Kinder, Haustiere, Schwangerschaft, Medikamente oder sensible Haut?
 - Ist ein fertiges doTERRA Produkt sinnvoller als ein DIY-Rezept?
 
-So bleibt die Empfehlung näher an dem, was doTERRA wirklich anbietet, aber ohne riskante Online-Versprechen.
+So bleibt die Empfehlung auf deinen Alltag und die Kennzeichnung des jeweiligen Produkts abgestimmt.
 
 ## Sicherheit
 

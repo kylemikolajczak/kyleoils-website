@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/lavender-lavendel/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Lavender essential oil explained clearly"
-description: "Lavender explained calmly: scent profile, everyday orientation, aromatic use, topical use and important safety notes."
+description: "Explore Lavender: scent profile, everyday inspiration, aromatic use, topical use and important safety notes."
 relatedArticleIds:
   - "KO-W08-002"
   - "KO-W07-003"
@@ -26,7 +26,7 @@ Lavender is one of the best-known essential oils and often one of the first oils
 
 Its scent is usually described as soft, floral, herbal and slightly fresh. Many people associate Lavender with calm evening moments, self-care and gentle daily routines.
 
-This article explains Lavender in a simple, responsible way without turning it into a medical promise.
+Explore how Lavender can bring a soft floral note to an evening diffuser blend, a personal scent ritual or a carefully diluted self-care routine.
 
 ## Scent profile
 

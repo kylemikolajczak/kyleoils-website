@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/frankincense-weihrauch/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Frankincense essential oil explained clearly"
-description: "Frankincense explained calmly: warm resinous scent, quiet routines, self-care, aromatic use, topical use and safety notes."
+description: "Explore Frankincense: warm resinous scent, quiet routines, self-care, aromatic use, topical use and safety notes."
 relatedArticleIds:
   - "KO-W08-004"
   - "KO-W08-002"
@@ -26,7 +26,7 @@ Frankincense is a well-known essential oil with a warm, resinous and grounding s
 
 It often feels deeper and quieter than bright citrus or sharp mint oils. Many people associate Frankincense with reflective routines, self-care and calm scent moments.
 
-This article explains Frankincense as part of everyday routines, not as a medical promise.
+Explore how Frankincense can add resinous warmth and depth to thoughtful diffuser blends, evening rituals and personal-care moments.
 
 ## Scent profile
 

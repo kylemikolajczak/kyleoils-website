@@ -1,0 +1,20 @@
+/* Bilingual 404: quiet, helpful, brand-consistent recovery screen. */
+main > .hero {
+  min-height:min(77vh,730px);
+  display:flex;align-items:center;
+  background:#faf7f1;
+  padding:clamp(3.4rem,6vw,6rem) 0;
+}
+main > .hero .hero__grid {max-width:1200px;}
+main > .hero h1 {
+  font:500 clamp(2.8rem,4.4vw,4.75rem)/1.1 Georgia,"Times New Roman",serif;
+  color:#263d32;letter-spacing:-.035em;
+  margin:0 0 1.15rem;
+}
+main > .hero .hero__intro {color:#5d6f5e;font-size:1rem;line-height:1.76;}
+main > .hero .hero__intro p {margin:0 0 1rem;}
+main > .hero .button {min-height:47px;border-radius:12px;white-space:normal;}
+@media(max-width:700px){
+  main > .hero {min-height:0;}
+  main > .hero .hero__grid {gap:2rem;}
+}

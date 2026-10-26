@@ -1,0 +1,559 @@
+/* Kyle Oils Knowledge System V2 — shared by 8 worlds, articles, and Knowledge Hub.
+   Design-only refinement. Source articles, routes, safety information stay unchanged. */
+.page-shell:has(> .world-header),
+.page-shell:has(> .article-header) {
+  --ks-paper:#faf7f1;
+  --ks-sage:#f1f2ea;
+  --ks-sand:#f5eee5;
+  --ks-forest:#263d32;
+  --ks-muted:#5c6e5f;
+  --ks-outline:rgba(107,137,108,.23);
+  background:var(--ks-paper);
+}
+.page-shell:has(> .world-header) > section,
+.page-shell:has(> .article-header) > section,
+.page-shell:has(> .article-header) > article,
+.page-shell:has(> .article-header) > aside {background:var(--ks-paper);}
+.page-shell:has(> .world-header) .container,
+.page-shell:has(> .article-header) .container {max-width:1190px;}
+.page-shell:has(> .world-header) .knowledge-container,
+.page-shell:has(> .article-header) .knowledge-container {
+  width:min(calc(100% - 2.5rem), 860px);
+  max-width:860px;
+  margin-inline:auto;
+}
+/* Universal full-surface links (worlds, articles, related worlds, landing).
+   Title and action belong to a single accessible anchor: no nested links. */
+.page-shell .world-card,
+.page-shell .article-card {
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  min-height:252px;
+  padding:clamp(1.35rem,2.1vw,2.05rem);
+  border:1px solid var(--ks-outline,rgba(107,137,108,.23));
+  border-radius:23px;
+  background:var(--ks-sage,#f1f2ea);
+  color:var(--ks-forest,#263d32);
+  box-shadow:0 8px 26px rgba(35,58,41,.045);
+  text-decoration:none;
+  transition:background .23s ease,border-color .23s ease,box-shadow .25s ease,transform .25s ease;
+}
+.page-shell .world-card:nth-child(2n),
+.page-shell .article-card:nth-child(4n) {background:#f5eee5; border-color:rgba(154,140,116,.24);}
+.page-shell .world-card:hover,
+.page-shell .world-card:focus-visible,
+.page-shell .article-card:hover,
+.page-shell .article-card:focus-visible {
+  transform:translateY(-4px);
+  border-color:#96b095;
+  background:#eaf0e6;
+  box-shadow:0 17px 36px rgba(35,58,41,.10);
+  text-decoration:none;
+}
+.page-shell .world-card:focus-visible,
+.page-shell .article-card:focus-visible {
+  outline:2px solid #60856a; outline-offset:3px;
+}
+.page-shell .world-card h2,
+.page-shell .article-card h2 {
+  margin:0 0 .85rem;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.35rem,1.76vw,1.77rem);
+  font-weight:500;
+  letter-spacing:-.022em;
+  color:#263d32;
+  line-height:1.23;
+}
+.page-shell .world-card p,
+.page-shell .article-card p {
+  color:#637366;
+  font-size:.92rem;
+  line-height:1.62;
+  margin:0 0 1.6rem;
+}
+.page-shell .world-card__link,
+.page-shell .article-card__link {
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  align-items:center;
+  margin-top:auto;
+  padding:12px 14px;
+  min-height:46px;
+  border:1px solid rgba(96,132,100,.34);
+  border-radius:12px;
+  background:rgba(250,247,241,.66);
+  color:#2d5139;
+  font-size:.81rem;
+  font-weight:700;
+  letter-spacing:.01em;
+  line-height:1.25;
+}
+.page-shell .world-card__link > span,
+.page-shell .article-card__link > span {font-size:1.08rem;font-weight:450;flex:none;}
+.page-shell .world-card:hover .world-card__link,
+.page-shell .world-card:focus-visible .world-card__link,
+.page-shell .article-card:hover .article-card__link,
+.page-shell .article-card:focus-visible .article-card__link {
+  background:#263d32;
+  color:#faf7f1;
+  border-color:#263d32;
+}
+/* Knowledge Hub cards integrate without disrupting existing scroll entrance motions. */
+.page-shell .knowledge-world-entrance,
+.page-shell .world-grid > .world-card,
+.page-shell .article-grid > .article-card {min-width:0;}
+.page-shell .knowledge-world-entrance > .world-card {height:100%;}
+/* World landing hero and section rhythm: no alternating full-width color blocks. */
+.page-shell:has(> .world-header) > .world-header {
+  padding:clamp(3rem,5.4vw,5.2rem) 0 clamp(2.65rem,4vw,4.2rem);
+}
+.page-shell:has(> .world-header) .world-header .knowledge-container {max-width:900px;}
+.page-shell:has(> .world-header) .world-header .eyebrow {
+  color:#789078;
+  font-size:.71rem;
+  font-weight:750;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  margin:1.6rem 0 1rem;
+}
+.page-shell:has(> .world-header) .world-header h1 {
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(2.7rem,4.45vw,4.7rem);
+  font-weight:500;
+  letter-spacing:-.035em;
+  line-height:1.08;
+  color:#263d32;
+  margin:0 0 1.25rem;
+  max-width:17ch;
+}
+.page-shell:has(> .world-header) .world-header p:last-child {
+  color:#5e6d60;
+  font-size:clamp(1rem,1.3vw,1.15rem);
+  line-height:1.73;
+  max-width:62ch;
+}
+.page-shell:has(> .world-header) > .section {
+  padding:clamp(3.55rem,5.1vw,5.6rem) 0;
+}
+.page-shell:has(> .world-header) > .section h2,
+.page-shell:has(> .world-header) > .faq-quick-answers h2 {
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(2rem,3vw,3.05rem);
+  font-weight:500;
+  letter-spacing:-.028em;
+  line-height:1.16;
+  color:#263d32;
+  margin:0 0 clamp(1.4rem,2.4vw,2.35rem);
+}
+.page-shell:has(> .world-header) .article-grid,
+.page-shell:has(> .world-header) .world-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.85rem,1.55vw,1.35rem);}
+.page-shell:has(> .world-header) .article-grid > *,
+.page-shell:has(> .world-header) .world-grid > * {min-width:0;}
+.page-shell:has(> .world-header) .faq-quick-answers {padding:0 0 clamp(2rem,3.5vw,3.6rem);}
+.page-shell:has(> .world-header) .faq-quick-answers .container {
+  box-sizing:border-box;
+  width:min(calc(100% - 2.5rem),1100px);
+  max-width:1100px;
+  padding:clamp(1.5rem,3vw,2.7rem);
+  border-radius:25px;
+  background:#f5eee5;
+  border:1px solid rgba(154,139,119,.22);
+}
+.page-shell:has(> .world-header) .faq-quick-answers .eyebrow {color:#70886e;font-size:.74rem;letter-spacing:.14em;}
+.page-shell:has(> .world-header) .faq-quick-answers h2 {margin:.8rem 0 1rem;}
+.page-shell:has(> .world-header) .faq-quick-answers p {color:#627165;line-height:1.64;}
+.page-shell:has(> .world-header) .faq-quick-answers__link {
+  display:inline-flex;align-items:center;min-height:48px;
+  border:1px solid #78937a;padding:.75rem 1.1rem;
+  text-decoration:none;border-radius:12px;color:#294a35;font-size:.86rem;font-weight:700;
+  background:#faf7f1;
+}
+.page-shell:has(> .world-header) .faq-quick-answers__link:hover,
+.page-shell:has(> .world-header) .faq-quick-answers__link:focus-visible {color:#faf7f1;background:#263d32;border-color:#263d32;text-decoration:none;}
+/* A featured resource on the Routines world, linking to the existing PDFs/pages. */
+.page-shell:has(> .world-header) .knowledge-featured-plan {padding:0 0 clamp(1rem,2.4vw,2.6rem);}
+.page-shell:has(> .world-header) .knowledge-featured-plan__inner {
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(225px,.92fr);
+  align-items:center;
+  gap:clamp(1.5rem,3.3vw,3.2rem);
+  padding:clamp(1.65rem,3vw,2.8rem);
+  border:1px solid rgba(155,141,114,.27);
+  border-radius:25px;
+  background:#f5eee5;
+}
+.page-shell:has(> .world-header) .knowledge-featured-plan .eyebrow {
+  color:#738c74;font-size:.7rem;font-weight:750;letter-spacing:.13em;margin:0 0 .6rem;
+}
+.page-shell:has(> .world-header) .knowledge-featured-plan h2 {
+  color:#263d32;
+  font:500 clamp(1.75rem,2.4vw,2.55rem)/1.18 Georgia,"Times New Roman",serif;
+  letter-spacing:-.025em;margin:0 0 .95rem;
+}
+.page-shell:has(> .world-header) .knowledge-featured-plan p:not(.eyebrow){font-size:.95rem;color:#5d6d60;line-height:1.65;margin:0;}
+.page-shell:has(> .world-header) .knowledge-featured-plan__actions {display:grid;gap:.85rem;}
+.page-shell:has(> .world-header) .knowledge-featured-plan__actions a {
+  display:flex;justify-content:center;align-items:center;gap:.65rem;
+  width:100%;min-height:48px;text-align:center;line-height:1.4;
+  font-weight:700;font-size:.85rem;text-decoration:none;
+  border-radius:12px;padding:12px 14px;
+  background:#263d32;color:#faf7f1;border:1px solid #263d32;
+}
+.page-shell:has(> .world-header) .knowledge-featured-plan__actions a:hover,
+.page-shell:has(> .world-header) .knowledge-featured-plan__actions a:focus-visible {background:#396047;border-color:#396047;}
+.page-shell:has(> .world-header) .knowledge-featured-plan__actions a + a {color:#263d32;border-color:#8da98b;background:transparent;}
+.page-shell:has(> .world-header) .knowledge-featured-plan__actions a + a:hover {background:#e9f0e5;}
+/* Breadcrumbs and article hero: precise hierarchy, clear return paths. */
+.page-shell:has(> .article-header) .article-header {
+  padding:clamp(2.75rem,5.4vw,5.2rem) 0 clamp(2.2rem,3.7vw,3.8rem);
+}
+.page-shell:has(> .article-header) .article-header__world {
+  color:#779078;
+  font-size:.75rem;
+  text-transform:uppercase;
+  font-weight:750;
+  letter-spacing:.135em;
+  margin:1.3rem 0 1rem;
+}
+.page-shell:has(> .article-header) .article-header h1 {
+  font-family:Georgia,"Times New Roman",serif;
+  color:#263d32;
+  font-weight:500;
+  font-size:clamp(2.55rem,4.12vw,4.24rem);
+  letter-spacing:-.037em;
+  line-height:1.13;
+  margin:0 0 1.2rem;
+  text-wrap:pretty;
+}
+.page-shell:has(> .article-header) .article-header__intro {
+  color:#596e5e;
+  font-size:clamp(1.05rem,1.32vw,1.18rem);
+  line-height:1.75;
+  max-width:65ch;
+  margin:0;
+}
+.page-shell:has(> .article-header) .article-header__review {
+  display:inline-flex;
+  align-items:center;
+  font-size:.78rem;
+  background:#f1f2ea;
+  border:1px solid rgba(116,145,114,.25);
+  border-radius:99px;
+  padding:.58rem 1rem;
+  margin-top:1.45rem;
+  color:#52745a;
+}
+.page-shell .breadcrumbs {margin:0 0 1.6rem;color:#6a7a6c;font-size:.8rem;line-height:1.48;}
+.page-shell .breadcrumbs ol {display:flex;flex-wrap:wrap;align-items:center;gap:.45rem .7rem;}
+.page-shell .breadcrumbs li {display:inline-flex;gap:.65rem;align-items:center;}
+.page-shell .breadcrumbs li:not(:last-child)::after {color:#90a392;}
+.page-shell .breadcrumbs a {color:#546b59;text-decoration:none;border-bottom:1px solid transparent;}
+.page-shell .breadcrumbs a:hover,.page-shell .breadcrumbs a:focus-visible {color:#263d32;border-bottom-color:#729375;text-decoration:none;}
+.page-shell .breadcrumbs span[aria-current='page'] {color:#2c5237;}
+/* Reading area: consistent Georgia headings with comfortable body rhythm. */
+.page-shell:has(> .article-header) .article-content {
+  padding:clamp(1.75rem,3vw,2.65rem) 0 clamp(3.5rem,5vw,5rem);
+  border-top:1px solid rgba(121,147,119,.15);
+}
+.page-shell:has(> .article-header) .article-content h2 {
+  font-family:Georgia,"Times New Roman",serif;
+  color:#263d32;
+  font-size:clamp(1.85rem,2.65vw,2.6rem);
+  font-weight:500;
+  letter-spacing:-.027em;
+  line-height:1.18;
+  margin:clamp(2.6rem,4.6vw,4rem) 0 1.05rem;
+  padding-top:1.55rem;
+  border-top:1px solid rgba(118,149,121,.18);
+}
+.page-shell:has(> .article-header) .article-content h2:first-child {margin-top:0;padding-top:0;border-top:none;}
+.page-shell:has(> .article-header) .article-content h3 {
+  font-family:Georgia,"Times New Roman",serif;
+  color:#31513b;
+  font-size:clamp(1.4rem,2vw,1.85rem);
+  font-weight:500;letter-spacing:-.018em;line-height:1.25;
+  margin:2.35rem 0 .9rem;
+}
+.page-shell:has(> .article-header) .article-content p,
+.page-shell:has(> .article-header) .article-content li {
+  font-size:clamp(.99rem,1.15vw,1.045rem);
+  line-height:1.84;
+  color:#536557;
+  overflow-wrap:anywhere;
+}
+.page-shell:has(> .article-header) .article-content p {margin:0 0 1.4rem;}
+.page-shell:has(> .article-header) .article-content ul,
+.page-shell:has(> .article-header) .article-content ol {
+  display:grid;gap:.65rem;
+  margin:1.15rem 0 2rem;
+  padding:1.35rem 1.65rem 1.35rem 2.55rem;
+  background:#f1f2ea;
+  border:1px solid rgba(103,136,105,.19);
+  border-radius:18px;
+  list-style-position:outside;
+}
+.page-shell:has(> .article-header) .article-content li {padding-left:.25rem;}
+.page-shell:has(> .article-header) .article-content li::marker {color:#7b9d7f;font-weight:700;}
+/* Safety notes remain visible and accurately worded, without another colored band. */
+.page-shell:has(> .article-header) .article-safety {padding:0 0 clamp(1.8rem,3vw,3rem);}
+.page-shell:has(> .article-header) .article-safety p {
+  margin:0;
+  padding:1.15rem 1.45rem;
+  border:1px solid rgba(173,154,120,.33);
+  border-radius:16px;
+  color:#686558;
+  background:#f5eee5;
+  font-size:.85rem;
+  line-height:1.7;
+}
+/* Related reads: independent clickable editorial cards. */
+.page-shell:has(> .article-header) .related-links {padding:clamp(2.1rem,4vw,3.7rem) 0;}
+.page-shell:has(> .article-header) .related-links h2 {
+  font:500 clamp(1.9rem,2.7vw,2.65rem)/1.17 Georgia,"Times New Roman",serif;
+  letter-spacing:-.023em;color:#263d32;
+  margin:0 0 1.5rem;
+}
+.page-shell:has(> .article-header) .related-links ul {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.9rem;
+  margin:0;padding:0;list-style:none;
+}
+.page-shell:has(> .article-header) .related-links li {
+  display:flex;flex-direction:column;
+  padding:1.25rem 1.45rem;
+  border:1px solid rgba(105,136,108,.22);
+  background:#f1f2ea;
+  border-radius:17px;
+  min-width:0;
+}
+.page-shell:has(> .article-header) .related-links li:nth-child(2n) {background:#f5eee5;border-color:rgba(151,139,120,.23);}
+.page-shell:has(> .article-header) .related-links li a {
+  color:#2f5239;font-weight:700;font-size:.92rem;line-height:1.55;text-decoration:none;
+}
+.page-shell:has(> .article-header) .related-links li a:hover {text-decoration:underline;text-underline-offset:3px;}
+.page-shell:has(> .article-header) .related-links li p {color:#607061;font-size:.86rem;line-height:1.58;margin:.75rem 0 0;}
+/* World/article KnowledgeCTA has same compact two-column forest treatment as other main pages. */
+.page-shell:has(> .world-header) > .knowledge-cta,
+.page-shell:has(> .article-header) > .knowledge-cta {
+  background:#faf7f1;
+  padding:clamp(2.6rem,4.2vw,4rem) 0;
+}
+.page-shell:has(> .world-header) > .knowledge-cta .knowledge-cta__inner,
+.page-shell:has(> .article-header) > .knowledge-cta .knowledge-cta__inner {
+  box-sizing:border-box;
+  width:min(calc(100% - 2.5rem),1080px);
+  max-width:1080px;
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(220px,.85fr);
+  align-items:center;
+  gap:clamp(1.4rem,3.3vw,3.2rem);
+  padding:clamp(1.75rem,3.25vw,2.8rem);
+  margin-inline:auto;
+  border:0;
+  border-radius:26px;
+  box-shadow:0 18px 38px rgba(38,61,50,.12);
+  background:#263d32;
+  color:#faf7f1;
+}
+.page-shell:has(> .world-header) > .knowledge-cta .knowledge-cta__inner h2,
+.page-shell:has(> .article-header) > .knowledge-cta .knowledge-cta__inner h2 {
+  font:500 clamp(1.7rem,2.23vw,2.3rem)/1.17 Georgia,"Times New Roman",serif;
+  letter-spacing:-.024em;
+  color:#faf7f1;
+  margin:0 0 .8rem;
+}
+.page-shell:has(> .world-header) > .knowledge-cta .knowledge-cta__inner p,
+.page-shell:has(> .article-header) > .knowledge-cta .knowledge-cta__inner p {font-size:.94rem;line-height:1.62;color:#e2e9dd;margin:0;}
+.page-shell:has(> .world-header) > .knowledge-cta .cta-group,
+.page-shell:has(> .article-header) > .knowledge-cta .cta-group {display:flex;flex-direction:column;align-items:stretch;gap:.8rem;min-width:0;}
+.page-shell:has(> .world-header) > .knowledge-cta .cta-group .button,
+.page-shell:has(> .article-header) > .knowledge-cta .cta-group .button {
+  display:flex;
+  justify-content:center;
+  text-align:center;
+  width:100%;
+  min-height:47px;
+  border-radius:12px;
+}
+.page-shell:has(> .world-header) > .knowledge-cta .cta-group .button--primary,
+.page-shell:has(> .article-header) > .knowledge-cta .cta-group .button--primary {background:#faf7f1;color:#263d32;border-color:#faf7f1;}
+.page-shell:has(> .world-header) > .knowledge-cta .cta-group .button--primary:hover,
+.page-shell:has(> .article-header) > .knowledge-cta .cta-group .button--primary:hover {background:#e7eee2;color:#263d32;border-color:#e7eee2;}
+.page-shell:has(> .world-header) > .knowledge-cta .cta-group .button--secondary,
+.page-shell:has(> .article-header) > .knowledge-cta .cta-group .button--secondary {color:#faf7f1;background:transparent;border-color:rgba(250,247,241,.75);}
+.page-shell:has(> .world-header) > .knowledge-cta .cta-group .button--secondary:hover,
+.page-shell:has(> .article-header) > .knowledge-cta .cta-group .button--secondary:hover {background:#f5eee5;border-color:#f5eee5;color:#263d32;}
+/* Responsive ergonomics */
+@media(max-width:1023px) {
+  .page-shell:has(> .world-header) .article-grid,
+  .page-shell:has(> .world-header) .world-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .page-shell:has(> .world-header) .knowledge-featured-plan__inner {grid-template-columns:1fr;}
+}
+@media(max-width:850px) {
+  .page-shell:has(> .world-header) > .knowledge-cta .knowledge-cta__inner,
+  .page-shell:has(> .article-header) > .knowledge-cta .knowledge-cta__inner {
+    width:min(calc(100% - 2.5rem),680px);
+    grid-template-columns:1fr;
+  }
+  .page-shell:has(> .world-header) > .knowledge-cta .cta-group,
+  .page-shell:has(> .article-header) > .knowledge-cta .cta-group {align-items:flex-start;}
+  .page-shell:has(> .world-header) > .knowledge-cta .cta-group .button,
+  .page-shell:has(> .article-header) > .knowledge-cta .cta-group .button {width:auto;max-width:100%;}
+}
+@media(max-width:650px) {
+  .page-shell:has(> .world-header) .article-grid,
+  .page-shell:has(> .world-header) .world-grid {grid-template-columns:1fr;}
+  .page-shell .world-card,
+  .page-shell .article-card {min-height:0;padding:1.55rem;}
+  .page-shell:has(> .article-header) .related-links ul {grid-template-columns:1fr;}
+  .page-shell:has(> .article-header) .article-content ul,
+  .page-shell:has(> .article-header) .article-content ol {padding:1.1rem 1.2rem 1.1rem 2rem;}
+  .page-shell:has(> .world-header) .world-header {padding:3rem 0;}
+}
+@media(max-width:490px) {
+  .page-shell:has(> .world-header) > .knowledge-cta .knowledge-cta__inner,
+  .page-shell:has(> .article-header) > .knowledge-cta .knowledge-cta__inner {padding:1.55rem;}
+  .page-shell:has(> .world-header) > .knowledge-cta .cta-group,
+  .page-shell:has(> .article-header) > .knowledge-cta .cta-group {align-items:stretch;}
+  .page-shell:has(> .world-header) > .knowledge-cta .cta-group .button,
+  .page-shell:has(> .article-header) > .knowledge-cta .cta-group .button {width:100%;white-space:normal;}
+}
+@media(prefers-reduced-motion:reduce) {
+  .page-shell .world-card,.page-shell .article-card {transition:none;}
+}
+
+/* 2026-10-26: Card typography must override the broader section h2 rule.
+   Wrapping is guaranteed for German compounds and long oil names across all widths. */
+.page-shell:has(> .world-header) > .section .article-grid .article-card h2,
+.page-shell:has(> .world-header) > .section .world-grid .world-card h2,
+.page-shell .knowledge-worlds-section .world-card h2,
+.page-shell .knowledge-world-entrance .world-card h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.38rem, 1.65vw, 1.76rem);
+  font-weight: 500;
+  letter-spacing: -.018em;
+  line-height: 1.27;
+  color: #263d32;
+  margin: 0 0 .85rem;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.page-shell .article-card,
+.page-shell .world-card {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.page-shell .article-card p, .page-shell .world-card p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+
+/* An editorial next-step panel for the 40 oil profiles in each language.
+   Product discovery is placed separately from safety instructions. */
+.page-shell:has(> .article-header) > .oil-discovery {
+  background:#faf7f1;
+  padding:clamp(2rem,3.4vw,3.4rem) 0;
+}
+.page-shell:has(> .article-header) .oil-discovery .knowledge-container {
+  width:min(calc(100% - 2.5rem),1050px);
+  max-width:1050px;
+}
+.page-shell:has(> .article-header) .oil-discovery__inner {
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(210px,.9fr);
+  align-items:center;gap:clamp(1.5rem,3.3vw,3.3rem);
+  padding:clamp(1.65rem,3vw,2.65rem);
+  border:1px solid rgba(111,144,114,.24);
+  border-radius:24px;background:#f1f2ea;
+}
+.page-shell:has(> .article-header) .oil-discovery__eyebrow {
+  color:#718b74;font-size:.71rem;letter-spacing:.13em;
+  font-weight:750;margin:0 0 .65rem;
+}
+.page-shell:has(> .article-header) .oil-discovery h2 {
+  color:#263d32;font:500 clamp(1.75rem,2.34vw,2.45rem)/1.2 Georgia,"Times New Roman",serif;
+  letter-spacing:-.025em;margin:0 0 1rem;
+}
+.page-shell:has(> .article-header) .oil-discovery p:not(.oil-discovery__eyebrow) {
+  color:#586d5c;font-size:.93rem;line-height:1.65;margin:0;
+}
+.page-shell:has(> .article-header) .oil-discovery__actions {display:grid;gap:.8rem;min-width:0;}
+.page-shell:has(> .article-header) .oil-discovery__actions a {
+  display:flex;justify-content:center;align-items:center;
+  min-height:48px;max-width:100%;gap:.65rem;text-align:center;
+  text-decoration:none;font-size:.83rem;font-weight:700;line-height:1.4;
+  border-radius:12px;padding:.75rem 1rem;
+}
+.page-shell:has(> .article-header) .oil-discovery__primary {background:#263d32;color:#faf7f1;border:1px solid #263d32;}
+.page-shell:has(> .article-header) .oil-discovery__primary:hover {background:#3b6046;color:#faf7f1;border-color:#3b6046;}
+.page-shell:has(> .article-header) .oil-discovery__secondary {background:transparent;color:#294c36;border:1px solid #98b099;}
+.page-shell:has(> .article-header) .oil-discovery__secondary:hover {background:#e6eee3;color:#263d32;}
+@media(max-width:800px) {
+  .page-shell:has(> .article-header) .oil-discovery__inner {grid-template-columns:1fr;}
+}
+
+
+
+/* Individuelle Öl-Praxisideen — bilingual, all 48 Oil Library entries */
+.page-shell:has(> .article-header) > .oil-practical-guide {padding:0 0 clamp(2.4rem,4.4vw,4.3rem);background:#faf7f1;}
+.page-shell:has(> .article-header) .oil-practical-guide .knowledge-container {width:min(calc(100% - 2.5rem),1000px);max-width:1000px;}
+.page-shell:has(> .article-header) .oil-practical-guide__panel {
+  padding:clamp(1.55rem,3.1vw,3.1rem);
+  background:#f1f2ea;
+  border:1px solid rgba(105,136,108,.24);
+  border-radius:27px;
+  box-shadow:0 8px 26px rgba(35,58,41,.045);
+}
+.page-shell:has(> .article-header) .oil-practical-guide__heading {max-width:670px;margin-bottom:1.7rem;}
+.page-shell:has(> .article-header) .oil-practical-guide__eyebrow {
+  font-size:.7rem;letter-spacing:.14em;font-weight:750;
+  color:#6b8b6f;text-transform:uppercase;margin:0 0 .8rem;
+}
+.page-shell:has(> .article-header) .oil-practical-guide h2 {
+  font:500 clamp(1.8rem,2.55vw,2.65rem)/1.19 Georgia,"Times New Roman",serif;
+  letter-spacing:-.025em;color:#263d32;margin:0 0 .95rem;
+}
+.page-shell:has(> .article-header) .oil-practical-guide__heading > p:last-child {
+  color:#647365;font-size:.94rem;line-height:1.6;margin:0;
+}
+.page-shell:has(> .article-header) .oil-practical-guide__ideas {
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;
+}
+.page-shell:has(> .article-header) .oil-practical-guide__idea {
+  min-width:0;padding:clamp(1.15rem,2.3vw,1.9rem);
+  background:#faf7f1;border:1px solid rgba(137,161,134,.23);border-radius:19px;
+}
+.page-shell:has(> .article-header) .oil-practical-guide__idea:nth-child(2) {background:#f5eee5;border-color:rgba(163,146,120,.25);}
+.page-shell:has(> .article-header) .oil-practical-guide__idea > span {
+  color:#7c9a7c;font-weight:750;font-size:.71rem;letter-spacing:.12em;
+}
+.page-shell:has(> .article-header) .oil-practical-guide h3 {
+  color:#284335;
+  font:500 clamp(1.28rem,1.72vw,1.68rem)/1.24 Georgia,"Times New Roman",serif;
+  letter-spacing:-.016em;margin:.65rem 0 .9rem;
+  overflow-wrap:anywhere;
+}
+.page-shell:has(> .article-header) .oil-practical-guide__idea p {
+  margin:0;font-size:.94rem;line-height:1.7;color:#576b5b;
+}
+.page-shell:has(> .article-header) .oil-practical-guide__safety {
+  color:#4b6251;font-size:.85rem;line-height:1.65;
+  padding:1rem 0 0;margin:1.55rem 0 0;
+  border-top:1px solid rgba(103,137,105,.22);
+}
+.page-shell:has(> .article-header) .oil-practical-guide__safety strong {font-weight:750;color:#2e503a;}
+.page-shell:has(> .article-header) .oil-practical-guide__label {
+  color:#758476;font-size:.74rem;line-height:1.5;margin:.8rem 0 0;
+}
+@media(max-width:700px) {
+  .page-shell:has(> .article-header) .oil-practical-guide__ideas {grid-template-columns:1fr;}
+}

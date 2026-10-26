@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/glossary/batch/"
 worldId: "glossary"
 worldLabel: "Glossar"
 seoTitle: "Batch einfach erklärt"
-description: "Kurze Erklärung: Ein Batch ist eine bestimmte Produktions- oder Abfüllcharge eines Produkts. Bei ätherischen Ölen kann ein Batch helfen, Qualität, Herkunft und Prüfung besser nachzuvollziehen."
+description: "Batch bedeutet Produktions- oder Abfüllcharge. Erfahre, warum Chargen bei der Prüfung und Rückverfolgbarkeit ätherischer Öle wichtig sind."
 relatedArticleIds:
   - "KO-P041-DE"
   - "KO-P045-DE"

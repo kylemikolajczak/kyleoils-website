@@ -8,7 +8,7 @@ route: "/de/wissen/oel-lexikon/copaiba/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Copaiba ätherisches Öl verständlich erklärt"
-description: "Copaiba ruhig erklärt: warmes Duftprofil, Alltagseinordnung, doTERRA-Beschaffungskontext und sichere Nutzung ohne Heilversprechen."
+description: "Copaiba entdecken: warmes Duftprofil, Alltagsideen, doTERRA-Beschaffungskontext und sichere Nutzung."
 riskLevel: "low"
 cta: "Copaiba mit Kyle einordnen"
 relatedArticleIds:

@@ -2,10 +2,9 @@
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
 import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
-import TopicCard from '../../../components/cards/TopicCard.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
-import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
+import '../../../styles/oils-routines-refined.css';
 
 const applicationMethods = [
   { title: 'Aromatisch', copy: 'Über den Duft, etwa im Diffuser, direkt aus dem geöffneten Fläschchen oder als bewusster Duftmoment.' },
@@ -29,25 +28,106 @@ const intentPaths = [
     <p>Verstehe Anwendung und Themen zuerst. Produkte folgen, wenn sie wirklich passen.</p>
   </HeroSplit>
 
-  <section class="section"><div class="container"><SectionIntro title="Drei Arten der Anwendung"><p>Je nach Produkt können ätherische Öle über Duft, auf der Haut oder labelbewusst innerlich verwendet werden.</p></SectionIntro><div class="application-grid">{applicationMethods.map((method) => <TopicCard title={method.title}><p>{method.copy}</p></TopicCard>)}</div><p class="safety-note">Nicht jedes Öl eignet sich für jede Anwendungsart. Maßgeblich sind immer Etikett und Produktverpackung. Bei Unsicherheit, Schwangerschaft, Stillzeit, Kindern oder bestehenden gesundheitlichen Fragen ist fachlicher Rat wichtig.</p></div></section>
+  <section class="section oils-methods" aria-labelledby="oils-methods-title">
+    <div class="container oils-layout" data-reveal>
+      <header class="oils-section-heading">
+        <p class="eyebrow">ANWENDUNG VERSTEHEN</p>
+        <h2 id="oils-methods-title">Drei Wege, ätherische Öle kennenzulernen.</h2>
+        <p>Duft, Hautpflege und – nur bei ausdrücklich geeigneten Produkten – die innere Anwendung. Entscheidend ist immer, was auf dem jeweiligen Produkt steht.</p>
+      </header>
+      <div class="oils-methods__grid" data-consultation-cards>
+        {applicationMethods.map((method, index) => (
+          <article class="oils-method-card" data-consultation-card>
+            <span class="oils-card-index" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+            <h3>{method.title}</h3>
+            <p>{method.copy}</p>
+          </article>
+        ))}
+      </div>
+      <aside class="oils-safety-note" aria-label="SICHER ANWENDEN">
+        <span class="oils-safety-note__title">SICHER ANWENDEN</span>
+        <p>Nicht jedes Öl eignet sich für jede Anwendungsart. Maßgeblich sind immer Etikett und Produktverpackung. Bei Unsicherheit, Schwangerschaft, Stillzeit, Kindern oder bestehenden gesundheitlichen Fragen ist fachlicher Rat wichtig.</p>
+      </aside>
+    </div>
+  </section>
 
-  <section class="section section--sage"><div class="container"><SectionIntro title="Wo möchtest du anfangen?"><p>Wähle das Thema, das gerade zu deinem Leben passt. Von dort führt dich das Wissen Schritt für Schritt weiter.</p></SectionIntro><div class="intent-grid">{intentPaths.map((path) => <a class="intent-card" href={path.href}><h2>{path.title}</h2><p>{path.copy}</p><span aria-hidden="true">Entdecken →</span></a>)}</div></div></section>
+  <section class="section oils-interests" aria-labelledby="oils-interests-title">
+    <div class="container oils-layout">
+      <header class="oils-section-heading" data-reveal>
+        <p class="eyebrow">WAS PASST ZU DEINEM ALLTAG?</p>
+        <h2 id="oils-interests-title">Kleine Rituale. Große Vielfalt.</h2>
+        <p>Du musst nicht alles gleichzeitig ausprobieren. Starte mit einem Bereich, der sich für dich sinnvoll anfühlt.</p>
+      </header>
+      <div class="oils-interests__grid" data-consultation-cards>
+        {intentPaths.map((path, index) => (
+          <a class="oils-interest-card" href={path.href} data-consultation-card>
+            <span class="oils-card-index" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+            <h3>{path.title}</h3>
+            <p>{path.copy}</p>
+            <span class="oils-interest-card__more">Thema entdecken <span aria-hidden="true">↗</span></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
 
-  <section class="section section--cream"><div class="container split-layout"><div><SectionIntro title="Eine Routine, die wirklich bleibt"><p>Ein guter Einstieg muss nicht groß sein. Ein Duftmoment am Morgen, eine Massage nach Bewegung oder ein bewusst gestalteter Raum können reichen.</p><p>Wähle einen Anlass, eine Anwendung und eine kleine Gewohnheit, die sich leicht wiederholen lässt. So entsteht aus Neugier praktische Erfahrung.</p></SectionIntro></div><ResponsiveImage src="/assets/images/products/diffuser-lemon.jpg" alt="Diffuser und ätherisches Zitronenöl in einer hellen Umgebung" width={3600} height={2400} variant="portrait-wide" position="58% center" sources={[{ type: 'image/avif', srcset: '/assets/images/optimized/diffuser-lemon-640.avif 640w, /assets/images/optimized/diffuser-lemon-960.avif 960w, /assets/images/optimized/diffuser-lemon-1280.avif 1280w' }, { type: 'image/webp', srcset: '/assets/images/optimized/diffuser-lemon-640.webp 640w, /assets/images/optimized/diffuser-lemon-960.webp 960w, /assets/images/optimized/diffuser-lemon-1280.webp 1280w' }]}/></div></section>
+  <section class="section oils-routine" aria-labelledby="oils-routine-title">
+    <div class="container oils-routine__grid" data-reveal>
+      <div class="oils-routine__text">
+        <p class="eyebrow">WENIGER IST OFT MEHR</p>
+        <h2 id="oils-routine-title">Eine Routine, die wirklich bleibt.</h2>
+        <p>Ein guter Einstieg muss nicht groß sein. Ein Duftmoment am Morgen, eine Massage nach Bewegung oder ein bewusst gestalteter Raum können reichen.</p>
+        <p>Wähle einen Anlass, eine sichere Anwendung und eine kleine Gewohnheit, die du leicht wiederholen kannst. So wird aus Neugier etwas, das sich ganz natürlich in deinen Alltag einfügt.</p>
+        <p class="oils-routine__detail">Ein Moment · eine Anwendung · ein kleiner Anfang</p>
+      </div>
+      <ResponsiveImage
+        src="/assets/images/products/diffuser-lemon.jpg"
+        alt="Diffuser und ätherisches Zitronenöl in einer hellen Umgebung"
+        width={3600}
+        height={2400}
+        variant="portrait-wide"
+        position="58% center"
+        treatment="hero"
+        sources={[
+          { type: 'image/avif', srcset: '/assets/images/optimized/diffuser-lemon-640.avif 640w, /assets/images/optimized/diffuser-lemon-960.avif 960w, /assets/images/optimized/diffuser-lemon-1280.avif 1280w' },
+          { type: 'image/webp', srcset: '/assets/images/optimized/diffuser-lemon-640.webp 640w, /assets/images/optimized/diffuser-lemon-960.webp 960w, /assets/images/optimized/diffuser-lemon-1280.webp 1280w' },
+        ]}
+      />
+    </div>
+  </section>
 
-  <section class="section knowledge-continuation"><div class="container narrow-layout"><SectionIntro title="Im Wissensbereich weiterlernen"><p>Im Wissensbereich findest du Ölprofile, sichere Anwendung, Routinen und Produktwissen. So kannst du vertiefen, bevor du etwas auswählst.</p></SectionIntro><a class="knowledge-continuation__link" href="/de/wissen/">Zum Wissensbereich <span aria-hidden="true">→</span></a></div></section>
+  <section class="section oils-learning" aria-labelledby="oils-learning-title">
+    <div class="container oils-learning__inner" data-reveal>
+      <div>
+        <p class="eyebrow">IN DEINEM TEMPO WEITERLERNEN</p>
+        <h2 id="oils-learning-title">Neugierig auf das Warum dahinter?</h2>
+        <p>Im Knowledge Hub findest du verständliche Ölprofile, Hinweise zur sicheren Anwendung und einfache Routinen. Lies nach, vergleiche in Ruhe und entscheide erst dann, was du ausprobieren möchtest.</p>
+        <p class="oils-learning__note">Wissen zuerst. Die Produkte folgen, wenn sie zu dir passen.</p>
+      </div>
+      <div class="oils-learning__actions">
+        <a class="oils-learning__primary" href="/de/wissen/">Zum Knowledge Hub</a>
+        <a class="oils-learning__secondary" href="/de/wissen/sicher-anwenden/">Sichere Anwendung <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
 
-  <CTASection title="Fragen zu deinem Einstieg?" primaryHref="/de/kontakt/" primaryLabel="Mit Kyle sprechen"><p>Wenn du ein Thema besser einordnen möchtest, schauen wir gemeinsam auf einen passenden nächsten Schritt.</p></CTASection>
-  <section class="compliance-section"><div class="container"><ComplianceNote><h2>Kurzer Hinweis</h2><p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung. Ätherische Öle und Wellness-Produkte können Teil bewusster Routinen sein, ersetzen aber keine medizinische Betreuung.</p></ComplianceNote></div></section>
+  <CTASection
+    title="Fragen zu deinem Einstieg?"
+    primaryHref="/de/kontakt/"
+    primaryLabel="Beratung anfragen"
+    secondaryHref="/de/wissen/"
+    secondaryLabel="Wissen entdecken"
+  >
+    <p>Du musst noch kein Öl oder Set ausgewählt haben. Erzähl mir einfach, was dich interessiert – wir finden gemeinsam einen passenden nächsten Schritt.</p>
+  </CTASection>
+
+  <section class="compliance-section oils-compliance">
+    <div class="container">
+      <ComplianceNote label="Hinweis">
+        <p class="oils-compliance__label">Hinweis</p>
+        <p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung. Ätherische Öle und Wellness-Produkte können Teil bewusster Routinen sein, ersetzen aber keine medizinische Betreuung.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+  <script is:inline src="/scripts/consultation-motion.js" defer></script>
 </PageLayout>
-
-<style>
-  .section { padding: var(--space-64) 0; } .section--cream { background: var(--color-soft-cream); } .section--sage { background: rgb(168 184 160 / 20%); } .narrow-layout { max-width: var(--container-text); } .application-grid, .intent-grid, .split-layout { display: grid; gap: var(--space-20); }
-  .safety-note { max-width: var(--container-text); margin: var(--space-32) 0 0; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-soft-cream); color: var(--color-text-secondary); }
-  .intent-card { display: grid; gap: var(--space-12); min-height: 190px; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); color: var(--color-text-primary); text-decoration: none; }
-  .intent-card h2, .intent-card p { margin: 0; } .intent-card h2 { font-size: var(--font-size-h3-mobile); line-height: 1.2; } .intent-card p { color: var(--color-text-secondary); } .intent-card span { align-self: end; margin-top: auto; color: var(--color-deep-forest); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); } .intent-card:hover, .intent-card:focus-visible { border-color: var(--color-sage-green); }
-  .knowledge-continuation { background: var(--color-warm-white); } .knowledge-continuation__link { display: inline-flex; align-items: center; gap: var(--space-8); min-height: 48px; color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; } .knowledge-continuation__link:hover, .knowledge-continuation__link:focus-visible { text-decoration: underline; }
-  .compliance-section { padding: 0 0 var(--space-80); } .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  @media (min-width: 768px) { .section { padding-block: var(--space-96); } .application-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .intent-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); } }
-  @media (min-width: 1024px) { .section { padding-block: var(--space-120); } .intent-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .split-layout { grid-template-columns: minmax(0, 1fr) minmax(360px, .82fr); gap: var(--space-80); align-items: center; } }
-</style>

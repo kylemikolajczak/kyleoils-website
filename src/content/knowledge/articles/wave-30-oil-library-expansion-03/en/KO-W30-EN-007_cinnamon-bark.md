@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/cinnamon-bark-zimtrinde/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Cinnamon Bark explained simply"
-description: "Cinnamon Bark in the Oil Library: scent profile, core area, safe positioning and guidance without healing promises."
+description: "Cinnamon Bark in the Oil Library: scent character, suitable everyday uses, blend ideas and mindful application."
 botanicalName: "Cinnamomum zeylanicum"
 scentFamily: "Hot oil and spice oil"
 pillar: "Warmth, seasons & very conscious use"
@@ -59,23 +59,15 @@ doTERRA lists Cinnamon Bark as an intense spice oil. It also appears in blends s
 
 Kyle Oils translates this product context into language visitors can understand: What do I smell? Why are people looking for this oil? Where does it fit into routines? Which safety boundaries matter?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This oil can be placed publicly like this:
+Explore this oil through these everyday ideas:
 
 - for warm seasonal scent profiles in very small amounts
 - as an example of hot oils and conscious dilution
 - as a learning oil for the difference between scent intensity and use safety
 - for people who want to understand On Guard ingredients better
 
-## What we do not write
-
-These statements do not belong on the public website:
-
-- treat pain or joints
-- recommend undiluted use
-- recommend child or pet routines casually
-- publish capsule recipes
 
 ## How to get to know this oil
 

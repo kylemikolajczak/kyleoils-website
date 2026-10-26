@@ -2,6 +2,7 @@
 import TopicCard from '../../../components/cards/TopicCard.astro';
 import { contactLinks } from '../../../data/externalLinks';
 import PageLayout from '../../../layouts/PageLayout.astro';
+import '../../../styles/legal-refined.css';
 ---
 
 <PageLayout
@@ -10,10 +11,31 @@ import PageLayout from '../../../layouts/PageLayout.astro';
 >
   <section class="legal-hero">
     <div class="container legal-hero__inner">
+      <p class="legal-hero__eyebrow">VERTRAUEN & TRANSPARENZ</p>
       <h1>Datenschutz<wbr />erklärung</h1>
       <p>Informationen darüber, welche personenbezogenen Daten beim Besuch dieser Website verarbeitet werden.</p>
     </div>
   </section>
+
+  <nav class="legal-index" aria-label="Zu den Abschnitten">
+  <div class="container">
+    <div class="legal-index__inner">
+      <p class="legal-index__title">AUF DIESER SEITE</p>
+      <ul class="legal-index__links">
+        <li><a href="#hosting">Hosting</a></li>
+        <li><a href="#server-logfiles">Server-Logfiles</a></li>
+        <li><a href="#google-analytics">Google Analytics 4</a></li>
+        <li><a href="#kontakt-email">Kontakt per E-Mail</a></li>
+        <li><a href="#kontakt-telefon">Kontakt per Telefon</a></li>
+        <li><a href="#whatsapp-link">WhatsApp-Link</a></li>
+        <li><a href="#externe-links">Externe Links</a></li>
+        <li><a href="#rechte">Rechte betroffener Personen</a></li>
+        <li><a href="#speicherdauer">Speicherdauer</a></li>
+        <li><a href="#datensicherheit">Datensicherheit</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
   <section class="section section--cream">
     <div class="container details-grid">

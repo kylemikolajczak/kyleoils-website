@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/glossary/loyalty-rewards-program/"
 worldId: "glossary"
 worldLabel: "Glossar"
 seoTitle: "LRP-Treueprogramm einfach erklärt"
-description: "Kurze Erklärung: Das doTERRA LRP-Treueprogramm ist ein Programm für wiederkehrende Bestellungen, bei dem Mitglieder Treuepunkte sammeln können, die gegen doTERRA Produkte eingelöst werden können."
+description: "Das doTERRA LRP ist ein Treueprogramm für wiederkehrende Bestellungen. Hier erfährst du, wie es funktioniert und was zu beachten ist."
 relatedArticleIds:
   - "KO-P041-DE"
   - "KO-P045-DE"

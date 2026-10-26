@@ -2,10 +2,12 @@
 import SiteHeader from '../components/navigation/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
 import AnalyticsConsent from '../components/global/AnalyticsConsent.astro';
+import GlobalCursor from '../components/global/GlobalCursor.astro';
 import { getLanguagePaths, type Locale } from '../data/locales';
 import type { BreadcrumbItem } from '../data/knowledge';
 import tokensCss from '../styles/tokens.css?inline';
 import globalCss from '../styles/global.css?inline';
+import premiumFrameCss from '../styles/premium-media-frame.css?inline';
 
 interface Props {
   title: string;
@@ -83,6 +85,7 @@ const structuredData = {
     <meta name="p:domain_verify" content="35e6a82d3fa103d880c6364cbd95ba9e" />
     <style set:html={tokensCss} />
     <style set:html={globalCss} />
+    <style set:html={premiumFrameCss} />
     <meta name="theme-color" content="#a8b8a0" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -120,6 +123,7 @@ const structuredData = {
     <main id="main-content"><slot /></main>
     <SiteFooter locale={lang} />
     <AnalyticsConsent locale={lang} />
+    <GlobalCursor />
     <script is:inline>
       (() => {
         const reducedMotion = typeof window.matchMedia === 'function'

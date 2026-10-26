@@ -4,13 +4,10 @@ import CTASection from '../../../components/cta/CTASection.astro';
 import FAQAccordion from '../../../components/faq/FAQAccordion.astro';
 import Button from '../../../components/global/Button.astro';
 import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
-import TopicCard from '../../../components/cards/TopicCard.astro';
-import TrustCard from '../../../components/cards/TrustCard.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
-import SectionIntro from '../../../components/sections/SectionIntro.astro';
-import StepList from '../../../components/sections/StepList.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
 import { contactLinks } from '../../../data/externalLinks';
+import '../../../styles/consultation-refined.css';
 
 const consultationSteps = [
   { title: '1. Du nimmst Kontakt auf', paragraphs: ['Du schreibst mir kurz, worum es bei dir geht. WhatsApp oder E-Mail reichen dafür völlig aus.'] },
@@ -125,38 +122,46 @@ const consultationFaqs = [
     <p>Meine Beratung beginnt mit deiner Situation und den Routinen, die wirklich in deinen Alltag passen. Erst danach ordnen wir ein, ob doTERRA-Produkte oder andere nächste Schritte sinnvoll sein könnten.</p>
   </HeroSplit>
 
-  <section class="section section--cream">
-    <div class="container split-layout">
-      <div>
-        <SectionIntro title="Worum es in der Beratung geht">
-          <p>Ätherische Öle und die doTERRA-Produktwelt können anfangs schnell unübersichtlich wirken. Viele Menschen suchen Orientierung rund um Abendroutinen, stressige Tage, Bewegung und Körperpflege, Raumduft, Familie oder die erste Produktauswahl.</p>
-          <p>Ich erkläre dir die Möglichkeiten verständlich und ohne Fachchinesisch. Statt einer pauschalen Empfehlung bekommst du eine ehrliche Einordnung für deinen Alltag.</p>
-        </SectionIntro>
+  <section class="section consultation-overview" aria-labelledby="consultation-overview-title">
+    <div class="container consultation-overview__grid" data-reveal>
+      <div class="consultation-overview__intro">
+        <p class="eyebrow">PERSÖNLICHE ORIENTIERUNG</p>
+        <h2 id="consultation-overview-title">Worum es bei unserer Beratung wirklich geht</h2>
+        <p>Ätherische Öle und die Produktwelt von doTERRA bieten viele Möglichkeiten. Dabei muss sich niemand sofort auskennen oder schon wissen, welches Produkt das richtige ist.</p>
+        <p>Wir schauen zuerst auf deine Fragen, deine Gewohnheiten und darauf, was sich im Alltag tatsächlich gut anfühlt. Daraus entsteht eine klare, verständliche Orientierung – ganz ohne Entscheidungsdruck.</p>
       </div>
-      <ResponsiveImage
-        src="/assets/images/products/product-detail-01.png"
-        alt="Ätherische Öle auf Naturmaterialien in warmem Licht"
-        width={1672}
-        height={941}
-        variant="portrait-wide"
-        position="64% center"
-        sources={[
-          { type: 'image/avif', srcset: '/assets/images/optimized/product-detail-01-640.avif 640w, /assets/images/optimized/product-detail-01-960.avif 960w, /assets/images/optimized/product-detail-01-1280.avif 1280w' },
-          { type: 'image/webp', srcset: '/assets/images/optimized/product-detail-01-640.webp 640w, /assets/images/optimized/product-detail-01-960.webp 960w, /assets/images/optimized/product-detail-01-1280.webp 1280w' },
-        ]}
-      />
+      <aside class="consultation-overview__promise">
+        <p class="eyebrow">WAS DU ERWARTEN KANNST</p>
+        <ul>
+          {expectations.map((item, index) => (
+            <li><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span><p>{item}</p></li>
+          ))}
+        </ul>
+      </aside>
     </div>
   </section>
 
-  <section class="section section--sage">
+  <section class="section consultation-process" aria-labelledby="consultation-process-title">
     <div class="container">
-      <SectionIntro title="So läuft die Beratung ab" />
-      <StepList steps={consultationSteps} />
+      <header class="consultation-section-header" data-reveal>
+        <p class="eyebrow">IN FÜNF SCHRITTEN</p>
+        <h2 id="consultation-process-title">So einfach läuft unser Gespräch ab.</h2>
+        <p>Vom ersten Hallo bis zur passenden Routine. Jeder Schritt bleibt verständlich und in deinem Tempo.</p>
+      </header>
+      <ol class="consultation-process__grid" data-consultation-cards>
+        {consultationSteps.map((step, index) => (
+          <li class="consultation-process__card" data-consultation-card>
+            <span class="consultation-process__number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+            <h3>{step.title.replace(/^\d+\.\s*/, "")}</h3>
+            {step.paragraphs.map((text) => <p>{text}</p>)}
+          </li>
+        ))}
+      </ol>
     </div>
   </section>
 
-  <section class="section section--cream">
-    <div class="container split-layout split-layout--reverse">
+  <section class="section consultation-support" aria-labelledby="consultation-support-title">
+    <div class="container consultation-support__grid" data-reveal>
       <ResponsiveImage
         src="/assets/images/nature/nature-detail-01.png"
         alt="Heideblüten im warmen Morgenlicht"
@@ -164,51 +169,70 @@ const consultationFaqs = [
         height={1023}
         variant="portrait-wide"
         position="62% center"
+        treatment="hero"
         sources={[
           { type: 'image/avif', srcset: '/assets/images/optimized/nature-detail-01-640.avif 640w, /assets/images/optimized/nature-detail-01-960.avif 960w, /assets/images/optimized/nature-detail-01-1280.avif 1280w' },
           { type: 'image/webp', srcset: '/assets/images/optimized/nature-detail-01-640.webp 640w, /assets/images/optimized/nature-detail-01-960.webp 960w, /assets/images/optimized/nature-detail-01-1280.webp 1280w' },
         ]}
       />
-      <div>
-        <SectionIntro title="Begleitung auch nach dem Start">
-          <p>Wenn du über mich mit doTERRA startest, hast du neben dem Zugang zu Produkten einen persönlichen Ansprechpartner für Auswahl, Anwendung und Routinen.</p>
-          <p>Mit einem offiziellen doTERRA Kundenkonto erhältst du Produkte zum Einkaufspreis und sparst 25 % auf deine Einkäufe. Gerade am Anfang kann das helfen, wenn du den Shop nicht allein einordnen möchtest.</p>
-        </SectionIntro>
+      <div class="consultation-support__copy">
+        <p class="eyebrow">AUCH DANACH FÜR DICH DA</p>
+        <h2 id="consultation-support-title">Du musst deinen Einstieg nicht allein herausfinden.</h2>
+        <p>Die meisten Fragen entstehen erst, wenn die ersten Produkte zu Hause stehen: Wie verwende ich sie richtig? Was passt zusammen? Wie wird eine Routine daraus?</p>
+        <p>Wenn du dich für doTERRA entscheidest, bleibe ich auch nach dem Einstieg ansprechbar. Wir können Anwendung, Verdünnung und alltägliche Gewohnheiten gemeinsam einordnen – passend zu den Produkten, die du tatsächlich nutzt.</p>
+        <p class="consultation-support__note">Persönlich begleitet. Von der ersten Frage bis zur gelebten Routine.</p>
       </div>
     </div>
   </section>
 
-  <section class="section section--cream">
+  <section class="section consultation-topics" aria-labelledby="consultation-topics-title">
     <div class="container">
-      <SectionIntro title="Mögliche Beratungsthemen" />
-      <div class="topic-grid">
-        {consultationTopics.map((topic) => (
-          <TopicCard title={topic.title}>
+      <header class="consultation-section-header" data-reveal>
+        <p class="eyebrow">DEINE INTERESSEN</p>
+        <h2 id="consultation-topics-title">Darüber können wir sprechen.</h2>
+        <p>Das sind typische Gesprächsthemen – keine feste Auswahl. Deine Fragen bestimmen, was wir gemeinsam vertiefen.</p>
+      </header>
+      <div class="consultation-topics__grid" data-consultation-cards>
+        {consultationTopics.map((topic, index) => (
+          <article class:list={["consultation-topic-card", { "consultation-topic-card--featured": index === consultationTopics.length - 1 }]} data-consultation-card>
+            <div class="consultation-topic-card__header">
+              <span class="consultation-topic-card__index" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+              {index === consultationTopics.length - 1 && <span class="consultation-topic-card__flag">BESONDERS SICHERHEITSBEWUSST</span>}
+            </div>
+            <h3>{topic.title}</h3>
             <p>{topic.copy}</p>
-          </TopicCard>
+          </article>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="section section--cream local-guidance-context">
-    <div class="container narrow-layout">
-      <SectionIntro title="Beratung in Lüneburg und online">
-        <p>Wenn du aus Lüneburg oder Umgebung kommst, kannst du dich auch persönlich nach Absprache orientieren. Online, telefonisch und auf Englisch ist Beratung ebenfalls möglich.</p>
-        <Button href="/de/doterra-beratung-lueneburg/" variant="secondary">Mehr zur doTERRA Beratung in Lüneburg</Button>
-      </SectionIntro>
+  <section class="consultation-local" aria-labelledby="consultation-local-title">
+    <div class="container">
+      <div class="consultation-local__inner" data-reveal>
+        <div>
+          <p class="eyebrow">VOR ORT ODER DIGITAL</p>
+          <h2 id="consultation-local-title">Aus Lüneburg. Auch online für dich da.</h2>
+          <p>Du kommst aus Lüneburg oder Umgebung? Nach Absprache ist ein persönliches Gespräch möglich. Telefonisch und online begleite ich dich auch auf Englisch.</p>
+        </div>
+        <Button href="/de/doterra-beratung-lueneburg/" variant="secondary">Mehr zur Beratung in Lüneburg</Button>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container faq-layout">
-      <SectionIntro title="Häufige Fragen zur Beratung" />
+  <section class="section consultation-faq" aria-labelledby="consultation-faq-title">
+    <div class="container consultation-faq__grid">
+      <header class="consultation-faq__intro" data-reveal>
+        <p class="eyebrow">NOCH FRAGEN?</p>
+        <h2 id="consultation-faq-title">Gut zu wissen, bevor wir sprechen.</h2>
+        <p>Hier findest du die häufigsten Antworten. Falls deine Frage nicht dabei ist, kannst du mich direkt anschreiben.</p>
+      </header>
       <FAQAccordion items={consultationFaqs} idPrefix="beratung-faq" />
     </div>
   </section>
 
   <CTASection
-    title="Der einfachste nächste Schritt"
+    title="Lass uns deine Fragen in Ruhe klären."
     primaryHref="/de/kontakt/"
     primaryLabel="Kostenloses Beratungsgespräch anfragen"
     secondaryHref={contactLinks.whatsapp.href}
@@ -221,10 +245,11 @@ const consultationFaqs = [
     <div class="container">
       <ComplianceNote label="Hinweis">
         <p class="compliance-section__label">Hinweis</p>
-        <p>Nein. Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung. Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
+        <p>Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung. Ich gebe keine Heilversprechen und mache keine medizinischen Aussagen.</p>
       </ComplianceNote>
     </div>
   </section>
+  <script is:inline src="/scripts/consultation-motion.js" defer></script>
 </PageLayout>
 
 <style>

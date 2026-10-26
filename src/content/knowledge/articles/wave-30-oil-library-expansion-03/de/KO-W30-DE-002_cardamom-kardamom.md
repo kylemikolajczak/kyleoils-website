@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/cardamom/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Cardamom / Kardamom einfach erklärt"
-description: "Cardamom / Kardamom im Öl-Lexikon: Duftprofil, Kernbereich, sichere Einordnung und Beratung ohne Heilversprechen."
+description: "Cardamom / Kardamom im Öl-Lexikon: Duftcharakter, passende Einsatzideen, Kombinationen und Hinweise zur sicheren Anwendung."
 botanicalName: "Elettaria cardamomum"
 scentFamily: "Gewürzöl"
 pillar: "Bauchgefühl, Essensalltag & warme Duftprofile"
@@ -59,22 +59,15 @@ doTERRA führt Cardamom als warmes Gewürzöl. Im sicheren Kyle-Oils-Kontext wir
 
 Kyle Oils übersetzt diesen Produktkontext in eine Sprache, die für Besucher verständlich bleibt: Was rieche ich? Wofür wird das Öl gesucht? Wo passt es in Routinen? Welche Sicherheitsgrenzen gelten?
 
-## Sichere öffentliche Einordnung
+## Duft- und Anwendungsideen
 
-Dieses Öl lässt sich öffentlich so einordnen:
+Für diese Alltagsmomente ist das Duftprofil interessant:
 
 - für warme Duftmischungen rund um Küche und Alltag
 - als Gewürzprofil im Bereich Bauchgefühl und Essensalltag
 - für Menschen, die nicht sofort zu ZenGest greifen, sondern Einzelöle verstehen möchten
 - als weicheres Gewürzprofil im Vergleich zu sehr starken Hot Oils
 
-## Was wir nicht schreiben
-
-Diese Aussagen gehören nicht auf die öffentliche Website:
-
-- Bauchschmerzen lindern
-- Verdauung behandeln
-- Kapselrezepte gegen Beschwerden veröffentlichen
 
 ## Wie du dieses Öl sinnvoll kennenlernst
 

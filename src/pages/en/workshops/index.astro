@@ -1,11 +1,9 @@
 ---
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
-import TopicCard from '../../../components/cards/TopicCard.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
-import SectionIntro from '../../../components/sections/SectionIntro.astro';
-import StepList from '../../../components/sections/StepList.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
+import '../../../styles/workshops-refined.css';
 
 const workshopFocus = [
   'a clear foundation for essential oils and doTERRA',
@@ -55,7 +53,7 @@ const preparationQuestions = [
 ];
 ---
 
-<PageLayout lang="en" title="doTERRA Workshops | Kyle Oils" description="Calm doTERRA workshops with Kyle: understand essential oils, place starter kits, learn safe-use basics and clarify questions without pressure.">
+<PageLayout lang="en" title="Essential Oil Workshops with Kyle | Kyle Oils" description="Calm doTERRA workshops with Kyle: understand essential oils, place starter kits, learn safe-use basics and clarify questions without pressure.">
   <HeroSplit
     title="doTERRA Workshops with Kyle"
     primaryHref="/en/contact/"
@@ -77,82 +75,84 @@ const preparationQuestions = [
     <p>You can request a workshop for yourself, a small group, friends, family or a professional environment.</p>
   </HeroSplit>
 
-  <section class="section section--cream">
-    <div class="container narrow-layout">
-      <SectionIntro title="What Your Group Takes Away">
-        <p>A workshop gives your group a clear, safety-aware starting point and room for its own questions.</p>
-      </SectionIntro>
-      <ul class="check-list">{workshopFocus.map((item) => <li>{item}</li>)}</ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <SectionIntro title="Workshop formats" />
-      <div class="format-grid">
-        {formats.map((format) => (
-          <TopicCard title={format.title}>
-            <p>{format.intro}</p>
-            {format.label && <h4>{format.label}</h4>}
-            {format.items && <ul>{format.items.map((item) => <li>{item}</li>)}</ul>}
-            {format.paragraphs?.map((paragraph) => <p>{paragraph}</p>)}
-          </TopicCard>
-        ))}
+  <section class="section workshops-outcomes" aria-labelledby="workshops-outcomes-title">
+    <div class="container workshops-wrap">
+      <header class="workshops-heading" data-reveal>
+        <p class="eyebrow">WHAT YOU WILL TAKE AWAY</p>
+        <h2 id="workshops-outcomes-title">Discover, understand and use oils responsibly.</h2>
+        <p>Explore essential oils together in a relaxed setting. Practical explanations, space for questions and ideas you can use in everyday life.</p>
+      </header>
+      <div class="workshops-outcomes__grid" data-consultation-cards>
+        {workshopFocus.map((item,index)=>(<article class="workshops-outcome-card" data-consultation-card>
+          <span class="workshops-number" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+          <p>{item}</p>
+        </article>))}
       </div>
     </div>
   </section>
 
-  <section class="section section--sage">
-    <div class="container narrow-layout">
-      <SectionIntro title="How it works">
-        <p>A workshop can be shaped differently depending on the group.</p>
-        <p>A typical flow:</p>
-      </SectionIntro>
-      <StepList steps={steps} />
-      <p class="section-copy">The flow can be discussed beforehand.</p>
+  <section class="section workshops-formats" aria-labelledby="workshops-formats-title">
+    <div class="container workshops-wrap">
+      <header class="workshops-heading" data-reveal>
+        <p class="eyebrow">YOUR PEOPLE, YOUR FORMAT</p>
+        <h2 id="workshops-formats-title">Three formats. One personal experience.</h2>
+        <p>At home, with a small group or in a professional setting: we adapt the session to the people taking part.</p>
+      </header>
+      <div class="workshops-formats__grid" data-consultation-cards>
+        {formats.map((format,index)=>(<article class="workshops-format-card" data-consultation-card>
+          <div class="workshops-format-card__top"><span class="workshops-number" aria-hidden="true">{String(index+1).padStart(2,"0")}</span><span class="workshops-format-card__tag">WORKSHOP FORMAT</span></div>
+          <h3>{format.title}</h3>
+          <p class="workshops-format-card__intro">{format.intro}</p>
+          {format.label && <h4>{format.label}</h4>}
+          {format.items && <ul>{format.items.map(item=><li>{item}</li>)}</ul>}
+          {format.paragraphs && <div class="workshops-format-card__details">{format.paragraphs.map(paragraph=><p>{paragraph}</p>)}</div>}
+        </article>))}
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container narrow-layout">
-      <SectionIntro title="Preparation">
-        <p>A few simple questions help create a good workshop:</p>
-      </SectionIntro>
-      <ul class="check-list">{preparationQuestions.map((item) => <li>{item}</li>)}</ul>
+  <section class="section workshops-process" aria-labelledby="workshops-process-title">
+    <div class="container workshops-wrap">
+      <header class="workshops-heading" data-reveal>
+        <p class="eyebrow">WHAT TO EXPECT</p>
+        <h2 id="workshops-process-title">From first impressions to everyday routines.</h2>
+        <p>Six simple steps guide the session. We can agree on the topics that matter most to your group beforehand.</p>
+      </header>
+      <ol class="workshops-process__grid" data-consultation-cards>
+        {steps.map((step,index)=>(<li class="workshops-process-card" data-consultation-card>
+          <span class="workshops-process-card__number" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+          <h3>{step.title.replace(/^\d+\.\s*/, "")}</h3>
+        </li>))}
+      </ol>
+      <p class="workshops-process__note">The sequence and focus can be tailored to your group.</p>
     </div>
   </section>
 
-  <CTASection title="Request a workshop" primaryHref="/en/contact/" primaryLabel="Request a Workshop" secondaryHref="/en/consultation/" secondaryLabel="Request Guidance">
-    <p>If you would like to request a workshop with Kyle, send a short message about who the workshop is for and which setting would fit.</p>
-        <p>Kyle will reply with a clear suggestion on whether and how a workshop could work.</p>
+  <section class="section workshops-preparation" aria-labelledby="workshops-preparation-title">
+    <div class="container workshops-wrap workshops-preparation__grid" data-reveal>
+      <div class="workshops-preparation__copy">
+        <p class="eyebrow">GETTING READY</p>
+        <h2 id="workshops-preparation-title">A few questions and we can get started.</h2>
+        <p>You do not need a detailed plan. These five answers help me shape a workshop that feels right for your group.</p>
+        <p class="workshops-preparation__foot">English or German, private or professional: we can work out what suits you together.</p>
+      </div>
+      <div class="workshops-preparation__questions">
+        <ol>{preparationQuestions.map((q,index)=>(<li>
+          <span class="workshops-number" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+          <span>{q}</span>
+        </li>))}</ol>
+      </div>
+    </div>
+  </section>
+
+  <CTASection title="Ready to plan a workshop?" primaryHref="/en/contact/" primaryLabel="Request a Workshop" secondaryHref="/en/consultation/" secondaryLabel="Personal Guidance">
+    <p>Tell me roughly how many people are interested and what you would like to explore. I can help you find the right format, focus and date.</p>
   </CTASection>
-
-  <section class="compliance-section">
-    <div class="container">
-      <ComplianceNote label="Note">
-        <h2>Note</h2>
-        <p>Workshops help people understand doTERRA products, routines and safety questions more clearly. They do not replace medical guidance or make healing promises.</p>
-      </ComplianceNote>
-    </div>
+  <section class="compliance-section workshops-compliance">
+    <div class="container"><ComplianceNote label="IMPORTANT NOTE">
+      <p class="workshops-compliance__label">IMPORTANT NOTE</p>
+      <p>Workshops provide educational information about essential oils, products, routines and responsible use. They do not replace medical advice, diagnosis or treatment, and no medical or healing claims are made.</p>
+    </ComplianceNote></div>
   </section>
+  <script is:inline src="/scripts/consultation-motion.js" defer></script>
 </PageLayout>
-
-<style>
-  .section { padding: var(--space-64) 0; }
-  .section--cream { background: var(--color-soft-cream); }
-  .section--sage { background: rgb(168 184 160 / 20%); }
-  .narrow-layout { max-width: var(--container-text); }
-  .hero-subtitle { color: var(--color-deep-forest); font-size: var(--font-size-h3-mobile); font-weight: var(--font-weight-semibold); }
-  .check-list { display: grid; gap: var(--space-16); margin: 0; padding: 0; list-style: none; }
-  .check-list li { position: relative; padding-left: var(--space-32); color: var(--color-text-secondary); }
-  .check-list li::before { content: ''; position: absolute; top: .72em; left: 0; width: 11px; height: 11px; border-radius: 50%; background: var(--color-sage-green); }
-  .format-grid { display: grid; gap: var(--space-24); }
-  .format-grid :global(.topic-card h4) { margin: var(--space-20) 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  .format-grid :global(.topic-card ul) { display: grid; gap: var(--space-12); margin: 0; padding-left: var(--space-24); }
-  .format-grid :global(.topic-card p + p) { margin-top: var(--space-16); }
-  .section-copy { margin: var(--space-32) 0 0; color: var(--color-text-secondary); }
-  .compliance-section { padding: 0 0 var(--space-80); }
-  .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  @media (min-width: 768px) { .section { padding-block: var(--space-96); } .format-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (min-width: 1024px) { .section { padding-block: var(--space-120); } .format-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .hero-subtitle { font-size: var(--font-size-h3-desktop); } }
-</style>

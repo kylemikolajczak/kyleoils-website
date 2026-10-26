@@ -56,6 +56,16 @@
   };
 
   const backgroundModeAtDrop = () => {
+    // Do not mistake masked hero pixels for the cream page background.
+    // Stay light-on-dark until the real following section reaches this label.
+    const hero = document.querySelector('[data-botanical-hero]');
+    const nextSection = hero && document.querySelector('.botanical-followup');
+    if (nextSection) {
+      const section = nextSection.getBoundingClientRect();
+      const labelRect = word.getBoundingClientRect();
+      const labelY = clamp(labelRect.top + labelRect.height / 2, 0, window.innerHeight - 1);
+      if (section.bottom > labelY) return section.top <= labelY ? 'light' : 'dark';
+    }
     const rect = root.getBoundingClientRect();
     const x = clamp(rect.left + (rect.width / 2), 0, window.innerWidth - 1);
     const y = clamp(rect.top + (rect.height / 2), 0, window.innerHeight - 1);

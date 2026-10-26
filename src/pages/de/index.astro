@@ -1,7 +1,9 @@
 ---
 import CTASection from '../../components/cta/CTASection.astro';
 import Button from '../../components/global/Button.astro';
-import HeroSplit from '../../components/sections/HeroSplit.astro';
+import BotanicalHero from '../../components/sections/BotanicalHero.astro';
+import '../../styles/homepage-unified.css';
+import '../../styles/homepage-refinement.css';
 import ResponsiveImage from '../../components/global/ResponsiveImage.astro';
 import SectionIntro from '../../components/sections/SectionIntro.astro';
 import PageLayout from '../../layouts/PageLayout.astro';
@@ -25,26 +27,25 @@ const nextPaths = [
   title="doTERRA Beratung & ätherische Öle im Alltag | Kyle Oils"
   description="Persönliche doTERRA Beratung, ätherische Öle und alltagstaugliche Routinen: Wissen, Produkte und sichere nächste Schritte mit Kyle einordnen."
 >
-  <HeroSplit
-    title="Natürliche Routinen für mehr Balance im Alltag"
-    primaryHref="/de/kontakt/"
-    primaryLabel="Beratung anfragen"
-    secondaryHref="/de/wissen/"
-    secondaryLabel="Wissen entdecken"
-    imageSrc="/assets/images/kyle/hero-kyle.png"
-    imageAlt="Kyle Daniel Mikolajczak in ruhiger, heller Umgebung"
-    imageWidth={1537}
-    imageHeight={1023}
-    imagePosition="75% center"
-    imageSizes="(min-width: 1024px) 80vw, calc(100vw - 40px)"
-    imageSources={[
-      { type: 'image/avif', srcset: '/assets/images/optimized/hero-kyle-640.avif 640w, /assets/images/optimized/hero-kyle-960.avif 960w, /assets/images/optimized/hero-kyle-1280.avif 1280w, /assets/images/optimized/hero-kyle-1536.avif 1536w' },
-      { type: 'image/webp', srcset: '/assets/images/optimized/hero-kyle-640.webp 640w, /assets/images/optimized/hero-kyle-960.webp 960w, /assets/images/optimized/hero-kyle-1280.webp 1280w, /assets/images/optimized/hero-kyle-1536.webp 1536w' },
-    ]}
-  >
-    <p>Verstehe doTERRA, ätherische Öle und passende Routinen, bevor du entscheidest.</p>
-    <p>Ich höre zu, ordne ein und begleite dich bei den nächsten Schritten.</p>
-  </HeroSplit>
+  <BotanicalHero lang="de" />
+
+  <section class="botanical-followup" aria-labelledby="home-heading">
+    <div class="container botanical-followup__inner" data-reveal>
+      <p class="botanical-followup__eyebrow">KYLE OILS · NATUR BEWUSST ERLEBEN</p>
+      <div class="botanical-followup__content">
+        <h1 id="home-heading">Natürliche Routinen für mehr Balance im Alltag</h1>
+        <div class="botanical-followup__copy">
+          <p class="botanical-followup__sub">Erst verstehen. Dann in Ruhe entscheiden.</p>
+          <p>Verstehe doTERRA, ätherische Öle und passende Routinen, bevor du entscheidest.</p>
+          <p>Ich höre zu, ordne ein und begleite dich bei den nächsten Schritten.</p>
+        </div>
+      </div>
+      <div class="botanical-followup__actions" aria-label="Nächste Schritte">
+      <a href="/de/kontakt/" class="botanical-followup__button botanical-followup__button--primary">Beratung anfragen</a>
+      <a href="/de/wissen/" class="botanical-followup__button botanical-followup__button--secondary">Wissen entdecken</a>
+      </div>
+    </div>
+  </section>
 
   <section class="trust-strip" aria-label="Qualifikation und Begleitung">
     <div class="container trust-strip__inner">
@@ -83,22 +84,41 @@ const nextPaths = [
 
   <section class="section section--sage knowledge-section">
     <div class="container knowledge-section__inner" data-reveal>
-      <p class="eyebrow">WISSEN</p>
-      <SectionIntro title="Wissen, das dich weiterbringt.">
-        <p>Klare Grundlagen, sichere Anwendung, Routinen, Ölprofile und Produktwissen. So findest du einen fundierten Einstieg, der zu deinen Fragen passt.</p>
-      </SectionIntro>
-      <Button href="/de/wissen/">Wissen entdecken</Button>
-      <p class="knowledge-links"><a href="/de/wissen/oel-lexikon/">Öl-Lexikon</a><a href="/de/starter-sets/">Starter-Sets</a><a href="/de/wissen/sicher-anwenden/">Sicher anwenden</a></p>
+      <div class="knowledge-section__header">
+        <p class="eyebrow">GUT INFORMIERT</p>
+        <SectionIntro title="Ätherische Öle verstehen. Sicher anwenden.">
+          <p>Einfach erklärt, ohne Fachchinesisch: Entdecke Öle, Anwendungsmöglichkeiten und Routinen in deinem eigenen Tempo.</p>
+        </SectionIntro>
+      </div>
+      <div class="knowledge-section__action">
+        <Button href="/de/wissen/">Zum Knowledge Hub</Button>
+        <p>Einfach nachlesen, vergleichen und Fragen klären.</p>
+      </div>
+      <div class="knowledge-resources" aria-label="Wissen direkt entdecken">
+        <a class="knowledge-resource" href="/de/wissen/oel-lexikon/">
+          <span class="knowledge-resource__index" aria-hidden="true">01</span>
+          <strong>Öl-Lexikon</strong>
+          <span class="knowledge-resource__description">Ölprofile & Eigenschaften</span>
+        </a>
+        <a class="knowledge-resource" href="/de/starter-sets/">
+          <span class="knowledge-resource__index" aria-hidden="true">02</span>
+          <strong>Starter-Sets</strong>
+          <span class="knowledge-resource__description">Deinen Einstieg vergleichen</span>
+        </a>
+        <a class="knowledge-resource" href="/de/wissen/sicher-anwenden/">
+          <span class="knowledge-resource__index" aria-hidden="true">03</span>
+          <strong>Sicher anwenden</strong>
+          <span class="knowledge-resource__description">Verdünnung & Grundlagen</span>
+        </a>
+      </div>
     </div>
-  </section>
-
-  <section class="section">
+  </section>  <section class="section consultation-section">
     <div class="container split-layout" data-reveal>
       <div>
-        <p class="eyebrow">MIT KYLE STARTEN</p>
-        <SectionIntro title="Beratung, die bei dir beginnt.">
-          <p>Meine Beratung startet nicht mit einer Produktliste. Ich höre erst zu, damit Auswahl und Routinen wirklich zu dir passen.</p>
-          <p>Du bekommst klare Einordnung, einen sicherheitsbewussten Einstieg und jemanden, der auch nach dem Start ansprechbar bleibt.</p>
+        <p class="eyebrow">PERSÖNLICH BEGLEITET</p>
+        <SectionIntro title="Deine Fragen stehen am Anfang.">
+          <p>Nicht das Produkt steht zuerst im Mittelpunkt, sondern du. Wir sprechen darüber, was dich interessiert und welche Routinen zu deinem Alltag passen.</p>
+          <p>Ich helfe dir, Produkte einzuordnen, sie verantwortungsvoll anzuwenden und auch nach deinem Einstieg offene Fragen zu klären.</p>
         </SectionIntro>
         <ul class="trust-points"><li>Klare Produkt- und Routinen-Einordnung</li><li>Sicherheitsbewusste Anwendung</li><li>Persönliche Begleitung, wenn Fragen entstehen</li></ul>
         <div class="credential-row"><img src="/assets/images/certificates/eos-specialist-badge-cropped.png" alt="doTERRA Europe Essential Oils Specialist Zertifikat" width="108" height="108" loading="lazy" decoding="async" /><p><strong>Qualifiziert und persönlich.</strong><br />doTERRA Europe Essential Oils Specialist</p></div>
@@ -111,6 +131,7 @@ const nextPaths = [
         height={941}
         variant="portrait"
         position="50% center"
+        treatment="hero"
         sources={[
           { type: 'image/avif', srcset: '/assets/images/optimized/consultation-01-640.avif 640w, /assets/images/optimized/consultation-01-960.avif 960w, /assets/images/optimized/consultation-01-1280.avif 1280w' },
           { type: 'image/webp', srcset: '/assets/images/optimized/consultation-01-640.webp 640w, /assets/images/optimized/consultation-01-960.webp 960w, /assets/images/optimized/consultation-01-1280.webp 1280w' },
@@ -121,20 +142,26 @@ const nextPaths = [
 
   <section class="section section--cream next-paths-section">
     <div class="container" data-reveal>
-      <p class="eyebrow">WEITERENTDECKEN</p>
-      <SectionIntro title="Wo möchtest du weitermachen?" />
+      <p class="eyebrow">DEINE NÄCHSTEN SCHRITTE</p>
+      <SectionIntro title="Entdecke, was zu dir passt.">
+        <p>Ein bisschen mehr Hintergrund, gemeinsam lernen oder mich persönlich kennenlernen: Du entscheidest, wohin es weitergeht.</p>
+      </SectionIntro>
       <div class="next-paths-grid">
-        {nextPaths.map((path) => <a class="next-path-card" href={path.href}><h2>{path.title}</h2><p>{path.copy}</p><span aria-hidden="true">Weiter →</span></a>)}
+        {nextPaths.map((path) => (
+          <a class="next-path-card" href={path.href}>
+            <h2>{path.title}</h2>
+            <p>{path.copy}</p>
+            <span aria-hidden="true">Mehr erfahren</span>
+          </a>
+        ))}
       </div>
     </div>
-  </section>
-
-  <CTASection
-    title="Möchtest du persönlich starten?"
+  </section>  <CTASection
+    title="Lass uns herausfinden, was zu dir passt."
     primaryHref="/de/kontakt/"
     primaryLabel="Beratung anfragen"
   >
-    <p>Erzähl mir, was dich interessiert. Gemeinsam finden wir einen klaren nächsten Schritt.</p>
+    <p>Du hast Fragen oder möchtest eine passende Routine finden? Schreib mir. Wir schauen gemeinsam, was sinnvoll ist.</p>
   </CTASection>
 
   <section class="homepage-note" aria-label="Hinweis">
@@ -142,9 +169,17 @@ const nextPaths = [
       <p><strong>Hinweis:</strong> Meine Beratung ersetzt keine medizinische Diagnose oder Behandlung. Mein Fokus liegt auf verständlicher Orientierung, sicheren Alltagsroutinen und persönlicher Begleitung.</p>
     </div>
   </section>
+  <script is:inline src="/scripts/home-card-motion.js" defer></script>
 </PageLayout>
 
 <style>
+  .botanical-followup { padding: clamp(4rem, 8vw, 8rem) 0; background: var(--color-warm-white); }
+  .botanical-followup__inner { display: grid; gap: 1.6rem; max-width: 1050px; }
+  .botanical-followup__eyebrow { margin: 0; color: var(--color-olive-grey); letter-spacing: .16em; font-size: .73rem; font-weight: 750; }
+  .botanical-followup h2 { margin: 0 0 1.25rem; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.85rem, 3.3vw, 3.2rem); font-weight: 500; color: var(--color-deep-forest); line-height: 1.17; }
+  .botanical-followup p:not(.botanical-followup__eyebrow) { margin: .45rem 0; color: var(--color-text-secondary); font-size: clamp(1rem, 1.3vw, 1.13rem); max-width: 58ch; }
+  @media (min-width: 800px) { .botanical-followup__inner { grid-template-columns: .38fr 1fr; gap: 3rem; } }
+
   .section { padding: var(--space-64) 0; }
   .section--cream { background: var(--color-soft-cream); }
   .section--nature { position: relative; isolation: isolate; background: var(--color-soft-cream); }

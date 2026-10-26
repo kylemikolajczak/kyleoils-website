@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/marjoram-majoran/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Marjoram explained simply"
-description: "Marjoram in the Oil Library: scent profile, core area, safe positioning and guidance without healing promises."
+description: "Marjoram in the Oil Library: scent character, suitable everyday uses, blend ideas and mindful application."
 botanicalName: "Origanum majorana"
 scentFamily: "Herbal oil"
 pillar: "Evening, massage & calm herbal profiles"
@@ -59,22 +59,15 @@ doTERRA lists Marjoram as an herbal oil. Kyle Oils can safely place it as a warm
 
 Kyle Oils translates this product context into language visitors can understand: What do I smell? Why are people looking for this oil? Where does it fit into routines? Which safety boundaries matter?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This oil can be placed publicly like this:
+Explore this oil through these everyday ideas:
 
 - for soft herbal diffuser blends
 - as an alternative to very bright or very strong profiles
 - for massage and body-care routines without pain claims
 - for evening or quiet areas without sleep promises
 
-## What we do not write
-
-These statements do not belong on the public website:
-
-- relieve pain
-- treat sleep problems
-- medically affect the nervous system
 
 ## How to get to know this oil
 

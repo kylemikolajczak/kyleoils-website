@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/coriander/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Coriander / Koriandersamen einfach erklärt"
-description: "Coriander / Koriandersamen im Öl-Lexikon: Duftprofil, Kernbereich, sichere Einordnung und Beratung ohne Heilversprechen."
+description: "Coriander / Koriandersamen im Öl-Lexikon: Duftcharakter, passende Einsatzideen, Kombinationen und Hinweise zur sicheren Anwendung."
 botanicalName: "Coriandrum sativum"
 scentFamily: "Kräuter- und Gewürzöl"
 pillar: "Küche, Duftfamilien & Bauchgefühl"
@@ -59,22 +59,15 @@ doTERRA unterscheidet Coriander aus dem Samen und Cilantro aus dem Kraut derselb
 
 Kyle Oils übersetzt diesen Produktkontext in eine Sprache, die für Besucher verständlich bleibt: Was rieche ich? Wofür wird das Öl gesucht? Wo passt es in Routinen? Welche Sicherheitsgrenzen gelten?
 
-## Sichere öffentliche Einordnung
+## Duft- und Anwendungsideen
 
-Dieses Öl lässt sich öffentlich so einordnen:
+Für diese Alltagsmomente ist das Duftprofil interessant:
 
 - als Lernöl für den Unterschied zwischen Korianderkraut und Koriandersamen
 - für grün-würzige Duftlogik im Essensalltag
 - als Brücke zwischen Kräuteröl und Gewürzöl
 - für Menschen, die ähnliche Pflanzenprofile besser unterscheiden möchten
 
-## Was wir nicht schreiben
-
-Diese Aussagen gehören nicht auf die öffentliche Website:
-
-- Verdauung behandeln
-- Stimmung oder positive Haltung versprechen
-- innere Anwendung ohne Labelkontext empfehlen
 
 ## Wie du dieses Öl sinnvoll kennenlernst
 

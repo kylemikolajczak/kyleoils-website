@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/bergamot/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Bergamot (Bergamotte) einfach erklärt"
-description: "Eine ruhige Einordnung von Bergamot (Bergamotte): Duftprofil, einfache Routinen, Kombinationen und sichere Anwendung ohne Heilversprechen."
+description: "Bergamot (Bergamotte) im Alltag: Duftcharakter, kombinierbare Duftnoten und Ideen für deine Alltagsroutine."
 relatedArticleIds:
   - "KO-W04-001"
   - "KO-W02-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/bergamot-oil/"
 
 Bergamot ist ein elegantes Zitrusöl für helle, ruhige Duftmischungen und persönliche Raumduft-Routinen.
 
-Diese Seite hilft dir, Bergamot (Bergamotte) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Es geht nicht um Heilversprechen, sondern um klare Orientierung.
+Diese Seite hilft dir, Bergamot (Bergamotte) ruhig einzuordnen: Duft, Alltag, einfache Routinen, Kombinationen und wichtige Sicherheitspunkte. Entdecke konkrete Duftideen, stimmige Kombinationen und bewusste Anwendungen.
 
 ## Duftprofil
 

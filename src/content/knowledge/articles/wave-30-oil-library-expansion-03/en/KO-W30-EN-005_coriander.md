@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/coriander-koriandersamen/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Coriander explained simply"
-description: "Coriander in the Oil Library: scent profile, core area, safe positioning and guidance without healing promises."
+description: "Coriander in the Oil Library: scent character, suitable everyday uses, blend ideas and mindful application."
 botanicalName: "Coriandrum sativum"
 scentFamily: "Herbal and spice oil"
 pillar: "Kitchen, scent families & digestive feel"
@@ -59,22 +59,15 @@ doTERRA distinguishes Coriander from the seed and Cilantro from the leaf of the 
 
 Kyle Oils translates this product context into language visitors can understand: What do I smell? Why are people looking for this oil? Where does it fit into routines? Which safety boundaries matter?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This oil can be placed publicly like this:
+Explore this oil through these everyday ideas:
 
 - as a learning oil for the difference between coriander leaf and coriander seed
 - for green-spicy scent logic in food routines
 - as a bridge between herbal oil and spice oil
 - for people who want to distinguish similar plant profiles more clearly
 
-## What we do not write
-
-These statements do not belong on the public website:
-
-- treat digestion
-- promise mood or positive attitude
-- recommend internal use without label context
 
 ## How to get to know this oil
 

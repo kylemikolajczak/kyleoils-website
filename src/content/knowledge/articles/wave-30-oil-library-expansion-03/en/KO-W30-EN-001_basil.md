@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/basil-basilikum/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Basil explained simply"
-description: "Basil in the Oil Library: scent profile, core area, safe positioning and guidance without healing promises."
+description: "Basil in the Oil Library: scent character, suitable everyday uses, blend ideas and mindful application."
 botanicalName: "Ocimum basilicum"
 scentFamily: "Herbal oil"
 pillar: "Kitchen, food routines & clear scent logic"
@@ -59,22 +59,15 @@ doTERRA lists Basil as a single oil and positions it partly in a culinary and he
 
 Kyle Oils translates this product context into language visitors can understand: What do I smell? Why are people looking for this oil? Where does it fit into routines? Which safety boundaries matter?
 
-## Safe public positioning
+## Everyday ways to explore this product
 
-This oil can be placed publicly like this:
+Explore this oil through these everyday ideas:
 
 - for people who want to understand herbal oils in scent and kitchen logic
 - as a clear green profile in diffuser blends
 - as a learning oil for the difference between culinary herbs and essential oils
 - for guidance around safe, label-based use
 
-## What we do not write
-
-These statements do not belong on the public website:
-
-- treat digestive issues
-- promise concentration
-- recommend internal use casually
 
 ## How to get to know this oil
 

@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/wild-orange-wildorange/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Wild Orange essential oil explained clearly"
-description: "Wild Orange explained calmly: sweet citrus scent, room atmosphere, everyday routines and photosensitivity awareness."
+description: "Explore Wild Orange: sweet citrus scent, room atmosphere, everyday routines and photosensitivity awareness."
 relatedArticleIds:
   - "KO-W07-008"
   - "KO-W08-006"

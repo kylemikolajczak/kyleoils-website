@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/blue-tansy/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Blue Tansy: blauer Duftbaustein für Körperpflege und Massage-Kontext"
-description: "Blue Tansy ist ein besonderes blaues Öl, das oft über Duft, Körperpflege, Hautgefühl und Massage-Kontext eingeordnet wird."
+description: "Blue Tansy: charakteristisches blaues Öl für hochwertige Pflegerituale, verdünnte Massageöle und harmonische Duftmischungen."
 focus: "blaues Öl, Körperpflege, Massage-Kontext, Duftmischungen"
 searchKeywords:
   - "blue tansy"
@@ -46,7 +46,7 @@ sourceUrls:
 ---
 # Blue Tansy: blauer Duftbaustein für Körperpflege und Massage-Kontext
 
-Blue Tansy ist ein besonderes blaues Öl, das oft über Duft, Körperpflege, Hautgefühl und Massage-Kontext eingeordnet wird.
+Blue Tansy: charakteristisches blaues Öl für hochwertige Pflegerituale, verdünnte Massageöle und harmonische Duftmischungen.
 
 ## Fokus
 

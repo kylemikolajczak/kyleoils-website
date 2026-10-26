@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/arborvitae/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Arborvitae: Holzduft, Ruhe und bewusste Verwendung"
-description: "Arborvitae ist ein tiefer Holzduft, der sich für Raumduft, Holzpflege-Kontext und ruhige Duftmischungen eignet."
+description: "Arborvitae: ein charaktervoller Holzduft für ruhige Raumduftmischungen, bewusste Duftmomente und passende Holzpflegeideen."
 focus: "Holzduft, Raumduft, bewusste Duftmischungen"
 searchKeywords:
   - "arborvitae"
@@ -46,7 +46,7 @@ sourceUrls:
 ---
 # Arborvitae: Holzduft, Ruhe und bewusste Verwendung
 
-Arborvitae ist ein tiefer Holzduft, der sich für Raumduft, Holzpflege-Kontext und ruhige Duftmischungen eignet.
+Arborvitae: ein charaktervoller Holzduft für ruhige Raumduftmischungen, bewusste Duftmomente und passende Holzpflegeideen.
 
 ## Fokus
 

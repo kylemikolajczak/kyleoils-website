@@ -10,7 +10,7 @@ deRoute: "/de/wissen/glossar/qualitaetspruefung/"
 worldId: "glossary"
 worldLabel: "Glossary"
 seoTitle: "Quality testing explained simply"
-description: "Short explanation: Quality testing describes tests and controls used to check whether an oil matches the intended standard. doTERRA describes its CPTG testing process in this context."
+description: "How are essential oils assessed for quality? Learn about composition, purity testing and doTERRA’s CPTG testing process."
 relatedArticleIds:
   - "KO-P041-EN"
   - "KO-P045-EN"

@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/basil/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Basil / Basilikum einfach erklärt"
-description: "Basil / Basilikum im Öl-Lexikon: Duftprofil, Kernbereich, sichere Einordnung und Beratung ohne Heilversprechen."
+description: "Basil / Basilikum im Öl-Lexikon: Duftcharakter, passende Einsatzideen, Kombinationen und Hinweise zur sicheren Anwendung."
 botanicalName: "Ocimum basilicum"
 scentFamily: "Kräuteröl"
 pillar: "Küche, Essensalltag & klare Duftlogik"
@@ -59,22 +59,15 @@ doTERRA führt Basil als Einzelöl und positioniert es unter anderem im Küchen-
 
 Kyle Oils übersetzt diesen Produktkontext in eine Sprache, die für Besucher verständlich bleibt: Was rieche ich? Wofür wird das Öl gesucht? Wo passt es in Routinen? Welche Sicherheitsgrenzen gelten?
 
-## Sichere öffentliche Einordnung
+## Duft- und Anwendungsideen
 
-Dieses Öl lässt sich öffentlich so einordnen:
+Für diese Alltagsmomente ist das Duftprofil interessant:
 
 - für Menschen, die Kräuteröle im Duft und in der Küchenlogik verstehen möchten
 - als klares, grünes Profil in Diffuser-Mischungen
 - als Lernöl für den Unterschied zwischen Küchengewürz und ätherischem Öl
 - für Beratung rund um sichere, labelbasierte Anwendung
 
-## Was wir nicht schreiben
-
-Diese Aussagen gehören nicht auf die öffentliche Website:
-
-- Verdauungsprobleme behandeln
-- Konzentration versprechen
-- interne Anwendung pauschal empfehlen
 
 ## Wie du dieses Öl sinnvoll kennenlernst
 

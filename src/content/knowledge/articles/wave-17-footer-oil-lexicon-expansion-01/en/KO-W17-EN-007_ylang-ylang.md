@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/ylang-ylang/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Ylang Ylang explained simply"
-description: "A calm guide to Ylang Ylang: scent profile, simple routines, blending ideas and safe use without medical promises."
+description: "Discover Ylang Ylang: scent character, inspiring everyday rituals, blend ideas and responsible use."
 relatedArticleIds:
   - "KO-W09-001"
   - "KO-W07-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/ylang-ylang-oil/"
 
 Ylang Ylang is an intense floral oil for very small scent accents, warm evening blends and personal scent profiles.
 
-This page helps you understand Ylang Ylang calmly: scent, everyday use, simple routines, blending ideas and important safety points. The goal is not medical promises. The goal is clear orientation.
+This page helps you understand Ylang Ylang calmly: scent, everyday use, simple routines, blending ideas and important safety points. Discover its scent character, practical blend ideas and conscious ways to use it.
 
 ## Scent profile
 

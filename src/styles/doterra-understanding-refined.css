@@ -1,0 +1,353 @@
+/*
+  Kyle Oils / Understanding doTERRA (DE & EN)
+  The page stays warm white: restrained sage and cream inset cards create hierarchy.
+*/
+.page-shell:has(> .dt-overview) {
+  --dt-canvas:#faf7f1;
+  --dt-sage:#f1f2ea;
+  --dt-cream:#f5eee5;
+  --dt-forest:#263d32;
+  background:var(--dt-canvas);
+}
+.page-shell:has(> .dt-overview) > section {background:var(--dt-canvas);}
+.page-shell:has(> .dt-overview) > .hero {padding-block:clamp(3.4rem,5vw,5.6rem);}
+.page-shell:has(> .dt-overview) > .section {padding-block:clamp(3.55rem,5vw,5.1rem);}
+.page-shell:has(> .dt-overview) .dt-wrap {max-width:1190px;}
+.page-shell:has(> .dt-overview) .hero h1 {
+  font-family:Georgia,"Times New Roman",serif;
+  color:var(--dt-forest);
+  font-size:clamp(2.7rem,4.1vw,4.25rem);
+  line-height:1.12;
+  letter-spacing:-.028em;
+  font-weight:500;
+}
+.page-shell:has(> .dt-overview) .eyebrow {
+  font-size:.73rem;
+  font-weight:750;
+  color:#738774;
+  letter-spacing:.145em;
+  text-transform:uppercase;
+  margin:0 0 1rem;
+}
+.page-shell:has(> .dt-overview) .dt-heading {max-width:780px;margin:0 0 clamp(1.6rem,3vw,2.35rem);}
+.page-shell:has(> .dt-overview) .dt-heading h2,
+.page-shell:has(> .dt-overview) .dt-overview h2,
+.page-shell:has(> .dt-overview) .dt-sourcing h2,
+.page-shell:has(> .dt-overview) .dt-account h2,
+.page-shell:has(> .dt-overview) .dt-support h2 {
+  color:var(--dt-forest);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(2.07rem,3.12vw,3.12rem);
+  line-height:1.14;
+  letter-spacing:-.027em;
+  font-weight:500;
+  margin:0 0 1rem;
+}
+.page-shell:has(> .dt-overview) .dt-heading > p:last-child,
+.page-shell:has(> .dt-overview) .dt-overview__heading > p:last-child,
+.page-shell:has(> .dt-overview) .dt-sourcing__copy > p:not(.eyebrow):not(.dt-sourcing__note),
+.page-shell:has(> .dt-overview) .dt-account__copy > p:not(.eyebrow):not(.dt-account__note) {
+  color:#627164;
+  font-size:1rem;
+  line-height:1.68;
+  margin:0;
+  max-width:65ch;
+}
+/* Intro: short editorial preface and factual overview in a restrained premium card. */
+.page-shell:has(> .dt-overview) .dt-overview__layout {
+  display:grid;
+  grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+  align-items:center;
+  gap:clamp(2rem,5vw,5rem);
+}
+.page-shell:has(> .dt-overview) .dt-overview__panel {
+  padding:clamp(1.6rem,2.7vw,2.7rem);
+  background:var(--dt-cream);
+  border:1px solid rgba(163,146,120,.25);
+  border-radius:25px;
+  box-shadow:0 8px 26px rgba(64,60,45,.037);
+}
+.page-shell:has(> .dt-overview) .dt-overview__panel > p {
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.34rem,1.72vw,1.75rem);
+  line-height:1.4;
+  color:#3f5b45;
+  margin:0 0 1.35rem;
+}
+.page-shell:has(> .dt-overview) .dt-overview__panel ul {
+  margin:0;padding:1.3rem 0 0;
+  border-top:1px solid rgba(151,141,118,.25);
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  gap:.65rem;
+}
+.page-shell:has(> .dt-overview) .dt-overview__panel li {
+  font-size:.76rem;
+  line-height:1.35;
+  font-weight:700;
+  color:#52735a;
+  padding:.57rem .85rem;
+  background:var(--dt-sage);
+  border:1px solid rgba(102,139,104,.18);
+  border-radius:99px;
+}
+/* Quality: six balanced cards with only subtle motion. */
+.page-shell:has(> .dt-overview) .dt-quality__grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  list-style:none;
+  margin:0;
+  padding:0;
+  gap:clamp(.85rem,1.6vw,1.3rem);
+}
+.page-shell:has(> .dt-overview) .dt-quality__card,
+.page-shell:has(> .dt-overview) .dt-products__card {
+  min-width:0;
+  min-height:164px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:1.5rem;
+  border:1px solid rgba(106,137,108,.22);
+  border-radius:23px;
+  padding:clamp(1.45rem,2.3vw,2rem);
+  background:var(--dt-sage);
+  box-shadow:0 8px 26px rgba(39,65,45,.04);
+}
+.page-shell:has(> .dt-overview) .dt-number {
+  display:inline-block;
+  color:#7f9a80;
+  font-size:.75rem;
+  font-weight:750;
+  letter-spacing:.14em;
+  line-height:1.3;
+  flex:0 0 auto;
+}
+.page-shell:has(> .dt-overview) .dt-quality__card h3,
+.page-shell:has(> .dt-overview) .dt-products__card h3 {
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.28rem,1.72vw,1.75rem);
+  font-weight:500;
+  color:var(--dt-forest);
+  line-height:1.32;
+  letter-spacing:-.019em;
+  margin:0;
+}
+/* Provenance: one cream inset grouping story and the five priorities. */
+.page-shell:has(> .dt-overview) .dt-sourcing__panel {
+  display:grid;
+  grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+  gap:clamp(2rem,4.6vw,4.6rem);
+  align-items:center;
+  padding:clamp(1.9rem,3.5vw,3.3rem);
+  border:1px solid rgba(162,147,119,.23);
+  border-radius:27px;
+  background:var(--dt-cream);
+  box-shadow:0 8px 27px rgba(64,57,44,.039);
+}
+.page-shell:has(> .dt-overview) .dt-sourcing__tag {
+  display:inline-flex;
+  color:#4c7256;
+  font-size:.75rem;
+  font-weight:700;
+  margin:1.5rem 0 .8rem;
+  background:#edf1e7;
+  border:1px solid rgba(108,142,109,.22);
+  padding:.65rem 1rem;
+  border-radius:99px;
+}
+.page-shell:has(> .dt-overview) .dt-sourcing__note {
+  margin:0;
+  color:#7a8276;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.page-shell:has(> .dt-overview) .dt-sourcing__list,
+.page-shell:has(> .dt-overview) .dt-account__list {
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+}
+.page-shell:has(> .dt-overview) .dt-sourcing__list li,
+.page-shell:has(> .dt-overview) .dt-account__list li {
+  display:flex;
+  gap:1rem;
+  align-items:baseline;
+  padding:1rem .1rem;
+  border-bottom:1px solid rgba(147,139,117,.22);
+  color:#49624e;
+  font-size:.94rem;
+  line-height:1.55;
+}
+.page-shell:has(> .dt-overview) .dt-sourcing__list li:last-child,
+.page-shell:has(> .dt-overview) .dt-account__list li:last-child {border-bottom:0;}
+.page-shell:has(> .dt-overview) .dt-products__grid {
+  display:grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:clamp(.85rem,1.6vw,1.3rem);
+}
+.page-shell:has(> .dt-overview) .dt-products__card {
+  grid-column:span 3;
+  min-height:158px;
+}
+.page-shell:has(> .dt-overview) .dt-products__card:nth-last-child(-n+3) {
+  grid-column:span 4;
+  background:var(--dt-cream);
+  border-color:rgba(159,144,121,.23);
+}
+/* Account: six clearly legible benefits and accurate wholesale qualification. */
+.page-shell:has(> .dt-overview) .dt-account__layout {
+  display:grid;
+  grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+  align-items:center;
+  gap:clamp(2rem,4.7vw,5.2rem);
+}
+.page-shell:has(> .dt-overview) .dt-account__note {
+  font-size:.87rem;
+  color:#527158;
+  line-height:1.65;
+  margin:1.6rem 0 0;
+  padding:1.05rem 1.2rem;
+  border-left:2px solid #92ad8e;
+  border-radius:0 12px 12px 0;
+  background:rgba(239,242,233,.78);
+}
+.page-shell:has(> .dt-overview) .dt-account__list {
+  border:1px solid rgba(103,140,107,.24);
+  border-radius:26px;
+  background:var(--dt-sage);
+  box-shadow:0 8px 27px rgba(43,68,46,.04);
+  padding:clamp(1.5rem,2.75vw,2.75rem);
+}
+.page-shell:has(> .dt-overview) .dt-account__list li {
+  border-color:rgba(113,144,115,.19);
+  padding:.86rem 0;
+}
+/* Personal support: set apart only by an inset panel, not a dark full-page stripe. */
+.page-shell:has(> .dt-overview) .dt-support__panel {
+  display:grid;
+  grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);
+  align-items:center;
+  gap:clamp(2rem,5vw,5rem);
+  background:var(--dt-sage);
+  border:1px solid rgba(102,134,106,.24);
+  border-radius:27px;
+  box-shadow:0 7px 24px rgba(39,61,43,.037);
+  padding:clamp(1.75rem,3.6vw,3.45rem);
+}
+.page-shell:has(> .dt-overview) .dt-support__text p {
+  color:#55705b;
+  font-size:1rem;
+  line-height:1.72;
+  margin:0 0 1rem;
+}
+.page-shell:has(> .dt-overview) .dt-support__text p:last-child {margin:0;}
+/* Same compact CTA and neutral note system as the other nine main pages. */
+.page-shell:has(> .dt-overview) > .cta-section {
+  padding-block:clamp(2.35rem,3.65vw,3.55rem);
+}
+.page-shell:has(> .dt-overview) > .cta-section .cta-section__inner {
+  width:min(calc(100% - 2.5rem),1080px);
+  max-width:1080px;
+  box-sizing:border-box;
+  margin-inline:auto;
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);
+  gap:clamp(1.45rem,3.35vw,3.2rem);
+  align-items:center;
+  padding:clamp(1.85rem,3.3vw,2.8rem);
+  background:var(--dt-forest);
+  border-radius:27px;
+  box-shadow:0 18px 38px rgba(38,61,50,.12);
+}
+.page-shell:has(> .dt-overview) > .cta-section .cta-section__inner h2 {
+  color:#faf7f1;
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:500;
+  font-size:clamp(1.7rem,2.28vw,2.3rem);
+  letter-spacing:-.024em;
+  line-height:1.17;
+  margin:0 0 .85rem;
+}
+.page-shell:has(> .dt-overview) > .cta-section .cta-section__copy {
+  color:#e2e8dc;
+  font-size:.94rem;
+  line-height:1.62;
+  max-width:55ch;
+}
+.page-shell:has(> .dt-overview) > .cta-section .cta-group {display:flex;flex-direction:column;align-items:stretch;gap:.82rem;min-width:0;}
+.page-shell:has(> .dt-overview) > .cta-section .cta-group .button {width:100%;text-align:center;justify-content:center;}
+.page-shell:has(> .dt-overview) > .cta-section .cta-group .button--secondary {color:#faf7f1;border-color:rgba(250,247,241,.72);background:transparent;}
+.page-shell:has(> .dt-overview) > .cta-section .cta-group .button--secondary:hover,
+.page-shell:has(> .dt-overview) > .cta-section .cta-group .button--secondary:focus-visible {color:#263d32;background:#f5eee5;border-color:#f5eee5;}
+.page-shell:has(> .dt-overview) > .dt-compliance {padding:0 0 clamp(2rem,4vw,4rem);}
+.page-shell:has(> .dt-overview) > .dt-compliance > .container {display:flex;justify-content:center;}
+.page-shell:has(> .dt-overview) > .dt-compliance .compliance-note {
+  box-sizing:border-box;
+  width:min(100%,760px);
+  margin-inline:auto;
+  border:1px solid rgba(172,153,117,.32);
+  border-radius:19px;
+  background:#f4eee3;
+  padding:1.1rem 1.45rem;
+  box-shadow:0 5px 18px rgba(65,58,44,.035);
+}
+.page-shell:has(> .dt-overview) > .dt-compliance .dt-compliance__label {font-size:.7rem;letter-spacing:.12em;font-weight:750;text-transform:uppercase;color:#6f6857;margin:0 0 .45rem;}
+.page-shell:has(> .dt-overview) > .dt-compliance .compliance-note p:last-child {font-size:.86rem;color:#625f54;line-height:1.65;margin:0;}
+@media (prefers-reduced-motion:no-preference) {
+  html.consultation-cards-ready .page-shell .dt-quality__card[data-consultation-card]:not(.is-in-view),
+  html.consultation-cards-ready .page-shell .dt-products__card[data-consultation-card]:not(.is-in-view) {
+    opacity:0;
+    transform:translate3d(var(--consultation-offset,-34px),9px,0);
+  }
+  html.consultation-cards-ready .page-shell .dt-quality__card[data-consultation-card],
+  html.consultation-cards-ready .page-shell .dt-products__card[data-consultation-card] {
+    transition:opacity .65s ease var(--consultation-delay,0ms),
+      transform .75s cubic-bezier(.22,1,.36,1) var(--consultation-delay,0ms);
+  }
+  html.consultation-cards-ready .page-shell [data-consultation-card].is-in-view {opacity:1;transform:translate3d(0,0,0);}
+}
+@media(max-width:1023px){
+ .page-shell:has(> .dt-overview) .dt-overview__layout,
+ .page-shell:has(> .dt-overview) .dt-sourcing__panel,
+ .page-shell:has(> .dt-overview) .dt-account__layout,
+ .page-shell:has(> .dt-overview) .dt-support__panel {grid-template-columns:1fr;}
+ .page-shell:has(> .dt-overview) .dt-products__card {grid-column:span 4;}
+ .page-shell:has(> .dt-overview) .dt-products__card:nth-last-child(-n+3){grid-column:span 4;}
+ .page-shell:has(> .dt-overview) .dt-quality__grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:850px){
+ .page-shell:has(> .dt-overview) > .cta-section .cta-section__inner {grid-template-columns:1fr;width:min(calc(100% - 2.5rem),680px);}
+ .page-shell:has(> .dt-overview) > .cta-section .cta-group {align-items:flex-start;}
+ .page-shell:has(> .dt-overview) > .cta-section .cta-group .button {width:auto;max-width:100%;}
+}
+@media(max-width:650px){
+ .page-shell:has(> .dt-overview) > .section {padding-block:3.15rem;}
+ .page-shell:has(> .dt-overview) .dt-quality__grid {grid-template-columns:1fr;}
+ .page-shell:has(> .dt-overview) .dt-quality__card {min-height:0;}
+ .page-shell:has(> .dt-overview) .dt-products__card,.page-shell:has(> .dt-overview) .dt-products__card:nth-last-child(-n+3) {grid-column:span 6;min-height:148px;}
+ .page-shell:has(> .dt-overview) .dt-account__list,.page-shell:has(> .dt-overview) .dt-sourcing__panel,.page-shell:has(> .dt-overview) .dt-overview__panel {padding:1.5rem;}
+}
+@media(max-width:490px){
+ .page-shell:has(> .dt-overview) .dt-products__card,.page-shell:has(> .dt-overview) .dt-products__card:nth-last-child(-n+3) {grid-column:span 12;min-height:0;}
+ .page-shell:has(> .dt-overview) .dt-support__panel {padding:1.5rem;}
+ .page-shell:has(> .dt-overview) > .cta-section .cta-section__inner {padding:1.55rem;}
+ .page-shell:has(> .dt-overview) > .cta-section .cta-group {align-items:stretch;}
+ .page-shell:has(> .dt-overview) > .cta-section .cta-group .button {width:100%;white-space:normal;}
+}
+
+/* Keep the primary CTA readable against the dark forest panel at every viewport. */
+.page-shell:has(> .dt-overview) > .cta-section .cta-group .button--primary {
+  background: #faf7f1;
+  color: #263d32;
+  border-color: #faf7f1;
+}
+.page-shell:has(> .dt-overview) > .cta-section .cta-group .button--primary:hover,
+.page-shell:has(> .dt-overview) > .cta-section .cta-group .button--primary:focus-visible {
+  background: #e5ecdf;
+  border-color: #e5ecdf;
+  color: #263d32;
+}

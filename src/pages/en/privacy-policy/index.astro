@@ -2,6 +2,7 @@
 import TopicCard from '../../../components/cards/TopicCard.astro';
 import { contactLinks } from '../../../data/externalLinks';
 import PageLayout from '../../../layouts/PageLayout.astro';
+import '../../../styles/legal-refined.css';
 ---
 
 <PageLayout
@@ -11,10 +12,31 @@ import PageLayout from '../../../layouts/PageLayout.astro';
 >
   <section class="legal-hero">
     <div class="container legal-hero__inner">
+      <p class="legal-hero__eyebrow">TRUST & TRANSPARENCY</p>
       <h1>Privacy Policy</h1>
       <p>Information about which personal data is processed when you visit this website.<br /><small>This English version is provided for information only. In the event of any discrepancy, the German version shall prevail.</small></p>
     </div>
   </section>
+
+  <nav class="legal-index" aria-label="Jump to section">
+  <div class="container">
+    <div class="legal-index__inner">
+      <p class="legal-index__title">ON THIS PAGE</p>
+      <ul class="legal-index__links">
+        <li><a href="#hosting">Hosting</a></li>
+        <li><a href="#server-logfiles">Server Log Files</a></li>
+        <li><a href="#google-analytics">Google Analytics 4</a></li>
+        <li><a href="#kontakt-email">Contact by Email</a></li>
+        <li><a href="#kontakt-telefon">Contact by Telephone</a></li>
+        <li><a href="#whatsapp-link">WhatsApp Link</a></li>
+        <li><a href="#externe-links">External Links</a></li>
+        <li><a href="#rechte">Rights of Data Subjects</a></li>
+        <li><a href="#speicherdauer">Retention Period</a></li>
+        <li><a href="#datensicherheit">Data Security</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
   <section class="section section--cream">
     <div class="container details-grid">

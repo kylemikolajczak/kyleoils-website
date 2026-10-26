@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/myrrh-myrrhe/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Myrrh: resin scent, skin care and calm rituals"
-description: "Myrrh is a warm resin scent for skin care, calm scent moments and conscious rituals."
+description: "Myrrh adds a warm, balsamic resin note to refined blends, mindful body care and calm evening scent rituals."
 focus: "resin scent, skin care, calm rituals"
 searchKeywords:
   - "myrrh"
@@ -46,7 +46,7 @@ sourceUrls:
 ---
 # Myrrh: resin scent, skin care and calm rituals
 
-Myrrh is a warm resin scent for skin care, calm scent moments and conscious rituals.
+Myrrh adds a warm, balsamic resin note to refined blends, mindful body care and calm evening scent rituals.
 
 ## Focus
 

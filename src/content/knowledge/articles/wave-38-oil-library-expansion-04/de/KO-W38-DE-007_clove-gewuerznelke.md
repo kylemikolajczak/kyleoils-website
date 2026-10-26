@@ -3,14 +3,14 @@ id: "KO-W38-DE-007"
 translationPairId: "KO-W38-PAIR-007"
 language: "de"
 status: "approved-content-pack-ready"
-title: "Clove: warmes Gewürzöl mit klarer Verdünnungsgrenze"
+title: "Clove (Gewürznelke): warmer, würziger Duft"
 slug: "clove-gewuerznelke"
 route: "/de/wissen/oel-lexikon/clove-gewuerznelke/"
 enRoute: "/en/knowledge/oil-library/clove/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
-seoTitle: "Clove: warmes Gewürzöl mit klarer Verdünnungsgrenze"
-description: "Clove ist ein intensives warmes Gewürzöl, das wegen seiner Stärke besonders vorsichtig eingeordnet werden sollte."
+seoTitle: "Clove (Gewürznelke): warmer, würziger Duft"
+description: "Clove (Gewürznelke): intensiver, warmer Gewürzduft für ausgewählte saisonale Diffusermischungen. Anwendung und Verdünnung bewusst wählen."
 focus: "Gewürzöl, Hot Oil, Verdünnung, saisonaler Duft"
 searchKeywords:
   - "clove"
@@ -44,9 +44,9 @@ sourceUrls:
   - "https://www.doterra.com/US/en/thyme-oil-education"
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
 ---
-# Clove: warmes Gewürzöl mit klarer Verdünnungsgrenze
+# Clove (Gewürznelke): warmer, würziger Duft
 
-Clove ist ein intensives warmes Gewürzöl, das wegen seiner Stärke besonders vorsichtig eingeordnet werden sollte.
+Clove (Gewürznelke): intensiver, warmer Gewürzduft für ausgewählte saisonale Diffusermischungen. Anwendung und Verdünnung bewusst wählen.
 
 ## Fokus
 

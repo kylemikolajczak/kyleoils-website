@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/lemongrass-zitronengras/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Lemongrass explained simply"
-description: "A calm guide to Lemongrass: scent profile, simple routines, blending ideas and safe use without medical promises."
+description: "Discover Lemongrass: scent character, inspiring everyday rituals, blend ideas and responsible use."
 relatedArticleIds:
   - "KO-W09-001"
   - "KO-W07-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/lemongrass-oil/"
 
 Lemongrass is a very present oil for bright room-scent blends, fresh routines and conscious scent accents.
 
-This page helps you understand Lemongrass calmly: scent, everyday use, simple routines, blending ideas and important safety points. The goal is not medical promises. The goal is clear orientation.
+This page helps you understand Lemongrass calmly: scent, everyday use, simple routines, blending ideas and important safety points. Discover its scent character, practical blend ideas and conscious ways to use it.
 
 ## Scent profile
 

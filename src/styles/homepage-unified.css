@@ -1,0 +1,144 @@
+/*
+ * Kyle Oils homepage content — unified light canvas after the cinematic hero.
+ * Only applies to the two homepages; other site sections remain unchanged.
+ * Keep existing hero, sticky scrolling, header and footer intact.
+ */
+.page-shell:has(> .botanical-hero) {
+  --home-canvas: #faf7f1;
+  background: var(--home-canvas);
+}
+.page-shell:has(> .botanical-hero) > :is(
+  .botanical-followup, .trust-strip, .section, .cta-section, .homepage-note
+) {
+  background-color: var(--home-canvas);
+}
+.page-shell:has(> .botanical-hero) .section--nature::before,
+.page-shell:has(> .botanical-hero) .section--nature::after {
+  content: none;
+  display: none;
+  background-image: none;
+}
+
+/* The original 90svh overlap is essential to the DarkBrain-style hero unroll.
+ * Center useful content inside it instead of leaving a giant empty tail. */
+@media (min-width: 801px) {
+  body:has(.botanical-hero) .botanical-followup {
+    min-height: 90svh;
+    padding: clamp(3.6rem, 7svh, 5.5rem) 0;
+    display: flex;
+    align-items: center;
+  }
+  .page-shell:has(> .botanical-hero) .botanical-followup__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(218px, 258px);
+    column-gap: clamp(2.25rem, 5vw, 5.75rem);
+    row-gap: 1.4rem;
+    align-items: center;
+    max-width: 1120px;
+    width: min(100% - 2.5rem, 1120px);
+  }
+  .page-shell:has(> .botanical-hero) .botanical-followup__eyebrow {
+    grid-column: 1 / -1;
+    margin: 0 0 .15rem;
+    align-self: end;
+  }
+  .page-shell:has(> .botanical-hero) .botanical-followup__content {
+    min-width: 0;
+    max-width: 690px;
+  }
+  .page-shell:has(> .botanical-hero) .botanical-followup__actions {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: stretch;
+    gap: .85rem;
+    margin: 0;
+  }
+  .page-shell:has(> .botanical-hero) .botanical-followup__button {
+    width: 100%;
+  }
+}
+.page-shell:has(> .botanical-hero) .botanical-followup__content h1 {
+  margin: 0 0 1.15rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 3.8vw, 4.15rem);
+  line-height: 1.09;
+  letter-spacing: -.027em;
+  color: var(--color-deep-forest);
+}
+.page-shell:has(> .botanical-hero) .botanical-followup__copy {
+  max-width: 57ch;
+}
+.page-shell:has(> .botanical-hero) .botanical-followup__copy p {
+  margin-block: .45rem;
+}
+.page-shell:has(> .botanical-hero) .botanical-followup__copy .botanical-followup__sub {
+  margin-bottom: 1rem;
+  color: #496b58;
+  font-weight: 500;
+}
+
+/* One serene cream-white canvas; differentiated cards, not alternating bands. */
+.page-shell:has(> .botanical-hero) > .section {
+  padding-block: clamp(3.75rem, 5.4vw, 4.9rem);
+}
+.page-shell:has(> .botanical-hero) > .trust-strip {
+  padding-block: 1.25rem;
+  border-bottom-color: rgba(91, 110, 87, .16);
+}
+.page-shell:has(> .botanical-hero) .intent-card {
+  background: #f1f2ea;
+  border-color: rgba(112, 138, 112, .22);
+  box-shadow: 0 7px 23px rgba(35, 65, 43, .055);
+}
+.page-shell:has(> .botanical-hero) .next-path-card {
+  background: #f5eee5;
+  border-color: rgba(162, 150, 122, .24);
+  box-shadow: 0 7px 23px rgba(35, 65, 43, .045);
+}
+.page-shell:has(> .botanical-hero) .intent-card:hover,
+.page-shell:has(> .botanical-hero) .next-path-card:hover {
+  box-shadow: 0 13px 28px rgba(35, 65, 43, .12);
+}
+.page-shell:has(> .botanical-hero) > .cta-section {
+  padding-block: clamp(3rem, 5vw, 4rem);
+}
+.page-shell:has(> .botanical-hero) > .homepage-note {
+  padding-bottom: 2.6rem;
+}
+
+@media (max-width: 800px) {
+  body:has(.botanical-hero) .botanical-followup {
+    display: block;
+    margin-top: 0;
+    min-height: 0;
+    padding: 3.5rem 0 3.1rem;
+  }
+  .page-shell:has(> .botanical-hero) .botanical-followup__inner {
+    display: block;
+    width: min(100% - 2.4rem, 670px);
+    max-width: 670px;
+  }
+  .page-shell:has(> .botanical-hero) .botanical-followup__eyebrow {
+    margin-bottom: .9rem;
+  }
+  .page-shell:has(> .botanical-hero) .botanical-followup__content h1 {
+    font-size: clamp(2.25rem, 6vw, 3.35rem);
+  }
+  .page-shell:has(> .botanical-hero) .botanical-followup__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+    margin-top: 1.7rem;
+  }
+  .page-shell:has(> .botanical-hero) > .section {
+    padding-block: 3.5rem;
+  }
+}
+@media (max-width: 520px) {
+  .page-shell:has(> .botanical-hero) .botanical-followup__button {
+    flex: 1 1 100%;
+  }
+}

@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/glossary/botanical-name/"
 worldId: "glossary"
 worldLabel: "Glossar"
 seoTitle: "Botanischer Name einfach erklärt"
-description: "Kurze Erklärung: Der botanische Name ist die wissenschaftliche Pflanzenbezeichnung eines Öls, zum Beispiel Citrus limon für Lemon. Er hilft, Pflanzen klar zu unterscheiden, auch wenn Alltagsnamen ähnlich klingen."
+description: "Der botanische Name bezeichnet die Pflanzenart, etwa Citrus limon. So lassen sich ätherische Öle auch bei ähnlichen Alltagsnamen unterscheiden."
 relatedArticleIds:
   - "KO-P041-DE"
   - "KO-P045-DE"

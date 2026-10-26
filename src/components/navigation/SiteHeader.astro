@@ -82,4 +82,178 @@ const isCurrentGroup = (items: readonly { href: string }[]) => items.some((item)
   .header-cta { min-height: 48px; align-items: center; padding: 0 var(--space-20); border-radius: var(--radius-button); background: var(--color-deep-forest); color: var(--color-warm-white); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); text-decoration: none; }
   @media (min-width: 520px) { .brand small { display: block; } }
   @media (min-width: 1180px) { .header-inner { min-height: 88px; } .brand__mark { width: 64px; height: 64px; } .desktop-navigation, .desktop-language, .header-cta { display: flex; } .desktop-language { align-items: center; } }
+
+  /* Kyle Oils Global Navigation • visual refinement only; original routes and scroll behavior stay intact. */
+  .site-header {
+    position: relative;
+    z-index: 45;
+    background: rgb(250 247 241 / 98%);
+    border-bottom: 1px solid rgb(116 137 113 / 19%);
+    box-shadow: 0 8px 24px rgb(47 62 49 / 3%);
+  }
+  .header-inner { gap: clamp(12px, 1.35vw, 20px); }
+  .brand {
+    min-width: 0;
+    flex: 0 1 auto;
+    gap: 12px;
+    color: #263d32;
+    transition: opacity 200ms ease;
+  }
+  .brand:hover { opacity: .8; }
+  .brand__mark {
+    flex: 0 0 auto;
+    filter: drop-shadow(0 2px 3px rgb(36 63 45 / 10%));
+  }
+  .brand__copy { min-width:0; gap:2px; }
+  .brand__copy > span {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: clamp(15.5px,1.42vw,19px);
+    line-height: 1.14;
+    letter-spacing: -.024em;
+    white-space: nowrap;
+    color:#263d32;
+  }
+  .brand small {
+    color:#758271;
+    font-size: 10.5px;
+    line-height:1.3;
+    letter-spacing:.035em;
+    white-space:nowrap;
+  }
+  .desktop-navigation { margin-left:auto; }
+  .desktop-navigation > ul { align-items:center; gap:clamp(8px,.9vw,14px); }
+  .desktop-navigation a,
+  summary {
+    min-height:43px;
+    font-size:12.5px;
+    font-weight:550;
+    letter-spacing:.012em;
+    color:#485b4b;
+    white-space:nowrap;
+    transition: color 180ms ease;
+  }
+  .desktop-navigation > ul > li > a { padding:0 1px; }
+  .desktop-navigation > ul > li > a:hover,
+  summary:hover,
+  .nav-group:hover summary { color:#244733; }
+  .desktop-navigation > ul > li > a::after,
+  summary::before {
+    height:1.5px;
+    bottom:2px;
+    background:#739875;
+    transition:opacity 180ms ease,transform 200ms ease;
+  }
+  .desktop-navigation > ul > li > a:hover::after,
+  summary:hover::before {opacity:.7; transform:scaleX(1);}
+  summary {gap:8px;}
+  summary::after {
+    content:"";
+    display:inline-block;
+    width:6px;
+    height:6px;
+    border-right:1.4px solid #658468;
+    border-bottom:1.4px solid #658468;
+    transform:rotate(45deg) translateY(-1px);
+    transition:transform .2s ease;
+  }
+  details[open] summary::after { transform:rotate(225deg) translate(-2px,-2px); }
+  .nav-group__menu {
+    top:calc(100% + 6px);
+    left:-15px;
+    z-index:60;
+    min-width:225px;
+    padding:9px;
+    border-radius:18px;
+    border:1px solid rgba(131,154,126,.26);
+    background:rgb(250 248 243 / 99%);
+    box-shadow:0 15px 42px rgb(31 57 40 / 12%);
+  }
+  .nav-group__menu a {
+    min-height:45px;
+    color:#354f3d;
+    font-size:13px;
+    white-space:normal;
+    line-height:1.3;
+    padding:9px 12px;
+    border-radius:10px;
+    transition:background .18s ease,color .18s ease;
+  }
+  .nav-group__menu a:hover,
+  .nav-group__menu a:focus-visible {
+    color:#263d32;
+    background:#e9efe6;
+    text-decoration:none;
+  }
+  .nav-group__menu a[aria-current='page'] {background:#e9efe6;}
+  .nav-group__menu-item--secondary {
+    margin-top:5px;
+    padding-top:6px;
+    border-color:rgba(126,152,122,.22);
+  }
+  .header-cta {
+    white-space:nowrap;
+    min-height:45px;
+    padding:0 clamp(14px,1.55vw,22px);
+    background:#263d32;
+    color:#faf7f1;
+    border:1px solid #263d32;
+    border-radius:12px;
+    font-size:12.5px;
+    font-weight:700;
+    letter-spacing:.005em;
+    box-shadow:0 5px 14px rgba(38,61,50,.1);
+    transition:background .22s ease,box-shadow .22s ease,transform .22s ease;
+  }
+  .header-cta:hover,
+  .header-cta:focus-visible {
+    color:#fffdf7;
+    background:#365b45;
+    box-shadow:0 8px 19px rgba(38,61,50,.18);
+    transform:translateY(-1px);
+  }
+  .desktop-language { flex-shrink:0; }
+  @media (min-width:1180px) {
+    .brand { margin-right:0; }
+    .header-inner { min-height:94px; }
+    .brand__mark { width:68px; height:68px; }
+  }
+  @media (min-width:1180px) and (max-width:1280px) {
+    .header-inner {gap:12px;}
+    .brand__copy > span {font-size:16px;}
+    .brand small {font-size:9px;}
+    .brand__mark {width:59px;height:59px;}
+    .desktop-navigation > ul {gap:8px;}
+    .desktop-navigation a,summary {font-size:11.5px;}
+    .header-cta {font-size:11.5px;padding-inline:13px;}
+  }
+  @media (max-width:1179px) {
+    .brand {margin-right:auto;}
+    .header-inner {min-height:80px;}
+    .brand__mark {width:59px;height:59px;}
+  }
+  @media (max-width:519px) {
+    .brand__mark {width:54px;height:54px;}
+    .brand__copy > span {font-size:15px;white-space:normal;}
+    .header-inner {gap:9px;}
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .brand,.header-cta,.nav-group__menu a {transition:none;}
+  }
+
+
+
+  /* Sitewide call-to-action uses the same typographic logic as standard buttons. */
+  .header-cta {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: clamp(.8rem, .95vw, .86rem);
+    font-weight: 650;
+    letter-spacing: .012em;
+    line-height: 1.3;
+    text-align: center;
+  }
+  @media (min-width: 1180px) and (max-width: 1280px) {
+    .header-cta { font-size: .76rem; }
+  }
+
 </style>

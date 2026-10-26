@@ -1,11 +1,10 @@
 ---
 import ComplianceNote from '../../../components/compliance/ComplianceNote.astro';
-import TopicCard from '../../../components/cards/TopicCard.astro';
 import CTASection from '../../../components/cta/CTASection.astro';
 import ResponsiveImage from '../../../components/global/ResponsiveImage.astro';
 import HeroSplit from '../../../components/sections/HeroSplit.astro';
-import SectionIntro from '../../../components/sections/SectionIntro.astro';
 import PageLayout from '../../../layouts/PageLayout.astro';
+import '../../../styles/oils-routines-refined.css';
 
 const applicationMethods = [
   { title: 'Aromatic use', copy: 'Through scent, for example in a diffuser, from an opened bottle or as a considered scent moment.' },
@@ -29,25 +28,106 @@ const intentPaths = [
     <p>Explore use and interests first. Products can follow when they genuinely fit.</p>
   </HeroSplit>
 
-  <section class="section"><div class="container"><SectionIntro title="Three ways to use essential oils"><p>Depending on the product, essential oils can be used through scent, on the skin or internally where a label supports it.</p></SectionIntro><div class="application-grid">{applicationMethods.map((method) => <TopicCard title={method.title}><p>{method.copy}</p></TopicCard>)}</div><p class="safety-note">Not every oil suits every use. Always follow the label and product packaging. Professional advice matters if you are unsure, pregnant, breastfeeding, considering use around children or managing health questions.</p></div></section>
+  <section class="section oils-methods" aria-labelledby="oils-methods-title">
+    <div class="container oils-layout" data-reveal>
+      <header class="oils-section-heading">
+        <p class="eyebrow">UNDERSTANDING USE</p>
+        <h2 id="oils-methods-title">Three ways to explore essential oils.</h2>
+        <p>Scent, skincare and – only where expressly supported by a product label – internal use. What matters is the guidance for each individual product.</p>
+      </header>
+      <div class="oils-methods__grid" data-consultation-cards>
+        {applicationMethods.map((method, index) => (
+          <article class="oils-method-card" data-consultation-card>
+            <span class="oils-card-index" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+            <h3>{method.title}</h3>
+            <p>{method.copy}</p>
+          </article>
+        ))}
+      </div>
+      <aside class="oils-safety-note" aria-label="USE WITH CARE">
+        <span class="oils-safety-note__title">USE WITH CARE</span>
+        <p>Not every oil suits every use. Always follow the label and product packaging. Seek professional advice if you are unsure, pregnant, breastfeeding, considering use around children or managing health questions.</p>
+      </aside>
+    </div>
+  </section>
 
-  <section class="section section--sage"><div class="container"><SectionIntro title="Where would you like to start?"><p>Choose the topic that feels relevant today. From there, the Knowledge Hub can take you deeper.</p></SectionIntro><div class="intent-grid">{intentPaths.map((path) => <a class="intent-card" href={path.href}><h2>{path.title}</h2><p>{path.copy}</p><span aria-hidden="true">Explore <span aria-hidden="true">→</span></span></a>)}</div></div></section>
+  <section class="section oils-interests" aria-labelledby="oils-interests-title">
+    <div class="container oils-layout">
+      <header class="oils-section-heading" data-reveal>
+        <p class="eyebrow">WHAT FITS YOUR EVERYDAY LIFE?</p>
+        <h2 id="oils-interests-title">Simple moments. Many possibilities.</h2>
+        <p>You do not need to try everything at once. Start with an area that genuinely feels relevant to you.</p>
+      </header>
+      <div class="oils-interests__grid" data-consultation-cards>
+        {intentPaths.map((path, index) => (
+          <a class="oils-interest-card" href={path.href} data-consultation-card>
+            <span class="oils-card-index" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+            <h3>{path.title}</h3>
+            <p>{path.copy}</p>
+            <span class="oils-interest-card__more">Explore this topic <span aria-hidden="true">↗</span></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
 
-  <section class="section section--cream"><div class="container split-layout"><div><SectionIntro title="A routine you will actually keep"><p>A useful beginning does not need to be large. A scent moment in the morning, massage after movement or a considered room can be enough.</p><p>Choose one moment, one kind of use and one small habit that is easy to repeat. This is how curiosity becomes practical experience.</p></SectionIntro></div><ResponsiveImage src="/assets/images/products/diffuser-lemon.jpg" alt="A diffuser and essential lemon oil in a bright setting" width={3600} height={2400} variant="portrait-wide" position="58% center" sources={[{ type: 'image/avif', srcset: '/assets/images/optimized/diffuser-lemon-640.avif 640w, /assets/images/optimized/diffuser-lemon-960.avif 960w, /assets/images/optimized/diffuser-lemon-1280.avif 1280w' }, { type: 'image/webp', srcset: '/assets/images/optimized/diffuser-lemon-640.webp 640w, /assets/images/optimized/diffuser-lemon-960.webp 960w, /assets/images/optimized/diffuser-lemon-1280.webp 1280w' }]}/></div></section>
+  <section class="section oils-routine" aria-labelledby="oils-routine-title">
+    <div class="container oils-routine__grid" data-reveal>
+      <div class="oils-routine__text">
+        <p class="eyebrow">KEEP IT SIMPLE</p>
+        <h2 id="oils-routine-title">A routine you will actually keep.</h2>
+        <p>A useful beginning does not need to be elaborate. A scent moment in the morning, massage after movement or an intentionally scented room can be enough.</p>
+        <p>Choose one moment, one safe way to use a product and one small habit you can repeat easily. This is how curiosity becomes something practical in your day.</p>
+        <p class="oils-routine__detail">One moment · one use · one small beginning</p>
+      </div>
+      <ResponsiveImage
+        src="/assets/images/products/diffuser-lemon.jpg"
+        alt="A diffuser and essential lemon oil in a bright setting"
+        width={3600}
+        height={2400}
+        variant="portrait-wide"
+        position="58% center"
+        treatment="hero"
+        sources={[
+          { type: 'image/avif', srcset: '/assets/images/optimized/diffuser-lemon-640.avif 640w, /assets/images/optimized/diffuser-lemon-960.avif 960w, /assets/images/optimized/diffuser-lemon-1280.avif 1280w' },
+          { type: 'image/webp', srcset: '/assets/images/optimized/diffuser-lemon-640.webp 640w, /assets/images/optimized/diffuser-lemon-960.webp 960w, /assets/images/optimized/diffuser-lemon-1280.webp 1280w' },
+        ]}
+      />
+    </div>
+  </section>
 
-  <section class="section knowledge-continuation"><div class="container narrow-layout"><SectionIntro title="Keep learning in the Knowledge Hub"><p>Find oil profiles, safe-use guidance, routines and product knowledge in one place. Explore further before you choose anything.</p></SectionIntro><a class="knowledge-continuation__link" href="/en/knowledge/">Go to the Knowledge Hub <span aria-hidden="true">→</span></a></div></section>
+  <section class="section oils-learning" aria-labelledby="oils-learning-title">
+    <div class="container oils-learning__inner" data-reveal>
+      <div>
+        <p class="eyebrow">LEARN AT YOUR OWN PACE</p>
+        <h2 id="oils-learning-title">Curious about what comes next?</h2>
+        <p>The Knowledge Hub brings together clear oil profiles, responsible-use guidance and simple everyday routines. Take your time to learn, compare and decide what you want to explore.</p>
+        <p class="oils-learning__note">Understanding first. Products follow when they make sense for you.</p>
+      </div>
+      <div class="oils-learning__actions">
+        <a class="oils-learning__primary" href="/en/knowledge/">Explore the Knowledge Hub</a>
+        <a class="oils-learning__secondary" href="/en/knowledge/safe-use/">Safe use essentials <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
 
-  <CTASection title="Questions about your next step?" primaryHref="/en/contact/" primaryLabel="Talk with Kyle"><p>If you would like to place a topic more clearly, Kyle can help you find a sensible next step.</p></CTASection>
-  <section class="compliance-section"><div class="container"><ComplianceNote label="A brief note"><h2>A brief note</h2><p>Guidance does not replace medical diagnosis or treatment. Essential oils and wellness products can be part of considered routines, but not a substitute for medical care.</p></ComplianceNote></div></section>
+  <CTASection
+    title="Questions about getting started?"
+    primaryHref="/en/contact/"
+    primaryLabel="Ask for guidance"
+    secondaryHref="/en/knowledge/"
+    secondaryLabel="Explore the Knowledge Hub"
+  >
+    <p>You do not need to have chosen an oil or a kit. Tell me what interests you and we can find a sensible next step together.</p>
+  </CTASection>
+
+  <section class="compliance-section oils-compliance">
+    <div class="container">
+      <ComplianceNote label="A brief note">
+        <p class="oils-compliance__label">A brief note</p>
+        <p>My guidance is not a substitute for medical diagnosis or treatment. Essential oils and wellness products may be part of mindful routines but do not replace medical care.</p>
+      </ComplianceNote>
+    </div>
+  </section>
+  <script is:inline src="/scripts/consultation-motion.js" defer></script>
 </PageLayout>
-
-<style>
-  .section { padding: var(--space-64) 0; } .section--cream { background: var(--color-soft-cream); } .section--sage { background: rgb(168 184 160 / 20%); } .narrow-layout { max-width: var(--container-text); } .application-grid, .intent-grid, .split-layout { display: grid; gap: var(--space-20); }
-  .safety-note { max-width: var(--container-text); margin: var(--space-32) 0 0; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-soft-cream); color: var(--color-text-secondary); }
-  .intent-card { display: grid; gap: var(--space-12); min-height: 190px; padding: var(--space-24); border: 1px solid rgb(216 199 173 / 70%); border-radius: var(--radius-card); background: var(--color-warm-white); box-shadow: var(--shadow-card); color: var(--color-text-primary); text-decoration: none; }
-  .intent-card h2, .intent-card p { margin: 0; } .intent-card h2 { font-size: var(--font-size-h3-mobile); line-height: 1.2; } .intent-card p { color: var(--color-text-secondary); } .intent-card span { align-self: end; margin-top: auto; color: var(--color-deep-forest); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); } .intent-card:hover, .intent-card:focus-visible { border-color: var(--color-sage-green); }
-  .knowledge-continuation { background: var(--color-warm-white); } .knowledge-continuation__link { display: inline-flex; align-items: center; gap: var(--space-8); min-height: 48px; color: var(--color-deep-forest); font-weight: var(--font-weight-semibold); text-decoration: none; } .knowledge-continuation__link:hover, .knowledge-continuation__link:focus-visible { text-decoration: underline; }
-  .compliance-section { padding: 0 0 var(--space-80); } .compliance-section :global(h2) { margin: 0 0 var(--space-12); font-size: var(--font-size-body-mobile); }
-  @media (min-width: 768px) { .section { padding-block: var(--space-96); } .application-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .intent-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-24); } }
-  @media (min-width: 1024px) { .section { padding-block: var(--space-120); } .intent-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .split-layout { grid-template-columns: minmax(0, 1fr) minmax(360px, .82fr); gap: var(--space-80); align-items: center; } }
-</style>

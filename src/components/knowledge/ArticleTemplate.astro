@@ -1,4 +1,6 @@
 ---
+import '../../styles/knowledge-detail-refined.css';
+import oilPracticalGuides from '../../data/oilPracticalGuides.json';
 import ArticleHeader from './ArticleHeader.astro';
 import KnowledgeCta from './KnowledgeCta.astro';
 import RelatedLinks from './RelatedLinks.astro';
@@ -19,12 +21,61 @@ interface Props {
   relatedLinks?: RelatedLink[];
 }
 const { locale, breadcrumbs, worldLabel, title, intro, reviewLine, reviewHref, safetyNote, ctaLabel, relatedLinks = [] } = Astro.props;
+const oilPracticalGuide = (oilPracticalGuides as Record<string, { use: string; pair: string; category: string }>)[Astro.url.pathname];
+const oilSafetyNotes = {"topical":{"de":"Für die Haut ausschließlich entsprechend der aktuellen Produktkennzeichnung anwenden, angemessen verdünnen und zunächst kleinflächig testen.","en":"For skin use, follow the current product label, dilute as directed and patch-test first."},"food":{"de":"Für Speisen ausschließlich ausdrücklich zugelassenes Lebensmittelaroma nutzen. Wenig genügt; Anwendung und Dosierung richten sich nach dem Etikett deines Marktes.","en":"For foods, use only a product expressly labelled for food flavouring. Follow market-specific directions and dosage."},"citrus":{"de":"Bei äußerlicher Nutzung mögliche Lichtempfindlichkeit beachten; manche Zitrusöle können unter UV-Licht Hautreaktionen auslösen. Das Produktetikett entscheidet.","en":"For topical use, check photosensitivity warnings. Certain citrus oils can react with sunlight; always follow the specific product label."},"strong":{"de":"Besonders konzentriert und potenziell hautreizend: nicht unverdünnt auftragen. Eine innerliche Anwendung nur, wenn das konkrete Produkt dafür gekennzeichnet ist.","en":"Especially concentrated and potentially irritating: never apply undiluted. Only use internally if the exact product is labelled for that purpose."},"menthol":{"de":"Menthol- und kampferartige Öle können Atemwege reizen. Besonders vorsichtig bei Kindern, Asthma oder empfindlicher Atmung; nicht im Gesicht kleiner Kinder anwenden.","en":"Menthol- or camphor-like oils may irritate airways. Use extra care around children, asthma or sensitive breathing; do not apply near young children’s faces."},"aromatic":{"de":"Duft nur dezent und mit Frischluftpausen einsetzen; bei empfindlicher Atmung oder im Umfeld von Kindern und Tieren besondere Rücksicht nehmen.","en":"Keep the scent subtle and allow fresh-air breaks; take extra care around sensitive breathing, children and pets."},"blue":{"de":"Blue Tansy kann Haut, Textilien und Oberflächen blau verfärben. Äußerlich nur nach Etikett und angemessen verdünnt verwenden.","en":"Blue Tansy may stain skin, textiles and surfaces blue. Use topically only as labelled and with appropriate dilution."},"touch":{"de":"Touch-Roll-ons sind fertige Formulierungen. Nur gemäß der vorgesehenen kosmetischen Anwendung nutzen und empfindliche Hautbereiche aussparen.","en":"Touch roll-ons are formulated products. Follow the intended cosmetic use and avoid sensitive areas."},"tea-tree":{"de":"Teebaumöl nicht schlucken und nicht in den Mund oder Gehörgang geben. Ein selbst gemischtes Wasserspray ist kein geprüftes Reinigungs- oder Desinfektionsmittel.","en":"Do not swallow Tea Tree oil or place it in the mouth or ear canal. A homemade water spray is not a validated cleaner or disinfectant."}};
+const oilPracticalSafety = oilPracticalGuide ? (oilSafetyNotes as Record<string, { de: string; en: string }>)[oilPracticalGuide.category]?.[locale] : undefined;
 ---
 
 <ArticleHeader {breadcrumbs} {worldLabel} {title} {intro} {reviewLine} {reviewHref} />
 <article class="article-content">
   <div class="knowledge-container"><slot /></div>
 </article>
+{oilPracticalGuide && (
+  <section class="oil-practical-guide" aria-label={locale === 'de' ? 'Konkrete Anwendungsideen für dieses Öl' : 'Practical ways to explore this oil'}>
+    <div class="knowledge-container">
+      <div class="oil-practical-guide__panel">
+        <div class="oil-practical-guide__heading">
+          <p class="oil-practical-guide__eyebrow">{locale === 'de' ? 'PRAXIS · DUFT · ALLTAG' : 'PRACTICAL · AROMATIC · EVERYDAY'}</p>
+          <h2>{locale === 'de' ? 'So kannst du dieses Öl kennenlernen' : 'Ways to explore this oil'}</h2>
+          <p>{locale === 'de' ? 'Ein konkreter Einstieg, ohne viele Produkte gleichzeitig zu brauchen.' : 'A practical first step without needing lots of products.'}</p>
+        </div>
+        <div class="oil-practical-guide__ideas">
+          <div class="oil-practical-guide__idea">
+            <span aria-hidden="true">01</span>
+            <h3>{locale === 'de' ? 'Deine Anwendungsidee' : 'An everyday idea'}</h3>
+            <p>{oilPracticalGuide.use}</p>
+          </div>
+          <div class="oil-practical-guide__idea">
+            <span aria-hidden="true">02</span>
+            <h3>{locale === 'de' ? 'Das passt aromatisch dazu' : 'A pairing to try'}</h3>
+            <p>{oilPracticalGuide.pair}</p>
+          </div>
+        </div>
+        {oilPracticalSafety && <p class="oil-practical-guide__safety"><strong>{locale === 'de' ? 'Gut zu wissen: ' : 'Good to know: '}</strong>{oilPracticalSafety}</p>}
+        <p class="oil-practical-guide__label">{locale === 'de' ? 'Entscheidend sind immer das konkrete Produkt und seine aktuelle EU-Kennzeichnung.' : 'Always follow the exact product’s current labelling in your market.'}</p>
+      </div>
+    </div>
+  </section>
+)}
+
+{(worldLabel === 'Öl-Lexikon' || worldLabel === 'Oil Library') && (
+  <aside class="oil-discovery" aria-label={locale === 'de' ? 'Öle passend auswählen' : 'Find your essential oils'}>
+    <div class="knowledge-container">
+      <div class="oil-discovery__inner">
+        <div>
+          <p class="oil-discovery__eyebrow">{locale === 'de' ? 'ÖLE PRAKTISCH ERLEBEN' : 'BRING OILS INTO EVERYDAY LIFE'}</p>
+          <h2>{locale === 'de' ? 'Welches Öl passt zu deiner Routine?' : 'Which oil fits your routine?'}</h2>
+          <p>{locale === 'de' ? 'Du möchtest nicht nur lesen, sondern gezielt auswählen? Entdecke passende Einstiegsoptionen und lass dir zeigen, welche Öle und Anwendungen für deinen Alltag interessant sind.' : 'Ready to move from reading to exploring? Compare starter options and get personal guidance on oils and routines that suit your everyday life.'}</p>
+        </div>
+        <div class="oil-discovery__actions">
+          <a class="oil-discovery__primary" href={locale === 'de' ? '/de/starter-sets/' : '/en/starter-sets/'}>{locale === 'de' ? 'Öle & Starter-Sets entdecken' : 'Explore oils & starter kits'} <span aria-hidden="true">↗</span></a>
+          <a class="oil-discovery__secondary" href={locale === 'de' ? '/de/kontakt/' : '/en/contact/'}>{locale === 'de' ? 'Kyle persönlich fragen' : 'Ask Kyle personally'}</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+)}
+
 {safetyNote && <aside class="article-safety"><div class="knowledge-container"><p>{safetyNote}</p></div></aside>}
 <RelatedLinks title={locale === 'de' ? 'Weiterführende Inhalte' : 'Continue Exploring'} links={relatedLinks} />
 <KnowledgeCta {locale} primaryLabel={ctaLabel} />

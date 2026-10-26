@@ -8,7 +8,7 @@ route: "/de/wissen/oel-lexikon/peppermint-pfefferminze/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Peppermint Pfefferminze ätherisches Öl verständlich erklärt"
-description: "Peppermint ruhig erklärt: kühles Duftprofil, klare Alltagseinordnung, Diffuser- und Hautthemen sowie wichtige Vorsicht bei intensiven Ölen."
+description: "Peppermint entdecken: kühles Duftprofil, klare Alltagsideen, Diffuser- und Hautthemen sowie wichtige Vorsicht bei intensiven Ölen."
 riskLevel: "medium"
 cta: "Peppermint mit Kyle sicher einordnen"
 relatedArticleIds:

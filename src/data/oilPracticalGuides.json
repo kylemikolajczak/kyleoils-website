@@ -1,0 +1,482 @@
+{
+  "/de/wissen/oel-lexikon/lavender-lavendel/": {
+    "use": "Gestalte ein Abendritual: eine sanfte Lavendelnote im Diffuser während du liest oder vor dem Schlafengehen das Licht dimmst. Für eine Pflegeroutine nur gemäß Hautkennzeichnung verdünnt nutzen.",
+    "pair": "Harmoniert aromatisch mit Cedarwood und Wild Orange.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/lavender/": {
+    "use": "Create an evening ritual: enjoy a gentle lavender note in a diffuser while reading or winding down. For skin care, follow the label and dilute appropriately.",
+    "pair": "Pairs beautifully with Cedarwood and Wild Orange.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/lemon-zitrone/": {
+    "use": "Für einen frischen Raumduft am Morgen eine helle Zitronennote im Diffuser ausprobieren. In Küche oder Getränken ausschließlich die ausdrücklich als Lebensmittelaroma gekennzeichnete Variante gemäß Dosierung verwenden.",
+    "pair": "Mit Peppermint entsteht ein besonders frischer Duftcharakter.",
+    "category": "citrus"
+  },
+  "/en/knowledge/oil-library/lemon/": {
+    "use": "Try a bright lemon note in the diffuser to freshen up your morning atmosphere. In cooking or drinks, only use a product explicitly labelled as a food flavouring and follow its dosage instructions.",
+    "pair": "Combine with Peppermint for a crisp aromatic profile.",
+    "category": "citrus"
+  },
+  "/de/wissen/oel-lexikon/peppermint-pfefferminze/": {
+    "use": "Als aromatische Frischepause beim Lernen oder nach einer langen Besprechung eine kurze, sparsame Diffuser-Anwendung ausprobieren. In einer geeigneten, verdünnten Körperpflege vermittelt Menthol ein kühlendes Hautgefühl.",
+    "pair": "Mit Wild Orange wird die Frische fruchtiger, mit Rosemary krautiger.",
+    "category": "menthol"
+  },
+  "/en/knowledge/oil-library/peppermint/": {
+    "use": "For an aromatic refresh during study or after a long meeting, try a brief and light diffuser session. In appropriately diluted body care, menthol creates a cooling skin sensation.",
+    "pair": "Wild Orange adds a fruity twist, while Rosemary makes it more herbal.",
+    "category": "menthol"
+  },
+  "/de/wissen/oel-lexikon/frankincense-weihrauch/": {
+    "use": "Nutze den balsamisch-harzigen Duft für eine ruhige Lese- oder Meditationsminute. In geeigneter, verdünnter Hautpflege ist Weihrauch eine schöne luxuriöse Duftkomponente.",
+    "pair": "Lavender und Sandalwood runden den warmen Harzduft ab.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/frankincense/": {
+    "use": "Use its resinous, balsamic aroma for a calm reading or meditation ritual. It can also add a luxurious scent to suitable, properly diluted cosmetic care.",
+    "pair": "Lavender and Sandalwood complement the warm resinous aroma.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/tea-tree-teebaum/": {
+    "use": "Für eine bewusste Haut- und Nagelpflegeroutine kannst du Teebaum entsprechend der Produktkennzeichnung sparsam und verdünnt in ein geeignetes Pflegeprodukt integrieren. Der krautige Duft lässt sich auch als Raumduft kennenlernen.",
+    "pair": "Cedarwood ergänzt die herbe Duftnote, Lavender macht sie weicher.",
+    "category": "tea-tree"
+  },
+  "/en/knowledge/oil-library/tea-tree/": {
+    "use": "Explore Tea Tree in a careful skin or nail-care routine, using an appropriate cosmetic product and following dilution guidance. Its clean, herbal character can also be explored as a room scent.",
+    "pair": "Cedarwood deepens the herbal note; Lavender softens it.",
+    "category": "tea-tree"
+  },
+  "/de/wissen/oel-lexikon/wild-orange-wildorange/": {
+    "use": "Der fruchtig-süße Orangenduft eignet sich für einen freundlichen Start in den Tag, etwa während des Frühstückvorbereitens als kurze Duftsequenz im Diffuser.",
+    "pair": "Passt wunderbar zu Lavender, Frankincense oder einem Hauch Peppermint.",
+    "category": "citrus"
+  },
+  "/en/knowledge/oil-library/wild-orange/": {
+    "use": "The sweet orange aroma makes a welcoming start to the day, for example as a brief diffuser moment while preparing breakfast.",
+    "pair": "Try it with Lavender, Frankincense or a hint of Peppermint.",
+    "category": "citrus"
+  },
+  "/de/wissen/oel-lexikon/oregano/": {
+    "use": "Oregano ist ein besonders kräftiges Kräuteröl. Für kulinarische Ideen kommt ausschließlich ein ausdrücklich als Lebensmittelaroma gekennzeichnetes Produkt infrage: extrem sparsam und genau nach Etikett, etwa in einer herzhaften Sauce.",
+    "pair": "Geschmacklich passt Oregano zu Basil und Thyme; konzentriertes Öl ist nicht mit getrockneten Kräutern gleichzusetzen.",
+    "category": "strong"
+  },
+  "/en/knowledge/oil-library/oregano/": {
+    "use": "Oregano is a particularly potent herb oil. For culinary ideas, use only a product expressly labelled for food flavouring, in very small, label-compliant amounts, such as in a savoury sauce.",
+    "pair": "Its culinary profile complements Basil and Thyme; concentrated oil is not equivalent to dried herbs.",
+    "category": "strong"
+  },
+  "/de/wissen/oel-lexikon/copaiba/": {
+    "use": "Copaiba hat einen weichen, holzig-harzigen Duft. Probiere es in einer dezenten Duftmischung für eine ruhige Atmosphäre oder, falls entsprechend gekennzeichnet, in verdünnter Körperpflege.",
+    "pair": "Frankincense schafft mehr Tiefe, Lavender rundet sanft ab.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/copaiba/": {
+    "use": "Copaiba brings a soft, woody-resinous note to a subtle room blend or, when the product label permits, to diluted body-care rituals.",
+    "pair": "Frankincense adds depth; Lavender gives the blend a gentle finish.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/eucalyptus-eukalyptus/": {
+    "use": "Für ein frisches, waldiges Raumgefühl kann Eucalyptus als klare Duftnote im Diffuser eingesetzt werden, sofern laut Produktetikett vorgesehen. Eine kurze Anwendung ist oft angenehmer als ein dauerhafter starker Duft.",
+    "pair": "Mit Lemon und Siberian Fir entsteht ein kühler Waldduft.",
+    "category": "menthol"
+  },
+  "/en/knowledge/oil-library/eucalyptus/": {
+    "use": "For a fresh, forest-like atmosphere, explore Eucalyptus as a crisp diffuser note where labelled for aromatic use. A short session may be more comfortable than continuous strong diffusion.",
+    "pair": "Pair with Lemon and Siberian Fir for a fresh forest profile.",
+    "category": "menthol"
+  },
+  "/de/wissen/oel-lexikon/rosemary-rosmarin/": {
+    "use": "Der anregend-herbe Rosmarinduft passt zu einer kurzen Duftpause beim Arbeiten. Wenn deine konkrete Variante als Lebensmittelaroma zugelassen ist, lässt er sich sehr sparsam zum Würzen herzhafter Speisen einsetzen.",
+    "pair": "Lemon bringt Frische; Basil unterstreicht den Kräutercharakter.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/rosemary/": {
+    "use": "Its lively, herbal scent is ideal for a brief aromatic desk break. Where the specific product is labelled as a food flavouring, use it sparingly to season savoury dishes.",
+    "pair": "Lemon brightens it; Basil amplifies its herbal character.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/spearmint-gruene-minze/": {
+    "use": "Spearmint duftet milder und süßer als Peppermint. Eine schöne Wahl für eine leichte Minznote im Raum oder, bei entsprechender Lebensmittelkennzeichnung, für Desserts und Getränke.",
+    "pair": "Harmoniert mit Lemon, Lavender und Rosemary.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/spearmint/": {
+    "use": "Spearmint smells sweeter and softer than Peppermint. Enjoy a gentle mint note in a diffuser, or use a food-labelled version to flavour desserts and drinks.",
+    "pair": "Pairs nicely with Lemon, Lavender and Rosemary.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/lemongrass-zitronengras/": {
+    "use": "Lemongrass sorgt für einen lebhaften, grasig-zitronigen Raumduft. Für ein Frischegefühl im Eingangsbereich oder nach dem Lüften reichen meist zurückhaltende Duftakzente.",
+    "pair": "Mit Cedarwood wirkt der Duft wärmer, mit Lime noch spritziger.",
+    "category": "strong"
+  },
+  "/en/knowledge/oil-library/lemongrass/": {
+    "use": "Lemongrass offers a vivid grassy-citrus note. Use a subtle aromatic accent in the entrance area or after airing out a room.",
+    "pair": "Cedarwood makes it warmer; Lime makes it zestier.",
+    "category": "strong"
+  },
+  "/de/wissen/oel-lexikon/cedarwood-zeder/": {
+    "use": "Der warme Holzduft eignet sich als dezenter Begleiter am Abend, bei einem Buch oder einer ruhigen Yogaeinheit. Bei geeigneter Kennzeichnung kann Cedarwood auch eine verdünnte Körperpflegemischung abrunden.",
+    "pair": "Lavender sorgt für Weichheit, Bergamot für eine leichte Zitrusnote.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/cedarwood/": {
+    "use": "The warm woody scent works beautifully during evening reading or gentle yoga. Where labelled for topical use, it can also deepen a diluted body-care blend.",
+    "pair": "Lavender softens it; Bergamot adds a light citrus lift.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/geranium-geranie/": {
+    "use": "Die rosig-grüne Geraniennote macht selbst einfache Pflegemomente besonders: beispielsweise als Duft in einer passend verdünnten Hautpflegemischung oder in einem floralen Raumduft.",
+    "pair": "Lavender und Bergamot schaffen eine ausgewogene florale Kombination.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/geranium/": {
+    "use": "The rosy-green aroma makes a simple care ritual feel special: for instance in suitable diluted skin care or as part of a floral room blend.",
+    "pair": "Lavender and Bergamot create a balanced floral combination.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/ylang-ylang/": {
+    "use": "Das intensive, exotisch-blumige Aroma eignet sich für ein besonderes Abendritual oder eine Parfümkomposition. Beginne mit einer sehr kleinen Duftmenge, weil Ylang Ylang schnell dominant wird.",
+    "pair": "Bergamot macht die Mischung frischer, Sandalwood weicher und wärmer.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/ylang-ylang/": {
+    "use": "Its rich, exotic floral scent suits a special evening ritual or personal fragrance blend. Start with a minimal aromatic amount; Ylang Ylang can quickly dominate a composition.",
+    "pair": "Bergamot lifts the blend, while Sandalwood adds softness and warmth.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/bergamot-bergamotte/": {
+    "use": "Der frische, zugleich fein-herbe Bergamottenduft passt zu einer bewussten Pause am Nachmittag. In ausgewählten Pflegeroutinen nur die produktspezifischen Haut- und UV-Hinweise beachten.",
+    "pair": "Lavender für ein sanftes Profil, Cedarwood für mehr Tiefe.",
+    "category": "citrus"
+  },
+  "/en/knowledge/oil-library/bergamot/": {
+    "use": "The bright yet subtly bitter Bergamot aroma works well in a reflective afternoon break. For topical routines, follow the product-specific skin and sunlight guidance.",
+    "pair": "Pair with Lavender for softness or Cedarwood for depth.",
+    "category": "citrus"
+  },
+  "/de/wissen/oel-lexikon/grapefruit/": {
+    "use": "Grapefruit setzt einen spritzigen, leicht herben Akzent im Raum. Besonders schön für einen hellen, unkomplizierten Start in den Morgen.",
+    "pair": "Mit Wild Orange wird es süßer, mit Peppermint kühler.",
+    "category": "citrus"
+  },
+  "/en/knowledge/oil-library/grapefruit/": {
+    "use": "Grapefruit brings a sparkling, slightly bitter citrus accent to the room, especially lovely for a bright, uncomplicated morning routine.",
+    "pair": "Wild Orange sweetens the blend; Peppermint cools it.",
+    "category": "citrus"
+  },
+  "/de/wissen/oel-lexikon/lime-limette/": {
+    "use": "Lime sorgt für einen frischen, grünen Zitrusduft im Diffuser. Eine sparsame Zugabe kann einer bestehenden Duftmischung neue Leichtigkeit geben.",
+    "pair": "Lemongrass unterstreicht die Frische, Cedarwood setzt einen warmen Kontrast.",
+    "category": "citrus"
+  },
+  "/en/knowledge/oil-library/lime/": {
+    "use": "Lime adds a vibrant green-citrus sparkle to aromatic blends. A modest amount can make an existing diffuser composition feel lighter.",
+    "pair": "Lemongrass amplifies freshness; Cedarwood adds a warm contrast.",
+    "category": "citrus"
+  },
+  "/de/wissen/oel-lexikon/cilantro-korianderkraut/": {
+    "use": "Cilantro liefert eine intensive grüne Kräuternote. Falls die konkrete Variante als Lebensmittelaroma gekennzeichnet ist, eignen sich besonders herzhafte Speisen wie Dips oder Dressings für eine extrem sparsame Aromatisierung.",
+    "pair": "Kulinarisch harmoniert der Charakter mit Lime und Ginger.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/cilantro/": {
+    "use": "Cilantro offers a distinct green herbal note. If your specific product is labelled for food flavouring, consider tiny label-compliant amounts in savoury dips or dressings.",
+    "pair": "Its flavour character pairs well with Lime and Ginger.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/clary-sage-muskatellersalbei/": {
+    "use": "Clary Sage hat einen weichen, krautig-floralen Duft, der sich für eine entspannte Abendatmosphäre oder eine ausgewogene Parfümmischung eignet.",
+    "pair": "Lavender und Geranium ergänzen den floralen Charakter.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/clary-sage/": {
+    "use": "Clary Sage has a soft herbal-floral aroma suited to an easy-going evening atmosphere or a balanced personal fragrance.",
+    "pair": "Lavender and Geranium complement its floral qualities.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/roman-chamomile-roemische-kamille/": {
+    "use": "Roman Chamomile bringt einen sanft-apfeligen, blumigen Duft in ein Abendritual. Perfekt für eine sehr zarte aromatische Note beim Lesen oder Entspannen.",
+    "pair": "Lavender macht die Kombination klassisch, Cedarwood etwas wärmer.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/roman-chamomile/": {
+    "use": "Roman Chamomile offers a delicate apple-like floral aroma for winding down, reading or enjoying a gentle aromatic moment.",
+    "pair": "Lavender makes it classic; Cedarwood adds warmth.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/siberian-fir-sibirische-tanne/": {
+    "use": "Für einen klaren Waldduft eine kurze Diffuser-Sequenz mit Siberian Fir ausprobieren. Auch ein bewusst gestalteter Duftmoment nach einem langen Spaziergang passt zu dieser harzigen Note.",
+    "pair": "Lemon hellt den Waldduft auf; Cypress bringt weitere grüne Noten.",
+    "category": "aromatic"
+  },
+  "/en/knowledge/oil-library/siberian-fir/": {
+    "use": "Create a crisp forest atmosphere with a brief Siberian Fir diffuser session. Its resinous notes also suit a quiet aromatic moment after a long walk.",
+    "pair": "Lemon brightens the forest blend; Cypress adds green depth.",
+    "category": "aromatic"
+  },
+  "/de/wissen/oel-lexikon/cypress-zypresse/": {
+    "use": "Cypress riecht frisch, holzig und leicht harzig. Eine gute Wahl für ein reduziertes Raumduftprofil, etwa beim Lesen oder vor einer Yogaeinheit.",
+    "pair": "Mit Siberian Fir wird es waldiger, mit Grapefruit frischer.",
+    "category": "aromatic"
+  },
+  "/en/knowledge/oil-library/cypress/": {
+    "use": "Cypress smells crisp, woody and lightly resinous. It works well in a restrained room aroma during reading or before a yoga session.",
+    "pair": "Siberian Fir makes it woodier; Grapefruit lifts it.",
+    "category": "aromatic"
+  },
+  "/de/wissen/oel-lexikon/black-spruce-schwarzfichte/": {
+    "use": "Black Spruce verleiht einer Duftmischung Tiefe und einen ausgeprägten Nadelwald-Charakter. Probiere die Note für ein bewusstes Durchatmen in einem gut gelüfteten Raum.",
+    "pair": "Wild Orange schafft einen warm-fruchtigen Kontrast, Frankincense mehr Harztiefe.",
+    "category": "aromatic"
+  },
+  "/en/knowledge/oil-library/black-spruce/": {
+    "use": "Black Spruce brings depth and a distinct conifer-forest character to a room blend. Enjoy its scent in a well-ventilated space during a quiet break.",
+    "pair": "Wild Orange adds fruity warmth; Frankincense provides resinous depth.",
+    "category": "aromatic"
+  },
+  "/de/wissen/oel-lexikon/basil-basilikum/": {
+    "use": "Basil bietet einen klaren, lebendigen Kräuterduft. Bei einer ausdrücklich als Lebensmittelaroma gekennzeichneten Variante passt es sparsam zu mediterranen Speisen, Dressings oder Tomatengerichten.",
+    "pair": "Lemon und Rosemary passen gut zum herzhaften Profil.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/basil/": {
+    "use": "Basil gives a vivid herbal scent. If the product is explicitly labelled as food flavouring, use it sparingly in Mediterranean-style sauces, dressings or tomato recipes.",
+    "pair": "Lemon and Rosemary pair nicely with savoury notes.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/cardamom-kardamom/": {
+    "use": "Kardamom verbindet einen warm-würzigen Geschmack mit einer frischen Eukalyptusnote. Die EU-Produktinformation nennt Brot, Smoothies, Suppen, Salate und herzhafte Speisen als Aromaanwendungen – ausschließlich gemäß Lebensmittelkennzeichnung und Dosierung.",
+    "pair": "Im Duft harmoniert Cardamom mit Ginger, Wild Orange und Cedarwood.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/cardamom/": {
+    "use": "Cardamom combines warm spice with a fresh, almost eucalyptus-like lift. The European product information mentions breads, smoothies, soups, salads and savoury dishes as flavouring uses; follow the food label and dosage.",
+    "pair": "Its aroma works well with Ginger, Wild Orange and Cedarwood.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/ginger-ingwer/": {
+    "use": "Ginger bringt eine warme, lebhafte Gewürznote. Im Diffuser kann es winterliche Duftkompositionen vertiefen; als ausdrücklich gekennzeichnetes Lebensmittelaroma eignet es sich sparsam für würzige Rezepte.",
+    "pair": "Mit Cardamom wird es aromatisch-würzig, mit Wild Orange fruchtig.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/ginger/": {
+    "use": "Ginger has a warm, lively spice character. It deepens seasonal diffuser blends and, when expressly food-labelled, can flavour suitably chosen savoury recipes in small amounts.",
+    "pair": "Cardamom enhances the spice; Wild Orange adds fruitiness.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/fennel-fenchel/": {
+    "use": "Fennel riecht süßlich nach Anis. Lerne es zuerst als einzelne Duftnote kennen; bei Lebensmittelkennzeichnung kann der charakteristische Geschmack in passenden Rezepten sparsam verwendet werden.",
+    "pair": "Ginger sorgt für mehr Würze; Wild Orange für eine fruchtigere Nuance.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/fennel/": {
+    "use": "Fennel has a sweet anise-like character. Explore its aroma on its own first; a food-labelled version can add a distinctive note to appropriate recipes when used sparingly.",
+    "pair": "Ginger adds spice; Wild Orange adds a fruity nuance.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/coriander-koriandersamen/": {
+    "use": "Coriander Seed duftet warm, mild-würzig und leicht süßlich. Als zugelassenes Lebensmittelaroma kann es herzhaften Speisen gemäß Kennzeichnung mehr Tiefe geben.",
+    "pair": "Ginger und Cardamom ergänzen das Gewürzprofil.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/coriander/": {
+    "use": "Coriander Seed has a warm, gently spicy and slightly sweet scent. When food-labelled, it can add depth to savoury cooking according to label directions.",
+    "pair": "Ginger and Cardamom complement the spice profile.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/marjoram-majoran/": {
+    "use": "Marjoram liefert eine warme, milde Kräuternote. In geeigneten Duftmischungen passt es zu einer gemütlichen Abendatmosphäre; als Lebensmittelaroma kann es herzhafte Gerichte ergänzen, sofern so gekennzeichnet.",
+    "pair": "Mit Lavender wird der Duft weicher, mit Basil kräuteriger.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/marjoram/": {
+    "use": "Marjoram offers a warm, gentle herbal character. It suits cosy evening blends and, where food-labelled, can flavour savoury recipes according to the product directions.",
+    "pair": "Lavender softens it; Basil adds herbal brightness.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/cinnamon-bark-zimtrinde/": {
+    "use": "Cinnamon Bark bringt einen sehr intensiven, vertrauten Zimtduft in saisonale Duftideen. Als gekennzeichnetes Lebensmittelaroma nur gemäß den sehr sparsamen Anwendungsvorgaben verwenden.",
+    "pair": "Wild Orange und Ginger passen zu winterlichen Aromen.",
+    "category": "strong"
+  },
+  "/en/knowledge/oil-library/cinnamon-bark/": {
+    "use": "Cinnamon Bark delivers an intense, familiar spice note to seasonal scent compositions. As a food flavouring, use only with explicit labelling and strictly according to dosing guidance.",
+    "pair": "Wild Orange and Ginger complement warm seasonal notes.",
+    "category": "strong"
+  },
+  "/de/wissen/oel-lexikon/patchouli-patschuli/": {
+    "use": "Patchouli duftet tief, erdig und leicht süßlich. Es eignet sich für einen bewusst gestalteten persönlichen Duft oder eine warme, holzige Diffusermischung.",
+    "pair": "Bergamot lockert die Mischung, Sandalwood verstärkt die Tiefe.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/patchouli/": {
+    "use": "Patchouli is deep, earthy and softly sweet. It works well as a base note in personal fragrance or a warm, woody aromatic blend.",
+    "pair": "Bergamot lifts the blend; Sandalwood deepens it.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/petitgrain/": {
+    "use": "Petitgrain besitzt ein grünes, leicht holziges Zitrusprofil aus Blättern und Zweigen des Bitterorangenbaums. Besonders angenehm als dezenter Raumduft am Abend.",
+    "pair": "Lavender bringt eine florale Balance; Wild Orange verbindet Grün und Frucht.",
+    "category": "aromatic"
+  },
+  "/en/knowledge/oil-library/petitgrain/": {
+    "use": "Petitgrain has a green, slightly woody citrus character from bitter-orange leaves and twigs. It is lovely in an understated evening room blend.",
+    "pair": "Lavender adds floral balance; Wild Orange connects green and fruity notes.",
+    "category": "aromatic"
+  },
+  "/de/wissen/oel-lexikon/arborvitae-lebensbaum/": {
+    "use": "Arborvitae verleiht einer Duftkomposition eine markante, warme Holznuance. Nutze es bewusst sparsam für ruhige holzige Raumdüfte oder geeignete Holzpflegeanwendungen nach Kennzeichnung.",
+    "pair": "Frankincense und Cedarwood ergänzen den harzigen Holzduft.",
+    "category": "aromatic"
+  },
+  "/en/knowledge/oil-library/arborvitae/": {
+    "use": "Arborvitae adds a distinct warm woody note to aromatic compositions. Use sparingly for grounded room scents or suitable wood-care ideas according to the label.",
+    "pair": "Frankincense and Cedarwood enhance its resinous woody character.",
+    "category": "aromatic"
+  },
+  "/de/wissen/oel-lexikon/blue-tansy-blauer-rainfarn/": {
+    "use": "Blue Tansy zeichnet sich durch die intensive blaue Farbe und eine außergewöhnliche aromatische Note aus. In einer geeigneten, verdünnten Kosmetikformulierung ist es eine interessante Ergänzung zur Pflegeroutine; Stoffe können verfärben.",
+    "pair": "Mit Lavender entsteht ein weicherer, floraler Duft.",
+    "category": "blue"
+  },
+  "/en/knowledge/oil-library/blue-tansy/": {
+    "use": "Blue Tansy is known for its deep blue colour and unique aromatic character. In suitable diluted cosmetic formulations, it can add interest to a care ritual; watch for staining on fabrics.",
+    "pair": "Lavender gives it a softer floral tone.",
+    "category": "blue"
+  },
+  "/de/wissen/oel-lexikon/helichrysum-immortelle/": {
+    "use": "Helichrysum ist mit seinem honigartig-warmen Kräuterduft ein besonderes Öl für hochwertige Kosmetikrituale. Die EU-Produktinformation für Helichrysum Touch beschreibt eine Anwendung für ein gepflegtes, strahlender wirkendes Hautbild.",
+    "pair": "Mit Frankincense entsteht ein elegantes, harziges Pflegearoma.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/helichrysum/": {
+    "use": "Helichrysum is valued for its honey-warm herbal scent in refined cosmetic rituals. EU information for Helichrysum Touch describes its use to support a radiant-looking complexion.",
+    "pair": "Frankincense adds a refined resinous note to the aromatic profile.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/myrrh-myrrhe/": {
+    "use": "Myrrh hat einen tiefen, balsamisch-harzigen Charakter. Besonders schön für persönliche Duftmischungen, ruhige Abendmomente oder geeignete kosmetische Pflegerituale.",
+    "pair": "Frankincense bildet eine klassische Harzkombination, Wild Orange hellt sie auf.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/myrrh/": {
+    "use": "Myrrh brings a deep, balsamic resin note to personal scent blends, quiet evening moments and suitable cosmetic care rituals.",
+    "pair": "Frankincense creates a classic resin blend; Wild Orange brightens it.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/turmeric-kurkuma/": {
+    "use": "Turmeric besitzt ein erdiges, warm-würziges Aroma. Bei ausdrücklicher EU-Lebensmittelkennzeichnung lässt es sich vorsichtig zum Aromatisieren herzhafter Gerichte einsetzen; Duftideen orientieren sich an den jeweiligen Produktangaben.",
+    "pair": "Ginger ergänzt die Würze; Cardamom bringt eine hellere Note.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/turmeric/": {
+    "use": "Turmeric has an earthy, warm-spicy profile. When expressly food-labelled in your market, it can cautiously flavour savoury recipes; aromatic uses should match the product instructions.",
+    "pair": "Ginger deepens the spice; Cardamom adds a brighter accent.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/clove-gewuerznelke/": {
+    "use": "Clove ist ein sehr intensives warmes Gewürzöl. Der charakteristische Nelkenduft eignet sich in äußerst zurückhaltenden Mengen für saisonale Aromakompositionen; Lebensmittelanwendungen ausschließlich nach Kennzeichnung.",
+    "pair": "Wild Orange verleiht dem kräftigen Gewürzprofil Fruchtigkeit.",
+    "category": "strong"
+  },
+  "/en/knowledge/oil-library/clove/": {
+    "use": "Clove is a very strong, warm spice oil. Its characteristic note suits carefully restrained seasonal aromatic compositions; food uses require explicit label directions.",
+    "pair": "Wild Orange brings fruitiness to its strong spice profile.",
+    "category": "strong"
+  },
+  "/de/wissen/oel-lexikon/thyme-thymian/": {
+    "use": "Thyme bringt eine kräftige, herzhaft-krautige Note. Für Kochen und Backen nur ein als Lebensmittelaroma gekennzeichnetes Produkt und die sehr geringe vorgesehene Menge verwenden.",
+    "pair": "Basil und Rosemary passen aromatisch zum mediterranen Profil.",
+    "category": "strong"
+  },
+  "/en/knowledge/oil-library/thyme/": {
+    "use": "Thyme adds an intense savoury herbal note. For cooking or baking, only use a product labelled for food flavouring and observe the very small prescribed amount.",
+    "pair": "Basil and Rosemary complement the Mediterranean herb profile.",
+    "category": "strong"
+  },
+  "/de/wissen/oel-lexikon/black-pepper-schwarzer-pfeffer/": {
+    "use": "Schwarzer Pfeffer bringt ein warmes, trocken-würziges Profil. Bei zugelassenem Lebensmittelaroma kann das intensive Öl herzhafte Rezepte abrunden – deutlich sparsamer als gemahlener Pfeffer.",
+    "pair": "Ginger und Cardamom sorgen für ein facettenreiches Gewürzprofil.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/black-pepper/": {
+    "use": "Black Pepper brings a warm, dry spice character. Where food-labelled, this intense oil can complement savoury dishes in much smaller quantities than ground pepper.",
+    "pair": "Ginger and Cardamom create a layered spice accord.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/cassia/": {
+    "use": "Cassia erinnert aromatisch an warmen Zimt und eignet sich für ausgewählte saisonale Duftideen. Es zählt zu den besonders intensiven Ölen; Lebensmittelaroma nur nach der expliziten Kennzeichnung verwenden.",
+    "pair": "Wild Orange verleiht dem Duft eine fruchtige Gegennote.",
+    "category": "strong"
+  },
+  "/en/knowledge/oil-library/cassia/": {
+    "use": "Cassia has a warm cinnamon-like character suited to carefully chosen seasonal aroma ideas. It is especially potent; use for food flavouring only when expressly labelled.",
+    "pair": "Wild Orange adds a fruity counterpoint.",
+    "category": "strong"
+  },
+  "/de/wissen/oel-lexikon/green-mandarin-gruene-mandarine/": {
+    "use": "Green Mandarin wirkt im Duft hell, grün und noch nicht so süß wie reife Mandarine. Eine schöne Zitrusnote für freundliche Diffusermischungen am Vormittag.",
+    "pair": "Petitgrain ergänzt die grüne Seite, Wild Orange die Süße.",
+    "category": "citrus"
+  },
+  "/en/knowledge/oil-library/green-mandarin/": {
+    "use": "Green Mandarin is bright, green and less sweet-smelling than ripe mandarin. Try it as a lively citrus element in a morning diffuser blend.",
+    "pair": "Petitgrain highlights the green notes; Wild Orange adds sweetness.",
+    "category": "citrus"
+  },
+  "/de/wissen/oel-lexikon/tangerine-mandarine/": {
+    "use": "Tangerine verbreitet einen süßen, freundlichen Mandarinenduft. Im Diffuser kann es saisonale Mischungen leichter machen; bei Lebensmittelkennzeichnung kommen passende Rezeptideen infrage.",
+    "pair": "Cinnamon Bark setzt einen warmen Akzent, Lavender einen weichen.",
+    "category": "citrus"
+  },
+  "/en/knowledge/oil-library/tangerine/": {
+    "use": "Tangerine offers a sweet, friendly mandarin aroma. It brightens seasonal diffuser blends and, when food-labelled, can suit appropriately chosen recipe ideas.",
+    "pair": "Cinnamon Bark adds warmth; Lavender softens the blend.",
+    "category": "citrus"
+  },
+  "/de/wissen/oel-lexikon/pink-pepper-rosa-pfeffer/": {
+    "use": "Pink Pepper liefert eine ungewöhnliche leicht fruchtige Pfeffernote. Für kreative, würzig-frische Duftmischungen oder, mit passender Lebensmittelkennzeichnung, als spezieller Geschmacksakzent.",
+    "pair": "Wild Orange und Ginger unterstreichen die fruchtige Würze.",
+    "category": "food"
+  },
+  "/en/knowledge/oil-library/pink-pepper/": {
+    "use": "Pink Pepper contributes an intriguing fruity-peppery note to creative aromatic blends or, when food-labelled, a distinctive flavour accent.",
+    "pair": "Wild Orange and Ginger complement its fruity spice.",
+    "category": "food"
+  },
+  "/de/wissen/oel-lexikon/sandalwood-sandelholz/": {
+    "use": "Sandalwood bringt einen cremigen, warmen Holzduft. Er passt besonders schön zu einem langsamen Abendritual, zur Meditation oder als Basisnote einer persönlichen Duftmischung.",
+    "pair": "Ylang Ylang wirkt floraler, Frankincense verleiht dem Duft Harztiefe.",
+    "category": "topical"
+  },
+  "/en/knowledge/oil-library/sandalwood/": {
+    "use": "Sandalwood offers a creamy, warm woody aroma that suits a slow evening ritual, meditation or the base note of a personal scent blend.",
+    "pair": "Ylang Ylang adds florals; Frankincense adds resinous depth.",
+    "category": "topical"
+  },
+  "/de/wissen/oel-lexikon/magnolia-touch/": {
+    "use": "Magnolia Touch ist ein gebrauchsfertiger Roll-on für einen zarten, süß-blumigen Duftmoment. Er eignet sich als persönliche Duftnote unterwegs entsprechend den Angaben auf dem Produktetikett.",
+    "pair": "Bergamot und Ylang Ylang ergänzen das florale Duftprofil.",
+    "category": "touch"
+  },
+  "/en/knowledge/oil-library/magnolia-touch/": {
+    "use": "Magnolia Touch is a ready-to-use roll-on for a delicate sweet-floral scent moment. It suits a personal fragrance ritual on the go, following the product label.",
+    "pair": "Bergamot and Ylang Ylang complement its floral profile.",
+    "category": "touch"
+  },
+  "/de/wissen/oel-lexikon/vetiver-touch/": {
+    "use": "Vetiver Touch bietet eine tiefe, erdige Duftnote im praktischen Roll-on. Eine bewusst sparsame persönliche Anwendung am Abend passt gut zu diesem intensiven Duftcharakter.",
+    "pair": "Lavender mildert die Erdigkeit, Sandalwood unterstreicht die Wärme.",
+    "category": "touch"
+  },
+  "/en/knowledge/oil-library/vetiver-touch/": {
+    "use": "Vetiver Touch brings a deep earthy aroma in a convenient roll-on. A restrained personal evening fragrance ritual suits its intensity.",
+    "pair": "Lavender softens its earthy character; Sandalwood adds warmth.",
+    "category": "touch"
+  }
+}

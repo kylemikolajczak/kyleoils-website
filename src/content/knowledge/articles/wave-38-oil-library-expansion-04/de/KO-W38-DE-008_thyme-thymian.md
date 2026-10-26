@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/thyme/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Thyme: Kräuteröl zwischen Küche, Duft und Vorsicht"
-description: "Thyme ist ein starkes Kräuteröl, das zwischen Küche, Duft und topischer Anwendung sehr bewusst eingeordnet werden sollte."
+description: "Thyme (Thymian) bringt einen kraftvollen Kräuterduft in bewusste Duftideen. Erfahre, worauf es bei passender Anwendung und Verdünnung ankommt."
 focus: "Kräuteröl, Küche, Verdünnung, starke Anwendung"
 searchKeywords:
   - "thyme"
@@ -46,7 +46,7 @@ sourceUrls:
 ---
 # Thyme: Kräuteröl zwischen Küche, Duft und Vorsicht
 
-Thyme ist ein starkes Kräuteröl, das zwischen Küche, Duft und topischer Anwendung sehr bewusst eingeordnet werden sollte.
+Thyme (Thymian) bringt einen kraftvollen Kräuterduft in bewusste Duftideen. Erfahre, worauf es bei passender Anwendung und Verdünnung ankommt.
 
 ## Fokus
 

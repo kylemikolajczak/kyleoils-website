@@ -111,7 +111,7 @@ const { words, anchors } = Astro.props;
   }
 
   .essence-drop__word.is-visible {
-    opacity: .82;
+    opacity: 1;
     transform: translate3d(0, -50%, 0);
   }
 
@@ -142,7 +142,7 @@ const { words, anchors } = Astro.props;
 
   .essence-drop[data-theme='dark'] .essence-drop__word {
     color: var(--color-warm-white);
-    text-shadow: 0 1px 4px rgb(38 61 50 / 44%);
+    text-shadow: 0 1px 6px rgb(12 30 22 / 84%), 0 0 14px rgb(12 30 22 / 58%);
   }
 
   @media (max-width: 767px) {
@@ -160,8 +160,5 @@ const { words, anchors } = Astro.props;
     .essence-drop { display: none; }
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    :global(html:has([data-essence-drop])) { scrollbar-width: none; }
-    :global(html:has([data-essence-drop]))::-webkit-scrollbar { display: none; width: 0; height: 0; }
-  }
+
 </style>

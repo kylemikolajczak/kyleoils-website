@@ -345,36 +345,36 @@ const wave46RouteMap = JSON.parse(
 
 const wave46Descriptions: Record<string, { de: string; en: string }> = {
   'black-pepper-schwarzer-pfeffer': {
-    de: 'Ein ruhiges Profil für ein würziges Gewürzöl: Duft, Label und sichere Einordnung.',
-    en: 'A calm profile for a spicy oil: scent, label awareness and safe orientation.',
+    de: 'Black Pepper: würzig-warmer Duft für charaktervolle Mischungen mit passenden Hinweisen zur dosierten Anwendung.',
+    en: 'Black Pepper brings a rich, warm spice note to distinctive blends, with guidance for thoughtful use.',
   },
   cassia: {
-    de: 'Ein starkes Gewürzöl mit warmem Aroma: Label, Verdünnung und sichere Orientierung.',
-    en: 'A strong spice oil with a warm aroma: label awareness, dilution and safe orientation.',
+    de: 'Cassia: intensiver, warmer Gewürzduft für saisonale Duftideen mit klaren Hinweisen zu Kennzeichnung und Verdünnung.',
+    en: 'Cassia offers a bold, warm spice aroma for seasonal scent ideas, with clear label and dilution guidance.',
   },
   'green-mandarin-gruene-mandarine': {
-    de: 'Ein frisches Zitrusprofil aus unreifen Mandarinen: Duft, Label und UV-Hinweis.',
-    en: 'A fresh citrus profile from unripe mandarins: scent, label awareness and UV caution.',
+    de: 'Green Mandarin: spritzig-grüner Zitrusduft für frische Duftmischungen; Anwendung und UV-Hinweise beachten.',
+    en: 'Green Mandarin adds a bright, green citrus note to fresh blends, with guidance on use and UV precautions.',
   },
   'tangerine-mandarine': {
-    de: 'Ein süßes, fruchtiges Zitrusöl: ruhige Einordnung für Einsteiger, Label und Sicherheit.',
-    en: 'A sweet, fruity citrus oil: calm orientation for beginners, labels and safety.',
+    de: 'Tangerine: süß-fruchtiges Zitrusöl für leichte, freundliche Diffusermischungen und erste Duftideen.',
+    en: 'Tangerine brings a sweet, fruity citrus note to bright diffuser blends and approachable everyday scent rituals.',
   },
   'pink-pepper-rosa-pfeffer': {
-    de: 'Ein mild fruchtig-pfeffriges Profil: Unterschiede zwischen Gewürzölen ruhig verstehen.',
-    en: 'A mildly fruity and peppery profile: calmly understand the differences between spice oils.',
+    de: 'Pink Pepper: überraschend fruchtig-pfeffrige Note für lebendige Duftkompositionen und interessante Kombinationen.',
+    en: 'Pink Pepper offers an uplifting fruity-peppery character for layered, lively aromatic blends.',
   },
   'sandalwood-sandelholz': {
-    de: 'Ein warmes, holziges Öl: Duftprofil, topischer Kontext und sichere Einordnung.',
-    en: 'A warm, woody oil: scent profile, topical context and safe orientation.',
+    de: 'Sandalwood: samtig-warmer Holzduft für ruhige Düfte, persönliche Pflegerituale und passende Hautanwendung.',
+    en: 'Sandalwood provides a soft, warm woody note for reflective scent rituals and suitable topical care.',
   },
   'magnolia-touch': {
-    de: 'Ein fruchtig-floraler Roll-on: Touch-Produkte und topische Anwendung verständlich einordnen.',
-    en: 'A fruity-floral roll-on: clearly understand Touch products and topical use.',
+    de: 'Magnolia Touch: floraler, leicht fruchtiger Roll-on für einen dezenten Duftmoment und bewusste Hautpflegerituale.',
+    en: 'Magnolia Touch: a delicate fruity-floral roll-on for personal fragrance and considered skin-care rituals.',
   },
   'vetiver-touch': {
-    de: 'Ein warmer, erdiger Roll-on: Duftprofil, Touch-Format und Labelbewusstsein.',
-    en: 'A warm, earthy roll-on: scent profile, Touch format and label awareness.',
+    de: 'Vetiver Touch: tiefes, erdig-warmes Aroma im praktischen Roll-on für ganz persönliche Duftrituale.',
+    en: 'Vetiver Touch delivers a deep, warm-earthy aroma in a convenient roll-on for personal scent rituals.',
   },
 };
 
@@ -405,7 +405,7 @@ const wave46GermanArticles: KnowledgeArticle[] = wave46RouteMap.articles.map((it
   route: item.de_route,
   worldId: 'oil-library',
   worldLabel: 'Öl-Lexikon',
-  seoTitle: `${item.de_title} | Kyle Oils`,
+  seoTitle: (item.id === 'cassia' ? 'Cassia: Duft & Anwendung' : item.id === 'magnolia-touch' ? 'Magnolia Touch: Duft & Anwendung' : item.id === 'vetiver-touch' ? 'Vetiver Touch: Duft & Anwendung' : item.de_title) + ' | Kyle Oils',
   description: wave46Descriptions[item.id].de,
   risk: item.id === 'cassia' ? 'high' : 'medium',
   reviewedBy: 'Kyle Daniel Mikolajczak, doTERRA Europe Essential Oils Specialist',

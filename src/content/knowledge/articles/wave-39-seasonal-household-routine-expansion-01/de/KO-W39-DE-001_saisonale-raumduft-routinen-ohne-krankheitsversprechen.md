@@ -3,13 +3,13 @@ id: "KO-W39-DE-001"
 translationPairId: "KO-W39-PAIR-001"
 language: "de"
 status: "approved-content-pack-ready"
-title: "Saisonale Raumduft-Routinen ohne Krankheitsversprechen"
+title: "Saisonale Duftideen für dein Zuhause"
 slug: "saisonale-raumduft-routinen-ohne-krankheitsversprechen"
 route: "/de/wissen/routinen/saisonale-raumduft-routinen-ohne-krankheitsversprechen/"
 enRoute: "/en/knowledge/routines/seasonal-room-scent-routines-without-illness-promises/"
 worldId: "routines"
 worldLabel: "Routinen"
-seoTitle: "Saisonale Raumduft-Routinen ohne Krankheitsversprechen"
+seoTitle: "Saisonale Duftideen für dein Zuhause"
 description: "Wie du saisonale Duftstimmungen mit ätherischen Ölen einordnest, ohne Immun-, Erkältungs- oder Krankheitsclaims."
 focus: "Jahreszeiten, Raumduft, Duftstimmung, sichere Sprache"
 searchKeywords:
@@ -36,7 +36,7 @@ sourceUrls:
   - "https://www.doterra.com/US/en/doterra-abode-line"
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
 ---
-# Saisonale Raumduft-Routinen ohne Krankheitsversprechen
+# Saisonale Duftideen für dein Zuhause
 
 Wie du saisonale Duftstimmungen mit ätherischen Ölen einordnest, ohne Immun-, Erkältungs- oder Krankheitsclaims.
 

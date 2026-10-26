@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/eucalyptus-eukalyptus/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Eucalyptus explained simply"
-description: "A calm guide to Eucalyptus: scent profile, simple routines, blending ideas and safe use without medical promises."
+description: "Discover Eucalyptus: scent character, inspiring everyday rituals, blend ideas and responsible use."
 relatedArticleIds:
   - "KO-W09-001"
   - "KO-W07-003"
@@ -25,7 +25,7 @@ sourceUrl: "https://shop.doterra.com/DE/de_DE/shop/eucalyptus-oil/"
 
 Eucalyptus is an oil for clear room-scent moments, fresh everyday routines and a conscious, cooler aromatic atmosphere.
 
-This page helps you understand Eucalyptus calmly: scent, everyday use, simple routines, blending ideas and important safety points. The goal is not medical promises. The goal is clear orientation.
+This page helps you understand Eucalyptus calmly: scent, everyday use, simple routines, blending ideas and important safety points. Discover its scent character, practical blend ideas and conscious ways to use it.
 
 ## Scent profile
 

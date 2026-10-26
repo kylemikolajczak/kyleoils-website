@@ -3,13 +3,13 @@ id: "KO-W39-EN-001"
 translationPairId: "KO-W39-PAIR-001"
 language: "en"
 status: "approved-content-pack-ready"
-title: "Seasonal room-scent routines without illness promises"
+title: "Seasonal Scents for Your Home"
 slug: "seasonal-room-scent-routines-without-illness-promises"
 route: "/en/knowledge/routines/seasonal-room-scent-routines-without-illness-promises/"
 deRoute: "/de/wissen/routinen/saisonale-raumduft-routinen-ohne-krankheitsversprechen/"
 worldId: "routines"
 worldLabel: "Routines"
-seoTitle: "Seasonal room-scent routines without illness promises"
+seoTitle: "Seasonal Scents for Your Home"
 description: "How to place seasonal scent moods with essential oils, without immune, cold or illness claims."
 focus: "seasons, room scent, scent mood, safe language"
 searchKeywords:
@@ -36,7 +36,7 @@ sourceUrls:
   - "https://www.doterra.com/US/en/doterra-abode-line"
   - "https://www.doterra.com/US/en/flyers-quick-claims-guide"
 ---
-# Seasonal room-scent routines without illness promises
+# Seasonal Scents for Your Home
 
 How to place seasonal scent moods with essential oils, without immune, cold or illness claims.
 

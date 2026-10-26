@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/myrrh/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Myrrh: Harzduft, Hautpflege und ruhige Rituale"
-description: "Myrrh ist ein warmer Harzduft für Hautpflege, ruhige Duftmomente und bewusste Rituale."
+description: "Myrrh (Myrrhe): balsamischer Harzduft für edle Duftmischungen, bewusste Pflegemomente und entspannte Abendrituale."
 focus: "Harzduft, Hautpflege, ruhige Rituale"
 searchKeywords:
   - "myrrh"
@@ -46,7 +46,7 @@ sourceUrls:
 ---
 # Myrrh: Harzduft, Hautpflege und ruhige Rituale
 
-Myrrh ist ein warmer Harzduft für Hautpflege, ruhige Duftmomente und bewusste Rituale.
+Myrrh (Myrrhe): balsamischer Harzduft für edle Duftmischungen, bewusste Pflegemomente und entspannte Abendrituale.
 
 ## Fokus
 

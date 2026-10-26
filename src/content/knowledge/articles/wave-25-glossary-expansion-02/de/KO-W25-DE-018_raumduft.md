@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/glossary/room-scent/"
 worldId: "glossary"
 worldLabel: "Glossar"
 seoTitle: "Raumduft einfach erklärt"
-description: "Kurze Erklärung: Raumduft beschreibt die bewusst gestaltete Duftatmosphäre in einem Raum. Ätherische Öle können dafür über Diffuser oder andere geeignete Methoden genutzt werden."
+description: "Raumduft schafft eine angenehme Duftatmosphäre. Erfahre, wie du ätherische Öle mit einem Diffuser bewusst im Alltag einsetzt."
 relatedArticleIds:
   - "KO-P041-DE"
   - "KO-P045-DE"

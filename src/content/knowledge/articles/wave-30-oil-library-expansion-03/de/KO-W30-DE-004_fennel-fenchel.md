@@ -10,7 +10,7 @@ enRoute: "/en/knowledge/oil-library/fennel/"
 worldId: "oil-library"
 worldLabel: "Öl-Lexikon"
 seoTitle: "Fennel / Fenchel einfach erklärt"
-description: "Fennel / Fenchel im Öl-Lexikon: Duftprofil, Kernbereich, sichere Einordnung und Beratung ohne Heilversprechen."
+description: "Fennel / Fenchel im Öl-Lexikon: Duftcharakter, passende Einsatzideen, Kombinationen und Hinweise zur sicheren Anwendung."
 botanicalName: "Foeniculum vulgare"
 scentFamily: "Kräuter- und Gewürzöl"
 pillar: "Bauchgefühl, Essensalltag & anisartige Duftprofile"
@@ -59,22 +59,15 @@ doTERRA führt Fennel als Einzelöl und erwähnt im englischen Kontext den vorsi
 
 Kyle Oils übersetzt diesen Produktkontext in eine Sprache, die für Besucher verständlich bleibt: Was rieche ich? Wofür wird das Öl gesucht? Wo passt es in Routinen? Welche Sicherheitsgrenzen gelten?
 
-## Sichere öffentliche Einordnung
+## Duft- und Anwendungsideen
 
-Dieses Öl lässt sich öffentlich so einordnen:
+Für diese Alltagsmomente ist das Duftprofil interessant:
 
 - für Menschen, die Fenchel als Duft- und Küchenprofil verstehen möchten
 - als anisartiges Profil im Bereich Bauchgefühl und Essensalltag
 - für eine klare Erklärung von sehr kleinen Mengen in kulinarischer Logik
 - als Beratungsgrundlage, nicht als DIY-Heilrezept
 
-## Was wir nicht schreiben
-
-Diese Aussagen gehören nicht auf die öffentliche Website:
-
-- Verdauungsbeschwerden behandeln
-- Baby- oder Kinderprobleme mit Fenchelöl lösen
-- innere Anwendung öffentlich verallgemeinern
 
 ## Wie du dieses Öl sinnvoll kennenlernst
 

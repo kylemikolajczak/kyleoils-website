@@ -10,7 +10,7 @@ deRoute: "/de/wissen/oel-lexikon/petitgrain/"
 worldId: "oil-library"
 worldLabel: "Oil Library"
 seoTitle: "Petitgrain: green, fresh and versatile"
-description: "Petitgrain is a green, fresh oil from the bitter orange tree that can be placed in scent, evening and body-care routines."
+description: "Petitgrain brings a fresh, green note from the bitter orange tree to diffuser blends, evening rituals and selected personal-care routines."
 focus: "green-fresh scent, room scent, evening routine, body care"
 searchKeywords:
   - "petitgrain"
@@ -46,7 +46,7 @@ sourceUrls:
 ---
 # Petitgrain: green, fresh and versatile
 
-Petitgrain is a green, fresh oil from the bitter orange tree that can be placed in scent, evening and body-care routines.
+Petitgrain brings a fresh, green note from the bitter orange tree to diffuser blends, evening rituals and selected personal-care routines.
 
 ## Focus
 
