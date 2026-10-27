@@ -56,7 +56,9 @@ const base = '/assets/images/kyle/';
       <canvas class="botanical-hero__flow" data-flow-canvas="essence"></canvas>
       <div class="botanical-hero__portrait-frame botanical-hero__portrait-frame--essence">
         <img src={base + 'kyle-oils-essenzfigur-salbeigruen-creme.png'} width="1447" height="1087" alt="" decoding="async" />
+        <canvas class="botanical-hero__essence-vapor" data-essence-vapor aria-hidden="true"></canvas>
       </div>
+      <canvas class="botanical-hero__essence-vapor-wisps" data-essence-vapor-wisps aria-hidden="true"></canvas>
     </div>
     <div class="botanical-hero__scene botanical-hero__scene--surface" aria-hidden="true">
       <div class="botanical-hero__surface-atmosphere"></div>
@@ -89,4 +91,5 @@ const base = '/assets/images/kyle/';
 
   </div>
 </section>
+<script is:inline src="/scripts/essence-vapor.js" defer></script>
 <script is:inline src="/scripts/botanical-hero.js" defer></script>

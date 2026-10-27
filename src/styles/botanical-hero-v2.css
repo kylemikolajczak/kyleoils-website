@@ -285,3 +285,22 @@ body:has(.botanical-hero) .botanical-followup {
 
 /* Hide the extra portrait-shaped oil-scan that appears behind Kyle on scroll. */
 .botanical-hero__oil-scan { display: none !important; }
+
+/* Essence vapor preserves the exact original portrait registration. */
+.botanical-hero__scene--essence .botanical-hero__portrait-frame--essence > img {
+  opacity: var(--essence-original-opacity, 1);
+}
+.botanical-hero__essence-vapor,
+.botanical-hero__essence-vapor-wisps {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  opacity: var(--essence-vapor-opacity, 0);
+}
+/* Independent stage-sized smoke: the portrait mask must not crop rising wisps. */
+.botanical-hero__essence-vapor-wisps {
+  z-index: 2;
+}

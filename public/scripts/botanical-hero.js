@@ -18,6 +18,7 @@
   const bodies = hero.querySelector('[data-fluid-mask]');
   const edges = hero.querySelector('[data-fluid-edge]');
   const svgNS = 'http://www.w3.org/2000/svg';
+  const vapor = window.KyleEssenceVapor?.(hero);
 
   const desktop = matchMedia('(min-width: 801px) and (pointer:fine)');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
@@ -61,6 +62,7 @@
     mask.setAttribute('width',String(state.width));
     mask.setAttribute('height',String(state.height));
     initSmoke();
+    vapor?.resize();
     syncScroll();
   }
   // Soft aromatic mist: irregular rising wisps, never repeated oil-droplet icons.
@@ -287,7 +289,10 @@
       const roll=clamp((rect.bottom-opening.getBoundingClientRect().top)/Math.max(1,rect.height));
       set('--hero-surface-cut',(surface*100).toFixed(2)+'%');
       set('--hero-stage-cut',(roll*100).toFixed(2)+'%');
-      set('--hero-figure-fade',figFade.toFixed(3));
+      // Scroll-scrubbable vapor dissolves the same PNG; retain old fade as fallback.
+      const vaporReady = Boolean(vapor?.isReady());
+      if(vaporReady)vapor.setProgress(between(p,cfg.dissolveStart,cfg.dissolveEnd + .065));
+      set('--hero-figure-fade',vaporReady?'1':figFade.toFixed(3));
       set('--hero-scroll-opacity',(ease(between(p,cfg.wordStart,cfg.wordEnd))*(1-ease(roll))).toFixed(3));
       set('--hero-liquid-opacity',(.6*Math.sin(Math.PI*surface)).toFixed(3));
       set('--hero-scan-y',(-68+surface*172).toFixed(1)+'%');
@@ -305,6 +310,7 @@
       for(const k of ['--hero-surface-cut','--hero-stage-cut','--hero-liquid-opacity','--hero-scroll-opacity']){
         hero.style.removeProperty(k);
       }
+      vapor?.reset();
       set('--hero-figure-fade','1');
     }
     // Exactly like DarkBrain: header exits only as the opening reaches it.
@@ -349,6 +355,7 @@
     new IntersectionObserver(([entry])=>{state.visible=Boolean(entry?.isIntersecting);},{rootMargin:'150px'}).observe(hero);
   }
   if('ResizeObserver' in window) new ResizeObserver(layout).observe(stage);
+  hero.addEventListener('essence-vapor-ready', syncScroll);
   window.addEventListener('scroll',onScroll,{passive:true});
   window.addEventListener('resize',layout,{passive:true});
   desktop.addEventListener?.('change',layout);
